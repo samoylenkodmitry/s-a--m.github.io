@@ -6,7 +6,8 @@ description: This is a personal blog. Mail me if you want to use materials from 
 twitter_username: DmitrySamoylenk
 github_username:  s-a--m
 linkedin: dmitrysamoylenko
-
+  disqus:
+    shortname: disqus_g6Deh1vTol
 # Build settings
 markdown: kramdown
 theme: minima
