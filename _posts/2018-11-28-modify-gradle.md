@@ -28,7 +28,7 @@ android.enableR8=true
 
 Нам хотелось быстрой сборки, поэтому возникла задача разрешать R8 только в сборке из студии.
 
-И вот как это можно сделать через build.gradle:
+Итак, вот как это можно сделать через build.gradle:
 
 ```
 boolean isInvokeFromIde = project.properties['android.injected.invoked.from.ide']//определяем сборку из студии
