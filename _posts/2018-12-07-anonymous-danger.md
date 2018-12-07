@@ -57,7 +57,7 @@ valueAnimator.addUpdateListener(animation ->	{
 });
 ```
 
-Заглянув внутрь, обнаруживаю "надежный" способ избежать утечек памяти от команды Google:
+Заглянув внутрь, обнаруживаю "надежный" способ избежать утечки памяти от команды Google:
 ```
 //android.graphics.drawable.Drawable.java
  public final void setCallback(@Nullable Callback cb) {
