@@ -10,6 +10,6 @@ Reasons:
 - its great.
 - its a test.
 
-## Other thoughts
+## About me
 
-This is great.
+Android Developer 5+ years now working on a beautiful android app for ivi.ru.
