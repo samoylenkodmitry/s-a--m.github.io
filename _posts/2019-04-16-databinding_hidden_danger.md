@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Databinding Episode I: Hidden Danger
+title: Databinding Episode I; Hidden Danger
 ---
-# Databinding Эпизод I: Скрытая угроза
+# Databinding Эпизод I; Скрытая угроза
 
 Иногда в повседневной разработке под Android сталкиваешься со странными, если не сказать мистическими багами. (стандартное вступление)
 
