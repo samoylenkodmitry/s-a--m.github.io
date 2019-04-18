@@ -78,3 +78,5 @@ android:visibility="@{authState==null||authState.isUserAuthorized ? View.GONE : 
 
 Вывод такой:
 будьте осторожны с кодом внутри xml и databinding и еще осторожнее с Android SDK ༼ʘ̚ل͜ʘ̚༽
+
+UPD: default - работает, но только как параметр, который подставится в xml при inflate'е. Далее может вызваться байндинг с null-данными и затереть default значение. 
