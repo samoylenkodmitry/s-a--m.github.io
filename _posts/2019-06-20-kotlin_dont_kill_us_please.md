@@ -76,3 +76,5 @@ kotlin.UninitializedPropertyAccessException: lateinit property mChatAdapter has 
 
 }
 ```
+
+Enjoy 100% crash free!
