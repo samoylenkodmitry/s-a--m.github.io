@@ -1,0 +1,15 @@
+
+{
+"v":"1",
+"mapw":"http://dmitrysamoylenko.com/assets/71white.png",
+"mapb":"http://dmitrysamoylenko.com/assets/71black.png",
+"json":"http://dmitrysamoylenko.com/assets/71yadata4_format.json",
+"out":"http://dmitrysamoylenko.com/assets/71out.txt",
+"path":"http://dmitrysamoylenko.com/assets/71path.txt",
+"delay":"10",
+"pub":"asdf",
+"appId":"asdf",
+"adId":"asdf",
+"showAd":"true"
+}
+
