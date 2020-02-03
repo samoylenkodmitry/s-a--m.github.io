@@ -40,6 +40,8 @@ class DebugView @JvmOverloads constructor(
 
 		<TextView
 ...
-``
+			  
+```
+
 Теперь, когда в коде кто-либо поменяет видимость исследуемой view, то это можно будет поймать.
 Готово!
