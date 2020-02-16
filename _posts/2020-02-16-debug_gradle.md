@@ -13,5 +13,6 @@ title: Подключаем дебаггер к процессу сборки An
 ```
 4. Сразу кликнуть на ![debug]({{ site.url }}/assets/debug.png) и не забыть поставить брекпоинт в градл-скрипте.
 
+![debug_breakpoint]({{ site.url }}/assets/debug_jvm_breakpoint.png)
 
 А также это поможет отладить кастомный Annotation Processor.
