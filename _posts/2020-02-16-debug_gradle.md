@@ -4,7 +4,7 @@ title: Подключаем дебаггер к процессу сборки An
 ---
 # Для этого нужно всего лишь...
 1. В Android Studio выбрать пункт Edit Configurations
-![edit_configurations]({{ site.url }}/assets/editconfigurations.png)
+![edit_configurations]({{ site.url }}/assets/edit_configurations.png)
 2. В нем добавить новую конфигурацию Remote. Менять настройки не нужно, жмем ок:
 ![debug_jvm]({{ site.url }}/assets/debug_jvm_ok.png)
 3. Запустить сборку из командной строки:
