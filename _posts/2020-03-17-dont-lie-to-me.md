@@ -24,7 +24,7 @@ fun main() {
 
 И вот сегодня, меня порадовали еще одним квизом. Угадайте что делает следующая строка в xml:
 ```
-			app:myCustomBinding="@{SystemUiHider.SInsetsHolder.top + ResourceUtils.dipToPx(context, @dimen/statement_padding_16dp)}"
+app:myCustomBinding="@{SystemUiHider.SInsetsHolder.top + ResourceUtils.dipToPx(context, @dimen/statement_padding_16dp)}"
 ```
 Если ваш ответ: складывает между собой два числа `SystemUiHider.SInsetsHolder.top` и `ResourceUtils.dipToPx(context, @dimen/statement_padding_16dp)` и 
 отдает их на вход кастомному байндинг-адаптеру, то поздравляю. Вы отстали от жизни, ок бумер, иди кодь на своем делфи и не лезь к клевым пацанам.
