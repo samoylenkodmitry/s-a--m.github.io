@@ -20,7 +20,7 @@ kotlin.UninitializedPropertyAccessException: lateinit property mChatAdapter has 
 
 Хорошо, но как быть с котлином?
 
-Тут нам поможет Proguard. Мы уже умеет вырезать логи, убирать лишние конкатенации строк https://www.guardsquare.com/en/products/proguard/manual/examples#logging
+Тут нам поможет Proguard. Мы уже умеем вырезать логи, убирать лишние конкатенации строк https://www.guardsquare.com/en/products/proguard/manual/examples#logging
 
 Теперь наш враг (в релизе, конечно, в дебаге и процессе разработки - помощник) вот этот класс https://github.com/JetBrains/kotlin/blob/v1.3.40/libraries/stdlib/jvm/runtime/kotlin/jvm/internal/Intrinsics.java
 
