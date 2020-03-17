@@ -29,7 +29,7 @@ app:myCustomBinding="@{SystemUiHider.SInsetsHolder.top + ResourceUtils.dipToPx(c
 Если ваш ответ: складывает между собой два числа `SystemUiHider.SInsetsHolder.top` и `ResourceUtils.dipToPx(context, @dimen/statement_padding_16dp)` и 
 отдает их на вход кастомному байндинг-адаптеру, то поздравляю. Вы отстали от жизни, ок бумер, иди кодь на своем делфи и не лезь к клевым пацанам.
 
-Ответ от gen-z: так как переменная SInsetsHolder имеет тип androidx.databinding.BaseObservable, то "умная" кодогенерация подпишет все выражение
+Ответ от gen-z: так как переменная `SInsetsHolder` имеет тип `androidx.databinding.BaseObservable`, то "умная" кодогенерация подпишет все выражение
  в скобках `@{..}` на изменение параметра `top` и будет вызывать его когда нужно. Возможно главная ошибка проектировщиков датабайндинга
   в том, что они попытались имитировать синтаксис простой java в xml. Когда на самом деле, нужен был свой dsl-синтаксис. Тогда бы не было недопониманий.
   
