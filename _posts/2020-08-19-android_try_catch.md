@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android: ставим try-catch на все приложение
+title: Ставим try-catch на все приложение (Android)
 ---
 # Где в приложении спрятался метод main()?
 
