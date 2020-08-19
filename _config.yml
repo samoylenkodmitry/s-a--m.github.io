@@ -1,4 +1,6 @@
 # basic options
+plugins:
+  - jekyll-feed
 title: Developer Blog
 author: Dmitry Samoylenko
 email: samoylenkodmitry@gmail.com
