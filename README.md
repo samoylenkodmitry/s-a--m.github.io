@@ -1,2 +1,2 @@
 
-http://dmitrysamoylenko.com/
+Personal Developer Blog - http://dmitrysamoylenko.com/
