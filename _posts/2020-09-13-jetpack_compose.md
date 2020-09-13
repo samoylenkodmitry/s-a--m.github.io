@@ -132,5 +132,7 @@ LazyColumnFor(items = (1..N).toList()) {
 # tl;dr
 Jetpack Compose пока что находится в альфа версии и видно, что приоритет отдается лаконичности API. Будет надеяться, что гугл не остановится на первой итерации и оптимизирует компоненты. 
 
-В конце концов, это их собственный лозунг - #pert_matters, про который они постепенно забывают (все помнят, что енумы и автобоксинг - это плохо? :) <https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE> <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> )
+В конце концов, это их собственный лозунг - #pert_matters, про который они постепенно забывают (все помнят, что енумы и автобоксинг - это плохо? :) <https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE>)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
