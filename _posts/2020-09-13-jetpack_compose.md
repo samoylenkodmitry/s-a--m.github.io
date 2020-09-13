@@ -119,13 +119,17 @@ LazyColumnFor(items = (1..N).toList()) {
 ```
 
 Как видим, Canvas перерисовывается каждый тик
-![compose_lazy_flashes.gif]({{ site.url }}/assets/ccompose_lazy_flashes.gif)
+![compose_lazy_flashes.gif]({{ site.url }}/assets/compose_lazy_flashes.gif)
+
 Однако TextView перерисовывается только при выходе за границу видимой области:
 ![compose_lazy_text_redraw.gif]({{ site.url }}/assets/compose_lazy_text_redraw.gif)
 Это радует: об оптимизациях прорисовки компонентов думают заранее.
+
 Также интерфейс функции `LazyColumnFor(items) ` пока что не позволяет создать по-настоящему бесконечный список. Всегда ожидается конечное множество items элементов.
 
 # TLDR;
-Jetpack Compose пока что находится в альфа версии и видно, что приоритет отдается лаконичности API. Будет надеяться, что гугл не остановится на первой итерации и оптимизирует компоненты. В конце концов, это их собственный лозунг #pert_matters https://developer.android.com/topic/performance 
+Jetpack Compose пока что находится в альфа версии и видно, что приоритет отдается лаконичности API. Будет надеяться, что гугл не остановится на первой итерации и оптимизирует компоненты. 
+
+В конце концов, это их собственный лозунг #pert_matters https://developer.android.com/topic/performance 
 Про который они постепенно забывают (все помнят, что енумы и автобоксинг - это плохо? :) https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE )
 
