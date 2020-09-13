@@ -118,10 +118,10 @@ LazyColumnFor(items = (1..N).toList()) {
 
 ```
 
-Как видим, Canvas перерисовывается каждый тик
+Как видим, Canvas() перерисовывается каждый тик
 ![compose_lazy_flashes.gif]({{ site.url }}/assets/compose_lazy_flashes.gif)
 
-Однако TextView перерисовывается только при выходе за границу видимой области:
+Однако Text() перерисовывается только при выходе за границу видимой области:
 ![compose_lazy_text_redraw.gif]({{ site.url }}/assets/compose_lazy_text_redraw.gif)
 
 
