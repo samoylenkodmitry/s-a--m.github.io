@@ -7,7 +7,7 @@ Those two collections are all sorted and very useful when you need to maintain s
 However when concurrency takes place there is a gotcha. We have a choice: use manual synchronization or use ConcurrentSkipListSet from java.concurrent package.
 
 # My case
-I have a task that gets episodes from server in a bulk operation. For example, when there is a 800 episodes total it makes 10 asynchronious requests 100 episodes each.
+I have a task that gets episodes from server in a bulk operation. For example, when there is a 800 episodes total it makes 8 asynchronious requests 100 episodes each.
 Resulting list of episodes needs to be sorted and displayed on the client side.
 
 Code for manual synchronizations looks like this:
