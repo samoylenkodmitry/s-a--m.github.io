@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is faster? ConcurrentSkipListSet vs TreeSet+synchronized
+title: Which is faster? ConcurrentSkipListSet vs TreeSet+synchronized
 ---
 # What's the difference
 Those two collections are all sorted and very useful when you need to maintain some order in dynamically filled data.
