@@ -40,12 +40,10 @@ Almost none of the concurrent stuff is visible to programmer which is a good thi
 
 I'm tested two solutions using Android emulator API 30. Here is a results:
 
----
 solution | avg ns | min ns | max ns | # of experiments | sum ns
 --- | --- | --- | --- | --- | ---
 manual | 114960 | 6543 | 4109831 | 620 | 71275591
 concurrent | 44295 | 7035 | 1525028 | 620 | 27463261
----
 
 For my use case manual synchronization is almost twice as fast as using concurrent collection.
 
