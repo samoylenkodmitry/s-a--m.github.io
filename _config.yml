@@ -1,7 +1,7 @@
 # basic options
 plugins:
   - jekyll-feed
-title: Developer Blog
+title: Android Developer Blog
 author: Dmitry Samoylenko
 email: samoylenkodmitry@gmail.com
 description: This is a personal blog. Mail me if you want to use materials from it.
