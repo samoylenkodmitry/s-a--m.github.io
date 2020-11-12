@@ -35,10 +35,11 @@ final Video[] sortedEpisodes = allEpisodes.toArray(Video.EMPTY_ARRAY);
 
 ```
 Almost none of the concurrent stuff is visible to programmer which is a good thing for maintainability and error-proneness.
-```					
+				
 # Benchmark?
-```
+
 I'm tested two solutions using Android emulator API 30. Here is a results:
+
 ---
 solution | avg ns | min ns | max ns | # of experiments | sum ns
 --- | --- | --- | --- | --- | ---
