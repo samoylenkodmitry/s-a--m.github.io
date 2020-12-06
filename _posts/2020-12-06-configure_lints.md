@@ -101,7 +101,7 @@ exit 0
 
 ```
 
-# How to make it run for all team members?
+# How to make it work for all team members?
 
 Make folder `githooks/` in the root git project directory and put all downloaded files into it.
 Then in top of the project `build.gradle` insert:
