@@ -111,7 +111,7 @@ exec {
 }
 ```
 
-This will execute the script `enable_lints.sh` that will apply git path to `githooks/` directory and make git execute the script `pre-commit` before each commit. Contents of the script:
+This will execute the script `enable_lints.sh` that will apply git path to the `githooks/` directory and make git execute the script `pre-commit` before each commit. Contents of the script:
 
 enable_lints.sh
 ```
