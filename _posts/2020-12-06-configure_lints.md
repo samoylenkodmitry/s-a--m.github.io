@@ -4,25 +4,26 @@ title: Setting up precommit lints for all team members
 ---
 # What lints?
 
-Current actively developed lints are Detekt and ktlint. klint have a `don't overengener` philosophy while detekt is more configurable.
+Current actively developed lints are Detekt and ktlint. klint have a `don't overengineer` philosophy while detekt is more configurable.
 
 # How to set up Detekt?
 
-https://github.com/detekt/detekt
-Download binary from here https://github.com/detekt/detekt/releases
-Config file can be auto generated from command line or simple download mine https://gist.github.com/samoylenkodmitry/433572b16d22caa4a73d197ca92cbb69
+[https://github.com/detekt/detekt](https://github.com/detekt/detekt)
+
+Download binary from here [https://github.com/detekt/detekt/releases](https://github.com/detekt/detekt/releases)
+Config file can be auto generated from command line or simple download mine [default-detekt-config.yml](https://gist.github.com/samoylenkodmitry/433572b16d22caa4a73d197ca92cbb69)
 
 # How to set up ktlint?
 
-https://github.com/pinterest/ktlint
-Download binary from here https://github.com/pinterest/ktlint/releases
+[https://github.com/pinterest/ktlint](https://github.com/pinterest/ktlint)
+Download binary from here [https://github.com/pinterest/ktlint/releases](https://github.com/pinterest/ktlint/releases)
 Ktlint can be configured with standard `.editorconfig` file. You can find one anywhere in github or get mine: 
-https://gist.github.com/samoylenkodmitry/5b7bc43160e042f716460c1d9ba784ee
+[.editorconfig](https://gist.github.com/samoylenkodmitry/5b7bc43160e042f716460c1d9ba784ee)
 
 # How to make it check each commit?
 
 Copy and configure script from here: 
-https://gist.github.com/samoylenkodmitry/0e988cd3445a0b390be20814eebce589
+[pre-commit](https://gist.github.com/samoylenkodmitry/0e988cd3445a0b390be20814eebce589)
 
 ```
 #!/bin/bash
@@ -121,5 +122,9 @@ git config --global core.hooksPath githooks
 
 Remember to make each script executable
 ```
-chmod +x filename
+chmod +x ./ktlint
+chmod +x ./detekt
+chmod +x ./githooks/pre-commit
 ```
+Now add the `githook/` directory and all new files to git and push it to server. All team should just open project again so AndroidStudio will run `build.gradle` script.
+Notice that script support only unix os and should be specially edited to support windows.
