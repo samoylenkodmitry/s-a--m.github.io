@@ -118,3 +118,8 @@ enable_lints.sh
 #!/bin/bash
 git config --global core.hooksPath githooks
 ```
+
+Rememer to make each script executable
+```
+chmod +x filename
+```
