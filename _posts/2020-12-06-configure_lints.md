@@ -27,6 +27,7 @@ Copy and configure script from here:
 
 ```
 #!/bin/bash
+# Setting up guide http://dmitrysamoylenko.com/2020/12/06/configure_lints.html
 # https://github.com/checkstyle/checkstyle
 # https://github.com/pinterest/ktlint
 # https://github.com/detekt/detekt
@@ -48,14 +49,12 @@ if [ -n "$JAVA_HOME" ]; then
   fi
   if [ ! -x "$JAVACMD" ]; then
     die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
-
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
   fi
 else
   JAVACMD="java"
   which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
-
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
 fi
@@ -63,7 +62,13 @@ fi
 
 cd ${GIT_ROOT_DIR}
 #echo ${GIT_ROOT_DIR}
-readarray -t f < <(git diff --diff-filter=d --staged --name-only)
+f=()
+while read line; do
+  if [ -n "$line" ]; then
+    f+=("$line")
+  fi
+done <<<"$(git diff --diff-filter=d --staged --name-only)"
+
 files=""
 for i in "${!f[@]}"; do
   files+=" ${f[i]}"
