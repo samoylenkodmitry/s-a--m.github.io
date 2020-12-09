@@ -69,6 +69,11 @@ while read line; do
   fi
 done <<<"$(git diff --diff-filter=d --staged --name-only)"
 
+if [ ${#f[@]} -eq 0 ]; then
+    echo "No changes."
+    exit 0
+fi
+
 files=""
 for i in "${!f[@]}"; do
   files+=" ${f[i]}"
