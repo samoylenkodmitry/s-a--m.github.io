@@ -31,7 +31,6 @@ Copy and configure script from here:
 # https://github.com/checkstyle/checkstyle
 # https://github.com/pinterest/ktlint
 # https://github.com/detekt/detekt
-# Edit the following paths to checkstyle, detekt and ktlint binaries and config files
 
 
 # Determine the Java command to use to start the JVM.
