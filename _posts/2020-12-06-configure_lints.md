@@ -32,12 +32,7 @@ Copy and configure script from here:
 # https://github.com/pinterest/ktlint
 # https://github.com/detekt/detekt
 # Edit the following paths to checkstyle, detekt and ktlint binaries and config files
-GIT_ROOT_DIR=$(git rev-parse --show-toplevel)
-configloc=-Dconfig_loc=${GIT_ROOT_DIR}/ivi/config/checkstyle
-config=${GIT_ROOT_DIR}/ivi/config/checkstyle/checkstyle.xml
-params="${configloc} -jar ${GIT_ROOT_DIR}/githooks/checkstyle-8.38-all.jar -c ${config}${files}"
-ktlintbinary="./ktlint"
-detektconfig="./default-detekt-config.yml"
+
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ]; then
@@ -49,35 +44,48 @@ if [ -n "$JAVA_HOME" ]; then
   fi
   if [ ! -x "$JAVACMD" ]; then
     die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
+
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
   fi
 else
   JAVACMD="java"
   which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
 fi
 
+GIT_ROOT_DIR=$(git rev-parse --show-toplevel)
 
 cd ${GIT_ROOT_DIR}
 #echo ${GIT_ROOT_DIR}
 f=()
 while read line; do
   if [ -n "$line" ]; then
-    f+=("$line")
+    if [[ "$line" =~ .*"/build/".* ]]; then
+      true #skip generated code
+    else
+      f+=("$line")
+    fi
   fi
 done <<<"$(git diff --diff-filter=d --staged --name-only)"
 
-if [ ${#f[@]} -eq 0 ]; then
-    echo "No changes."
-    exit 0
-fi
-
 files=""
 for i in "${!f[@]}"; do
-  files+=" ${f[i]}"
+  if [[ "${f[i]}" == *.java ]]; then
+    files+=" ${f[i]}"
+  fi
 done
+
+if [ ${#files} -eq 0 ]; then
+  echo "No files to check."
+  exit 0
+fi
+
+configloc=-Dconfig_loc=${GIT_ROOT_DIR}/ivi/config/checkstyle
+config=${GIT_ROOT_DIR}/ivi/config/checkstyle/checkstyle.xml
+params="${configloc} -jar ${GIT_ROOT_DIR}/githooks/checkstyle-8.38-all.jar -c ${config}${files}"
 
 ${JAVACMD} $params
 result=$?
@@ -86,8 +94,8 @@ if [ $result -ne 0 ]; then
   exit $result
 fi
 
-#ktlint check
-git diff --diff-filter=d --staged --name-only | grep '\.kt[s"]\?$' | xargs ${ktlintbinary} .
+# ktlint check
+git diff --diff-filter=d --staged --name-only | grep '\.kt[s"]\?$' | xargs ./ktlint .
 result=$?
 if [ $result -ne 0 ]; then
   echo "Please fix the ktlint problems before submit the commit!"
@@ -95,18 +103,34 @@ if [ $result -ne 0 ]; then
 fi
 
 #detekt check
+
+check_by_detekt() {
+  arg=$1
+  files=${arg%?}
+  params="--fail-fast --config default-detekt-config.yml --input ${files}"
+  ./detekt ${params}
+  result=$?
+  if [ $result -ne 0 ]; then
+    echo "Please fix the detekt problems before submit the commit!"
+    exit $result
+  fi
+}
+count=0
 filesd=""
 for i in "${!f[@]}"; do
-  filesd+="${f[i]},"
+  if [[ "${f[i]}" == *.kt ]]; then
+    filesd+="${f[i]},"
+    count=$((count + 1))
+    # split into batches
+    if [ $count -gt 1000 ]; then
+      check_by_detekt $filesd
+      count=0
+      filesd=""
+    fi
+  fi
 done
-filesd=${filesd%?}
-params="--fail-fast --config ${detektconfig} --input ${filesd}"
-./detekt ${params}
-result=$?
-if [ $result -ne 0 ]; then
-  echo "Please fix the detekt problems before submit the commit!"
-  exit $result
-fi
+
+check_by_detekt $filesd
 exit 0
 
 ```
