@@ -33,6 +33,8 @@ Copy and configure script from here:
 # https://github.com/detekt/detekt
 
 
+#!/bin/bash
+
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ]; then
   if [ -x "$JAVA_HOME/jre/sh/java" ]; then
@@ -106,12 +108,16 @@ fi
 check_by_detekt() {
   arg=$1
   files=${arg%?}
-  params="--fail-fast --config default-detekt-config.yml --input ${files}"
-  ./detekt ${params}
-  result=$?
-  if [ $result -ne 0 ]; then
-    echo "Please fix the detekt problems before submit the commit!"
-    exit $result
+  if [ ${#files} -eq 0 ]; then
+    true #skip
+  else
+    params="--fail-fast --config default-detekt-config.yml --input ${files}"
+    ./detekt ${params}
+    result=$?
+    if [ $result -ne 0 ]; then
+      echo "Please fix the detekt problems before submit the commit!"
+      exit $result
+    fi
   fi
 }
 count=0
