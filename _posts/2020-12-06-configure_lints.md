@@ -32,9 +32,6 @@ Copy and configure script from here:
 # https://github.com/pinterest/ktlint
 # https://github.com/detekt/detekt
 
-
-#!/bin/bash
-
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ]; then
   if [ -x "$JAVA_HOME/jre/sh/java" ]; then
@@ -72,27 +69,39 @@ while read line; do
   fi
 done <<<"$(git diff --diff-filter=d --staged --name-only)"
 
-files=""
+filesJava=""
+filesKt=""
+countJava=0
 for i in "${!f[@]}"; do
   if [[ "${f[i]}" == *.java ]]; then
-    files+=" ${f[i]}"
+    filesJava+=" ${f[i]}"
+    countJava=$((countJava + 1))
+  fi
+  if [[ "${f[i]}" == *.kt ]]; then
+    filesKt+=" ${f[i]}"
   fi
 done
 
-if [ ${#files} -eq 0 ]; then
-  echo "No files to check."
-  exit 0
+if [ ${#filesJava} -eq 0 ]; then
+  echo "No *.java files to check."
+else
+  configloc=-Dconfig_loc=${GIT_ROOT_DIR}/ivi/config/checkstyle
+  config=${GIT_ROOT_DIR}/ivi/config/checkstyle/checkstyle.xml
+  params="${configloc} -jar ${GIT_ROOT_DIR}/githooks/checkstyle-8.38-all.jar -c ${config}${filesJava}"
+
+  ${JAVACMD} $params
+  result=$?
+  if [ $result -ne 0 ]; then
+    echo "Please fix the checkstyle problems before submit the commit!"
+    exit $result
+  else
+    echo "#java files: $countJava"
+  fi
 fi
 
-configloc=-Dconfig_loc=${GIT_ROOT_DIR}/ivi/config/checkstyle
-config=${GIT_ROOT_DIR}/ivi/config/checkstyle/checkstyle.xml
-params="${configloc} -jar ${GIT_ROOT_DIR}/githooks/checkstyle-8.38-all.jar -c ${config}${files}"
-
-${JAVACMD} $params
-result=$?
-if [ $result -ne 0 ]; then
-  echo "Please fix the checkstyle problems before submit the commit!"
-  exit $result
+if [ ${#filesKt} -eq 0 ]; then
+  echo "No *.kt files to check."
+  exit 0
 fi
 
 # ktlint check
@@ -136,7 +145,9 @@ for i in "${!f[@]}"; do
 done
 
 check_by_detekt $filesd
+echo "# kt files: $count"
 exit 0
+
 
 ```
 
