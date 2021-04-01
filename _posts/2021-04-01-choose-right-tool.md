@@ -32,7 +32,7 @@ title: Допиливаем Thiсс-15
 
 ![saw1]({{ site.url }}/assets/saw1.jpg)
 
-Обратной дороги нет.
+Обратной дороги нет :)
 
 ![saw2]({{ site.url }}/assets/saw2.jpg)
 
