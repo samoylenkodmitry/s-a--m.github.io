@@ -73,14 +73,10 @@ title: Допиливаем Thiсс-15
 
 ![ready2]({{ site.url }}/assets/ready2.jpg)
 
-![ready3]({{ site.url }}/assets/ready3.jpg)
-
-![ready4]({{ site.url }}/assets/ready4.jpg)
+![under]({{ site.url }}/assets/under.jpg)
 
 # А для чего такая мощь?
 
 Ноут подойдет как переносной настольный компьютер. Удобно, когда все окружение всегда при тебе в полной мощности.
 
-![htop]({{ site.url }}/assets/htop.jpg)
-
-![fetch]({{ site.url }}/assets/fetch.jpg)
+![final]({{ site.url }}/assets/final.jpg)
