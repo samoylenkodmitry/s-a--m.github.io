@@ -58,7 +58,7 @@ title: Допиливаем Thiсс-15
 
 ![install]({{ site.url }}/assets/install.jpg)
 
-Не забыть нанести термопасту, так как поверхность не ровная.
+Не забыть нанести термопасту, так как поверхность неровная.
 
 ![installed1]({{ site.url }}/assets/installed1.jpg)
 
