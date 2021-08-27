@@ -72,6 +72,7 @@ done <<<"$(git diff --diff-filter=d --staged --name-only)"
 filesJava=""
 filesKt=""
 countJava=0
+countKt=0
 for i in "${!f[@]}"; do
   if [[ "${f[i]}" == *.java ]]; then
     filesJava+=" ${f[i]}"
@@ -79,6 +80,27 @@ for i in "${!f[@]}"; do
   fi
   if [[ "${f[i]}" == *.kt ]]; then
     filesKt+=" ${f[i]}"
+    countKt=$((countKt + 1))
+  fi
+done
+
+for i in "${!f[@]}"; do
+  if [[ "${f[i]}" =~ .*.(java|kt)$ ]]; then
+    lineNum=0
+    while IFS= read line; do
+      if [ -n "$line" ]; then
+        lineNum=$((lineNum+1))
+        if [[ "$line" =~ ^\ +[^\*].* ]]; then
+          echo "Line starts with spaces. Please apply project code style. File: ${f[i]}:$lineNum, line: $line"
+          exit 1
+        elif [[ "$line" =~ .*oleg.*|.*xoxoxo.* ]]; then
+          echo "forbidden word in line. File: ${f[i]}:$lineNum, line: $line"
+          exit 1
+        else
+          true #skip good code
+        fi
+      fi
+    done < "${f[i]}"
   fi
 done
 
@@ -147,7 +169,6 @@ done
 check_by_detekt $filesd
 echo "# kt files: $count"
 exit 0
-
 
 ```
 
