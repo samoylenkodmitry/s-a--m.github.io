@@ -5,6 +5,7 @@ title: Databinding Episode II; Past Mistakes
 # Databinding Эпизод II; Ошибки прошлого
 
 Иногда в повседневной разработке под Android сталкиваешься со странными, если не сказать мистическими багами. (стандартное вступление)
+
 В предыдущем эпизоде [Databinding Episode I; Hidden Danger](http://dmitrysamoylenko.com/2019/04/16/databinding_hidden_danger.html)
 
 Предположим, имеется класс *.kt:
@@ -26,6 +27,7 @@ class Child extends Base {
 ```
 
 Уже тут можно заметить, что мы выстрелили себе в ногу. Но продолжим.
+
 Мы захотели использовать класс Child в databidning-е. 
 
 Внимание, вопрос: будет ли видна следующая View?
@@ -44,5 +46,6 @@ some.xml
 ```
 
 # Мораль истории
+
 1. Не наследуйте java-классы от kotlin-классов
 2. А может быть пора переходить на Jetpack Compose?
