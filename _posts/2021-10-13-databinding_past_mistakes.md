@@ -5,7 +5,7 @@ title: Databinding Episode II; Past Mistakes
 # Databinding Эпизод II; Ошибки прошлого
 
 Иногда в повседневной разработке под Android сталкиваешься со странными, если не сказать мистическими багами. (стандартное вступление)
-В предыдущем эпизоде http://dmitrysamoylenko.com/2019/04/16/databinding_hidden_danger.html
+В предыдущем эпизоде [Databinding Episode I; Hidden Danger](http://dmitrysamoylenko.com/2019/04/16/databinding_hidden_danger.html)
 
 Предположим, имеется класс *.kt:
 
