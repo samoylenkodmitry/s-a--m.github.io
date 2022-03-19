@@ -28,8 +28,14 @@ function draw() {
   ctx.font = fontSize + 'px arial';
 
   for (let i = 0; i < drops.length; i++) {
-    const text = String.fromCharCode(Math.random() * 512);
+    const text = String.fromCharCode(Math.random() * 800);
+    ctx.save();
+    if(Math.random()>0.9){
+      ctx.translate(canvas.width, 0);
+      ctx.scale(-1,1);
+    }
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+    ctx.restore();
 
     if (drops[i] * fontSize > canvas.height && Math.random() > 0.9975) {
       drops[i] = 0;
