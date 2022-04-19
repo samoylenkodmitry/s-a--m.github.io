@@ -3,7 +3,7 @@ plugins:
   - jekyll-feed
 title: Android Developer Blog
 author: Dmitry Samoylenko
-email: samoylenkodmitry@gmail.com
+email: site@dmitrysamoylenko.in
 description: This is a personal blog. Mail me if you want to use materials from it.
 twitter_username: DmitrySamoylenk
 github_username:  samoylenkodmitry
