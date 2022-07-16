@@ -12,4 +12,4 @@ Reasons:
 
 ## About me
 
-Android Developer 5+ years now working on a beautiful android app for ivi.ru.
+Android Developer 8+ years now working on a beautiful android app for ivi.ru.
