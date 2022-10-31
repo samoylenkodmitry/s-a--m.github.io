@@ -18,4 +18,4 @@ Solution [kotlin]
         .all { (prev, curr) -> prev.dropLast(1) == curr.drop(1) }
 ```
 Explanation:
-just compare adjacent rows, they must have equal elements except first and last
+just compare adjacent rows, they must have an equal elements except first and last
