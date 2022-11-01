@@ -4,7 +4,7 @@ title: Daily leetcode challenge
 ---
 
 # Daily leetcode challenge
-You can join and discuss in Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
+You can join me and discuss in Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
 
 # Today
 [https://leetcode.com/problems/where-will-the-ball-fall/](https://leetcode.com/problems/where-will-the-ball-fall/) medium
@@ -43,7 +43,7 @@ Solution [kotlin]
 Explanation:
 This is a geometry problem, but seeing the pattern might help. We can spot that each row is an action sequence: -1 -1 -1 shifts balls left, and 1 1 1 shifts balls to the right. Corners can be formed only with -1 1 sequence.  
 
-# toeplitz-matrix
+# 31.10.2022
 [https://leetcode.com/problems/toeplitz-matrix/](https://leetcode.com/problems/toeplitz-matrix/) easy
 
 Solution [kotlin]
