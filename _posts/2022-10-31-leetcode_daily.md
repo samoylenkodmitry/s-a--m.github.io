@@ -4,7 +4,7 @@ title: Daily leetcode challenge
 ---
 
 # Daily leetcode challenge
-You can join me and discuss in Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
+You can join me and discuss in the Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
 
 # Today
 [https://leetcode.com/problems/minimum-genetic-mutation/](https://leetcode.com/problems/minimum-genetic-mutation/) medium
