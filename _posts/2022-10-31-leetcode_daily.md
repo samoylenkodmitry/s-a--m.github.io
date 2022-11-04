@@ -6,6 +6,31 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
 # Today
+[https://leetcode.com/problems/reverse-vowels-of-a-string/](https://leetcode.com/problems/reverse-vowels-of-a-string/) easy
+
+Solution [kotlin]
+```
+    fun reverseVowels(s: String): String {
+        val vowels = setOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
+        var chrs = s.toCharArray()
+        var l = 0
+        var r = chrs.lastIndex
+        while(l < r) {
+            while(l<r && chrs[l] !in vowels) l++
+            while(l<r && chrs[r] !in vowels) r--
+            if (l < r) chrs[l] = chrs[r].also { chrs[r] = chrs[l] }
+            r--
+            l++
+        }
+        return String(chrs)
+    }
+```
+Explanation:
+Straightforward solution : use two pointers method and scan from the both sides.
+
+Speed: O(N), Memory O(N)
+
+# 3.11.2022
 [https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) medium
 
 Solution [kotlin]
