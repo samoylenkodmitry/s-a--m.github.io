@@ -54,9 +54,9 @@ class Solution {
 ```
 Explanation:
 Use trie + dfs
-1. Collect all the words into trie
-2. Search deeply starting from all the cells advancing trie nodes
-3. Collect if node is a word
+1. Collect all the words into the Trie
+2. Search deeply starting from all the cells and advancing trie nodes
+3. Collect if node is the word
 4. Use set to avoid duplicates
 
 Speed: O(wN + M), w=10, N=10^4, M=12^2 , Memory O(26w + N) 
