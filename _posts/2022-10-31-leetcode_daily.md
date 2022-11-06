@@ -9,7 +9,7 @@ You can join me and discuss in the Telegram channel [t.me/leetcode_daily_unstopp
 [https://leetcode.com/problems/orderly-queue/](https://leetcode.com/problems/orderly-queue/) hard
 
 ```
-class Solution {
+
     fun orderlyQueue(s: String, k: Int): String {
         val chrs = s.toCharArray()
         if (k == 1) {
@@ -26,7 +26,7 @@ class Solution {
             return String(chrs)
         }
     }
-}
+
 O(n^2)
 ```
 Explanation:
@@ -39,7 +39,7 @@ Speed: O(n^2), Memory: O(n)
 
 Solution [kotlin]
 ```
-class Solution {
+
     class Node {
         val next = Array<Node?>(26) { null }
         var word: String?  = null
@@ -80,7 +80,7 @@ class Solution {
         }
         return result.toList()
     }
-}
+
 ```
 Explanation:
 Use trie + dfs
