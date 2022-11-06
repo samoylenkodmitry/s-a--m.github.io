@@ -6,9 +6,39 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
 # Today
+[https://leetcode.com/problems/orderly-queue/](https://leetcode.com/problems/orderly-queue/) hard
+
+```
+class Solution {
+    fun orderlyQueue(s: String, k: Int): String {
+        val chrs = s.toCharArray()
+        if (k == 1) {
+            var smallest = s
+            for (i in 0..s.lastIndex) {
+                val prefix = s.substring(0, i)
+                val suffix = s.substring(i)
+                val ss = suffix + prefix
+                if (ss.compareTo(smallest) < 0) smallest = ss
+            }
+            return smallest
+        } else {
+            chrs.sort()
+            return String(chrs)
+        }
+    }
+}
+O(n^2)
+```
+Explanation:
+One idea that come to my mind is: if k >= 2 then you basically can swap any adjacent elements. That means you can actually sort all the characters.
+
+Speed: O(n^2), Memory: O(n)
+    
+# 6.11.2022
 [https://leetcode.com/problems/word-search-ii/](https://leetcode.com/problems/word-search-ii/) hard
 
 Solution [kotlin]
+```
 class Solution {
     class Node {
         val next = Array<Node?>(26) { null }
