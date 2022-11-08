@@ -5,7 +5,46 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
-# Today
+
+# 8.11.2022
+[https://leetcode.com/problems/make-the-string-great/](https://leetcode.com/problems/make-the-string-great/) easy
+
+```
+    fun makeGood(s: String): String {
+        var ss = s.toCharArray()
+        var finished = false
+        while(!finished) {
+            finished = true
+            for (i in 0 until s.lastIndex) {
+                if (ss[i] == '.') continue
+                var j = i+1
+                while(j <= s.lastIndex && ss[j] == '.') {
+                    j++
+                    continue
+                }
+                if (j == s.length) break
+                
+                var a = ss[i]
+                var b = ss[j]
+                if (a != b && Character.toLowerCase(a) == 
+                        Character.toLowerCase(b)) {
+                    ss[i] = '.'
+                    ss[j] = '.'
+                    finished = false
+                }
+            }
+        }
+        return ss.filter { it != '.' }.joinToString("")
+    }
+
+```
+Explanation:
+The simplest solution is just to simulate all the process, as input string is just 100 symbols.
+
+Speed: O(n^2)
+Memory: O(n)
+
+# 7.11.2022
 [https://leetcode.com/problems/maximum-69-number/](https://leetcode.com/problems/maximum-69-number/) easy
 
 ```
