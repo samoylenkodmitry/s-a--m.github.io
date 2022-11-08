@@ -4,7 +4,7 @@ title: Daily leetcode challenge
 ---
 
 # Daily leetcode challenge
-You can join me and discuss in the Telegram channel [t.me/leetcode_daily_unstoppable](t.me/leetcode_daily_unstoppable)
+You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
 # 8.11.2022
 [https://leetcode.com/problems/make-the-string-great/](https://leetcode.com/problems/make-the-string-great/) easy
