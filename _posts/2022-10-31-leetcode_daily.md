@@ -6,6 +6,27 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 10.11.2022
+[https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) easy
+
+Solution:
+```
+    fun removeDuplicates(s: String): String {
+        val stack = Stack<Char>()
+        s.forEach { c ->
+            if (stack.isNotEmpty() && stack.peek() == c) {
+                stack.pop()
+            } else {
+                stack.push(c)
+            }
+        }
+        return stack.joinToString("")
+    }
+```
+Explanation: Just scan symbols one by one and remove duplicates from the end.
+Complexity: O(N)
+Memory: O(N)
+
 # 9.11.2022
 [https://leetcode.com/problems/online-stock-span/](https://leetcode.com/problems/online-stock-span/) medium
 
