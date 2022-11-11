@@ -6,6 +6,23 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 11.11.2022
+[https://leetcode.com/problems/remove-duplicates-from-sorted-array/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) easy
+
+Just do what is asked. Keep track of the pointer to the end of the "good" part.
+```
+    fun removeDuplicates(nums: IntArray): Int {
+        var k = 0
+        for (i in 1..nums.lastIndex) {
+            if (nums[k] != nums[i]) nums[++k] = nums[i]
+        }
+        
+        return k + 1
+    }
+```
+Complexity: O(N)
+Memory: O(1)
+
 # 10.11.2022
 [https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) easy
 
