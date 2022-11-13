@@ -6,6 +6,31 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 14.11.2022
+[https://leetcode.com/problems/reverse-words-in-a-string/](https://leetcode.com/problems/reverse-words-in-a-string/) medium
+
+A simple trick: reverse all the string, then reverse each word.
+
+```kotlin
+    fun reverseWords(s: String): String {
+        val res = StringBuilder()
+        val curr = Stack<Char>()
+        (s.lastIndex downTo 0).forEach { i ->
+            val c = s[i]
+            if (c in '0'..'z') curr.push(c)
+            else if (curr.isNotEmpty()) {
+                if (res.length > 0) res.append(' ')
+                while (curr.isNotEmpty()) res.append(curr.pop())
+            }
+        }
+        if (curr.isNotEmpty() && res.length > 0) res.append(' ')
+        while (curr.isNotEmpty()) res.append(curr.pop())
+        return res.toString()
+    }
+```
+Complexity: O(N)
+Memory: O(N) - there is no O(1) solution for string in JVM
+
 # 12.11.2022
 [https://leetcode.com/problems/find-median-from-data-stream/](https://leetcode.com/problems/find-median-from-data-stream/) hard
 
