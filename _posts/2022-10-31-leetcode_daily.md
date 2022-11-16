@@ -6,6 +6,32 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 17.11.2022
+[https://leetcode.com/problems/guess-number-higher-or-lower/](https://leetcode.com/problems/guess-number-higher-or-lower/) easy
+
+```kotlin
+    override fun guessNumber(n:Int):Int {
+       var lo = 1
+       var hi = n
+       while(lo <= hi) {
+           val pick = lo + (hi - lo)/2
+           val answer = guess(pick)
+           if (answer == 0) return pick
+           if (answer == -1) hi = pick - 1
+           else lo = pick + 1
+       }
+       return lo
+    }
+```
+This is a classic binary search algorithm. 
+The best way of writing it is:
+* use safe mid calculation (lo + (hi - lo)/2)
+* use lo <= hi instead of lo < hi and mid+1/mid-1 instead of mid
+  
+Complexity: O(log(N))
+Memory: O(1)
+
+
 # 16.11.2022
 [https://leetcode.com/problems/count-complete-tree-nodes/](https://leetcode.com/problems/count-complete-tree-nodes/) medium
 ```
