@@ -6,6 +6,24 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 19.11.2022
+[https://leetcode.com/problems/ugly-number/](https://leetcode.com/problems/ugly-number/) easy
+
+```kotlin
+    fun isUgly(n: Int): Boolean {
+        if (n <= 0) return false
+        var x = n
+        while(x%2==0) x = x/2
+        while(x%3==0) x = x/3
+        while(x%5==0) x = x/5
+        return x == 1
+    }
+```
+There is also a clever math solution, but I don't understand it yet.
+
+Complexity: O(log(n))
+Memory: O(1)
+
 # 18.11.2022
 [https://leetcode.com/problems/rectangle-area/](https://leetcode.com/problems/rectangle-area/) middle
 
