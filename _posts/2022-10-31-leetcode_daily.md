@@ -7,6 +7,58 @@ title: Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
 # 20.11.2022
+[https://leetcode.com/problems/basic-calculator/](https://leetcode.com/problems/basic-calculator/) hard
+
+```kotlin
+    fun calculate(s: String): Int {
+        var i = 0
+        var sign = 1
+        var eval = 0
+        while (i <= s.lastIndex) {
+            val chr = s[i]
+            if (chr == '(') {
+                //find the end
+                var countOpen = 0
+                for (j in i..s.lastIndex) {
+                    if (s[j] == '(') countOpen++
+                    if (s[j] == ')') countOpen--
+                    if (countOpen == 0) {
+                        //evaluate substring
+                        eval += sign * calculate(s.substring(i+1, j)) // [a b)
+                        sign = 1
+                        i = j
+                        break
+                    }
+                }
+            } else if (chr == '+') {
+                sign = 1
+            } else if (chr == '-') {
+                sign = -1
+            } else if (chr == ' ') {
+                //nothing
+            } else {
+                var num = (s[i] - '0').toInt()
+                for (j in (i+1)..s.lastIndex) {
+                    if (s[j].isDigit()) {
+                        num = num * 10 + (s[j] - '0').toInt()
+                        i = j
+                    } else  break
+                }
+                eval += sign * num
+                sign = 1
+            }
+            i++
+        }
+        return eval
+    }
+```
+This is a classic calculator problem, nothing special.
+* be careful with the indexes
+
+Complexity: O(N)
+Memory: O(N), because of the recursion, worst case is all the input is brackets
+
+# 19.11.2022
 [https://leetcode.com/problems/erect-the-fence/](https://leetcode.com/problems/erect-the-fence/) hard
 
 ```kotlin
@@ -38,7 +90,7 @@ This is an implementation of the [Andrew's monotonic chain](https://en.wikibooks
 Complexity: O(Nlog(N))
 Memory: O(N)
 
-# 19.11.2022
+# 18.11.2022
 [https://leetcode.com/problems/ugly-number/](https://leetcode.com/problems/ugly-number/) easy
 
 ```kotlin
@@ -56,7 +108,7 @@ There is also a clever math solution, but I don't understand it yet.
 Complexity: O(log(n))
 Memory: O(1)
 
-# 18.11.2022
+# 17.11.2022
 [https://leetcode.com/problems/rectangle-area/](https://leetcode.com/problems/rectangle-area/) middle
 
 ```kotlin
@@ -88,7 +140,7 @@ must be inside both rectangles. Also, intersection rectangle formed from middle 
 Complexity: O(1)
 Memory: O(1)
 
-# 17.11.2022
+# 16.11.2022
 [https://leetcode.com/problems/guess-number-higher-or-lower/](https://leetcode.com/problems/guess-number-higher-or-lower/) easy
 
 ```kotlin
@@ -114,7 +166,7 @@ Complexity: O(log(N))
 Memory: O(1)
 
 
-# 16.11.2022
+# 15.11.2022
 [https://leetcode.com/problems/count-complete-tree-nodes/](https://leetcode.com/problems/count-complete-tree-nodes/) medium
 ```
        x
@@ -155,7 +207,7 @@ Memory: O(1)
 Complexity: O(log^2(N))
 Memory: O(logN)
 
-# 15.11.2022
+# 14.11.2022
 [https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) medium
 
 From observing the problem, we can see, that the task is in fact is to find an isolated islands:
@@ -205,7 +257,7 @@ From observing the problem, we can see, that the task is in fact is to find an i
 Complexity: O(N)
 Memory: O(N)
 
-# 14.11.2022
+# 13.11.2022
 [https://leetcode.com/problems/reverse-words-in-a-string/](https://leetcode.com/problems/reverse-words-in-a-string/) medium
 
 A simple trick: reverse all the string, then reverse each word.
