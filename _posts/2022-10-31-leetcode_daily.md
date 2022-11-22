@@ -6,6 +6,34 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 22.11.2022
+[https://leetcode.com/problems/perfect-squares/](https://leetcode.com/problems/perfect-squares/) medium
+
+```kotlin
+    val cache = mutableMapOf<Int, Int>()
+    fun numSquares(n: Int): Int {
+        if (n < 0) return -1
+        if (n == 0) return 0
+        if (cache[n] != null) return cache[n]!!
+        var min = Int.MAX_VALUE
+        for (x in Math.sqrt(n.toDouble()).toInt() downTo 1) {
+            val res = numSquares(n - x*x)
+            if (res != -1) {
+                min = minOf(min, 1 + res)
+            }
+        }
+        if (min == Int.MAX_VALUE) min = -1
+        cache[n] = min
+        return min
+    }
+```
+
+The problem gives stable answers for any argument n. 
+So, we can use memoization technique and search from the biggest square to the smallest one.
+
+Complexity: O(Nsqrt(N))
+Memory: O(N)
+
 # 21.11.2022
 [https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) medium
 
