@@ -5,6 +5,37 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 24.11.2022
+[79. Word Search](https://leetcode.com/problems/word-search/) medium
+
+```kotlin
+    fun exist(board: Array<CharArray>, word: String): Boolean {
+        fun dfs(y: Int, x: Int, pos: Int): Boolean {
+            if (pos == word.length) return true
+            if (y < 0 || x < 0 || y == board.size || x == board[0].size) return false
+            val c = board[y][x]
+            if (c != word[pos]) return false
+            board[y][x] = '.'
+            val res = dfs(y-1, x, pos+1)
+                   || dfs(y+1, x, pos+1)
+                   || dfs(y, x-1, pos+1)
+                   || dfs(y, x+1, pos+1)
+            board[y][x] = c
+            return res
+        }
+        for (y in 0..board.lastIndex) {
+            for (x in 0..board[0].lastIndex) {
+                if (dfs(y, x, 0)) return true
+            }
+        }
+        return false
+    }
+```
+
+We can brute force this problem. Backtracking help to preserve memory.
+
+Complexity: O(M*N*W)
+Memory: O(W)
 
 # 23.11.2022
 [https://leetcode.com/problems/valid-sudoku/](https://leetcode.com/problems/valid-sudoku/) medium
