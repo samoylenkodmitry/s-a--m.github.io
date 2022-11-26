@@ -8,34 +8,40 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 # 26.11.2022
 [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) hard
 
+[https://t.me/leetcode_daily_unstoppable/32](https://t.me/leetcode_daily_unstoppable/32)
+
 ```kotlin
     fun jobScheduling(startTime: IntArray, endTime: IntArray, profit: IntArray): Int {
-	val n = startTime.size
-	val inds = Array<Int>(n) { it }
-	inds.sortWith (Comparator<Int> { a, b ->
-		if (startTime[a] == startTime[b])
-			endTime[a] - endTime[b]
-		else
-			startTime[a] - startTime[b]
-	})
-	val maxProfit = IntArray(n) { 0 }
-	maxProfit[n-1] = profit[inds[n-1]]
-	for (i in n-2 downTo 0) {
-		val ind = inds[i]
-		val start = startTime[ind]
-		val end = endTime[ind]
-		val prof = profit[ind]
-
-		var j = i+1
-		while (j < n) {
-			if (end <= startTime[inds[j]]) break
-			j++
-		}
-		val nonOverlapProfit = prof + (if (j < n) maxProfit[j] else 0)
-		maxProfit[i] = maxOf(nonOverlapProfit, maxProfit[i+1])
-	}
-	return maxProfit[0]
-}
+        val n = startTime.size
+        val inds = Array<Int>(n) { it }
+        inds.sortWith (Comparator<Int> { a, b -> 
+            if (startTime[a] == startTime[b])
+                endTime[a] - endTime[b]
+            else
+                startTime[a] - startTime[b]
+        })
+        val maxProfit = IntArray(n) { 0 }
+        maxProfit[n-1] = profit[inds[n-1]]
+        for (i in n-2 downTo 0) {
+            val ind = inds[i]
+            val start = startTime[ind]
+            val end = endTime[ind]
+            val prof = profit[ind]
+            
+            var lo = l + 1
+            var hi = n - 1
+            var nonOverlapProfit = 0
+            while (lo <= hi) {
+                val mid = lo + (hi - lo) / 2
+                if (end <= startTime[inds[mid]]) {
+                    nonOverlapProfit = maxOf(nonOverlapProfit, maxProfit[mid])
+                    hi = mid - 1
+                } else lo = mid + 1
+            }
+            maxProfit[i] = maxOf(prof + nonOverlapProfit, maxProfit[i+1])
+        }
+        return maxProfit[0]
+    }
 ```
 
 Use the hints from the description.
@@ -44,6 +50,7 @@ Dynamic programming equation: from last job to the current, result is max of nex
 ```
 f(i) = max(f(i+1), profit[i] + f(j)), where j is the first non-overlapping job after i.
 ```
+Also, instead of linear search for non overlapping job, use binary search.
 
 O(NlogN) time, O(N) space
 
