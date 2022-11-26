@@ -24,7 +24,6 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
         maxProfit[n-1] = profit[inds[n-1]]
         for (i in n-2 downTo 0) {
             val ind = inds[i]
-            val start = startTime[ind]
             val end = endTime[ind]
             val prof = profit[ind]
             
