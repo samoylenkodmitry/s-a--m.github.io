@@ -32,6 +32,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 dp[i][d] is the number of subsequences in range [0..i] with difference = d
 ```kotlin
+array: "1 2 3 1 2 3"
 For items  1  2  curr = 2:
 diff = 1,  dp = 1
 For items  1  2  3  curr = 3:
@@ -50,7 +51,7 @@ diff = 2,  dp = 2
 diff = 1,  dp = 5
 diff = 0,  dp = 1
 ```
-and finally we need to subtract all the sequences of length 2 and 1,
+and finally, we need to subtract all the sequences of length 2 and 1,
 count of them is (n)*(n-1)/2
 
 O(N^2) time, O(N^2) space
