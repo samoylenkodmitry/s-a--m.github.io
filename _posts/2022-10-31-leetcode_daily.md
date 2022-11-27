@@ -5,6 +5,38 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 27.11.2022
+[https://leetcode.com/problems/arithmetic-slices-ii-subsequence/](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/) hard
+
+[https://t.me/leetcode_daily_unstoppable/33](https://t.me/leetcode_daily_unstoppable/33)
+
+```kotlin
+    fun numberOfArithmeticSlices(nums: IntArray): Int {
+        // 0 1 2 3 4 5 
+        // 1 2 3 1 2 3                diff = 1
+        //   ^     ^ *                dp[5][diff] = 
+        //   |     |  \__ curr        1 + dp[1][diff] +
+        //  prev   |                  1 + dp[4][diff]
+        //        prev
+        // 
+        val dp = Array(nums.size) { mutableMapOf<Long, Long> () }
+        var total = 0L
+        for (curr in 0..nums.lastIndex) {
+            for (prev in 0 until curr) {
+                val diff = nums[curr].toLong() - nums[prev].toLong()
+                val soFar = dp[prev][diff]?:0L
+                total += soFar
+                dp[curr][diff] = 1 + (dp[curr][diff]?:0L) + soFar
+            }
+        }
+        return total.toInt()
+    }
+```
+
+dp[i][d] is the number of subsequences in range [0..i] with difference = d
+
+O(N^2) time, O(N^2) space
+
 # 26.11.2022
 [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) hard
 
