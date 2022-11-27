@@ -20,20 +20,38 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
         //        prev
         // 
         val dp = Array(nums.size) { mutableMapOf<Long, Long> () }
-        var total = 0L
         for (curr in 0..nums.lastIndex) {
             for (prev in 0 until curr) {
                 val diff = nums[curr].toLong() - nums[prev].toLong()
-                val soFar = dp[prev][diff]?:0L
-                total += soFar
-                dp[curr][diff] = 1 + (dp[curr][diff]?:0L) + soFar
+                dp[curr][diff] = 1 + (dp[curr][diff]?:0L) + (dp[prev][diff]?:0L)
             }
         }
-        return total.toInt()
+        return dp.map { it.values.sum()!! }.sum().toInt() - (nums.size)*(nums.size-1)/2
     }
 ```
 
 dp[i][d] is the number of subsequences in range [0..i] with difference = d
+```kotlin
+For items  1  2  curr = 2:
+diff = 1,  dp = 1
+For items  1  2  3  curr = 3:
+diff = 2,  dp = 1
+diff = 1,  dp = 2
+For items  1  2  3  1  curr = 1:
+diff = 0,  dp = 1
+diff = -1,  dp = 1
+diff = -2,  dp = 1
+For items  1  2  3  1  2  curr = 2:
+diff = 1,  dp = 2
+diff = 0,  dp = 1
+diff = -1,  dp = 1
+For items  1  2  3  1  2  3  curr = 3:
+diff = 2,  dp = 2
+diff = 1,  dp = 5
+diff = 0,  dp = 1
+```
+and finally we need to subtract all the sequences of length 2 and 1,
+count of them is (n)*(n-1)/2
 
 O(N^2) time, O(N^2) space
 
