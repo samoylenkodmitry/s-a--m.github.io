@@ -5,6 +5,28 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 1.12.2022
+[1704. Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) easy
+
+[https://t.me/leetcode_daily_unstoppable/38](https://t.me/leetcode_daily_unstoppable/38)
+
+```kotlin
+    fun halvesAreAlike(s: String): Boolean {
+        val vowels = setOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
+        var c1 = 0
+        var c2 = 0
+        s.forEachIndexed { i, c -> 
+            if (c in vowels) {
+                if (i < s.length / 2) c1++ else c2++
+            }
+        }
+        return c1 == c2
+    }
+```
+Just do what is asked.
+
+O(N) time, O(1) space
+
 # 30.11.2022
 [1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) easy
 
