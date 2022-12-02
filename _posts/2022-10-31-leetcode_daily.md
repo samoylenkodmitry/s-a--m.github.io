@@ -5,6 +5,23 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 2.12.2022
+[https://leetcode.com/problems/determine-if-two-strings-are-close/](https://leetcode.com/problems/determine-if-two-strings-are-close/) medium
+
+[https://t.me/leetcode_daily_unstoppable/39](https://t.me/leetcode_daily_unstoppable/39)
+
+```kotlin
+    // cabbba -> c aa bbb -> 1 2 3 
+    // a bb ccc -> 1 2 3
+    // uau
+    // ssx
+    fun closeStrings(word1: String, word2: String, 
+         f: (String) -> List<Int> = { it.groupBy { it }.values.map { it.size }.sorted() }
+    ): Boolean = f(word1) == f(word2) && word1.toSet() == word2.toSet()
+```
+That is a simple task, you just need to know what exactly you asked for.
+Space: O(n), Time: O(n)
+
 # 1.12.2022
 [1704. Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) easy
 
