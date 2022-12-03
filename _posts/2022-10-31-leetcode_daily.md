@@ -5,6 +5,24 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 3.12.2022
+[451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) medium
+
+[https://t.me/leetcode_daily_unstoppable/40](https://t.me/leetcode_daily_unstoppable/40)
+
+```kotlin
+    fun frequencySort(s: String): String =
+        s.groupBy { it }
+        .values
+        .map { it to it.size }
+        .sortedBy { -it.second }
+        .map { it.first }
+        .flatten()
+        .joinToString("")
+```
+Very simple task, can be written in a functional style.
+Space: O(n), Time: O(n)
+
 # 2.12.2022
 [https://leetcode.com/problems/determine-if-two-strings-are-close/](https://leetcode.com/problems/determine-if-two-strings-are-close/) medium
 
