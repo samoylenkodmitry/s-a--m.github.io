@@ -5,6 +5,38 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 4.12.2022
+[2256. Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/) medium
+
+[https://t.me/leetcode_daily_unstoppable/41](https://t.me/leetcode_daily_unstoppable/41)
+
+```kotlin
+    fun minimumAverageDifference(nums: IntArray): Int {
+        var sum = 0L
+        nums.forEach { sum += it.toLong() }
+        var leftSum = 0L
+        var min = Long.MAX_VALUE
+        var minInd = 0
+        for (i in 0..nums.lastIndex) {
+            val leftCount = (i+1).toLong()
+            leftSum += nums[i].toLong()
+            val front = leftSum/leftCount
+            val rightCount = nums.size.toLong() - leftCount
+            val rightSum = sum - leftSum
+            val back = if (rightCount == 0L) 0L else rightSum/rightCount
+            val diff = Math.abs(front - back)
+            if (diff < min) {
+                min = diff
+                minInd = i
+            }
+        }
+        return minInd
+    }
+```
+* be careful with integer overflows
+  
+Space: O(1), Time: O(n)
+
 # 3.12.2022
 [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) medium
 
