@@ -5,6 +5,19 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 5.12.2022
+[876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) easy
+
+[https://t.me/leetcode_daily_unstoppable/42](https://t.me/leetcode_daily_unstoppable/42)
+
+```kotlin
+  fun middleNode(head: ListNode?, fast: ListNode? = head): ListNode? =
+        if (fast?.next == null) head else middleNode(head?.next, fast?.next?.next)
+```
+* one-liner, but in the interview (or production) I would prefer to write a loop
+
+Space: O(n), Time: O(n)
+
 # 4.12.2022
 [2256. Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/) medium
 
