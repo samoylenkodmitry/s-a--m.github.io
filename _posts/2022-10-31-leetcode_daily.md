@@ -32,6 +32,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 Space: O(1), Time: O(n)
 
+
 # 5.12.2022
 [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) easy
 
@@ -73,7 +74,17 @@ Space: O(n), Time: O(n)
         return minInd
     }
 ```
-* be careful with integer overflows
+### Intuition
+
+Two pointers, one for even, one for odd indexes.
+### Approach
+
+To avoid mistakes you need to be verbose, and don't skip operations:
+* store evenHead in a separate variable
+* don't switch links before both pointers jumped
+* don't make odd pointer null
+* try to run for simple input `1->2->null` by yourself
+
   
 Space: O(1), Time: O(n)
 
