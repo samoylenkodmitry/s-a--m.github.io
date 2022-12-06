@@ -5,6 +5,33 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 6.12.2022
+[328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/43](https://t.me/leetcode_daily_unstoppable/43)
+
+```kotlin
+       // 1 2
+    fun oddEvenList(head: ListNode?): ListNode? {
+       var odd = head //1
+       val evenHead = head?.next
+       var even = head?.next //2
+       while(even!=null) { //2
+           val oddNext = odd?.next?.next //null
+           val evenNext = even?.next?.next //null
+           odd?.next = oddNext // 1->null
+           even?.next = evenNext //2->null
+           if (oddNext != null) odd = oddNext //
+           even = evenNext // null
+       }
+       odd?.next = evenHead // 1->2
+       return head //1->2->null
+    }
+```
+* be careful and store evenHead in a separate variable
+
+Space: O(1), Time: O(n)
+
 # 5.12.2022
 [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) easy
 
