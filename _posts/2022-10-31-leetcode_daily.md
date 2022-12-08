@@ -5,6 +5,29 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 8.12.2022
+[872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/solutions/) easy
+
+[https://t.me/leetcode_daily_unstoppable/45](https://t.me/leetcode_daily_unstoppable/45)
+
+```kotlin
+    fun leafSimilar(root1: TreeNode?, root2: TreeNode?): Boolean {
+        fun dfs(root: TreeNode?): List<Int> {
+            return when {
+                root == null -> listOf()
+                root.left == null && root.right == null -> listOf(root.`val`)
+                else -> dfs(root.left) + dfs(root.right)
+            }
+        }
+        
+        return dfs(root1) == dfs(root2)
+    }
+```
+There is only 200 items, so we can concatenate lists.
+One optimization would be to collect only first tree and just compare it to the second tree while doing the inorder traverse.
+
+Space: O(N), Time: O(N)
+
 # 7.12.2022
 [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/) easy
 
