@@ -5,6 +5,40 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 10.12.2022
+[1339. Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/47](https://t.me/leetcode_daily_unstoppable/47)
+
+[blog post](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/solutions/2896607/kotlin-two-dfs/)
+
+```kotlin
+class Solution {
+    fun maxProduct(root: TreeNode?): Int {
+        fun sumDfs(root: TreeNode?): Long {
+            return if (root == null) 0L
+            else with(root) { `val`.toLong() + sumDfs(left) + sumDfs(right) }
+        }
+        val total = sumDfs(root)
+        fun dfs(root: TreeNode?) : Pair<Long, Long> {
+            if (root == null) return Pair(0,0)
+            val left = dfs(root.left)
+            val right = dfs(root.right)
+            val sum = left.first + root.`val`.toLong() + right.first
+            val productLeft = left.first * (total - left.first) 
+            val productRight = right.first * (total - right.first)
+            val prevProductMax = maxOf(right.second, left.second)
+            return sum to maxOf(productLeft, productRight, prevProductMax)
+        }
+        return (dfs(root).second % 1_000_000_007L).toInt()
+    }
+}
+```
+Just iterate over all items and compute all products.
+We need to compute total sum before making the main traversal.
+
+Space: O(logN), Time: O(N)
+
 # 9.12.2022
 [1026. Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/) medium
 
