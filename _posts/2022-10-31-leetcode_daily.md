@@ -5,6 +5,29 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 12.12.2022
+[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) easy
+
+[https://t.me/leetcode_daily_unstoppable/49](https://t.me/leetcode_daily_unstoppable/49)
+
+[blog post](https://leetcode.com/problems/climbing-stairs/solutions/2904774/kotlin-dfs-memo/)
+
+```kotlin 
+    val cache = mutableMapOf<Int, Int>()
+    fun climbStairs(n: Int): Int = when {
+        n < 1  -> 0
+        n == 1 -> 1
+        n == 2 -> 2
+        else -> cache.getOrPut(n) {
+            climbStairs(n-1) + climbStairs(n-2)
+        }
+    }
+```
+You can observe that result is only depend on input n. And also that result(n) = result(n-1) + result(n-2).
+Just use memoization for storing already solved inputs.
+
+Space: O(N), Time: O(N)
+
 # 11.12.2022
 [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) hard
 
@@ -13,7 +36,6 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/binary-tree-maximum-path-sum/solutions/2900498/kotlin-very-bad-problem-definition/)
 
 ```kotlin 
-class Solution {
     fun maxPathSum(root: TreeNode?): Int {
         fun dfs(root: TreeNode): Pair<Int, Int> {
             val lt = root.left
@@ -41,7 +63,6 @@ class Solution {
         }
         return if (root == null) 0 else dfs(root).first
     }
-}
 ```
 
 Space: O(logN), Time: O(N)
@@ -54,7 +75,6 @@ Space: O(logN), Time: O(N)
 [blog post](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/solutions/2896607/kotlin-two-dfs/)
 
 ```kotlin
-class Solution {
     fun maxProduct(root: TreeNode?): Int {
         fun sumDfs(root: TreeNode?): Long {
             return if (root == null) 0L
@@ -73,7 +93,6 @@ class Solution {
         }
         return (dfs(root).second % 1_000_000_007L).toInt()
     }
-}
 ```
 Just iterate over all items and compute all products.
 We need to compute total sum before making the main traversal.
@@ -88,7 +107,6 @@ Space: O(logN), Time: O(N)
 [blog post](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/solutions/2894948/kotlin-dfs/)
 
 ```kotlin
-class Solution {
     fun maxAncestorDiff(root: TreeNode?): Int {
         root?: return 0
 
@@ -104,7 +122,6 @@ class Solution {
         
         return dfs(root)
     }
-}
 ```
 Based on math we can assume, that max difference is one of the two: (curr - max so far) or (curr - min so far).
 Like, for example, let our curr value be `3`, and from all visited we have min `0` and max `7`.
