@@ -5,6 +5,34 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 13.12.2022
+[931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/50](https://t.me/leetcode_daily_unstoppable/50)
+
+[blog post](https://leetcode.com/problems/minimum-falling-path-sum/solutions/2908108/kotlin-running-sum/)
+
+```kotlin 
+    fun minFallingPathSum(matrix: Array<IntArray>): Int {
+       for (y in matrix.lastIndex-1 downTo 0) {
+           val currRow = matrix[y]
+           val nextRow = matrix[y+1]
+           for (x in 0..matrix[0].lastIndex) {
+               val left = if (x > 0) nextRow[x-1] else Int.MAX_VALUE
+               val bottom = nextRow[x]
+               val right = if (x < matrix[0].lastIndex) nextRow[x+1] else Int.MAX_VALUE
+               val minSum = currRow[x] + minOf(left, bottom, right)
+               currRow[x] = minSum
+           }
+       } 
+       return matrix[0].min()!!
+    }
+```
+There is only three ways from any cell to it's siblings. We can compute all three paths sums for all cells in a row so far. And then choose the smallest.
+Iterate over rows and compute prefix sums of current + minOf(left min sum, bottom min sum, right min sum)
+
+Space: O(N), Time: O(N^2)
+
 # 12.12.2022
 [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) easy
 
