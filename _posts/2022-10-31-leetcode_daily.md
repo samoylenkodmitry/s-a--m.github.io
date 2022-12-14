@@ -5,6 +5,34 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+
+# 14.12.2022
+[198. House Robber](https://leetcode.com/problems/house-robber/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/51](https://t.me/leetcode_daily_unstoppable/51)
+
+[blog post](https://leetcode.com/problems/house-robber/solutions/2911816/kotlin-dfs-memo/)
+
+```kotlin 
+    fun rob(nums: IntArray): Int {
+        val cache = mutableMapOf<Int, Int>()
+        fun dfs(pos: Int): Int {
+            if (pos > nums.lastIndex) return 0
+            return cache.getOrPut(pos) {
+                maxOf(nums[pos] + dfs(pos+2), dfs(pos+1))
+            }
+        } 
+        return dfs(0)
+    }
+```
+
+Exploring each house one by one we can make a decision to rob or not to rob.
+The result is only depends on our current position (and all houses that are remaining to rob) and decision, so we can memoize it based on position.
+
+We can use memoization or walk houses bottom up.
+
+Space: O(N), Time: O(N)
+
 # 13.12.2022
 [931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) medium
 
