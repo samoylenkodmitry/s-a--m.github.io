@@ -6,6 +6,33 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 17.12.2022
+[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/54](https://t.me/leetcode_daily_unstoppable/54)
+
+[blog post](https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/2922482/kotlin-stack/)
+
+```kotlin 
+    fun evalRPN(tokens: Array<String>): Int = with(Stack<Int>()) {
+        tokens.forEach {
+            when(it) {
+                "+" -> push(pop() + pop())
+                "-" -> push(-pop() + pop())
+                "*" -> push(pop() * pop())
+                "/" -> with(pop()) { push(pop()/this) }
+                else -> push(it.toInt())
+            }
+        }
+        pop()
+    }
+```
+
+Reverse polish notations made explicitly for calculation using stack. Just execute every operation immidiately using last two numbers in the stack and push the result.
+* be aware of the order of the operands
+
+Space: O(N), Time: O(N)
+
 # 16.12.2022
 [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) easy
 
