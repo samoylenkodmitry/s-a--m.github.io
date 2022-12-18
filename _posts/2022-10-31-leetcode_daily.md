@@ -6,6 +6,35 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 18.12.2022
+[739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/55](https://t.me/leetcode_daily_unstoppable/55)
+
+[blog post](https://leetcode.com/problems/daily-temperatures/solutions/2924323/kotlin-increasing-stack/)
+
+```kotlin 
+    fun dailyTemperatures(temperatures: IntArray): IntArray {
+       val stack = Stack<Int>() 
+       val res = IntArray(temperatures.size) { 0 }
+       for (i in temperatures.lastIndex downTo 0) {
+           while(stack.isNotEmpty() && temperatures[stack.peek()] <= temperatures[i]) stack.pop()
+           if (stack.isNotEmpty()) {
+               res[i] = stack.peek() - i
+           }
+           stack.push(i)
+       }
+       return res
+    }
+```
+
+Intuitively, we want to go from the end of the array to the start and keep the maximum value. But, that doesn't work, because we must also store smaller numbers, as they are closer in distance.
+For example, `4 3 5 6`, when we observe `4` we must compare it to `5`, not to `6`. So, we store not just max, but increasing max: `3 5 6`, and throw away all numbers smaller than current, `3 < 4` - pop().
+
+We will iterate in reverse order, storing indexes in increasing by temperatures stack.
+
+Space: O(N), Time: O(N)
+
 # 17.12.2022
 [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) medium
 
@@ -28,7 +57,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
     }
 ```
 
-Reverse polish notations made explicitly for calculation using stack. Just execute every operation immidiately using last two numbers in the stack and push the result.
+Reverse polish notations made explicitly for calculation using stack. Just execute every operation immediately using last two numbers in the stack and push the result.
 * be aware of the order of the operands
 
 Space: O(N), Time: O(N)
