@@ -6,6 +6,32 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 20.12.2022
+[841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/58](https://t.me/leetcode_daily_unstoppable/58)
+
+[blog post](https://leetcode.com/problems/keys-and-rooms/solutions/2932740/kotlin-dfs/)
+
+```kotlin 
+    fun canVisitAllRooms(rooms: List<List<Int>>): Boolean {
+       val visited = hashSetOf(0)
+       with(ArrayDeque<Int>()) {
+           add(0)
+           while(isNotEmpty()) {
+               rooms[poll()].forEach {
+                   if (visited.add(it)) add(it)
+               }
+           }
+       }
+       return visited.size == rooms.size
+    }
+```
+We need to visit each room, and we have positions of the other rooms and a start position. This is a DFS problem.
+Keep all visited rooms numbers in a hash set and check the final size. Other solution is to use boolean array and a counter of the visited rooms.
+
+Space: O(N) - for queue and visited set, Time: O(N) - visit all the rooms once
+
 # 19.12.2022
 [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/) easy
 
@@ -43,7 +69,6 @@ Make node to nodes map, keep visited set and use queue for BFS.
 * also path can't be longer than n elements
 
 Space: O(N), Time: O(N)
-
 
 # 18.12.2022
 [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) medium
