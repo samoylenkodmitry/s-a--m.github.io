@@ -6,6 +6,54 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 22.12.2022
+[834. Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/) hard
+
+[https://t.me/leetcode_daily_unstoppable/60](https://t.me/leetcode_daily_unstoppable/60)
+
+[blog post](https://leetcode.com/problems/sum-of-distances-in-tree/solutions/1443979/kotlin-java-2-dfs-diagramm-to-invent-the-change-root-equation/)
+
+```kotlin 
+    fun sumOfDistancesInTree(n: Int, edges: Array<IntArray>): IntArray {
+        val graph = mutableMapOf<Int, MutableList<Int>>()
+        edges.forEach { (from, to) -> 
+            graph.getOrPut(from, { mutableListOf() }) += to
+            graph.getOrPut(to, { mutableListOf() }) += from
+        }
+        val counts = IntArray(n) { 1 }
+        val sums = IntArray(n) { 0 }
+        fun distSum(pos: Int, visited: Int) {
+            graph[pos]?.forEach {
+                if (it != visited) {
+                    distSum(it, pos)
+                    counts[pos] += counts[it]
+                    sums[pos] += counts[it] + sums[it]
+                }
+            }
+        }
+        fun dfs(pos: Int, visited: Int) {
+            graph[pos]?.forEach {
+                if (it != visited) {
+                    sums[it] = sums[pos] - counts[it] + (n - counts[it])
+                    dfs(it, pos)
+                }
+            }
+        }
+        distSum(0, -1)
+        dfs(0, -1)
+        return sums
+    }
+```
+We can do the job for item #0, then we need to invent a formula to reuse some data when we change the node.
+
+How to mathematically prove formula for a new sum:
+![image](https://assets.leetcode.com/users/images/f7d1ffbc-7761-4cff-a219-58e1a433bd1c_1630765686.6135957.png)
+
+![image.png](https://assets.leetcode.com/users/images/b2c81eba-e532-43cc-ae6a-6aec3eed57f9_1671730095.0767915.png)
+Store count of children in a `counts` array, and sum of the distances to children in a `dist` array. In a first DFS traverse from a node 0 and fill the arrays. In a second DFS only modify `dist` based on previous computed `dist` value, using formula: `sum[curr] = sum[prev] - count[curr] + (N - count[curr])`
+
+Space: O(N), Time: O(N)
+
 # 21.12.2022
 [886. Possible Bipartition](https://leetcode.com/problems/possible-bipartition/description/) medium
 
