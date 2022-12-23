@@ -31,7 +31,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 ```
 Progress from dfs solution to memo. DFS solution - just choose what to do in this step, go next, then compare results and peek max.
 
-Space: O(N^2), Time: O(N^2)
+Space: O(N), Time: O(N)
 
 
 # 22.12.2022
