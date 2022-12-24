@@ -55,8 +55,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
     }
 ```
 
-We can walk the board horizontally and monitor free cells. On each step we can choose what figure to place. When end reached and there is no free cells consider that a successfull combination. Result depends only on the curren position and on the top-bottom cell combination.
-* just do dfs+memo
+We can walk the board horizontally and monitor free cells. On each step, we can choose what figure to place. When end reached and there are no free cells, consider that a successful combination. Result depends only on the current position and on the top-bottom cell combination.* just do dfs+memo
 * use array for a faster cache
 
 Space: O(N), Time: O(N) - we only visit each column 3 times
