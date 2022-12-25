@@ -6,6 +6,28 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 25.12.2022
+[2389. Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/description/) easy
+
+[https://t.me/leetcode_daily_unstoppable/63](https://t.me/leetcode_daily_unstoppable/63)
+
+[blog post](https://leetcode.com/problems/longest-subsequence-with-limited-sum/solutions/2948494/kotlin-sort-prefix-sum-binary-search/)
+
+```kotlin 
+    fun answerQueries(nums: IntArray, queries: IntArray): IntArray {
+       nums.sort() 
+       for (i in 1..nums.lastIndex) nums[i] += nums[i-1]
+       return IntArray(queries.size) {
+           val ind = nums.binarySearch(queries[it])
+           if (ind < 0) -ind-1 else ind+1
+       }
+    }
+```
+We can logically deduce that for maximum number of arguments we need to take as much as possible items from the smallest to the largest.
+We can sort items. Then pre-compute sums[i] = sum from [0..i]. Then use binary search target sum in sums. Also can modify nums but that's may be not necessary.
+
+Space: O(N), Time: O(NlogN)
+
 # 24.12.2022
 [790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/description/) medium
 
