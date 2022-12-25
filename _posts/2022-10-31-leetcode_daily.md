@@ -23,8 +23,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
        }
     }
 ```
-We can logically deduce that for maximum number of arguments we need to take as much as possible items from the smallest to the largest.
-We can sort items. Then pre-compute sums[i] = sum from [0..i]. Then use binary search target sum in sums. Also can modify nums but that's may be not necessary.
+We can logically deduce that for the maximum number of arguments we need to take as much as possible items from the smallest to the largest.
+We can sort items. Then pre-compute `sums[i] = sum from [0..i]`. Then use binary search target sum in sums. Also, can modify `nums` but that's may be not necessary.
 
 Space: O(N), Time: O(NlogN)
 
