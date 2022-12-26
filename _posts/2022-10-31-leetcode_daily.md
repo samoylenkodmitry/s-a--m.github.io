@@ -6,6 +6,27 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 26.12.2022
+[55. Jump Game](https://leetcode.com/problems/jump-game/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/64](https://t.me/leetcode_daily_unstoppable/64)
+
+[blog post](https://leetcode.com/problems/jump-game/solutions/2952687/kotlin-one-pass/)
+
+```kotlin 
+    fun canJump(nums: IntArray): Boolean {
+       var minInd = nums.lastIndex 
+       for (i in nums.lastIndex - 1 downTo 0) {
+           if (nums[i] + i >= minInd) minInd = i
+       }
+       return minInd == 0
+    }
+```
+For any position `i` we can reach the end if there is a `minInd` such that `nums[i] + i >= minInd` and `minInd` is a known to be reaching the end.
+We can run from the end and update `minInd` - minimum index reaching the end.
+
+Space: O(1), Time: O(N)
+
 # 25.12.2022
 [2389. Longest Subsequence With Limited Sum](https://leetcode.com/problems/longest-subsequence-with-limited-sum/description/) easy
 
