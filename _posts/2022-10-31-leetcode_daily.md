@@ -6,6 +6,32 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 30.12.2022
+[797. All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/68](https://t.me/leetcode_daily_unstoppable/68)
+
+[blog post](https://leetcode.com/problems/all-paths-from-source-to-target/solutions/1600383/kotlin-dfs-backtracking-java-iterative-dfs-stack/)
+
+```kotlin 
+    fun allPathsSourceTarget(graph: Array<IntArray>): List<List<Int>> {
+        val res = mutableListOf<List<Int>>()
+        val currPath = mutableListOf<Int>()
+        fun dfs(curr: Int) {
+            currPath += curr
+            if (curr == graph.lastIndex) res += currPath.toList()
+            graph[curr].forEach { dfs(it) }
+            currPath.removeAt(currPath.lastIndex)
+        }
+        dfs(0)
+        return res
+    }
+```
+We must find all the paths, so there is no shortcuts to the visiting all of them.
+One technique is backtracking - reuse existing visited list of nodes.
+
+Space: O(VE), Time: O(VE)
+
 # 29.12.2022
 [1834. Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/description/) medium
 
@@ -52,7 +78,6 @@ but running time and order does. When we take the task from the heap, we increas
 * don't forget to increase time to the nearest task if all of them unavailable
 
 Space: O(n), Time: O(nlogn)
-
 
 # 28.12.2022
 [1962. Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/description/) medium
