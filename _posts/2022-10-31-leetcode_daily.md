@@ -6,6 +6,40 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 1.01.2022
+[290. Word Pattern](https://leetcode.com/problems/word-pattern/description/) easy
+
+[https://t.me/leetcode_daily_unstoppable/71](https://t.me/leetcode_daily_unstoppable/71)
+
+[blog post](https://leetcode.com/problems/word-pattern/solutions/2978765/kotlin-just-do/)
+
+```kotlin 
+    fun wordPattern(pattern: String, s: String): Boolean {
+        val charToWord = Array<String>(27) { "" }
+        val words = s.split(" ")
+        if (words.size != pattern.length) return false
+        words.forEachIndexed { i, w ->
+            val cInd = pattern[i].toInt() - 'a'.toInt()
+
+            if (charToWord[cInd] == "") {
+                charToWord[cInd] = w
+            } else if (charToWord[cInd] != w) return false
+        }
+        charToWord.sort()
+        for (i in 1..26) 
+            if (charToWord[i] != "" && charToWord[i] == charToWord[i-1]) 
+                return false
+        return true
+    }
+```
+
+Each word must be in 1 to 1 relation with each character in the pattern. We can check this rule.
+
+Use `string[27]` array for `char -> word` relation and also check each char have a unique word assigned.
+* don't forget to check lengths
+
+Space: O(N), Time: O(N)
+
 # 31.12.2022
 [980. Unique Paths III](https://leetcode.com/problems/unique-paths-iii/description/) hard
 
