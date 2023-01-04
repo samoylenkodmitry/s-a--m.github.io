@@ -41,7 +41,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
     }
 ```
 
-For the optimal solution, we must take as mane 3's of tasks as possible, then take 2's in any order.
+For the optimal solution, we must take as many 3's of tasks as possible, then take 2's in any order.
 First, we need to count how many tasks of each type there are. Next, we need to calculate the optimal `rounds` for the current tasks type count. There is a math solution, but ultimately we just can do DFS
 
 Space: O(N), Time: O(N), counts range is always less than N
