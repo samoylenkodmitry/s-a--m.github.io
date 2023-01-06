@@ -6,6 +6,31 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 6.01.2022
+[1833. Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/77](https://t.me/leetcode_daily_unstoppable/77)
+
+[blog post](https://leetcode.com/problems/maximum-ice-cream-bars/solutions/3007210/kotlin-greedy/)
+
+```kotlin 
+    fun maxIceCream(costs: IntArray, coins: Int): Int {
+       costs.sort() 
+       var coinsRemain = coins
+       var iceCreamCount = 0
+       for (i in 0..costs.lastIndex) {
+           coinsRemain -= costs[i]
+           if (coinsRemain < 0) break
+           iceCreamCount++
+       }
+       return iceCreamCount
+    }
+```
+The `maximum ice creams` would be if we take as many `minimum costs` as possible
+Sort the `costs` array, then greedily iterate it and buy ice creams until all the coins are spent.
+
+Space: O(1), Time: O(NlogN)
+
 # 5.01.2022
 [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/) medium
 
