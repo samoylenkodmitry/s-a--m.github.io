@@ -6,6 +6,35 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 7.01.2022
+[134. Gas Station](https://leetcode.com/problems/gas-station/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/78](https://t.me/leetcode_daily_unstoppable/78)
+
+[blog post](https://leetcode.com/problems/gas-station/solutions/3013707/kotlin-greedy/)
+
+```kotlin 
+    fun canCompleteCircuit(gas: IntArray, cost: IntArray): Int {
+        var sum = 0
+        var minSum = gas[0]
+        var ind = -1
+        for (i in 0..gas.lastIndex) {
+            sum += gas[i] - cost[i]
+            if (sum < minSum) {
+                minSum = sum
+                ind = (i+1) % gas.size
+            }
+        }
+        return if (sum < 0) -1 else ind
+    }
+```
+
+We can start after the station with the minimum `decrease` in gasoline.
+![image.png](https://assets.leetcode.com/users/images/252d5b9e-b28b-4306-95bc-b37c1afed1b9_1673095767.9064982.png)
+Calculate running gasoline volume and find the minimum of it. If the total net gasoline is negative, there is no answer.
+
+Space: O(1), Time: O(N)
+
 # 6.01.2022
 [1833. Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/description/) medium
 
@@ -29,7 +58,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 The `maximum ice creams` would be if we take as many `minimum costs` as possible
 Sort the `costs` array, then greedily iterate it and buy ice creams until all the coins are spent.
 
-Space: O(1), Time: O(NlogN)
+Space: O(1), Time: O(NlogN) (there is also O(N) solution based on count sort)
 
 # 5.01.2022
 [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/) medium
