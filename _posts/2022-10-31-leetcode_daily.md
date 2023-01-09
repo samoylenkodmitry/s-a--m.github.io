@@ -6,6 +6,65 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 9.01.2022
+[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) easy
+
+[https://t.me/leetcode_daily_unstoppable/80](https://t.me/leetcode_daily_unstoppable/80)
+
+[blog post](https://leetcode.com/problems/binary-tree-preorder-traversal/solutions/3023310/kotlin-morris-stack-recursive/)
+
+```kotlin 
+class Solution {
+    fun preorderTraversal(root: TreeNode?): List<Int> {
+        val res = mutableListOf<Int>()
+        var node = root
+        while(node != null) {
+            res.add(node.`val`)
+            if (node.left != null) {
+                if (node.right != null) {
+                    var rightmost = node.left!!
+                    while (rightmost.right != null) rightmost = rightmost.right
+                    rightmost.right = node.right
+                }
+                node = node.left
+            } else if (node.right != null) node = node.right
+            else node = null
+        }
+        return res
+    }
+    fun preorderTraversalStack(root: TreeNode?): List<Int> {
+        val res = mutableListOf<Int>()
+        var node = root
+        val rightStack = ArrayDeque<TreeNode>()
+        while(node != null) {
+            res.add(node.`val`)
+            if (node.left != null) {
+                if (node.right != null) {
+                    rightStack.addLast(node.right!!) // <-- this step can be replaced with Morris
+                    // traversal.
+                }
+                node = node.left
+            } else if (node.right != null) node = node.right
+            else if (rightStack.isNotEmpty()) node = rightStack.removeLast()
+            else node = null
+        }
+        return res
+    }
+    fun preorderTraversalRec(root: TreeNode?): List<Int> = mutableListOf<Int>().apply {
+        root?.let {
+            add(it.`val`)
+            addAll(preorderTraversal(it.left))
+            addAll(preorderTraversal(it.right))
+        }
+    }
+        
+}
+```
+Recursive solution is a trivial. For stack solution, we need to remember each `right` node. Morris' solution use the tree modification to save each `rigth` node in the rightmost end of the left subtree.
+Let's implement them all.
+
+Space: O(logN) for stack, O(1) for Morris', Time: O(n)
+
 # 8.01.2022
 [149. Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) hard
 
