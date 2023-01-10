@@ -6,6 +6,22 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 10.01.2022
+[100. Same Tree](https://leetcode.com/problems/same-tree/description/) easy
+
+[https://t.me/leetcode_daily_unstoppable/81](https://t.me/leetcode_daily_unstoppable/81)
+
+[blog post](https://leetcode.com/problems/same-tree/solutions/3028835/kotlin-recursive/)
+
+```kotlin 
+fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean =  p == null && q == null || 
+            p?.`val` == q?.`val` && isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
+```
+Check for the current node and repeat for the children.
+Let's write one-liner
+
+Space: O(logN) for stack, Time: O(n)
+
 # 9.01.2022
 [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) easy
 
@@ -60,7 +76,7 @@ class Solution {
         
 }
 ```
-Recursive solution is a trivial. For stack solution, we need to remember each `right` node. Morris' solution use the tree modification to save each `rigth` node in the rightmost end of the left subtree.
+Recursive solution is a trivial. For stack solution, we need to remember each `right` node. Morris' solution use the tree modification to save each `right` node in the rightmost end of the left subtree.
 Let's implement them all.
 
 Space: O(logN) for stack, O(1) for Morris', Time: O(n)
