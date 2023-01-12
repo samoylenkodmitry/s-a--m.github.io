@@ -14,31 +14,33 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/solutions/3039078/kotlin-build-graph-count-by-dfs/)
 
 ```kotlin 
-    fun countSubTrees(n: Int, edges: Array<IntArray>, labels: String): IntArray {
-        val graph = mutableMapOf<Int, MutableList<Int>>()
-        edges.forEach { (from, to) ->
-            graph.getOrPut(from, { mutableListOf() }) += to
-            graph.getOrPut(to, { mutableListOf() }) += from
-        }
-        val answer = IntArray(n) { 0 }
-        fun dfs(node: Int, visited: HashSet<Int>, counts: IntArray) {
-            val index = labels[node].toInt() - 'a'.toInt()
-            val countParents = counts[index]
-            counts[index]++
-            graph[node]?.forEach {
-                if (visited.add(it)) {
-                    dfs(it, visited, counts)
-                }
-            }
-            answer[node] = counts[index] - countParents
-        }
-        dfs(0, HashSet<Int>().apply { add(0) }, IntArray(27) { 0 })
-        return answer
-    }
+fun countSubTrees(n: Int, edges: Array<IntArray>, labels: String): IntArray {
+	val graph = mutableMapOf<Int, MutableList<Int>>()
+	edges.forEach { (from, to) ->
+		graph.getOrPut(from, { mutableListOf() }) += to
+		graph.getOrPut(to, { mutableListOf() }) += from
+	}
+	val answer = IntArray(n) { 0 }
+	fun dfs(node: Int, parent: Int, counts: IntArray) {
+		val index = labels[node].toInt() - 'a'.toInt()
+		val countParents = counts[index]
+		counts[index]++
+		graph[node]?.forEach {
+			if (it != parent) {
+				dfs(it, node, counts)
+			}
+		}
+		answer[node] = counts[index] - countParents
+	}
+	dfs(0, 0, IntArray(27) { 0 })
+	return answer
+}
 ```
 First, we need to build a graph. Next, just do DFS and count all `'a'..'z'` frequencies in the current subtree.
 
 For building a graph let's use a map, and for DFS let's use a recursion.
+* use `parent` node instead of the visited set
+* use in-place counting and subtract `count before`
 
 Space: O(N), Time: O(N)
 
