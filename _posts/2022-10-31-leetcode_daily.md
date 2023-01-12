@@ -6,6 +6,44 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 12.01.2022
+[1519. Number of Nodes in the Sub-Tree With the Same Label](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/83](https://t.me/leetcode_daily_unstoppable/83)
+
+[blog post](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/solutions/3039078/kotlin-build-graph-count-by-dfs/)
+
+```kotlin 
+    fun countSubTrees(n: Int, edges: Array<IntArray>, labels: String): IntArray {
+        val graph = mutableMapOf<Int, MutableList<Int>>()
+        edges.forEach { (from, to) ->
+            graph.getOrPut(from, { mutableListOf() }) += to
+            graph.getOrPut(to, { mutableListOf() }) += from
+        }
+        val answer = IntArray(n) { 0 }
+        fun dfs(node: Int, visited: HashSet<Int>): IntArray {
+            val currentCounts = IntArray(27) { 0 }
+            val index = labels[node].toInt() - 'a'.toInt()
+            currentCounts[index]++
+            graph[node]?.forEach {
+                if (visited.add(it)) {
+                    val counts = dfs(it, visited)
+                    for (i in 0..26) currentCounts[i] += counts[i]
+                }
+            }
+            answer[node] = currentCounts[index]
+            return currentCounts
+        }
+        dfs(0, HashSet<Int>().apply { add(0) })
+        return answer
+    }
+```
+First, we need to build a graph. Next, just do DFS and count all `'a'..'z'` frequencies in the current subtree.
+
+For building a graph let's use a map, and for DFS let's use a recursion.
+
+Space: O(N), Time: O(N)
+
 # 11.01.2022
 [1443. Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/description/) medium
 
