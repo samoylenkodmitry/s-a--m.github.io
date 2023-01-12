@@ -21,20 +21,18 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
             graph.getOrPut(to, { mutableListOf() }) += from
         }
         val answer = IntArray(n) { 0 }
-        fun dfs(node: Int, visited: HashSet<Int>): IntArray {
-            val currentCounts = IntArray(27) { 0 }
+        fun dfs(node: Int, visited: HashSet<Int>, counts: IntArray) {
             val index = labels[node].toInt() - 'a'.toInt()
-            currentCounts[index]++
+            val countParents = counts[index]
+            counts[index]++
             graph[node]?.forEach {
                 if (visited.add(it)) {
-                    val counts = dfs(it, visited)
-                    for (i in 0..26) currentCounts[i] += counts[i]
+                    dfs(it, visited, counts)
                 }
             }
-            answer[node] = currentCounts[index]
-            return currentCounts
+            answer[node] = counts[index] - countParents
         }
-        dfs(0, HashSet<Int>().apply { add(0) })
+        dfs(0, HashSet<Int>().apply { add(0) }, IntArray(27) { 0 })
         return answer
     }
 ```
