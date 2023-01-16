@@ -6,9 +6,65 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 16.01.2022
+[57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/87](https://t.me/leetcode_daily_unstoppable/87)
+
+[blog post](https://leetcode.com/problems/insert-interval/solutions/3057540/kotlin-one-pass/)
+
+```kotlin 
+    fun insert(intervals: Array<IntArray>, newInterval: IntArray): Array<IntArray> {
+        if (intervals.isEmpty()) return arrayOf(newInterval)
+        val res = mutableListOf<IntArray>()
+        var added = false
+        if (newInterval[0] <= intervals[0][0]) {
+            res += newInterval
+            added = true
+        }
+        intervals.forEach { interval -> 
+            if (res.isEmpty()) {
+                res += interval
+            } else {
+                if (!added) {
+                    val last = res.last()
+                    if (last[1] >= newInterval[0]) {
+                        last[1] = maxOf(last[1], newInterval[1])
+                        added = true
+                    } else if (interval[0] >= newInterval[0]) {
+                        res += newInterval
+                        added = true
+                    }
+                }
+                val last = res.last()
+                if (last[1] >= interval[0]) {
+                    last[1] = maxOf(last[1], interval[1])
+                } else {
+                    res += interval
+                }
+            }
+        }
+        if (!added) {
+            val last = res.last()
+            if (last[1] >= newInterval[0]) {
+                last[1] = maxOf(last[1], newInterval[1])
+            } else {
+                res += newInterval
+            }
+        }
+        return res.toTypedArray()
+    }
+```
+
+There is no magic, just be careful with corner cases.
+
+Make another list, and iterate interval, merging them and adding at the same time.
+* don't forget to add `newInterval` if it is not added after iteration.
+
+Space: O(N), Time: O(N)
 
 # 15.01.2022
-[2421. Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/) medium
+[2421. Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/) hard
 
 [https://t.me/leetcode_daily_unstoppable/86](https://t.me/leetcode_daily_unstoppable/86)
 
