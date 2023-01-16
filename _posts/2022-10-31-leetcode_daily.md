@@ -15,43 +15,25 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 ```kotlin 
     fun insert(intervals: Array<IntArray>, newInterval: IntArray): Array<IntArray> {
-        if (intervals.isEmpty()) return arrayOf(newInterval)
         val res = mutableListOf<IntArray>()
         var added = false
-        if (newInterval[0] <= intervals[0][0]) {
-            res += newInterval
-            added = true
+        fun add() {
+            if (!added) {
+                added = true
+                if (res.isNotEmpty() && res.last()[1] >= newInterval[0]) {
+                    res.last()[1] = maxOf(res.last()[1], newInterval[1])
+                } else res += newInterval
+            }
         }
         intervals.forEach { interval -> 
-            if (res.isEmpty()) {
-                res += interval
-            } else {
-                if (!added) {
-                    val last = res.last()
-                    if (last[1] >= newInterval[0]) {
-                        last[1] = maxOf(last[1], newInterval[1])
-                        added = true
-                    } else if (interval[0] >= newInterval[0]) {
-                        res += newInterval
-                        added = true
-                    }
-                }
-                val last = res.last()
-                if (last[1] >= interval[0]) {
-                    last[1] = maxOf(last[1], interval[1])
-                } else {
-                    res += interval
-                }
-            }
+            if (newInterval[0] <= interval[0]) add()
+            
+            if (res.isNotEmpty() && res.last()[1] >= interval[0]) {
+                res.last()[1] = maxOf(res.last()[1], interval[1])
+            } else  res += interval
         }
-        if (!added) {
-            val last = res.last()
-            if (last[1] >= newInterval[0]) {
-                last[1] = maxOf(last[1], newInterval[1])
-            } else {
-                res += newInterval
-            }
-        }
+        add()
+       
         return res.toTypedArray()
     }
 ```
