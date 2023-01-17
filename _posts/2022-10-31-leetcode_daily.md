@@ -35,7 +35,6 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
     }
 ```
 
-The naive greedy solution of counting zeros and ones, or using two pointers from tail to start didn't work, because the placement of 1's and 0's matter.
 We can propose the following rule: let's define `dp0[i]` is a min count of flips from `1` to `0` in the `0..i` interval. 
 Let's also define `dp1[i]` is a min count of flips from `0` to `1` in the `0..i` interval. 
 We observe that `dp0[i] = dp0[i-1] + (flip one to zero? 1 : 0)` and `dp1[i] = dp1[i-1] + (flip zero t oone? 1 : 0)`. 
