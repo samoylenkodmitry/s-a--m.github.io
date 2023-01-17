@@ -37,7 +37,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 We can propose the following rule: let's define `dp0[i]` is a min count of flips from `1` to `0` in the `0..i` interval. 
 Let's also define `dp1[i]` is a min count of flips from `0` to `1` in the `0..i` interval. 
-We observe that `dp0[i] = dp0[i-1] + (flip one to zero? 1 : 0)` and `dp1[i] = dp1[i-1] + (flip zero t oone? 1 : 0)`. 
+We observe that `dp0[i] = dp0[i-1] + (flip one to zero? 1 : 0)` and `dp1[i] = dp1[i-1] + (flip zero to one? 1 : 0)`. 
 One special case: if on the interval `0..i` one-to-zero flips count is less than zero-to-one then we prefer to flip everything to zeros, and `dp1[i]` in that case becomes `dp0[i]`.
 
 Just write down what is described above.
