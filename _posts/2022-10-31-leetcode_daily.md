@@ -6,6 +6,48 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 21.01.2022
+[93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/92](https://t.me/leetcode_daily_unstoppable/92)
+
+[blog post](https://leetcode.com/problems/restore-ip-addresses/solutions/3080471/kotlin-dfs-backtracking/)
+
+```kotlin 
+    fun restoreIpAddresses(s: String): List<String> {
+        val res = mutableSetOf<String>()
+        fun dfs(pos: Int, nums: MutableList<Int>) {
+            if (pos == s.length) {
+                if (nums.size == 4) res += nums.joinToString(".")
+                return
+            }
+            if (s[pos] == '0') {
+                nums += 0
+                dfs(pos + 1, nums)
+                nums.removeAt(nums.lastIndex)
+            } else {
+                var i = pos
+                for (i in pos..s.lastIndex) {
+                    val num = s.substring(pos, i + 1).toInt()
+                    if (num > 255) break
+                    nums += num
+                    dfs(i + 1, nums)
+                    nums.removeAt(nums.lastIndex)
+                }
+            }
+        }
+        dfs(0, mutableListOf())
+        return res.toList()
+    }
+```
+So, the size of the problem is small. We can do full DFS.
+At every step, choose either take a number or split. Add to the solution if the result is good.
+
+* use set for results
+* use backtracking to save some space
+
+Space: O(2^N), Time: O(2^N)
+
 # 20.01.2022
 [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences/description/) medium
 
