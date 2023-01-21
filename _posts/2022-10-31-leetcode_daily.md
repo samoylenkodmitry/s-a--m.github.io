@@ -15,36 +15,36 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 ```kotlin 
     fun restoreIpAddresses(s: String): List<String> {
-        val res = mutableSetOf<String>()
-        fun dfs(pos: Int, nums: MutableList<Int>) {
-            if (pos == s.length) {
-                if (nums.size == 4) res += nums.joinToString(".")
-                return
-            }
-            if (s[pos] == '0') {
-                nums += 0
-                dfs(pos + 1, nums)
-                nums.removeAt(nums.lastIndex)
-            } else {
-                var i = pos
-                for (i in pos..s.lastIndex) {
-                    val num = s.substring(pos, i + 1).toInt()
-                    if (num > 255) break
-                    nums += num
-                    dfs(i + 1, nums)
-                    nums.removeAt(nums.lastIndex)
-                }
-            }
-        }
-        dfs(0, mutableListOf())
-        return res.toList()
-    }
+	val res = mutableSetOf<String>()
+	fun dfs(pos: Int, nums: MutableList<Int>) {
+		if (pos == s.length || nums.size > 4) {
+			if (nums.size == 4) res += nums.joinToString(".")
+			return
+		}
+		var n = 0
+
+		for (i in pos..s.lastIndex) {
+			n = n*10 + s[i].toInt() - '0'.toInt()
+			if (n > 255) break
+			nums += n
+			dfs(i + 1, nums)
+			nums.removeAt(nums.lastIndex)
+			if (n == 0) break
+		}
+	}
+	dfs(0, mutableListOf())
+	return res.toList()
+}
 ```
 So, the size of the problem is small. We can do full DFS.
 At every step, choose either take a number or split. Add to the solution if the result is good.
 
 * use set for results
 * use backtracking to save some space
+
+Some optimizations: 
+* exit early when nums.size > 5, 
+* use math to build a number instead of parsing substring
 
 Space: O(2^N), Time: O(2^N)
 
