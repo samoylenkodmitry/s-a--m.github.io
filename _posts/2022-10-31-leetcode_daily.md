@@ -6,6 +6,52 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 25.01.2022
+[2359. Find Closest Node to Given Two Nodes](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/description/) medium
+
+[https://t.me/leetcode_daily_unstoppable/97](https://t.me/leetcode_daily_unstoppable/97)
+
+[blog post](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/solutions/3096815/kotlin-dfs/)
+
+```kotlin 
+    fun closestMeetingNode(edges: IntArray, node1: Int, node2: Int): Int {
+        var distances = mutableMapOf<Int, Int>()
+        var n = node1
+        var dist = 0
+        while (n != -1) {
+            if (distances.contains(n)) break
+            distances[n] = dist
+            n = edges[n]
+            dist++
+        }
+        n = node2
+        dist = 0
+        var min = Int.MAX_VALUE
+        var res = -1
+        while (n != -1) {
+            if (distances.contains(n)) {
+                val one = distances[n]!!
+                val max = maxOf(one, dist)
+                if (max < min || max == min && n < res) {
+                    min = max
+                    res = n
+                }
+            }
+            val tmp = edges[n]
+            edges[n] = -1
+            n = tmp
+            dist++
+        }
+        return res
+    }
+```
+![image.png](https://assets.leetcode.com/users/images/b855b06b-ac15-403d-ad0e-13b26850da26_1674632188.3267126.png)
+We can walk with DFS and remember all distances, then compare them and choose those with minimum of maximums.
+* we can use `visited` set, or modify an input
+* corner case: don't forget to also store starting nodes
+
+Space: O(n), Time: O(n)
+
 # 24.01.2022
 [909. Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/description/) medium
 
