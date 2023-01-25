@@ -15,7 +15,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 ```kotlin 
     fun closestMeetingNode(edges: IntArray, node1: Int, node2: Int): Int {
-        var distances = mutableMapOf<Int, Int>()
+        val distances = mutableMapOf<Int, Int>()
         var n = node1
         var dist = 0
         while (n != -1) {
@@ -45,7 +45,9 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
         return res
     }
 ```
+
 ![image.png](https://assets.leetcode.com/users/images/b855b06b-ac15-403d-ad0e-13b26850da26_1674632188.3267126.png)
+
 We can walk with DFS and remember all distances, then compare them and choose those with minimum of maximums.
 * we can use `visited` set, or modify an input
 * corner case: don't forget to also store starting nodes
