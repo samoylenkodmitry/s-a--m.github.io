@@ -5,6 +5,79 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+# 29.01.2022
+[460. LFU Cache](https://leetcode.com/problems/lfu-cache/description/) hard
+
+[blog post](https://leetcode.com/problems/lfu-cache/solutions/3112799/kotlin-treemap-linkedhashset-o-log-sqrt-n)
+
+```kotlin 
+class LFUCache(val capacity: Int) {
+    data class V(val key: Int, val value: Int, val freq: Int)
+    val mapKV = mutableMapOf<Int, V>()
+    val freqToAccessListOfK = TreeMap<Int, LinkedHashSet<V>>()
+
+    fun get(key: Int): Int {
+        val v = mapKV.remove(key)
+        if (v == null) return -1
+        increaseFreq(v, v.value)
+        return v.value
+    }
+
+    fun getAccessListForFreq(freq: Int) = freqToAccessListOfK.getOrPut(freq, { LinkedHashSet<V>() })
+
+    fun increaseFreq(v: V, value: Int) {
+        val oldFreq = v.freq
+        val newFreq = oldFreq + 1
+        val newV = V(v.key, value, newFreq)
+        mapKV[v.key] = newV
+        val accessList = getAccessListForFreq(oldFreq)
+        accessList.remove(v)
+        if (accessList.isEmpty()) freqToAccessListOfK.remove(oldFreq)
+        getAccessListForFreq(newFreq).add(newV)
+    }
+
+    fun put(key: Int, value: Int) {
+        if (capacity == 0) return
+        val oldV = mapKV[key]
+        if (oldV == null) {
+            if (mapKV.size == capacity) {
+                val lowestFreq = freqToAccessListOfK.firstKey()
+                val accessList = freqToAccessListOfK[lowestFreq]!!
+                val iterator = accessList.iterator()
+                val leastFreqV = iterator.next()
+                iterator.remove()
+                mapKV.remove(leastFreqV.key)
+                if (accessList.isEmpty()) freqToAccessListOfK.remove(lowestFreq)
+            }
+            val v = V(key, value, 1)
+            mapKV[key] = v
+            getAccessListForFreq(1).add(v)
+        } else {
+            increaseFreq(oldV, value)
+        }
+    }
+
+}
+```
+#### Telegram
+https://t.me/leetcode_daily_unstoppable/101
+#### Intuition
+Let's store access-time list in a buckets divided by access-count frequencies. We can store each bucked in a `TreeMap`, that will give us O(1) time to get the least frequent list. For the list we can use `LinkedHashSet`, that can give us O(1) operations for `remove`, `removeFirst` and `add` and will help to maintain access order.
+#### Approach
+* one thing to note, on each `increaseFreq` operation we are retrieving a random item from TreeMap, that increases time to O(log(F)), where F is a unique set of frequencies.
+* How many unique access frequencies `k` we can have if there is a total number of `N` operations? If sequence `1,2,3...k-1, k` is our unique set, then `1+2+3+...+(k-1)+k = N`. Or:
+  $$
+  1+2+3+\cdots+k=\sum_{n=1}^{k}i = k(k-1)/2 = N
+  $$
+  so,
+  $$
+  k = \sqrt{N}
+  $$
+#### Complexity
+- Time complexity:
+  $$O(\log_2(\sqrt{N}))$$
+- Space complexity:
+  $$O(\log_2(\sqrt{N}))$$
 
 # 28.01.2022
 [352. Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/description/) hard
