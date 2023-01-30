@@ -5,6 +5,38 @@ title: Daily leetcode challenge
 
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
+
+# 30.01.2022
+[1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/) easy
+
+[blog post](https://leetcode.com/problems/n-th-tribonacci-number/solutions/3116945/kotlin-code-golf/)
+
+```kotlin 
+    fun tribonacci(n: Int): Int = if (n < 2) n else {
+        var t0 = 0
+        var t1 = 1
+        var t2 = 1
+        repeat(n - 2) {
+            t2 += (t0 + t1).also { 
+                t0 = t1
+                t1 = t2
+            }
+        }
+        t2
+    }
+```
+#### Telegram
+https://t.me/leetcode_daily_unstoppable/102
+#### Intuition
+Just do what is asked.
+#### Approach
+* another way is to use dp cache
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+- Space complexity:
+  $$O(1)$$
+ 
 # 29.01.2022
 [460. LFU Cache](https://leetcode.com/problems/lfu-cache/description/) hard
 
