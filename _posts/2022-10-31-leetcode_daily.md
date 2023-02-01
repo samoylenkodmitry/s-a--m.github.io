@@ -6,7 +6,46 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
-# 31.01.2022
+# 1.02.2023
+[1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/) easy
+
+[blog post]()
+
+```kotlin 
+    fun gcdOfStrings(str1: String, str2: String): String {
+        if (str1 == "" || str2 == "") return ""
+        if (str1.length == str2.length) return if (str1 == str2) str1 else ""
+        fun gcd(a: Int, b: Int): Int {
+            return if (a == 0) b
+            else gcd(b % a, a)
+        }
+        val len = gcd(str1.length, str2.length)
+        for (i in 0..str1.lastIndex)  if (str1[i] != str1[i % len]) return ""
+        for (i in 0..str2.lastIndex)  if (str2[i] != str1[i % len]) return ""
+        return str1.substring(0, len)
+        
+    }
+```
+#### Telegram
+https://t.me/leetcode_daily_unstoppable/105
+#### Intuition
+Consider the following example: `ababab` and `abab`. 
+If we scan them linearly, we see, the common part is `abab`. 
+Now, we need to check if the last part from the first `abab_ab` is a part of the common part: `ab` vs `abab`. 
+This can be done recursively, and we come to the final consideration: `"" vs "ab"`. 
+That all procedure give us the common divisor - `ab`.
+The actual hint is in the method's name ;)
+
+#### Approach
+We can first find the length of the greatest common divisor, then just check both strings.
+
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+- Space complexity:
+  $$O(n)$$
+
+# 31.01.2023
 [1626. Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/description/) medium
 
 [blog post](https://leetcode.com/problems/best-team-with-no-conflicts/solutions/3123505/kotlin-dfs-memo/)
