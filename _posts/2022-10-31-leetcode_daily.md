@@ -85,7 +85,7 @@ We can use DFS to search all the possible teams and memorize the result in dp ca
 - Space complexity:
   $$O(n^2)$$
 
-# 30.01.2022
+# 30.01.2023
 [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/) easy
 
 [blog post](https://leetcode.com/problems/n-th-tribonacci-number/solutions/3116945/kotlin-code-golf/)
@@ -116,7 +116,7 @@ Just do what is asked.
 - Space complexity:
   $$O(1)$$
  
-# 29.01.2022
+# 29.01.2023
 [460. LFU Cache](https://leetcode.com/problems/lfu-cache/description/) hard
 
 [blog post](https://leetcode.com/problems/lfu-cache/solutions/3112799/kotlin-treemap-linkedhashset-o-log-sqrt-n)
@@ -190,7 +190,7 @@ Let's store access-time list in a buckets divided by access-count frequencies. W
 - Space complexity:
   $$O(\log_2(\sqrt{N}))$$
 
-# 28.01.2022
+# 28.01.2023
 [352. Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/description/) hard
 
 [blog post](https://leetcode.com/problems/data-stream-as-disjoint-intervals/solutions/3108727/kotlin-linked-list/)
@@ -253,7 +253,7 @@ So, the only way is to use the linked list, and to walk it linearly.
 - Space complexity:
   $$O(I)$$
 
-# 27.01.2022
+# 27.01.2023
 [472. Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) hard
 
 [blog post](https://leetcode.com/problems/concatenated-words/solutions/3104496/kotlin-trie/)
@@ -310,7 +310,7 @@ When we scan a word we must know if current suffix is a word. Trie data structur
 - Space complexity:
   $$O(n)$$
 
-# 26.01.2022
+# 26.01.2023
 [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/98](https://t.me/leetcode_daily_unstoppable/98)
@@ -350,7 +350,7 @@ So, making `k` iterations made our path exactly `k` steps long.
  
 Space: O(kE), Time: O(k)
 
-# 25.01.2022
+# 25.01.2023
 [2359. Find Closest Node to Given Two Nodes](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/97](https://t.me/leetcode_daily_unstoppable/97)
@@ -398,7 +398,7 @@ We can walk with DFS and remember all distances, then compare them and choose th
 
 Space: O(n), Time: O(n)
 
-# 24.01.2022
+# 24.01.2023
 [909. Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/96](https://t.me/leetcode_daily_unstoppable/96)
@@ -439,7 +439,7 @@ We can avoid that strange order by iterating it and store into the linear array.
 
 Space: O(n^2), Time: O(n^2), n is a grid size
 
-# 23.01.2022
+# 23.01.2023
 [997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/description/) easy
 
 [https://t.me/leetcode_daily_unstoppable/95](https://t.me/leetcode_daily_unstoppable/95)
@@ -471,7 +471,7 @@ We need to count how much trust have each judge and also exclude all judges that
  
 Space: O(max(N, T)), Time: O(max(N, T))
 
-# 22.01.2022
+# 22.01.2023
 [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/93](https://t.me/leetcode_daily_unstoppable/93)
@@ -507,7 +507,7 @@ For example, "a" and "aa".
  
 Space: O(2^N), Time: O(2^N)
 
-# 21.01.2022
+# 21.01.2023
 [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/92](https://t.me/leetcode_daily_unstoppable/92)
@@ -549,7 +549,7 @@ Some optimizations:
 
 Space: O(2^N), Time: O(2^N)
 
-# 20.01.2022
+# 20.01.2023
 [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/91](https://t.me/leetcode_daily_unstoppable/91)
@@ -583,7 +583,7 @@ Notice the size of the problem, we can do a brute force search for all solutions
  
 Space: O(2^N) to store the result, Time: O(2^N) for each value we have two choices, and we can build a binary tree of choices with the 2^n number of elements. 
  
-# 19.01.2022
+# 19.01.2023
 [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/) medium
 
 [https://t.me/leetcode_daily_unstoppable/90](https://t.me/leetcode_daily_unstoppable/90)
@@ -634,7 +634,7 @@ We can save frequency in a map, or in an array [0..k], because all the values ar
 
 Space: O(N), Time: O(N)
 
-# 18.01.2022
+# 18.01.2023
 [918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/89](https://t.me/leetcode_daily_unstoppable/89)
@@ -670,7 +670,7 @@ One corner case:
 
 Space: O(1), Time: O(N)
 
-# 17.01.2022
+# 17.01.2023
 [926. Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/88](https://t.me/leetcode_daily_unstoppable/88)
@@ -709,7 +709,7 @@ Just write down what is described above.
 
 Space: O(1), Time: O(N)
 
-# 16.01.2022
+# 16.01.2023
 [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/87](https://t.me/leetcode_daily_unstoppable/87)
@@ -748,7 +748,7 @@ Make another list, and iterate interval, merging them and adding at the same tim
 
 Space: O(N), Time: O(N)
 
-# 15.01.2022
+# 15.01.2023
 [2421. Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/) hard
 
 [https://t.me/leetcode_daily_unstoppable/86](https://t.me/leetcode_daily_unstoppable/86)
@@ -792,7 +792,7 @@ Use IntArray for Union-Find, and also keep frequencies maps for each root.
 
 Space: O(NlogN), Time: O(N)
 
-# 14.01.2022
+# 14.01.2023
 [1061. Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/85](https://t.me/leetcode_daily_unstoppable/85)
@@ -830,7 +830,7 @@ Iterate over strings and connect each of their chars.
 
 Space: O(N) for storing a result, Time: O(N)
 
-# 13.01.2022
+# 13.01.2023
 [2246. Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/description/) hard
 
 [https://t.me/leetcode_daily_unstoppable/84](https://t.me/leetcode_daily_unstoppable/84)
@@ -873,7 +873,7 @@ Let's build a graph and then recursively iterate it by DFS. We need to find two 
 
 Space: O(N), Time: O(N), in DFS we visit each node only once.
 
-# 12.01.2022
+# 12.01.2023
 [1519. Number of Nodes in the Sub-Tree With the Same Label](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/83](https://t.me/leetcode_daily_unstoppable/83)
@@ -911,7 +911,7 @@ For building a graph let's use a map, and for DFS let's use a recursion.
 
 Space: O(N), Time: O(N)
 
-# 11.01.2022
+# 11.01.2023
 [1443. Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/82](https://t.me/leetcode_daily_unstoppable/82)
@@ -964,7 +964,7 @@ To mark a node as visited, make it the parent of itself.
 
 Space: O(N), Time: O(N)
 
-# 10.01.2022
+# 10.01.2023
 [100. Same Tree](https://leetcode.com/problems/same-tree/description/) easy
 
 [https://t.me/leetcode_daily_unstoppable/81](https://t.me/leetcode_daily_unstoppable/81)
@@ -980,7 +980,7 @@ Let's write one-liner
 
 Space: O(logN) for stack, Time: O(n)
 
-# 9.01.2022
+# 9.01.2023
 [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) easy
 
 [https://t.me/leetcode_daily_unstoppable/80](https://t.me/leetcode_daily_unstoppable/80)
@@ -1039,7 +1039,7 @@ Let's implement them all.
 
 Space: O(logN) for stack, O(1) for Morris', Time: O(n)
 
-# 8.01.2022
+# 8.01.2023
 [149. Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) hard
 
 [https://t.me/leetcode_daily_unstoppable/79](https://t.me/leetcode_daily_unstoppable/79)
@@ -1081,7 +1081,7 @@ Store `slope` and `b` coeff in the hashmap. Also, compute `gcd` to find precise 
 
 Space: O(n^2), Time: O(n^2)
 
-# 7.01.2022
+# 7.01.2023
 [134. Gas Station](https://leetcode.com/problems/gas-station/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/78](https://t.me/leetcode_daily_unstoppable/78)
@@ -1110,7 +1110,7 @@ Calculate running gasoline volume and find the minimum of it. If the total net g
 
 Space: O(1), Time: O(N)
 
-# 6.01.2022
+# 6.01.2023
 [1833. Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/77](https://t.me/leetcode_daily_unstoppable/77)
@@ -1135,7 +1135,7 @@ Sort the `costs` array, then greedily iterate it and buy ice creams until all th
 
 Space: O(1), Time: O(NlogN) (there is also O(N) solution based on count sort)
 
-# 5.01.2022
+# 5.01.2023
 [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/75](https://t.me/leetcode_daily_unstoppable/75)
@@ -1170,7 +1170,7 @@ Let's move the arrow to each `start` interval and fire a new arrow if this `star
 
 Space: O(1), Time: O(NlogN)
 
-# 4.01.2022
+# 4.01.2023
 [2244. Minimum Rounds to Complete All Tasks](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/) medium
 
 [https://t.me/leetcode_daily_unstoppable/74](https://t.me/leetcode_daily_unstoppable/74)
@@ -1210,7 +1210,7 @@ First, we need to count how many tasks of each type there are. Next, we need to 
 
 Space: O(N), Time: O(N), counts range is always less than N
 
-# 3.01.2022
+# 3.01.2023
 [944. Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/description/) easy
 
 [https://t.me/leetcode_daily_unstoppable/73](https://t.me/leetcode_daily_unstoppable/73)
@@ -1229,7 +1229,7 @@ We can use Kotlin's `sequence` api.
 
 Space: O(1), Time: O(wN)
 
-# 2.01.2022
+# 2.01.2023
 [520. Detect Capital](https://leetcode.com/problems/detect-capital/description/) easy
 
 [https://t.me/leetcode_daily_unstoppable/72](https://t.me/leetcode_daily_unstoppable/72)
@@ -1248,7 +1248,7 @@ Let's write one-liner.
 
 Space: O(1), Time: O(N)
 
-# 1.01.2022
+# 1.01.2023
 [290. Word Pattern](https://leetcode.com/problems/word-pattern/description/) easy
 
 [https://t.me/leetcode_daily_unstoppable/71](https://t.me/leetcode_daily_unstoppable/71)
