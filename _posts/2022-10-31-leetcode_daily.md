@@ -6,10 +6,55 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 5.02.2023
+[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) medium
+
+[blog post](https://leetcode.com/problems/find-all-anagrams-in-a-string/solutions/3145307/kotlin-frequencies/)
+
+```kotlin 
+    fun findAnagrams(s: String, p: String): List<Int> {
+        val freq = IntArray(26) { 0 }
+        var nonZeros = 0
+        p.forEach { 
+            val ind = it.toInt() - 'a'.toInt()
+            if (freq[ind] == 0) nonZeros++
+            freq[ind]--
+        }
+        val res = mutableListOf<Int>()
+        for (i in 0..s.lastIndex) {
+            val currInd = s[i].toInt() - 'a'.toInt()
+            if (freq[currInd] == 0) nonZeros++
+            freq[currInd]++
+            if (freq[currInd] == 0) nonZeros--
+            if (i >= p.length) {
+                val ind = s[i - p.length].toInt() - 'a'.toInt()
+                if (freq[ind] == 0) nonZeros++
+                freq[ind]--
+                if (freq[ind] == 0) nonZeros--
+            }
+            if (nonZeros == 0) res += i - p.length + 1
+        }
+        return res
+    }
+```
+#### Telegram
+https://t.me/leetcode_daily_unstoppable/109
+#### Intuition
+We can count frequencies of `p` and then scan `s` to match them.
+
+#### Approach
+* To avoid checking a frequencies arrays, we can count how many frequencies are not matching, and add only when non-matching count is zero.
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+
+- Space complexity:
+  $$O(1)$$
+ 
 # 4.02.2023
 [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) medium
 
-[blog post]()
+[blog post](https://leetcode.com/problems/permutation-in-string/solutions/3139851/kotlin-frequencies/?orderBy=most_votes)
 
 ```kotlin 
     fun checkInclusion(s1: String, s2: String): Boolean {
