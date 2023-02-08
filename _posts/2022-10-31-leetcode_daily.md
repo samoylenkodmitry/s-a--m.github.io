@@ -6,6 +6,86 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 8.02.2023
+[45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) medium
+
+[blog post](https://leetcode.com/problems/jump-game-ii/solutions/3161513/kotlin-greedy-stack/)
+
+```kotlin 
+    fun jump(nums: IntArray): Int {
+        if (nums.size <= 1) return 0
+        val stack = Stack<Int>()
+        // 0 1 2 3 4 5 6 7 8 9 1011121314
+        // 7 0 9 6 9 6 1 7 9 0 1 2 9 0 3
+        //                             *
+        //                           *
+        //                         * * *
+        //                       * * *
+        //                     * *
+        //                   *    
+        //                 * * * * * * *
+        //               * * * * * * * *
+        //             * *
+        //           * * * * * * *
+        //         * * * * * * * * * *
+        //       * * * * * * *
+        //     * * * * * * * * * *
+        //   *
+        // * * * * * * * *
+        // 3 4 3 2 5 4 3
+        //             *
+        //           * *
+        //         * * *
+        //       * * *
+        //     * * * *
+        //   * * * * *
+        // * * * *
+        // 0 1 2 3 4 5 6 7 8 9 1011
+        // 5 9 3 2 1 0 2 3 3 1 0 0
+        //                       *
+        //                     *
+        //                   * *
+        //                 * * * *
+        //               * * * *
+        //             * * *
+        //           *
+        //         * *
+        //       * * *
+        //     * * * *
+        //   * * * * * * * * * *
+        // * * * * * *
+        for (pos in nums.lastIndex downTo 0) {
+            var canReach = minOf(pos + nums[pos], nums.lastIndex)
+            if (canReach == nums.lastIndex) stack.clear()
+            while (stack.size > 1 && stack.peek() <= canReach) {
+                val top = stack.pop()
+                if (stack.peek() > canReach) {
+                    stack.push(top)
+                    break
+                }
+            }
+            stack.push(pos)
+        }
+        return stack.size
+    }
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/112
+#### Intuition
+The dynamic programming solution is trivial, and can be done in $$O(n^2)$$.
+Greedy solution is to scan from back to front and keep only jumps that starts after the current max jump.
+
+#### Approach
+* use stack to store jumps
+* pop all jumps less than current `maxReach`
+* pop all except the last that can reach, so don't break the sequence.
+
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+- Space complexity:
+  $$O(n)$$
+ 
 # 7.02.2023
 [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/description/) medium
 
