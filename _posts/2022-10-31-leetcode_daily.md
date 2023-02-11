@@ -6,6 +6,56 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 11.02.2023
+[1129. Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors/description/) medium
+
+[blog post](https://leetcode.com/problems/shortest-path-with-alternating-colors/solutions/3171245/kotlin-just-bfs/)
+
+```kotlin 
+    fun shortestAlternatingPaths(n: Int, redEdges: Array<IntArray>, blueEdges: Array<IntArray>): IntArray {
+        val edgesRed = mutableMapOf<Int, MutableList<Int>>()
+        val edgesBlue = mutableMapOf<Int, MutableList<Int>>()
+        redEdges.forEach { (from, to) ->
+            edgesRed.getOrPut(from, { mutableListOf() }).add(to)
+        }
+        blueEdges.forEach { (from, to) ->
+            edgesBlue.getOrPut(from, { mutableListOf() }).add(to)
+        }
+        val res = IntArray(n) { -1 }
+        val visited = hashSetOf<Pair<Int, Boolean>>()
+        var dist = 0
+        with(ArrayDeque<Pair<Int, Boolean>>()) {
+            add(0 to true)
+            add(0 to false)
+            visited.add(0 to true)
+            visited.add(0 to false)
+            while (isNotEmpty()) {
+                repeat(size) {
+                    val (node, isRed) = poll()
+                    if (res[node] == -1 || res[node] > dist) res[node] = dist
+                    val edges = if (isRed) edgesRed else edgesBlue
+                    edges[node]?.forEach {
+                        if (visited.add(it to !isRed)) add(it to !isRed)
+                    }
+                }
+                dist++
+            }
+        }
+        return res
+    }
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/115
+#### Intuition
+We can calculate all the shortest distances in one pass BFS.
+#### Approach
+Start with two simultaneous points, one for red and one for blue. Keep track of the color.
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+- Space complexity:
+  $$O(n)$$
+ 
 # 10.02.2023
 [1162. As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/description/) medium
 
