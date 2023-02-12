@@ -12,7 +12,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/solutions/3175457/kotlin-dfs-with-picture/)
 
 ```kotlin 
-data class R(val cars: Long, val capacity: Int, val fuel: Long)
+    data class R(val cars: Long, val capacity: Int, val fuel: Long)
     fun minimumFuelCost(roads: Array<IntArray>, seats: Int): Long {
         val nodes = mutableMapOf<Int, MutableList<Int>>()
         roads.forEach { (from, to) ->
