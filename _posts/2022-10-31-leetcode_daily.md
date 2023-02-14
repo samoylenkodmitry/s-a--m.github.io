@@ -6,6 +6,49 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 14.02.2023
+[67. Add Binary](https://leetcode.com/problems/add-binary/description/) easy
+
+[blog post](https://leetcode.com/problems/add-binary/solutions/3183889/kotlin-build-string/)
+
+```kotlin 
+        fun addBinary(a: String, b: String): String = StringBuilder().apply {
+        var o = 0
+        var i = a.lastIndex
+        var j = b.lastIndex
+        while (i >= 0 || j >= 0 || o == 1) {
+            var num = o
+            o = 0
+            if (i >= 0 && a[i--] == '1') num++
+            if (j >= 0 && b[j--] == '1') num++
+            when (num) {
+                0 -> append('0')
+                1 -> append('1')
+                2 -> {
+                    append('0')
+                    o = 1
+                }
+                else -> {
+                    append('1')
+                    o = 1
+                }
+            }
+        }
+    }.reverse().toString()
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/118
+#### Intuition
+Scan two strings from the end and calculate the result.
+
+#### Approach
+* keep track of the overflow
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+- Space complexity:
+  $$O(n)$$
+
 # 13.02.2023
 [1523. Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/) easy
 
