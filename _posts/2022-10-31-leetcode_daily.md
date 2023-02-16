@@ -6,6 +6,28 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 16.02.2023
+[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) easy
+
+[blog post](https://leetcode.com/problems/maximum-depth-of-binary-tree/solutions/3192288/kotlin-one-liner/)
+
+```kotlin 
+    fun maxDepth(root: TreeNode?): Int = 
+        root?.let { 1 + maxOf(maxDepth(it.left), maxDepth(it.right)) } ?: 0
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/120
+#### Intuition
+Do DFS and choose the maximum on each step.
+
+#### Approach
+Let's write a one-liner.
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+- Space complexity:
+  $$O(log_2(n))$$
+
 # 15.02.2023
 [989. Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/description/) easy
 
