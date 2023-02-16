@@ -12,8 +12,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/maximum-depth-of-binary-tree/solutions/3192288/kotlin-one-liner/)
 
 ```kotlin 
-    fun maxDepth(root: TreeNode?): Int = 
-        root?.let { 1 + maxOf(maxDepth(it.left), maxDepth(it.right)) } ?: 0
+    fun maxDepth(root: TreeNode?): Int =
+        root?.run { 1 + maxOf(maxDepth(left), maxDepth(right)) } ?: 0
 ```
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/120
