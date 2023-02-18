@@ -6,6 +6,27 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 18.02.2023
+[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) easy
+
+[blog post](https://leetcode.com/problems/invert-binary-tree/solutions/3200281/kotlin-one-liner/)
+
+```kotlin 
+    fun invertTree(root: TreeNode?): TreeNode? = 
+        root?.apply { left = invertTree(right).also { right = invertTree(left) } }
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/122
+#### Intuition
+Walk tree with Depth-First Search and swap each left and right nodes.
+#### Approach
+Let's write a recursive one-liner.
+#### Complexity
+- Time complexity:
+  $$O(n)$$
+- Space complexity:
+  $$O(log_2(n))$$
+
 # 17.02.2023
 [783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/submissions/899622255/) easy
 
