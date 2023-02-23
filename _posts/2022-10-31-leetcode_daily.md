@@ -6,6 +6,47 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 23.02.2023
+[502. IPO](https://leetcode.com/problems/ipo/description/) hard
+
+[blog post](https://leetcode.com/problems/ipo/solutions/3221450/kotlin-wrong-and-correct-intuition/)
+
+```kotlin
+    fun findMaximizedCapital(k: Int, w: Int, profits: IntArray, capital: IntArray): Int {
+        val indices = Array(profits.size) { it }
+        indices.sortWith(compareBy( { capital[it] }))
+        var money = w
+        var deals = k
+        var i = 0
+        val pq = PriorityQueue<Int>(profits.size, compareBy({ -profits[it] }))
+        while (i <= indices.lastIndex && deals > 0) {
+            while (i <= indices.lastIndex && money >= capital[indices[i]]) 
+                pq.add(indices[i++])
+            if (pq.isEmpty()) break
+            if (pq.isNotEmpty() && deals-- > 0) 
+                money += profits[pq.poll()]
+        }
+        while (pq.isNotEmpty() && deals-- > 0) 
+            money += profits[pq.poll()]
+        return money
+    }
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/127
+#### Intuition
+My first (wrong) intuition: greedy add elements to the min-profit priority queue, then remove all low-profit elements from it, keeping essential items. It wasn't working, and the solution became too verbose.
+Second intuition, after the hint: greedy add elements to the max-profit priority queue, then remove the maximum from it, which will be the best deal for the current money.
+
+
+#### Approach
+Sort items by increasing capital. Then, on each step, add all possible deals to the priority queue and take one best from it.
+
+#### Complexity
+- Time complexity:
+  $$O(nlog_2(n))$$
+- Space complexity:
+  $$O(n)$$
+
 # 22.02.2023
 [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/) medium
 
