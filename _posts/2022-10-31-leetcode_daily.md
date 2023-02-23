@@ -12,24 +12,20 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/ipo/solutions/3221450/kotlin-wrong-and-correct-intuition/)
 
 ```kotlin
-    fun findMaximizedCapital(k: Int, w: Int, profits: IntArray, capital: IntArray): Int {
-        val indices = Array(profits.size) { it }
-        indices.sortWith(compareBy( { capital[it] }))
-        var money = w
-        var deals = k
-        var i = 0
-        val pq = PriorityQueue<Int>(profits.size, compareBy({ -profits[it] }))
-        while (i <= indices.lastIndex && deals > 0) {
-            while (i <= indices.lastIndex && money >= capital[indices[i]]) 
-                pq.add(indices[i++])
-            if (pq.isEmpty()) break
-            if (pq.isNotEmpty() && deals-- > 0) 
-                money += profits[pq.poll()]
-        }
-        while (pq.isNotEmpty() && deals-- > 0) 
-            money += profits[pq.poll()]
-        return money
-    }
+fun findMaximizedCapital(k: Int, w: Int, profits: IntArray, capital: IntArray): Int {
+  val indices = Array(profits.size) { it }
+  indices.sortWith(compareBy( { capital[it] }))
+  var money = w
+  var i = 0
+  val pq = PriorityQueue<Int>(profits.size, compareBy({ -profits[it] }))
+  repeat (k) {
+    while (i <= indices.lastIndex && money >= capital[indices[i]])
+      pq.add(indices[i++])
+    if (pq.isNotEmpty())
+      money += profits[pq.poll()]
+  }
+  return money
+}
 ```
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/127
