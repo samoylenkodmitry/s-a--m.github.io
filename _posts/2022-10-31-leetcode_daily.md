@@ -13,16 +13,14 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 ```kotlin
 fun findMaximizedCapital(k: Int, w: Int, profits: IntArray, capital: IntArray): Int {
-  val indices = Array(profits.size) { it }
-  indices.sortWith(compareBy( { capital[it] }))
+  val indices = Array(profits.size) { it }.apply { sortWith(compareBy( { capital[it] })) }
   var money = w
-  var i = 0
-  val pq = PriorityQueue<Int>(profits.size, compareBy({ -profits[it] }))
-  repeat (k) {
-    while (i <= indices.lastIndex && money >= capital[indices[i]])
-      pq.add(indices[i++])
-    if (pq.isNotEmpty())
-      money += profits[pq.poll()]
+  with(PriorityQueue<Int>(profits.size, compareBy({ -profits[it] }))) {
+    var i = 0
+    repeat (k) {
+      while (i <= indices.lastIndex && money >= capital[indices[i]]) add(indices[i++])
+      if (isNotEmpty()) money += profits[poll()]
+    }
   }
   return money
 }
