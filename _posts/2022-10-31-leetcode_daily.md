@@ -6,6 +6,35 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 25.02.2023
+[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) easy
+
+[blog post](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solutions/3227923/kotlin-min-max/)
+
+```kotlin
+fun maxProfit(prices: IntArray): Int {
+    var min = prices[0]
+    var profit = 0
+    prices.forEach {
+        if (it < min) min = it
+        profit = maxOf(profit, it - min)
+    }
+    return profit
+}
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/129
+#### Intuition
+Max profit will be the difference between `max` and `min`. One thing to note, the `max` must follow after the `min`.
+
+#### Approach
+* we can just use current value as a `max` candidate instead of managing the `max` variable.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+
 # 24.02.2023
 [1675. Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/description/) hard
 
