@@ -6,6 +6,47 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 29.02.2023
+[912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/) medium
+
+[blog post](https://leetcode.com/problems/sort-an-array/solutions/3242806/kotlin-quicksort/)
+
+```kotlin
+fun sortArray(nums: IntArray, from: Int = 0, to: Int = nums.lastIndex): IntArray {
+    if (from >= to) return nums
+    val mid = partition(nums, from, to)
+    sortArray(nums, from, mid - 1)
+    sortArray(nums, mid + 1, to)
+    return nums
+}
+fun IntArray.swap(i: Int, j: Int) { this[i] = this[j].also { this[j] = this[i] } }
+fun partition(nums: IntArray, from: Int, to: Int): Int {
+    var border = nums[to]
+    var afterBorder = from
+    for (curr in from until to)
+    if (nums[curr] < border) nums.swap(curr, afterBorder++)
+    nums.swap(to, afterBorder)
+    return afterBorder
+}
+```
+#### Join me on telegram
+https://t.me/leetcode_daily_unstoppable/134
+#### Intuition
+There are some tricks to optimize naive quicksort algorithm.
+* choose between `lo`, `mid` and `hi` elements for the pivot instead of just `hi`
+* shuffling the array before sorting
+* starting with the smallest part of the array
+* making the last recursion call with a `tailrec`
+* sorting with `insertion sort` for a small parts
+
+#### Approach
+Let's just implement naive quicksort.
+#### Complexity
+- Time complexity:
+$$O(nlog_2(n))$$
+- Space complexity:
+$$O(log_2(n))$$ for the recursion
+
 # 28.02.2023
 [652. Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) medium
 
