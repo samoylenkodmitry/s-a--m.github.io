@@ -6,6 +6,47 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 05.03.2023
+[1345. Jump Game IV](https://leetcode.com/problems/jump-game-iv/description/) hard
+
+[blog post]()
+
+```kotlin
+fun minJumps(arr: IntArray): Int {
+    val numToPos = mutableMapOf<Int, MutableList<Int>>()
+        arr.forEachIndexed { i, n -> numToPos.getOrPut(n, { mutableListOf() }).add(i) }
+        with(ArrayDeque<Int>().apply { add(0) }) {
+            var jumps = 0
+            val visited = HashSet<Int>()
+                while(isNotEmpty()) {
+                    repeat(size) {
+                        val curr = poll()
+                        if (curr == arr.lastIndex) return jumps
+                        numToPos.remove(arr[curr])?.forEach { if (visited.add(it)) add(it) }
+                        if (curr > 0 && visited.add(curr - 1)) add(curr - 1)
+                        if (curr < arr.lastIndex && visited.add(curr + 1)) add(curr + 1)
+                    }
+                    jumps++
+                }
+            }
+            return 0
+        }
+```
+#### Join me on telegram
+https://t.me/leetcode_daily_unstoppable/138
+#### Intuition
+Dynamic programming approach wouldn't work here, as we can tell from position `i` is it optimal before visiting both left and right subarrays.
+Another way to find the shortest path is to just do Breath-First-Search.
+
+#### Approach
+This problem gives TLE until we do one trick:
+* remove the visited nodes from the graph
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 04.03.2023
 [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/) hard
 
