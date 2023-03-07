@@ -19,8 +19,7 @@ fun minimumTime(time: IntArray, totalTrips: Int): Long {
         return count
     }
     var lo = 0L
-    var hi = 0L
-    for (t in time) hi += t.toLong() * totalTrips.toLong()
+    var hi = time.asSequence().map { it.toLong() * totalTrips }.max()!!
     var minTime = hi
     while (lo <= hi) {
         val timeGiven = lo + (hi - lo) / 2
