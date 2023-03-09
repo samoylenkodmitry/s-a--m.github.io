@@ -36,7 +36,7 @@ There is a known algorithm to detect a cycle in a linked list. Move `slow` point
 To know the connection point of the cycle, you can also use two pointers: one from where pointers were met, another from the start, and move both of them one node at a time until they meet.
 How to derive this yourself?
 * you can draw the diagram
-* notice, what all the list is a cycle, nodes met at exactly where they are started
+* notice, when all the list is a cycle, nodes met at exactly where they are started
 * meet point = cycle length + tail
 #### Approach
 * careful with corner cases.
