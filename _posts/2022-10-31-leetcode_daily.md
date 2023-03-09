@@ -6,6 +6,46 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 09.03.2023
+[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) medium
+
+[blog post](https://leetcode.com/problems/linked-list-cycle-ii/solutions/3275105/kotlin-fast-and-slow-plus-trick/)
+
+```kotlin
+fun detectCycle(head: ListNode?): ListNode? {
+    var one = head
+    var two = head
+    do {
+        one = one?.next
+        two = two?.next?.next
+    } while (two != null && one != two)
+    if (two == null) return null
+    one = head
+    while (one != two) {
+        one = one?.next
+        two = two?.next
+    }
+    return one
+}
+```
+#### Join me on telegram
+https://t.me/leetcode_daily_unstoppable/143
+#### Intuition
+![image.png](https://assets.leetcode.com/users/images/72ccd4d1-7aa6-40f1-ad87-86625f8e7241_1678342726.4682755.png)
+There is a known algorithm to detect a cycle in a linked list. Move `slow` pointer one node at a time, and move `fast` pointer two nodes at a time. Eventually, if they meet, there is a cycle.
+To know the connection point of the cycle, you can also use two pointers: one from where pointers were met, another from the start, and move both of them one node at a time until they meet.
+How to derive this yourself?
+* you can draw the diagram
+* notice, what all the list is a cycle, nodes met at exactly where they are started
+* meet point = cycle length + tail
+#### Approach
+* careful with corner cases.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+
 # 08.03.2023
 [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) medium
 
