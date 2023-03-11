@@ -42,7 +42,7 @@ Compute the middle of the linked list.
 - Time complexity:
 $$O(nlog_2(n))$$
 - Space complexity:
-$$O(1)$$ of additional space
+$$O(log_2(n))$$ of additional space (for recursion)
 
 # 10.03.2023
 [382. Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/description/) medium
