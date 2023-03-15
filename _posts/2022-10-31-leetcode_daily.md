@@ -6,6 +6,47 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 15.03.2023
+[958. Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/) medium
+
+[blog post](https://leetcode.com/problems/check-completeness-of-a-binary-tree/solutions/3299207/kotlin-dfs/)
+
+```kotlin
+data class R(val min: Int, val max: Int, val complete: Boolean)
+fun isCompleteTree(root: TreeNode?): Boolean {
+    fun dfs(n: TreeNode): R {
+        with(n) {
+            if (left == null && right != null) return R(0, 0, false)
+            if (left == null && right == null) return R(0, 0, true)
+            val (leftMin, leftMax, leftComplete) = dfs(left)
+            if (!leftComplete) return R(0, 0, false)
+            if (right == null) return R(0, leftMax + 1, leftMin == leftMax && leftMin == 0)
+            val (rightMin, rightMax, rightComplete) = dfs(right)
+            if (!rightComplete) return R(0, 0, false)
+            val isComplete = leftMin == rightMin && rightMin == rightMax
+            || leftMin == leftMax && leftMin == rightMin + 1
+            return R(1 + minOf(leftMin, rightMin), 1 + maxOf(leftMax, rightMax), isComplete)
+        }
+    }
+    return root == null || dfs(root).complete
+}
+```
+#### Join me on telegram
+https://t.me/leetcode_daily_unstoppable/149
+#### Intuition
+
+![image.png](https://assets.leetcode.com/users/images/33007881-5b61-45c1-ab4b-fe7ec7852560_1678863559.1249547.png)
+
+For each node, we can compute it's left and right child `min` and `max` depth, then compare them.
+#### Approach
+Right depth must not be larger than left.
+There are no corner cases, just be careful.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(log_2(n))$$
+
 # 14.03.2023
 [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/) medium
 
