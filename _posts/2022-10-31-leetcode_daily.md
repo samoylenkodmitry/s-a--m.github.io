@@ -6,6 +6,42 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 16.03.2023
+[106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) medium
+
+[blog post](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/3303076/kotlin-dfs/)
+
+```kotlin
+fun buildTree(inorder: IntArray, postorder: IntArray): TreeNode? {
+    val inToInd = mutableMapOf<Int, Int>()
+    inorder.forEachIndexed { i, v -> inToInd[v] = i}
+    var postTo = postorder.lastIndex
+    fun build(inFrom: Int, inTo: Int): TreeNode? {
+        if (inFrom > inTo || postTo < 0) return null
+        return TreeNode(postorder[postTo]).apply {
+            val inInd = inToInd[postorder[postTo]]!!
+            postTo--
+            right = build(inInd + 1, inTo)
+            left = build(inFrom, inInd - 1)
+        }
+    }
+    return build(0, inorder.lastIndex)
+}
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/150
+#### Intuition
+Postorder traversal gives us the root of every current subtree. Next, we need to find this value in inorder traversal: from the left of it will be the left subtree, from the right - right.
+
+#### Approach
+* To more robust code, consider moving `postTo` variable as we go in the reverse-postorder: from the right to the left.
+* store indices in a hashmap
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 15.03.2023
 [958. Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/) medium
 
