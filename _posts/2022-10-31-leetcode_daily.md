@@ -13,8 +13,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 ```kotlin
 fun buildTree(inorder: IntArray, postorder: IntArray): TreeNode? {
-    val inToInd = mutableMapOf<Int, Int>()
-    inorder.forEachIndexed { i, v -> inToInd[v] = i}
+    val inToInd = inorder.asSequence().mapIndexed { i, v -> v to i }.toMap()
     var postTo = postorder.lastIndex
     fun build(inFrom: Int, inTo: Int): TreeNode? {
         if (inFrom > inTo || postTo < 0) return null
