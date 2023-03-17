@@ -46,9 +46,9 @@ Trie is a common known data structure and all must know how to implement it.
 Let's try to write it Kotlin-way
 #### Complexity
 - Time complexity:
-$$O(w)$$ access for each method call, where `w` - is a word length
+$$O(w)$$ access for each method call, where $$w$$ - is a word length
 - Space complexity:
-$$O(w)$$, for the fixed length of the vocabulary
+$$O(w*N)$$, where $$N$$ - is a unique words count.
 
 # 16.03.2023
 [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) medium
