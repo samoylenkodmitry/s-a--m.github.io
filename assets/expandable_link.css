@@ -1,0 +1,23 @@
+.link-container {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.expand-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content-container {
+    display: none;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
