@@ -1,5 +1,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="{{ '/assets/expandable_link.js' | relative_url }}"></script>
+<script>
+$(document).ready(function () {
+  $("a[href*='leetcode.com']").each(function () {
+    const link = $(this);
+    const container = $("<div class='content-container'></div>");
+    link.after(container);
+
+    link.on("click", function (event) {
+      event.preventDefault();
+
+      if (!container.data("loaded")) {
+        container.load(link.attr("href") + " .problem-content", function () {
+          container.data("loaded", true);
+        });
+      }
+
+      container.slideToggle("fast");
+    });
+  });
+});
+</script>
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
