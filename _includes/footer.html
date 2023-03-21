@@ -6,19 +6,42 @@ $(document).ready(function () {
     const container = $("<div class='content-container'></div>");
     link.after(container);
 
-    link.on("click", function (event) {
-      event.preventDefault();
+    let timeout;
 
-      if (!container.data("loaded")) {
-        container.load(link.attr("href") + " .problem-content", function () {
-          container.data("loaded", true);
-        });
+    link.hover(
+      function (event) { // Mouse enter event
+        event.preventDefault();
+
+        clearTimeout(timeout); // Clear any existing timeout
+
+        if (!container.data("loaded")) {
+          container.load(link.attr("href") + " .problem-content", function () {
+            container.data("loaded", true);
+          });
+        }
+
+        container.slideDown("fast");
+      },
+      function (event) { // Mouse leave event
+        timeout = setTimeout(() => {
+          container.slideUp("fast");
+        }, 500); // Delay in milliseconds before closing
       }
+    );
 
-      container.slideToggle("fast");
-    });
+    container.hover(
+      function () {
+        clearTimeout(timeout); // Clear any existing timeout
+      },
+      function () {
+        timeout = setTimeout(() => {
+          container.slideUp("fast");
+        }, 500); // Delay in milliseconds before closing
+      }
+    );
   });
 });
+
 </script>
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
