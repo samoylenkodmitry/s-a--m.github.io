@@ -6,6 +6,44 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 28.03.2023
+[983. Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/description/) medium
+
+[blog post](https://leetcode.com/problems/minimum-cost-for-tickets/solutions/3350465/kotlin-dfs-memo/)
+
+```kotlin
+
+fun mincostTickets(days: IntArray, costs: IntArray): Int {
+    val cache = IntArray(days.size) { -1 }
+    fun dfs(day: Int): Int {
+        if (day >= days.size) return 0
+        if (cache[day] != -1) return cache[day]
+        var next = day
+        while (next < days.size && days[next] - days[day] < 1) next++
+        val costOne = costs[0] + dfs(next)
+        while (next < days.size && days[next] - days[day] < 7) next++
+        val costSeven = costs[1] + dfs(next)
+        while (next < days.size && days[next] - days[day] < 30) next++
+        val costThirty = costs[2] + dfs(next)
+        return minOf(costOne, costSeven, costThirty).also { cache[day] = it}
+    }
+    return dfs(0)
+}
+```
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/162
+#### Intuition
+For each day we can choose between tickets. Explore all of them and then choose minimum of the cost.
+
+#### Approach
+Let's write DFS with memoization algorithm as it is simple to understand.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 27.03.2023
 [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) medium
 
