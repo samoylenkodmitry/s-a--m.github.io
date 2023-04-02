@@ -37,7 +37,7 @@ If we sort `potions`, we can find the lowest possible value of `spell[i]*potion[
 * sort `potions`
 * binary search the `lowest` index
 * use `long` to solve the integer overflow
-For more robust binary search code:
+###### For more robust binary search code:
 * use inclusive `lo` and `hi`
 * do the last check `lo == hi`
 * always compute the result `minInd`
