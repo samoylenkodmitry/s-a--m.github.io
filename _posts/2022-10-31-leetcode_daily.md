@@ -6,6 +6,49 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+# 02.04.2023
+[2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/description/) medium
+
+[blog post](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/solutions/3369146/kotlin-binary-search/)
+
+```kotlin
+fun successfulPairs(spells: IntArray, potions: IntArray, success: Long): IntArray {
+    potions.sort()
+    return IntArray(spells.size) { ind ->
+        var lo = 0
+        var hi = potions.lastIndex
+        var minInd = potions.size
+        while (lo <= hi) {
+            val mid = lo + (hi - lo) / 2
+            if (potions[mid].toLong() * spells[ind].toLong() >= success) {
+                minInd = minOf(minInd, mid)
+                hi = mid - 1
+            } else lo = mid + 1
+        }
+        potions.size - minInd
+    }
+}
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/168
+#### Intuition
+If we sort `potions`, we can find the lowest possible value of `spell[i]*potion[i]` that is `>= success`. All other values are bigger by the math multiplication property.
+#### Approach
+* sort `potions`
+* binary search the `lowest` index
+* use `long` to solve the integer overflow
+For more robust binary search code:
+* use inclusive `lo` and `hi`
+* do the last check `lo == hi`
+* always compute the result `minInd`
+* always move the `lo` and the `hi`
+* safely compute `mid` to not overflow
+#### Complexity
+- Time complexity:
+$$O(nlog_2(n))$$
+- Space complexity:
+$$O(n)$$
+
 # 01.04.2023
 [704. Binary Search](https://leetcode.com/problems/binary-search/description/) easy
 
