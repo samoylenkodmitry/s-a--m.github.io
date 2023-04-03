@@ -6,6 +6,40 @@ title: Daily leetcode challenge
 # Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
+*If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
+
+# 03.04.2023
+[881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) medium
+
+[blog post](https://leetcode.com/problems/boats-to-save-people/solutions/3373007/kotlin-two-pointers/)
+
+```kotlin
+fun numRescueBoats(people: IntArray, limit: Int): Int {
+    people.sort()
+    var count = 0
+    var lo = 0
+    var hi = people.lastIndex
+    while (lo <= hi) {
+        if (lo < hi && people[hi] + people[lo] <= limit) lo++
+        hi--
+        count++
+    }
+    return count
+}
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/169
+#### Intuition
+The optimal strategy comes from an intuition: for each `people[hi]` of a maximum weight, we can or can not add the one man `people[lo]` of a minimum weight.
+#### Approach
+Sort an array and move two pointers `lo` and `hi`.
+* Careful with the ending condition, `lo == hi`
+#### Complexity
+- Time complexity:
+$$O(nlog_2(n))$$
+- Space complexity:
+$$O(1)$$
+
 # 02.04.2023
 [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/description/) medium
 
