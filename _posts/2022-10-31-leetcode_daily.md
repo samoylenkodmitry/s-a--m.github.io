@@ -8,6 +8,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 *If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
 
+# 08.04.2023
+[133. Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium
+
+[blog post](https://leetcode.com/problems/clone-graph/solutions/3392609/kotlin-two-dfs/)
+
+```kotlin
+fun cloneGraph(node: Node?): Node? {
+    if (node == null) return null
+    val oldToNew = mutableMapOf<Node, Node>()
+    fun dfs(n: Node) {
+        if (oldToNew[n] == null) {
+            oldToNew[n] = Node(n.`val`)
+            n.neighbors.forEach {
+                if (it != null) dfs(it)
+            }
+        }
+    }
+    fun dfs2(n: Node) {
+        oldToNew[n]!!.apply {
+            if (neighbors.isEmpty()) {
+                n.neighbors.forEach {
+                    if (it != null) {
+                        neighbors.add(oldToNew[it])
+                        dfs2(it)
+                    }
+                }
+            }
+        }
+    }
+    dfs(node)
+    dfs2(node)
+    return oldToNew[node]
+}
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/174
+#### Intuition
+We can map every `old` node to its `new` node. Then one DFS for the creation, another for the linking.
+
+#### Approach
+* we can avoid using `visited` set by checking if a new node already has filled its neighbors.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 07.04.2023
 [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/description/) medium
 
