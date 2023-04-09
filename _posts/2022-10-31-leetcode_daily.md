@@ -8,6 +8,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 *If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
 
+# 09.04.2023
+[1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/) hard
+
+[blog post](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/3396443/kotlin-dfs-cache/)
+
+```kotlin
+fun largestPathValue(colors: String, edges: Array<IntArray>): Int {
+    if (edges.isEmpty()) return if (colors.isNotEmpty()) 1 else 0
+    val fromTo = mutableMapOf<Int, MutableList<Int>>()
+        edges.forEach { (from, to) -> fromTo.getOrPut(from) { mutableListOf() } += to }
+        val cache = mutableMapOf<Int, IntArray>()
+        var haveCycle = false
+        fun dfs(curr: Int, visited: HashSet<Int> = HashSet()): IntArray {
+            return cache.getOrPut(curr) {
+                val freq = IntArray(26)
+                if (visited.add(curr)) {
+                    fromTo.remove(curr)?.forEach {
+                        val childFreq = dfs(it, visited)
+                        for (i in 0..25) freq[i] = maxOf(childFreq[i], freq[i])
+                    }
+                    freq[colors[curr].toInt() - 'a'.toInt()] += 1
+                } else haveCycle = true
+                freq
+            }
+        }
+        var max = 0
+        edges.forEach { (from, to) -> max = maxOf(max, dfs(from).max()!!) }
+        return if (haveCycle) -1 else max
+    }
+```
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/175
+#### Intuition
+![image.png](https://assets.leetcode.com/users/images/112cac51-7c3f-4d73-945e-58237ddb6ba5_1681022662.9757764.png)
+![leetcode_daily_small.gif](https://assets.leetcode.com/users/images/36cddca8-50c2-4c8e-b5b6-317e30533a37_1681023914.0180423.gif)
+
+For each node, there is only one answer of the maximum count of the same color. For each parent, $$c_p = max(freq_{child})+colors[curr]$$. We can cache the result and compute it using DFS and selecting maximum count from all the children.
+#### Approach
+* use `visited` set to detect cycles
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 08.04.2023
 [133. Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium
 
