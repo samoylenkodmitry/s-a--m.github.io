@@ -8,6 +8,36 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 *If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
 
+# 10.04.2023
+[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) medium
+
+```kotlin
+fun isValid(s: String): Boolean = with(Stack<Char>()) {
+    val opened = hashSetOf('(', '[', '{')
+    val match = hashMapOf(')' to '(' , ']' to '[', '}' to '{')
+    !s.any { c ->
+        when {
+            c in opened -> false.also { push(c) }
+            isEmpty() -> true
+            else -> pop() != match[c]
+        }
+    } && isEmpty()
+}
+```
+[blog post](https://leetcode.com/problems/valid-parentheses/solutions/3399214/kotlin-stack/)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/176
+#### Intuition
+Walk the string and push brackets to the stack. When bracket is closing, pop from it.
+#### Approach
+* use HashMap to check matching bracket.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
+
 # 09.04.2023
 [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/) hard
 
