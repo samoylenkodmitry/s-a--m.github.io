@@ -8,6 +8,30 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 *If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
 
+# 11.04.2023
+[2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/description/) medium
+
+```kotlin
+fun removeStars(s: String): String = StringBuilder().apply {
+    s.forEach {
+        if (it == '*') setLength(length - 1)
+        else append(it)
+    }
+}.toString()
+```
+[blog post](https://leetcode.com/problems/removing-stars-from-a-string/solutions/3402891/kotlin-stack/)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/177
+#### Intuition
+Iterate over a string. When `*` symbol met, remove last character, otherwise add it.
+#### Approach
+* we can use a `Stack`, or just `StringBuilder`
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 10.04.2023
 [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) medium
 
