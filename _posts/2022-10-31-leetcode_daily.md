@@ -7,6 +7,10 @@ title: Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
 *If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
+#### You can donate me in crypto:
+* xmr 84rsnuoKbHKVGVaT1Z22YQahSuBJKDYmGjQuHYkv637VApfHPR4oj2eAtYCERFQRvnQWRV8UWBDHTUhmYXf8qyo8F33neiH
+* btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
+* doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
 # 12.04.2023
 [71. Simplify Path](https://leetcode.com/problems/simplify-path/description/) medium
