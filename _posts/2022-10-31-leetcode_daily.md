@@ -8,6 +8,37 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 *If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
 
+# 12.04.2023
+[71. Simplify Path](https://leetcode.com/problems/simplify-path/description/) medium
+
+```kotlin
+fun simplifyPath(path: String): String =
+"/" + Stack<String>().apply {
+    path.split("/").forEach {
+        when (it) {
+            ".." -> if (isNotEmpty()) pop()
+            "." -> Unit
+            "" -> Unit
+            else -> push(it)
+        }
+    }
+}.joinToString("/")
+```
+[blog post](https://leetcode.com/problems/simplify-path/solutions/3407165/kotlin-stack/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-12042023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/178
+#### Intuition
+We can simulate what each of the `.` and `..` commands do by using a `Stack`.
+#### Approach
+* split the string by `/`
+* add elements to the Stack if they are not commands and not empty
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 11.04.2023
 [2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/description/) medium
 
