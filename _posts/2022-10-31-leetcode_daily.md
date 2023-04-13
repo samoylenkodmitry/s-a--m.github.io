@@ -12,6 +12,38 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 13.04.2023
+[946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/description/) medium
+
+```kotlin
+fun validateStackSequences(pushed: IntArray, popped: IntArray): Boolean =
+with(Stack<Int>()) {
+    var pop = 0
+    pushed.forEach {
+        push(it)
+        while (isNotEmpty() && peek() == popped[pop]) {
+            pop()
+            pop++
+        }
+    }
+    isEmpty()
+}
+```
+[blog post](https://leetcode.com/problems/validate-stack-sequences/solutions/3411131/kotlin-stack/)
+[substack](https://dmitriisamoilenko.substack.com/p/13042023?sd=pf)
+#### Telegram
+https://t.me/leetcode_daily_unstoppable/179
+#### Intuition
+Do simulation using a Stack.
+#### Approach
+* use one iteration and a second pointer for `pop`
+* empty the stack after inserting an element
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 12.04.2023
 [71. Simplify Path](https://leetcode.com/problems/simplify-path/description/) medium
 
