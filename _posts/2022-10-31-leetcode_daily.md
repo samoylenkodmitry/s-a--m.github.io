@@ -12,6 +12,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 15.04.2023
+[2218. Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/description/) hard
+
+```kotlin
+fun maxValueOfCoins(piles: List<List<Int>>, k: Int): Int {
+    val cache = Array(piles.size) { mutableListOf<Long>() }
+
+        fun dfs(pile: Int, taken: Int): Long {
+            if (taken >= k || pile >= piles.size) return 0
+            if (cache[pile].size > taken) return cache[pile][taken]
+            var max = dfs(pile + 1, taken)
+            var sum = 0L
+            for (j in 0..piles[pile].lastIndex) {
+                val newTaken = taken + j + 1
+                if (newTaken > k) break
+                sum += piles[pile][j]
+                max = maxOf(max, sum + dfs(pile + 1, newTaken))
+            }
+            cache[pile].add(max)
+            return max
+        }
+
+        return dfs(0, 0).toInt()
+    }
+```
+[blog post](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3418459/kotlin-dfs-cache/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-15042023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/181
+#### Intuition
+Given the current pile, we can assume there is an optimal maximum value of the piles to the right of the current for every given number of `k`.
+![leetcode_daily_backtrack.gif](https://assets.leetcode.com/users/images/9936598c-1906-47c8-ad95-cbb84a54ac32_1681537939.4210196.gif)
+
+#### Approach
+We can cache the result by the keys of every `pile to taken`
+
+#### Complexity
+- Time complexity:
+$$O(n^2)$$
+- Space complexity:
+$$O(n^2)$$
+
 # 14.04.2023
 [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) medium
 
