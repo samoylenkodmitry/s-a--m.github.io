@@ -50,9 +50,9 @@ We can cache the result by the keys of every `pile to taken`
 
 #### Complexity
 - Time complexity:
-$$O(n^2)$$
+$$O(kn^2)$$
 - Space complexity:
-$$O(n^2)$$
+$$O(kn^2)$$
 
 # 14.04.2023
 [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) medium
