@@ -12,6 +12,32 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 18.05.2023
+[1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description/) easy
+
+```kotlin
+fun mergeAlternately(word1: String, word2: String): String =
+(word1.asSequence().zip(word2.asSequence()) { a, b -> "$a$b" } +
+word1.drop(word2.length) + word2.drop(word1.length))
+.joinToString("")
+```
+[blog post](https://leetcode.com/problems/merge-strings-alternately/solutions/3429123/kotlin-sequence/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-18052023?sd=pf)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/184
+#### Intuition
+Do what is asked.
+Handle the tail.
+#### Approach
+* we can use sequence `zip` operator
+* for the tail, consider `drop`
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 17.04.2023
 [1431. Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/) easy
 
