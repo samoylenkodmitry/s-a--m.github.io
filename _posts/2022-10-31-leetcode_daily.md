@@ -12,6 +12,43 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 20.04.2023
+[662. Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/description/) medium
+
+```kotlin
+fun widthOfBinaryTree(root: TreeNode?): Int =
+with(ArrayDeque<Pair<Int, TreeNode>>()) {
+    root?.let { add(0 to it) }
+    var width = 0
+    while (isNotEmpty()) {
+        var first = peek()
+        var last = last()
+        width = maxOf(width, last.first - first.first + 1)
+        repeat(size) {
+            val (x, node) = poll()
+            node.left?.let { add(2 * x + 1 to it) }
+            node.right?.let { add(2 * x + 2 to it) }
+        }
+    }
+    width
+}
+```
+[blog post](https://leetcode.com/problems/maximum-width-of-binary-tree/solutions/3436856/kotlin-bfs/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-20042023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/186
+#### Intuition
+For every node, positions of it's left child is $$2x +1$$ and right is $$2x + 2$$
+![leetcode_tree.gif](https://assets.leetcode.com/users/images/d1333748-b007-4b6d-85a3-71f073644b70_1681965037.4414012.gif)
+
+#### Approach
+We can do BFS and track node positions.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 19.04.2023
 [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description/) medium
 
