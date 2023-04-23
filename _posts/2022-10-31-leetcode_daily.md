@@ -51,7 +51,27 @@ fun numberOfArrays(s: String, k: Int): Int {
     }
     return dfs(0).toInt()
 }
+
+or bottom-up
+
+fun numberOfArrays(s: String, k: Int): Int {
+    val cache = LongArray(s.length)
+    for (curr in s.lastIndex downTo 0) {
+        if (s[curr] == '0') continue
+        var count = 0L
+        var num = 0L
+        for (i in curr..s.lastIndex) {
+            num = num * 10L + s[i].toLong() - '0'.toLong()
+            if (num > k) break
+            val next = if (i == s.lastIndex) 1 else cache[i + 1]
+            count = (count + next) % 1_000_000_007L
+        }
+        cache[curr] = count
+    }
+    return cache[0].toInt()
+}
 ```
+
 [blog post](https://leetcode.com/problems/restore-the-array/solutions/3446057/kotlin-choose-dp-rule/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-23042023?sd=pf)
 #### Join me on Telegram
