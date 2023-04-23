@@ -12,6 +12,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 23.04.2023
+[1416. Restore The Array](https://leetcode.com/problems/restore-the-array/description/) hard
+
+```kotlin
+fun numberOfArrays(s: String, k: Int): Int {
+    // 131,7  k=1000
+    // 1317 > 1000
+    // 20001  k=2000
+    // 2      count=1
+    //  000   count=1, curr=2000
+    //     1  count++, curr=1
+    //
+    // 220001 k=2000
+    // 2      count=1 curr=1
+    // 22     count+1=2 curr=22          [2, 2], [22]
+    // 220    curr=220                   [2, 20], [220]
+    // 2200   curr=2200 > 2000, curr=200 [2, 200], [2200]
+    // 22000  curr=2000   count=1        [2, 2000]
+    // 220001 count+1=3 curr=20001 > 2000, curr=1  [2, 2000, 1], []
+    val m = 1_000_000_007L
+    val cache = LongArray(s.length) { -1L }
+    fun dfs(curr: Int): Long {
+        if (curr == s.length) return 1L
+        if (s[curr] == '0') return 0L
+        if (cache[curr] != -1L) return cache[curr]
+        var count = 0L
+        var num = 0L
+        for (i in curr..s.lastIndex) {
+            val d = s[i].toLong() - '0'.toLong()
+            num = num * 10L + d
+            if (num > k) break
+            val countOther = dfs(i + 1)
+            count = (count + countOther) % m
+        }
+        cache[curr] = count
+        return count
+    }
+    return dfs(0).toInt()
+}
+```
+[blog post](https://leetcode.com/problems/restore-the-array/solutions/3446057/kotlin-choose-dp-rule/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-23042023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/189
+#### Intuition
+One naive solution, is to find all the possible ways of splitting the string, and calculating `soFar` number, gives TLE as we must take `soFar` into consideration when memoizing the result.
+Let's consider, that for every position in `s` there is only one number of possible arrays. Given that, we can start from each position and try to take the `first` number in all possible correct ways, such that `num < k`. Now, we can cache this result for reuse.
+
+#### Approach
+* use `Long` to avoid overflow
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 22.04.2023
 [1312. Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/) hard
 
