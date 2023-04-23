@@ -70,6 +70,30 @@ fun numberOfArrays(s: String, k: Int): Int {
     }
     return cache[0].toInt()
 }
+
+memory optimization:
+
+fun numberOfArrays(s: String, k: Int): Int {
+    val cache = LongArray(k.toString().length + 1)
+    for (curr in s.lastIndex downTo 0) {
+        System.arraycopy(cache, 0, cache, 1, cache.size - 1)
+        if (s[curr] == '0') {
+            cache[0] = 0
+            continue
+        }
+
+        var count = 0L
+        var num = 0L
+        for (i in curr..s.lastIndex) {
+            num = num * 10L + s[i].toLong() - '0'.toLong()
+            if (num > k) break
+            val next = if (i == s.lastIndex) 1 else cache[i - curr + 1]
+            count = (count + next) % 1_000_000_007L
+        }
+        cache[0] = count
+    }
+    return cache[0].toInt()
+}
 ```
 
 [blog post](https://leetcode.com/problems/restore-the-array/solutions/3446057/kotlin-choose-dp-rule/)
@@ -82,6 +106,7 @@ Let's consider, that for every position in `s` there is only one number of possi
 
 #### Approach
 * use `Long` to avoid overflow
+* we actually not need all the numbers in cache, just the $$lg(k)$$ for the max length of the number
 #### Complexity
 - Time complexity:
 $$O(n)$$
