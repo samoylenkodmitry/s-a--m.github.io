@@ -109,7 +109,7 @@ Let's consider, that for every position in `s` there is only one number of possi
 * we actually not need all the numbers in cache, just the $$lg(k)$$ for the max length of the number
 #### Complexity
 - Time complexity:
-$$O(n)$$
+$$O(nlg(k))$$
 - Space complexity:
 $$O(lg(k))$$
 
