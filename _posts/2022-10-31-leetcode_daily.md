@@ -111,7 +111,7 @@ Let's consider, that for every position in `s` there is only one number of possi
 - Time complexity:
 $$O(n)$$
 - Space complexity:
-$$O(n)$$
+$$O(lg(k))$$
 
 # 22.04.2023
 [1312. Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/) hard
