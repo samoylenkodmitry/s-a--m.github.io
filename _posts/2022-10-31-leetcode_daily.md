@@ -12,6 +12,37 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 26.04.2023
+[258. Add Digits](https://leetcode.com/problems/add-digits/description/) easy
+
+```kotlin
+fun addDigits(num: Int): Int = if (num == 0) 0 else 1 + ((num - 1) % 9)
+// 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38
+// 0 1 2 3 4 5 6 7 8 9 1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2
+// 0 [1..9] [1..9] [1..9] ...
+```
+
+[blog post](https://leetcode.com/problems/add-digits/solutions/3455825/kotlin-pattern/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-26042023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/192
+#### Intuition
+Observing the pattern:
+```
+// 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38
+// 0 1 2 3 4 5 6 7 8 9 1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2
+// 0 [1..9] [1..9] [1..9] ...
+```
+There is a repeating part of it: `[1..9]`, so we can derive the formula.
+
+#### Approach
+It is just an array pointer loop shifted by 1.
+#### Complexity
+- Time complexity:
+$$O(1)$$
+- Space complexity:
+$$O(1)$$
+
 # 25.04.2023
 [2336. Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/description/) medium
 
