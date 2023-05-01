@@ -12,6 +12,30 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 1.05.2023
+[1491. Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/description/) easy
+
+```kotlin
+fun average(salary: IntArray): Double = with (salary) {
+    (sum() - max()!! - min()!!) / (size - 2).toDouble()
+}
+```
+
+[blog post](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/solutions/3471763/kotlin-sum-max-min/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-1052023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/198
+#### Intuition
+Just do what is asked.
+
+#### Approach
+We can do `.fold` and iterate only once, but `sum`, `max` and `min` operators are less verbose.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+
 # 30.04.2023
 [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/) hard
 
