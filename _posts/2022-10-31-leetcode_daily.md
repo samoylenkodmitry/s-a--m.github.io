@@ -12,6 +12,29 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 2.05.2023
+[1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/description/) easy
+
+```kotlin
+fun arraySign(nums: IntArray): Int = nums.fold(1) { r, t -> if (t == 0) 0 else r * (t / Math.abs(t)) }
+```
+
+[blog post](https://leetcode.com/problems/sign-of-the-product-of-an-array/solutions/3475973/kotlin-one-liner/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-2052023?sd=pf)
+# Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/199
+#### Intuition
+Do what is asked, but avoid overflow.
+
+#### Approach
+There is an `sign` function in kotlin, but leetcode.com doesn't support it yet.
+We can use `fold`.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+
 # 1.05.2023
 [1491. Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/description/) easy
 
