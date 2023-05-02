@@ -21,7 +21,7 @@ fun arraySign(nums: IntArray): Int = nums.fold(1) { r, t -> if (t == 0) 0 else r
 
 [blog post](https://leetcode.com/problems/sign-of-the-product-of-an-array/solutions/3475973/kotlin-one-liner/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-2052023?sd=pf)
-# Join me on Telegram
+#### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/199
 #### Intuition
 Do what is asked, but avoid overflow.
