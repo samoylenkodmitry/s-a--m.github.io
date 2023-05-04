@@ -12,6 +12,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 4.05.2023
+[649. Dota2 Senate](https://leetcode.com/problems/dota2-senate/description/) medium
+
+```kotlin
+fun predictPartyVictory(senate: String): String {
+    val queue = ArrayDeque<Char>()
+        senate.forEach { queue.add(it) }
+        var banR = 0
+        var banD = 0
+        while (true) {
+            var haveR = false
+            var haveD = false
+            repeat(queue.size) {
+                val c = queue.poll()
+                if (c == 'R') {
+                    haveR = true
+                    if (banR > 0) banR--
+                    else {
+                        queue.add(c)
+                        banD++
+                    }
+                } else {
+                    haveD = true
+                    if (banD > 0) banD--
+                    else {
+                        queue.add(c)
+                        banR++
+                    }
+                }
+            }
+            if (!haveR) return "Dire"
+            if (!haveD) return "Radiant"
+        }
+    }
+```
+
+[blog post](https://leetcode.com/problems/dota2-senate/solutions/3483710/kotlin-simulation/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-4052023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/202
+#### Intuition
+*One can ban on any length to the right.*
+We can just simulate the process, and it will take at most two rounds.
+
+#### Approach
+Use `Queue` and count how many bans are from the Radiant and from the Dire.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+
 # 3.05.2023
 [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/description/) easy
 
