@@ -12,6 +12,38 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 5.05.2023
+[1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/) medium
+
+```kotlin
+fun maxVowels(s: String, k: Int): Int {
+    val vowels = setOf('a', 'e', 'i', 'o', 'u')
+    var count = 0
+    var max = 0
+    for (i in 0..s.lastIndex) {
+        if (s[i] in vowels) count++
+        if (i >= k && s[i - k] in vowels) count--
+        if (count > max) max = count
+    }
+    return max
+}
+```
+
+[blog post](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/3487078/kotlin-sliding-window/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-5052023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/203
+#### Intuition
+Count vowels, increasing them on the right border and decreasing on the left of the sliding window.
+#### Approach
+* we can use `Set` to check if it is a vowel
+* look at `a[i - k]` to detect if we must start move left border from `i == k`
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+
 # 4.05.2023
 [649. Dota2 Senate](https://leetcode.com/problems/dota2-senate/description/) medium
 
