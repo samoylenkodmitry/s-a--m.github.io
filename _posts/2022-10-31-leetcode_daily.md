@@ -12,6 +12,30 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 8.05.2023
+[1572. Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/) easy
+
+```kotlin
+fun diagonalSum(mat: Array<IntArray>): Int =
+    (0..mat.lastIndex).sumBy {
+        mat[it][it] + mat[it][mat.lastIndex - it]
+    }!! - if (mat.size % 2 == 0) 0 else mat[mat.size / 2][mat.size / 2]
+```
+
+[blog post](https://leetcode.com/problems/matrix-diagonal-sum/solutions/3498716/kotlin-one-liner/)
+[substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-8052023?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/206
+#### Intuition
+Just do what is asked.
+#### Approach
+* avoid double counting of the center element
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+
 # 7.05.2023
 [1964. Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/description/) hard
 
