@@ -19,6 +19,10 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/211
+
+#### Problem
+Count distinct strings, length low to high, appending '0' zero or '1' one times. Return count % 1,000,000,007.
+
 #### Intuition
 Let's add `zero`'s or `one`'s one by one. For each current length, the resulting count is independent of all the previous additions. We can cache the result by the current `size` of the string.
 
