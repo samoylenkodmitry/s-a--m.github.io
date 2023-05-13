@@ -23,7 +23,7 @@ https://t.me/leetcode_daily_unstoppable/211
 Let's add `zero`'s or `one`'s one by one. For each current length, the resulting count is independent of all the previous additions. We can cache the result by the current `size` of the string.
 
 #### Approach
-Let's write a DFS solution, adding `zero` or `one` and counting the good strings.
+Let's write a DFS solution, adding `zero` or `one` and count the good strings.
 Then we can rewrite it to the iterative DP.
 #### Complexity
 - Time complexity:
