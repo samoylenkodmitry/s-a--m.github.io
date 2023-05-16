@@ -12,6 +12,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 16.05.2023
+[24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) medium
+[blog post](https://leetcode.com/problems/swap-nodes-in-pairs/solutions/3529159/kotlin-be-explicit-to-avoid-bugs/)
+[substack](https://dmitriisamoilenko.substack.com/p/16052023-24-swap-nodes-in-pairs?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/214
+#### Problem TLDR
+Swap adjacent ListNodes `a-b-c-d -> b-a-d-c`.
+#### Intuition
+Those kinds of problems are easy, but your task is to write it bug free from the first go.
+
+#### Approach
+For more robust code:
+* use `dummy` head to track for a new head
+* use explicit variables for each node in the configuration
+* do debug code by writing down it values in the comments
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+#### Code
+```
+fun swapPairs(head: ListNode?): ListNode? {
+    val dummy = ListNode(0).apply { next = head }
+    var curr: ListNode? = dummy
+    while (curr?.next != null && curr?.next?.next != null) {
+        // curr->one->two->next
+        // curr->two->one->next
+        var one = curr.next
+        var two = one?.next
+        val next = two?.next
+        curr.next = two
+        two?.next = one
+        one?.next = next
+
+        curr = one
+    }
+    return dummy.next
+}
+
+```
 
 # 15.05.2023
 [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/) medium
