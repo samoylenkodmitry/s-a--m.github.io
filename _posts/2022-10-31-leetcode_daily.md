@@ -38,7 +38,7 @@ fun isBipartite(graph: Array<IntArray>): Boolean {
     fun dfs(u: Int, isRed: Int): Boolean {
         if (reds[u] == 0) {
             reds[u] = if (isRed == 0) 1 else isRed
-            return !graph[u].any { v -> !dfs(v, -reds[u]) }
+            return graph[u].all { dfs(it, -reds[u]) }
         } else return reds[u] == isRed
     }
     return graph.indices.all { dfs(it, reds[it]) }
