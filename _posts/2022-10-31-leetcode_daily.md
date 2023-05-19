@@ -34,20 +34,15 @@ $$O(V+E)$$, for `reds` and `visited` set.
 #### Code
 ```
 fun isBipartite(graph: Array<IntArray>): Boolean {
-    val reds = BooleanArray(graph.size)
-    val visited = HashSet<Int>()
-        fun dfs(u: Int, isRed: Boolean): Boolean {
-            if (visited.add(u)) {
-                reds[u] = isRed
-
-                return !graph[u].any { v -> !dfs(v, !isRed) }
-            } else return reds[u] == isRed
-        }
-        for (u in 0..graph.lastIndex)
-        if (!dfs(u, reds[u])) return false
-        return true
+    val reds = IntArray(graph.size)
+    fun dfs(u: Int, isRed: Int): Boolean {
+        if (reds[u] == 0) {
+            reds[u] = if (isRed == 0) 1 else isRed
+            return !graph[u].any { v -> !dfs(v, -reds[u]) }
+        } else return reds[u] == isRed
     }
-
+    return graph.indices.all { dfs(it, reds[it]) }
+}
 ```
 
 # 18.05.2023
