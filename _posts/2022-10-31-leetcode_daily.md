@@ -12,6 +12,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 19.05.2023
+[785. Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/description/) medium
+[blog post](https://leetcode.com/problems/is-graph-bipartite/solutions/3540319/kotlin-dfs-red-blue/)
+[substack](https://dmitriisamoilenko.substack.com/p/19052023-785-is-graph-bipartite?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/217
+#### Problem TLDR
+Find if graph is [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
+#### Intuition
+![image.png](https://assets.leetcode.com/users/images/7a6642c2-2c85-40c7-9e0e-9593c606c128_1684467332.1593482.png)
+Mark edge `Red` or `Blue` and it's nodes in the opposite.
+
+#### Approach
+* there are disconnected nodes, so run DFS for all of them
+#### Complexity
+- Time complexity:
+$$O(VE)$$, DFS once for all `vertices` and `edges`
+- Space complexity:
+$$O(V+E)$$, for `reds` and `visited` set.
+#### Code
+```
+fun isBipartite(graph: Array<IntArray>): Boolean {
+    val reds = BooleanArray(graph.size)
+    val visited = HashSet<Int>()
+        fun dfs(u: Int, isRed: Boolean): Boolean {
+            if (visited.add(u)) {
+                reds[u] = isRed
+
+                return !graph[u].any { v -> !dfs(v, !isRed) }
+            } else return reds[u] == isRed
+        }
+        for (u in 0..graph.lastIndex)
+        if (!dfs(u, reds[u])) return false
+        return true
+    }
+
+```
+
+# 18.05.2023
+[1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) medium
+[blog post](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/solutions/3536694/kotlin-one-liner/)
+[substack](https://dmitriisamoilenko.substack.com/p/18052023-1557-minimum-number-of-vertices?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/216
+#### Problem TLDR
+Find all starting nodes in graph.
+#### Intuition
+Count nodes that have no incoming connections.
+
+#### Approach
+* we can use subtract operation in Kotlin
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+fun findSmallestSetOfVertices(n: Int, edges: List<List<Int>>): List<Int> =
+    (0 until n) - edges.map { it[1] }
+```
+
 # 17.05.2023
 [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/) medium
 [blog post](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/solutions/3532758/kotlin-stack/)
