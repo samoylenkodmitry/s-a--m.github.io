@@ -35,14 +35,13 @@ $$O(n)$$
 fun topKFrequent(nums: IntArray, k: Int): IntArray {
     val freq = nums.groupBy { it }.mapValues { it.value.size }
     val freqToNum = Array<MutableList<Int>>(nums.size + 1) { mutableListOf() }
-        freq.forEach { (num, fr) -> freqToNum[nums.size + 1 - fr].add(num) }
-        return freqToNum
+    freq.forEach { (num, fr) -> freqToNum[nums.size + 1 - fr].add(num) }
+    return freqToNum
         .filter { it.isNotEmpty() }
         .flatten()
         .take(k)
         .toIntArray()
-    }
-
+}
 ```
 
 # 21.05.2023
