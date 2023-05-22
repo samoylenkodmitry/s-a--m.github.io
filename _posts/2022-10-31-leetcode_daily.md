@@ -12,6 +12,39 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 22.05.2023
+[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) medium
+[blog post](https://leetcode.com/problems/top-k-frequent-elements/solutions/3550637/kotlin-bucket-sort/)
+[substack](https://dmitriisamoilenko.substack.com/p/22052023-347-top-k-frequent-elements?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/220
+#### Problem TLDR
+First `k` unique elements sorted by frequency.
+#### Intuition
+Group by frequency `1 1 1 5 5 -> 1:3, 5:2`, then bucket sort frequencies `2:5, 3:1`, then flatten and take first `k`.
+#### Approach
+* We can use [Kotlin collections api](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/)
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun topKFrequent(nums: IntArray, k: Int): IntArray {
+    val freq = nums.groupBy { it }.mapValues { it.value.size }
+    val freqToNum = Array<MutableList<Int>>(nums.size + 1) { mutableListOf() }
+        freq.forEach { (num, fr) -> freqToNum[nums.size + 1 - fr].add(num) }
+        return freqToNum
+        .filter { it.isNotEmpty() }
+        .flatten()
+        .take(k)
+        .toIntArray()
+    }
+
+```
+
 # 21.05.2023
 [934. Shortest Bridge](https://leetcode.com/problems/shortest-bridge/description/) medium
 [blog post](https://leetcode.com/problems/shortest-bridge/solutions/3546914/kotlin-dfs-bfs/)
