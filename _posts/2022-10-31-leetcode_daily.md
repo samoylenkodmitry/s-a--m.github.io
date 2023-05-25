@@ -12,6 +12,125 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 25.05.2023
+[837. New 21 Game](https://leetcode.com/problems/new-21-game/description/) medium
+[blog post](https://leetcode.com/problems/new-21-game/solutions/3560756/kotlin-observe-and-simulate-then-math/)
+[substack](https://dmitriisamoilenko.substack.com/p/25052023-837-new-21-game?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/223
+#### Problem TLDR
+Probability sum of random numbers `1..maxPts` sum be `< n` after it overflow `k`.
+#### Intuition
+For every event, we choose `one` number from numbers `1..maxPts`. Probability of this event is `p1 = 1/maxPts`.
+
+For example, `n=6, k=1, maxpts=10`: we can pick any numbers `1, 2, 3, 4, 5, 6` that are `<=6`. Numbers `7, 8, 9, 10` are excluded, because they are `>6`. After we pick one number with probability `p1 = 1/10`, the sum will be `>=k` so we stop. The final probability is the sum of individual valid choices `p = sum(good_p1)`
+
+Another example, `n=6, k=2, maxpts=10`: our choices are
+```
+// n = 6, k = 2, maxpts = 10
+// p_win1 1+1, 1+2, 1+3, 1+4, 1+5, 2,   3,  4,  5,  6
+//        0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1 0.1 = 0.55
+
+```
+When we go to the second round in cases of `1+1, 1+2, 1+3, 1+4, 1+5`, we multiply the probabilities, so `p(1+1) = p1*p1`.
+
+Next, observe the pattern for other examples:
+```
+// n = 6, k = 3, maxpts = 10
+// p_win  1+1+1, 1+1+2, 1+1+3, 1+1+4, 1+2, 1+3, 1+4, 1+5, 2+1, 2+2, 2+3, 2+4, 3,  4,  5,   6
+//        0.001  0.001  0.001  0.001  0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1
+// sum=0.484
+
+
+// n = 6, k = 4, maxpts = 10
+// p_win  1+1+1+1 1+1+1+2 1+1+1+3 1+1+2 1+1+3 1+1+4 1+2+1 1+2+2 1+2+3 1+3  1+4  1+5  2+1+1 2+1+2 2+1+3 2+2  2+3  2+4  3+1  3+2  3+3  4   5   6
+//         .0001   .0001   .0001   .001  .001  .001  .001  .001  .001  .01  .01  .01  .001  .001  .001  .01  .01  .01  .01  .01  .01  .1  .1  .1
+//sum=0.3993
+```
+What we see is the sequence of `1+1+1+1, 1+1+1+2, 1+1+1+3`, where we pick a number from `1..maxpts` then calculate the sum and if the sum is still smaller than `n` we go deeper and make another choice from `1..maxpts`.
+That can be written as Depth-First Search algorithm:
+```
+fun dfs(currSum: Int): Double {
+    ...
+    var sumP = 0.0
+    for (x in 1..maxPts)
+    sumP += dfs(currSum + x)
+    res = sumP * p1
+}
+```
+This will work and gives us correct answers, but gives TLE for big numbers, as its time complexity is $$O(n^2)$$.
+
+Let's observe this algorithm's recurrent equation:
+$$
+f(x) = (f(x+1) + f(x+2)+..+f(x + maxPts))*p1
+$$
+$$
+f(x + 1) = (f(x+2) + f(x+3) +...+f(x + maxPts)*p1 + f(x + 1 + maxPts))*p1
+$$
+subtract second sequence from the first:
+$$
+f(x) - f(x + 1) = f(x+1)*p1 - f(x+1+maxPts)*p1
+$$
+$$
+f(x) = f(x+1) + (f(x+1) - f(x+1+maxPts))*p1
+$$
+This removes one dimension of iteration `1..maxPts`. However, it fails the first case where `currSum == k - 1`, because the equation didn't consider that not all `x+maxPts` are smaller than `n`. For this case, we must return `(n-k+1)*p1` as we choose last number from range `k - 1..n`.
+#### Approach
+This problem is next to impossible to solve in an interview, given how many conclusions you must derive on the fly. So, hope no one will give it to you.
+* use an array for the faster cache
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun new21Game(n: Int, k: Int, maxPts: Int): Double {
+    // n = 6, k = 1, maxpts = 10
+    // cards: 1 2 3 4 5 6 7 8 9 10
+    // p_win1(6, 10) = count(1 2 3 4 5 6) / 10 = 0.6
+
+
+    // n = 6, k = 2, maxpts = 10
+    // p_win1 1+1, 1+2, 1+3, 1+4, 1+5, 2,   3,  4,  5,  6
+    //        0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1 0.1 = 0.55
+
+
+    // n = 6, k = 3, maxpts = 10
+    // p_win  1+1+1, 1+1+2, 1+1+3, 1+1+4, 1+2, 1+3, 1+4, 1+5, 2+1, 2+2, 2+3, 2+4, 3,  4,  5,   6
+    //        0.001  0.001  0.001  0.001  0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1
+    // sum=0.484
+
+
+    // n = 6, k = 4, maxpts = 10
+    // p_win  1+1+1+1 1+1+1+2 1+1+1+3 1+1+2 1+1+3 1+1+4 1+2+1 1+2+2 1+2+3 1+3  1+4  1+5  2+1+1 2+1+2 2+1+3 2+2  2+3  2+4  3+1  3+2  3+3  4   5   6
+    //         .0001   .0001   .0001   .001  .001  .001  .001  .001  .001  .01  .01  .01  .001  .001  .001  .01  .01  .01  .01  .01  .01  .1  .1  .1
+    //sum=0.3993
+    val p1 = 1.0 / maxPts.toDouble()
+    val cache = Array<Double>(n + 1) { -1.0 }
+        // f(x) = (f(x+1) + f(x+2)+..+f(x + maxPts))*p1
+        // f(x + 1) = (f(x+2) + f(x+3) +...+f(x + maxPts)*p1 + f(x + 1 + maxPts))*p1
+        // f(x) - f(x + 1) = f(x+1)*p1 - f(x+1+maxPts)*p1
+        // f(x) = f(x+1) + (f(x+1) - f(x+1+maxPts))*p1
+    fun dfs(currSum: Int): Double {
+        if (currSum == k - 1) return minOf(1.0, (n-k+1)*p1) // corner case
+        if (currSum >= k) return if (currSum <= n) 1.0 else 0.0
+        if (cache[currSum] != -1.0) return cache[currSum]
+        //var sumP = 0.0
+        //for (x in 1..minOf(maxPts, n - currSum)) {
+             //    sumP += dfs(currSum + x)
+        //}
+        //val res = sumP * p1
+        val res = dfs(currSum + 1) + (dfs(currSum + 1) - dfs(currSum + 1 + maxPts)) * p1
+        cache[currSum] = res
+        return res
+    }
+    return dfs(0)
+}
+
+```
+
 # 24.05.2023
 [2542. Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/description/) medium
 [blog post](https://leetcode.com/problems/maximum-subsequence-score/solutions/3557549/kotlin-priorityqueue/)
