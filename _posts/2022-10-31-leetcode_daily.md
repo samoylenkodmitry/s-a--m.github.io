@@ -12,6 +12,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 26.05.2023
+[1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/) medium
+[blog post](https://leetcode.com/problems/stone-game-ii/solutions/3563651/kotlin-dfs-cache-prefix-sum/)
+[substack](https://dmitriisamoilenko.substack.com/p/26052023-1140-stone-game-ii?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/224
+#### Problem TLDR
+While Alice and Bob optimally take `1..2*m` numbers from `piles` find maximum for Alice.
+#### Intuition
+For each position, we can cache the result for Alice starting from it. Next round, Bob will become Alice and use that cached result, but Alice will use the remaining part:
+$$
+bob_i = suffix_i - alice_i
+$$
+and
+$$
+alice_i = \sum(piles_{1..x<2m}) + (suffix_i - alice_{i + 1})
+$$
+
+#### Approach
+* compute prefix sums in `IntArray`
+* use `HashMap` for simpler code, or Array for faster
+#### Complexity
+- Time complexity:
+$$O(n^2)$$
+- Space complexity:
+$$O(n^2)$$
+#### Code
+```
+fun stoneGameII(piles: IntArray): Int {
+    // 2 7 9 4 4    M      A   B
+    // A            1      1
+    // A A          2      2,7
+    // A B B        2          7,9
+    // A A B B B    3          9,4,4
+    val sums = IntArray(piles.size)
+    sums[0] = piles[0]
+    for (i in 1..piles.lastIndex)
+    sums[i] = sums[i - 1] + piles[i]
+    val total = sums[sums.lastIndex]
+    val cache = mutableMapOf<Pair<Int, Int>, Int>()
+    fun dfs(m: Int, curr: Int): Int {
+        return cache.getOrPut(m to curr) {
+            var res = 0
+            var pilesSum = 0
+            for (x in 0 until 2*m) {
+                if (curr + x > piles.lastIndex) break
+                pilesSum += piles[curr + x]
+                val nextOther = dfs(maxOf(m, x + 1), curr + x + 1)
+                val nextMy = total - sums[curr + x] - nextOther
+                res = maxOf(res, pilesSum + nextMy)
+            }
+            res
+        }
+    }
+    return dfs(1, 0)
+}
+
+```
+
 # 25.05.2023
 [837. New 21 Game](https://leetcode.com/problems/new-21-game/description/) medium
 [blog post](https://leetcode.com/problems/new-21-game/solutions/3560756/kotlin-observe-and-simulate-then-math/)
