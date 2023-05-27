@@ -12,6 +12,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 27.05.2023
+[1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/description/) hard
+[blog post](https://leetcode.com/problems/stone-game-iii/solutions/3566578/kotln-dp-prefix-sum/)
+[substack](https://dmitriisamoilenko.substack.com/p/27052023-1406-stone-game-iii?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/225
+#### Problem TLDR
+Winner of “Alice”, “Bob” or “Tie” in game of taking `1, 2 or 3` stones by turn from `stoneValue` array.
+#### Intuition
+Let's count the result for Alice, starting at `i` element:
+$$
+alice_i = \sum_{i=1,2,3}(stones_i) + suffix_i - alice_{i+1}
+$$
+The result can be safely cached. Bob's points will be Alice's points in the next turn.
+#### Approach
+Let's write bottom up DP.
+* use increased sizes for `cache` and `suffix` arrays for simpler code
+* corner case is the negative number, so we must take at least one stone
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun stoneGameIII(stoneValue: IntArray): String {
+    val suffix = IntArray(stoneValue.size + 1)
+    for (i in stoneValue.lastIndex downTo 0) suffix[i] = stoneValue[i] + suffix[i + 1]
+    val cache = IntArray(stoneValue.size + 1)
+    var bob = 0
+
+    for (curr in stoneValue.lastIndex downTo 0) {
+        var sum = 0
+        var first = true
+        for (j in 0..2) {
+            val ind = curr + j
+            if (ind > stoneValue.lastIndex) break
+            sum += stoneValue[ind]
+            val nextAlice = cache[ind + 1]
+            val next = suffix[ind + 1] - nextAlice
+            if (first || sum + next > cache[curr]) {
+                first = false
+                cache[curr] = sum + next
+                bob = nextAlice
+            }
+        }
+    }
+    return if (cache[0] == bob) "Tie" else if (cache[0] > bob) "Alice" else "Bob"
+}
+
+```
+
 # 26.05.2023
 [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/) medium
 [blog post](https://leetcode.com/problems/stone-game-ii/solutions/3563651/kotlin-dfs-cache-prefix-sum/)
