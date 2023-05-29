@@ -12,6 +12,34 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 27.05.2023
+[1603. Design Parking System](https://leetcode.com/problems/design-parking-system/description/) easy
+[blog post](https://leetcode.com/problems/design-parking-system/solutions/3573683/kotlin/)
+[substack](https://dmitriisamoilenko.substack.com/p/27052023-1603-design-parking-system?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/227
+#### Problem TLDR
+Return if car of type `1, 2 or 3` can be added given sizes `big, medium and small`.
+#### Intuition
+Just write the code.
+
+#### Approach
+Let's use an array to minimize the number of lines.
+#### Complexity
+- Time complexity:
+$$O(1)$$
+- Space complexity:
+$$O(1)$$
+#### Code
+```
+class ParkingSystem(big: Int, medium: Int, small: Int) {
+    val types = arrayOf(big, medium, small)
+
+    fun addCar(carType: Int): Boolean = types[carType - 1]-- > 0
+}
+
+```
+
 # 28.05.2023
 [1547. Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/submissions/958762191/) hard
 [blog post](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/solutions/3570530/kotlin-dfs-memo/)
