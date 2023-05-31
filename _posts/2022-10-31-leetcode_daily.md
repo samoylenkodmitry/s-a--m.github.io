@@ -12,7 +12,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
-# 28.05.2023
+# 31.05.2023
+[1396. Design Underground System](https://leetcode.com/problems/design-underground-system/description/) medium
+[blog post](https://leetcode.com/problems/design-underground-system/solutions/3580723/kotlin/)
+[substack](https://dmitriisamoilenko.substack.com/p/31052023-1396-design-underground?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/229
+#### Problem TLDR
+Average time `from, to` when different user IDs do `checkIn(from, time1)` and `checkOut(to, time2)`
+#### Intuition
+Just do what is asked, use `HashMap` to track user's last station.
+
+#### Approach
+* store `sum` time and `count` for every `from, to` station
+* use `Pair` as key for `HashMap`
+#### Complexity
+- Time complexity:
+$$O(1)$$, for each call
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+class UndergroundSystem() {
+    val fromToSumTime = mutableMapOf<Pair<String, String>, Long>()
+    val fromToCount = mutableMapOf<Pair<String, String>, Int>()
+    val idFromTime = mutableMapOf<Int, Pair<String, Int>>()
+    fun Pair<String, String>.time() = fromToSumTime[this] ?: 0L
+    fun Pair<String, String>.count() = fromToCount[this] ?: 0
+
+    fun checkIn(id: Int, stationName: String, t: Int) {
+        idFromTime[id] = stationName to t
+    }
+
+    fun checkOut(id: Int, stationName: String, t: Int) {
+        val (from, tFrom) = idFromTime[id]!!
+        val fromTo = from to stationName
+        fromToSumTime[fromTo] = t - tFrom + fromTo.time()
+        fromToCount[fromTo] = 1 + fromTo.count()
+    }
+
+    fun getAverageTime(startStation: String, endStation: String): Double =
+    with(startStation to endStation) {
+        time().toDouble() / count().toDouble()
+    }
+
+}
+```
+
+# 30.05.2023
 [705. Design HashSet](https://leetcode.com/problems/design-hashset/description/) easy
 [blog post](https://leetcode.com/problems/design-hashset/solutions/3577326/kotlin/)
 [substack](https://dmitriisamoilenko.substack.com/p/28052023-705-design-hashset?sd=pf)
@@ -72,7 +119,7 @@ class MyHashSet(val initialSz: Int = 16, val loadFactor: Double = 1.6) {
 
 ```
 
-# 27.05.2023
+# 29.05.2023
 [1603. Design Parking System](https://leetcode.com/problems/design-parking-system/description/) easy
 [blog post](https://leetcode.com/problems/design-parking-system/solutions/3573683/kotlin/)
 [substack](https://dmitriisamoilenko.substack.com/p/27052023-1603-design-parking-system?sd=pf)
