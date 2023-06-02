@@ -22,7 +22,7 @@ https://t.me/leetcode_daily_unstoppable/233
 Count detonated bombs by chain within each radius.
 #### Intuition
 A bomb will only detonate if its center within the radius of another.
-![image.png](https://assets.leetcode.com/users/images/3a965edc-62d4-404b-9569-0197b9b93617_1685678358.0882993.png)
+![image.png](https://assets.leetcode.com/users/images/0a0ae515-9b35-44b0-9cb6-cd18b72980ca_1685679480.0795984.png)
 For example, `A` can detonate `B`, but not otherwise.
 
 Let's build a graph, who's who can detonate.
