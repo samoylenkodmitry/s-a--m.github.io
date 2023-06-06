@@ -12,8 +12,34 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 06.06.2023
+[1502. Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/description/) easy
+[blog post](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/solutions/3602840/kotlin/)
+[substack](https://dmitriisamoilenko.substack.com/p/06062023-1502-can-make-arithmetic?sd=pf)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/237
+#### Problem TLDR
+Is `IntArray` can be arithmetic progression?
+#### Intuition
+Sort, then use sliding window.
+
+#### Approach
+Let's write Kotlin one-liner.
+#### Complexity
+- Time complexity:
+$$O(nlog(n))$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun canMakeArithmeticProgression(arr: IntArray): Boolean =
+arr.sorted().windowed(2).groupBy { it[1] - it[0] }.keys.size == 1
+
+```
+
 # 05.06.2023
-[1232. Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/description/) medium
+[1232. Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/description/) easy
 [blog post](https://leetcode.com/problems/check-if-it-is-a-straight-line/solutions/3598943/kotlin-tan/)
 [substack](https://dmitriisamoilenko.substack.com/p/05062023-1232-check-if-it-is-a-straight?sd=pf)
 #### Join me on Telegram
