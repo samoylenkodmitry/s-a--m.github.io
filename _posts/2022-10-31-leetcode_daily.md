@@ -12,6 +12,69 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 11.06.2023
+[1146. Snapshot Array](https://leetcode.com/problems/snapshot-array/description/) medium
+[blog post](https://leetcode.com/problems/snapshot-array/solutions/3623764/kotlin-binary-search/)
+[substack](https://dmitriisamoilenko.substack.com/p/11062023-1146-snapshot-array?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/056cadfa-afa3-46c9-83ba-dd31277c0078_1686455279.7681677.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/242
+#### Problem TLDR
+Implement an array where all elements can be saved into a `snapshot's.
+#### Intuition
+Consider example:
+```
+// 0 1 2 3 4 5 6 <-- snapshot id
+// 1 . . 2 . . 3 <-- value
+```
+When `get()(2)` called, `1` must be returned. So, we need to keep all the previous values. We can put them into a list combining with the current `snapshot id`: `(1,0), (2, 3), (3, 6)`. Then we can do a Binary Search and find the `highest_id >= id`.
+
+#### Approach
+For more robust Binary Search:
+* use inclusive `lo`, `hi`
+* check last condition `lo == hi`
+* always write the result `ind = mid`
+
+##### Complexity
+- Time complexity:
+$$O(log(n))$$ for `get`
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+class SnapshotArray(length: Int) {
+    // 0 1 2 3 4 5 6
+    // 1 . . 2 . . 3
+    val arr = Array<MutableList<Pair<Int, Int>>>(length) { mutableListOf() }
+    var currId = 0
+
+    fun set(index: Int, v: Int) {
+        val idVs = arr[index]
+        if (idVs.isEmpty() || idVs.last().first != currId) idVs += currId to v
+        else idVs[idVs.lastIndex] = currId to v
+    }
+
+    fun snap(): Int = currId.also { currId++ }
+
+    fun get(index: Int, id: Int): Int {
+        var lo = 0
+        var hi = arr[index].lastIndex
+        var ind = -1
+        while (lo <= hi) {
+            val mid = lo + (hi - lo) / 2
+            if (arr[index][mid].first <= id) {
+                ind = mid
+                lo = mid + 1
+            } else hi = mid - 1
+        }
+        return if (ind == -1) 0 else arr[index][ind].second
+    }
+
+}
+
+```
+
 # 10.06.2023
 [1802. Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/description/) medium
 [blog post](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/3620296/kotlin-nums-i-can-t-be-zero/)
