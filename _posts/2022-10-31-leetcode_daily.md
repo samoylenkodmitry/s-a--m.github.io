@@ -12,6 +12,40 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 13.06.2023
+[2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/description/) medium
+[blog post](https://leetcode.com/problems/equal-row-and-column-pairs/solutions/3631323/kotlin-hash/)
+[substack](https://dmitriisamoilenko.substack.com/p/12062023-2352-equal-row-and-column?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/ac9c8b85-0617-4b59-a269-f302ed1e3de3_1686628513.6269782.png)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/244
+#### Problem TLDR
+Count of `rowArray` == `colArray` in an `n x n` matrix.
+
+#### Intuition
+Compute `hash` function for each `row ` and each `col`, then compare them. If `hash(row) == hash(col)`, then compare arrays.
+For hashing, we can use simple `31 * prev + curr`, that encodes both value and position.
+
+#### Approach
+* For this Leetcode data, `tan` hash works perfectly, we can skip comparing the arrays.
+
+#### Complexity
+- Time complexity:
+$$O(n^2)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+fun equalPairs(grid: Array<IntArray>): Int {
+    val rowHashes = grid.map { it.fold(0.0) { r, t ->  Math.tan(r) + t } }
+    val colHashes = (0..grid.lastIndex).map { x ->
+        (0..grid.lastIndex).fold(0.0) { r, t -> Math.tan(r) + grid[t][x] } }
+        return (0..grid.size * grid.size - 1).count {
+            rowHashes[it / grid.size] == colHashes[it % grid.size]
+        }
+    }
+```
+
 # 12.06.2023
 ![image.png](https://assets.leetcode.com/users/images/25c39272-e908-4b53-8202-06becd8adc74_1686541066.3963215.png)
 [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/description/) easy
