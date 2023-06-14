@@ -12,6 +12,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 14.06.2023
+[530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) easy
+[blog post](https://leetcode.com/problems/minimum-absolute-difference-in-bst/solutions/3635561/kotlin-morris-traversal/)
+[substack](https://dmitriisamoilenko.substack.com/p/14062023-530-minimum-absolute-difference?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/6f699d52-79a0-4179-8b53-460e2a1842ce_1686714279.6705241.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/245
+#### Problem TLDR
+Min difference in a BST
+#### Intuition
+In-order traversal in a BST gives a sorted order, we can compare `curr - prev`.
+
+#### Approach
+Let's write a [Morris traversal](https://en.wikipedia.org/wiki/Threaded_binary_tree): make the current node a rightmost child of its left child.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+#### Code
+```
+
+fun getMinimumDifference(root: TreeNode?): Int {
+    if (root == null) return 0
+    var minDiff = Int.MAX_VALUE
+    var curr = root
+    var prev = -1
+    while (curr !=  null) {
+        val left = curr.left
+        if (left != null) {
+            var leftRight = left
+            while (leftRight.right != null) leftRight = leftRight.right
+            leftRight.right = curr
+            curr.left = null
+            curr = left
+        } else {
+            if (prev >= 0) minDiff = minOf(minDiff, curr.`val` - prev)
+            prev = curr.`val`
+            curr = curr.right
+        }
+    }
+    return minDiff
+}
+
+```
+
 # 13.06.2023
 [2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/description/) medium
 [blog post](https://leetcode.com/problems/equal-row-and-column-pairs/solutions/3631323/kotlin-hash/)
