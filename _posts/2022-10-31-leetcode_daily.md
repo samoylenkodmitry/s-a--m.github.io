@@ -12,6 +12,46 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 15.06.2023
+[1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/) medium
+[blog post](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/3639491/kotlin-bfs/)
+[substack](https://dmitriisamoilenko.substack.com/p/15062023-1161-maximum-level-sum-of?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/0001f209-62ce-4c0e-9d35-921b77240056_1686800390.362235.png)
+
+#### Join me on Telegram Leetcode_daily
+https://t.me/leetcode_daily_unstoppable/246
+#### Problem TLDR
+Binary Tree level with max sum
+
+#### Intuition
+We can use Breadth-First Search to find a `sum` of each level.
+
+#### Approach
+Let's try to write it in a Kotlin style
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun maxLevelSum(root: TreeNode?) = with(ArrayDeque<TreeNode>()) {
+    root?.let { add(it) }
+    generateSequence<Int> {
+        if (isEmpty()) null else (1..size).map {
+            with(poll()) {
+                `val`.also {
+                    left?.let { add(it) }
+                    right?.let { add(it) }
+                }
+            }
+        }.sum()
+    }.withIndex().maxBy { it.value }?.index?.inc() ?: 0
+}
+
+```
+
 # 14.06.2023
 [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) easy
 [blog post](https://leetcode.com/problems/minimum-absolute-difference-in-bst/solutions/3635561/kotlin-morris-traversal/)
