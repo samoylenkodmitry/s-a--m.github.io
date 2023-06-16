@@ -12,6 +12,76 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 16.06.2023
+[1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/description/) hard
+[blog post](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/3643907/kotlin-build-tree-count-permuts/)
+[substack](https://dmitriisamoilenko.substack.com/p/16062023-1569-number-of-ways-to-reorder?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/19dcf6c9-718c-47b6-884b-4b4d474e027f_1686892068.5150518.png)
+
+#### Join me on Telegram Leetcode_daily
+https://t.me/leetcode_daily_unstoppable/247
+
+#### Problem TLDR
+Count permutations of an array with identical Binary Search Tree
+#### Intuition
+First step is to build a Binary Search Tree by adding the elements one by one.
+Let's observe what enables the permutations in `[34512]`:
+![image.png](https://assets.leetcode.com/users/images/4ab365a0-0ca6-4fe5-a25c-7fce3ee4b0e4_1686892282.3727634.png)
+Left child `[12]` don't have permutations, as `1` must be followed by `2`. Same for the right `[45]`. However, when we're merging left and right, they can be merged in different positions.
+Let's observe the pattern for merging `ab` x `cde`, `ab` x `cd`, `ab` x `c`, `a` x `b`:
+![image.png](https://assets.leetcode.com/users/images/f4ddc8e4-83ab-4b59-9cb4-0bd8216bed05_1686892531.7714736.png)
+And another, `abc` x `def`:
+![image.png](https://assets.leetcode.com/users/images/bc09c45f-2d01-44ad-a0db-f8f3e0ee14a8_1686892570.416291.png)
+For each `length` of a left `len1` and right `len2` subtree, we can derive the equation for permutations `p`:
+$$
+p(len1, len2) = p(len1 - 1, len2) + p(len1, len2 - 1)
+$$
+Also, when left or right subtree have several permutations, like `abc`, `acb`, `cab`, and right `def`, `dfe`, the result will be multiplied `3 x 2`.
+
+#### Approach
+Build the tree, then compute the `p = left.p * right.p * p(left.len, right.len)` in a DFS.
+#### Complexity
+- Time complexity:
+$$O(n^2)$$, n for tree walk, and n^2 for `f`
+- Space complexity:
+$$O(n^2)$$
+#### Code
+```
+
+class Node(val v: Int, var left: Node? = null, var right: Node? = null)
+data class R(val perms: Long, val len: Long)
+fun numOfWays(nums: IntArray): Int {
+    val mod = 1_000_000_007L
+    var root: Node? = null
+    fun insert(n: Node?, v: Int): Node {
+        if (n == null) return Node(v)
+        if (v > n.v) n.right = insert(n.right, v)
+        else n.left = insert(n.left, v)
+        return n
+    }
+    nums.forEach { root = insert(root, it) }
+    val cache = mutableMapOf<Pair<Long, Long>, Long>()
+    fun f(a: Long, b: Long): Long {
+        return if (a < b) f(b, a) else if (a <= 0 || b <= 0) 1 else cache.getOrPut(a to b) {
+            (f(a - 1, b) + f(a, b - 1)) % mod
+        }
+    }
+    fun perms(a: R, b: R): Long {
+        val perms = (a.perms * b.perms) % mod
+        return (perms * f(a.len , b.len)) % mod
+    }
+    fun dfs(n: Node?): R {
+        if (n == null) return R(1, 0)
+        val left = dfs(n.left)
+        val right = dfs(n.right)
+        return R(perms(left, right), left.len + right.len + 1)
+    }
+    val res = dfs(root)?.perms?.dec() ?: 0
+    return (if (res < 0) res + mod else res).toInt()
+}
+
+```
+
 # 15.06.2023
 [1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/) medium
 [blog post](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/3639491/kotlin-bfs/)
