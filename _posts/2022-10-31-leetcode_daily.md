@@ -12,6 +12,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 17.06.2023
+[1187. Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/description/) hard
+[blog post](https://leetcode.com/problems/make-array-strictly-increasing/solutions/3647345/kotlin-dfs-memo/)
+[substack](https://dmitriisamoilenko.substack.com/p/17062023-1187-make-array-strictly?sd=pf)
+
+![image.png](https://assets.leetcode.com/users/images/92487544-7da2-47f7-b6df-6423063c1813_1686982521.7615871.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/248
+#### Problem TLDR
+Minimum replacements to make `arr1` increasing using any numbers `arr2`
+#### Intuition
+For any current position in `arr1` we can leave this number or replace it with any number from `arr2[i] > curr`. We can write Depth-First Search to check all possible replacements. To memorize, we must also consider the previous value. It can be used as-is, but more optimally, we just store a `skipped` boolean flag and restore the `prev` value: if it was skipped, then previous is from `arr1` else from `arr2`.
+
+#### Approach
+* sort and distinct the `arr2`
+* use `Array` for cache, as it will be faster than a `HashMap`
+* use explicit variable for the invalid result
+* for the stop condition, if all the `arr1` passed, then result it good
+#### Complexity
+- Time complexity:
+$$O(n^2)$$
+- Space complexity:
+$$O(n^2)$$
+# Code
+```
+
+fun makeArrayIncreasing(arr1: IntArray, arr2: IntArray): Int {
+    val list2 = arr2.distinct().sorted()
+    val INV = -1
+    val cache = Array(arr1.size + 1) { Array(list2.size + 1) { IntArray(2) { -2 } } }
+    fun dfs(pos1: Int, pos2: Int, skipped: Int): Int {
+        if (pos1 == arr1.size) return 0
+        if (cache[pos1][pos2][skipped] != -2) return cache[pos1][pos2][skipped]
+        val prev = if (skipped == 1) arr1.getOrNull(pos1 - 1)?:-1 else list2.getOrNull(pos2 - 1)?:-1
+        return (
+        if (pos2 == list2.size) {
+            if (arr1[pos1] > prev) dfs(pos1 + 1, pos2, 1) else INV
+        } else if (list2[pos2] <= prev) {
+            dfs(pos1, pos2 + 1, 1)
+        } else {
+            val replace = dfs(pos1 + 1, pos2 + 1, 0)
+            if (arr1[pos1] > prev) {
+                val skip = dfs(pos1 + 1, pos2, 1)
+                if (skip != INV && replace != INV) minOf(skip, 1 + replace)
+                else if (replace != INV) 1 + replace else skip
+            } else if (replace != INV) 1 + replace else INV
+        }
+        ).also { cache[pos1][pos2][skipped] = it }
+    }
+    return dfs(0, 0, 1)
+}
+
+```
+
 # 16.06.2023
 [1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/description/) hard
 [blog post](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/3643907/kotlin-build-tree-count-permuts/)
