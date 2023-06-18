@@ -12,12 +12,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 18.06.2023
+[2328. Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/description/) hard
+[blog post](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/solutions/3651039/kotlin-dfs-memo/)
+[substack](https://dmitriisamoilenko.substack.com/p/18062023-2328-number-of-increasing?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/f702bc6b-8491-46ce-a067-5c15162c763f_1687066373.0051703.png)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/249
+#### Problem TLDR
+Count increasing paths in a matrix
+#### Intuition
+For every cell in a matrix, we can calculate how many increasing paths are starting from it. This result can be memorized. If we know the sibling's result, then we add it to the current if `curr > sibl`.
+
+#### Approach
+* use Depth-First search for the paths finding
+* use `LongArray` for the memo
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun countPaths(grid: Array<IntArray>): Int {
+    val m = 1_000_000_007L
+    val counts = Array(grid.size) { LongArray(grid[0].size) }
+    fun dfs(y: Int, x: Int): Long {
+        return counts[y][x].takeIf { it != 0L } ?: {
+            val v = grid[y][x]
+            var sum = 1L
+            if (x > 0 && v > grid[y][x - 1]) sum = (sum + dfs(y, x - 1)) % m
+            if (y > 0 && v > grid[y - 1][x]) sum = (sum + dfs(y - 1, x)) % m
+            if (y < grid.size - 1 && v > grid[y + 1][x]) sum = (sum + dfs(y + 1, x)) % m
+            if (x < grid[0].size - 1 && v > grid[y][x + 1]) sum = (sum + dfs(y, x + 1)) % m
+            sum
+        }().also { counts[y][x] = it }
+    }
+    return (0 until grid.size * grid[0].size)
+    .fold(0L) { r, t -> (r + dfs(t / grid[0].size, t % grid[0].size)) % m }
+    .toInt()
+}
+
+```
+
 # 17.06.2023
 [1187. Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/description/) hard
 [blog post](https://leetcode.com/problems/make-array-strictly-increasing/solutions/3647345/kotlin-dfs-memo/)
 [substack](https://dmitriisamoilenko.substack.com/p/17062023-1187-make-array-strictly?sd=pf)
 
-![image.png](https://assets.leetcode.com/users/images/92487544-7da2-47f7-b6df-6423063c1813_1686982521.7615871.png)
+![image.png](https://assets.leetcode.com/users/images/f0efb026-48d7-4f89-9753-2ade3d32a976_1686985014.944183.png)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/248
@@ -44,23 +88,18 @@ fun makeArrayIncreasing(arr1: IntArray, arr2: IntArray): Int {
     val INV = -1
     val cache = Array(arr1.size + 1) { Array(list2.size + 1) { IntArray(2) { -2 } } }
     fun dfs(pos1: Int, pos2: Int, skipped: Int): Int {
-        if (pos1 == arr1.size) return 0
-        if (cache[pos1][pos2][skipped] != -2) return cache[pos1][pos2][skipped]
-        val prev = if (skipped == 1) arr1.getOrNull(pos1 - 1)?:-1 else list2.getOrNull(pos2 - 1)?:-1
-        return (
+        val prev = if (skipped == 1) arr1.getOrNull(pos1-1)?:-1 else list2.getOrNull(pos2-1)?:-1
+        return if (pos1 == arr1.size) 0 else cache[pos1][pos2][skipped].takeIf { it != -2} ?:
         if (pos2 == list2.size) {
             if (arr1[pos1] > prev) dfs(pos1 + 1, pos2, 1) else INV
         } else if (list2[pos2] <= prev) {
             dfs(pos1, pos2 + 1, 1)
         } else {
             val replace = dfs(pos1 + 1, pos2 + 1, 0)
-            if (arr1[pos1] > prev) {
-                val skip = dfs(pos1 + 1, pos2, 1)
-                if (skip != INV && replace != INV) minOf(skip, 1 + replace)
-                else if (replace != INV) 1 + replace else skip
-            } else if (replace != INV) 1 + replace else INV
-        }
-        ).also { cache[pos1][pos2][skipped] = it }
+            val skip = if (arr1[pos1] > prev) dfs(pos1 + 1, pos2, 1) else INV
+            if (skip != INV && replace != INV) minOf(skip, 1 + replace)
+            else if (replace != INV) 1 + replace else skip
+        }.also { cache[pos1][pos2][skipped] = it }
     }
     return dfs(0, 0, 1)
 }
