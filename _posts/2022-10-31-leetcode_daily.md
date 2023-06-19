@@ -12,6 +12,34 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 19.06.2023
+[1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/description/) easy
+[blog post](https://leetcode.com/problems/find-the-highest-altitude/solutions/3654634/kotlin-one-liner/)
+[substack](https://dmitriisamoilenko.substack.com/p/18062023-1732-find-the-highest-altitude?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/257d1f08-62ae-49cf-84d5-304d497c79dd_1687146109.8661134.png)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/250
+#### Problem TLDR
+Max running sum
+#### Intuition
+Just sum all the values and compute the `max`
+
+#### Approach
+Let's write Kotlin `fold` one-liner
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+#### Code
+```
+
+fun largestAltitude(gain: IntArray): Int = gain
+.fold(0 to 0) { (max, sum), t -> maxOf(max, sum + t) to (sum + t) }
+.first
+
+```
+
 # 18.06.2023
 [2328. Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/description/) hard
 [blog post](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/solutions/3651039/kotlin-dfs-memo/)
