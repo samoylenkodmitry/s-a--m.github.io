@@ -12,6 +12,43 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 20.06.2023
+[2090. K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/description/) medium
+[blog post](https://leetcode.com/problems/k-radius-subarray-averages/solutions/3659377/kotlin-sliding-window/)
+[substack](https://dmitriisamoilenko.substack.com/p/20062023-2090-k-radius-subarray-averages?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/dcffd4a7-b3f7-4697-8b66-4c13a15e689c_1687231777.9171236.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/251
+#### Problem TLDR
+Array containing sliding window of size `2k+1` average or `-1`
+#### Intuition
+Just do what is asked
+
+#### Approach
+* careful with `Int` overflow
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun getAverages(nums: IntArray, k: Int): IntArray {
+    if (k == 0) return nums
+    var sum = 0L
+    val res = IntArray(nums.size) { -1 }
+    for (i in 0 until nums.size) {
+        sum += nums[i]
+        if (i > 2 * k) sum -= nums[i - 2 * k - 1]
+        if (i >= 2 * k) res[i - k] = (sum / (2 * k + 1)).toInt()
+    }
+    return res
+}
+
+```
+
 # 19.06.2023
 [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/description/) easy
 [blog post](https://leetcode.com/problems/find-the-highest-altitude/solutions/3654634/kotlin-one-liner/)
