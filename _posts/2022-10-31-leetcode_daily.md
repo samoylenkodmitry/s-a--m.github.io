@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) medium
 [blog post](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/3668167/kotlin-track-money-balance/)
 [substack](https://dmitriisamoilenko.substack.com/p/22062023-714-best-time-to-buy-and?sd=pf)
-![image.png](https://assets.leetcode.com/users/images/2d378350-0b2b-4323-ab9f-6e1efbd48b81_1687413167.219177.png)
+![image.png](https://assets.leetcode.com/users/images/959be11c-5f02-4f48-af37-27de10a2a9a4_1687414937.016538.png)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/253
@@ -39,17 +39,10 @@ $$O(n)$$
 $$O(n)$$
 #### Code
 ```
-
-fun maxProfit(prices: IntArray, fee: Int): Int {
-    var balanceBuy = IntArray(prices.size)
-    var balanceSell = IntArray(prices.size)
-    balanceBuy[0] = -prices[0]
-    for (i in 1..prices.lastIndex) {
-        balanceBuy[i] = maxOf(balanceBuy[i - 1], balanceSell[i - 1] - prices[i])
-        balanceSell[i] = maxOf(balanceSell[i - 1], balanceBuy[i] + prices[i] - fee)
-    }
-    return balanceSell.last()!!
-}
+fun maxProfit(prices: IntArray, fee: Int) = prices
+.fold(-prices[0] to 0) { (balanceBuy, balance), price ->
+    maxOf(balanceBuy, balance - price) to maxOf(balance, balanceBuy + price - fee)
+}.second
 
 ```
 
