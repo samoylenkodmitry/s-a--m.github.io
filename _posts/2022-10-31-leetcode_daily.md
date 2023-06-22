@@ -12,6 +12,47 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 22.06.2023
+[714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) medium
+[blog post](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/3668167/kotlin-track-money-balance/)
+[substack](https://dmitriisamoilenko.substack.com/p/22062023-714-best-time-to-buy-and?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/2d378350-0b2b-4323-ab9f-6e1efbd48b81_1687413167.219177.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/253
+#### Problem TLDR
+Max profit from buying stocks and selling them with `fee` for `prices[day]`
+#### Intuition
+Naive recursive or iterative Dynamic Programming solution will take $$O(n^2)$$ time if we iterate over all days for buying and for selling.
+The trick here is to consider the money balances you have each day. We can track two separate money balances: for when we're buying the stock `balanceBuy` and for when we're selling `balanceSell`. Then, it is simple to greedily track balances:
+* if we choose to buy, we subtract `prices[day]` from `balanceBuy`
+* if we choose to sell, we add `prices[day] - fee` to `balanceSell`
+* just greedily compare previous balances with choices and choose maximum balance.
+
+#### Approach
+* balances are always following each other: `buy-sell-buy-sell..`, or we can rewrite this like `currentBalance = maxOf(balanceSell, balanceBuy)` and use it for addition and subtraction.
+* we can keep only the previous balances, saving space to $$O(1)$$
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun maxProfit(prices: IntArray, fee: Int): Int {
+    var balanceBuy = IntArray(prices.size)
+    var balanceSell = IntArray(prices.size)
+    balanceBuy[0] = -prices[0]
+    for (i in 1..prices.lastIndex) {
+        balanceBuy[i] = maxOf(balanceBuy[i - 1], balanceSell[i - 1] - prices[i])
+        balanceSell[i] = maxOf(balanceSell[i - 1], balanceBuy[i] + prices[i] - fee)
+    }
+    return balanceSell.last()!!
+}
+
+```
+
 # 21.06.2023
 [2448. Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/description/) hard
 [blog post](https://leetcode.com/problems/minimum-cost-to-make-array-equal/solutions/3663809/kotlin-binary-search/)
