@@ -12,6 +12,75 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 25.06.2023
+[1575. Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/description/) hard
+[blog post](https://leetcode.com/problems/count-all-possible-routes/solutions/3679289/kotlin-dfs-memo/)
+[substack](https://dmitriisamoilenko.substack.com/p/25062023-1575-count-all-possible?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/1cbba751-8fac-4b42-a767-6b43454ddb66_1687665781.8780994.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/256
+#### Problem TLDR
+Count paths from `start` to `finish` using `|locations[i]-locations[j]` of the `fuel`
+#### Intuition
+Let's observe the example:
+```
+//  0 1 2 3 4
+//  2 3 6 8 4
+//    *   *
+//
+//  2 3 4 6 8
+//    *     *
+//
+//  3-2(4)-3(3)-6(0)
+//  3-6(2)-8(0)
+//  3-8(5)
+//  3-8(5)-6(3)-8(1)
+//  3-4(4)-6(2)-8(0)
+```
+At each position `curr` given the amount of fuel `f` there is a certain number of ways to `finish`. It is independent of all the other factors, so can be safely cached.
+#### Approach
+* as there are also paths from `finish` to `finish`, modify the code to search other paths when `finish` is reached
+#### Complexity
+- Time complexity:
+$$O(nf)$$, `f` - is a max fuel
+- Space complexity:
+$$O(nf)$$
+#### Code
+```
+
+fun countRoutes(locations: IntArray, start: Int, finish: Int, fuel: Int): Int {
+    //  0 1 2 3 4
+    //  2 3 6 8 4
+    //    *   *
+    //
+    //  2 3 4 6 8
+    //    *     *
+    //
+    //  3-2(4)-3(3)-6(0)
+    //  3-6(2)-8(0)
+    //  3-8(5)
+    //  3-8(5)-6(3)-8(1)
+    //  3-4(4)-6(2)-8(0)
+
+    val cache = mutableMapOf<Pair<Int, Int>, Int>()
+    fun dfs(curr: Int, f: Int): Int {
+        if (f < 0) return 0
+        return cache.getOrPut(curr to f) {
+            var sum = if (curr == finish) 1 else 0
+            locations.forEachIndexed { i, n ->
+                if (i != curr) {
+                    sum = (sum + dfs(i, f - Math.abs(n - locations[curr]))) % 1_000_000_007
+                }
+            }
+            return@getOrPut sum
+        }
+    }
+    return dfs(start, fuel)
+}
+
+```
+
 # 24.06.2023
 [956. Tallest Billboard](https://leetcode.com/problems/tallest-billboard/description/) hard
 [blog post](https://leetcode.com/problems/tallest-billboard/solutions/3675652/kotlin-dfs-memo-hard-trick/)
