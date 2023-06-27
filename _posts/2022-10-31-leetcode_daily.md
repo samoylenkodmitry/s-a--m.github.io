@@ -12,6 +12,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 27.06.2023
+[373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/) medium
+[blog post](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/solutions/3687668/kotlin-hard-dijkstra/)
+[substack](https://dmitriisamoilenko.substack.com/p/27062023-373-find-k-pairs-with-smallest?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/7bbe783b-b8e3-419d-92f2-1f2e12dd99be_1687844671.548487.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/258
+#### Problem TLDR
+List of increasing sum pairs `a[i], b[j]` from two sorted lists `a, b`
+#### Intuition
+Naive solution with two pointers didn't work, as we must backtrack to the previous pointers sometimes:
+```
+1 1 2
+1 2 3
+
+1+1 1+1 2+1 2+2(?) vs 1+2
+```
+
+The trick is to think of the pairs `i,j` as graph nodes, where the adjacent list is `i+1,j` and `i, j+1`. Each next node sum is strictly greater than the previous:
+![image.png](https://assets.leetcode.com/users/images/4a7d9e2b-dfa8-4466-83a6-93f370bb4c31_1687845288.8454409.png)
+Now we can walk this graph in exactly `k` steps with Dijkstra algorithm using `PriorityQueue` to find the next smallest node.
+
+#### Approach
+* use `visited` set
+* careful with Int overflow
+* let's use Kotlin's `generateSequence`
+
+#### Complexity
+- Time complexity:
+$$O(klogk)$$, there are `k` steps to peek from heap of size `k`
+- Space complexity:
+$$O(k)$$
+#### Code
+```
+
+fun kSmallestPairs(nums1: IntArray, nums2: IntArray, k: Int): List<List<Int>> =
+    with(PriorityQueue<List<Int>>(compareBy({ nums1[it[0]].toLong() + nums2[it[1]].toLong() }))) {
+        add(listOf(0, 0))
+        val visited = HashSet<Pair<Int, Int>>()
+        visited.add(0 to 0)
+
+        generateSequence {
+            val (i, j) = poll()
+            if (i < nums1.lastIndex && visited.add(i + 1 to j)) add(listOf(i + 1, j))
+            if (j < nums2.lastIndex && visited.add(i to j + 1)) add(listOf(i, j + 1))
+            listOf(nums1[i], nums2[j])
+        }
+        .take(minOf(k.toLong(), nums1.size.toLong() * nums2.size.toLong()).toInt())
+        .toList()
+    }
+
+```
+
 # 26.06.2023
 [2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/description/) medium
 [blog post](https://leetcode.com/problems/total-cost-to-hire-k-workers/solutions/3683531/kotlin-two-pointer-priority-queue/)
