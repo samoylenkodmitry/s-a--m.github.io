@@ -12,6 +12,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 28.06.2023
+[1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/description/) medium
+[blog post](https://leetcode.com/problems/path-with-maximum-probability/solutions/3691288/kotlin-dijkstra/)
+[substack](https://dmitriisamoilenko.substack.com/p/28062023-1514-path-with-maximum-probability?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/143073aa-364e-495a-9787-d50e5e1c55b0_1687926999.9465983.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/259
+#### Problem TLDR
+Max probability path from `start` to `end` in a probability edges graph
+#### Intuition
+What didn't work:
+* naive BFS, DFS with `visited` set - will not work, as we need to visit some nodes several times
+* Floyd-Warshall - will solve this problem for every pair of nodes, but takes $$O(n^3)$$ and gives TLE
+What will work: Dijkstra
+#### Approach
+* store probabilities from `start` to every node in an array
+* the stop condition will be when there is no any `better` path
+#### Complexity
+- Time complexity:
+$$O(EV)$$
+- Space complexity:
+$$O(EV)$$
+#### Code
+```
+fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start: Int, end: Int): Double {
+    val pstart = Array(n) { 0.0 }
+    val adj = mutableMapOf<Int, MutableList<Pair<Int, Double>>>()
+    edges.forEachIndexed { i, (from, to) ->
+        adj.getOrPut(from) { mutableListOf() } += to to succProb[i]
+        adj.getOrPut(to) { mutableListOf() } += from to succProb[i]
+    }
+    with(ArrayDeque<Pair<Int, Double>>()) {
+        add(start to 1.0)
+        while(isNotEmpty()) {
+            val (curr, p) = poll()
+            if (p <= pstart[curr]) continue
+            pstart[curr] = p
+            adj[curr]?.forEach { (next, pnext) -> add(next to p * pnext) }
+        }
+    }
+
+    return pstart[end]
+}
+```
+
 # 27.06.2023
 [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/) medium
 [blog post](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/solutions/3687668/kotlin-hard-dijkstra/)
