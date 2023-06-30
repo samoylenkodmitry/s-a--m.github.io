@@ -12,6 +12,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 30.06.2023
+[1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/description/) hard
+[blog post](https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698920/kotlin-union-find/)
+[substack](https://dmitriisamoilenko.substack.com/p/30062023-1970-last-day-where-you?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/36f11073-b0b5-4f37-8a47-0408b6aa31ad_1688100606.6594977.png)
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/261
+#### Problem TLDR
+Last `day` matrix connected top-bottom when flooded each day at `cells[day]`
+#### Intuition
+One possible solution is to do a Binary Search in a days space, however it gives TLE.
+Let's invert the problem: find the first day from the end where there is a connection top-bottom.
+![image.png](https://assets.leetcode.com/users/images/db78d854-cdf6-489d-beee-5503db679ce5_1688100909.0815942.png)
+Now, `cells[day]` is a new ground. We can use Union-Find to connect ground cells.
+
+#### Approach
+* use sentinel cells for `top` and `bottom`
+* use path compressing `uf[n] = x`
+#### Complexity
+- Time complexity:
+$$O(an)$$, where `a` is a reverse Ackerman function
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>): Int {
+    val uf = IntArray(2 + row * col) { it }
+    fun root(x: Int): Int {
+        var n = x
+        while (uf[n] != n) n = uf[n]
+        uf[x] = n
+        return n
+    }
+    val isConnected: (Int, Int) -> Boolean = { a, b -> root(a) == root(b) }
+    val connect: (Int, Int) -> Unit = { a, b -> uf[root(a)] = root(b) }
+    val pos: (Int, Int) -> Int = { y, x -> y * col + x }
+    val land = HashSet<Int>()
+        fun connectLand(y: Int, x: Int, pos: Int) {
+            pos(y, x).takeIf {
+                y in 0 until row && x in 0 until col && land.contains(it)
+            }?.let { connect(pos, it) }
+        }
+        val top = row * col
+        val bottom = top + 1
+        val dir = arrayOf(0 to -1, 0 to 1, -1 to 0, 1 to 0)
+        fun addLand(y: Int, x: Int) {
+            val pos = pos(y, x)
+            land.add(pos)
+            if (y == 0) connect(pos, top)
+            if (y == row - 1) connect(pos, bottom)
+            dir.forEach { (dy, dx) -> connectLand(y + dy, x + dx, pos) }
+        }
+        return (cells.lastIndex downTo 0).first {
+            val (y, x) = cells[it]
+            addLand(y - 1, x - 1)
+            isConnected(top, bottom)
+        } ?: 0
+    }
+
+```
+
 # 29.06.2023
 [864. Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/description/) hard
 [blog post](https://leetcode.com/problems/shortest-path-to-get-all-keys/solutions/3695847/kotlin-bfs/)
