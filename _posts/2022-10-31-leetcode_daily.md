@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/description/) hard
 [blog post](https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698920/kotlin-union-find/)
 [substack](https://dmitriisamoilenko.substack.com/p/30062023-1970-last-day-where-you?sd=pf)
-![image.png](https://assets.leetcode.com/users/images/6cdfcf07-4f63-4b6f-8852-025bfaff3862_1688135930.8381133.png)
+![image.png](https://assets.leetcode.com/users/images/f43ca966-17b5-45f7-90dc-34e8a215fb95_1688137691.7631874.png)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/261
@@ -38,21 +38,17 @@ $$O(an)$$, where `a` is a reverse Ackerman function
 $$O(n)$$
 #### Code
 ```
-val uf = mutableMapOf<Int, Int>()
-fun root(x: Int) = (generateSequence(x) { uf[it] }
-.firstOrNull { uf[it] == it } ?: x)
+val uf = HashMap<Int, Int>()
+fun root(x: Int): Int = if (uf[x] == null || uf[x] == x) x else root(uf[x]!!)
 .also { uf[x] = it }
 fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>) =
     cells.size - 1 - cells.reversed().indexOfFirst { (y, x) ->
-        uf[y * col + x] = if (y == 1) root(Int.MAX_VALUE)
-        else if (y == row) root(Int.MIN_VALUE)
-        else y * col + x
+        uf[y * col + x] = root(if (y == 1) 0 else if (y == row) 1 else y * col + x)
         sequenceOf(y to x - 1, y to x + 1, y - 1 to x, y + 1 to x)
         .filter { (y, x) -> y in 1..row && x in 1..col }
         .map { (y, x) -> y * col + x }
-        .filter { uf[it] != null }
-        .forEach { uf[root(y * col + x)] = root(it) }
-        root(Int.MIN_VALUE) == root(Int.MAX_VALUE)
+        .forEach { if (uf[it] != null) uf[root(y * col + x)] = root(it) }
+        root(0) == root(1)
     }
 ```
 
