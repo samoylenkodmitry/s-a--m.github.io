@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/description/) hard
 [blog post](https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698920/kotlin-union-find/)
 [substack](https://dmitriisamoilenko.substack.com/p/30062023-1970-last-day-where-you?sd=pf)
-![image.png](https://assets.leetcode.com/users/images/f513d903-e658-469c-ac17-2028544fcc75_1688125305.8501832.png)
+![image.png](https://assets.leetcode.com/users/images/6cdfcf07-4f63-4b6f-8852-025bfaff3862_1688135930.8381133.png)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/261
@@ -38,27 +38,22 @@ $$O(an)$$, where `a` is a reverse Ackerman function
 $$O(n)$$
 #### Code
 ```
-fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>): Int {
-    val uf = mutableMapOf<Int, Int>()
-    val root: (Int) -> Int = {
-        (generateSequence(it) { uf[it] }
-        .firstOrNull { uf[it] == it } ?: it)
-        .also { r -> uf[it] = r }
-    }
-    return (cells.lastIndex downTo 0).first {
-        val (y, x) = cells[it]
-        val pos = y * col + x
-        uf[pos] = if (y == 1) root(Int.MAX_VALUE)
+val uf = mutableMapOf<Int, Int>()
+fun root(x: Int) = (generateSequence(x) { uf[it] }
+.firstOrNull { uf[it] == it } ?: x)
+.also { uf[x] = it }
+fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>) =
+    cells.size - 1 - cells.reversed().indexOfFirst { (y, x) ->
+        uf[y * col + x] = if (y == 1) root(Int.MAX_VALUE)
         else if (y == row) root(Int.MIN_VALUE)
-        else pos
+        else y * col + x
         sequenceOf(y to x - 1, y to x + 1, y - 1 to x, y + 1 to x)
         .filter { (y, x) -> y in 1..row && x in 1..col }
         .map { (y, x) -> y * col + x }
         .filter { uf[it] != null }
-        .forEach { uf[root(pos)] = root(it) }
+        .forEach { uf[root(y * col + x)] = root(it) }
         root(Int.MIN_VALUE) == root(Int.MAX_VALUE)
     }
-}
 ```
 
 # 29.06.2023
