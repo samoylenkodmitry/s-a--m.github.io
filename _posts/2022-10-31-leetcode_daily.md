@@ -16,7 +16,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/description/) hard
 [blog post](https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698920/kotlin-union-find/)
 [substack](https://dmitriisamoilenko.substack.com/p/30062023-1970-last-day-where-you?sd=pf)
-![image.png](https://assets.leetcode.com/users/images/36f11073-b0b5-4f37-8a47-0408b6aa31ad_1688100606.6594977.png)
+![image.png](https://assets.leetcode.com/users/images/f513d903-e658-469c-ac17-2028544fcc75_1688125305.8501832.png)
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/261
 #### Problem TLDR
@@ -37,41 +38,27 @@ $$O(an)$$, where `a` is a reverse Ackerman function
 $$O(n)$$
 #### Code
 ```
-
 fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>): Int {
-    val uf = IntArray(2 + row * col) { it }
-    fun root(x: Int): Int {
-        var n = x
-        while (uf[n] != n) n = uf[n]
-        uf[x] = n
-        return n
+    val uf = mutableMapOf<Int, Int>()
+    val root: (Int) -> Int = {
+        (generateSequence(it) { uf[it] }
+        .firstOrNull { uf[it] == it } ?: it)
+        .also { r -> uf[it] = r }
     }
-    val isConnected: (Int, Int) -> Boolean = { a, b -> root(a) == root(b) }
-    val connect: (Int, Int) -> Unit = { a, b -> uf[root(a)] = root(b) }
-    val pos: (Int, Int) -> Int = { y, x -> y * col + x }
-    val land = HashSet<Int>()
-        fun connectLand(y: Int, x: Int, pos: Int) {
-            pos(y, x).takeIf {
-                y in 0 until row && x in 0 until col && land.contains(it)
-            }?.let { connect(pos, it) }
-        }
-        val top = row * col
-        val bottom = top + 1
-        val dir = arrayOf(0 to -1, 0 to 1, -1 to 0, 1 to 0)
-        fun addLand(y: Int, x: Int) {
-            val pos = pos(y, x)
-            land.add(pos)
-            if (y == 0) connect(pos, top)
-            if (y == row - 1) connect(pos, bottom)
-            dir.forEach { (dy, dx) -> connectLand(y + dy, x + dx, pos) }
-        }
-        return (cells.lastIndex downTo 0).first {
-            val (y, x) = cells[it]
-            addLand(y - 1, x - 1)
-            isConnected(top, bottom)
-        } ?: 0
+    return (cells.lastIndex downTo 0).first {
+        val (y, x) = cells[it]
+        val pos = y * col + x
+        uf[pos] = if (y == 1) root(Int.MAX_VALUE)
+        else if (y == row) root(Int.MIN_VALUE)
+        else pos
+        sequenceOf(y to x - 1, y to x + 1, y - 1 to x, y + 1 to x)
+        .filter { (y, x) -> y in 1..row && x in 1..col }
+        .map { (y, x) -> y * col + x }
+        .filter { uf[it] != null }
+        .forEach { uf[root(pos)] = root(it) }
+        root(Int.MIN_VALUE) == root(Int.MAX_VALUE)
     }
-
+}
 ```
 
 # 29.06.2023
