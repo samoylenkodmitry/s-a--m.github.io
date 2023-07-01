@@ -12,6 +12,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 1.07.2023
+[2305. Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/description/) medium
+[blog post](https://leetcode.com/problems/fair-distribution-of-cookies/solutions/3702635/kotln-backtrack/)
+[substack](https://dmitriisamoilenko.substack.com/p/1072023-2305-fair-distribution-of?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/78843ab2-ca67-455a-9f8b-7e2550a2789f_1688186341.2668977.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/262
+
+#### Problem TLDR
+`Min` of the `max` distributing `n` cookies to `k` children
+#### Intuition
+Search all possible ways to give current cookie to one of the children. Backtrack sums and calculate the result.
+
+
+#### Approach
+Just DFS
+#### Complexity
+- Time complexity:
+$$O(k^n)$$
+- Space complexity:
+$$O(2^n)$$
+#### Code
+```
+
+fun distributeCookies(cookies: IntArray, k: Int): Int {
+    fun dfs(pos: Int, children: IntArray): Int {
+        if (pos == cookies.size) return if (children.contains(0)) -1 else children.max()!!
+        var min = -1
+        for (i in 0 until k) {
+            children[i] += cookies[pos]
+            val res = dfs(pos + 1, children)
+            if (res != -1) min = if (min == -1) res else minOf(min, res)
+            children[i] -= cookies[pos]
+        }
+        return min
+    }
+    return dfs(0, IntArray(k))
+}
+
+```
+
 # 30.06.2023
 [1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/description/) hard
 [blog post](https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698920/kotlin-union-find/)
