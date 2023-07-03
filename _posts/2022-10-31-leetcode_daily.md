@@ -12,6 +12,40 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 3.07.2023
+[859. Buddy Strings](https://leetcode.com/problems/buddy-strings/description/) easy
+[blog post](https://leetcode.com/problems/buddy-strings/solutions/3710751/kotlin/)
+[substack](https://dmitriisamoilenko.substack.com/p/3072023-859-buddy-strings?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/45ae34ff-b248-46b6-8ab6-d9df90d58a8c_1688355711.8449478.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/264
+#### Problem TLDR
+Is it just one swap `s[i]<>s[j]` to string `s` == string `goal`
+#### Intuition
+Compare two strings for each position. There are must be only two not equal positions and they must be mirrored pairs.
+
+#### Approach
+Let's write it in Kotlin collections API style.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun buddyStrings(s: String, goal: String): Boolean = s.length == goal.length && (
+s == goal && s.groupBy { it }.any { it.value.size > 1 } ||
+s.zip(goal)
+.filter { (a, b) -> a != b }
+.windowed(2)
+.map { (ab, cd) -> listOf(ab, cd.second to cd.first) }
+.let { it.size == 1 && it[0][0] == it[0][1] }
+)
+
+```
+
 # 2.07.2023
 [1601. Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/description/) hard
 [blog post](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/solutions/3706324/kotlin-bitmask/)
