@@ -12,6 +12,49 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 4.07.2023
+[137. Single Number II](https://leetcode.com/problems/single-number-ii/solutions/) medium
+[blog post](https://leetcode.com/problems/single-number-ii/solutions/3715279/kotlin-o-32n/)
+[substack](https://dmitriisamoilenko.substack.com/p/4072023-137-single-number-ii?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/6753bd27-4d46-494f-a5df-d1e902ced21d_1688442287.7725842.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/265
+#### Proble TLDR
+Single number in an array of tripples
+#### Intuition
+One simple approach it to count bits at each position.
+Result will have a `1` when `count % 3 != 0`.
+
+
+#### Approach
+Let's use fold.
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+#### Code
+```
+
+fun singleNumber(nums: IntArray): Int =
+//110
+//110
+//110
+//001
+//001
+//001
+//010
+//010
+//010
+//100
+//463
+(0..31).fold(0) { res, bit ->
+    res or ((nums.count { 0 != it and (1 shl bit) } % 3) shl bit)
+}
+
+```
+
 # 3.07.2023
 [859. Buddy Strings](https://leetcode.com/problems/buddy-strings/description/) easy
 [blog post](https://leetcode.com/problems/buddy-strings/solutions/3710751/kotlin/)
