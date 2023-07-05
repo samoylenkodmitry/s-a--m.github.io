@@ -12,6 +12,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 5.07.2023
+[1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/) medium
+[blog post](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/solutions/3720190/kotlin-3-pointers/)
+[substack](https://dmitriisamoilenko.substack.com/p/5072023-1493-longest-subarray-of?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/39baf54e-ae69-4ce8-b5a5-37781e40fd50_1688531738.628173.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/266
+#### Problem TLDR
+Largest `1..1` subarray after removing one item
+#### Intuition
+Let's maintain two pointers for a `start` and a `nextStart` positions, and a third pointer for the `right` border.
+
+* move `start` to the `nextStart` when `right` == 0
+* move `nextStart` to start of `1`'s
+
+#### Approach
+* corner case is when all array is `1`'s, as we must remove `1` then anyway
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$ add `asSequence` for it to become $$O(1)$$
+#### Code
+```
+
+fun longestSubarray(nums: IntArray): Int {
+    var start = -1
+    var nextStart = -1
+    return if (nums.sum() == nums.size) nums.size - 1
+    else nums.mapIndexed { i, n ->
+        if (n == 0) {
+            start = nextStart
+            nextStart = -1
+            0
+        } else {
+            if (nextStart == -1) nextStart = i
+            if (start == -1) start = nextStart
+            i - start + (if (start == nextStart) 1 else 0)
+        }
+    }.max() ?:0
+}
+
+```
+
 # 4.07.2023
 [137. Single Number II](https://leetcode.com/problems/single-number-ii/solutions/) medium
 [blog post](https://leetcode.com/problems/single-number-ii/solutions/3715279/kotlin-o-32n/)
