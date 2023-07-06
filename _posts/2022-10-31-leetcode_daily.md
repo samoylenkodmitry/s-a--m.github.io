@@ -12,6 +12,43 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 6.07.2023
+[209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/) medium
+[blog post](https://leetcode.com/problems/minimum-size-subarray-sum/solutions/3724899/kotlin-two-pointers/)
+[substack](https://dmitriisamoilenko.substack.com/p/6072023-209-minimum-size-subarray?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/cdf31d10-015c-4bf8-8c53-71de5b2886b5_1688614271.2972152.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/267
+#### Problem TLDR
+Min length subarray with `sum >= target`
+#### Intuition
+Use two pointers: one adding to `sum` and another subtracting. As all numbers are positive, then `sum` will always be increasing with adding a number and deceasing when subtracting.
+
+#### Approach
+Let's use Kotlin `Sequence` API
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(1)$$
+#### Code
+```
+
+fun minSubArrayLen(target: Int, nums: IntArray): Int {
+    var lo = 0
+    var sum = 0
+    return nums.asSequence().mapIndexed { hi, n ->
+        sum += n
+        while (sum - nums[lo] >= target) sum -= nums[lo++]
+        (hi - lo + 1).takeIf { sum >= target }
+    }
+    .filterNotNull()
+    .min() ?: 0
+}
+
+```
+
 # 5.07.2023
 [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/) medium
 [blog post](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/solutions/3720190/kotlin-3-pointers/)
