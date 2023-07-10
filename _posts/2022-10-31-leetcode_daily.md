@@ -12,6 +12,47 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 11.07.2023
+[111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/) easy
+[blog post](https://leetcode.com/problems/minimum-depth-of-binary-tree/solutions/3743369/kotlin-bfs/)
+[substack](https://dmitriisamoilenko.substack.com/p/11072023-111-minimum-depth-of-binary?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/9496f18c-1cdd-4224-9ed9-2ae8d5099c44_1688960338.7698486.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/271
+#### Problem TLDR
+Count nodes in the shortest path from root to leaf
+#### Intuition
+* remember to count `nodes`, not `edges`
+* `leaf` is a node without children
+* use BFS or DFS
+
+#### Approach
+Let's use BFS
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun minDepth(root: TreeNode?): Int = with(ArrayDeque<TreeNode>()) {
+    root?.let { add(it) }
+    generateSequence(1) { (it + 1).takeIf { isNotEmpty() } }
+    .firstOrNull {
+        (1..size).any {
+            with(poll()) {
+                left?.let { add(it) }
+                right?.let { add(it) }
+                left == null && right == null
+            }
+        }
+    } ?: 0
+}
+
+```
+
 # 10.07.2023
 [2272. Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/description/) hard
 [blog post](https://leetcode.com/problems/substring-with-largest-variance/solutions/3739542/kotlin-try-all-pairs/)
