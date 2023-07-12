@@ -12,6 +12,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 13.07.2023
+[802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/) medium
+[blog post](https://leetcode.com/problems/find-eventual-safe-states/solutions/3752760/kotlin-dfs/)
+[substack](https://dmitriisamoilenko.substack.com/p/13072023-802-find-eventual-safe-states?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/89561214-ce93-4759-8181-accd708139ea_1689134618.718084.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/273
+#### Problem TLDR
+List of nodes not in cycles
+#### Intuition
+Simple Depth-First Search will give optimal $$O(n)$$ solution.
+When handling the `visited` set, we must separate those in `cycle` and `safe`.
+#### Approach
+* we can remove from `cycle` set and add to `safe` set in a post-order traversal
+#### Complexity
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun eventualSafeNodes(graph: Array<IntArray>): List<Int> {
+    val cycle = mutableSetOf<Int>()
+        val safe = mutableSetOf<Int>()
+            fun cycle(curr: Int): Boolean {
+                return if (safe.contains(curr)) false else !cycle.add(curr)
+                || graph[curr].any { cycle(it) }
+                .also {
+                    if (!it) {
+                        cycle.remove(curr)
+                        safe.add(curr)
+                    }
+                }
+            }
+            return graph.indices.filter { !cycle(it) }
+        }
+
+```
+
 # 12.07.2023
 [863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/) medium
 [blog post](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/solutions/3748155/kotlin-dfs-bfs/)
