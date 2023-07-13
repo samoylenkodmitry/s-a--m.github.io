@@ -13,6 +13,49 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
 # 13.07.2023
+[207. Course Schedule](https://leetcode.com/problems/course-schedule/description/) medium
+[blog post](https://leetcode.com/problems/course-schedule/solutions/3757355/kotlin-toposort-bfs/)
+[substack](https://dmitriisamoilenko.substack.com/p/13072023-207-course-schedule?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/b9681eb4-001e-4cf5-a086-135b40d9f474_1689219966.714815.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/274
+#### Problem TLDR
+If `none` edges in a cycle
+#### Intuition
+To detect cycle, we can use DFS and two sets `cycle` and `safe`. Or use Topological Sort and check that all elements are visited.
+
+#### Approach
+Let's use Topological Sort with Breadth-First Search.
+* build `indegree` - number of input nodes for each node
+* add to BFS only nodes with `indegree[node] == 0`
+* decrease `indegree` as it visited
+#### Complexity
+- Time complexity:
+$$O(VE)$$
+- Space complexity:
+$$O(E + V)$$
+#### Code
+```
+fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
+    val fromTo = mutableMapOf<Int, MutableSet<Int>>()
+        val indegree = IntArray(numCourses)
+        prerequisites.forEach { (to, from) ->
+            fromTo.getOrPut(from) { mutableSetOf() } += to
+            indegree[to]++
+        }
+        return with(ArrayDeque<Int>()) {
+            addAll((0 until numCourses).filter { indegree[it] == 0 })
+            generateSequence { if (isEmpty()) null else poll() }.map {
+                fromTo[it]?.forEach {
+                    if (--indegree[it] == 0) add(it)
+                }
+            }.count() == numCourses
+        }
+    }
+```
+
+# 12.07.2023
 [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/) medium
 [blog post](https://leetcode.com/problems/find-eventual-safe-states/solutions/3752760/kotlin-dfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/13072023-802-find-eventual-safe-states?sd=pf)
