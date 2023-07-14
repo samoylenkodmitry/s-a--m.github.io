@@ -30,8 +30,10 @@ We can use a `HashMap`
 #### Complexity
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -65,8 +67,10 @@ Let's use Topological Sort with Breadth-First Search.
 #### Complexity
 - Time complexity:
 $$O(VE)$$
+
 - Space complexity:
 $$O(E + V)$$
+
 #### Code
 ```
 fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
