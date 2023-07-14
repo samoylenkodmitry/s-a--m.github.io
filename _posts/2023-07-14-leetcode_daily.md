@@ -36,6 +36,7 @@ $$O(n)$$
 
 
 #### Code
+
 ```kotlin
 
 fun longestSubsequence(arr: IntArray, difference: Int): Int = 
@@ -75,6 +76,7 @@ $$O(E + V)$$
 
 
 #### Code
+
 ```kotlin
 fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
     val fromTo = mutableMapOf<Int, MutableSet<Int>>()
@@ -119,6 +121,7 @@ $$O(n)$$
 
 
 #### Code
+
 ```kotlin
 
 fun eventualSafeNodes(graph: Array<IntArray>): List<Int> {
@@ -167,6 +170,7 @@ $$O(n)$$
 
 
 #### Code
+
 ```kotlin
 
 fun distanceK(root: TreeNode?, target: TreeNode?, k: Int): List<Int> {
@@ -226,6 +230,7 @@ $$O(n)$$
 
 
 #### Code
+
 ```kotlin
 
 fun minDepth(root: TreeNode?): Int = with(ArrayDeque<TreeNode>()) {
@@ -276,6 +281,7 @@ $$O(n)$$, or O(1) if `asSequence` used
 
 
 #### Code
+
 ```kotlin
 
 fun largestVariance(s: String): Int = s.toSet()
@@ -343,6 +349,7 @@ $$O(k)$$
 
 
 #### Code
+
 ```kotlin
 fun putMarbles(weights: IntArray, k: Int): Long {
 
@@ -386,6 +393,7 @@ $$O(n)$$, or $$O(1)$$ using `asSequence`
 
 
 #### Code
+
 ```kotlin
 
 fun maxConsecutiveAnswers(answerKey: String, k: Int): Int {
@@ -428,6 +436,7 @@ $$O(1)$$
 
 
 #### Code
+
 ```kotlin
 
 fun minSubArrayLen(target: Int, nums: IntArray): Int {
@@ -473,6 +482,7 @@ $$O(n)$$ add `asSequence` for it to become $$O(1)$$
 
 
 #### Code
+
 ```kotlin
 
 fun longestSubarray(nums: IntArray): Int {
@@ -522,6 +532,7 @@ $$O(1)$$
 
 
 #### Code
+
 ```kotlin
 
 fun singleNumber(nums: IntArray): Int =
@@ -568,6 +579,7 @@ $$O(n)$$
 
 
 #### Code
+
 ```kotlin
 
 fun buddyStrings(s: String, goal: String): Boolean = s.length == goal.length && (
@@ -610,6 +622,7 @@ $$O(n2^r)$$
 
 
 #### Code
+
 ```kotlin
 
 fun maximumRequests(n: Int, requests: Array<IntArray>): Int =
@@ -652,8 +665,10 @@ $$O(k^n)$$
 $$O(2^n)$$
 
 
+
 #### Code
-```
+
+```kotlin
 
 fun distributeCookies(cookies: IntArray, k: Int): Int {
     fun dfs(pos: Int, children: IntArray): Int {
@@ -701,8 +716,10 @@ $$O(an)$$, where `a` is a reverse Ackerman function
 $$O(n)$$
 
 
+
 #### Code
-```
+
+```kotlin
 val uf = HashMap<Int, Int>()
 fun root(x: Int): Int = if (uf[x] == null || uf[x] == x) x else root(uf[x]!!)
 .also { uf[x] = it }
@@ -747,8 +764,10 @@ $$O(nm2^k)$$
 $$O(nm2^k)$$
 
 
+
 #### Code
-```
+
+```kotlin
 
 val dir = arrayOf(0, 1, 0, -1)
 data class Step(val y: Int, val x: Int, val keys: Int)
@@ -810,8 +829,10 @@ $$O(EV)$$
 $$O(EV)$$
 
 
+
 #### Code
-```
+
+```kotlin
 fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start: Int, end: Int): Double {
     val pstart = Array(n) { 0.0 }
     val adj = mutableMapOf<Int, MutableList<Pair<Int, Double>>>()
@@ -870,8 +891,10 @@ $$O(klogk)$$, there are `k` steps to peek from heap of size `k`
 $$O(k)$$
 
 
+
 #### Code
-```
+
+```kotlin
 
 fun kSmallestPairs(nums1: IntArray, nums2: IntArray, k: Int): List<List<Int>> =
     with(PriorityQueue<List<Int>>(compareBy({ nums1[it[0]].toLong() + nums2[it[1]].toLong() }))) {
@@ -918,8 +941,10 @@ $$O(nlog(n))$$
 $$O(n)$$
 
 
+
 #### Code
-```
+
+```kotlin
         fun totalCost(costs: IntArray, k: Int, candidates: Int): Long {
             val pqL = PriorityQueue<Int>()
             val pqR = PriorityQueue<Int>()
@@ -984,8 +1009,10 @@ $$O(nf)$$, `f` - is a max fuel
 $$O(nf)$$
 
 
+
 #### Code
-```
+
+```kotlin
 
 fun countRoutes(locations: IntArray, start: Int, finish: Int, fuel: Int): Int {
     //  0 1 2 3 4
@@ -1048,8 +1075,10 @@ $$O(nm)$$, `m` is a max difference
 $$O(nm)$$
 
 
+
 #### Code
-```
+
+```kotlin
 
 fun tallestBillboard(rods: IntArray): Int {
     val cache = Array(rods.size + 1) { Array(10000) { -1 } }
@@ -1117,8 +1146,10 @@ $$O(n^2)$$
 $$O(n^2)$$
 
 
+
 #### Code
-```
+
+```kotlin
 
 data class R(var next: Int, val d: Int, var size: Int)
 fun longestArithSeqLength(nums: IntArray): Int {
@@ -1190,8 +1221,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 fun maxProfit(prices: IntArray, fee: Int) = prices
 .fold(-prices[0] to 0) { (balanceBuy, balance), price ->
     maxOf(balanceBuy, balance - price) to maxOf(balance, balanceBuy + price - fee)
@@ -1241,8 +1274,10 @@ $$O(nlog(n))$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun minCost(nums: IntArray, cost: IntArray): Long {
     //    1 2 3 2 1     2 1 1 1 1
@@ -1290,8 +1325,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun getAverages(nums: IntArray, k: Int): IntArray {
     if (k == 0) return nums
@@ -1327,8 +1364,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun largestAltitude(gain: IntArray): Int = gain
 .fold(0 to 0) { (max, sum), t -> maxOf(max, sum + t) to (sum + t) }
@@ -1357,8 +1396,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun countPaths(grid: Array<IntArray>): Int {
     val m = 1_000_000_007L
@@ -1405,8 +1446,10 @@ For any current position in `arr1` we can leave this number or replace it with a
 $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
-# Code
-```
+
+#### Code
+
+```kotlin
 
 fun makeArrayIncreasing(arr1: IntArray, arr2: IntArray): Int {
     val list2 = arr2.distinct().sorted()
@@ -1465,8 +1508,10 @@ $$O(n^2)$$, n for tree walk, and n^2 for `f`
 - Space complexity:
 $$O(n^2)$$
 
+
 #### Code
-```
+
+```kotlin
 
 class Node(val v: Int, var left: Node? = null, var right: Node? = null)
 data class R(val perms: Long, val len: Long)
@@ -1524,8 +1569,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun maxLevelSum(root: TreeNode?) = with(ArrayDeque<TreeNode>()) {
     root?.let { add(it) }
@@ -1564,8 +1611,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun getMinimumDifference(root: TreeNode?): Int {
     if (root == null) return 0
@@ -1614,8 +1663,10 @@ $$O(n^2)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 fun equalPairs(grid: Array<IntArray>): Int {
     val rowHashes = grid.map { it.fold(0.0) { r, t ->  Math.tan(r) + t } }
     val colHashes = (0..grid.lastIndex).map { x ->
@@ -1648,8 +1699,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 fun summaryRanges(nums: IntArray): List<String> = nums
     .fold(mutableListOf<IntArray>()) { r, t ->
         if (r.isEmpty() || r.last()[1] + 1 < t) r += intArrayOf(t, t)
@@ -1689,8 +1742,10 @@ $$O(log(n))$$ for `get`
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 class SnapshotArray(length: Int) {
     // 0 1 2 3 4 5 6
     // 1 . . 2 . . 3
@@ -1776,8 +1831,10 @@ $$O(log(n))$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun maxValue(n: Int, index: Int, maxSum: Int): Int {
 
@@ -1823,7 +1880,8 @@ $$O(log(n))$$
 $$O(1)$$
 
 #### Code
-```
+
+```kotlin
 
 fun nextGreatestLetter(letters: CharArray, target: Char): Char {
     var res = letters[0]
@@ -1868,7 +1926,8 @@ $$O(n + m)$$
 $$O(1)$$
 
 #### Code
-```
+
+```kotlin
 
 fun countNegatives(grid: Array<IntArray>): Int =
     grid.fold(0 to 0) { (total, prev), row ->
@@ -1912,7 +1971,8 @@ $$O(1)$$
 $$O(1)$$
 
 #### Code
-```
+
+```kotlin
 
 fun minFlips(a: Int, b: Int, c: Int): Int =
 Integer.bitCount((a or b) xor c) + Integer.bitCount((a and b) and c.inv())
@@ -1938,8 +1998,10 @@ $$O(nlog(n))$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun canMakeArithmeticProgression(arr: IntArray): Boolean =
 arr.sorted().windowed(2).groupBy { it[1] - it[0] }.keys.size == 1
@@ -1965,8 +2027,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 fun checkStraightLine(coordinates: Array<IntArray>): Boolean =
     with((coordinates[1][1] - coordinates[0][1])/
     (coordinates[1][0] - coordinates[0][0]).toDouble()) {
@@ -2000,8 +2064,10 @@ $$O(a(n)n^2)$$, `a(n)` - reverse Ackerman function `f(x) = 2^2^2..^2, x times`. 
 $$O(n^2)$$
 
 
+
 #### Code
-```
+
+```kotlin
 
 fun findCircleNum(isConnected: Array<IntArray>): Int {
     val uf = IntArray(isConnected.size) { it }
@@ -2054,8 +2120,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun numOfMinutes(n: Int, headID: Int, manager: IntArray, informTime: IntArray): Int {
     val fromTo = mutableMapOf<Int, MutableList<Int>>()
@@ -2090,8 +2158,10 @@ $$O(n^3)$$, each of the `n` DFS will take $$n^2$$
 - Space complexity:
 $$O(n^2)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun maximumDetonation(bombs: Array<IntArray>): Int {
     val fromTo = mutableMapOf<Int, MutableList<Int>>()
@@ -2141,8 +2211,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun shortestPathBinaryMatrix(grid: Array<IntArray>): Int =
     with(ArrayDeque<Pair<Int, Int>>()) {
@@ -2193,8 +2265,10 @@ $$O(1)$$, for each call
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 class UndergroundSystem() {
     val fromToSumTime = mutableMapOf<Pair<String, String>, Long>()
     val fromToCount = mutableMapOf<Pair<String, String>, Int>()
@@ -2241,8 +2315,10 @@ $$O(1)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 class MyHashSet(val initialSz: Int = 16, val loadFactor: Double = 1.6) {
             var buckets = Array<LinkedList<Int>?>(initialSz) { null }
             var size = 0
@@ -2301,8 +2377,10 @@ $$O(1)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 class ParkingSystem(big: Int, medium: Int, small: Int) {
     val types = arrayOf(big, medium, small)
 
@@ -2331,8 +2409,10 @@ $$k^2$$, as maximum depth of DFS is `k`, and we loop for `k`.
 - Space complexity:
 $$k^2$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun minCost(n: Int, cuts: IntArray): Int {
     val cache = mutableMapOf<Pair<Int, Int>, Int>()
@@ -2378,8 +2458,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun stoneGameIII(stoneValue: IntArray): String {
     val suffix = IntArray(stoneValue.size + 1)
@@ -2435,8 +2517,10 @@ $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
 
+
 #### Code
-```
+
+```kotlin
 fun stoneGameII(piles: IntArray): Int {
     // 2 7 9 4 4    M      A   B
     // A            1      1
@@ -2540,8 +2624,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun new21Game(n: Int, k: Int, maxPts: Int): Double {
     // n = 6, k = 1, maxpts = 10
@@ -2608,8 +2694,10 @@ $$O(nlog(n))$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun maxScore(nums1: IntArray, nums2: IntArray, k: Int): Long {
     // 14  2 1 12 100000000000  1000000000000 100000000000
@@ -2649,8 +2737,10 @@ $$O(nlogk)$$
 - Space complexity:
 $$O(k)$$
 
+
 #### Code
-```
+
+```kotlin
 class KthLargest(val k: Int, nums: IntArray) {
     val pq = PriorityQueue<Int>(nums.toList())
 
@@ -2680,8 +2770,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun topKFrequent(nums: IntArray, k: Int): IntArray {
     val freq = nums.groupBy { it }.mapValues { it.value.size }
@@ -2715,8 +2807,10 @@ $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun Array<IntArray>.inRange(xy: Pair<Int, Int>) = (0..lastIndex).let {
     xy.first in it && xy.second in it
@@ -2778,8 +2872,10 @@ $$O(nEV)$$
 - Space complexity:
 $$O(n+E+V)$$
 
+
 #### Code
-```
+
+```kotlin
 
 fun calcEquation(equations: List<List<String>>, values: DoubleArray, queries: List<List<String>>): DoubleArray {
     val fromTo = mutableMapOf<String, MutableList<Pair<String, Double>>>()
@@ -2829,8 +2925,10 @@ $$O(VE)$$, DFS once for all `vertices` and `edges`
 - Space complexity:
 $$O(V+E)$$, for `reds` and `visited` set.
 
+
 #### Code
-```
+
+```kotlin
 fun isBipartite(graph: Array<IntArray>): Boolean {
     val reds = IntArray(graph.size)
     fun dfs(u: Int, isRed: Int): Boolean {
@@ -2862,8 +2960,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
 fun findSmallestSetOfVertices(n: Int, edges: List<List<Int>>): List<Int> =
     (0 until n) - edges.map { it[1] }
 ```
@@ -2886,8 +2986,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+
+```kotlin
         fun pairSum(head: ListNode?): Int {
             var fast = head
             var slow = head
@@ -2928,8 +3030,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 fun swapPairs(head: ListNode?): ListNode? {
     val dummy = ListNode(0).apply { next = head }
     var curr: ListNode? = dummy
@@ -2969,8 +3073,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+
+```kotlin
 fun swapNodes(head: ListNode?, k: Int): ListNode? {
     var fast = head
     for (i in 1..k - 1) fast = fast?.next
@@ -3006,8 +3112,10 @@ $$O(n^22^n)$$
 - Space complexity:
 $$O(n2^n)$$
 
+
 #### Code
-```
+
+```kotlin
     fun gcd(a: Int, b: Int): Int = if (b % a == 0) a else gcd(b % a, a)
     fun maxScore(nums: IntArray): Int {
         val n = nums.size / 2
@@ -10436,7 +10544,7 @@ Memory: O(N)
 
 So, we need to keep increasing sequence of numbers, increasing/decreasing stack will help.
 Consider example, this is how decreasing stack will work
-```
+```bash
         // 100   [100-1]                            1
         // 80    [100-1, 80-1]                      1
         // 60    [100-1, 80-1, 60-1]                1
@@ -10446,7 +10554,7 @@ Consider example, this is how decreasing stack will work
         // 85    [100-1, 85-6] 80-1+75-4            6
 ```
 Solution:
-```
+```kotlin
 class StockSpanner() {
     val stack = Stack<Pair<Int,Int>>()
 
