@@ -12,6 +12,38 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 14.07.2023
+[]() medium
+[blog post](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/solutions/3761793/kotlin-map/)
+[substack]()
+![image.png](https://assets.leetcode.com/users/images/66057f03-69d5-4709-9142-79fc3d54720e_1689304858.803253.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/275
+#### Problem TLDR
+Longest arithmetic `difference` subsequence
+#### Intuition
+Store the `next` value and the `length` for it.
+
+#### Approach
+We can use a `HashMap`
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```
+
+fun longestSubsequence(arr: IntArray, difference: Int): Int = 
+with(mutableMapOf<Int, Int>()) {
+    arr.asSequence().map { x ->
+        (1 + (this[x] ?: 0)).also { this[x + difference] = it } 
+    }.max()!!
+}
+
+```
+
 # 13.07.2023
 [207. Course Schedule](https://leetcode.com/problems/course-schedule/description/) medium
 [blog post](https://leetcode.com/problems/course-schedule/solutions/3757355/kotlin-toposort-bfs/)
