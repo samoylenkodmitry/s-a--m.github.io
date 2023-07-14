@@ -34,8 +34,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+```kotlin
 
 fun longestSubsequence(arr: IntArray, difference: Int): Int = 
 with(mutableMapOf<Int, Int>()) {
@@ -72,8 +73,9 @@ $$O(VE)$$
 - Space complexity:
 $$O(E + V)$$
 
+
 #### Code
-```
+```kotlin
 fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
     val fromTo = mutableMapOf<Int, MutableSet<Int>>()
         val indegree = IntArray(numCourses)
@@ -115,8 +117,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+```kotlin
 
 fun eventualSafeNodes(graph: Array<IntArray>): List<Int> {
     val cycle = mutableSetOf<Int>()
@@ -162,8 +165,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+```kotlin
 
 fun distanceK(root: TreeNode?, target: TreeNode?, k: Int): List<Int> {
     val fromTo = mutableMapOf<Int, MutableList<Int>>()
@@ -220,8 +224,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+```kotlin
 
 fun minDepth(root: TreeNode?): Int = with(ArrayDeque<TreeNode>()) {
     root?.let { add(it) }
@@ -269,8 +274,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$, or O(1) if `asSequence` used
 
+
 #### Code
-```
+```kotlin
 
 fun largestVariance(s: String): Int = s.toSet()
 .let { ss -> ss.map { a -> ss.filter { it != a }.map { a to it } }.flatten() }
@@ -335,8 +341,9 @@ $$O(nlog(k))$$
 - Space complexity:
 $$O(k)$$
 
+
 #### Code
-```
+```kotlin
 fun putMarbles(weights: IntArray, k: Int): Long {
 
     val pqMax = PriorityQueue<Int>(compareBy( { weights[it].toLong() + weights[it - 1].toLong() } ))
@@ -377,8 +384,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$, or $$O(1)$$ using `asSequence`
 
+
 #### Code
-```
+```kotlin
 
 fun maxConsecutiveAnswers(answerKey: String, k: Int): Int {
     var tt = 0
@@ -418,8 +426,9 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+```kotlin
 
 fun minSubArrayLen(target: Int, nums: IntArray): Int {
     var lo = 0
@@ -462,8 +471,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$ add `asSequence` for it to become $$O(1)$$
 
+
 #### Code
-```
+```kotlin
 
 fun longestSubarray(nums: IntArray): Int {
     var start = -1
@@ -510,8 +520,9 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
+
 #### Code
-```
+```kotlin
 
 fun singleNumber(nums: IntArray): Int =
 //110
@@ -555,8 +566,9 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
-```
+```kotlin
 
 fun buddyStrings(s: String, goal: String): Boolean = s.length == goal.length && (
 s == goal && s.groupBy { it }.any { it.value.size > 1 } ||
@@ -596,8 +608,9 @@ $$O(n2^r)$$
 - Space complexity:
 $$O(n2^r)$$
 
+
 #### Code
-```
+```kotlin
 
 fun maximumRequests(n: Int, requests: Array<IntArray>): Int =
     (0..((1 shl requests.size) - 1)).filter { mask ->
@@ -637,6 +650,7 @@ $$O(k^n)$$
 
 - Space complexity:
 $$O(2^n)$$
+
 
 #### Code
 ```
@@ -686,6 +700,7 @@ $$O(an)$$, where `a` is a reverse Ackerman function
 - Space complexity:
 $$O(n)$$
 
+
 #### Code
 ```
 val uf = HashMap<Int, Int>()
@@ -730,6 +745,7 @@ $$O(nm2^k)$$
 
 - Space complexity:
 $$O(nm2^k)$$
+
 
 #### Code
 ```
@@ -793,6 +809,7 @@ $$O(EV)$$
 - Space complexity:
 $$O(EV)$$
 
+
 #### Code
 ```
 fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start: Int, end: Int): Double {
@@ -852,6 +869,7 @@ $$O(klogk)$$, there are `k` steps to peek from heap of size `k`
 - Space complexity:
 $$O(k)$$
 
+
 #### Code
 ```
 
@@ -898,6 +916,7 @@ $$O(nlog(n))$$
 
 - Space complexity:
 $$O(n)$$
+
 
 #### Code
 ```
@@ -964,6 +983,7 @@ $$O(nf)$$, `f` - is a max fuel
 - Space complexity:
 $$O(nf)$$
 
+
 #### Code
 ```
 
@@ -1026,6 +1046,7 @@ $$O(nm)$$, `m` is a max difference
 
 - Space complexity:
 $$O(nm)$$
+
 
 #### Code
 ```
@@ -1094,6 +1115,7 @@ We can put those sequences in a `HashMap` by `next` number key.
 $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
+
 
 #### Code
 ```
@@ -1167,6 +1189,7 @@ The trick here is to consider the money balances you have each day. We can track
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 fun maxProfit(prices: IntArray, fee: Int) = prices
@@ -1217,6 +1240,7 @@ For more robust Binary Search:
 $$O(nlog(n))$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -1265,6 +1289,7 @@ Just do what is asked
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -1301,6 +1326,7 @@ Let's write Kotlin `fold` one-liner
 $$O(n)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -1330,6 +1356,7 @@ For every cell in a matrix, we can calculate how many increasing paths are start
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -1437,6 +1464,7 @@ Build the tree, then compute the `p = left.p * right.p * p(left.len, right.len)`
 $$O(n^2)$$, n for tree walk, and n^2 for `f`
 - Space complexity:
 $$O(n^2)$$
+
 #### Code
 ```
 
@@ -1495,6 +1523,7 @@ Let's try to write it in a Kotlin style
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -1534,6 +1563,7 @@ Let's write a [Morris traversal](https://en.wikipedia.org/wiki/Threaded_binary_t
 $$O(n)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -1583,6 +1613,7 @@ For hashing, we can use simple `31 * prev + curr`, that encodes both value and p
 $$O(n^2)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 fun equalPairs(grid: Array<IntArray>): Int {
@@ -1616,6 +1647,7 @@ Let's write a Kotlin one-liner
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 fun summaryRanges(nums: IntArray): List<String> = nums
@@ -1656,6 +1688,7 @@ For more robust Binary Search:
 $$O(log(n))$$ for `get`
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 class SnapshotArray(length: Int) {
@@ -1742,6 +1775,7 @@ For more robust binary search:
 $$O(log(n))$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -1787,6 +1821,7 @@ For more robust code:
 $$O(log(n))$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -1831,6 +1866,7 @@ Let's use Kotlin's `fold` operator.
 $$O(n + m)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -1874,6 +1910,7 @@ Use `Integer.bitCount`.
 $$O(1)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -1900,6 +1937,7 @@ Let's write Kotlin one-liner.
 $$O(nlog(n))$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -1926,6 +1964,7 @@ We can compare $$tan_i = dy_i/dx_i = dy_0/dx_0$$
 $$O(n)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 fun checkStraightLine(coordinates: Array<IntArray>): Boolean =
@@ -1959,6 +1998,7 @@ For more optimal Union-Find:
 $$O(a(n)n^2)$$, `a(n)` - reverse Ackerman function `f(x) = 2^2^2..^2, x times`. `a(Int.MAX_VALUE) = 2^32 = 2^2^5 == 3`
 - Space complexity:
 $$O(n^2)$$
+
 
 #### Code
 ```
@@ -2013,6 +2053,7 @@ Build the graph, then write the DFS.
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -2048,6 +2089,7 @@ Build a graph, the do DFS trying to start from each node.
 $$O(n^3)$$, each of the `n` DFS will take $$n^2$$
 - Space complexity:
 $$O(n^2)$$
+
 #### Code
 ```
 
@@ -2098,6 +2140,7 @@ Some tricks for cleaner code:
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -2149,6 +2192,7 @@ Just do what is asked, use `HashMap` to track user's last station.
 $$O(1)$$, for each call
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 class UndergroundSystem() {
@@ -2196,6 +2240,7 @@ Use `key % size` for the hash function, grow and rehash when needed.
 $$O(1)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 class MyHashSet(val initialSz: Int = 16, val loadFactor: Double = 1.6) {
@@ -2255,6 +2300,7 @@ Let's use an array to minimize the number of lines.
 $$O(1)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 class ParkingSystem(big: Int, medium: Int, small: Int) {
@@ -2284,6 +2330,7 @@ We every stick `from..to` we can try all the cuts in that range. This result wil
 $$k^2$$, as maximum depth of DFS is `k`, and we loop for `k`.
 - Space complexity:
 $$k^2$$
+
 #### Code
 ```
 
@@ -2330,6 +2377,7 @@ Let's write bottom up DP.
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -2386,6 +2434,7 @@ $$
 $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
+
 #### Code
 ```
 fun stoneGameII(piles: IntArray): Int {
@@ -2490,6 +2539,7 @@ This problem is next to impossible to solve in an interview, given how many conc
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -2557,6 +2607,7 @@ First, the result is independent of the order, so we can sort. For maximum score
 $$O(nlog(n))$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -2597,6 +2648,7 @@ Use `PriorityQueue`.
 $$O(nlogk)$$
 - Space complexity:
 $$O(k)$$
+
 #### Code
 ```
 class KthLargest(val k: Int, nums: IntArray) {
@@ -2627,6 +2679,7 @@ Group by frequency `1 1 1 5 5 -> 1:3, 5:2`, then bucket sort frequencies `2:5, 3
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -2661,6 +2714,7 @@ To detect border cell, we have to make separate DFS.
 $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
+
 #### Code
 ```
 
@@ -2723,6 +2777,7 @@ Let's build a graph, `a` -> `b` with weights of `values[a/b]`. Then answer is a 
 $$O(nEV)$$
 - Space complexity:
 $$O(n+E+V)$$
+
 #### Code
 ```
 
@@ -2773,6 +2828,7 @@ Mark edge `Red` or `Blue` and it's nodes in the opposite.
 $$O(VE)$$, DFS once for all `vertices` and `edges`
 - Space complexity:
 $$O(V+E)$$, for `reds` and `visited` set.
+
 #### Code
 ```
 fun isBipartite(graph: Array<IntArray>): Boolean {
@@ -2805,6 +2861,7 @@ Count nodes that have no incoming connections.
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 fun findSmallestSetOfVertices(n: Int, edges: List<List<Int>>): List<Int> =
@@ -2828,6 +2885,7 @@ Add first half to the `Stack`, then pop until end reached.
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
         fun pairSum(head: ListNode?): Int {
@@ -2869,6 +2927,7 @@ For more robust code:
 $$O(n)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 fun swapPairs(head: ListNode?): ListNode? {
@@ -2909,6 +2968,7 @@ Travel the `fast` pointer at `k` distance, then move both `fast` and `two` nodes
 $$O(n)$$
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 fun swapNodes(head: ListNode?, k: Int): ListNode? {
@@ -2945,6 +3005,7 @@ For each `step` and remaining items, the result is always the same, so is memori
 $$O(n^22^n)$$
 - Space complexity:
 $$O(n2^n)$$
+
 #### Code
 ```
     fun gcd(a: Int, b: Int): Int = if (b % a == 0) a else gcd(b % a, a)
@@ -2995,6 +3056,7 @@ Then we can rewrite it to the iterative DP.
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
+
 #### Code
 top-down:
 ```
@@ -4430,14 +4492,18 @@ Iterate over a string. When `*` symbol met, remove last character, otherwise add
 * we can use a `Stack`, or just `StringBuilder`
 #### Complexity
 - Time complexity:
+
 $$O(n)$$
+
 - Space complexity:
+
 $$O(n)$$
+
 
 # 10.04.2023
 [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) medium
 
-```kotlin
+```
 fun isValid(s: String): Boolean = with(Stack<Char>()) {
     val opened = hashSetOf('(', '[', '{')
     val match = hashMapOf(')' to '(' , ']' to '[', '}' to '{')
@@ -4450,10 +4516,15 @@ fun isValid(s: String): Boolean = with(Stack<Char>()) {
     } && isEmpty()
 }
 ```
+
 [blog post](https://leetcode.com/problems/valid-parentheses/solutions/3399214/kotlin-stack/)
+
 #### Join me on Telegram
-https://t.me/leetcode_daily_unstoppable/176
+
+[telegram](https://t.me/leetcode_daily_unstoppable/176)
+
 #### Intuition
+
 Walk the string and push brackets to the stack. When bracket is closing, pop from it.
 #### Approach
 * use HashMap to check matching bracket.
@@ -9971,7 +10042,7 @@ Memory: O(N)
 # 21.11.2022
 [https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) medium
 
-```kotlin
+```
     fun nearestExit(maze: Array<CharArray>, entrance: IntArray): Int {
         val queue = ArrayDeque<Pair<Int, Int>>()
         queue.add(entrance[1] to entrance[0])
@@ -10002,6 +10073,7 @@ Memory: O(N)
         return -1
     }
 ```
+
 Just do BFS.
 * we can modify input matrix, so we can use it as visited array
 
@@ -10011,7 +10083,7 @@ Memory: O(N)
 # 20.11.2022
 [https://leetcode.com/problems/basic-calculator/](https://leetcode.com/problems/basic-calculator/) hard
 
-```kotlin
+```
     fun calculate(s: String): Int {
         var i = 0
         var sign = 1
@@ -10053,7 +10125,9 @@ Memory: O(N)
         }
         return eval
     }
+
 ```
+
 This is a classic calculator problem, nothing special.
 * be careful with the indexes
 
@@ -10063,7 +10137,7 @@ Memory: O(N), because of the recursion, worst case is all the input is brackets
 # 19.11.2022
 [https://leetcode.com/problems/erect-the-fence/](https://leetcode.com/problems/erect-the-fence/) hard
 
-```kotlin
+```
     fun outerTrees(trees: Array<IntArray>): Array<IntArray> {
         if (trees.size <= 3) return trees
         trees.sortWith(Comparator { a, b -> if (a[0]==b[0]) a[1]-b[1] else a[0] - b[0]} )
@@ -10085,6 +10159,7 @@ Memory: O(N), because of the recursion, worst case is all the input is brackets
         return (up+lo).distinct().toTypedArray()
     }
 ```
+
 This is an implementation of the [Andrew's monotonic chain](https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain) algorithm.
 * need to remember vector algebra equation for ccw (counter clockwise) check (see [here](https://en.wikipedia.org/wiki/Curve_orientation#Orientation_of_a_simple_polygon))
 * don't forget to sort by x and then by y
@@ -10095,7 +10170,7 @@ Memory: O(N)
 # 18.11.2022
 [https://leetcode.com/problems/ugly-number/](https://leetcode.com/problems/ugly-number/) easy
 
-```kotlin
+```
     fun isUgly(n: Int): Boolean {
         if (n <= 0) return false
         var x = n
@@ -10136,6 +10211,7 @@ class Solution {
     }
 }
 ```
+
 This is an OOP problem. One trick to write intersection function is to notice that all corners of intersection rectangle
 must be inside both rectangles. Also, intersection rectangle formed from middle coordinates of all corners sorted by x and y.
 
@@ -10398,7 +10474,7 @@ Memory: O(N)
 # 8.11.2022
 [https://leetcode.com/problems/make-the-string-great/](https://leetcode.com/problems/make-the-string-great/) easy
 
-```
+```kotlin
     fun makeGood(s: String): String {
         var ss = s.toCharArray()
         var finished = false
@@ -10436,7 +10512,7 @@ Memory: O(n)
 # 7.11.2022
 [https://leetcode.com/problems/maximum-69-number/](https://leetcode.com/problems/maximum-69-number/) easy
 
-```
+```kotlin
     fun maximum69Number (num: Int): Int {
         var n = num
         if (6666 <= n && n <= 6999) return num + 3000
@@ -10458,7 +10534,7 @@ Speed: O(1), Memory: O(1)
 # 6.11.2022
 [https://leetcode.com/problems/orderly-queue/](https://leetcode.com/problems/orderly-queue/) hard
 
-```
+```kotlin
 
     fun orderlyQueue(s: String, k: Int): String {
         val chrs = s.toCharArray()
@@ -10488,7 +10564,7 @@ Speed: O(n^2), Memory: O(n)
 [https://leetcode.com/problems/word-search-ii/](https://leetcode.com/problems/word-search-ii/) hard
 
 Solution [kotlin]
-```
+```kotlin
 
     class Node {
         val next = Array<Node?>(26) { null }
@@ -10545,7 +10621,7 @@ Speed: O(wN + M), w=10, N=10^4, M=12^2 , Memory O(26w + N)
 [https://leetcode.com/problems/reverse-vowels-of-a-string/](https://leetcode.com/problems/reverse-vowels-of-a-string/) easy
 
 Solution [kotlin]
-```
+```kotlin
     fun reverseVowels(s: String): String {
         val vowels = setOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
         var chrs = s.toCharArray()
@@ -10570,7 +10646,7 @@ Speed: O(N), Memory O(N)
 [https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) medium
 
 Solution [kotlin]
-```
+```kotlin
 fun longestPalindrome(words: Array<String>): Int {
         var singles = 0
         var mirrored = 0
@@ -10621,7 +10697,7 @@ Speed: O(N), Memory O(N)
 [https://leetcode.com/problems/minimum-genetic-mutation/](https://leetcode.com/problems/minimum-genetic-mutation/) medium
 
 Solution [kotlin]
-```
+```kotlin
     fun minMutation(start: String, end: String, bank: Array<String>): Int {
         val wToW = mutableMapOf<Int, MutableList<Int>>()
         fun searchInBank(i1: Int, w1: String) {
@@ -10669,7 +10745,7 @@ Speed: O(wN^2), Memory O(N)
 [https://leetcode.com/problems/where-will-the-ball-fall/](https://leetcode.com/problems/where-will-the-ball-fall/) medium
 
 Solution [kotlin]
-```
+```kotlin
     fun findBall(grid: Array<IntArray>): IntArray {
         var indToBall = IntArray(grid[0].size) { it }
         var ballToInd = IntArray(grid[0].size) { it }
@@ -10706,7 +10782,7 @@ This is a geometry problem, but seeing the pattern might help. We can spot that 
 [https://leetcode.com/problems/toeplitz-matrix/](https://leetcode.com/problems/toeplitz-matrix/) easy
 
 Solution [kotlin]
-```
+```kotlin
     fun isToeplitzMatrix(matrix: Array<IntArray>): Boolean =
         matrix
         .asSequence()
