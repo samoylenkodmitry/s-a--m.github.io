@@ -64,6 +64,7 @@ Let's use Topological Sort with Breadth-First Search.
 * build `indegree` - number of input nodes for each node
 * add to BFS only nodes with `indegree[node] == 0`
 * decrease `indegree` as it visited
+
 #### Complexity
 - Time complexity:
 $$O(VE)$$
@@ -106,6 +107,7 @@ Simple Depth-First Search will give optimal $$O(n)$$ solution.
 When handling the `visited` set, we must separate those in `cycle` and `safe`.
 #### Approach
 * we can remove from `cycle` set and add to `safe` set in a post-order traversal
+
 #### Complexity
 - Time complexity:
 $$O(n)$$
@@ -153,8 +155,10 @@ Let's build an undirected graph and do BFS.
 * don't forget a visited `HashSet`
 
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(n)$$
 
@@ -207,11 +211,15 @@ Count nodes in the shortest path from root to leaf
 
 #### Approach
 Let's use BFS
+
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -252,11 +260,15 @@ Important customization is to always consider `countB` at least `1` as it must b
 * we can use `Set` of only the chars in `s`
 * iterate in `ab` and `ba` pairs
 * Kotlin API helps save some LOC
+
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(n)$$, or O(1) if `asSequence` used
+
 #### Code
 ```
 
@@ -314,11 +326,15 @@ One thing to note, we must choose `k-1` border pairs `i-1, i` with `min` or `max
 
 #### Approach
 Let's use PriorityQueue.
+
 #### Complexity
+
 - Time complexity:
 $$O(nlog(k))$$
+
 - Space complexity:
 $$O(k)$$
+
 #### Code
 ```
 fun putMarbles(weights: IntArray, k: Int): Long {
@@ -352,11 +368,15 @@ An important example is `ftftftft k=3`: we must fill all the intervals. It also 
 Sliding window is valid when `tt <= k || ff <= k`.
 #### Approach
 We can save some lines using Kotlin collections API
+
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(n)$$, or $$O(1)$$ using `asSequence`
+
 #### Code
 ```
 
@@ -389,11 +409,15 @@ Use two pointers: one adding to `sum` and another subtracting. As all numbers ar
 
 #### Approach
 Let's use Kotlin `Sequence` API
+
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -429,11 +453,15 @@ Let's maintain two pointers for a `start` and a `nextStart` positions, and a thi
 
 #### Approach
 * corner case is when all array is `1`'s, as we must remove `1` then anyway
+
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(n)$$ add `asSequence` for it to become $$O(1)$$
+
 #### Code
 ```
 
@@ -473,11 +501,15 @@ Result will have a `1` when `count % 3 != 0`.
 
 #### Approach
 Let's use fold.
+
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(1)$$
+
 #### Code
 ```
 
@@ -514,11 +546,15 @@ Compare two strings for each position. There are must be only two not equal posi
 
 #### Approach
 Let's write it in Kotlin collections API style.
+
 #### Complexity
+
 - Time complexity:
 $$O(n)$$
+
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 
@@ -551,11 +587,15 @@ All requests are valid if count of incoming edges are equal to outcoming.
 One possible solution is to just check each combination of edges.
 #### Approach
 Let's use bitmask to traverse all combinations, as total number `16` can fit in `Int`
+
 #### Complexity
+
 - Time complexity:
 $$O(n2^r)$$
+
 - Space complexity:
 $$O(n2^r)$$
+
 #### Code
 ```
 
@@ -589,11 +629,15 @@ Search all possible ways to give current cookie to one of the children. Backtrac
 
 #### Approach
 Just DFS
+
 #### Complexity
+
 - Time complexity:
 $$O(k^n)$$
+
 - Space complexity:
 $$O(2^n)$$
+
 #### Code
 ```
 
@@ -633,11 +677,15 @@ Now, `cells[day]` is a new ground. We can use Union-Find to connect ground cells
 #### Approach
 * use sentinel cells for `top` and `bottom`
 * use path compressing `uf[n] = x`
+
 #### Complexity
+
 - Time complexity:
 $$O(an)$$, where `a` is a reverse Ackerman function
+
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
 val uf = HashMap<Int, Int>()
@@ -674,11 +722,15 @@ For the shortest path, we can make a Breadth-First Search wave in a space of the
 #### Approach
 * Let's use bit mask for collected keys set
 * all bits set are `(1 << countKeys) - 1`
+
 #### Complexity
+
 - Time complexity:
 $$O(nm2^k)$$
+
 - Space complexity:
 $$O(nm2^k)$$
+
 #### Code
 ```
 
@@ -732,11 +784,15 @@ What will work: Dijkstra
 #### Approach
 * store probabilities from `start` to every node in an array
 * the stop condition will be when there is no any `better` path
+
 #### Complexity
+
 - Time complexity:
 $$O(EV)$$
+
 - Space complexity:
 $$O(EV)$$
+
 #### Code
 ```
 fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start: Int, end: Int): Double {
@@ -789,10 +845,13 @@ Now we can walk this graph in exactly `k` steps with Dijkstra algorithm using `P
 * let's use Kotlin's `generateSequence`
 
 #### Complexity
+
 - Time complexity:
 $$O(klogk)$$, there are `k` steps to peek from heap of size `k`
+
 - Space complexity:
 $$O(k)$$
+
 #### Code
 ```
 
@@ -831,11 +890,15 @@ Description of the problem is rather ambiguous: we actually need to consider `ca
 * use separate condition, when `2 * candidates >= costs.size`
 * careful with indexes, check yourself by doing dry run
 * we can use separate variable `takenL` and `takenR` or just use queue's sizes to minify the code
+
 #### Complexity
+
 - Time complexity:
 $$O(nlog(n))$$
+
 - Space complexity:
 $$O(n)$$
+
 #### Code
 ```
         fun totalCost(costs: IntArray, k: Int, candidates: Int): Long {
@@ -892,11 +955,15 @@ Let's observe the example:
 At each position `curr` given the amount of fuel `f` there is a certain number of ways to `finish`. It is independent of all the other factors, so can be safely cached.
 #### Approach
 * as there are also paths from `finish` to `finish`, modify the code to search other paths when `finish` is reached
+
 #### Complexity
+
 - Time complexity:
 $$O(nf)$$, `f` - is a max fuel
+
 - Space complexity:
 $$O(nf)$$
+
 #### Code
 ```
 
@@ -951,11 +1018,15 @@ The trick to make it work and consume less memory, is to cache only the differen
 
 #### Approach
 * we can compute the first sum, as when `diff == 0` then `sum1 == sum2`
+
 #### Complexity
+
 - Time complexity:
 $$O(nm)$$, `m` is a max difference
+
 - Space complexity:
 $$O(nm)$$
+
 #### Code
 ```
 
