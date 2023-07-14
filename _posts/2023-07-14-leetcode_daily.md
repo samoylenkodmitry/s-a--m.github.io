@@ -13,9 +13,9 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
 # 14.07.2023
-[]() medium
+[1218. Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/description/) medium
 [blog post](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/solutions/3761793/kotlin-map/)
-[substack]()
+[substack](https://dmitriisamoilenko.substack.com/p/14072023-1218-longest-arithmetic?sd=pf)
 ![image.png](https://assets.leetcode.com/users/images/66057f03-69d5-4709-9142-79fc3d54720e_1689304858.803253.png)
 
 #### Join me on Telegram
