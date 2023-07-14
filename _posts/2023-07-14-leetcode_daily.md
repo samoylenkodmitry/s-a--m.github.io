@@ -1094,6 +1094,7 @@ We can put those sequences in a `HashMap` by `next` number key.
 $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
+
 #### Code
 ```
 
