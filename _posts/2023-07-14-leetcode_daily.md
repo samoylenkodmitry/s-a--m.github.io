@@ -12,6 +12,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 16.07.2023
+[1125. Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team/description/) hard
+[blog post](https://leetcode.com/problems/smallest-sufficient-team/solutions/3771197/kotlin-dfs-memo/)
+[substack](https://dmitriisamoilenko.substack.com/p/16072023-1125-smallest-sufficient?sd=pf)
+
+![image.png](https://assets.leetcode.com/users/images/7abcc870-6ec1-47d4-b6e7-11f9064e6772_1689479203.8814814.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/277
+
+#### Problem TLDR
+Smallest `team` from `people with skills`, having all `required skills`
+
+#### Intuition
+The skills set size is less than `32`, so we can compute a `bitmask` for each of `people` and for the `required` skills.
+Next, our task is to choose a set from `people` that result skills mask will be equal to the `required`.
+We can do a full search, each time `skipping` or `adding` one mask from the `people`.  
+Observing the problem, we can see, that result is only depending on the current `mask` and all the `remaining` people. So, we can cache it.
+
+#### Approach
+* we can use a `HashMap` to store `skill to index`, but given a small set of skills, just do `indexOf` in O(60 * 16)
+* add to the team in `post order`, as `dfs` must return only the result depending on the input arguments
+
+#### Complexity
+
+- Time complexity:
+$$O(p2^s)$$, as full mask bits are 2^s, s - skills, p - people
+
+- Space complexity:
+$$O(p2^s)$$
+
+#### Code
+
+```kotlin
+
+    fun smallestSufficientTeam(skills: Array<String>, people: List<List<String>>): IntArray {
+        val peoplesMask = people.map {  it.fold(0) { r, t -> r or (1 shl skills.indexOf(t)) } }
+        val all = people.indices.toList()
+        val cache = mutableMapOf<Pair<Int, Int>, List<Int>>()
+        fun dfs(curr: Int, mask: Int): List<Int> {
+          return if (mask == (1 shl skills.size) - 1) listOf()
+          else if (curr == people.size) all
+          else cache.getOrPut(curr to mask) {
+            val skip = dfs(curr + 1, mask)
+            val take = dfs(curr + 1, mask or peoplesMask[curr]) + curr
+            if (skip.size < take.size) skip else take
+          }
+        }
+        return dfs(0, 0).toIntArray()
+    }
+
+```
+
 # 15.07.2023
 [1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/description/) hard
 [blog post](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/solutions/3766779/kotln-dp/)
