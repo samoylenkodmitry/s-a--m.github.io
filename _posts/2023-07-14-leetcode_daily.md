@@ -17,7 +17,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/smallest-sufficient-team/solutions/3771197/kotlin-dfs-memo/)
 [substack](https://dmitriisamoilenko.substack.com/p/16072023-1125-smallest-sufficient?sd=pf)
 
-![image.png](https://assets.leetcode.com/users/images/7abcc870-6ec1-47d4-b6e7-11f9064e6772_1689479203.8814814.png)
+![image.png](https://assets.leetcode.com/users/images/6ff98105-4fdb-4d51-a086-31ddf36f4ebc_1689492977.1362433.png)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/277
@@ -46,20 +46,17 @@ $$O(p2^s)$$
 #### Code
 
 ```kotlin
-
     fun smallestSufficientTeam(skills: Array<String>, people: List<List<String>>): IntArray {
         val peoplesMask = people.map {  it.fold(0) { r, t -> r or (1 shl skills.indexOf(t)) } }
-        val all = people.indices.toList()
         val cache = mutableMapOf<Pair<Int, Int>, List<Int>>()
-        fun dfs(curr: Int, mask: Int): List<Int> {
-          return if (mask == (1 shl skills.size) - 1) listOf()
-          else if (curr == people.size) all
+        fun dfs(curr: Int, mask: Int): List<Int> =
+          if (mask == (1 shl skills.size) - 1) listOf()
+          else if (curr == people.size) people.indices.toList()
           else cache.getOrPut(curr to mask) {
             val skip = dfs(curr + 1, mask)
             val take = dfs(curr + 1, mask or peoplesMask[curr]) + curr
             if (skip.size < take.size) skip else take
           }
-        }
         return dfs(0, 0).toIntArray()
     }
 
