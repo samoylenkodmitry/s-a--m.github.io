@@ -12,6 +12,71 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 17.07.2023
+[445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) medium
+[blog post](https://leetcode.com/problems/add-two-numbers-ii/solutions/3776193/kotlin/)
+[substack](https://dmitriisamoilenko.substack.com/p/17072023-445-add-two-numbers-ii)
+![image.png](https://assets.leetcode.com/users/images/868d7f62-48ba-4adf-a8f0-fbba3dbcc01a_1689566938.506953.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/278
+
+#### Problem TLDR
+
+Linked List of sum of two Linked Lists numbers, `9->9 + 1 = 1->0->0`
+
+#### Intuition
+
+The hint is in the description: reverse lists, then just do arithmetic. Another way is to use stack.
+
+#### Approach
+
+* don't forget to undo the reverse
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun addTwoNumbers(l1: ListNode?, l2: ListNode?, n: Int = 0): ListNode? {
+      fun ListNode?.reverse(): ListNode? {
+        var curr = this
+        var prev: ListNode? = null
+        while (curr != null) {
+          val next = curr.next
+          curr.next = prev
+          prev = curr
+          curr = next
+        }
+        return prev
+      }
+      var l1r = l1.reverse()
+      var l2r = l2.reverse()
+      var o = 0
+      var prev: ListNode? = null
+      while (l1r != null || l2r != null) {
+        val v = o + (l1r?.`val` ?: 0) + (l2r?.`val` ?: 0)
+        prev = ListNode(v % 10).apply { next = prev }
+        o = v / 10
+        l1r = l1r?.next
+        l2r = l2r?.next
+      }
+      if (o > 0) prev = ListNode(o).apply { next = prev }
+      l1r.reverse()
+      l2r.reverse()
+      return prev
+    }
+
+```
+
 # 16.07.2023
 [1125. Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team/description/) hard
 [blog post](https://leetcode.com/problems/smallest-sufficient-team/solutions/3771197/kotlin-dfs-memo/)
