@@ -19,18 +19,27 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 ![image.png](https://assets.leetcode.com/users/images/23d9fff8-2793-4ee5-afa9-6f3788537668_1689652989.7052531.png)
 
 #### Join me on Telegram
+
 https://t.me/leetcode_daily_unstoppable/279
+
 #### Intuition
+
 We can use Doubly-Linked List representing access time in its order.
 
 #### Approach
+
 * use `firstNode` and `lastNode`
+
 #### Complexity
+
 - Time complexity:
 $$O(1)$$, for each call `get` or `put`
+
 - Space complexity:
 $$O(1)$$, for each element
+
 #### Code
+
 ```kotlin
 class LRUCache(val capacity: Int) {
     class Node(val key: Int, var left: Node? = null, var right: Node? = null)
