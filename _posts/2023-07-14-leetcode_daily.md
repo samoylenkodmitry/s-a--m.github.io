@@ -6658,9 +6658,12 @@ For the explicit solution, we take each interval, store positions of the `min` a
 //           *.*
 ```
 For the tricky one solution, just see what other clever man already wrote on the leetcode site and hope you will not get the same problem in an interview.
+
 #### Complexity
+
 - Time complexity:
 $$O(nlog_2(n))$$ -> $$O(n)$$
+
 - Space complexity:
 $$O(n)$$ -> $$O(1)$$
 
