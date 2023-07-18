@@ -12,6 +12,74 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 18.07.2023
+[146. LRU Cache](https://leetcode.com/problems/lru-cache/description/) medium
+[blog post](https://leetcode.com/problems/lru-cache/solutions/3781121/kotlin-linked-list/)
+[substack](https://dmitriisamoilenko.substack.com/p/18072023-146-lru-cache?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/23d9fff8-2793-4ee5-afa9-6f3788537668_1689652989.7052531.png)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/279
+#### Intuition
+We can use Doubly-Linked List representing access time in its order.
+
+#### Approach
+* use `firstNode` and `lastNode`
+#### Complexity
+- Time complexity:
+$$O(1)$$, for each call `get` or `put`
+- Space complexity:
+$$O(1)$$, for each element
+#### Code
+```kotlin
+class LRUCache(val capacity: Int) {
+    class Node(val key: Int, var left: Node? = null, var right: Node? = null)
+    var size = 0
+    val map = mutableMapOf<Int, Int>()
+    val firstNode = Node(-1)
+    var lastNode = firstNode
+    val keyToNode = mutableMapOf<Int, Node>()
+
+    fun disconnect(node: Node) {
+      val leftNode = node.left
+      val rightNode = node.right
+      node.left = null
+      node.right = null
+      leftNode?.right = rightNode
+      rightNode?.left = leftNode
+      if (node === lastNode) lastNode = leftNode!!
+    }
+
+    fun updateNode(key: Int) {
+      val node = keyToNode[key]!!
+      if (node === lastNode) return
+      disconnect(node)
+      lastNode.right = node
+      node.left = lastNode
+      lastNode = node
+    }
+
+    fun get(key: Int): Int = map[key]?.also { updateNode(key) } ?: -1
+
+    fun put(key: Int, value: Int) {
+      if (!map.contains(key)) {
+        if (size == capacity) {
+          firstNode.right?.let {
+            map.remove(it.key)
+            keyToNode.remove(it.key)
+            disconnect(it)
+          }
+        } else size++
+        keyToNode[key] = Node(key)
+      }
+      updateNode(key)
+      map[key] = value
+    }
+
+}
+
+```
+
 # 17.07.2023
 [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) medium
 [blog post](https://leetcode.com/problems/add-two-numbers-ii/solutions/3776193/kotlin/)
