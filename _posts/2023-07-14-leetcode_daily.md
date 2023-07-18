@@ -41,6 +41,7 @@ $$O(1)$$, for each element
 #### Code
 
 ```kotlin
+
 class LRUCache(val capacity: Int) {
     class Node(val key: Int, var left: Node? = null, var right: Node? = null)
     var size = 0
@@ -188,6 +189,7 @@ $$O(p2^s)$$
 #### Code
 
 ```kotlin
+
     fun smallestSufficientTeam(skills: Array<String>, people: List<List<String>>): IntArray {
         val peoplesMask = people.map {  it.fold(0) { r, t -> r or (1 shl skills.indexOf(t)) } }
         val cache = mutableMapOf<Pair<Int, Int>, List<Int>>()
@@ -227,6 +229,7 @@ Let's observe example:
         // [     4 ]
         // [1][2][3][2]
         //      [4][2]
+
 ```
 
 If `k=1` we choose `[4]`
@@ -245,7 +248,6 @@ if `k=3` we choose `[2][3][2]`
 * sorting: it will help to reduce irrelevant combinations by doing a Binary Search for the next non-intersecting element
 
 We can observe, that at any given position the result only depends on the suffix array. That means we can safely cache the result by the current position.
-
 
 #### Approach
 
@@ -327,7 +329,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -367,10 +368,10 @@ $$O(VE)$$
 - Space complexity:
 $$O(E + V)$$
 
-
 #### Code
 
 ```kotlin
+
 fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
     val fromTo = mutableMapOf<Int, MutableSet<Int>>()
         val indegree = IntArray(numCourses)
@@ -387,6 +388,7 @@ fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
             }.count() == numCourses
         }
     }
+
 ```
 
 # 12.07.2023
@@ -411,7 +413,6 @@ $$O(n)$$
 
 - Space complexity:
 $$O(n)$$
-
 
 #### Code
 
@@ -460,7 +461,6 @@ $$O(n)$$
 
 - Space complexity:
 $$O(n)$$
-
 
 #### Code
 
@@ -521,7 +521,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -572,7 +571,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$, or O(1) if `asSequence` used
 
-
 #### Code
 
 ```kotlin
@@ -606,7 +604,9 @@ https://t.me/leetcode_daily_unstoppable/269
 `abs(max - min)`, where `max` and `min` are the sum of `k` interval borders
 #### Intuition
 Let's observe some examples:
+
 ```
+
 // 1 3 2 3 5 4 5 7 6
 // *   * *
 // 1+3 2+2 3+6 = 4+4+9 = 17
@@ -626,7 +626,9 @@ Let's observe some examples:
 // . * . *              1+1+4+2+5+2
 //   . * *              1+4+2+2+5+2
 // . *   . *            1+1+4+5+2+2
+
 ```
+
 One thing to note, we must choose `k-1` border pairs `i-1, i` with `min` or `max` sum.
 
 #### Approach
@@ -640,10 +642,10 @@ $$O(nlog(k))$$
 - Space complexity:
 $$O(k)$$
 
-
 #### Code
 
 ```kotlin
+
 fun putMarbles(weights: IntArray, k: Int): Long {
 
     val pqMax = PriorityQueue<Int>(compareBy( { weights[it].toLong() + weights[it - 1].toLong() } ))
@@ -683,7 +685,6 @@ $$O(n)$$
 
 - Space complexity:
 $$O(n)$$, or $$O(1)$$ using `asSequence`
-
 
 #### Code
 
@@ -726,7 +727,6 @@ $$O(n)$$
 
 - Space complexity:
 $$O(1)$$
-
 
 #### Code
 
@@ -773,7 +773,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$ add `asSequence` for it to become $$O(1)$$
 
-
 #### Code
 
 ```kotlin
@@ -811,7 +810,6 @@ Single number in an array of tripples
 One simple approach it to count bits at each position.
 Result will have a `1` when `count % 3 != 0`.
 
-
 #### Approach
 Let's use fold.
 
@@ -822,7 +820,6 @@ $$O(n)$$
 
 - Space complexity:
 $$O(1)$$
-
 
 #### Code
 
@@ -870,7 +867,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -913,7 +909,6 @@ $$O(n2^r)$$
 - Space complexity:
 $$O(n2^r)$$
 
-
 #### Code
 
 ```kotlin
@@ -945,7 +940,6 @@ https://t.me/leetcode_daily_unstoppable/262
 #### Intuition
 Search all possible ways to give current cookie to one of the children. Backtrack sums and calculate the result.
 
-
 #### Approach
 Just DFS
 
@@ -956,8 +950,6 @@ $$O(k^n)$$
 
 - Space complexity:
 $$O(2^n)$$
-
-
 
 #### Code
 
@@ -1008,11 +1000,10 @@ $$O(an)$$, where `a` is a reverse Ackerman function
 - Space complexity:
 $$O(n)$$
 
-
-
 #### Code
 
 ```kotlin
+
 val uf = HashMap<Int, Int>()
 fun root(x: Int): Int = if (uf[x] == null || uf[x] == x) x else root(uf[x]!!)
 .also { uf[x] = it }
@@ -1025,6 +1016,7 @@ fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>) =
         .forEach { if (uf[it] != null) uf[root(y * col + x)] = root(it) }
         root(0) == root(1)
     }
+
 ```
 
 # 29.06.2023
@@ -1055,8 +1047,6 @@ $$O(nm2^k)$$
 
 - Space complexity:
 $$O(nm2^k)$$
-
-
 
 #### Code
 
@@ -1121,11 +1111,10 @@ $$O(EV)$$
 - Space complexity:
 $$O(EV)$$
 
-
-
 #### Code
 
 ```kotlin
+
 fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start: Int, end: Int): Double {
     val pstart = Array(n) { 0.0 }
     val adj = mutableMapOf<Int, MutableList<Pair<Int, Double>>>()
@@ -1145,6 +1134,7 @@ fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start:
 
     return pstart[end]
 }
+
 ```
 
 # 27.06.2023
@@ -1159,11 +1149,14 @@ https://t.me/leetcode_daily_unstoppable/258
 List of increasing sum pairs `a[i], b[j]` from two sorted lists `a, b`
 #### Intuition
 Naive solution with two pointers didn't work, as we must backtrack to the previous pointers sometimes:
+
 ```
+
 1 1 2
 1 2 3
 
 1+1 1+1 2+1 2+2(?) vs 1+2
+
 ```
 
 The trick is to think of the pairs `i,j` as graph nodes, where the adjacent list is `i+1,j` and `i, j+1`. Each next node sum is strictly greater than the previous:
@@ -1182,8 +1175,6 @@ $$O(klogk)$$, there are `k` steps to peek from heap of size `k`
 
 - Space complexity:
 $$O(k)$$
-
-
 
 #### Code
 
@@ -1233,11 +1224,10 @@ $$O(nlog(n))$$
 - Space complexity:
 $$O(n)$$
 
-
-
 #### Code
 
 ```kotlin
+
         fun totalCost(costs: IntArray, k: Int, candidates: Int): Long {
             val pqL = PriorityQueue<Int>()
             val pqR = PriorityQueue<Int>()
@@ -1261,6 +1251,7 @@ $$O(n)$$
             while (count++ < k && pqL.isNotEmpty()) sum += pqL.poll()
             return sum
         }
+
 ```
 
 # 25.06.2023
@@ -1275,7 +1266,9 @@ https://t.me/leetcode_daily_unstoppable/256
 Count paths from `start` to `finish` using `|locations[i]-locations[j]` of the `fuel`
 #### Intuition
 Let's observe the example:
+
 ```
+
 //  0 1 2 3 4
 //  2 3 6 8 4
 //    *   *
@@ -1288,7 +1281,9 @@ Let's observe the example:
 //  3-8(5)
 //  3-8(5)-6(3)-8(1)
 //  3-4(4)-6(2)-8(0)
+
 ```
+
 At each position `curr` given the amount of fuel `f` there is a certain number of ways to `finish`. It is independent of all the other factors, so can be safely cached.
 #### Approach
 * as there are also paths from `finish` to `finish`, modify the code to search other paths when `finish` is reached
@@ -1300,8 +1295,6 @@ $$O(nf)$$, `f` - is a max fuel
 
 - Space complexity:
 $$O(nf)$$
-
-
 
 #### Code
 
@@ -1351,9 +1344,13 @@ https://t.me/leetcode_daily_unstoppable/255
 Max sum of disjoint set in array
 #### Intuition
 Naive Dynamic Programming solution is to do a full search, adding to the first and to the second sums. That will give Out of Memory for this problem constraints.
+
 ```
+
 dp[i][firstSum][secondSum] -> Out of Memory
+
 ```
+
 The trick to make it work and consume less memory, is to cache only the difference `firstSum - secondSum`. It will slightly modify the code, but the principle is the same: try to add to the first, then to the second, otherwise skip.
 
 #### Approach
@@ -1366,8 +1363,6 @@ $$O(nm)$$, `m` is a max difference
 
 - Space complexity:
 $$O(nm)$$
-
-
 
 #### Code
 
@@ -1404,7 +1399,9 @@ Max arithmetic subsequence length in array
 This was a hard problem for me :)
 Naive Dynamic Programming solution with recursion and cache will give TLE.
 Let's observe the result, adding numbers one-by-one:
+
 ```
+
 // 20 1 15 3 10 5 8
 // 20
 // 20 1
@@ -1427,7 +1424,9 @@ Let's observe the result, adding numbers one-by-one:
 // 20 20 20 20 20 20  1 1  1 1 1 15 15 15 15 10 10 5 8
 //  1 15  3 10  5  8 15 3 10 5 8  3 10  5  8  5  8 8
 //    10                             5
+
 ```
+
 For each pair `from-to` there is a sequence. When adding another number, we know what `next` numbers are expected.
 
 #### Approach
@@ -1437,8 +1436,6 @@ We can put those sequences in a `HashMap` by `next` number key.
 $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
-
-
 
 #### Code
 
@@ -1514,10 +1511,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
 fun maxProfit(prices: IntArray, fee: Int) = prices
 .fold(-prices[0] to 0) { (balanceBuy, balance), price ->
     maxOf(balanceBuy, balance - price) to maxOf(balance, balanceBuy + price - fee)
@@ -1538,20 +1535,28 @@ Min cost to make all `arr[i]` equal, where each change is `cost[i]`
 #### Intuition
 First idea is that at least one element can be unchanged.
 Assume, that we want to keep the most costly element unchanged, but this will break on example:
+
 ```
+
 1 2 2 2    2 1 1 1
 f(1) = 0 + 1 + 1 + 1 = 3
 f(2) = 2 + 0 + 0 + 0 = 2 <-- more optimal
+
 ```
+
 Let's observe the resulting cost for each number:
+
 ```
+
 //    1 2 3 2 1     2 1 1 1 1
 //0:  2 2 3 2 1 = 10
 //1:  0 1 2 1 0 = 4
 //2:  2 0 1 0 1 = 4
 //3:  4 1 0 1 2 = 8
 //4:  6 2 1 2 3 = 14
+
 ```
+
 We can see that `f(x)` have a minimum and is continuous. We can find it with Binary Search, comparing the `slope = f(mid + 1) - f(mid - 1)`. If `slope > 0`, minimum is on the left.
 
 #### Approach
@@ -1566,7 +1571,6 @@ For more robust Binary Search:
 $$O(nlog(n))$$
 - Space complexity:
 $$O(1)$$
-
 
 #### Code
 
@@ -1618,7 +1622,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -1657,7 +1660,6 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
-
 #### Code
 
 ```kotlin
@@ -1688,7 +1690,6 @@ For every cell in a matrix, we can calculate how many increasing paths are start
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
-
 
 #### Code
 
@@ -1801,7 +1802,6 @@ $$O(n^2)$$, n for tree walk, and n^2 for `f`
 - Space complexity:
 $$O(n^2)$$
 
-
 #### Code
 
 ```kotlin
@@ -1862,7 +1862,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -1903,7 +1902,6 @@ Let's write a [Morris traversal](https://en.wikipedia.org/wiki/Threaded_binary_t
 $$O(n)$$
 - Space complexity:
 $$O(1)$$
-
 
 #### Code
 
@@ -1956,10 +1954,10 @@ $$O(n^2)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
 fun equalPairs(grid: Array<IntArray>): Int {
     val rowHashes = grid.map { it.fold(0.0) { r, t ->  Math.tan(r) + t } }
     val colHashes = (0..grid.lastIndex).map { x ->
@@ -1968,6 +1966,7 @@ fun equalPairs(grid: Array<IntArray>): Int {
             rowHashes[it / grid.size] == colHashes[it % grid.size]
         }
     }
+
 ```
 
 # 12.06.2023
@@ -1992,10 +1991,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
 fun summaryRanges(nums: IntArray): List<String> = nums
     .fold(mutableListOf<IntArray>()) { r, t ->
         if (r.isEmpty() || r.last()[1] + 1 < t) r += intArrayOf(t, t)
@@ -2003,6 +2002,7 @@ fun summaryRanges(nums: IntArray): List<String> = nums
         r
     }
     .map { (f, t) -> if (f == t) "$f" else "$f->$t"}
+
 ```
 
 # 11.06.2023
@@ -2017,10 +2017,14 @@ https://t.me/leetcode_daily_unstoppable/242
 Implement an array where all elements can be saved into a `snapshot's.
 #### Intuition
 Consider example:
+
 ```
+
 // 0 1 2 3 4 5 6 <-- snapshot id
 // 1 . . 2 . . 3 <-- value
+
 ```
+
 When `get()(2)` called, `1` must be returned. So, we need to keep all the previous values. We can put them into a list combining with the current `snapshot id`: `(1,0), (2, 3), (3, 6)`. Then we can do a Binary Search and find the `highest_id >= id`.
 
 #### Approach
@@ -2035,10 +2039,10 @@ $$O(log(n))$$ for `get`
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
 class SnapshotArray(length: Int) {
     // 0 1 2 3 4 5 6
     // 1 . . 2 . . 3
@@ -2081,7 +2085,9 @@ https://t.me/leetcode_daily_unstoppable/241
 Max at `index` in an `n` sized array, where `sum <= maxSum`, `nums[i] > 0` and `maxDiff(i, i+1) < 2`.
 #### Intuition
 Let's write possible numbers, for example:
+
 ```
+
 // n=6, i=1, m=10
 // 10/6 = 1
 // 0 1 2 3 4 5
@@ -2099,7 +2105,9 @@ Let's write possible numbers, for example:
 // S(x-1) - S(x-1-i) + x + S(x-1) - S(x-1 - (size-i-1))
 // x + 2 * S(x-1) - S(x-1-i) - S(x-size+i)
 // S(y) = y * (y + 1) / 2
+
 ```
+
 We should minimize the sum for it to be `<= maxSum`, so naturally, we place the maximum at `index` and do strictly lower the sibling numbers.
 Looking at the example, we see there is an arithmetic sum to the left and to the right of the `index`.
 $$
@@ -2123,7 +2131,6 @@ For more robust binary search:
 $$O(log(n))$$
 - Space complexity:
 $$O(1)$$
-
 
 #### Code
 
@@ -2202,13 +2209,17 @@ https://t.me/leetcode_daily_unstoppable/239
 Count negatives in a sorted by row and by column matrix.
 #### Intuition
 Consider example:
+
 ```
+
 4  3  2 -1
 3  2  1 -1
 1  1 -1 -2
 ^ we are here
 -1 -1 -2 -3
+
 ```
+
 If we set position `x` at the first negative number, it is guaranteed, that the next `row[x]` will also be negative. So we can skip already passed columns.
 #### Approach
 Let's use Kotlin's `fold` operator.
@@ -2229,6 +2240,7 @@ fun countNegatives(grid: Array<IntArray>): Int =
         (total + curr) to curr
     }.first
 }
+
 ```
 
 # 07.06.2023
@@ -2242,7 +2254,9 @@ Minimum `a` and `b` Int bit flips to make `a or b == c`.
 #### Intuition
 Naive implementation is to iterate over `32` bits and flip `a` or/and `b` bits to match `c`.
 If we didn't consider the case where `a = 1` and `b = 1` and `c = 0`, the result would be `(a or b) xor c`, as `a or b` gives us the left side of the equation, and `xor c` gives only bits that are needed to flip. For the corner case `a = b = 1, c = 0`, we must do additional flip to make `0`, and we must make any other combinations `0`:
+
 ```
+
 a b c     a and b   c.inv()   (a and b) and c.inv()
 
 0 0 1     0         0         0
@@ -2252,6 +2266,7 @@ a b c     a and b   c.inv()   (a and b) and c.inv()
 1 0 1     0         0         0
 1 1 0     1         1         1
 1 1 1     1         0         0
+
 ```
 
 #### Approach
@@ -2291,7 +2306,6 @@ $$O(nlog(n))$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -2320,10 +2334,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
-
 #### Code
 
 ```kotlin
+
 fun checkStraightLine(coordinates: Array<IntArray>): Boolean =
     with((coordinates[1][1] - coordinates[0][1])/
     (coordinates[1][0] - coordinates[0][0]).toDouble()) {
@@ -2333,6 +2347,7 @@ fun checkStraightLine(coordinates: Array<IntArray>): Boolean =
             isInfinite() && o.isInfinite() || this == o
         }
     }
+
 ```
 
 # 04.06.2023
@@ -2355,8 +2370,6 @@ For more optimal Union-Find:
 $$O(a(n)n^2)$$, `a(n)` - reverse Ackerman function `f(x) = 2^2^2..^2, x times`. `a(Int.MAX_VALUE) = 2^32 = 2^2^5 == 3`
 - Space complexity:
 $$O(n^2)$$
-
-
 
 #### Code
 
@@ -2395,6 +2408,7 @@ fun findCircleNum(isConnected: Array<IntArray>): Int {
 }
 
 ```
+
 # 03.06.2023
 [1376. Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/description/) medium
 [blog post](https://leetcode.com/problems/time-needed-to-inform-all-employees/solutions/3591362/kotlin-dfs/)
@@ -2412,7 +2426,6 @@ Build the graph, then write the DFS.
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
-
 
 #### Code
 
@@ -2450,7 +2463,6 @@ Build a graph, the do DFS trying to start from each node.
 $$O(n^3)$$, each of the `n` DFS will take $$n^2$$
 - Space complexity:
 $$O(n^2)$$
-
 
 #### Code
 
@@ -2503,7 +2515,6 @@ Some tricks for cleaner code:
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
-
 
 #### Code
 
@@ -2558,10 +2569,10 @@ $$O(1)$$, for each call
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
 class UndergroundSystem() {
     val fromToSumTime = mutableMapOf<Pair<String, String>, Long>()
     val fromToCount = mutableMapOf<Pair<String, String>, Int>()
@@ -2586,6 +2597,7 @@ class UndergroundSystem() {
     }
 
 }
+
 ```
 
 # 30.05.2023
@@ -2608,10 +2620,10 @@ $$O(1)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
 class MyHashSet(val initialSz: Int = 16, val loadFactor: Double = 1.6) {
             var buckets = Array<LinkedList<Int>?>(initialSz) { null }
             var size = 0
@@ -2670,10 +2682,10 @@ $$O(1)$$
 - Space complexity:
 $$O(1)$$
 
-
 #### Code
 
 ```kotlin
+
 class ParkingSystem(big: Int, medium: Int, small: Int) {
     val types = arrayOf(big, medium, small)
 
@@ -2701,7 +2713,6 @@ We every stick `from..to` we can try all the cuts in that range. This result wil
 $$k^2$$, as maximum depth of DFS is `k`, and we loop for `k`.
 - Space complexity:
 $$k^2$$
-
 
 #### Code
 
@@ -2750,7 +2761,6 @@ Let's write bottom up DP.
 $$O(n)$$
 - Space complexity:
 $$O(n)$$
-
 
 #### Code
 
@@ -2810,10 +2820,10 @@ $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
 
-
 #### Code
 
 ```kotlin
+
 fun stoneGameII(piles: IntArray): Int {
     // 2 7 9 4 4    M      A   B
     // A            1      1
@@ -2859,30 +2869,38 @@ For every event, we choose `one` number from numbers `1..maxPts`. Probability of
 For example, `n=6, k=1, maxpts=10`: we can pick any numbers `1, 2, 3, 4, 5, 6` that are `<=6`. Numbers `7, 8, 9, 10` are excluded, because they are `>6`. After we pick one number with probability `p1 = 1/10`, the sum will be `>=k` so we stop. The final probability is the sum of individual valid choices `p = sum(good_p1)`
 
 Another example, `n=6, k=2, maxpts=10`: our choices are
+
 ```
+
 // n = 6, k = 2, maxpts = 10
 // p_win1 1+1, 1+2, 1+3, 1+4, 1+5, 2,   3,  4,  5,  6
 //        0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1 0.1 = 0.55
 
 ```
+
 When we go to the second round in cases of `1+1, 1+2, 1+3, 1+4, 1+5`, we multiply the probabilities, so `p(1+1) = p1*p1`.
 
 Next, observe the pattern for other examples:
+
 ```
+
 // n = 6, k = 3, maxpts = 10
 // p_win  1+1+1, 1+1+2, 1+1+3, 1+1+4, 1+2, 1+3, 1+4, 1+5, 2+1, 2+2, 2+3, 2+4, 3,  4,  5,   6
 //        0.001  0.001  0.001  0.001  0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1
 // sum=0.484
 
-
 // n = 6, k = 4, maxpts = 10
 // p_win  1+1+1+1 1+1+1+2 1+1+1+3 1+1+2 1+1+3 1+1+4 1+2+1 1+2+2 1+2+3 1+3  1+4  1+5  2+1+1 2+1+2 2+1+3 2+2  2+3  2+4  3+1  3+2  3+3  4   5   6
 //         .0001   .0001   .0001   .001  .001  .001  .001  .001  .001  .01  .01  .01  .001  .001  .001  .01  .01  .01  .01  .01  .01  .1  .1  .1
 //sum=0.3993
+
 ```
+
 What we see is the sequence of `1+1+1+1, 1+1+1+2, 1+1+1+3`, where we pick a number from `1..maxpts` then calculate the sum and if the sum is still smaller than `n` we go deeper and make another choice from `1..maxpts`.
 That can be written as Depth-First Search algorithm:
+
 ```
+
 fun dfs(currSum: Int): Double {
     ...
     var sumP = 0.0
@@ -2890,7 +2908,9 @@ fun dfs(currSum: Int): Double {
     sumP += dfs(currSum + x)
     res = sumP * p1
 }
+
 ```
+
 This will work and gives us correct answers, but gives TLE for big numbers, as its time complexity is $$O(n^2)$$.
 
 Let's observe this algorithm's recurrent equation:
@@ -2917,7 +2937,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -2927,17 +2946,14 @@ fun new21Game(n: Int, k: Int, maxPts: Int): Double {
     // cards: 1 2 3 4 5 6 7 8 9 10
     // p_win1(6, 10) = count(1 2 3 4 5 6) / 10 = 0.6
 
-
     // n = 6, k = 2, maxpts = 10
     // p_win1 1+1, 1+2, 1+3, 1+4, 1+5, 2,   3,  4,  5,  6
     //        0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1 0.1 = 0.55
-
 
     // n = 6, k = 3, maxpts = 10
     // p_win  1+1+1, 1+1+2, 1+1+3, 1+1+4, 1+2, 1+3, 1+4, 1+5, 2+1, 2+2, 2+3, 2+4, 3,  4,  5,   6
     //        0.001  0.001  0.001  0.001  0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.1 0.1 0.1 0.1
     // sum=0.484
-
 
     // n = 6, k = 4, maxpts = 10
     // p_win  1+1+1+1 1+1+1+2 1+1+1+3 1+1+2 1+1+3 1+1+4 1+2+1 1+2+2 1+2+3 1+3  1+4  1+5  2+1+1 2+1+2 2+1+3 2+2  2+3  2+4  3+1  3+2  3+3  4   5   6
@@ -2987,7 +3003,6 @@ $$O(nlog(n))$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -3030,10 +3045,10 @@ $$O(nlogk)$$
 - Space complexity:
 $$O(k)$$
 
-
 #### Code
 
 ```kotlin
+
 class KthLargest(val k: Int, nums: IntArray) {
     val pq = PriorityQueue<Int>(nums.toList())
 
@@ -3043,6 +3058,7 @@ class KthLargest(val k: Int, nums: IntArray) {
             peek()
         }
     }
+
 ```
 
 # 22.05.2023
@@ -3063,7 +3079,6 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
@@ -3078,6 +3093,7 @@ fun topKFrequent(nums: IntArray, k: Int): IntArray {
         .take(k)
         .toIntArray()
 }
+
 ```
 
 # 21.05.2023
@@ -3099,7 +3115,6 @@ To detect border cell, we have to make separate DFS.
 $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
-
 
 #### Code
 
@@ -3165,7 +3180,6 @@ $$O(nEV)$$
 - Space complexity:
 $$O(n+E+V)$$
 
-
 #### Code
 
 ```kotlin
@@ -3218,10 +3232,10 @@ $$O(VE)$$, DFS once for all `vertices` and `edges`
 - Space complexity:
 $$O(V+E)$$, for `reds` and `visited` set.
 
-
 #### Code
 
 ```kotlin
+
 fun isBipartite(graph: Array<IntArray>): Boolean {
     val reds = IntArray(graph.size)
     fun dfs(u: Int, isRed: Int): Boolean {
@@ -3232,6 +3246,7 @@ fun isBipartite(graph: Array<IntArray>): Boolean {
     }
     return graph.indices.all { dfs(it, reds[it]) }
 }
+
 ```
 
 # 18.05.2023
@@ -3253,12 +3268,13 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
 fun findSmallestSetOfVertices(n: Int, edges: List<List<Int>>): List<Int> =
     (0 until n) - edges.map { it[1] }
+
 ```
 
 # 17.05.2023
@@ -3279,10 +3295,10 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 #### Code
 
 ```kotlin
+
         fun pairSum(head: ListNode?): Int {
             var fast = head
             var slow = head
@@ -3299,6 +3315,7 @@ $$O(n)$$
                 }
                 return sum
             }
+
 ```
 
 # 16.05.2023
@@ -3323,10 +3340,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
-
 #### Code
 
 ```kotlin
+
 fun swapPairs(head: ListNode?): ListNode? {
     val dummy = ListNode(0).apply { next = head }
     var curr: ListNode? = dummy
@@ -3366,10 +3383,10 @@ $$O(n)$$
 - Space complexity:
 $$O(1)$$
 
-
 #### Code
 
 ```kotlin
+
 fun swapNodes(head: ListNode?, k: Int): ListNode? {
     var fast = head
     for (i in 1..k - 1) fast = fast?.next
@@ -3382,6 +3399,7 @@ fun swapNodes(head: ListNode?, k: Int): ListNode? {
     one?.`val` = two?.`val`.also { two?.`val` = one?.`val` }
     return head
 }
+
 ```
 
 # 14.05.2023
@@ -3405,10 +3423,10 @@ $$O(n^22^n)$$
 - Space complexity:
 $$O(n2^n)$$
 
-
 #### Code
 
 ```kotlin
+
     fun gcd(a: Int, b: Int): Int = if (b % a == 0) a else gcd(b % a, a)
     fun maxScore(nums: IntArray): Int {
         val n = nums.size / 2
@@ -3433,6 +3451,7 @@ $$O(n2^n)$$
         }
         return dfs(1, 0)
     }
+
 ```
 
 # 13.05.2023
@@ -3460,7 +3479,9 @@ $$O(n)$$
 
 #### Code
 top-down:
+
 ```
+
 fun countGoodStrings(low: Int, high: Int, zero: Int, one: Int): Int {
     val m = 1_000_000_007
     val cache = mutableMapOf<Int, Int>()
@@ -3475,8 +3496,11 @@ fun countGoodStrings(low: Int, high: Int, zero: Int, one: Int): Int {
     }
     return dfs(0)
 }
+
 ```
+
 bottom-up
+
 ```
 
 fun countGoodStrings(low: Int, high: Int, zero: Int, one: Int): Int {
@@ -3494,6 +3518,7 @@ fun countGoodStrings(low: Int, high: Int, zero: Int, one: Int): Int {
 [2140. Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description/) medium
 
 ```kotlin
+
 fun mostPoints(questions: Array<IntArray>): Long {
     val dp = LongArray(questions.size)
     for (i in questions.lastIndex downTo 0) {
@@ -3504,15 +3529,20 @@ fun mostPoints(questions: Array<IntArray>): Long {
     }
     return dp[0]
 }
+
 ```
+
 or minified golf version
+
 ```
+
 fun mostPoints(questions: Array<IntArray>): Long {
     val dp = HashMap<Int, Long>()
     for ((i, q) in questions.withIndex().reversed())
     dp[i] = maxOf(q[0] + (dp[i + q[1] + 1]?:0), dp[i + 1]?:0)
     return dp[0]?:0
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/solving-questions-with-brainpower/solutions/3514521/kotlin-dp/)
@@ -3536,6 +3566,7 @@ $$O(n)$$
 [1035. Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/description/) medium
 
 ```kotlin
+
 fun maxUncrossedLines(nums1: IntArray, nums2: IntArray): Int {
     val cache = Array(nums1.size) { Array(nums2.size) { -1 } }
     val intersect = nums1.toSet().intersect(nums2.toSet())
@@ -3562,6 +3593,7 @@ fun maxUncrossedLines(nums1: IntArray, nums2: IntArray): Int {
     }
     return dfs(0, 0, 0)
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/uncrossed-lines/solutions/3510891/kotlin-dfs-cache/)
@@ -3570,10 +3602,14 @@ fun maxUncrossedLines(nums1: IntArray, nums2: IntArray): Int {
 https://t.me/leetcode_daily_unstoppable/209
 #### Intuition
 Consider the case:
+
 ```
+
 2 5 1 2 5
 2 2 2 1 1 1 5 5 5
+
 ```
+
 ![image.png](https://assets.leetcode.com/users/images/61b85278-34db-4858-b235-610bf4553518_1683778465.8258896.png)
 
 When we draw all the possible lines, we see that there is a choice to draw line `2-2` or four lines `1-1` or three `5-5` in the middle. Suffix lines `5-5` and prefix lines `2-2` are optimal already and can be cached as a result.
@@ -3593,6 +3629,7 @@ $$O(n^3)$$
 [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/) medium
 
 ```kotlin
+
 fun generateMatrix(n: Int): Array<IntArray> = Array(n) { IntArray(n) }.apply {
     var dir = 0
     var dxdy = arrayOf(0, 1, 0, -1)
@@ -3609,6 +3646,7 @@ fun generateMatrix(n: Int): Array<IntArray> = Array(n) { IntArray(n) }.apply {
         y = nextY()
     }
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/spiral-matrix-ii/solutions/3506921/kotlin-a-robot/)
@@ -3630,6 +3668,7 @@ $$O(n^2)$$
 [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) medium
 
 ```kotlin
+
 fun spiralOrder(matrix: Array<IntArray>): List<Int> = mutableListOf<Int>().apply {
     var x = 0
     var y = 0
@@ -3647,6 +3686,7 @@ fun spiralOrder(matrix: Array<IntArray>): List<Int> = mutableListOf<Int>().apply
         y += dxy[dir]
     }
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/spiral-matrix/solutions/3503485/kotlin-robot/)
@@ -3671,10 +3711,12 @@ $$O(n)$$
 [1572. Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/) easy
 
 ```kotlin
+
 fun diagonalSum(mat: Array<IntArray>): Int =
     (0..mat.lastIndex).sumBy {
         mat[it][it] + mat[it][mat.lastIndex - it]
     }!! - if (mat.size % 2 == 0) 0 else mat[mat.size / 2][mat.size / 2]
+
 ```
 
 [blog post](https://leetcode.com/problems/matrix-diagonal-sum/solutions/3498716/kotlin-one-liner/)
@@ -3695,13 +3737,13 @@ $$O(1)$$
 [1964. Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/description/) hard
 
 ```kotlin
+
 fun longestObstacleCourseAtEachPosition(obstacles: IntArray): IntArray {
     // 2 3 1 3
     // 2          2
     //   3        2 3
     //     1      1 3    (pos = 1)
     //       3    1 3 3
-
 
     // 5 2 5 4 1 1 1 5 3 1
     // 5       .             5
@@ -3737,6 +3779,7 @@ fun longestObstacleCourseAtEachPosition(obstacles: IntArray): IntArray {
         }
     }.toIntArray()
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/solutions/3495432/kotlin-lis/)
@@ -3770,6 +3813,7 @@ $$O(n)$$
 [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/) medium
 
 ```kotlin
+
 fun numSubseq(nums: IntArray, target: Int): Int {
     val m = 1_000_000_007
     nums.sort()
@@ -3793,6 +3837,7 @@ fun numSubseq(nums: IntArray, target: Int): Int {
     if (total < 0) total += m
     return total
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/solutions/3492072/kotlin-this-problem-is-hard/)
@@ -3808,7 +3853,6 @@ Ignoring the `target`, each new number adds previous value to the sum: $$sum_2 =
 ![image.png](https://assets.leetcode.com/users/images/06090902-7c9e-4df1-8880-b7f238ae7e17_1683355450.981601.png)
 For example, `target = 12`, for number `8`, count of excluded values is `4` = [568, 58, 68, 8]; for number `9`, it is `8` = [5689, 589, 569, 59, 689, 69, 89, 9]. We can observe, it is determined by the sequence `5 6 8 9`, where all the numbers are bigger, than `target - 9`. That is, the law for excluding the elements is the same: $$r_2 = r_1 + (1 + r_1)$$, or just $$2^x$$, where x - is the count of the bigger numbers.
 
-
 #### Approach
 * Precompute the 2-powers
 * Use binary search to count how many numbers are out of the equation `n_i + x <= target`
@@ -3823,6 +3867,7 @@ $$O(n)$$
 [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/) medium
 
 ```kotlin
+
 fun maxVowels(s: String, k: Int): Int {
     val vowels = setOf('a', 'e', 'i', 'o', 'u')
     var count = 0
@@ -3834,6 +3879,7 @@ fun maxVowels(s: String, k: Int): Int {
     }
     return max
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/3487078/kotlin-sliding-window/)
@@ -3855,6 +3901,7 @@ $$O(1)$$
 [649. Dota2 Senate](https://leetcode.com/problems/dota2-senate/description/) medium
 
 ```kotlin
+
 fun predictPartyVictory(senate: String): String {
     val queue = ArrayDeque<Char>()
         senate.forEach { queue.add(it) }
@@ -3885,6 +3932,7 @@ fun predictPartyVictory(senate: String): String {
             if (!haveD) return "Radiant"
         }
     }
+
 ```
 
 [blog post](https://leetcode.com/problems/dota2-senate/solutions/3483710/kotlin-simulation/)
@@ -3907,10 +3955,12 @@ $$O(n)$$
 [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/description/) easy
 
 ```kotlin
+
 fun findDifference(nums1: IntArray, nums2: IntArray): List<List<Int>> = listOf(
     nums1.subtract(nums2.toSet()).toList(),
     nums2.subtract(nums1.toSet()).toList()
     )
+
 ```
 
 [blog post](https://leetcode.com/problems/find-the-difference-of-two-arrays/solutions/3479943/kotlin-one-liner/)
@@ -3934,7 +3984,9 @@ $$O(n)$$
 [1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/description/) easy
 
 ```kotlin
+
 fun arraySign(nums: IntArray): Int = nums.fold(1) { r, t -> if (t == 0) 0 else r * (t / Math.abs(t)) }
+
 ```
 
 [blog post](https://leetcode.com/problems/sign-of-the-product-of-an-array/solutions/3475973/kotlin-one-liner/)
@@ -3957,13 +4009,19 @@ $$O(1)$$
 [1491. Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/description/) easy
 
 ```kotlin
+
 fun average(salary: IntArray): Double = with (salary) {
     (sum() - max()!! - min()!!) / (size - 2).toDouble()
 }
+
 ```
+
 or
+
 ```
+
 fun average(salary: IntArray): Double = salary.sorted().drop(1).dropLast(1).average()
+
 ```
 
 [blog post](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/solutions/3471763/kotlin-sum-max-min/)
@@ -3986,6 +4044,7 @@ $$O(1)$$
 [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/) hard
 
 ```kotlin
+
 fun IntArray.root(a: Int): Int {
     var x = a
     while (this[x] != x) x = this[x]
@@ -4019,6 +4078,7 @@ fun maxNumEdgesToRemove(n: Int, edges: Array<IntArray>): Int {
     if (!uf1.connected(i - 1, i) || !uf2.connected(i - 1, i)) return -1
     return skipped
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/solutions/3468491/kotlin-union-find/)
@@ -4039,6 +4099,7 @@ $$O(n)$$
 [1697. Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/description/) hard
 
 ```kotlin
+
 fun distanceLimitedPathsExist(n: Int, edgeList: Array<IntArray>, queries: Array<IntArray>): BooleanArray {
     val uf = IntArray(n) { it }
     fun root(x: Int): Int {
@@ -4068,6 +4129,7 @@ fun distanceLimitedPathsExist(n: Int, edgeList: Array<IntArray>, queries: Array<
     }
     return res
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/solutions/3465266/kotlin-union-islands/)
@@ -4093,6 +4155,7 @@ $$O(n)$$
 [839. Similar String Groups](https://leetcode.com/problems/similar-string-groups/description/) hard
 
 ```kotlin
+
 fun numSimilarGroups(strs: Array<String>): Int {
     fun similar(i: Int, j: Int): Boolean {
         var from = 0
@@ -4124,6 +4187,7 @@ fun numSimilarGroups(strs: Array<String>): Int {
     if (similar(i, j)) union(i, j)
     return groups
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/similar-string-groups/solutions/3462309/kotlin-union-find/)
@@ -4148,6 +4212,7 @@ $$O(n)$$
 [319. Bulb Switcher](https://leetcode.com/problems/bulb-switcher/description/) medium
 
 ```kotlin
+
 fun bulbSwitch(n: Int): Int {
     if (n <= 1) return n
     var count = 1
@@ -4160,6 +4225,7 @@ fun bulbSwitch(n: Int): Int {
     }
     return count
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/bulb-switcher/solutions/3459491/kotlin-spot-the-pattern/)
@@ -4168,7 +4234,9 @@ fun bulbSwitch(n: Int): Int {
 https://t.me/leetcode_daily_unstoppable/193
 #### Intuition
 Let's draw a diagram and see if any pattern here:
+
 ```
+
 //      1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
 //
 // 1    1 1 1 1 1 1 1 1 1  1 1  1  1  1  1  1  1  1  1
@@ -4192,6 +4260,7 @@ Let's draw a diagram and see if any pattern here:
 // 19                                                0
 
 ```
+
 One rule is: number of switches for each new value is a number of divisors.
 Another rule: we can reuse the previous result.
 However, those rules didn't help much, let's observe another pattern: `diagonal sequence have increasing intervals of zeros by 2`
@@ -4217,10 +4286,12 @@ $$O(1)$$
 [258. Add Digits](https://leetcode.com/problems/add-digits/description/) easy
 
 ```kotlin
+
 fun addDigits(num: Int): Int = if (num == 0) 0 else 1 + ((num - 1) % 9)
 // 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38
 // 0 1 2 3 4 5 6 7 8 9 1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2
 // 0 [1..9] [1..9] [1..9] ...
+
 ```
 
 [blog post](https://leetcode.com/problems/add-digits/solutions/3455825/kotlin-pattern/)
@@ -4229,11 +4300,15 @@ fun addDigits(num: Int): Int = if (num == 0) 0 else 1 + ((num - 1) % 9)
 https://t.me/leetcode_daily_unstoppable/192
 #### Intuition
 Observing the pattern:
+
 ```
+
 // 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38
 // 0 1 2 3 4 5 6 7 8 9 1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2  3  4  5  6  7  8  9  1  2
 // 0 [1..9] [1..9] [1..9] ...
+
 ```
+
 There is a repeating part of it: `[1..9]`, so we can derive the formula.
 
 #### Approach
@@ -4248,6 +4323,7 @@ $$O(1)$$
 [2336. Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/description/) medium
 
 ```kotlin
+
 class SmallestInfiniteSet() {
     val links = IntArray(1001) { it + 1 }
 
@@ -4270,6 +4346,7 @@ class SmallestInfiniteSet() {
     }
 
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/smallest-number-in-infinite-set/solutions/3452738/kotlin-sparse-array/)
@@ -4293,12 +4370,14 @@ $$O(n)$$
 [1046. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/description/) easy
 
 ```kotlin
+
 fun lastStoneWeight(stones: IntArray): Int =
 with(PriorityQueue<Int>(compareByDescending { it } )) {
     stones.forEach { add(it) }
     while (size > 1) add(poll() - poll())
     if (isEmpty()) 0 else peek()
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/last-stone-weight/solutions/3449145/kotlin-priority-queue/)
@@ -4320,6 +4399,7 @@ $$O(n)$$
 [1416. Restore The Array](https://leetcode.com/problems/restore-the-array/description/) hard
 
 ```kotlin
+
 fun numberOfArrays(s: String, k: Int): Int {
     // 131,7  k=1000
     // 1317 > 1000
@@ -4398,6 +4478,7 @@ fun numberOfArrays(s: String, k: Int): Int {
     }
     return cache[0].toInt()
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/restore-the-array/solutions/3446057/kotlin-choose-dp-rule/)
@@ -4421,6 +4502,7 @@ $$O(lg(k))$$
 [1312. Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/) hard
 
 ```kotlin
+
 fun minInsertions(s: String): Int {
     // abb -> abba
     // abb*
@@ -4471,7 +4553,9 @@ fun minInsertions(s: String): Int {
     }
     return dfs(0, s.lastIndex)
 }
+
 ```
+
 [blog post](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solutions/3442679/kotlin-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-22042023?sd=pf)
 #### Join me on Telegram
@@ -4483,14 +4567,18 @@ insertions_{ab} =\begin{cases}
 1
 \end{cases}
 $$. While adding a new character, we choose the minimum insertions. For example, `aboba`:
+
 ```
+
 // aboba
 // a -> 0
 // ab -> 1
 // abo -> min({ab}+1, 1+{bo}) =2
 // abob -> min(1+{bob}, {abo} +1)=1
 // aboba -> min(0 + {bob}, 1+{abob}, 1+{boba}) = 0
+
 ```
+
 So, the DP equation is the following $$dp_{i,j} = min(0 + dp_{i+1, j-1}, 1 + dp_{i+1, j}, 1 + dp_{i, j-1}$$, where DP - is the minimum number of insertions.
 #### Approach
 Just DFS and cache.
@@ -4504,6 +4592,7 @@ $$O(n^2)$$
 [879. Profitable Schemes](https://leetcode.com/problems/profitable-schemes/description/) hard
 
 ```kotlin
+
 fun profitableSchemes(n: Int, minProfit: Int, group: IntArray, profit: IntArray): Int {
     val cache = Array(group.size) { Array(n + 1) { Array(minProfit + 1) { -1 } } }
     fun dfs(curr: Int, guys: Int, cashIn: Int): Int {
@@ -4519,7 +4608,9 @@ fun profitableSchemes(n: Int, minProfit: Int, group: IntArray, profit: IntArray)
     }
     return dfs(0, n, 0)
 }
+
 ```
+
 [blog post](https://leetcode.com/problems/profitable-schemes/solutions/3439827/kotlin-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-21042023?sd=pf)
 #### Join me on Telegram
@@ -4539,6 +4630,7 @@ $$O(n^3)$$
 [662. Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/description/) medium
 
 ```kotlin
+
 fun widthOfBinaryTree(root: TreeNode?): Int =
 with(ArrayDeque<Pair<Int, TreeNode>>()) {
     root?.let { add(0 to it) }
@@ -4555,7 +4647,9 @@ with(ArrayDeque<Pair<Int, TreeNode>>()) {
     }
     width
 }
+
 ```
+
 [blog post](https://leetcode.com/problems/maximum-width-of-binary-tree/solutions/3436856/kotlin-bfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-20042023?sd=pf)
 #### Join me on Telegram
@@ -4576,6 +4670,7 @@ $$O(n)$$
 [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description/) medium
 
 ```kotlin
+
 fun longestZigZag(root: TreeNode?): Int {
     var max = 0
     fun dfs(n: TreeNode?, len: Int, dir: Int) {
@@ -4599,7 +4694,9 @@ fun longestZigZag(root: TreeNode?): Int {
     dfs(root, 0, 0)
     return max
 }
+
 ```
+
 [blog post](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/solutions/3433418/kotlin-dfs/?orderBy=most_votes)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-19042023?sd=pf)
 #### Join me on Telegram
@@ -4619,11 +4716,14 @@ $$O(log_2(n))$$
 [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description/) easy
 
 ```kotlin
+
 fun mergeAlternately(word1: String, word2: String): String =
 (word1.asSequence().zip(word2.asSequence()) { a, b -> "$a$b" } +
 word1.drop(word2.length) + word2.drop(word1.length))
 .joinToString("")
+
 ```
+
 [blog post](https://leetcode.com/problems/merge-strings-alternately/solutions/3429123/kotlin-sequence/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-18052023?sd=pf)
 
@@ -4645,11 +4745,14 @@ $$O(n)$$
 [1431. Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/) easy
 
 ```kotlin
+
 fun kidsWithCandies(candies: IntArray, extraCandies: Int): List<Boolean> =
     candies.max()?.let { max ->
         candies.map { it + extraCandies >= max}
     } ?: listOf()
+
 ```
+
 [blog post](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/solutions/3425529/kotlin-idiomatic/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-17042023?sd=pf)
 #### Join me on Telegram
@@ -4668,6 +4771,7 @@ $$O(1)$$
 [1639. Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/description/) hard
 
 ```kotlin
+
 fun numWays(words: Array<String>, target: String): Int {
     val freq = Array(words[0].length) { LongArray(26) }
     for (i in 0..words[0].lastIndex)
@@ -4692,14 +4796,18 @@ fun numWays(words: Array<String>, target: String): Int {
     }
     return dfs(0, 0).toInt()
 }
+
 ```
+
 [blog post](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/solutions/3422184/kotlin-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-16042023?sd=pf)
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/182
 #### Intuition
 Consider an example: `bbc aaa ccc, target = ac`. We have 5 ways to form the `ac`:
+
 ```
+
 // bbc aaa ccc   ac
 //     a    c
 //     a     c
@@ -4708,12 +4816,17 @@ Consider an example: `bbc aaa ccc, target = ac`. We have 5 ways to form the `ac`
 //   c  a
 
 ```
+
 Looking at this, we deduce, that only count of every character at every position matter.
+
 ```
+
 // 0 -> 1b 1a 1c
 // 1 -> 1b 1a 1c
 // 2 ->    1a 2c
+
 ```
+
 To form `ac` we can start from position `0` or from `1`. If we start at `0`, we have one `c` at 1 plus two `c` at 2. And if we start at `1` we have two `c` at 3.
 $$DP_{i,j} = Freq * DP_{i + 1, j + 1} + DP_{i + 1, j}$$
 
@@ -4731,6 +4844,7 @@ $$O(n^2)$$
 [2218. Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/description/) hard
 
 ```kotlin
+
 fun maxValueOfCoins(piles: List<List<Int>>, k: Int): Int {
     val cache = Array(piles.size) { mutableListOf<Long>() }
 
@@ -4751,7 +4865,9 @@ fun maxValueOfCoins(piles: List<List<Int>>, k: Int): Int {
 
         return dfs(0, 0).toInt()
     }
+
 ```
+
 [blog post](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/solutions/3418459/kotlin-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-15042023?sd=pf)
 #### Join me on Telegram
@@ -4773,6 +4889,7 @@ $$O(kn^2)$$
 [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) medium
 
 ```kotlin
+
 fun longestPalindromeSubseq(s: String): Int {
     // b + abcaba
     // b + ab_ab_
@@ -4789,7 +4906,9 @@ fun longestPalindromeSubseq(s: String): Int {
     }
     return p[0][s.lastIndex]
 }
+
 ```
+
 [blog post](https://leetcode.com/problems/longest-palindromic-subsequence/solutions/3415189/kotlin-dp/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-14042023?sd=pf)
 #### Join me on Telegram
@@ -4809,11 +4928,11 @@ $$O(n^2)$$
 - Space complexity:
 $$O(n^2)$$
 
-
 # 13.04.2023
 [946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/description/) medium
 
 ```kotlin
+
 fun validateStackSequences(pushed: IntArray, popped: IntArray): Boolean =
 with(Stack<Int>()) {
     var pop = 0
@@ -4826,7 +4945,9 @@ with(Stack<Int>()) {
     }
     isEmpty()
 }
+
 ```
+
 [blog post](https://leetcode.com/problems/validate-stack-sequences/solutions/3411131/kotlin-stack/)
 [substack](https://dmitriisamoilenko.substack.com/p/13042023?sd=pf)
 #### Telegram
@@ -4846,6 +4967,7 @@ $$O(n)$$
 [71. Simplify Path](https://leetcode.com/problems/simplify-path/description/) medium
 
 ```kotlin
+
 fun simplifyPath(path: String): String =
 "/" + Stack<String>().apply {
     path.split("/").forEach {
@@ -4857,7 +4979,9 @@ fun simplifyPath(path: String): String =
         }
     }
 }.joinToString("/")
+
 ```
+
 [blog post](https://leetcode.com/problems/simplify-path/solutions/3407165/kotlin-stack/)
 [substack](https://dmitriisamoilenko.substack.com/p/leetcode-daily-12042023?sd=pf)
 #### Join me on Telegram
@@ -4877,13 +5001,16 @@ $$O(n)$$
 [2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/description/) medium
 
 ```kotlin
+
 fun removeStars(s: String): String = StringBuilder().apply {
     s.forEach {
         if (it == '*') setLength(length - 1)
         else append(it)
     }
 }.toString()
+
 ```
+
 [blog post](https://leetcode.com/problems/removing-stars-from-a-string/solutions/3402891/kotlin-stack/)
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/177
@@ -4900,11 +5027,11 @@ $$O(n)$$
 
 $$O(n)$$
 
-
 # 10.04.2023
 [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) medium
 
 ```
+
 fun isValid(s: String): Boolean = with(Stack<Char>()) {
     val opened = hashSetOf('(', '[', '{')
     val match = hashMapOf(')' to '(' , ']' to '[', '}' to '{')
@@ -4916,6 +5043,7 @@ fun isValid(s: String): Boolean = with(Stack<Char>()) {
         }
     } && isEmpty()
 }
+
 ```
 
 [blog post](https://leetcode.com/problems/valid-parentheses/solutions/3399214/kotlin-stack/)
@@ -4935,13 +5063,13 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 # 09.04.2023
 [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/) hard
 
 [blog post](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/3396443/kotlin-dfs-cache/)
 
 ```kotlin
+
 fun largestPathValue(colors: String, edges: Array<IntArray>): Int {
     if (edges.isEmpty()) return if (colors.isNotEmpty()) 1 else 0
     val fromTo = mutableMapOf<Int, MutableList<Int>>()
@@ -4965,7 +5093,9 @@ fun largestPathValue(colors: String, edges: Array<IntArray>): Int {
         edges.forEach { (from, to) -> max = maxOf(max, dfs(from).max()!!) }
         return if (haveCycle) -1 else max
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/175
 #### Intuition
@@ -4987,6 +5117,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/clone-graph/solutions/3392609/kotlin-two-dfs/)
 
 ```kotlin
+
 fun cloneGraph(node: Node?): Node? {
     if (node == null) return null
     val oldToNew = mutableMapOf<Node, Node>()
@@ -5014,7 +5145,9 @@ fun cloneGraph(node: Node?): Node? {
     dfs2(node)
     return oldToNew[node]
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/174
 #### Intuition
@@ -5034,6 +5167,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/number-of-enclaves/solutions/3388636/kotlin-dfs/)
 
 ```kotlin
+
 fun numEnclaves(grid: Array<IntArray>): Int {
     val visited = HashSet<Pair<Int, Int>>()
     fun dfs(x: Int, y: Int): Int {
@@ -5056,7 +5190,9 @@ fun numEnclaves(grid: Array<IntArray>): Int {
     count += dfs(x, y)
     return count
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/173
 #### Intuition
@@ -5076,6 +5212,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/number-of-closed-islands/solutions/3385170/kotlin-dfs/)
 
 ```kotlin
+
 fun closedIsland(grid: Array<IntArray>): Int {
     val visited = HashSet<Pair<Int, Int>>()
     val seen = HashSet<Pair<Int, Int>>()
@@ -5100,7 +5237,9 @@ fun closedIsland(grid: Array<IntArray>): Int {
     if (grid[y][x] == 0 && seen.add(x to y) && !dfs(x, y)) count++
     return count
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/172
 #### Intuition
@@ -5119,6 +5258,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/minimize-maximum-of-array/solutions/3381720/kotlin-binary-search/)
 
 ```kotlin
+
 fun minimizeArrayValue(nums: IntArray): Int {
     // 5 4 3 2 1 -> 5
     // 1 2 3 4 5 -> 3
@@ -5144,7 +5284,9 @@ fun minimizeArrayValue(nums: IntArray): Int {
     }
     return min
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/171
 #### Intuition
@@ -5169,6 +5311,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/optimal-partition-of-string/solutions/3377265/kotlin-bitmask/)
 
 ```kotlin
+
     var mask = 0
     fun partitionString(s: String): Int = 1 + s.count {
         val bit = 1 shl (it.toInt() - 'a'.toInt())
@@ -5177,7 +5320,9 @@ $$O(1)$$
             mask = mask or bit
         }
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/170
 #### Intuition
@@ -5196,6 +5341,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/boats-to-save-people/solutions/3373007/kotlin-two-pointers/)
 
 ```kotlin
+
 fun numRescueBoats(people: IntArray, limit: Int): Int {
     people.sort()
     var count = 0
@@ -5208,7 +5354,9 @@ fun numRescueBoats(people: IntArray, limit: Int): Int {
     }
     return count
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/169
 #### Intuition
@@ -5228,6 +5376,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/solutions/3369146/kotlin-binary-search/)
 
 ```kotlin
+
 fun successfulPairs(spells: IntArray, potions: IntArray, success: Long): IntArray {
     potions.sort()
     return IntArray(spells.size) { ind ->
@@ -5244,7 +5393,9 @@ fun successfulPairs(spells: IntArray, potions: IntArray, success: Long): IntArra
         potions.size - minInd
     }
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/168
 #### Intuition
@@ -5271,6 +5422,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/binary-search/solutions/3364415/kotlin-tricks/)
 
 ```kotlin
+
 fun search(nums: IntArray, target: Int): Int {
     var lo = 0
     var hi = nums.lastIndex
@@ -5282,7 +5434,9 @@ fun search(nums: IntArray, target: Int): Int {
     }
     return -1
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/167
 #### Intuition
@@ -5339,7 +5493,9 @@ fun ways(pizza: Array<String>, k: Int): Int {
         }
         return dfs(0, 0, k - 1)
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/165
 #### Intuition
@@ -5361,6 +5517,7 @@ $$O(mnk)$$
 [blog post](https://leetcode.com/problems/scramble-string/solutions/3358175/kotlin-dfs-memo-no-substring/)
 
 ```kotlin
+
 data class Key(val afrom: Int, val ato: Int, val bfrom: Int, val bto: Int)
 fun isScramble(a: String, b: String): Boolean {
     val dp = HashMap<Key, Boolean>()
@@ -5386,7 +5543,9 @@ fun isScramble(a: String, b: String): Boolean {
     }
     return dfs(Key(0, a.lastIndex, 0, b.lastIndex))
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/164
 #### Intuition
@@ -5409,6 +5568,7 @@ $$O(n^4)$$
 [blog post](https://leetcode.com/problems/reducing-dishes/solutions/3354056/kotlin-nlogn/)
 
 ```kotlin
+
 fun maxSatisfaction(satisfaction: IntArray): Int {
     satisfaction.sort()
     var max = 0
@@ -5422,7 +5582,9 @@ fun maxSatisfaction(satisfaction: IntArray): Int {
 
     return max
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/163
 #### Intuition
@@ -5459,6 +5621,7 @@ fun mincostTickets(days: IntArray, costs: IntArray): Int {
     }
     return dfs(0)
 }
+
 ```
 
 #### Join me on Telegram
@@ -5480,6 +5643,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-path-sum/solutions/3346543/kotlin-dfs-memo/)
 
 ```kotlin
+
     fun minPathSum(grid: Array<IntArray>): Int {
         val cache = mutableMapOf<Pair<Int, Int>, Int>()
         fun dfs(xy: Pair<Int, Int>): Int {
@@ -5497,7 +5661,9 @@ $$O(n)$$
     }
     return dfs(0 to 0)
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/161
 ##### Intuition
@@ -5518,6 +5684,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/longest-cycle-in-a-graph/solutions/3342651/kotlin-dfs/)
 
 ```kotlin
+
     fun longestCycle(edges: IntArray): Int {
         var maxLen = -1
         fun checkCycle(node: Int) {
@@ -5541,7 +5708,9 @@ $$O(n^2)$$
 
         return maxLen
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/160
 #### Intuition
@@ -5562,6 +5731,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/solutions/3338589/kotlin-union-find/)
 
 ```kotlin
+
 fun countPairs(n: Int, edges: Array<IntArray>): Long {
     val uf = IntArray(n) { it }
     val sz = LongArray(n) { 1L }
@@ -5590,7 +5760,9 @@ fun countPairs(n: Int, edges: Array<IntArray>): Long {
     }
     return count
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/159
 #### Intuition
@@ -5610,6 +5782,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/solutions/3334850/kotlin-bfs/)
 
 ```kotlin
+
     fun minReorder(n: Int, connections: Array<IntArray>): Int {
         val edges = mutableMapOf<Int, MutableList<Int>>()
         connections.forEach { (from, to) ->
@@ -5635,7 +5808,9 @@ $$O(n)$$
             }
             return count
         }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/158
 #### Intuition
@@ -5655,6 +5830,7 @@ $$O(V+E)$$
 [blog post](https://leetcode.com/problems/number-of-operations-to-make-network-connected/solutions/3331235/kotlin-union-find/)
 
 ```kotlin
+
 fun makeConnected(n: Int, connections: Array<IntArray>): Int {
     var extraCables = 0
     var groupsCount = n
@@ -5678,7 +5854,9 @@ fun makeConnected(n: Int, connections: Array<IntArray>): Int {
     connections.forEach { (from, to) -> connect(from, to) }
     return if (extraCables < groupsCount - 1) -1 else groupsCount - 1
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/157
 #### Intuition
@@ -5699,6 +5877,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/solutions/3327604/kotlin-union-find/)
 
 ```kotlin
+
 fun minScore(n: Int, roads: Array<IntArray>): Int {
     val uf = Array(n + 1) { it }
     val minDist = Array(n + 1) { Int.MAX_VALUE }
@@ -5717,7 +5896,9 @@ fun minScore(n: Int, roads: Array<IntArray>): Int {
     roads.forEach { (from, to, dist) -> union(from, to, dist) }
     return minDist[findRoot(1)]
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/156
 #### Intuition
@@ -5739,6 +5920,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/number-of-zero-filled-subarrays/solutions/3323224/kotlin-count-of-subarrays/)
 
 ```kotlin
+
 fun zeroFilledSubarray(nums: IntArray): Long {
     var currCount = 0L
     var sum = 0L
@@ -5748,7 +5930,9 @@ fun zeroFilledSubarray(nums: IntArray): Long {
     }
     return sum
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/155
 #### Intuition
@@ -5768,6 +5952,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/can-place-flowers/solutions/3318756/kotlin-greedy/)
 
 ```kotlin
+
 fun canPlaceFlowers(flowerbed: IntArray, n: Int): Boolean {
     var count = 0
     if (flowerbed.size == 1 && flowerbed[0] == 0) count++
@@ -5784,7 +5969,9 @@ fun canPlaceFlowers(flowerbed: IntArray, n: Int): Boolean {
     if (flowerbed.size >= 2 && flowerbed[flowerbed.lastIndex] == 0 && flowerbed[flowerbed.lastIndex - 1] == 0) count++
     return count >= n
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/154
 #### Intuition
@@ -5804,6 +5991,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/design-add-and-search-words-data-structure/solutions/3315405/kotlin-trie-queue/)
 
 ```kotlin
+
 class Trie {
     val next = Array<Trie?>(26) { null }
     fun Char.ind() = toInt() - 'a'.toInt()
@@ -5829,7 +6017,9 @@ class WordDictionary(val root: Trie = Trie()) {
         } && any { it.isWord }
     }
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/153
 #### Intuition
@@ -5849,6 +6039,7 @@ $$O(m)$$, $$m$$ - unique words suffixes count.
 [blog post](https://leetcode.com/problems/design-browser-history/solutions/3310280/kotlin-list/)
 
 ```kotlin
+
 class BrowserHistory(homepage: String) {
     val list = mutableListOf(homepage)
     var curr = 0
@@ -5875,7 +6066,9 @@ class BrowserHistory(homepage: String) {
     }
 
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/152
 #### Intuition
@@ -5895,6 +6088,7 @@ $$O(n)$$, will keep all the links
 [blog post](https://leetcode.com/problems/implement-trie-prefix-tree/solutions/3306557/kotlin-just-implement-it/)
 
 ```kotlin
+
 class Trie() {
     val root = Array<Trie?>(26) { null }
     fun Char.ind() = toInt() - 'a'.toInt()
@@ -5919,7 +6113,9 @@ class Trie() {
     fun startsWith(prefix: String) = prefix.search() != null
 
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/151
 #### Intuition
@@ -5939,6 +6135,7 @@ $$O(w*N)$$, where $$N$$ - is a unique words count.
 [blog post](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/3303076/kotlin-dfs/)
 
 ```kotlin
+
 fun buildTree(inorder: IntArray, postorder: IntArray): TreeNode? {
     val inToInd = inorder.asSequence().mapIndexed { i, v -> v to i }.toMap()
     var postTo = postorder.lastIndex
@@ -5953,7 +6150,9 @@ fun buildTree(inorder: IntArray, postorder: IntArray): TreeNode? {
     }
     return build(0, inorder.lastIndex)
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/150
 #### Intuition
@@ -5974,6 +6173,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/check-completeness-of-a-binary-tree/solutions/3299207/kotlin-dfs/)
 
 ```kotlin
+
 data class R(val min: Int, val max: Int, val complete: Boolean)
 fun isCompleteTree(root: TreeNode?): Boolean {
     fun dfs(n: TreeNode): R {
@@ -5992,7 +6192,9 @@ fun isCompleteTree(root: TreeNode?): Boolean {
     }
     return root == null || dfs(root).complete
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/149
 #### Intuition
@@ -6015,6 +6217,7 @@ $$O(log_2(n))$$
 [blog post](https://leetcode.com/problems/sum-root-to-leaf-numbers/solutions/3295054/kotlin-dfs/)
 
 ```kotlin
+
 fun sumNumbers(root: TreeNode?): Int = if (root == null) 0 else {
     var sum = 0
     fun dfs(n: TreeNode, soFar: Int) {
@@ -6029,7 +6232,9 @@ fun sumNumbers(root: TreeNode?): Int = if (root == null) 0 else {
 
     sum
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/148
 #### Intuition
@@ -6049,6 +6254,7 @@ $$O(log_2(n))$$
 [blog post](https://leetcode.com/problems/symmetric-tree/solutions/3291127/kotlin-bfs-recursion/)
 
 ```kotlin
+
 data class H(val x: Int?)
 fun isSymmetric(root: TreeNode?): Boolean {
     with(ArrayDeque<TreeNode>().apply { root?.let { add(it) } }) {
@@ -6084,7 +6290,9 @@ fun isSymmetric(root: TreeNode?): Boolean {
         }
         return isSymmetric(root?.left, root?.right)
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/147
 #### Intuition
@@ -6108,6 +6316,7 @@ Iterative: $$O(n)$$
 [blog post](https://leetcode.com/problems/merge-k-sorted-lists/solutions/3287757/kotlin-pq-and-divide-and-conquer/)
 
 ```kotlin
+
     fun mergeKLists(lists: Array<ListNode?>): ListNode? {
         val root = ListNode(0)
         var curr: ListNode = root
@@ -6144,7 +6353,9 @@ Iterative: $$O(n)$$
         }
         return lists.fold(null as ListNode?) { r, t -> merge(r, t) }
     }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/146
 #### Intuition
@@ -6171,6 +6382,7 @@ For the iterative solution:
 [blog post](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/solutions/3282962/kotlin-recursion/)
 
 ```kotlin
+
 fun sortedListToBST(head: ListNode?): TreeNode? {
     if (head == null) return null
     if (head.next == null) return TreeNode(head.`val`)
@@ -6188,7 +6400,9 @@ fun sortedListToBST(head: ListNode?): TreeNode? {
         right = sortedListToBST(two!!.next)
     }
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/145
 #### Intuition
@@ -6209,6 +6423,7 @@ $$O(log_2(n))$$ of additional space (for recursion)
 [blog post](https://leetcode.com/problems/linked-list-random-node/solutions/3279169/kotlin-i-don-t-get-reservior-sampling-just-split-into-buckets-of-size-k/)
 
 ```kotlin
+
 class Solution(val head: ListNode?) {
     val rnd = Random(0)
     var curr = head
@@ -6226,10 +6441,11 @@ class Solution(val head: ListNode?) {
     }
 
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/144
-
 
 #### Intuition
 Naive solution is trivial. For more interesting solution, you need to look at what others did on leetcode, read an article https://en.wikipedia.org/wiki/Reservoir_sampling and try to understand why it works.
@@ -6251,6 +6467,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/linked-list-cycle-ii/solutions/3275105/kotlin-fast-and-slow-plus-trick/)
 
 ```kotlin
+
 fun detectCycle(head: ListNode?): ListNode? {
     var one = head
     var two = head
@@ -6266,7 +6483,9 @@ fun detectCycle(head: ListNode?): ListNode? {
     }
     return one
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/143
 #### Intuition
@@ -6291,6 +6510,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/koko-eating-bananas/solutions/3271497/kotlin-binary-search/)
 
 ```kotlin
+
 fun minEatingSpeed(piles: IntArray, h: Int): Int {
     fun canEatAll(speed: Long): Boolean {
         var time = 0L
@@ -6313,7 +6533,9 @@ fun minEatingSpeed(piles: IntArray, h: Int): Int {
     }
     return minSpeed.toInt()
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/142
 #### Intuition
@@ -6336,6 +6558,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-time-to-complete-trips/solutions/3267486/kotlin-binary-search/)
 
 ```kotlin
+
 fun minimumTime(time: IntArray, totalTrips: Int): Long {
     fun tripCount(timeGiven: Long): Long {
         var count = 0L
@@ -6357,7 +6580,9 @@ fun minimumTime(time: IntArray, totalTrips: Int): Long {
     }
     return minTime
 }
+
 ```
+
 #### Join me on telergam
 https://t.me/leetcode_daily_unstoppable/140
 #### Intuition
@@ -6385,6 +6610,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/kth-missing-positive-number/solutions/3263077/kotlin-binary-search/)
 
 ```kotlin
+
 fun findKthPositive(arr: IntArray, k: Int): Int {
     // 1 2 3 4 5 6 7 8 9 10 11
     // * 2 3 4 * * 7 * * *  11
@@ -6419,21 +6645,29 @@ fun findKthPositive(arr: IntArray, k: Int): Int {
     }
     return if (res == -1) k else res
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/139
 #### Intuition
 Let's observe an example:
+
 ```
+
 // 1 2 3 4 5 6 7 8 9 10 11
 // * 2 3 4 * * 7 * * *  11
+
 ```
+
 For each number at its position, there are two conditions:
 * if it stays in a correct position, then `num - pos == 0`
 * if there is a missing number before it, then `num - pos == diff > 0`
 
 We can observe the pattern and derive the formula for it:
+
 ```
+
 // 1 2 3 4 5
 // 2 3 4 7 11
 // 1
@@ -6444,14 +6678,20 @@ We can observe the pattern and derive the formula for it:
 //
 //       ^ 7 + (5-3) = 9
 //         arr[m] + (k-diff)
+
 ```
+
 One corner case is if the missing numbers are at the beginning of the array:
+
 ```
+
 // 1 2
 // 7 8     k=1
 // 6
 //   6
+
 ```
+
 Then the answer is just a `k`.
 #### Approach
 For more robust binary search code:
@@ -6471,6 +6711,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/jump-game-iv/solutions/3259651/kotlin-bfs-pruning/)
 
 ```kotlin
+
 fun minJumps(arr: IntArray): Int {
     val numToPos = mutableMapOf<Int, MutableList<Int>>()
         arr.forEachIndexed { i, n -> numToPos.getOrPut(n, { mutableListOf() }).add(i) }
@@ -6490,7 +6731,9 @@ fun minJumps(arr: IntArray): Int {
             }
             return 0
         }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/138
 #### Intuition
@@ -6512,6 +6755,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/solutions/3255030/kotlin-nlogn-but-not-tricky-solution-optimal/)
 
 ```kotlin
+
 fun countSubarrays(nums: IntArray, minK: Int, maxK: Int): Long {
     val range = minK..maxK
     var i = 0
@@ -6589,14 +6833,18 @@ fun countSubarrays(nums: IntArray, minK: Int, maxK: Int): Long {
     }
     return sum
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/137
 #### Intuition
 First thought is that we can observe only subarrays, where all the elements are in a range `min..max`. Next, there are two possible scenarios:
 1. If `minK==maxK`, our problem is a trivial count of the combinations, $$ 0 + 1 + .. + (n-1) + n = n*(n+1)/2$$
 2. If `minK != maxK`, we need to take every `minK|maxK` pair, and count how many items are in range `before` them and how many `after`. Then, as we observe the pattern of combinations:
+
 ```
+
 // 0 1 2 3 4 5 6    min=1, max=3
 // ------------------
 // 1 2 3 2 1 2 3
@@ -6621,13 +6869,18 @@ First thought is that we can observe only subarrays, where all the elements are 
 // 1 3 5 2 7 5
 // *...*
 //
+
 ```
+
 we derive the formula: $$sum += 1 + suffix + prefix + suffix*prefix$$
 
 A more clever, but less understandable solution: is to count how many times we take a condition where we have a `min` and a `max` and each time add `prefix` count. Basically, it is the same formula, but with a more clever way of computing. (It is like computing a combination sum by adding each time the counter to sum).
 #### Approach
+
 For the explicit solution, we take each interval, store positions of the `min` and `max` in a `TreeSet`, then we must take poll those mins and maxes and consider each range separately:
+
 ```
+
 // 3 2 3 2 1 2 1
 // *.......*
 //     *...*
@@ -6656,7 +6909,9 @@ For the explicit solution, we take each interval, store positions of the `min` a
 //       *.*
 //         *.*
 //           *.*
+
 ```
+
 For the tricky one solution, just see what other clever man already wrote on the leetcode site and hope you will not get the same problem in an interview.
 
 #### Complexity
@@ -6673,6 +6928,7 @@ $$O(n)$$ -> $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/3250975/kotlin-rolling-hash/)
 
 ```kotlin
+
 fun strStr(haystack: String, needle: String): Int {
     // f(x) = a + 32 * f(x - 1)
     // abc
@@ -6701,13 +6957,17 @@ fun strStr(haystack: String, needle: String): Int {
     }
     return -1
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/136
 #### Intuition
 There is a `rolling hash` technique: you can compute hash for a sliding window using O(1) additional time.
 Consider the math behind it:
+
 ```
+
 // f(x) = a + 32 * f(x - 1)
 // abc
 // f(a) = a + 0
@@ -6719,7 +6979,9 @@ Consider the math behind it:
 //
 // f(abc) - f(bc) = 32^0*c + 32^1*b + 32^2*a - 32^0*c - 32^1*b = 32^2*a
 // f(bc) = f(abc) - 32^2*a
+
 ```
+
 Basically, you can subtract `char * 32^window_length` from the lower side of the sliding window.
 
 #### Approach
@@ -6736,6 +6998,7 @@ $$O(n)$$, for substring, can be improved to O(1)
 [blog post](https://leetcode.com/problems/string-compression/solutions/3246608/kotlin-contradiction-in-the-description/)
 
 ```kotlin
+
 fun compress(chars: CharArray): Int {
     var end = 0
     var curr = 0
@@ -6751,7 +7014,9 @@ fun compress(chars: CharArray): Int {
     }
     return end
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/135
 #### Intuition
@@ -6773,6 +7038,7 @@ $$O(lg_10(n))$$, for storing `toString`. For this task it is a `4`
 [blog post](https://leetcode.com/problems/sort-an-array/solutions/3242806/kotlin-quicksort/)
 
 ```kotlin
+
 fun sortArray(nums: IntArray, from: Int = 0, to: Int = nums.lastIndex): IntArray {
     if (from >= to) return nums
     val mid = partition(nums, from, to)
@@ -6789,7 +7055,9 @@ fun partition(nums: IntArray, from: Int, to: Int): Int {
     nums.swap(to, afterBorder)
     return afterBorder
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/134
 #### Intuition
@@ -6814,6 +7082,7 @@ $$O(log_2(n))$$ for the recursion
 [blog post](https://leetcode.com/problems/find-duplicate-subtrees/solutions/3239077/kotlin-preorder-hashset/)
 
 ```kotlin
+
 fun findDuplicateSubtrees(root: TreeNode?): List<TreeNode?> {
     val result = mutableListOf<TreeNode?>()
     val hashes = HashSet<String>()
@@ -6830,7 +7099,9 @@ fun findDuplicateSubtrees(root: TreeNode?): List<TreeNode?> {
             if (root != null) hashDFS(root)
             return result
         }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/132
 #### Intuition
@@ -6850,6 +7121,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/construct-quad-tree/solutions/3235370/kotlin-dfs/)
 
 ```kotlin
+
 fun construct(grid: Array<IntArray>): Node? {
     if (grid.isEmpty()) return null
     fun dfs(xMin: Int, xMax: Int, yMin: Int, yMax: Int): Node? {
@@ -6878,6 +7150,7 @@ fun construct(grid: Array<IntArray>): Node? {
     }
     return dfs(0, grid[0].lastIndex, 0, grid.lastIndex)
 }
+
 ```
 
 #### Join me on Telegram
@@ -6893,13 +7166,13 @@ $$O(n)$$
 - Space complexity:
 $$O(n)$$
 
-
 # 26.02.2023
 [72. Edit Distance](https://leetcode.com/problems/edit-distance/description/) hard
 
 [blog post](https://leetcode.com/problems/edit-distance/solutions/3231899/kotlin-dfs-memo/)
 
 ```kotlin
+
 fun minDistance(word1: String, word2: String): Int {
     val dp = Array(word1.length + 1) { IntArray(word2.length + 1) { -1 } }
     fun dfs(i: Int, j: Int): Int {
@@ -6921,7 +7194,9 @@ fun minDistance(word1: String, word2: String): Int {
     }
     return dfs(0, 0)
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/130
 #### Intuition
@@ -6941,6 +7216,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solutions/3227923/kotlin-min-max/)
 
 ```kotlin
+
 fun maxProfit(prices: IntArray): Int {
     var min = prices[0]
     var profit = 0
@@ -6950,7 +7226,9 @@ fun maxProfit(prices: IntArray): Int {
     }
     return profit
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/129
 #### Intuition
@@ -6970,6 +7248,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimize-deviation-in-array/solutions/3224614/kotlin-my-wrong-and-correct-intuition/)
 
 ```kotlin
+
 fun minimumDeviation(nums: IntArray): Int {
     var minDiff = Int.MAX_VALUE
     with(TreeSet<Int>(nums.map { if (it % 2 == 0) it else it * 2 })) {
@@ -6983,7 +7262,9 @@ fun minimumDeviation(nums: IntArray): Int {
 
     return minDiff
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/128
 #### Intuition
@@ -7006,6 +7287,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/ipo/solutions/3221450/kotlin-wrong-and-correct-intuition/)
 
 ```kotlin
+
 fun findMaximizedCapital(k: Int, w: Int, profits: IntArray, capital: IntArray): Int {
   val indices = Array(profits.size) { it }.apply { sortWith(compareBy( { capital[it] })) }
   var money = w
@@ -7018,13 +7300,14 @@ fun findMaximizedCapital(k: Int, w: Int, profits: IntArray, capital: IntArray): 
   }
   return money
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/127
 #### Intuition
 My first (wrong) intuition: greedy add elements to the min-profit priority queue, then remove all low-profit elements from it, keeping essential items. It wasn't working, and the solution became too verbose.
 Second intuition, after the hint: greedy add elements to the max-profit priority queue, then remove the maximum from it, which will be the best deal for the current money.
-
 
 #### Approach
 Sort items by increasing capital. Then, on each step, add all possible deals to the priority queue and take one best from it.
@@ -7041,6 +7324,7 @@ Sort items by increasing capital. Then, on each step, add all possible deals to 
 [blog post](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/solutions/3217409/kotlin-binary-search/)
 
 ```kotlin
+
 fun shipWithinDays(weights: IntArray, days: Int): Int {
   var lo = weights.max()!!
   var hi = weights.sum()!!
@@ -7068,7 +7352,9 @@ fun shipWithinDays(weights: IntArray, days: Int): Int {
   }
   return min
 }
+
 ```
+
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/126
 #### Intuition
@@ -7092,6 +7378,7 @@ To more robust binary search code:
 [blog post](https://leetcode.com/problems/single-element-in-a-sorted-array/solutions/3213551/kotlin-odd-even-positions-binary-search/)
 
 ```kotlin
+
 fun singleNonDuplicate(nums: IntArray): Int {
     var lo = 0
     var hi = nums.lastIndex
@@ -7111,7 +7398,9 @@ fun singleNonDuplicate(nums: IntArray): Int {
     }
     return -1
 }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/125
 #### Intuition
@@ -7133,6 +7422,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/search-insert-position/solutions/3208831/kotlin-binary-search/)
 
 ```kotlin
+
     fun searchInsert(nums: IntArray, target: Int): Int {
         var lo = 0
         var hi = nums.lastIndex
@@ -7144,7 +7434,9 @@ $$O(1)$$
         }
         return lo
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/124
 #### Intuition
@@ -7184,7 +7476,9 @@ For more robust code consider:
                 }
             }
         }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/123
 #### Intuition
@@ -7206,7 +7500,9 @@ Each BFS step gives us a level, which one we can reverse if needed.
 ```kotlin 
     fun invertTree(root: TreeNode?): TreeNode? = 
         root?.apply { left = invertTree(right).also { right = invertTree(left) } }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/122
 #### Intuition
@@ -7250,7 +7546,9 @@ Let's write a recursive one-liner.
         }
         return minDiff
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/121
 #### Intuition
@@ -7271,7 +7569,9 @@ Let's write Morris Traversal. Store current node at the rightmost end of the lef
 ```kotlin 
     fun maxDepth(root: TreeNode?): Int =
         root?.run { 1 + maxOf(maxDepth(left), maxDepth(right)) } ?: 0
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/120
 #### Intuition
@@ -7306,7 +7606,9 @@ Let's write a one-liner.
         }
         return res
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/119
 #### Intuition
@@ -7349,7 +7651,9 @@ Iterate from the end of the array and calculate sum of `num % 10`, `carry` and `
             }
         }
     }.reverse().toString()
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/118
 #### Intuition
@@ -7382,7 +7686,9 @@ Scan two strings from the end and calculate the result.
             1 + ((count - 2) / 2)
         }
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/117
 #### Intuition
@@ -7433,7 +7739,9 @@ Count how many numbers in between, subtract even on the start and the end, then 
         }
         return dfs(0, 0).fuel
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/116
 #### Intuition
@@ -7486,7 +7794,9 @@ Use DFS and data class for the result.
         }
         return res
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/115
 #### Intuition
@@ -7529,7 +7839,9 @@ Start with two simultaneous points, one for red and one for blue. Keep track of 
         }
         dist
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/114
 #### Intuition
@@ -7561,7 +7873,9 @@ Add all land cells into BFS, then just run it.
                 count += prefToSuf[i].count { !prefToSuf[j].contains(it) } * prefToSuf[j].count { ! prefToSuf[i].contains(it) }
         return count * 2L
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/113
 #### Intuition
@@ -7637,7 +7951,9 @@ Group and multiply. Don't forget to remove repeating elements in each two groups
         }
         return stack.size
     }
+
 ```
+
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/112
 #### Intuition
@@ -7687,7 +8003,9 @@ Greedy solution is to scan from back to front and keep only jumps that starts af
         }
         return max
     }
+
 ```
+
 #### Join daily telegram
 https://t.me/leetcode_daily_unstoppable/111
 #### Intuition
@@ -7717,7 +8035,9 @@ We can scan fruits linearly from the tail and keep only two types of fruits.
         }
         return arr
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/110
 #### Intuition
@@ -7760,7 +8080,9 @@ For simplicity, use two pointers for the source, and one for the destination.
         }
         return res
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/109
 #### Intuition
@@ -7792,7 +8114,9 @@ We can count frequencies of `p` and then scan `s` to match them.
         }
         return false
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/108
 #### Intuition
@@ -7833,11 +8157,15 @@ We can count the chars frequencies in the `s1` string and use the sliding window
             indices.forEach { it.forEach { append(s[it]) } }
         }.toString()
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/107
 #### Intuition
+
 ```
+
         // nr = 5
         //
         // 0    8       16        24
@@ -7846,7 +8174,9 @@ https://t.me/leetcode_daily_unstoppable/107
         // 3 5    11 13     19 21     27 29
         // 4       12        20        28
         //
+
 ```
+
 We can just simulate zigzag.
 #### Approach
 Store simulation result in a `[rowsNum][simulation indice]` - matrix, then build the result.
@@ -7873,7 +8203,9 @@ $$O(n)$$
         for (i in 0..arr.lastIndex) if (arr[i] != sorted[i]) return false
         return true
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/106
 #### Intuition
@@ -7905,7 +8237,9 @@ Just translate and then sort and compare. (But we can also just scan linearly an
         return str1.substring(0, len)
         
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/105
 #### Intuition
@@ -7950,7 +8284,9 @@ We can first find the length of the greatest common divisor, then just check bot
         }
         return dfs(0, 0)
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/103
 #### Intuition
@@ -7983,7 +8319,9 @@ We can use DFS to search all the possible teams and memorize the result in dp ca
         }
         t2
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/102
 #### Intuition
@@ -8049,7 +8387,9 @@ class LFUCache(val capacity: Int) {
     }
 
 }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/101
 #### Intuition
@@ -8117,7 +8457,9 @@ class SummaryRanges() {
     }
 
 }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/100
 #### Intuition
@@ -8174,7 +8516,9 @@ So, the only way is to use the linked list, and to walk it linearly.
         }
         return res
     }
+
 ```
+
 #### Telegram
 https://t.me/leetcode_daily_unstoppable/99
 #### Intuition
@@ -8211,7 +8555,9 @@ When we scan a word we must know if current suffix is a word. Trie data structur
         }
         return if (dist[dst] == Int.MAX_VALUE) -1 else dist[dst]
     }
+
 ```
+
 #### Intuition
 DFS and Dijkstra gives TLE.
 As we need to find not just shortest path price, but only for `k` steps, naive Bellman-Ford didn't work. 
@@ -8268,6 +8614,7 @@ Space: O(kE), Time: O(k)
         }
         return res
     }
+
 ```
 
 ![image.png](https://assets.leetcode.com/users/images/b855b06b-ac15-403d-ad0e-13b26850da26_1674632188.3267126.png)
@@ -8311,6 +8658,7 @@ Space: O(n), Time: O(n)
         }
         return -1
     }
+
 ```
 
 In each step, we can choose the best outcome, so we need to travel all of them in the parallel and calculate steps number. This is a BFS.
@@ -8343,7 +8691,9 @@ Space: O(n^2), Time: O(n^2), n is a grid size
         }
         return -1
     }
+
 ```
+
 We need to count how much trust have each judge and also exclude all judges that have trust in someone.
 
 * use map and set
@@ -8377,7 +8727,9 @@ Space: O(max(N, T)), Time: O(max(N, T))
         dfs(0, mutableListOf())
         return res
     }
+
 ```
+
 First, we need to be able to quickly tell if some range `a..b` is a palindrome. 
 Let's `dp[a][b]` indicate that range `a..b` is a palindrome.
 Then the following is true: `dp[a][b] = s[a] == s[b] && dp[a+1][b-1]`, also two corner cases, when `a == b` and `a == b-1`. 
@@ -8416,7 +8768,9 @@ Space: O(2^N), Time: O(2^N)
 	dfs(0, mutableListOf())
 	return res.toList()
 }
+
 ```
+
 So, the size of the problem is small. We can do full DFS.
 At every step, choose either take a number or split. Add to the solution if the result is good.
 
@@ -8455,6 +8809,7 @@ Space: O(2^N), Time: O(2^N)
         dfs(0, mutableListOf())
         return res.toList()
     }
+
 ```
 
 Notice the size of the problem, we can do a brute force search for all solutions. Also, we only need to store the unique results, so we can store them in a set.
@@ -8504,7 +8859,9 @@ Space: O(2^N) to store the result, Time: O(2^N) for each value we have two choic
         }
         return res
     }
+
 ```
+
 We need to calculate a running sum. 
 For every current sum, we need to find any subsumes that are divisible by k, so `sum[i]: (sum[i] - sum[any prev]) % k == 0`. 
 Or, `sum[i] % k == sum[any prev] % k`. 
@@ -8540,6 +8897,7 @@ Space: O(N), Time: O(N)
         }
         return maxSoFar
     }
+
 ```
 
 Simple Kadane's Algorithm didn't work when we need to keep a window of particular size. 
@@ -8577,6 +8935,7 @@ Space: O(1), Time: O(N)
         
         return minOf(dp0, dp1)
     }
+
 ```
 
 We can propose the following rule: let's define `dp0[i]` is a min count of flips from `1` to `0` in the `0..i` interval. 
@@ -8619,6 +8978,7 @@ Space: O(1), Time: O(N)
        
         return res.toTypedArray()
     }
+
 ```
 
 There is no magic, just be careful with corner cases.
@@ -8660,6 +9020,7 @@ Space: O(N), Time: O(N)
         }
         return edges.map { union(it[0], it[1])}.sum()!! + vals.size
     }
+
 ```
 
 The naive solution with single DFS and merging frequency maps gives TLE. 
@@ -8701,6 +9062,7 @@ Space: O(NlogN), Time: O(N)
         for (i in 0..s1.lastIndex) union(s1[i], s2[i])
         return baseStr.map { (find(it) + 'a'.toInt()).toChar() }.joinToString("")
     }
+
 ```
 
 We need to find connected groups, the best way is to use the Union-Find.
@@ -8744,6 +9106,7 @@ Space: O(N) for storing a result, Time: O(N)
 
         return maxLen
     }
+
 ```
 
 Longest path is a maximum sum of the two longest paths of the current node.
@@ -8782,7 +9145,9 @@ fun countSubTrees(n: Int, edges: Array<IntArray>, labels: String): IntArray {
 	dfs(0, 0, IntArray(27) { 0 })
 	return answer
 }
+
 ```
+
 First, we need to build a graph. Next, just do DFS and count all `'a'..'z'` frequencies in the current subtree.
 
 For building a graph let's use a map, and for DFS let's use a recursion.
@@ -8832,6 +9197,7 @@ Space: O(N), Time: O(N)
         }
         return time * 2
     }
+
 ```
 
 We need to count all paths from apples to 0-node and don't count already walked path.
@@ -8854,7 +9220,9 @@ Space: O(N), Time: O(N)
 ```kotlin 
 fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean =  p == null && q == null || 
             p?.`val` == q?.`val` && isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
+
 ```
+
 Check for the current node and repeat for the children.
 Let's write one-liner
 
@@ -8913,7 +9281,9 @@ class Solution {
     }
         
 }
+
 ```
+
 Recursive solution is a trivial. For stack solution, we need to remember each `right` node. Morris' solution use the tree modification to save each `right` node in the rightmost end of the left subtree.
 Let's implement them all.
 
@@ -8955,7 +9325,9 @@ Space: O(logN) for stack, O(1) for Morris', Time: O(n)
         }
         return pointsByTan.values.maxBy { it.size }?.size?:0
     }
+
 ```
+
 Just do the linear algebra to find all the lines through each pair of points.
 Store `slope` and `b` coeff in the hashmap. Also, compute `gcd` to find precise slope. In this case it works for `double` precision slope, but for bigger numbers we need to store `dy` and `dx` separately in `Int` precision.
 
@@ -8982,6 +9354,7 @@ Space: O(n^2), Time: O(n^2)
         }
         return if (sum < 0) -1 else ind
     }
+
 ```
 
 We can start after the station with the minimum `decrease` in gasoline.
@@ -9009,7 +9382,9 @@ Space: O(1), Time: O(N)
        }
        return iceCreamCount
     }
+
 ```
+
 The `maximum ice creams` would be if we take as many `minimum costs` as possible
 Sort the `costs` array, then greedily iterate it and buy ice creams until all the coins are spent.
 
@@ -9042,7 +9417,9 @@ Space: O(1), Time: O(NlogN) (there is also O(N) solution based on count sort)
         }
         return arrows
     }
+
 ```
+
 The optimal strategy to achieve the minimum number of arrows is to find the maximum overlapping intervals. For this task, we can sort the points by their `start` and `end` coordinates and use line sweep technique. Overlapping intervals are separate if their `minEnd` is less than `start` of the next interval. `minEnd` - the minimum of the `end`'s of the overlapping intervals.
 Let's move the arrow to each `start` interval and fire a new arrow if this `start` is greater than `minEnd`.
 * for sorting without Int overflowing, use `compareTo` instead of subtraction
@@ -9083,6 +9460,7 @@ Space: O(1), Time: O(NlogN)
         }
         return round
     }
+
 ```
 
 For the optimal solution, we must take as many 3's of tasks as possible, then take 2's in any order.
@@ -9102,6 +9480,7 @@ Space: O(N), Time: O(N), counts range is always less than N
        (0..strs[0].lastIndex).asSequence().count { col ->
            (1..strs.lastIndex).asSequence().any { strs[it][col] < strs[it-1][col] }
         } 
+
 ```
 
 Just do what is asked.
@@ -9121,6 +9500,7 @@ Space: O(1), Time: O(wN)
        word.all { Character.isUpperCase(it) } ||
        word.all { Character.isLowerCase(it) } ||
        Character.isUpperCase(word[0]) && word.drop(1).all { Character.isLowerCase(it) }
+
 ```
 
 We can do this optimally by checking the first character and then checking all the other characters in a single pass. Or we can write a more understandable code that directly translates from the problem description.
@@ -9153,6 +9533,7 @@ Space: O(1), Time: O(N)
                 return false
         return true
     }
+
 ```
 
 Each word must be in 1 to 1 relation with each character in the pattern. We can check this rule.
@@ -9197,6 +9578,7 @@ Space: O(N), Time: O(N)
         }
         return dfs(startY, startX)
     }
+
 ```
 
 There is only `20x20` cells, we can brute-force the solution.
@@ -9224,7 +9606,9 @@ Space: O(1), Time: O(4^N)
         dfs(0)
         return res
     }
+
 ```
+
 We must find all the paths, so there is no shortcuts to the visiting all of them.
 One technique is backtracking - reuse existing visited list of nodes.
 
@@ -9268,7 +9652,9 @@ Space: O(VE), Time: O(VE)
         }
         return res
     }
+
 ```
+
 First we need to sort tasks by their availability (and other rules), 
 then take tasks one by one and add them to another sorted set/heap where their start time doesn't matter, 
 but running time and order does. When we take the task from the heap, we increase the time and fill in the heap.
@@ -9302,7 +9688,9 @@ Space: O(n), Time: O(nlogn)
         }
         return sum
     }
+
 ```
+
 By the problem definition, intuitively the best strategy is to reduce the maximum each time.
 Use `PriorityQueue` to keep track of the maximum value and update it dynamically.
 * one can use variable `sum` and update it each time.
@@ -9330,7 +9718,9 @@ Space: O(n), Time: O(nlogn)
        }
        return countFull
     }
+
 ```
+
 We can logically deduce that the optimal solution is to take first bags with the smallest empty space.
 Make an array of indexes and sort it by difference between `capacity` and `rocks`. Then just simulate rocks addition to each bug from the smallest empty space to the largest.
 
@@ -9351,7 +9741,9 @@ Space: O(n), Time: O(nlogn)
        }
        return minInd == 0
     }
+
 ```
+
 For any position `i` we can reach the end if there is a `minInd` such that `nums[i] + i >= minInd` and `minInd` is a known to be reaching the end.
 We can run from the end and update `minInd` - minimum index reaching the end.
 
@@ -9373,7 +9765,9 @@ Space: O(1), Time: O(N)
            if (ind < 0) -ind-1 else ind+1
        }
     }
+
 ```
+
 We can logically deduce that for the maximum number of arguments we need to take as much as possible items from the smallest to the largest.
 We can sort items. Then pre-compute `sums[i] = sum from [0..i]`. Then use binary search target sum in sums. Also, can modify `nums` but that's may be not necessary.
 
@@ -9426,6 +9820,7 @@ Space: O(N), Time: O(NlogN)
         }
         return dfs(0, 1, 1).toInt()
     }
+
 ```
 
 We can walk the board horizontally and monitor free cells. On each step, we can choose what figure to place. When end reached and there are no free cells, consider that a successful combination. Result depends only on the current position and on the top-bottom cell combination.* just do dfs+memo
@@ -9455,11 +9850,12 @@ Space: O(N), Time: O(N) - we only visit each column 3 times
         }
         return dfs(0, false, true)
     }
+
 ```
+
 Progress from dfs solution to memo. DFS solution - just choose what to do in this step, go next, then compare results and peek max.
 
 Space: O(N), Time: O(N)
-
 
 # 22.12.2022
 [834. Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/) hard
@@ -9498,7 +9894,9 @@ Space: O(N), Time: O(N)
         dfs(0, -1)
         return sums
     }
+
 ```
+
 We can do the job for item #0, then we need to invent a formula to reuse some data when we change the node.
 
 How to mathematically prove formula for a new sum:
@@ -9543,7 +9941,9 @@ fun possibleBipartition(n: Int, dislikes: Array<IntArray>): Boolean {
 	}
 	return true
 }
+
 ```
+
 We need somehow to union people that hate the same people. We can do it making someone a leader of a group and make just leaders to hate each other.
 
 Keep track of the leaders hating each other in the `hate` array, and people loving their leader in `love` array. (`love` array is basically a Union-Find).
@@ -9571,7 +9971,9 @@ Space: O(N), Time: O(N) - adding to Union-Find is O(1) amortised
        }
        return visited.size == rooms.size
     }
+
 ```
+
 We need to visit each room, and we have positions of the other rooms and a start position. This is a DFS problem.
 Keep all visited rooms numbers in a hash set and check the final size. Other solution is to use boolean array and a counter of the visited rooms.
 
@@ -9607,6 +10009,7 @@ Space: O(N) - for queue and visited set, Time: O(N) - visit all the rooms once
         }
         return false
     }
+
 ```
 
 BFS will do the job.
@@ -9635,6 +10038,7 @@ Space: O(N), Time: O(N)
        }
        return res
     }
+
 ```
 
 Intuitively, we want to go from the end of the array to the start and keep the maximum value. But, that doesn't work, because we must also store smaller numbers, as they are closer in distance.
@@ -9664,6 +10068,7 @@ Space: O(N), Time: O(N)
         }
         pop()
     }
+
 ```
 
 Reverse polish notations made explicitly for calculation using stack. Just execute every operation immediately using last two numbers in the stack and push the result.
@@ -9706,7 +10111,9 @@ class MyQueue() {
 	fun empty(): Boolean = head.isEmpty() && tail.isEmpty()
 
 }
+
 ```
+
 One stack for the head of the queue and other for the tail.
 When we need to do `pop` we first drain from one stack to another, so items order will be restored.
 * we can skip rotation on push if we fill tail only when its empty
@@ -9739,7 +10146,9 @@ Space: O(1), Time: O(1)
         }
         return dfs(0, 0)
     }
+
 ```
+
 We can walk the two strings simultaneously and compare their chars. If they are the same, the optimal way will be to use those chars and continue exploring next. If they are not, we have two choices: use the first char and skip the second or skip the first but use the second.
 Also, observing our algorithm we see, the result so far is only dependent of the positions from which we begin to search (and all the remaining characters). And also see that the calls are repetitive. That mean we can cache the result. (meaning this is a dynamic programming solution).
 Use depth first search by starting positions and memoize results in a two dimension array. Another approach will be bottom up iteration and filling the same array.
@@ -9764,6 +10173,7 @@ Space: O(N^2), Time: O(N^2)
         } 
         return dfs(0)
     }
+
 ```
 
 Exploring each house one by one we can make a decision to rob or not to rob.
@@ -9795,7 +10205,9 @@ Space: O(N), Time: O(N)
        } 
        return matrix[0].min()!!
     }
+
 ```
+
 There is only three ways from any cell to it's siblings. We can compute all three paths sums for all cells in a row so far. And then choose the smallest.
 Iterate over rows and compute prefix sums of current + minOf(left min sum, bottom min sum, right min sum)
 
@@ -9818,7 +10230,9 @@ Space: O(N), Time: O(N^2)
             climbStairs(n-1) + climbStairs(n-2)
         }
     }
+
 ```
+
 You can observe that result is only depend on input n. And also that result(n) = result(n-1) + result(n-2).
 Just use memoization for storing already solved inputs.
 
@@ -9859,6 +10273,7 @@ Space: O(N), Time: O(N)
         }
         return if (root == null) 0 else dfs(root).first
     }
+
 ```
 
 Space: O(logN), Time: O(N)
@@ -9871,6 +10286,7 @@ Space: O(logN), Time: O(N)
 [blog post](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/solutions/2896607/kotlin-two-dfs/)
 
 ```kotlin
+
     fun maxProduct(root: TreeNode?): Int {
         fun sumDfs(root: TreeNode?): Long {
             return if (root == null) 0L
@@ -9889,7 +10305,9 @@ Space: O(logN), Time: O(N)
         }
         return (dfs(root).second % 1_000_000_007L).toInt()
     }
+
 ```
+
 Just iterate over all items and compute all products.
 We need to compute total sum before making the main traversal.
 
@@ -9903,6 +10321,7 @@ Space: O(logN), Time: O(N)
 [blog post](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/solutions/2894948/kotlin-dfs/)
 
 ```kotlin
+
     fun maxAncestorDiff(root: TreeNode?): Int {
         root?: return 0
 
@@ -9918,12 +10337,18 @@ Space: O(logN), Time: O(N)
         
         return dfs(root)
     }
+
 ```
+
 Based on math we can assume, that max difference is one of the two: (curr - max so far) or (curr - min so far).
 Like, for example, let our curr value be `3`, and from all visited we have min `0` and max `7`.
+
 ```
+
  0--3---7
+
 ```
+
 * we can write helper recoursive method and compute max and min so far
 
 Space: O(logN), Time: O(N)
@@ -9934,6 +10359,7 @@ Space: O(logN), Time: O(N)
 [https://t.me/leetcode_daily_unstoppable/45](https://t.me/leetcode_daily_unstoppable/45)
 
 ```kotlin
+
     fun leafSimilar(root1: TreeNode?, root2: TreeNode?): Boolean {
         fun dfs(root: TreeNode?): List<Int> {
             return when {
@@ -9945,7 +10371,9 @@ Space: O(logN), Time: O(N)
         
         return dfs(root1) == dfs(root2)
     }
+
 ```
+
 There is only 200 items, so we can concatenate lists.
 One optimization would be to collect only first tree and just compare it to the second tree while doing the inorder traverse.
 
@@ -9957,6 +10385,7 @@ Space: O(N), Time: O(N)
 [https://t.me/leetcode_daily_unstoppable/44](https://t.me/leetcode_daily_unstoppable/44)
 
 ```kotlin
+
     fun rangeSumBST(root: TreeNode?, low: Int, high: Int): Int =
 	if (root == null) 0 else
 		with(root) {
@@ -9964,7 +10393,9 @@ Space: O(N), Time: O(N)
 				(if (`val` < low) 0 else rangeSumBST(left, low, high)) +
 				(if (`val` > high) 0 else rangeSumBST(right, low, high))
 		}
+
 ```
+
 * be careful with ternary operations, better wrap them in a brackets
 
 Space: O(log N), Time: O(R), r - is a range [low, high]
@@ -9975,6 +10406,7 @@ Space: O(log N), Time: O(R), r - is a range [low, high]
 [https://t.me/leetcode_daily_unstoppable/43](https://t.me/leetcode_daily_unstoppable/43)
 
 ```kotlin
+
        // 1 2
     fun oddEvenList(head: ListNode?): ListNode? {
        var odd = head //1
@@ -9991,11 +10423,12 @@ Space: O(log N), Time: O(R), r - is a range [low, high]
        odd?.next = evenHead // 1->2
        return head //1->2->null
     }
+
 ```
+
 * be careful and store evenHead in a separate variable
 
 Space: O(1), Time: O(n)
-
 
 # 5.12.2022
 [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) easy
@@ -10003,9 +10436,12 @@ Space: O(1), Time: O(n)
 [https://t.me/leetcode_daily_unstoppable/42](https://t.me/leetcode_daily_unstoppable/42)
 
 ```kotlin
+
   fun middleNode(head: ListNode?, fast: ListNode? = head): ListNode? =
         if (fast?.next == null) head else middleNode(head?.next, fast?.next?.next)
+
 ```
+
 * one-liner, but in the interview (or production) I would prefer to write a loop
 
 Space: O(n), Time: O(n)
@@ -10016,6 +10452,7 @@ Space: O(n), Time: O(n)
 [https://t.me/leetcode_daily_unstoppable/41](https://t.me/leetcode_daily_unstoppable/41)
 
 ```kotlin
+
     fun minimumAverageDifference(nums: IntArray): Int {
         var sum = 0L
         nums.forEach { sum += it.toLong() }
@@ -10037,7 +10474,9 @@ Space: O(n), Time: O(n)
         }
         return minInd
     }
+
 ```
+
 ### Intuition
 
 Two pointers, one for even, one for odd indexes.
@@ -10058,6 +10497,7 @@ Space: O(1), Time: O(n)
 [https://t.me/leetcode_daily_unstoppable/40](https://t.me/leetcode_daily_unstoppable/40)
 
 ```kotlin
+
     fun frequencySort(s: String): String =
         s.groupBy { it }
         .values
@@ -10066,7 +10506,9 @@ Space: O(1), Time: O(n)
         .map { it.first }
         .flatten()
         .joinToString("")
+
 ```
+
 Very simple task, can be written in a functional style.
 Space: O(n), Time: O(n)
 
@@ -10076,6 +10518,7 @@ Space: O(n), Time: O(n)
 [https://t.me/leetcode_daily_unstoppable/39](https://t.me/leetcode_daily_unstoppable/39)
 
 ```kotlin
+
     // cabbba -> c aa bbb -> 1 2 3 
     // a bb ccc -> 1 2 3
     // uau
@@ -10083,7 +10526,9 @@ Space: O(n), Time: O(n)
     fun closeStrings(word1: String, word2: String, 
          f: (String) -> List<Int> = { it.groupBy { it }.values.map { it.size }.sorted() }
     ): Boolean = f(word1) == f(word2) && word1.toSet() == word2.toSet()
+
 ```
+
 That is a simple task, you just need to know what exactly you asked for.
 Space: O(n), Time: O(n)
 
@@ -10093,6 +10538,7 @@ Space: O(n), Time: O(n)
 [https://t.me/leetcode_daily_unstoppable/38](https://t.me/leetcode_daily_unstoppable/38)
 
 ```kotlin
+
     fun halvesAreAlike(s: String): Boolean {
         val vowels = setOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
         var c1 = 0
@@ -10104,7 +10550,9 @@ Space: O(n), Time: O(n)
         }
         return c1 == c2
     }
+
 ```
+
 Just do what is asked.
 
 O(N) time, O(1) space
@@ -10115,13 +10563,16 @@ O(N) time, O(1) space
 [https://t.me/leetcode_daily_unstoppable/36](https://t.me/leetcode_daily_unstoppable/36)
 
 ```kotlin
+
 fun uniqueOccurrences(arr: IntArray): Boolean {
 	val counter = mutableMapOf<Int, Int>()
 	arr.forEach { n -> counter[n] = 1 + (counter[n] ?: 0) }
 	val freq = mutableSetOf<Int>()
 	return !counter.values.any { count -> !freq.add(count) }
 }
+
 ```
+
 Nothing interesting, just count and filter.
 
 O(N) time, O(N) space
@@ -10132,6 +10583,7 @@ O(N) time, O(N) space
 [https://t.me/leetcode_daily_unstoppable/35](https://t.me/leetcode_daily_unstoppable/35)
 
 ```kotlin
+
 class RandomizedSet() {
     val rnd = Random(0)
     val list = mutableListOf<Int>()
@@ -10157,6 +10609,7 @@ class RandomizedSet() {
 }
 
 ```
+
 The task is simple, one trick is to remove elements from the end of the list, and replacing item with the last one.
 Some thoughts:
 * don't optimize lines of code, that can backfire. You can use syntax sugar, clever operations inlining, but also can shoot in the foot.
@@ -10169,6 +10622,7 @@ O(1) time, O(N) space
 [https://t.me/leetcode_daily_unstoppable/34](https://t.me/leetcode_daily_unstoppable/34)
 
 ```kotlin
+
     fun findWinners(matches: Array<IntArray>): List<List<Int>> {
         val winners = mutableMapOf<Int, Int>()
         val losers = mutableMapOf<Int, Int>()
@@ -10186,6 +10640,7 @@ O(1) time, O(N) space
                 .sorted()
         )
     }
+
 ```
 
 Just do what is asked.
@@ -10198,6 +10653,7 @@ O(NlogN) time, O(N) space
 [https://t.me/leetcode_daily_unstoppable/33](https://t.me/leetcode_daily_unstoppable/33)
 
 ```kotlin
+
     fun numberOfArithmeticSlices(nums: IntArray): Int {
         // 0 1 2 3 4 5 
         // 1 2 3 1 2 3                diff = 1
@@ -10215,10 +10671,13 @@ O(NlogN) time, O(N) space
         }
         return dp.map { it.values.sum()!! }.sum().toInt() - (nums.size)*(nums.size-1)/2
     }
+
 ```
 
 dp[i][d] is the number of subsequences in range [0..i] with difference = d
+
 ```kotlin
+
 array: "1 2 3 1 2 3"
 For items  1  2  curr = 2:
 diff = 1,  dp = 1
@@ -10237,7 +10696,9 @@ For items  1  2  3  1  2  3  curr = 3:
 diff = 2,  dp = 2
 diff = 1,  dp = 5
 diff = 0,  dp = 1
+
 ```
+
 and finally, we need to subtract all the sequences of length 2 and 1,
 count of them is (n)*(n-1)/2
 
@@ -10249,6 +10710,7 @@ O(N^2) time, O(N^2) space
 [https://t.me/leetcode_daily_unstoppable/32](https://t.me/leetcode_daily_unstoppable/32)
 
 ```kotlin
+
     fun jobScheduling(startTime: IntArray, endTime: IntArray, profit: IntArray): Int {
         val n = startTime.size
         val inds = Array<Int>(n) { it }
@@ -10279,14 +10741,19 @@ O(N^2) time, O(N^2) space
         }
         return maxProfit[0]
     }
+
 ```
 
 Use the hints from the description.
 THis cannot be solved greedily, because you need to find next non-overlapping job.
 Dynamic programming equation: from last job to the current, result is max of next result and current + next non-overlapping result.
+
 ```
+
 f(i) = max(f(i+1), profit[i] + f(j)), where j is the first non-overlapping job after i.
+
 ```
+
 Also, instead of linear search for non overlapping job, use binary search.
 
 O(NlogN) time, O(N) space
@@ -10295,6 +10762,7 @@ O(NlogN) time, O(N) space
 [907. Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) medium
 
 ```kotlin
+
     data class V(val v: Int, val count: Int)
     fun sumSubarrayMins(arr: IntArray): Int {
         val M = 1_000_000_007
@@ -10339,6 +10807,7 @@ O(NlogN) time, O(N) space
         }
         return f
     }
+
 ```
 
 First attempt is to build an N^2 tree of minimums, comparing adjacent elements row by row and finding a minimum.
@@ -10355,6 +10824,7 @@ O(N) time, O(N) space
 [79. Word Search](https://leetcode.com/problems/word-search/) medium
 
 ```kotlin
+
     fun exist(board: Array<CharArray>, word: String): Boolean {
         fun dfs(y: Int, x: Int, pos: Int): Boolean {
             if (pos == word.length) return true
@@ -10376,6 +10846,7 @@ O(N) time, O(N) space
         }
         return false
     }
+
 ```
 
 We can brute force this problem. Backtracking help to preserve memory.
@@ -10387,6 +10858,7 @@ Memory: O(W)
 [https://leetcode.com/problems/valid-sudoku/](https://leetcode.com/problems/valid-sudoku/) medium
 
 ```kotlin
+
     fun isValidSudoku(board: Array<CharArray>): Boolean {
         val cell9 = arrayOf(0 to 0, 0 to 1, 0 to 2, 
                             1 to 0, 1 to 1, 1 to 2, 
@@ -10408,6 +10880,7 @@ Memory: O(W)
                 (0..8).any { board[it][x] != '.' && !visited.add(board[it][x]) }
             }
     }
+
 ```
 
 This is an easy problem, just do what is asked.
@@ -10419,6 +10892,7 @@ Memory: O(N), N = 81, so it O(1)
 [https://leetcode.com/problems/perfect-squares/](https://leetcode.com/problems/perfect-squares/) medium
 
 ```kotlin
+
     val cache = mutableMapOf<Int, Int>()
     fun numSquares(n: Int): Int {
         if (n < 0) return -1
@@ -10435,6 +10909,7 @@ Memory: O(N), N = 81, so it O(1)
         cache[n] = min
         return min
     }
+
 ```
 
 The problem gives stable answers for any argument n. 
@@ -10447,6 +10922,7 @@ Memory: O(N)
 [https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) medium
 
 ```
+
     fun nearestExit(maze: Array<CharArray>, entrance: IntArray): Int {
         val queue = ArrayDeque<Pair<Int, Int>>()
         queue.add(entrance[1] to entrance[0])
@@ -10476,6 +10952,7 @@ Memory: O(N)
         
         return -1
     }
+
 ```
 
 Just do BFS.
@@ -10488,6 +10965,7 @@ Memory: O(N)
 [https://leetcode.com/problems/basic-calculator/](https://leetcode.com/problems/basic-calculator/) hard
 
 ```
+
     fun calculate(s: String): Int {
         var i = 0
         var sign = 1
@@ -10542,6 +11020,7 @@ Memory: O(N), because of the recursion, worst case is all the input is brackets
 [https://leetcode.com/problems/erect-the-fence/](https://leetcode.com/problems/erect-the-fence/) hard
 
 ```
+
     fun outerTrees(trees: Array<IntArray>): Array<IntArray> {
         if (trees.size <= 3) return trees
         trees.sortWith(Comparator { a, b -> if (a[0]==b[0]) a[1]-b[1] else a[0] - b[0]} )
@@ -10562,6 +11041,7 @@ Memory: O(N), because of the recursion, worst case is all the input is brackets
         }
         return (up+lo).distinct().toTypedArray()
     }
+
 ```
 
 This is an implementation of the [Andrew's monotonic chain](https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain) algorithm.
@@ -10575,6 +11055,7 @@ Memory: O(N)
 [https://leetcode.com/problems/ugly-number/](https://leetcode.com/problems/ugly-number/) easy
 
 ```
+
     fun isUgly(n: Int): Boolean {
         if (n <= 0) return false
         var x = n
@@ -10583,7 +11064,9 @@ Memory: O(N)
         while(x%5==0) x = x/5
         return x == 1
     }
+
 ```
+
 There is also a clever math solution, but I don't understand it yet.
 
 Complexity: O(log(n))
@@ -10593,6 +11076,7 @@ Memory: O(1)
 [https://leetcode.com/problems/rectangle-area/](https://leetcode.com/problems/rectangle-area/) middle
 
 ```kotlin
+
 class Solution {
     class P(val x: Int, val y: Int)
     class Rect(val l: Int, val t: Int, val r: Int, val b: Int) {
@@ -10614,6 +11098,7 @@ class Solution {
         return r1.s + r2.s -  r1.intersect(r2).s
     }
 }
+
 ```
 
 This is an OOP problem. One trick to write intersection function is to notice that all corners of intersection rectangle
@@ -10626,6 +11111,7 @@ Memory: O(1)
 [https://leetcode.com/problems/guess-number-higher-or-lower/](https://leetcode.com/problems/guess-number-higher-or-lower/) easy
 
 ```kotlin
+
     override fun guessNumber(n:Int):Int {
        var lo = 1
        var hi = n
@@ -10638,7 +11124,9 @@ Memory: O(1)
        }
        return lo
     }
+
 ```
+
 This is a classic binary search algorithm. 
 The best way of writing it is:
 * use safe mid calculation (lo + (hi - lo)/2)
@@ -10647,10 +11135,11 @@ The best way of writing it is:
 Complexity: O(log(N))
 Memory: O(1)
 
-
 # 15.11.2022
 [https://leetcode.com/problems/count-complete-tree-nodes/](https://leetcode.com/problems/count-complete-tree-nodes/) medium
+
 ```
+
        x
      *   x
    *   *   x
@@ -10661,9 +11150,11 @@ Memory: O(1)
           this only takes us O(logN) time on each step
           there are logN steps in total (height of the tree)
           so the total time complexity is O(log^2(N))
+
 ```
 
 ```kotlin
+
     fun countNodes(root: TreeNode?): Int {
         var hl = 0
         var node = root  
@@ -10685,7 +11176,9 @@ Memory: O(1)
             (root!!.right?.let {countNodes(it)}?:0)
         }
     }
+
 ```
+
 Complexity: O(log^2(N))
 Memory: O(logN)
 
@@ -10693,7 +11186,9 @@ Memory: O(logN)
 [https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) medium
 
 From observing the problem, we can see, that the task is in fact is to find an isolated islands:
+
 ```
+
         // * 3 *         * 3 *        * * *
         // 1 2 *    ->   * * *   or   1 * *
         // * * 4         * * 4        * * 4
@@ -10701,8 +11196,11 @@ From observing the problem, we can see, that the task is in fact is to find an i
         // * 3 *         * * *
         // 1 2 5    ->   * * *
         // * * 4         * * 4
+
 ```
+
 ```kotlin
+
     fun removeStones(stones: Array<IntArray>): Int {
         val uf = IntArray(stones.size) { it }
         var rootsCount = uf.size
@@ -10735,7 +11233,9 @@ From observing the problem, we can see, that the task is in fact is to find an i
         }
         return stones.size - rootsCount
     }
+
 ```
+
 Complexity: O(N)
 Memory: O(N)
 
@@ -10745,6 +11245,7 @@ Memory: O(N)
 A simple trick: reverse all the string, then reverse each word.
 
 ```kotlin
+
     fun reverseWords(s: String): String {
         val res = StringBuilder()
         val curr = Stack<Char>()
@@ -10760,7 +11261,9 @@ A simple trick: reverse all the string, then reverse each word.
         while (curr.isNotEmpty()) res.append(curr.pop())
         return res.toString()
     }
+
 ```
+
 Complexity: O(N)
 Memory: O(N) - there is no O(1) solution for string in JVM
 
@@ -10769,13 +11272,17 @@ Memory: O(N) - there is no O(1) solution for string in JVM
 
 To find the median we can maintain two heaps: smaller and larger. One decreasing and one increasing.
 Peeking the top from those heaps will give us the median.
+
 ```
+
     //  [5 2 0] [6 7 10]
     //  dec     inc
     //   ^ peek  ^ peek
+
 ```
 
 ```kotlin
+
 class MedianFinder() {
     val queDec = PriorityQueue<Int>(reverseOrder())
     val queInc = PriorityQueue<Int>()
@@ -10794,14 +11301,18 @@ class MedianFinder() {
         else 
             queDec.peek().toDouble()
 }
+
 ```
+
 Complexity: O(NlogN)
 Memory: O(N)
 # 11.11.2022
 [https://leetcode.com/problems/remove-duplicates-from-sorted-array/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) easy
 
 Just do what is asked. Keep track of the pointer to the end of the "good" part.
+
 ```
+
     fun removeDuplicates(nums: IntArray): Int {
         var k = 0
         for (i in 1..nums.lastIndex) {
@@ -10810,7 +11321,9 @@ Just do what is asked. Keep track of the pointer to the end of the "good" part.
         
         return k + 1
     }
+
 ```
+
 Complexity: O(N)
 Memory: O(1)
 
@@ -10818,7 +11331,9 @@ Memory: O(1)
 [https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) easy
 
 Solution:
+
 ```
+
     fun removeDuplicates(s: String): String {
         val stack = Stack<Char>()
         s.forEach { c ->
@@ -10830,7 +11345,9 @@ Solution:
         }
         return stack.joinToString("")
     }
+
 ```
+
 Explanation: Just scan symbols one by one and remove duplicates from the end.
 Complexity: O(N)
 Memory: O(N)
@@ -10848,9 +11365,13 @@ Consider example, this is how decreasing stack will work
         // 60    [100-1, 80-1, 70-2, 60-1]          1
         // 75    [100-1, 80-1, 75-4] + 70-2+60-1    4
         // 85    [100-1, 85-6] 80-1+75-4            6
+
 ```
+
 Solution:
+
 ```kotlin
+
 class StockSpanner() {
     val stack = Stack<Pair<Int,Int>>()
 
@@ -10871,7 +11392,9 @@ class StockSpanner() {
     }
 
 }
+
 ```
+
 Complexity: O(N)
 Memory: O(N)
 
@@ -10879,6 +11402,7 @@ Memory: O(N)
 [https://leetcode.com/problems/make-the-string-great/](https://leetcode.com/problems/make-the-string-great/) easy
 
 ```kotlin
+
     fun makeGood(s: String): String {
         var ss = s.toCharArray()
         var finished = false
@@ -10907,6 +11431,7 @@ Memory: O(N)
     }
 
 ```
+
 Explanation:
 The simplest solution is just to simulate all the process, as input string is just 100 symbols.
 
@@ -10917,6 +11442,7 @@ Memory: O(n)
 [https://leetcode.com/problems/maximum-69-number/](https://leetcode.com/problems/maximum-69-number/) easy
 
 ```kotlin
+
     fun maximum69Number (num: Int): Int {
         var n = num
         if (6666 <= n && n <= 6999) return num + 3000
@@ -10928,7 +11454,9 @@ Memory: O(n)
         if (6 == n) return num + 3
         return num
     }
+
 ```
+
 Explanation:
 The simplest implementations would be converting to array of digits, replacing the first and converting back. 
 However we can observe that numbers are in range 6-9999, so we can hardcode some logic.
@@ -10958,7 +11486,9 @@ Speed: O(1), Memory: O(1)
     }
 
 O(n^2)
+
 ```
+
 Explanation:
 One idea that come to my mind is: if k >= 2 then you basically can swap any adjacent elements. That means you can actually sort all the characters.
 
@@ -10968,6 +11498,7 @@ Speed: O(n^2), Memory: O(n)
 [https://leetcode.com/problems/word-search-ii/](https://leetcode.com/problems/word-search-ii/) hard
 
 Solution [kotlin]
+
 ```kotlin
 
     class Node {
@@ -11012,6 +11543,7 @@ Solution [kotlin]
     }
 
 ```
+
 Explanation:
 Use trie + dfs
 1. Collect all the words into the Trie
@@ -11025,7 +11557,9 @@ Speed: O(wN + M), w=10, N=10^4, M=12^2 , Memory O(26w + N)
 [https://leetcode.com/problems/reverse-vowels-of-a-string/](https://leetcode.com/problems/reverse-vowels-of-a-string/) easy
 
 Solution [kotlin]
+
 ```kotlin
+
     fun reverseVowels(s: String): String {
         val vowels = setOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
         var chrs = s.toCharArray()
@@ -11040,7 +11574,9 @@ Solution [kotlin]
         }
         return String(chrs)
     }
+
 ```
+
 Explanation:
 Straightforward solution : use two pointers method and scan from the both sides.
 
@@ -11050,7 +11586,9 @@ Speed: O(N), Memory O(N)
 [https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) medium
 
 Solution [kotlin]
+
 ```kotlin
+
 fun longestPalindrome(words: Array<String>): Int {
         var singles = 0
         var mirrored = 0
@@ -11087,7 +11625,9 @@ fun longestPalindrome(words: Array<String>): Int {
         val unevenCount = if (uneven == 0) 0 else 2*(unevenSum - uneven + 1)
         return singles + mirrored + unevenCount
     }
+
 ```
+
 Explanation:
 This is a counting task, can be solved linearly.
 There are 3 cases: 
@@ -11101,7 +11641,9 @@ Speed: O(N), Memory O(N)
 [https://leetcode.com/problems/minimum-genetic-mutation/](https://leetcode.com/problems/minimum-genetic-mutation/) medium
 
 Solution [kotlin]
+
 ```kotlin
+
     fun minMutation(start: String, end: String, bank: Array<String>): Int {
         val wToW = mutableMapOf<Int, MutableList<Int>>()
         fun searchInBank(i1: Int, w1: String) {
@@ -11137,7 +11679,9 @@ Solution [kotlin]
         }
         return -1
     }
+
 ```
+
 Explanation:
 1. make graph
 2. BFS in it
@@ -11149,7 +11693,9 @@ Speed: O(wN^2), Memory O(N)
 [https://leetcode.com/problems/where-will-the-ball-fall/](https://leetcode.com/problems/where-will-the-ball-fall/) medium
 
 Solution [kotlin]
+
 ```kotlin
+
     fun findBall(grid: Array<IntArray>): IntArray {
         var indToBall = IntArray(grid[0].size) { it }
         var ballToInd = IntArray(grid[0].size) { it }
@@ -11178,7 +11724,9 @@ Solution [kotlin]
         }
         return ballToInd
     }
+
 ```
+
 Explanation:
 This is a geometry problem, but seeing the pattern might help. We can spot that each row is an action sequence: -1 -1 -1 shifts balls left, and 1 1 1 shifts balls to the right. Corners can be formed only with -1 1 sequence.  
 
@@ -11186,12 +11734,16 @@ This is a geometry problem, but seeing the pattern might help. We can spot that 
 [https://leetcode.com/problems/toeplitz-matrix/](https://leetcode.com/problems/toeplitz-matrix/) easy
 
 Solution [kotlin]
+
 ```kotlin
+
     fun isToeplitzMatrix(matrix: Array<IntArray>): Boolean =
         matrix
         .asSequence()
         .windowed(2)
         .all { (prev, curr) -> prev.dropLast(1) == curr.drop(1) }
+
 ```
+
 Explanation:
 just compare adjacent rows, they must have an equal elements except first and last
