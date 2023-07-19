@@ -12,6 +12,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 19.07.2023
+[435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) medium
+[blog post](https://leetcode.com/problems/non-overlapping-intervals/solutions/3785669/kotlin-line-sweep/)
+[substack](https://dmitriisamoilenko.substack.com/p/19072023-435-non-overlapping-intervals?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/3f9e85af-5956-4212-a56e-2f201030a2aa_1689738344.4310584.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/280
+
+#### Problem TLDR
+
+Minimum intervals to erase overlap
+
+#### Intuition
+
+First idea, is to sort the array by `from`. Next, we can greedily take intervals and remove overlapping ones. But, to remove the `minimum` number, we can start with removing the most `long` intervals.
+
+#### Approach
+
+* walk the sweep line, counting how many intervals are non overlapping
+* only move the `right border` when there is a new non overlapping interval
+* minimize the `border` when it shrinks
+
+#### Complexity
+
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun eraseOverlapIntervals(intervals: Array<IntArray>): Int {
+        intervals.sortWith(compareBy({ it[0] }))
+        var border = Int.MIN_VALUE
+        return intervals.count { (from, to) -> 
+          (border > from).also {
+            if (border <= from || border > to) border = to
+          }
+        }
+    }
+
+```
+
 # 18.07.2023
 [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/) medium
 [blog post](https://leetcode.com/problems/lru-cache/solutions/3781121/kotlin-linked-list/)
