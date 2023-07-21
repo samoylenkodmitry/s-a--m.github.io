@@ -12,6 +12,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 21.07.2023
+[673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium
+[blog post](https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3795250/kotlin-dfs-cache/)
+[substack](https://dmitriisamoilenko.substack.com/p/21072023-673-number-of-longest-increasing?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/0b5786e0-849b-4852-b131-13bd9813fd94_1689915416.2290564.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/282
+
+#### Proble TLDR
+
+Count of LIS in an array
+
+#### Intuition
+
+To find Longest Increasing Subsequence, there is a known algorithm with $$O(nlog(n))$$ time complexity. However, it can help with this case:
+
+```bash
+
+3 5 4 7
+
+```
+
+when we must track both `3 4 7` and `3 5 7` sequences. Given that, we can try to do full search with DFS, taking or skipping a number. To cache some results, we must make `dfs` depend on only the input arguments. Let's define it to return both `max length of LIS` and `count of them` in one result, and arguments are the starting position in an array and `previous number` that we must start sequence from.
+
+#### Approach 
+
+* use an array cache, as `Map` gives TLE
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```
+
+    class R(val maxLen: Int, val cnt: Int)
+    fun findNumberOfLIS(nums: IntArray): Int {
+      val cache = Array(nums.size + 1) { Array<R>(nums.size + 2) { R(0, 0) } }
+      fun dfs(pos: Int, prevPos: Int): R = if (pos == nums.size) R(0, 1) else 
+        cache[pos][prevPos].takeIf { it.cnt != 0 }?: {
+          val prev = if (prevPos == nums.size) Int.MIN_VALUE else nums[prevPos]
+          var cnt = 0
+          while (pos + cnt < nums.size && nums[pos + cnt] == nums[pos]) cnt++
+          val skip = dfs(pos + cnt, prevPos)
+          if (nums[pos] <= prev) skip else {
+            val start = dfs(pos + cnt, pos).let { R(1 + it.maxLen, cnt * it.cnt ) }
+            if (skip.maxLen == start.maxLen) R(skip.maxLen, start.cnt + skip.cnt)
+            else if (skip.maxLen > start.maxLen) skip else start
+          }
+        }().also { cache[pos][prevPos] = it }
+      return dfs(0, nums.size).cnt
+    }
+
+```
+
 # 20.07.2023
 [735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/description/) medium
 [blog post](https://leetcode.com/problems/asteroid-collision/solutions/3790443/kotlin-stack/)
