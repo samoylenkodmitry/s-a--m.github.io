@@ -76,7 +76,104 @@ $$O(kn^2)$$
     }
 
 ```
+#### The magical rundown
 
+```
+Step ₀ - The High Noon Duel 🤠🎵🌵:
+🎶 The town clock strikes twelve, and the high noon chess duel commences. A 
+lone knight 🐎 trots onto the scorching, sun-bleached chessboard, casting a long 
+shadow on the sandy squares.
+
+╔═══🌵═══🌵═══╗
+║ 🐎 ║   ║    ║
+╠═══🌵═══🌵═══╣
+║   ║    ║   ║
+╠═══🌵═══🌵═══╣
+║   ║    ║   ║
+╚═══🌵═══🌵═══╝
+
+The Sheriff 🤠, ever the statistician, watches keenly. "For now, the odds are 
+all in your favor, Knight," he says, unveiling the initial probability 𝓹₀ = 1.
+┌─────💰────┬────💰────┬────💰────┐
+│     1     │    0    │     0    │
+├─────💰────┼────💰────┼────💰────┤
+│     0     │    0    │     0    │
+├─────💰────┼────💰────┼────💰────┤
+│     0     │    0    │     0    │
+└─────💰────┴────💰────┴────💰────┘
+
+Step ₁ - The Dusty Trail 🌄🎵🐴:
+🎶 The knight 🐎 leaps into action, stirring up a cloud of dust. He lands in two 
+different squares, each with a calculated 1/8 chance. The Sheriff 🤠 nods 
+approvingly. "Bold moves, Knight. The probability after this is 𝓹₁ = 1/8 + 1/8 = 1/4."
+╔═══🌵═══🌵═══╗
+║   ║    ║   ║
+╠═══🌵═══🌵═══╣
+║   ║    ║ 🐎 ║
+╠═══🌵═══🌵═══╣
+║   ║ 🐎 ║   ║
+╚═══🌵═══🌵═══╝
+
+He reveals the new odds:
+┌─────💰────┬────💰────┬────💰────┐
+│     0     │    0    │     0    │
+├─────💰────┼────💰────┼────💰────┤
+│     0     │    0    │    ¹/₈   │
+├─────💰────┼────💰────┼────💰────┤
+│     0     │   ¹/₈   │     0    │
+└─────💰────┴────💰────┴────💰────┘
+
+Step ₂ - The Sun-Baked Crossroads ☀️🎵🌪️:
+🎶 The knight 🐎 continues his daring maneuvers, hopping onto a few critical 
+spots. He lands on three squares, with probabilities of 1/64, 1/64, and 2/64. 
+Adding these up, the Sheriff 🤠 declares, "The stakes have risen, Knight. The 
+total is 𝓹₂ = 1/64 + 1/64 + 2/64 = 1/16."
+╔═══🌵═══🌵═══╗
+║🐎🐎║   ║ 🐎 ║
+╠═══🌵═══🌵═══╣
+║   ║    ║   ║
+╠═══🌵═══🌵═══╣
+║ 🐎 ║   ║   ║
+╚═══🌵═══🌵═══╝
+
+The updated odds take shape:
+┌─────💰────┬────💰────┬────💰────┐
+│    ²/₆₄   │    0    │   ¹/₆₄   │
+├─────💰────┼────💰────┼────💰────┤
+│     0     │    0    │     0    │
+├─────💰────┼────💰────┼────💰────┤
+│    ¹/₆₄   │    0    │     0    │
+└─────💰────┴────💰────┴────💰────┘
+
+Step ₃ - The Outlaw's Hideout 🏚️🎵🐍:
+🎶 As the sun sets, the knight 🐎 lands in a few hidden spots with various 
+probabilities. Each calculated leap adds to his total: 1/512 + 1/512 + 3/512 + 3/512. 
+The Sheriff 🤠 raises an eyebrow. "Well played, Knight. Your total now is 𝓹₃ = 
+1/512 + 1/512 + 3/512 + 3/512."
+
+╔═══🌵═══🌵═══╗
+║   ║ 🐎 ║    ║
+╠═══🌵═══🌵═══╣
+║ 🐎 ║   ║🐎🐎🐎║
+╠═══🌵═══🌵═══╣
+║   ║🐎🐎🐎║  ║
+╚═══🌵═══🌵═══╝
+
+Beneath the twinkling stars, the Sheriff 🤠 surveys the evolving game. "You're 
+not an easy one to beat, Knight," he admits, revealing the updated stakes:
+┌─────💰────┬────💰────┬────💰────┐
+│     0     │  ¹/₅₁₂  │     0    │
+├─────💰────┼────💰────┼────💰────┤
+│   ¹/₅₁₂   │    0    │   ³/₅₁₂  │
+├─────💰────┼────💰────┼────💰────┤
+│     0     │  ³/₅₁₂  │     0    │
+└─────💰────┴────💰────┴────💰────┘
+
+🎶 So, under the twinkling stars and to the tune of the whistling wind, our 
+knight's adventure continues into the night. The stakes are high, the moves 
+unpredictable, but one thing's certain: this wild chess duel is far from over! 🌵🐎🌌🎵
+
+```
 
 # 21.07.2023
 [673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium
