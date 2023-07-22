@@ -12,6 +12,72 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 22.07.2023
+[688. Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/description/) medium
+[blog post](https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3799262/kotlin-example-how-to-count-probabilities/)
+[substack](https://dmitriisamoilenko.substack.com/p/22072023-688-knight-probability-in?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/66ae032a-f47c-4789-af43-49b3978360f9_1690001698.8322117.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/283
+
+#### Problem TLDR
+
+Probability of making `k` steps on a chessboard without stepping outside
+
+#### Intuition
+The description example doesn't give a clear picture of how the probability works.
+
+![image.png](https://assets.leetcode.com/users/images/8031507e-50b4-494b-8e36-c855509c55cc_1690002558.879231.png)
+
+* individual probability is `1/8` each time we make a step. 
+* * One step is `1/8`, two steps are `1/8 * 1/8` and so on. 
+* * So, the `k-steps` path will have probability of `1/8^k`
+* we need to sum all the probabilities of individual `k-steps` paths, that will remain on a board
+* * the brute force algorithm for this will be BFS:
+* * * for `k` rounds:
+* * * * poll all the elements, and make possible steps on the board
+* * * * resulting probability will be `queue.size / 8^k`, as queue will contain only the final possible ways after k steps
+
+However, there are too many possible ways, we will quickly run out of memory.
+
+It is noticeable, some ways are repeating, and after `s` steps the same cell [x, y] produces the same amount of possible ways `dp[x, y][s]`. We can cache this result for each cell.
+
+However, the number of ways are still very big and do not fit into `Long` 64 bits. To solve this, we can cache not only the ways, but the `probability`, dividing each step by `8`.
+
+
+#### Approach
+
+* storing the directions in a sequence helps to reduce some LOC
+
+#### Complexity
+
+- Time complexity:
+$$O(kn^2)$$
+
+- Space complexity:
+$$O(kn^2)$$
+
+#### Code
+
+```
+
+
+    val dxdy = sequenceOf(-2 to 1, -2 to -1, 2 to 1, 2 to -1, -1 to 2, -1 to -2, 1 to 2, 1 to -2)
+    fun knightProbability(n: Int, k: Int, row: Int, column: Int): Double {
+      val cache = mutableMapOf<Pair<Pair<Int, Int>, Int>, Double>()
+      fun count(x: Int, y: Int, k: Int): Double = if (k == 0) 1.0 else cache.getOrPut(x to y to k) {
+          dxdy.map { (dx, dy) -> x + dx to y + dy }
+          .map { (x, y) -> if (x in 0..n-1 && y in 0..n-1) count(x, y, k - 1) / 8.0 else 0.0 }
+          .sum()
+      }
+      return count(column, row, k)
+    }
+
+```
+
+
 # 21.07.2023
 [673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium
 [blog post](https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3795250/kotlin-dfs-cache/)
