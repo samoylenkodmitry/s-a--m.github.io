@@ -12,6 +12,79 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 23.07.2023
+[894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/) medium
+[blog post](https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3804245/kotlin-brute-force/)
+[substack](https://dmitriisamoilenko.substack.com/p/23072023-894-all-possible-full-binary?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/bdd0d3c4-a0c8-4269-a0d0-123a44c99ebf_1690090983.3132281.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/284
+
+#### Problem TLDR
+
+All possible Full Binary Trees with `n` nodes, each have both children
+
+#### Intuition
+
+
+First, if count of nodes is `even`, BFT is not possible.
+
+Let's observe how the Trees are growing:
+
+![image.png](https://assets.leetcode.com/users/images/c70461da-13a0-48ce-85a8-8efdeaa5081a_1690090999.931624.png)
+
+There are `n / 2` rounds of adding a new pair of nodes to each leaf of each Tree in the latest generation.
+
+Some duplicate trees occur, so we need to calculate a `hash`.
+
+#### Approach
+
+Let's implement it in a BFS manner. 
+* to avoid collision of the `hash`, add some symbols to indicate a level `[...]`
+
+#### Complexity
+
+- Time complexity:
+$$O(n^4 2^n)$$, n generations, queue size grows in 2^n manner, count of leafs grows by 1 each generation, so it's x + (x + 1) + .. + (x + n), giving n^2, another n for collection leafs, and another for hash and clone
+
+- Space complexity:
+$$O(n^3 2^n)$$
+
+#### Code
+
+```
+
+    fun clone(curr: TreeNode): TreeNode = TreeNode(0).apply {
+      curr.left?.let { left = clone(it) }
+      curr.right?.let { right = clone(it) }
+    }
+    fun hash(curr: TreeNode): String = 
+      "[${curr.`val`} ${ curr.left?.let { hash(it) } } ${ curr.right?.let { hash(it) } }]"
+    fun collectLeafs(curr: TreeNode): List<TreeNode> =
+      if (curr.left == null && curr.right == null) listOf(curr)
+      else collectLeafs(curr.left!!) + collectLeafs(curr.right!!) 
+    fun allPossibleFBT(n: Int): List<TreeNode?> = if (n % 2 == 0) listOf() else
+      with (ArrayDeque<TreeNode>().apply { add(TreeNode(0)) }) {
+        val added = HashSet<String>()
+        repeat (n / 2) { rep ->
+          repeat(size) {
+            val root = poll()
+            collectLeafs(root).forEach {
+              it.left = TreeNode(0)
+              it.right = TreeNode(0)
+              if (added.add(hash(root))) add(clone(root))
+              it.left = null
+              it.right = null
+            }
+          }
+        }
+        toList()
+      }
+
+```
+
 # 22.07.2023
 [688. Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/description/) medium
 [blog post](https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3799262/kotlin-example-how-to-count-probabilities/)
