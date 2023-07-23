@@ -85,6 +85,10 @@ $$O(n^3 2^n)$$
 
 ```
 
+![image.png](https://assets.leetcode.com/users/images/06614986-7190-4cbf-b0d5-0cf858d4d7f6_1690094533.460591.png)
+
+effective solution. It can be described as "for every N generate every possible split of [0..i] [i+1..N]". Subtrees are also made of all possible combinations.
+
 # 22.07.2023
 [688. Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/description/) medium
 [blog post](https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3799262/kotlin-example-how-to-count-probabilities/)
