@@ -12,6 +12,86 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 24.07.2023
+[50. Pow(x, n)](https://leetcode.com/problems/powx-n/description/) medium
+[blog post](https://leetcode.com/problems/powx-n/solutions/3808015/kotlin-corner-cases/)
+[substack](https://dmitriisamoilenko.substack.com/p/24072023-50-powx-n?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/8c671a6e-c81d-4749-b395-3d733173383f_1690171217.571441.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/285
+
+#### Problem TLDR
+
+x^n
+
+#### Intuition
+
+We can use tabulations technique: compute all powers of 2 and reuse them.
+
+```
+      // 2          1
+      // 2*2 = 4    2
+      // 4*4 = 16   4
+      // 16*16=256  8
+      // 2^8 * 2^8 = 2^16   16
+      // 2^31 = 2^16 * 2^4 * 2
+```
+
+After computing the growing part, we need to find the optimal way to split the `reminder`. For example, x^31 = x^16 * x^5, then x^5 = x^4 * x^1. To find the closest power of 2, we can take the `most significant bit`, which is an `x & -x` bit operation.
+
+```
+        // 5 -> 4   101 -> 100
+        // 7 -> 4   111 -> 100
+        // 9 -> 8  1001 -> 1000
+```
+
+#### Approach
+
+* there is a corner case of the negative powers, just invert x -> 1/x
+* careful with `Int.MIN_VALUE`, as `abs(MIN_VALUE) == abs(-MIN_VALUE)`
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+
+    fun myPow(x: Double, n: Int): Double {
+      if (n == 0) return 1.0
+      val mul = if (n < 0) 1 / x else x
+      val exp = if (n == Int.MIN_VALUE) Int.MAX_VALUE else Math.abs(n)
+
+      val cache = DoubleArray(32)
+      var k = mul
+      var f = 1
+      cache[0] = k
+      while (f <= exp / 2) {
+        k = k * k
+        f = f * 2
+        cache[Integer.numberOfTrailingZeros(f)] = k
+      }
+      while (f < exp) {
+        val e = exp - f    
+
+        val pow = e and -e
+        k = k * cache[Integer.numberOfTrailingZeros(pow)]
+        f = f + pow
+      }
+      if (n == Int.MIN_VALUE) k = k * mul
+      return k
+    }
+
+```
+
 # 23.07.2023
 [894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/) medium
 [blog post](https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3804245/kotlin-brute-force/)
