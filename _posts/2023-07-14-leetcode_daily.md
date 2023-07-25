@@ -12,6 +12,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 25.07.2023
+[852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) medium
+[blog post](https://leetcode.com/problems/peak-index-in-a-mountain-array/solutions/3812258/kotlin-binary-search/)
+[substack](https://dmitriisamoilenko.substack.com/p/25072023-852-peak-index-in-a-mountain?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/df9de586-d1a9-4a38-b48f-69b85d103223_1690255118.0640936.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/286
+
+#### Problem TLDR
+
+Mountain pattern `index` in the array in log time
+
+#### Intuition
+
+Do the Binary Search of the biggest growing index
+
+#### Approach
+
+For more robust Binary Search code:
+* use inclusive `lo` and `hi`
+* do the last check `lo == hi`
+* always write the result `ind = mid` if conditions are met
+* always move the borders `lo = mid - 1`, `hi = mid + 1`
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun peakIndexInMountainArray(arr: IntArray): Int {
+        var lo = 1
+        var hi = arr.lastIndex
+        var ind = -1
+        while (lo <= hi) {
+          val mid = lo + (hi - lo) / 2
+          if (arr[mid] > arr[mid - 1]) {
+            ind = mid
+            lo = mid + 1
+          } else hi = mid - 1
+        }
+        return ind
+    }
+
+```
+
 # 24.07.2023
 [50. Pow(x, n)](https://leetcode.com/problems/powx-n/description/) medium
 [blog post](https://leetcode.com/problems/powx-n/solutions/3808015/kotlin-corner-cases/)
