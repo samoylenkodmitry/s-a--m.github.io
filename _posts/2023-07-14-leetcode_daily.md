@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [664. Strange Printer](https://leetcode.com/problems/strange-printer/description/) hard
 [blog post](https://leetcode.com/problems/strange-printer/solutions/3836489/kotlin-dp-n-3-find-the-best-split/)
 [substack](https://dmitriisamoilenko.substack.com/p/30072023-664-strange-printer?sd=pf)
-![image.png](https://assets.leetcode.com/users/images/2ebd1ea2-8faa-4da0-8e66-1265fec0333f_1690692570.3635926.png)
+![image.png](https://assets.leetcode.com/users/images/1c486e38-8e91-4419-9fb9-e4ec90cac13d_1690694773.6692946.png)
 
 #### Join me on Telegram
 
@@ -65,14 +65,9 @@ $$O(n^2)$$
         val dp = Array(s.length) { IntArray(s.length) { -1 } }
         for (to in 0..s.lastIndex) {
           for (from in to downTo 0) {
-            dp[from][to] = if (from == to) 1 
-            else if (to == from + 1) { if (s[from] == s[to]) 1 else 2 }
-            else if (s[from] == s[from + 1]) dp[from + 1][to]
-            else (from..to - 1).asSequence().map { dp[from][it] + dp[it + 1][to] }.min()!!
-            .let {
-              // abca = ab + ca - aaaa
-              if (s[from] == s[to]) it - 1 else it
-            }
+            dp[from][to] = if (to - from <= 1) { if (s[from] == s[to]) 1 else 2 }
+              else if (s[from] == s[to]) dp[from + 1][to]
+              else (from..to - 1).asSequence().map { dp[from][it] + dp[it + 1][to] }.min()!!
           }
         }
         return dp[0][s.lastIndex]
