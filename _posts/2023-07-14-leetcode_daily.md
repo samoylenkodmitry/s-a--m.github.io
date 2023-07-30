@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [664. Strange Printer](https://leetcode.com/problems/strange-printer/description/) hard
 [blog post](https://leetcode.com/problems/strange-printer/solutions/3836489/kotlin-dp-n-3-find-the-best-split/)
 [substack](https://dmitriisamoilenko.substack.com/p/30072023-664-strange-printer?sd=pf)
-![image.png](https://assets.leetcode.com/users/images/1c486e38-8e91-4419-9fb9-e4ec90cac13d_1690694773.6692946.png)
+![image.png](https://assets.leetcode.com/users/images/656f3dba-4922-4aa2-a42f-76b8264dc7be_1690698440.1121671.png)
 
 #### Join me on Telegram
 
@@ -61,16 +61,15 @@ $$O(n^2)$$
 ```kotlin
 
 
-    fun strangePrinter(s: String): Int {
-        val dp = Array(s.length) { IntArray(s.length) { -1 } }
-        for (to in 0..s.lastIndex) {
-          for (from in to downTo 0) {
-            dp[from][to] = if (to - from <= 1) { if (s[from] == s[to]) 1 else 2 }
-              else if (s[from] == s[to]) dp[from + 1][to]
-              else (from..to - 1).asSequence().map { dp[from][it] + dp[it + 1][to] }.min()!!
-          }
-        }
-        return dp[0][s.lastIndex]
+    fun strangePrinter(s: String): Int = with(Array(s.length) { IntArray(s.length) }) {
+      s.mapIndexed { to, sto ->
+        (to downTo 0).map { from -> when {
+            to - from <= 1 -> if (s[from] == sto) 1 else 2
+            s[from] == sto -> this[from + 1][to]
+            else -> (from until to).map { this[from][it] + this[it + 1][to] }.min()!!
+          }.also { this[from][to] = it }
+        }.last()!!
+      }.last()!!
     }
 
 ```
