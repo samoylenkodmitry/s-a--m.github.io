@@ -12,6 +12,74 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 30.07.2023
+[664. Strange Printer](https://leetcode.com/problems/strange-printer/description/) hard
+[blog post](https://leetcode.com/problems/strange-printer/solutions/3836489/kotlin-dp-n-3-find-the-best-split/)
+[substack](https://dmitriisamoilenko.substack.com/p/30072023-664-strange-printer?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/2ebd1ea2-8faa-4da0-8e66-1265fec0333f_1690692570.3635926.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/291
+
+#### Problem TLDR
+
+Minimum continuous overrides by the same character to make a string
+
+#### Intuition
+
+The main idea comes to mind when you consider some `palindromes` as example:
+
+```
+
+abcccba
+
+```
+
+When we consider the next character `ccc + b`, we know, that the optimal number of repaints is `Nc + 1`. Or, `bccc + b`, the optimal is `1 + Nc`.
+
+However, the Dynamic Programming formula for finding a palindrome didn't solve this case: `ababa`, as clearly, the middle `a` can be written in a single path `aaaaa`.
+
+Another idea, is to split the string: `ab + aba`. Number for `ab` = 2, and for `aba` = 2. But, as first == last, we paint `a` only one time, so `dp[from][to] = dp[from][a] + dp[a + 1][to]`.
+
+As we didn't know if our split is the optimal one, we must consider all of them.
+
+#### Approach
+
+* let's write bottom up DP
+
+#### Complexity
+
+- Time complexity:
+$$O(n^3)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+
+    fun strangePrinter(s: String): Int {
+        val dp = Array(s.length) { IntArray(s.length) { -1 } }
+        for (to in 0..s.lastIndex) {
+          for (from in to downTo 0) {
+            dp[from][to] = if (from == to) 1 
+            else if (to == from + 1) { if (s[from] == s[to]) 1 else 2 }
+            else if (s[from] == s[from + 1]) dp[from + 1][to]
+            else (from..to - 1).asSequence().map { dp[from][it] + dp[it + 1][to] }.min()!!
+            .let {
+              // abca = ab + ca - aaaa
+              if (s[from] == s[to]) it - 1 else it
+            }
+          }
+        }
+        return dp[0][s.lastIndex]
+    }
+
+```
+
 # 29.07.2023
 [808. Soup Servings](https://leetcode.com/problems/soup-servings/description/) medium
 [blog post](https://leetcode.com/problems/soup-servings/solutions/3831785/kotlin-generate-all-the-answers/)
