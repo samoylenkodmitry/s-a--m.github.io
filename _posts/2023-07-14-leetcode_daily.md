@@ -12,6 +12,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 31.07.2023
+[712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/) medium
+[blog post](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/solutions/3840916/kotlin-dfs-memo/)
+[substack](https://dmitriisamoilenko.substack.com/p/31072023-712-minimum-ascii-delete?sd=pf
+![image.png](https://assets.leetcode.com/users/images/aa60b213-d6bd-44a3-900e-3fbcc18580f9_1690774093.9082277.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/292
+
+#### Problem TLDR
+
+Minimum removed chars sum to make strings equal
+
+#### Intuition
+
+This is a known Dynamic Programming problem about the minimum edit distance. We can walk both strings and at each time choose what char to take and what to skip. The result is dependent only from the arguments, so can be cached.
+
+
+#### Approach
+
+Let's use DFS and memo.
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun minimumDeleteSum(s1: String, s2: String): Int {
+      val cache = mutableMapOf<Pair<Int, Int>, Int>()
+      fun dfs(p1: Int, p2: Int): Int = cache.getOrPut(p1 to p2) { when {
+        p1 == s1.length && p2 == s2.length -> 0
+        p1 == s1.length -> s2.drop(p2).map { it.toInt() }.sum()!!
+        p2 == s2.length -> s1.drop(p1).map { it.toInt() }.sum()!!
+        s1[p1] == s2[p2] -> dfs(p1 + 1, p2 + 1)
+        else -> minOf(s1[p1].toInt() + dfs(p1 + 1, p2), s2[p2].toInt() + dfs(p1, p2 + 1))
+      } }
+      return dfs(0, 0)
+    }
+
+```
+
 # 30.07.2023
 [664. Strange Printer](https://leetcode.com/problems/strange-printer/description/) hard
 [blog post](https://leetcode.com/problems/strange-printer/solutions/3836489/kotlin-dp-n-3-find-the-best-split/)
