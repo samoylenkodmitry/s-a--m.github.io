@@ -12,6 +12,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 02.08.2023
+[46. Permutations](https://leetcode.com/problems/permutations/description/) medium
+[blog post](https://leetcode.com/problems/permutations/solutions/3850880/kotlin-dfs-backtrack-bitmask/)
+[substack](https://dmitriisamoilenko.substack.com/p/02082023-46-permutations?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/c462c79b-93f8-4f59-83fc-26f596293e7c_1690946225.5033464.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/296
+
+#### Problem TLDR
+
+List of all numbers permutations
+
+#### Intuition
+
+As the total count of number is small, we can just brute force the solution. We can use DFS and a backtracking technique: add number to the list pre-order then remove it post-order.
+
+#### Approach
+
+Iterate over all numbers and choose every number not in a `bit mask`
+
+#### Complexity
+
+- Time complexity:
+$$O(n * n!)$$, as we go `n * (n - 1) * (n - 2) * .. * 2 * 1`
+
+- Space complexity:
+$$(n!)$$
+
+#### Code
+
+```kotlin
+
+    fun permute(nums: IntArray): List<List<Int>> = mutableListOf<List<Int>>().apply {
+      val list = mutableListOf<Int>()
+      fun dfs(mask: Int): Unit = if (list.size == nums.size) this += list.toList()
+        else nums.forEachIndexed { i, n ->
+          if (mask and (1 shl i) == 0) {
+            list += n
+            dfs(mask or (1 shl i))
+            list.removeAt(list.lastIndex)
+          }
+        }
+      dfs(0)
+    }
+
+```
+
 # 01.08.2023
 [77. Combinations](https://leetcode.com/problems/combinations/description/) medium
 [blog post](https://leetcode.com/problems/combinations/solutions/3845775/kotlin-bitmask/)
@@ -45,7 +94,7 @@ $$O(n2^n)$$
 
 #### Code
 
-```
+```kotlin
 
     fun combine(n: Int, k: Int): List<List<Int>> = (0 until (1 shl n))
       .filter { Integer.bitCount(it) == k }
