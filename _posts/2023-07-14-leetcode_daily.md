@@ -12,6 +12,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 04.08.2023
+[139. Word Break](https://leetcode.com/problems/word-break/description/) medium
+[blog post](https://leetcode.com/problems/word-break/solutions/3860861/kotlin-trie-dfs-cache/)
+[substack](https://dmitriisamoilenko.substack.com/p/04082023-139-word-break?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/dfde4ffe-23bd-46df-b8e2-c90cdea9f3ca_1691120913.9512079.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/298
+
+#### Problem TLDR
+
+If a `word` is a `wordDict` concatenation
+
+#### Intuition
+
+To quickly find out if a sequence, we can use `Trie`. Then, we can search with DFS any possible split. As the result only depends on the argument, we can safely cache it.
+
+#### Approach
+
+Write a `Trie` and DFS, no tricks here.
+
+#### Complexity
+
+- Time complexity:
+$$O(wn)$$, w—is words count in `s` 
+
+- Space complexity:
+$$O(w + 26^l)$$, l—is the longest word in a dict
+
+#### Code
+
+```kotlin
+
+    class Trie(var isWord: Boolean = false) {
+      val next = Array<Trie?>(26) { null }
+      operator fun get(c: Char): Trie? = next[ind(c)]
+      fun ind(c: Char) = c.toInt() - 'a'.toInt()
+      fun add(w: String) {
+        var t = this
+        w.forEach { c -> t = t[c] ?: Trie().also { t.next[ind(c)] = it } }
+        t.isWord = true
+      }
+    }
+    fun wordBreak(s: String, wordDict: List<String>): Boolean {
+        val root = Trie()
+        wordDict.forEach { root.add(it) }
+        val cache = mutableMapOf<Int, Boolean>()
+        fun dfs(pos: Int): Boolean = pos == s.length || cache.getOrPut(pos) {
+          var t: Trie? = root
+          s.withIndex().asSequence().drop(pos).takeWhile { t != null }
+          .any { (i, c) ->
+            t = t?.get(c)
+            t?.isWord == true && dfs(i + 1)
+          }
+        }
+        return dfs(0)
+    }
+
+```
+
 # 03.08.2023
 [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) medium
 [blog post](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solutions/3855945/kotlin-dfs-backtracking/)
