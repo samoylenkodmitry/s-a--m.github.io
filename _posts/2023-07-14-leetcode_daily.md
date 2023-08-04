@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [139. Word Break](https://leetcode.com/problems/word-break/description/) medium
 [blog post](https://leetcode.com/problems/word-break/solutions/3860861/kotlin-trie-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/04082023-139-word-break?sd=pf)
-![image.png](https://assets.leetcode.com/users/images/dfde4ffe-23bd-46df-b8e2-c90cdea9f3ca_1691120913.9512079.png)
+![image.png](https://assets.leetcode.com/users/images/d58665b5-18be-41d4-a5c1-939bb290446f_1691122369.09276.png)
 
 #### Join me on Telegram
 
@@ -44,27 +44,21 @@ $$O(w + 26^l)$$, l—is the longest word in a dict
 
 #### Code
 
-```kotlin
-
-    class Trie(var isWord: Boolean = false) {
-      val next = Array<Trie?>(26) { null }
-      operator fun get(c: Char): Trie? = next[ind(c)]
-      fun ind(c: Char) = c.toInt() - 'a'.toInt()
-      fun add(w: String) {
-        var t = this
-        w.forEach { c -> t = t[c] ?: Trie().also { t.next[ind(c)] = it } }
-        t.isWord = true
-      }
-    }
+```
+    class Trie(var isWord: Boolean = false) { val next = mutableMapOf<Char, Trie>() }
     fun wordBreak(s: String, wordDict: List<String>): Boolean {
         val root = Trie()
-        wordDict.forEach { root.add(it) }
+        wordDict.forEach { 
+          var t = root
+          it.forEach { t = t.next.getOrPut(it) { Trie() } }
+          t.isWord = true
+        }
         val cache = mutableMapOf<Int, Boolean>()
         fun dfs(pos: Int): Boolean = pos == s.length || cache.getOrPut(pos) {
           var t: Trie? = root
           s.withIndex().asSequence().drop(pos).takeWhile { t != null }
           .any { (i, c) ->
-            t = t?.get(c)
+            t = t?.next?.get(c)
             t?.isWord == true && dfs(i + 1)
           }
         }
