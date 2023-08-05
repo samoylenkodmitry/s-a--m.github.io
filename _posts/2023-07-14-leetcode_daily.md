@@ -70,7 +70,8 @@ $$O(n!)$$, is a number of permutations
 
 ```
 
-Another divide-and-conquer solution, that I didn't think of ![image.png](https://assets.leetcode.com/users/images/46ab15b0-21f1-42c0-a073-572e41c33e0f_1691213374.8420622.png)
+Another divide-and-conquer solution, that I didn't think of
+![image.png](https://assets.leetcode.com/users/images/470b3a9f-5e0b-432b-a1fc-33a966ab2d36_1691213657.5075893.png)Another divide-and-conquer solution, that I didn't think of ![image.png](https://assets.leetcode.com/users/images/46ab15b0-21f1-42c0-a073-572e41c33e0f_1691213374.8420622.png)
 
 
 # 04.08.2023
