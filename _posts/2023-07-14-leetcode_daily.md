@@ -70,6 +70,9 @@ $$O(n!)$$, is a number of permutations
 
 ```
 
+Another divide-and-conquer solution, that I didn't think of ![image.png](https://assets.leetcode.com/users/images/46ab15b0-21f1-42c0-a073-572e41c33e0f_1691213374.8420622.png)
+
+
 # 04.08.2023
 [139. Word Break](https://leetcode.com/problems/word-break/description/) medium
 [blog post](https://leetcode.com/problems/word-break/solutions/3860861/kotlin-trie-dfs-cache/)
