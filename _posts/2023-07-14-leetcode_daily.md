@@ -12,6 +12,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 06.08.2023
+[920. Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/description/) hard
+[blog post](https://leetcode.com/problems/number-of-music-playlists/solutions/3870246/kotlin-dfs-cache/)
+[substack](https://dmitriisamoilenko.substack.com/p/06082023-920-number-of-music-playlists?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/5a53bb28-cfca-4a8c-a6a7-7502c76f519d_1691297489.930826.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/300
+
+#### Problem TLDR
+
+Playlists number playing `n` songs `goal` times, repeating each once in a `k` times
+
+#### Intuition
+
+We can search through the problem space, taking each new song with the given rules: song can be repeated only after another `k` song got played. When we have the `goal` songs, check if all distinct songs are played.
+
+We can cache the solution by `curr` and `used` map, but that will give TLE.
+
+The hard trick here is that the result only depends on how many distinct songs are played.
+
+#### Approach
+
+Use DFS and memo.
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun numMusicPlaylists(n: Int, goal: Int, k: Int): Int {
+        val cache = mutableMapOf<Pair<Int, Int>, Long>()
+        fun dfs(curr: Int, used: Map<Int, Int>): Long = cache.getOrPut(curr to used.size) {
+          if (curr > goal) { 
+            if ((1..n).all { used.contains(it) }) 1L else 0L 
+          } else (1..n).asSequence().map { i -> 
+              if (curr <= used[i] ?: 0) 0L else
+                dfs(curr + 1, used.toMutableMap().apply { this[i] = curr + k })
+            }.sum()!! % 1_000_000_007L
+        }
+        return dfs(1, mapOf()).toInt()
+    }
+
+```
+
 # 05.08.2023
 [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/description/) medium
 [blog post](https://leetcode.com/problems/unique-binary-search-trees-ii/solutions/3865256/kotlin-backtrack-bitmask-hash/)
