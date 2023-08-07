@@ -12,6 +12,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 07.08.2023
+[74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) medium
+[blog post](https://leetcode.com/problems/search-a-2d-matrix/solutions/3874453/kotlin-binary-search/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07082023-74-search-a-2d-matrix?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/6b29bcb9-d3c4-4b4c-8072-5ad50ac6c9ab_1691378496.4966607.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/301
+
+#### Problem TLDR
+
+2D Binary Search
+
+#### Intuition
+
+Just a Binary Search
+
+#### Approach
+
+For more robust code:
+* inclusive `lo` and `hi`
+* the last condition `lo == hi`
+* move borders `lo = mid + 1`, `hi = mid - 1`
+* check the result
+* use built-in functions
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n*m))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+
+    fun searchMatrix(matrix: Array<IntArray>, target: Int): Boolean {
+        var lo = 0
+        var hi = matrix.lastIndex
+        while (lo <= hi) {
+          val mid = lo + (hi - lo) / 2
+          val row = matrix[mid]
+          if (target in row.first()..row.last()) 
+            return row.binarySearch(target) >= 0
+          if (target < row.first()) hi = mid - 1 else lo = mid + 1
+        }
+        return false
+    }
+
+```
+
 # 06.08.2023
 [920. Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/description/) hard
 [blog post](https://leetcode.com/problems/number-of-music-playlists/solutions/3870246/kotlin-dfs-cache/)
