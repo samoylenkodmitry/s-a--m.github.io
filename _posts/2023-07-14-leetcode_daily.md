@@ -12,6 +12,69 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 08.08.2023
+[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) medium
+[blog post](https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/3879746/kotlin-binary-search/)
+[substack](https://dmitriisamoilenko.substack.com/p/08082023-33-search-in-rotated-sorted?sd=pf)
+![image.png](https://assets.leetcode.com/users/images/91138783-b450-4923-95fa-8a30b6fc9b4a_1691467196.8259437.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/302
+
+#### Problem TLDR
+
+Binary Search in a shifted array
+
+#### Intuition
+
+The special case is when `lo` > `hi`, otherwise it is a Binary Search.
+
+Then there are two cases:
+* if `lo < mid` - monotonic part is on the left
+* `lo >= mid` - monotonic part is on the right
+
+Check the monotonic part immediately, otherwise go to the other part.  
+
+#### Approach
+
+For more robust code:
+* inclusive `lo` and `hi`
+* check for target `target == nums[mid]`
+* move `lo = mid + 1`, `hi = mid - 1`
+* the last case `lo == hi`
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin
+
+    fun search(nums: IntArray, target: Int): Int {
+      var lo = 0 
+      var hi = nums.lastIndex
+      while (lo <= hi) {
+        val mid = lo + (hi - lo) / 2
+        if (target == nums[mid]) return mid
+        if (nums[lo] > nums[hi]) {
+          if (nums[lo] > nums[mid]) {
+            if (target < nums[mid] || target > nums[hi]) hi = mid - 1 else lo = mid + 1
+          } else {
+            if (target > nums[mid] || target < nums[lo]) lo = mid + 1 else hi = mid - 1
+          }
+        } else if (target < nums[mid]) hi = mid - 1 else lo = mid + 1
+      }
+      return -1
+    }
+
+```
+
 # 07.08.2023
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) medium
 [blog post](https://leetcode.com/problems/search-a-2d-matrix/solutions/3874453/kotlin-binary-search/)
