@@ -15,7 +15,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 # 12.08.2023
 [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) medium
 [blog post](https://leetcode.com/problems/unique-paths-ii/solutions/3897324/kotlin-one-row-dp/)
-[substack]()
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12082023-63-unique-paths-ii?utm_campaign=post&utm_medium=web)
 
 ![image.png](https://assets.leetcode.com/users/images/7935abc6-5a2a-404a-ae9e-f4ce2969e28e_1691811918.832756.png)
 
