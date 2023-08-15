@@ -12,6 +12,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 15.08.2023
+[86. Partition List](https://leetcode.com/problems/partition-list/description/) medium
+[blog post](https://leetcode.com/problems/partition-list/solutions/3911144/kotlin-dummies/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15082023-86-partition-list?utm_campaign=post&utm_medium=web)
+
+
+![image.png](https://assets.leetcode.com/users/images/eb03df1c-5b07-4b18-98c5-f2a9c98a6db1_1692069418.1315079.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/309
+
+#### Problem TLDR
+
+Partition a Linked List by `x` value
+
+#### Intuition
+
+Keep two nodes for `less` and for `more` than x, and add to them, iterating over the list. Finally, concatenate `more` to `less`.
+
+#### Approach
+
+* To avoid cycles, make sure to set each `next` to `null`
+* Use `dummy head` technique
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+
+    fun partition(head: ListNode?, x: Int): ListNode? {
+        val dummyLess = ListNode(0)
+        val dummyMore = ListNode(0)
+        var curr = head
+        var less = dummyLess
+        var more = dummyMore
+        while (curr != null) {
+          if (curr.`val` < x) {
+            less.next = curr
+            less = curr
+          } else {
+            more.next = curr
+            more = curr
+          }
+          val next = curr.next
+          curr.next = null
+          curr = next
+        }
+        less.next = dummyMore.next
+        return dummyLess.next
+    }
+
+```
+
 # 14.08.2023
 [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) medium
 [blog post](https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/3906841/kotlin-quickselect/)
