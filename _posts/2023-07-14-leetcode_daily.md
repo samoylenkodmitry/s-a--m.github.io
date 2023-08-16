@@ -12,6 +12,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 16.08.2023
+[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) medium
+[blog post](https://leetcode.com/problems/sliding-window-maximum/solutions/3915981/kotlin-monotonic-queue/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16082023-239-sliding-window-maximum?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/44857972-1d59-4ab5-8fcf-46f186d7c96c_1692157143.5224957.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/310
+
+#### Problem TLDR
+
+List of sliding window's maximums
+
+#### Intuition
+
+To quickly find a maximum in a sliding window, consider example:
+
+```
+Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+Window position                Max
+---------------               -----
+[#  3  -1]  _  _  _  _  _       3
+ _ [3  -1  -3] _  _  _  _       3
+ _  _ [ #   #  5] _  _  _       5
+ _  _   _ [ #  5  3] _  _       5
+ _  _   _   _ [#  #  6] _       6
+ _  _   _   _  _ [#  #  7]      7
+
+```
+After each new maximum appends to the end of the window, they become the maximum until the window slides it out, so all lesser positions to the left of it are irrelevant.
+
+#### Approach
+
+We can use a decreasing `Stack` technique to remove all the smaller elements. However, to maintain a window size, we'll need a `Queue`.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun maxSlidingWindow(nums: IntArray, k: Int): IntArray = with(ArrayDeque<Int>()) {
+        val res = mutableListOf<Int>()
+        nums.forEachIndexed { i, x ->
+          while (isNotEmpty() && nums[peekLast()] < x) removeLast()
+          add(i)
+          while (isNotEmpty() && i - peekFirst() + 1 > k) removeFirst()
+          if (i >= k - 1) res += nums[peekFirst()]
+        }
+        return res.toIntArray()
+    }
+
+```
+
 # 15.08.2023
 [86. Partition List](https://leetcode.com/problems/partition-list/description/) medium
 [blog post](https://leetcode.com/problems/partition-list/solutions/3911144/kotlin-dummies/)
