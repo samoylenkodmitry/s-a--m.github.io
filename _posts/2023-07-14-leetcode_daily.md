@@ -12,6 +12,73 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 17.08.2023
+[542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) medium
+[blog post](https://leetcode.com/problems/01-matrix/solutions/3920548/kotlin-bfs/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17082023-542-01-matrix?utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/d9ebff39-ca29-4383-af90-eeac1b874465_1692245145.622329.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/311
+
+#### Problem TLDR
+
+Distances to `0` in an `0-1` matrix
+
+#### Intuition
+
+Depth-First search will not work, as the path to `0` must radiate to all directions.
+
+We can start a Breadth-First Search waves from each `0`. Each BFS step increases distance by 1.
+
+#### Approach
+
+* use `dir` array for a simpler code
+* avoid rewriting the cells
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+##### Code
+
+```
+
+    fun updateMatrix(mat: Array<IntArray>): Array<IntArray> {
+      val res = Array(mat.size) { IntArray(mat[0].size) { -1 } }
+      val dir = listOf(-1 to 0, 0 to 1, 1 to 0, 0 to -1)
+      with(ArrayDeque<Pair<Int, Int>>()) {
+        for (y in 0..mat.lastIndex)
+          for (x in 0..mat[0].lastIndex)
+            if (mat[y][x] == 0) add(y to x)
+      
+        var dist = 0
+        while (isNotEmpty()) {
+          repeat(size) {
+            val (y, x) = poll()
+            if (res[y][x] == -1) {
+              res[y][x] = dist
+              for ((dx, dy) in dir) {
+                val y1 = y + dy
+                val x1 = x + dx
+                if (y1 in 0..mat.lastIndex && x1 in 0..mat[0].lastIndex) 
+                  add(y1 to x1)
+              }
+            }
+          }
+          dist++
+        }
+      }
+      return res
+    }
+
+```
+
 # 16.08.2023
 [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) medium
 [blog post](https://leetcode.com/problems/sliding-window-maximum/solutions/3915981/kotlin-monotonic-queue/)
