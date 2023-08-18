@@ -12,6 +12,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 18.08.2023
+[1615. Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/description/) medium
+[blog post](https://leetcode.com/problems/maximal-network-rank/solutions/3924953/kotlin-n-2/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18082023-1615-maximal-network-rank?utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/43ec3975-e50c-4c58-9a3d-0253d377f153_1692328577.823163.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/312
+
+#### Problem TLDR
+
+Max edges count for each pair of nodes
+
+#### Intuition
+
+We can just count edges for each node, then search for max in an n^2 for-loop.
+
+#### Approach
+
+* use a `HashSet` to check `contains` in O(1)
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$, there are up to n^2 edges
+
+#### Code
+
+```kotlin
+
+    fun maximalNetworkRank(n: Int, roads: Array<IntArray>): Int {
+        val fromTo = mutableMapOf<Int, HashSet<Int>>()
+        roads.forEach { (from, to) ->
+          fromTo.getOrPut(from) { HashSet() } += to
+          fromTo.getOrPut(to) { HashSet() } += from
+        }
+        var max = 0
+        for (a in 0 until n) {
+          for (b in a + 1 until n) {
+            val countA = fromTo[a]?.size ?: 0
+            val countB = fromTo[b]?.size ?: 0
+            val direct = fromTo[a]?.contains(b) ?: false
+            max = maxOf(max, countA + countB - (if (direct) 1 else 0))
+          }
+        }
+        return max
+    }
+
+```
+
 # 17.08.2023
 [542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) medium
 [blog post](https://leetcode.com/problems/01-matrix/solutions/3920548/kotlin-bfs/)
