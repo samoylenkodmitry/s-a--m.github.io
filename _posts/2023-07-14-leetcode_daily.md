@@ -55,29 +55,27 @@ $$O(n + n + E)$$
 
 ```kotlin
 
-
-    fun Map<Int, Set<Int>>.order(count: Int): List<Int> {
-      val indegree = IntArray(count)
-      values.onEach { it.onEach { indegree[it]++ } }
-      val queue = ArrayDeque<Int>()
-      indegree.forEachIndexed { i, d -> if (d == 0) queue.add(i) }
-      return generateSequence { queue.poll() }
-          .onEach { this[it]?.onEach { if (--indegree[it] == 0) queue += it } }
-          .toList().takeIf { it.size == count } ?: listOf()
+    class G(count: Int, val fromTo: MutableMap<Int, MutableSet<Int>> = mutableMapOf()) {
+      operator fun get(k: Int) = fromTo.getOrPut(k) { mutableSetOf() }
+      val order: List<Int> by lazy {
+        val indegree = IntArray(count)
+        fromTo.values.onEach { it.onEach { indegree[it]++ } }
+        val queue = ArrayDeque<Int>(indegree.indices.filter { indegree[it] == 0 })
+        generateSequence { queue.poll() }
+            .onEach { fromTo[it]?.onEach { if (--indegree[it] == 0) queue += it } }
+            .toList().takeIf { it.size == count } ?: listOf()
+      }
     }
     fun sortItems(n: Int, m: Int, group: IntArray, beforeItems: List<List<Int>>): IntArray {
       var groupsCount = m
       for (i in 0 until n) if (group[i] == -1) group[i] = groupsCount++
-      val fromTo = mutableMapOf<Int, MutableSet<Int>>()
-      val fromToG = mutableMapOf<Int, MutableSet<Int>>()
+      val items = G(n)
+      val groups = G(groupsCount)
       for (to in beforeItems.indices)
         for (from in beforeItems[to])
-          if (group[to] != group[from]) 
-            fromToG.getOrPut(group[from]) { mutableSetOf() } += group[to]
-          else fromTo.getOrPut(from) { mutableSetOf() } += to
-      val itemsOrder = fromTo.order(n)
-      return fromToG.order(groupsCount)
-        .flatMap { g -> itemsOrder.filter { group[it] == g } }.toIntArray()
+          if (group[to] == group[from]) items[from] += to
+          else groups[group[from]] += group[to]
+      return groups.order.flatMap { g -> items.order.filter { group[it] == g } }.toIntArray()
     }
 
 ```
