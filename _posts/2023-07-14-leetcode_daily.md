@@ -17,7 +17,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3935139/kotlin-idea-tricks/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20082023-1203-sort-items-by-groups?utm_campaign=post&utm_medium=web)
 
-![image.png](https://assets.leetcode.com/users/images/1567f67a-0972-4bbe-b4b2-6aa6542e6e8e_1692514329.026388.png)
+![image.png](https://assets.leetcode.com/users/images/b501cc63-4d37-4b77-aa39-af51d6c4bf43_1692533761.8641148.png)
 
 #### Join me on Telegram
 
@@ -58,31 +58,26 @@ $$O(n + n + E)$$
 
     fun Map<Int, Set<Int>>.order(count: Int): List<Int> {
       val indegree = IntArray(count)
-      values.forEach { it.forEach { indegree[it]++ } }
-      val res = mutableListOf<Int>()
+      values.onEach { it.onEach { indegree[it]++ } }
       val queue = ArrayDeque<Int>()
       indegree.forEachIndexed { i, d -> if (d == 0) queue.add(i) }
-      while (queue.isNotEmpty()) {
-        val curr = queue.poll()
-        res += curr
-        this[curr]?.forEach { if (--indegree[it] == 0) queue += it }
-      }
-      return@order if (indegree.any { it > 0 }) listOf() else res
+      return generateSequence { queue.poll() }
+          .onEach { this[it]?.onEach { if (--indegree[it] == 0) queue += it } }
+          .toList().takeIf { it.size == count } ?: listOf()
     }
     fun sortItems(n: Int, m: Int, group: IntArray, beforeItems: List<List<Int>>): IntArray {
       var groupsCount = m
       for (i in 0 until n) if (group[i] == -1) group[i] = groupsCount++
       val fromTo = mutableMapOf<Int, MutableSet<Int>>()
       val fromToG = mutableMapOf<Int, MutableSet<Int>>()
-      beforeItems.forEachIndexed { to, listFrom ->
-        listFrom.forEach { from ->
-          if (group[to] != group[from]) fromToG.getOrPut(group[from]) { mutableSetOf() } += group[to]
-          fromTo.getOrPut(from) { mutableSetOf() } += to
-        }
-      } 
+      for (to in beforeItems.indices)
+        for (from in beforeItems[to])
+          if (group[to] != group[from]) 
+            fromToG.getOrPut(group[from]) { mutableSetOf() } += group[to]
+          else fromTo.getOrPut(from) { mutableSetOf() } += to
       val itemsOrder = fromTo.order(n)
       return fromToG.order(groupsCount)
-        .map { g -> itemsOrder.filter { group[it] == g } }.flatten().toIntArray()
+        .flatMap { g -> itemsOrder.filter { group[it] == g } }.toIntArray()
     }
 
 ```
