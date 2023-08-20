@@ -12,6 +12,81 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 
+# 20.08.2023
+[1203. Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/) hard
+[blog post](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3935139/kotlin-idea-tricks/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20082023-1203-sort-items-by-groups?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/1567f67a-0972-4bbe-b4b2-6aa6542e6e8e_1692514329.026388.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/314
+
+#### Problem TLDR
+
+Sort items by groups and in groups given dependencies.
+
+#### Intuition
+
+Use hint.
+
+We can split items by groups and check groups dependencies. 
+Next, do Topological Sort for groups and then do Topological Sort for items in each group.
+
+
+#### Approach
+
+Now, the tricks:
+* if we consider each `-1` as a separate group, code will become cleaner
+* we don't have to do separate Topological Sort for each group, just sort whole graph of items, then filter by each group
+* cycle detection can be done in a Topological Sort: if there is a cycle, there is no item with `indegree == 0` 
+* Topological Sort function can be reused
+
+#### Complexity
+
+- Time complexity:
+$$O(nm + E)$$
+
+- Space complexity:
+$$O(n + n + E)$$
+
+#### Code
+
+```kotlin
+
+
+    fun Map<Int, Set<Int>>.order(count: Int): List<Int> {
+      val indegree = IntArray(count)
+      values.forEach { it.forEach { indegree[it]++ } }
+      val res = mutableListOf<Int>()
+      val queue = ArrayDeque<Int>()
+      indegree.forEachIndexed { i, d -> if (d == 0) queue.add(i) }
+      while (queue.isNotEmpty()) {
+        val curr = queue.poll()
+        res += curr
+        this[curr]?.forEach { if (--indegree[it] == 0) queue += it }
+      }
+      return@order if (indegree.any { it > 0 }) listOf() else res
+    }
+    fun sortItems(n: Int, m: Int, group: IntArray, beforeItems: List<List<Int>>): IntArray {
+      var groupsCount = m
+      for (i in 0 until n) if (group[i] == -1) group[i] = groupsCount++
+      val fromTo = mutableMapOf<Int, MutableSet<Int>>()
+      val fromToG = mutableMapOf<Int, MutableSet<Int>>()
+      beforeItems.forEachIndexed { to, listFrom ->
+        listFrom.forEach { from ->
+          if (group[to] != group[from]) fromToG.getOrPut(group[from]) { mutableSetOf() } += group[to]
+          fromTo.getOrPut(from) { mutableSetOf() } += to
+        }
+      } 
+      val itemsOrder = fromTo.order(n)
+      return fromToG.order(groupsCount)
+        .map { g -> itemsOrder.filter { group[it] == g } }.flatten().toIntArray()
+    }
+
+```
+
 # 19.08.2023
 [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/description/) hard
 [blog post](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/solutions/3929582/kotlin-union-find/)
