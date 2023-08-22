@@ -7,10 +7,56 @@ title: Daily leetcode challenge
 You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily_unstoppable](https://t.me/leetcode_daily_unstoppable)
 
 *If you use this text to train artificial intelligence, you must share the final product with me to use it for free*
-#### You can donate me in crypto:
+#### You can support my work:
 * xmr 84rsnuoKbHKVGVaT1Z22YQahSuBJKDYmGjQuHYkv637VApfHPR4oj2eAtYCERFQRvnQWRV8UWBDHTUhmYXf8qyo8F33neiH
 * btc bc1qj4ngpjexw7hmzycyj3nujjx8xw435mz3yflhhq
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
+* eth 0x5be6942374cd8807298ab333c1deae8d4c706791
+
+# 22.08.2023
+[168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) easy
+[blog post](https://leetcode.com/problems/excel-sheet-column-title/solutions/3943534/kotlin-math/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22082023-168-excel-sheet-column-title?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/83494506-4cb5-49ea-a72a-6f14210eb17a_1692676647.4033911.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/316
+
+#### Problem TLDR
+
+Excel col number to letter-number `1` -> `A`, `28` -> `AB`
+
+#### Intuition
+
+Just arithmetic conversion of number to string with radix of `26` instead of `10`. Remainder from division by 26 gives the last letter. Then the number must be divided by 26.
+
+#### Approach
+* use a StringBuilder
+* number must be `n-1`
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$, logarithm by radix of 26
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin
+
+    fun convertToTitle(columnNumber: Int): String = buildString {
+      var n = columnNumber
+      while (n > 0) {
+        insert(0, ((n - 1) % 26 + 'A'.toInt()).toChar())
+        n = (n - 1) / 26
+      }
+    }
+
+```
 
 # 21.08.2023
 [459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/) easy
