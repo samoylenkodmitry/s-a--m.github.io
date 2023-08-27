@@ -13,6 +13,64 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 27.08.2023
+[403. Frog Jump](https://leetcode.com/problems/frog-jump/description/) hard
+[blog post](https://leetcode.com/problems/frog-jump/solutions/3965349/kotlin-dfs-cache-binarysearch/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/27082023-403-frog-jump?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/854eee53-fdca-4ee6-9979-15157bdba80e_1693109981.329846.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/321
+
+#### Problem TLDR
+
+Can jump an array when each jump is `k-1..k+1` of the previous
+
+#### Intuition
+
+The simple Depth-First Search works: iterate over next array items and check if jump to them is in range `k-1..k+1`. The result only depends on the array suffix and previous jump value `k`, so can be safely cached. This will take n^3 operations in the worst case.
+
+There is an improvement, we can use Binary Search to quickly find the range for the next positions. Time will be improved to n^2log(n).
+
+#### Approach
+
+In the interview, it is better to write Binary Search by yourself if you're unsure about how to adapt built-in `binarySearch` method to find `bisectLeft` or `bisectRight` borders.
+
+* use simple checks to convert insert position into a border: `if (-i - 1 in 0..lastIndex) -i - 1 else i`
+* same for `from in 0..to`, which also checks that `from <= to`, `from >= 0` and `to >= 0`
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2log(n))$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun canCross(stones: IntArray): Boolean {
+      val dp = mutableMapOf<Pair<Int, Int>, Boolean>()
+      fun dfs(i: Int, k: Int): Boolean = dp.getOrPut(i to k) {
+        if (i == stones.lastIndex) return@getOrPut true
+        var from = stones.binarySearch(stones[i] + maxOf(1, k - 1)).let {
+          if (-it - 1 in 0..stones.lastIndex) -it - 1 else it
+        }
+        var to = stones.binarySearch(stones[i] + k + 1).let {
+          if (-it - 2 in 0..stones.lastIndex) -it - 2 else it
+        }
+        return@getOrPut from in 0..to
+          && (from..to).any { dfs(it, stones[it] - stones[i]) }
+      }
+      return dfs(0, 0)
+    }
+
+```
+
 # 26.08.2023
 [646. Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/description/) medium
 [blog post](https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/3960859/kotlin-line-sweep/)
