@@ -13,6 +13,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 28.08.2023
+[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) easy
+[blog post](https://leetcode.com/problems/implement-stack-using-queues/solutions/3969874/kotlin-rotate/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/28082023-225-implement-stack-using?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/39c0c481-7234-4f80-992f-1e48a6f2eb56_1693194752.5680964.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/322
+
+#### Problem TLDR
+
+Create a Stack using Queue's push/pop methods.
+
+#### Intuition
+
+We can use a single Queue, and rotate it so that the newly inserted element will be on a first position:
+
+```
+1 push -> [1]
+2 push -> [1 2] -> [2 1]
+3 push -> [2 1 3] -> [1 3 2] -> [3 2 1] 
+```
+
+#### Approach
+
+Kotlin has no methods `pop`, `push` and `peek` for `ArrayDeque`, use `removeFirst`, `add` and `first`.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$ for insertions, others are O(1)
+
+- Space complexity:
+$$O(n)$$ for internal Queue, and O(1) operations overhead
+
+#### Code
+
+```kotlin
+class MyStack(val queue: ArrayDeque<Int> = ArrayDeque()) {
+    fun push(x: Int) = with(queue) {
+      add(x)
+      repeat(size - 1) { add(removeFirst()) } 
+    }
+    fun pop(): Int = queue.removeFirst()
+    fun top(): Int = queue.first()
+    fun empty(): Boolean = queue.isEmpty()
+}
+
+```
+
 # 27.08.2023
 [403. Frog Jump](https://leetcode.com/problems/frog-jump/description/) hard
 [blog post](https://leetcode.com/problems/frog-jump/solutions/3965349/kotlin-dfs-cache-binarysearch/)
