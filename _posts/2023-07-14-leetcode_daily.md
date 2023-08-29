@@ -13,12 +13,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 29.08.2023
+[2483. Minimum Penalty for a Shop](https://leetcode.com/problems/minimum-penalty-for-a-shop/description/) medium
+[blog post](https://leetcode.com/problems/minimum-penalty-for-a-shop/solutions/3974919/kotlin-closed-opened/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29082023-2483-minimum-penalty-for?utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/2fc39938-66de-4be6-b884-47d442aa530c_1693281047.0350623.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/323
+
+#### Problem TLDR
+
+First index of minimum penalty in array, penalty 'Y'-> 1, 'N' -> -1
+
+#### Intuition
+Iterate from the end and compute the suffix penalty. 
+
+#### Approach
+Suffix penalty is a difference between `p_closed - p_opened`.
+
+#### Complexity
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun bestClosingTime(customers: String): Int {
+      var p = 0
+      var iMin = customers.length
+      var pMin = 0
+      for (i in customers.lastIndex downTo 0) {
+        if (customers[i] == 'Y') p++ else p--
+        if (p <= pMin) {
+          iMin = i
+          pMin = p
+        }
+      }
+      return iMin
+    }
+
+```
+
 # 28.08.2023
 [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) easy
 [blog post](https://leetcode.com/problems/implement-stack-using-queues/solutions/3969874/kotlin-rotate/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28082023-225-implement-stack-using?utm_campaign=post&utm_medium=web)
 
-![image.png](https://assets.leetcode.com/users/images/39c0c481-7234-4f80-992f-1e48a6f2eb56_1693194752.5680964.png)
+![image.png](https://assets.leetcode.com/users/images/2a38e7d3-a87a-447b-afa7-5a9595fd8af2_1693199805.8701816.png)
 
 #### Join me on Telegram
 
@@ -53,16 +100,15 @@ $$O(n)$$ for internal Queue, and O(1) operations overhead
 #### Code
 
 ```kotlin
-class MyStack(val queue: ArrayDeque<Int> = ArrayDeque()) {
-    fun push(x: Int) = with(queue) {
+class MyStack: Queue<Int> by LinkedList() {
+    fun push(x: Int) {
       add(x)
-      repeat(size - 1) { add(removeFirst()) } 
+      repeat(size - 1) { add(pop()) } 
     }
-    fun pop(): Int = queue.removeFirst()
-    fun top(): Int = queue.first()
-    fun empty(): Boolean = queue.isEmpty()
+    fun pop() = remove()
+    fun top() = first()
+    fun empty() = isEmpty()
 }
-
 ```
 
 # 27.08.2023
