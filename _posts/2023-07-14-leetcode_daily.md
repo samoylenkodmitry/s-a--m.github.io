@@ -13,6 +13,49 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 1.09.2023
+[338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) easy
+[blog post](https://leetcode.com/problems/counting-bits/solutions/3986528/kotlin-tabulation/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/1092023-338-counting-bits?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/e54157d0-23d5-4069-89b2-5bf436c449ba_1693539280.2876391.png)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/326
+
+#### Problem TLDR
+
+Array of bits count for numbers `0..n`
+
+#### Intuition
+
+There is a tabulation technique used for caching bits count answer in O(1): for number `xxxx0` bits count is `count(xxxx) + 0`, but for number `xxxx1` bits count is `count(xxxx) + 1`. Now, to make a switch `xxxx1 -> xxxx` simple divide by 2. Result can be cached.
+
+#### Approach
+
+We can use DFS + memo, but bottom-up also simple. Result is a DP array itself: `DP[number] = bits_count(number)`. The last bit can be checked by `%` operation, but `and` also works. 
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun countBits(n: Int) = IntArray(n + 1).apply {
+        for (i in 0..n) 
+          this[i] = this[i / 2] + (i and 1)
+      }
+
+```
+
 # 31.08.2023
 [1326. Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/description/) hard
 [blog post](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/solutions/3983030/kotlin-greedily-fill-intervals/)
