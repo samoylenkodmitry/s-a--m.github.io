@@ -18,7 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/extra-characters-in-a-string/solutions/3990697/kotlin-trie-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/2092023-2707-extra-characters-in?utm_campaign=post&utm_medium=web)
 
-![image.png](https://assets.leetcode.com/users/images/7fdbef43-ce68-4578-a5c2-47ec9f54c5bd_1693627963.2473598.png)
+![image.png](https://assets.leetcode.com/users/images/028b6380-780d-4417-90a0-44eca64edfa7_1693638832.7552216.png)
 
 #### Join me on Telegram
 
@@ -48,12 +48,12 @@ $$O(n)$$
 
 ```kotlin
 
-    class Trie(var w: Boolean) { val n = HashMap<Char, Trie>() }
+    class Trie(var w: Boolean = false) : HashMap<Char, Trie>()
     fun minExtraChar(s: String, dictionary: Array<String>): Int {
-      val trie = Trie(false)
+      val trie = Trie()
       for (w in dictionary) {
         var t = trie
-        for (c in w) t = t.n.getOrPut(c) { Trie(false) }
+        for (c in w) t = t.getOrPut(c) { Trie() }
         t.w = true
       }
       val cache = mutableMapOf<Int, Int>()
@@ -62,7 +62,7 @@ $$O(n)$$
           var min = 1 + dfs(pos + 1)
           var t = trie
           for (i in pos..<s.length) {
-            t = t.n[s[i]] ?: break
+            t = t[s[i]] ?: break
             if (t.w) min = minOf(min, dfs(i + 1))
           }
           min
