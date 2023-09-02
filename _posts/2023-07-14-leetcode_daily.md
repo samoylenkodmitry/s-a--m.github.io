@@ -13,6 +13,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 2.09.2023
+[2707. Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description/) medium
+[blog post](https://leetcode.com/problems/extra-characters-in-a-string/solutions/3990697/kotlin-trie-dfs-cache/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/2092023-2707-extra-characters-in?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/7fdbef43-ce68-4578-a5c2-47ec9f54c5bd_1693627963.2473598.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/327
+
+#### Problem TLDR
+
+Min count of leftovers after string split by the dictionary
+
+#### Intuition
+
+We can search all possible splits at every position when we find a word. To quickly find a word, let's use a `Trie`. The result will only depend on the suffix of the string, so can be cached.
+
+#### Approach
+
+Do DFS, each time compare a `skipped` result with any `take_word` result, if found a word. We must continue to search, because some words can be prefixes to others: `leet`, `leetcode` -> `leetcodes`, taking `leet` is not optimal.
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$, DFS depth is `n` and another `n` for the inner iteration
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    class Trie(var w: Boolean) { val n = HashMap<Char, Trie>() }
+    fun minExtraChar(s: String, dictionary: Array<String>): Int {
+      val trie = Trie(false)
+      for (w in dictionary) {
+        var t = trie
+        for (c in w) t = t.n.getOrPut(c) { Trie(false) }
+        t.w = true
+      }
+      val cache = mutableMapOf<Int, Int>()
+      fun dfs(pos: Int): Int =  if (pos >= s.length) 0 else 
+        cache.getOrPut(pos) {
+          var min = 1 + dfs(pos + 1)
+          var t = trie
+          for (i in pos..<s.length) {
+            t = t.n[s[i]] ?: break
+            if (t.w) min = minOf(min, dfs(i + 1))
+          }
+          min
+        } 
+      return dfs(0)
+    }
+
+```
+
 # 1.09.2023
 [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) easy
 [blog post](https://leetcode.com/problems/counting-bits/solutions/3986528/kotlin-tabulation/)
