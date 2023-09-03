@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/3092023-62-unique-paths?utm_campaign=post&utm_medium=web)
 
 
-![image.png](https://assets.leetcode.com/users/images/280b9070-4ec8-47b3-b3a8-f783f357ae4f_1693711041.9048796.png)
+![image.png](https://assets.leetcode.com/users/images/fb358565-c294-481f-a420-b0bc41afaa55_1693712265.010608.png)
 
 #### Join me on Telegram
 
@@ -53,7 +53,7 @@ $$O(m)$$
       val row = IntArray(n) { 1 }
       for (y in 1..<m)
         for (x in 1..<n)
-          row[x] = (row[x - 1] + row[x]) % 2_000_000_009
+          row[x] += row[x - 1]
       return row.last()
     }
 
