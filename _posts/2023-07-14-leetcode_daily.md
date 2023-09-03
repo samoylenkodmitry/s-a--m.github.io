@@ -13,6 +13,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 3.09.2023
+[62. Unique Paths](https://leetcode.com/problems/unique-paths/description/) medium
+[blog post](https://leetcode.com/problems/unique-paths/solutions/3994767/kotlin-just-sum/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/3092023-62-unique-paths?utm_campaign=post&utm_medium=web)
+
+
+![image.png](https://assets.leetcode.com/users/images/280b9070-4ec8-47b3-b3a8-f783f357ae4f_1693711041.9048796.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/328
+
+#### Problem TLDR
+
+Unique paths count, moving `right-down` from `top-left` to `bottom-right`
+
+#### Intuition
+
+On each cell, the number of paths is a sum of direct `up` number and direct `left` number.
+
+#### Approach
+
+Use single row array, as only previous up row is relevant
+
+#### Complexity
+
+- Time complexity:
+$$O(nm)$$
+
+- Space complexity:
+$$O(m)$$
+
+#### Code
+
+```kotlin
+
+    fun uniquePaths(m: Int, n: Int): Int {
+      val row = IntArray(n) { 1 }
+      for (y in 1..<m)
+        for (x in 1..<n)
+          row[x] = (row[x - 1] + row[x]) % 2_000_000_009
+      return row.last()
+    }
+
+```
+
 # 2.09.2023
 [2707. Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description/) medium
 [blog post](https://leetcode.com/problems/extra-characters-in-a-string/solutions/3990697/kotlin-trie-dfs-cache/)
