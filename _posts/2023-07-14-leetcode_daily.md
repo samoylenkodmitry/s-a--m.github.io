@@ -13,6 +13,42 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 4.09.2023
+[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) easy
+[blog post](https://leetcode.com/problems/linked-list-cycle/solutions/3999368/kotlin-one-liner/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/4092023-141-linked-list-cycle?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/4a868dc3-837e-43c1-892c-b971aab41e3a_1693797906.4238324.png)
+
+#### Problem TLDR
+
+Detect a cycle in a `LinkedList`
+
+#### Intuition
+
+Use tortoise and rabbit technique
+
+#### Approach
+
+Move one pointer one step at a time, another two steps at a time. If there is a cycle, they will meet.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(log(n))$$ for recursion (iterative version is O(1))
+
+#### Code
+
+```kotlin
+
+    fun hasCycle(slow: ListNode?, fast: ListNode? = slow?.next): Boolean = 
+      fast != null && (slow == fast || hasCycle(slow?.next, fast?.next?.next))
+
+```
+
 # 3.09.2023
 [62. Unique Paths](https://leetcode.com/problems/unique-paths/description/) medium
 [blog post](https://leetcode.com/problems/unique-paths/solutions/3994767/kotlin-just-sum/)
