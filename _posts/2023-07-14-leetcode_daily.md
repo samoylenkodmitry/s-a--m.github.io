@@ -13,6 +13,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 5.09.2023
+[138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) medium
+[blog post](https://leetcode.com/problems/copy-list-with-random-pointer/solutions/4003603/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/5092023-138-copy-list-with-random?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/a5ce5bb7-270d-4dd7-bea6-64aa17439204_1693884804.2578123.png)
+
+#### Problem TLDR
+
+Copy of a graph
+
+#### Intuition
+
+Simple way is just store mapping `old -> new`. 
+The trick from hint is to store new nodes in between the old ones, then mapping became `old -> new.next & new -> old.next`.
+
+#### Approach
+
+One iteration to make new nodes, second to assign `random` field and final to split lists back.
+
+#### Complexity
+
+- - Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun copyRandomList(node: Node?): Node? {
+      var curr = node
+      while (curr != null) {
+        val next = curr.next
+        curr.next = Node(curr.`val`).apply { this.next = next }
+        curr = next
+      }
+      curr = node
+      while (curr != null) {
+        curr.next?.random = curr.random?.next
+        curr = curr.next?.next
+      }
+      curr = node
+      val head = node?.next
+      while (curr != null) {
+        val currNew = curr.next
+        val nextOrig = currNew?.next
+        val nextNew = nextOrig?.next
+        curr.next = nextOrig
+        currNew?.next = nextNew
+        curr = nextOrig
+      }
+      return head
+    }
+
+```
+
 # 4.09.2023
 [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) easy
 [blog post](https://leetcode.com/problems/linked-list-cycle/solutions/3999368/kotlin-one-liner/)
