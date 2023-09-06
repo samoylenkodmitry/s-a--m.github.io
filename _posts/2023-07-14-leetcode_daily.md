@@ -13,6 +13,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 6.09.2023
+[725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) medium
+[blog post](https://leetcode.com/problems/split-linked-list-in-parts/solutions/4007931/kotlin-precompute-sizes/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/6092023-725-split-linked-list-in?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/d16055b6-1c74-407b-94bd-6d6a38fc9628_1693970604.5533426.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/331
+
+#### Problem TLDR
+
+Split `Linked List` into `k` almost equal lists
+
+#### Intuition
+
+First, precompute sizes, by adding to buckets one-by-one in a loop. Next, just move list pointer by sizes values.
+
+#### Approach
+
+Do not forget to disconnect nodes.
+
+#### Complexity
+
+ - Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$ for the sizes array and for the result
+
+#### Code
+
+```kotlin
+
+    fun splitListToParts(head: ListNode?, k: Int): Array<ListNode?> {
+      val sizes = IntArray(k)
+      var i = 0
+      var curr = head
+      while (curr != null) {
+        sizes[i++ % k]++
+        curr = curr.next
+      }
+      curr = head
+      return sizes.map { sz ->
+        curr.also {
+          repeat(sz - 1) { curr = curr?.next }
+          curr = curr?.next.also { curr?.next = null }
+        }
+      }.toTypedArray()
+    }
+
+```
+
 # 5.09.2023
 [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) medium
 [blog post](https://leetcode.com/problems/copy-list-with-random-pointer/solutions/4003603/kotlin/)
