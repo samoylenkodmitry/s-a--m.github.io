@@ -13,6 +13,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 7.09.2023
+[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) medium
+[blog post](https://leetcode.com/problems/reverse-linked-list-ii/solutions/4012217/kotlin-dummy/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/7092023-92-reverse-linked-list-ii?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/da4badfd-9868-49ed-9b71-644b8ccacfe7_1694057797.6459062.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/332
+
+#### Problem TLDR
+
+Reverse a part of `Linked List`
+
+#### Intuition
+
+We need to find a point where to start reversing after `left` steps, then do the reversing `right - left` steps and finally connect to tail.
+
+#### Approach
+
+* use `Dummy head` technique to avoid reversed head corner case
+* better do debug right in the code
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun reverseBetween(head: ListNode?, left: Int, right: Int): ListNode? {
+      val dummy = ListNode(0).apply { next = head }
+      var prev: ListNode? = dummy
+      var curr = prev             // d-1-2-3-4-5  2 4
+      repeat(left) {              // pc
+        prev = curr               // p c
+        curr = curr?.next         //   p c
+      }                                                
+      val head = prev             // d-1-2-3-4-5  2 4
+      val tail = curr             //   h t
+      prev = curr                                    
+      curr = curr?.next           //     p c
+      repeat(right - left) {      //     p c n
+        val next = curr?.next     //      <p c n
+        curr?.next = prev         //     p<c n
+        prev = curr               //      <p<c n
+        curr = next               //     2<p c
+      }                           //     2<3<p c
+      head?.next = prev           // d-1-2-3-4-5  2 4
+      tail?.next = curr           //   h t<3<p c
+      return dummy.next
+    }
+
+```
+
+
 # 6.09.2023
 [725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) medium
 [blog post](https://leetcode.com/problems/split-linked-list-in-parts/solutions/4007931/kotlin-precompute-sizes/)
