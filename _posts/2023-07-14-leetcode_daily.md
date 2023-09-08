@@ -13,6 +13,47 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 8.09.2023
+[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) easy
+[blog post](https://leetcode.com/problems/pascals-triangle/solutions/4016541/kotlin-running-fold/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/8092023-118-pascals-triangle?utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/eac98b81-ca9c-4dcd-87b3-ef74a974363a_1694144676.94503.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/333
+
+#### Problem TLDR
+
+Pascal Triangle
+
+#### Intuition
+
+Each row is a previous row sliding window sums concatenated with `1` 
+
+#### Approach
+
+Let's write it using Kotlin API
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun generate(numRows: Int) = (2..numRows)
+      .runningFold(listOf(1)) { r, _ ->
+        listOf(1) + r.windowed(2).map { it.sum() } + listOf(1)
+      }
+
+```
+
 # 7.09.2023
 [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) medium
 [blog post](https://leetcode.com/problems/reverse-linked-list-ii/solutions/4012217/kotlin-dummy/)
