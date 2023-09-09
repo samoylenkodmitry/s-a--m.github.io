@@ -13,6 +13,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 9.09.2023
+[377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/description/) medium
+[blog post](https://leetcode.com/problems/combination-sum-iv/solutions/4020533/kotlin-dfs-cache/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/9092023-377-combination-sum-iv?utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/2272d15f-3b2d-4ba2-87dd-5ee5ed258675_1694230783.2396786.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/334
+
+#### Problem TLDR
+
+Number of ways to sum up array nums to target
+
+#### Intuition
+
+This is a canonical DP knapsack problem: choose one of the items and decrease the `target` by its value. If `target` is zero - we have a single way, if negative - no ways, otherwise keep taking items. The result will only depend on the `target`, so can be cached. 
+
+#### Approach
+
+In this code:
+* trick to make conversion `0 -> 1, negative -> 0`: `1 - (t ushr 31)`, it shifts the leftmost bit to the right treating sign bit as a value bit, converting any negative number to `1` and positive to `0`
+* `IntArray` used instead of `Map` using `takeIf` Kotlin operator
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$, `n` for the recursion depth, and `n` for the inner iteration
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun combinationSum4(nums: IntArray, target: Int): Int {
+      val cache = IntArray(target + 1) { -1 }
+      fun dfs(t: Int): Int = if (t <= 0) 1 - (t ushr 31) else 
+        cache[t].takeIf { it >= 0 } ?:
+        nums.sumBy { dfs(t - it) }.also { cache[t] = it }
+      return dfs(target)
+    }
+
+```
+
 # 8.09.2023
 [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) easy
 [blog post](https://leetcode.com/problems/pascals-triangle/solutions/4016541/kotlin-running-fold/)
