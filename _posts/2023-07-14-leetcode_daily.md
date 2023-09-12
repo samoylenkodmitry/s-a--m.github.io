@@ -13,6 +13,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 12.09.2023
+[1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/description/) medium
+[blog post](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/solutions/4033633/kotlin-collections-api/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12092023-1647-minimum-deletions-to?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/c1579b4c-32b1-460e-a785-43a6cc92c970_1694489615.0158277.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/337
+
+#### Problem TLDR
+
+Minimum removes duplicate frequency chars from string
+
+#### Intuition
+
+```
+    // b b c e b a b
+    // 1 1 1 4
+```
+
+Characters doesn't matter, only frequencies. Let's sort them and scan one-by-one from biggest to small and descriase max value.
+
+#### Approach
+
+Let's use Kotlin collections API:
+* groupBy - converts string into groups by characters
+* sortedDescending - sorts by descending
+* sumBy - iterates over all values and sums the lambda result
+
+#### Complexity
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+
+    fun minDeletions(s: String): Int {
+      var prev = Int.MAX_VALUE
+      return s.groupBy { it }.values
+        .map { it.size }
+        .sortedDescending()
+        .sumBy {
+          prev = maxOf(0, minOf(it, prev - 1))
+          maxOf(0, it - prev)
+        }
+    }
+
+```
+
 # 11.09.2023
 [1282. Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description/) medium
 [blog post](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/solutions/4029302/kotlin-collections-api/)
