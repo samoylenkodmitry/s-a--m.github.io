@@ -13,6 +13,80 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 13.09.2023
+[135. Candy](https://leetcode.com/problems/candy/description/) hard
+[blog post](https://leetcode.com/problems/candy/solutions/4038064/kotlin-graph-dfs-cache/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13092023-135-candy?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/a83a92d5-1e7c-43ce-b2b4-b7da4080c13b_1694577247.0958166.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/338
+
+#### Problem TLDR
+
+Minimum candies count to satisfy condition: `ratings[i] < ratings[i-1]` must give more candies to `i-1`
+
+#### Intuition
+Let's observe the example:
+```
+    // 0 1 2 3 4 5 6 7 8
+    // 1 2 2 3 2 1 5 3 4
+    // 1 1 1 1 1 1 1 1 1
+    //   1   1 1   1   1
+    //       1
+    // 1 -> [0]
+    // 3 -> [2, 4]
+    // 6 -> [5, 7]
+    // 8 -> [7]
+    //
+    // 1 2 3 4 5 6 7 8 9
+    // 1 1 1 1 1 1 1 1 1
+    //   1 1 1 1 1 1 1 1
+    //     1 1 1 1 1 1 1
+    //       1 1 1 1 1 1
+    //         1 1 1 1 1
+    //           1 1 1 1
+    //             1 1 1
+    //               1 1
+    //                 1
+    // 1 <- 2 <- 3 ...
+```
+We can look at this as a graph with nodes of siblings from higher rating to lower. Then the minimum number of candies is a maximum graph path length.
+
+#### Approach
+
+* we can reuse `depth` value for each visited node
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun candy(ratings: IntArray): Int {
+      val fromTo = mutableMapOf<Int, MutableList<Int>>()
+      for (i in 1..<ratings.size)
+        if (ratings[i] > ratings[i - 1]) 
+          fromTo.getOrPut(i) { mutableListOf() } += i - 1
+        else if (ratings[i] < ratings[i -1]) 
+          fromTo.getOrPut(i - 1) { mutableListOf() } += i
+      val depth = IntArray(ratings.size)
+      fun maxDepth(curr: Int): Int =
+        depth[curr].takeIf { it > 0 } ?:
+        (1 + (fromTo[curr]?.map { maxDepth(it) }?.maxOrNull() ?: 0))
+        .also { depth[curr] = it }
+      return ratings.indices.sumBy { maxDepth(it) }
+    }
+
+```
+
 # 12.09.2023
 [1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/description/) medium
 [blog post](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/solutions/4033633/kotlin-collections-api/)
