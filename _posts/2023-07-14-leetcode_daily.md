@@ -13,6 +13,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 14.09.2023
+[332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) hard
+[blog post](https://leetcode.com/problems/reconstruct-itinerary/solutions/4042335/kotlin-dfs-backtrack/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/14092023-332-reconstruct-itinerary?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/790de6b2-535d-42c8-9a21-8bcb24b5b8e9_1694664315.5934882.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/339
+
+#### Problem TLDR
+
+Smallest lexical order path using all the tickets
+
+#### Intuition
+
+We can build a graph, then do DFS in a lexical order, backtracking. First path with all tickets used will be the answer.
+
+#### Approach
+
+* graph has directed nodes
+* sort nodes lists by strings comparison
+* current node is always the last in the path
+
+#### Complexity
+
+- Time complexity:
+$$O(x^n)$$, where x - is an average edges count per node
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun findItinerary(tickets: List<List<String>>): List<String> {
+      val fromTo = mutableMapOf<String, MutableList<Pair<Int, String>>>()
+      tickets.forEachIndexed { i, (from, to) ->
+        fromTo.getOrPut(from) { mutableListOf() } += i to to
+      }
+      for (list in fromTo.values) list.sortWith(compareBy { it.second })
+      val usedTickets = mutableSetOf<Int>()
+      var path = mutableListOf("JFK")
+      fun dfs(): List<String> = 
+        if (usedTickets.size == tickets.size) path.toList()
+        else fromTo[path.last()]?.asSequence()?.map { (ind, next) -> 
+          if (usedTickets.add(ind)) {
+            path.add(next)
+            dfs().also {
+              path.removeAt(path.lastIndex)
+              usedTickets.remove(ind)
+            }
+          } else emptyList()
+        }?.filter { it.isNotEmpty() }?.firstOrNull() ?: emptyList()
+      return dfs()
+    }
+
+```
+
 # 13.09.2023
 [135. Candy](https://leetcode.com/problems/candy/description/) hard
 [blog post](https://leetcode.com/problems/candy/solutions/4038064/kotlin-graph-dfs-cache/)
