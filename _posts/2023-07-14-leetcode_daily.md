@@ -13,6 +13,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 15.09.2023
+[1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/) medium
+[blog post](https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/4046178/kotlin-priority-queue/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15092023-1584-min-cost-to-connect?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/10087abd-a45d-4b32-bcd6-d69f357fd89c_1694750235.9183137.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/340
+
+#### Problem TLDR
+
+Min manhatten distance connected graph
+
+#### Intuition
+
+We can start from any points, for example, `0`. Next, we must iterate over all possible edges and find one with minimum `distance`. 
+
+#### Approach
+
+* use `Priority Queue` to sort all edges by distance
+* we can stop after all nodes are visited once
+* we can consider only the last edge distance in path
+
+#### Complexity
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun minCostConnectPoints(points: Array<IntArray>): Int {
+      fun dist(from: Int, to: Int) = 
+        abs(points[from][0] - points[to][0]) + abs(points[from][1] - points[to][1])
+      val notVisited = points.indices.toMutableSet()
+      val pq = PriorityQueue<Pair<Int, Int>>(compareBy({ it.second }))
+      pq.add(0 to 0)
+      var sum = 0
+      while (notVisited.isNotEmpty()) {
+        val curr = pq.poll()
+        if (!notVisited.remove(curr.first)) continue
+        sum += curr.second
+        for (to in notVisited) pq.add(to to dist(curr.first, to))
+      }
+      return sum
+    }
+
+```
+
 # 14.09.2023
 [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) hard
 [blog post](https://leetcode.com/problems/reconstruct-itinerary/solutions/4042335/kotlin-dfs-backtrack/)
