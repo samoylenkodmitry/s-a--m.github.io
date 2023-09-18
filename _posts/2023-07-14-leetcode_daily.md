@@ -13,6 +13,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 18.09.2023
+[1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/description/) easy
+[blog post](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/solutions/4058213/kotlin-use-api/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18092023-1337-the-k-weakest-rows?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/f768828c-1083-45d0-a7c6-e079251e06b2_1695010963.538674.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/343
+
+#### Problem TLDR
+
+`k` indices with smallest row sum in a binary matrix
+
+#### Intuition
+
+We can precompute row sums, then use a Priority Queue to find `k` smallest. However, just sorting all will also work.
+
+#### Approach
+
+Let's use Kotlin's collections API
+* map
+* filter
+* sortedBy [https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted-by.html](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted-by.html)
+* take
+* toIntArray
+
+#### Complexity
+- Time complexity:
+$$O(n^2logn)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun kWeakestRows(mat: Array<IntArray>, k: Int) = mat
+        .map { it.filter { it == 1 }.sum() ?: 0 }
+        .withIndex()
+        .sortedBy { it.value }
+        .map { it.index }
+        .take(k)
+        .toIntArray()
+
+```
+
+
 # 16.09.2023
 [1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/description/) medium
 [blog post](https://leetcode.com/problems/path-with-minimum-effort/solutions/4049798/kotln-a/)
