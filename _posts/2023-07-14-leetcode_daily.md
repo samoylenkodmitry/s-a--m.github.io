@@ -13,6 +13,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 19.09.2023
+[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium
+[blog post](https://leetcode.com/problems/find-the-duplicate-number/solutions/4062911/kotlin-modify-then-revert-42222-also-the-case/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19092023-287-find-the-duplicate-number?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/3e805508-e41b-4652-b202-12276cde085c_1695102316.9752781.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/344
+
+#### Problem TLDR
+
+Found duplicate in array, each value is in `1..<arr.size`
+
+#### Intuition
+Hint: `4 2 2 2 2 ... 2 ` is also the case.
+What we can see, is that every value is in the `1..<arr.size` range, so we can temporarly store the flag in here, then revert it back in the end.
+
+```
+    //   0 1 2 3 4  sz = 5
+    //   3 1 3 4 2
+    // 3       *  
+    // 1   *  
+    // 3       x
+    //        
+```
+
+#### Approach
+For a flag we can just add some big value to the number, or make it negative, for example.
+
+Let's write it using some Kotlin's API:
+* first
+* also - notice how it doesn't require brackets
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun findDuplicate(nums: IntArray) = nums.first { n ->
+        nums[n % nums.size] >= nums.size
+        .also { nums[n % nums.size] += nums.size }
+      } % nums.size
+      .also { for (j in nums.indices) nums[j] %= nums.size }
+
+```
+
+
 # 18.09.2023
 [1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/description/) easy
 [blog post](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/solutions/4058213/kotlin-use-api/)
