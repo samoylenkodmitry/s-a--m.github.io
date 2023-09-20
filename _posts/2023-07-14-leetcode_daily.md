@@ -44,7 +44,7 @@ For more robust sliding window:
 $$O(n)$$
 
 - Space complexity:
-$$O(n)$$
+$$O(1)$$
 
 #### Code
 
