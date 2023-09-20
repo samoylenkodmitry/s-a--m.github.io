@@ -13,6 +13,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 20.09.2023
+[1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description/) medium
+[blog post](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/4067002/kotlin-slide/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20092023-1658-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/1002b823-1c6d-441f-935f-da822fb5ddc6_1695185911.6620278.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/345
+
+#### Problem TLDR
+
+Min suffix-prefix to make an `x`
+
+#### Intuition
+
+We can reverse the problem: find the middle of the array to make an `arr_sum() - x`. Now, this problem can be solved using a sliding window technique.
+
+#### Approach
+
+For more robust sliding window:
+* use safe array iteration for the right border
+* use explicit `windowSize` variable
+* check the result every time
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun minOperations(nums: IntArray, x: Int): Int {
+      val targetSum = nums.sum() - x
+      var windowSize = 0
+      var currSum = 0
+      var res = Int.MAX_VALUE
+      nums.onEachIndexed { i, n ->
+        currSum += n
+        windowSize++
+        while (currSum > targetSum && windowSize > 0)
+          currSum -= nums[i - (windowSize--) + 1]
+        if (currSum == targetSum) 
+          res = minOf(res, nums.size - windowSize)
+      }
+      return res.takeIf { it < Int.MAX_VALUE } ?: -1
+    }
+
+```
+
 # 19.09.2023
 [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium
 [blog post](https://leetcode.com/problems/find-the-duplicate-number/solutions/4062911/kotlin-modify-then-revert-42222-also-the-case/)
