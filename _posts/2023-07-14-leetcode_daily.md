@@ -13,6 +13,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 21.09.2023
+[4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) hard
+[blog post](https://leetcode.com/problems/median-of-two-sorted-arrays/solutions/4071065/kotlin-o-n-two-pointer/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21092023-4-median-of-two-sorted-arrays?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/7ed14fb2-48c1-497e-ab60-6e07c628a7be_1695274091.8263881.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/346
+
+#### Problem TLDR
+
+Median in two concatenated sorted arrays
+
+#### Intuition
+
+We already know the target position of the median element in the concatenated array.
+
+There is an approach with Binary Search, but it's harder to come up with in an interview and write correctly.
+
+#### Approach
+
+We can maintain two pointers and increase them one by one until `targetPos` reached.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
+      val targetPos = (nums1.size + nums2.size) / 2
+      var i = 0
+      var j = 0
+      var prev = 0
+      var curr = 0
+      while (i + j <= targetPos) {
+        prev = curr
+        curr = when {
+          i == nums1.size -> nums2[j++]
+          j == nums2.size -> nums1[i++]
+          nums1[i] <= nums2[j] -> nums1[i++]
+          else -> nums2[j++]
+        } 
+      }
+      return if ((nums1.size + nums2.size) % 2 == 0) 
+        (prev + curr) / 2.0 
+       else 
+        curr.toDouble()
+    }
+
+```
+
 # 20.09.2023
 [1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description/) medium
 [blog post](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/4067002/kotlin-slide/)
