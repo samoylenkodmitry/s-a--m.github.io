@@ -13,6 +13,45 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 25.09.2023
+[389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/) easy
+[blog post](https://leetcode.com/problems/find-the-difference/solutions/4087272/kotlin-one-liner/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25092023-389-find-the-difference?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/bd3ebfd0-c2c5-4cb0-93a4-88d913564935_1695620231.9081826.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/350
+
+#### Problem TLDR
+
+Strings difference by a single char
+
+#### Intuition
+
+We can use frequency map. Or just calculate total sum by Char Int value.
+
+#### Approach
+
+Let's use Kotlin's API `sumBy`
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun findTheDifference(s: String, t: String) = 
+      (t.sumBy { it.toInt() } - s.sumBy { it.toInt() }).toChar()
+
+```
+
 # 24.09.2023
 [799. Champagne Tower](https://leetcode.com/problems/champagne-tower/description/) medium
 [blog post](https://leetcode.com/problems/champagne-tower/solutions/4083285/kotlin-pascal-s-triangle/)
