@@ -13,6 +13,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 28.09.2023
+[905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/description/) medium
+[blog post](https://leetcode.com/problems/sort-array-by-parity/solutions/4098759/kotlin-3-one-liners/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/28092023-905-sort-array-by-parity?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/955d5b59-41b7-4e74-a9a3-ab7bf6c4aafb_1695875425.6830046.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/353
+
+#### Problem TLDR
+
+Sort an array by even-odd
+
+#### Intuition
+
+There are built-in functions. However, in an interview manual partition is expected: maintain the sorted border `l` and adjust it after swapping.
+
+#### Approach
+
+Let's write them all.
+
+#### Complexity
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+	// 1
+	fun sortArrayByParity(nums: IntArray) = nums.also {
+      var l = 0
+      for (r in nums.indices) if (nums[r] % 2 == 0) 
+        nums[r] = nums[l].also { nums[l++] = nums[r] }
+    }
+    
+    // 2
+    fun sortArrayByParity(nums: IntArray) = 
+      nums.partition { it % 2 == 0 }.toList().flatten()
+      
+    // 3  
+    fun sortArrayByParity(nums: IntArray) = nums.sortedBy { it % 2 }
+```
+
 # 27.09.2023
 [880. Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/description/) medium
 [blog post](https://leetcode.com/problems/decoded-string-at-index/solutions/4095272/kotlin-you-know-the-length/)
