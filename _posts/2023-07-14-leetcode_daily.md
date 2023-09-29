@@ -13,8 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 29.09.2023
+[896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/) easy
+[blog post](https://leetcode.com/problems/monotonic-array/solutions/4103588/kotlin-single-pass/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29092023-896-monotonic-array?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/090344e3-aa89-4f52-8cb8-52b7b4470b6f_1695964452.9894402.png)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/354
+
+#### Problem TLDR
+
+Is array monotonic
+
+#### Intuition
+
+Let's compute the diffs, then array is monotonic if all the diffs have the same sign.
+
+#### Approach
+
+Let's use Kotlin's API:
+* asSequence - to avoid creating a collection
+* map
+* filter
+* windowed - scans array by `x` sized sliding window
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun isMonotonic(nums: IntArray) =
+      nums.asSequence().windowed(2)
+      .map { it[0] - it[1] }
+      .filter { it != 0 }
+      .windowed(2)
+      .all { it[0] > 0 == it[1] > 0 }
+      
+```
+
 # 28.09.2023
-[905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/description/) medium
+[905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/description/) easy
 [blog post](https://leetcode.com/problems/sort-array-by-parity/solutions/4098759/kotlin-3-one-liners/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28092023-905-sort-array-by-parity?r=2bam17&utm_campaign=post&utm_medium=web)
 ![image.png](https://assets.leetcode.com/users/images/955d5b59-41b7-4e74-a9a3-ab7bf6c4aafb_1695875425.6830046.png)
