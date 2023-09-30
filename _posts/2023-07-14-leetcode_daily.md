@@ -13,6 +13,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 30.09.2023
+[456. 132 Pattern](https://leetcode.com/problems/132-pattern/description/) medium
+[blog post](https://leetcode.com/problems/132-pattern/solutions/4107967/kotlin-monotonic-stack/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30092023-456-132-pattern?r=2bam17&utm_campaign=post&utm_medium=web)
+
+![image.png](https://assets.leetcode.com/users/images/4e15f408-89a4-4dac-8b34-cd4f62a20e47_1696051427.8820937.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/355
+
+#### Problem TLDR
+
+`132` pattern in array
+
+#### Intuition
+
+If we slide the array from behind, we simplify the task to find the smallest element. 
+When searching for largest decreasing subsequence we can use a monotonic Stack.
+
+#### Approach
+
+* we must remember the popped element, as it is the second largest one
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun find132pattern(nums: IntArray): Boolean {
+      val stack = Stack<Int>()
+      var lo = Int.MIN_VALUE
+      return (nums.lastIndex downTo 0).any { i ->
+        while (stack.isNotEmpty() && stack.peek() < nums[i]) lo = stack.pop()
+        stack.push(nums[i])
+        nums[i] < lo
+      }
+    }
+
+```
+
 # 29.09.2023
 [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/) easy
 [blog post](https://leetcode.com/problems/monotonic-array/solutions/4103588/kotlin-single-pass/)
