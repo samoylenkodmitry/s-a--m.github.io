@@ -13,6 +13,45 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 1.10.2023
+[557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) easy
+[blog post](https://leetcode.com/problems/reverse-words-in-a-string-iii/solutions/4112200/kotlin-one-liner/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/1102023-557-reverse-words-in-a-string?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/27cc8c63-7528-45c6-8f9a-38709eaba30e_1696134512.5996542.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/356
+
+#### Problem TLDR
+
+Reverse words
+
+#### Intuition
+
+In an interview in-place solution expected. Maintain two pointers, and adjust one until end of word reached. This still takes O(N) space in JVM.
+
+#### Approach
+
+Let's write a one-liner using Kotlin's API
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun reverseWords(s: String) = 
+      s.reversed().split(" ").reversed().joinToString(" ")
+
+```
+
 # 30.09.2023
 [456. 132 Pattern](https://leetcode.com/problems/132-pattern/description/) medium
 [blog post](https://leetcode.com/problems/132-pattern/solutions/4107967/kotlin-monotonic-stack/)
