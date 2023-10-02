@@ -13,6 +13,46 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 2.10.2023
+[2038. Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/) medium
+[blog post](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/solutions/4117386/kotlin-sliding-window/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/2102023-2038-remove-colored-pieces?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/b18ff242-11bb-4ce0-bb22-5113a7043de8_1696221882.5627723.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/357
+
+#### Problem TLDR
+
+Is `A` wins in middle-removing `AAA` or `BBB` game
+
+#### Intuition
+
+We quickly observe, that removing `A` in `BBAAABB` doesn't make `B` turn possible, so the outcome does not depend on how exactly positions are removed. `A` can win if it's possible game turns are more than `B`. So, the problem is to find how many consequent `A`'s and `B`'s are.
+
+#### Approach
+
+We can count `A` and `B` in a single pass, however, let's write a two-pass one-liner using `window` Kotlin method.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, can be O(1) if `asSequence` used
+
+#### Code
+
+```kotlin
+
+    fun winnerOfGame(colors: String) = with(colors.windowed(3)) {
+      count { it.all { it == 'A' } } > count { it.all { it == 'B' } } 
+    }
+
+```
+
 # 1.10.2023
 [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) easy
 [blog post](https://leetcode.com/problems/reverse-words-in-a-string-iii/solutions/4112200/kotlin-one-liner/)
