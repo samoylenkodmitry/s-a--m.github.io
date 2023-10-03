@@ -13,6 +13,49 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 3.10.2023
+[1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/) easy
+[blog post](https://leetcode.com/problems/number-of-good-pairs/solutions/4122513/kotlin-fold/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/3102023-1512-number-of-good-pairs?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/e53e17e3-88c5-4eca-b389-73ccbfd64ae6_1696305814.2158108.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/358
+
+#### Problem TLDR
+
+Count equal pairs
+
+#### Intuition
+
+The naive N^2 solution will work.
+Another idea is to store the number `frequency` so far and add it to the current result.
+
+#### Approach
+
+Let's use Kotlin's API:
+* with
+* fold
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun numIdenticalPairs(nums: IntArray) = with(IntArray(101)) {
+      nums.fold(0) { r, t -> r + this[t].also { this[t]++ } }
+    }
+
+```
+
 # 2.10.2023
 [2038. Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/) medium
 [blog post](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/solutions/4117386/kotlin-sliding-window/)
