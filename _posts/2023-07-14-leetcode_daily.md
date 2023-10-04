@@ -13,6 +13,69 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 4.10.2023
+[706. Design HashMap](https://leetcode.com/problems/design-hashmap/description/) easy
+[blog post](https://leetcode.com/problems/design-hashmap/solutions/4127340/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/4102023-706-design-hashmap?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/20f2dbef-f013-4076-875e-e188b5ff4264_1696392544.1709785.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/359
+
+#### Problem TLDR
+
+Design a HashMap
+
+#### Intuition
+
+The simple implementation consists of a growing array of buckets, where each bucket is a list of key-value pairs.
+
+#### Approach
+
+For better performance:
+* use `LinkedList`
+* start with smaller buckets size
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$, for all operations
+
+#### Code
+
+```kotlin
+
+class MyHashMap() {
+    var table = Array<MutableList<Pair<Int, Int>>>(16) { mutableListOf() }
+    var count = 0
+
+    fun bucket(key: Int) = table[key % table.size]
+
+    fun rehash() = with(table.flatMap { it }) {
+      table = Array(table.size * 2) { mutableListOf() }
+      for ((key, value) in this) bucket(key) += key to value
+    }
+
+    fun put(key: Int, value: Int) = with(bucket(key)) {
+      if (removeAll { it.first == key }) count++
+      this += key to value
+      if (count > table.size) rehash()
+    }
+
+    fun get(key: Int) = bucket(key)
+      .firstOrNull { it.first == key }?.second ?: -1
+
+    fun remove(key: Int) {
+      if (bucket(key).removeAll { it.first == key }) count--
+    }
+}
+
+```
+
 # 3.10.2023
 [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/) easy
 [blog post](https://leetcode.com/problems/number-of-good-pairs/solutions/4122513/kotlin-fold/)
