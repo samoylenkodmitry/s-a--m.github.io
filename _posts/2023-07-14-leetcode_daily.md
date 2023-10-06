@@ -13,6 +13,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 6.10.2023
+[343. Integer Break](https://leetcode.com/problems/integer-break/description/) medium
+[blog post](https://leetcode.com/problems/integer-break/solutions/4136139/kotlin-dfs-memo/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/6102023-343-integer-break?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/f3b2d4bd-b213-4149-824f-adddc8278c10_1696565295.556125.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/361
+
+#### Problem TLDR
+
+Max multiplication of the number split
+
+#### Intuition
+
+We can search from all possible splits. The result will only depend on the input `n`, so can be cached.
+
+#### Approach
+
+* one corner case is the small numbers, like `2, 3, 4`: ensure there is at least one split happen
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$, recursion depth is `n` and another `n` is in the loop. Without cache, it would be n^n
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    val cache = mutableMapOf<Int, Int>()
+    fun integerBreak(n: Int, canTake: Boolean = false): Int = 
+      if (n == 0) 1 else cache.getOrPut(n) {
+        (1..if (canTake) n else n - 1).map {
+          it * integerBreak(n - it, true)
+        }.max()
+      }
+
+```
+
 # 5.10.2023
 [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/) medium
 [blog post](https://leetcode.com/problems/majority-element-ii/solutions/4131903/kotlin-moore-algo/)
