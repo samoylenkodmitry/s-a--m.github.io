@@ -13,6 +13,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 8.10.2023
+[1458. Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/description/) hard
+[blog post](https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4144292/kotlin-dp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/8102023-1458-max-dot-product-of-two?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/4deba9bc-8652-4456-b8d3-754c6e74df90_1696741557.0745695.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/363
+
+#### Problem TLDR
+
+Max product of two subsequences
+
+#### Intuition
+
+We can search in all possible subsequences in O(n^2) by choosing between: take element and stop, take and continue, skip first, skip second.
+
+#### Approach
+
+The top-down aproach is trivial, let's modify it into bottom up.
+* use sentry `dp` size to avoid writing `if`s
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun maxDotProduct(nums1: IntArray, nums2: IntArray): Int {
+      val dp = Array(nums1.size + 1) { Array(nums2.size + 1) { -1000000 } }
+      for (j in nums2.lastIndex downTo 0)
+        for (i in nums1.lastIndex downTo 0)
+          dp[i][j] = maxOf(
+              nums1[i] * nums2[j],
+              nums1[i] * nums2[j] + dp[i + 1][j + 1],
+              dp[i][j + 1],
+              dp[i + 1][j])
+      return dp[0][0]
+    }
+
+```
+
 # 7.10.2023
 [1420. Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/description/) hard
 [blog post](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/solutions/4140362/kotlin-dfs-cache/)
