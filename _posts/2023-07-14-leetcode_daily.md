@@ -13,6 +13,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 13.10.2023
+[746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/) easy
+[blog post](https://leetcode.com/problems/min-cost-climbing-stairs/solutions/4163218/kotlin-dp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13102023-746-min-cost-climbing-stairs?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/fde87ac2-c271-4e3a-8bf1-22466e7a3c4b_1697172095.8574667.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/368
+
+#### Problem TLDR
+
+Classic DP: climbing stairs
+
+#### Intuition
+
+Start with brute force approach: consider every position and choose one of a two - use current stair or use next. Given that, the result will only depend on the input position, so can be cached. This will give a simple DFS + memo DP code:
+```kotlin
+    fun minCostClimbingStairs(cost: IntArray): Int {
+      val dp = mutableMapOf<Int, Int>()
+      fun dfs(curr: Int): Int = dp.getOrPut(curr) {
+        if (curr >= cost.lastIndex) 0
+        else min(
+          cost[curr] + dfs(curr + 1),
+          cost[curr + 1] + dfs(curr + 2)
+        )
+      }
+      return dfs(0)
+    }
+```
+This is accepted, but can be better if rewritten to bottom up and optimized.
+
+#### Approach
+
+After rewriting the recursive solution to iterative bottom up, we can notice, that only `two` of the previous values are always used. Convert dp array into two variables.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun minCostClimbingStairs(cost: IntArray): Int {
+      var curr = 0
+      var prev = 0
+      for (i in 0..<cost.lastIndex) 
+        curr = min(cost[i + 1] + curr, cost[i] + prev)
+              .also { prev = curr }
+      return curr
+    }
+
+```
+
 # 12.10.2023
 [1095. Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/description/) hard
 [blog post](https://leetcode.com/problems/find-in-mountain-array/solutions/4159347/kotlin-3-binary-searches/)
