@@ -13,6 +13,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 16.10.2023
+[119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) easy
+[blog post](https://leetcode.com/problems/pascals-triangle-ii/solutions/4173651/kotlin-fold/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16102023-119-pascals-triangle-ii?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/637e5b66-f3ad-4a8a-8a7b-3fc7587846da_1697430957.2322547.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/372
+
+#### Problem TLDR
+
+Pascal's Triangle
+
+#### Intuition
+
+One way is to generate sequence:
+
+```kotlin
+    fun getRow(rowIndex: Int): List<Int> =
+      generateSequence(listOf(1)) {
+        listOf(1) + it.windowed(2) { it.sum() } + 1
+      }.elementAtOrElse(rowIndex) { listOf() }
+```
+
+Another way is to use `fold`
+
+#### Approach
+
+* notice, we can add a simple `1` to collection by `+`
+* use `sum` and `windowed`
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun getRow(rowIndex: Int): List<Int> =
+      (1..rowIndex).fold(listOf(1)) { r, _ ->
+        listOf(1) + r.windowed(2) { it.sum() } + 1
+      }
+
+```
+
 # 15.10.2023
 [1269. Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/description/) hard
 [blog post](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/solutions/4170099/kotlin-dfs-cache/)
