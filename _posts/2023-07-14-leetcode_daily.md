@@ -63,6 +63,19 @@ $$O(n)$$
 
 ```
 
+P.S.: we can also just choose the maximum, as it will be the longest path:
+
+```kotlin
+    fun minimumTime(n: Int, relations: Array<IntArray>, time: IntArray): Int {
+      val fromTo = relations.groupBy({ it[1] }, { it[0] })
+      val cache = mutableMapOf<Int, Int>()
+      fun dfs(curr: Int): Int = cache.getOrPut(curr) {
+        time[curr - 1] + (fromTo[curr]?.maxOf { dfs(it) } ?: 0)
+      }
+      return (1..n).maxOf { dfs(it) }
+    }
+```
+
 # 17.10.2023
 [1361. Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/description/) medium
 [blog post](https://leetcode.com/problems/validate-binary-tree-nodes/solutions/4177318/kotlin-union-find/)
