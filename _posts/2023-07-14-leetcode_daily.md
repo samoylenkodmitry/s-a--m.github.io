@@ -13,6 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 18.10.2023
+[2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/) hard
+[blog post](https://leetcode.com/problems/parallel-courses-iii/solutions/4180807/kotlin-dfs-memo-from-leafs/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18102023-2050-parallel-courses-iii?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/2c283a07-3829-4da7-838a-de659df2cead_1697604419.9317963.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/374
+
+#### Problem TLDR
+
+Shortest `time` to visit all nodes in `relations=[from, to]` graph 
+
+#### Intuition
+
+We can start from nodes without `out` siblings - leafs and do Depth-First Search from them, calculating time for each sibling in parallel and choosing the maximum. That is an optimal way to visit all the nodes. For each node, a solution can be cached.
+
+#### Approach
+
+Let's use some [Kotlin's API](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/):
+* calculate leafs by subtracting all `from` nodes from all the nodes `1..n`
+* form a graph `Map<Int, List<Int>>` by using `groupBy`
+* choose the maximum and return it with `maxOf`
+* get and put to map with `getOrPut`
+
+#### Complexity
+
+- Time complexity:
+$$O(nr)$$, will visit each node only once, r - average siblings count for each node
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun minimumTime(n: Int, relations: Array<IntArray>, time: IntArray): Int {
+      val lastNodes = (1..n) - relations.map { it[0] }
+      val fromTo = relations.groupBy({ it[1] }, { it[0] })
+      val cache = mutableMapOf<Int, Int>()
+      fun dfs(curr: Int): Int = cache.getOrPut(curr) {
+        time[curr - 1] + (fromTo[curr]?.maxOf { dfs(it) } ?: 0)
+      }
+      return lastNodes.maxOf { dfs(it) }
+    }
+
+```
+
 # 17.10.2023
 [1361. Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/description/) medium
 [blog post](https://leetcode.com/problems/validate-binary-tree-nodes/solutions/4177318/kotlin-union-find/)
