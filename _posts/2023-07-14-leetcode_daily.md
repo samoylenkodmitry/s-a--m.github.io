@@ -13,6 +13,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 19.10.2023
+[844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/) medium
+[blog post](https://leetcode.com/problems/backspace-string-compare/solutions/4184552/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19102023-844-backspace-string-compare?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/928c091d-e38d-4c0b-aa9b-f378d8170434_1697691130.8424249.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/375
+
+#### Problem TDLR
+
+Are typing with `backspace` sequences equal
+
+#### Intuition
+
+We can use a Stack to evaluate the resulting strings. However, scanning from the end and counting backspaces would work better.
+
+#### Approach
+
+Remove all of the backspaced chars before comparing
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun backspaceCompare(s: String, t: String): Boolean {
+      var si = s.lastIndex
+      var ti = t.lastIndex
+      while (si >= 0 || ti >= 0) {
+        var bs = 0
+        while (si >= 0 && (s[si] == '#' || bs > 0))
+          if (s[si--] == '#') bs++ else bs--
+        bs = 0
+        while (ti >= 0 && (t[ti] == '#' || bs > 0))
+          if (t[ti--] == '#') bs++ else bs--
+        if (si < 0 != ti < 0) return false
+        if (si >= 0 && s[si--] != t[ti--]) return false
+      }
+      return true
+    }
+
+```
+
 # 18.10.2023
 [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/) hard
 [blog post](https://leetcode.com/problems/parallel-courses-iii/solutions/4180807/kotlin-dfs-memo-from-leafs/)
