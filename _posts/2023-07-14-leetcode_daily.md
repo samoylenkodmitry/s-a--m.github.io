@@ -14,6 +14,85 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
 # 23.10.2023
+[342. Power of Four](https://leetcode.com/problems/power-of-four/description/) easy
+[blog post](https://leetcode.com/problems/power-of-four/solutions/4197944/kotlin-trailing-zero-bits/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23102023-342-power-of-four?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/3c34301e-6b37-4fea-b065-53ea881a3260_1698035022.2622867.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/379
+
+#### Problem TLDR
+
+Is `n == x^4`?
+
+#### Intuition
+
+There are several ways to solve this. We need to look at the bit representation of some examples, there are an even number of trailing zeros and always just a single `1` bit:
+
+```kotlin
+    // 4  100
+    // 16 10000
+    // 64 1000000
+```
+
+# Approach
+
+```kotlin
+if (n == 1) true else if (n == 0) false 
+else n % 4 == 0 && isPowerOfFour(n / 4)
+```
+
+Bit shift approach:
+
+```kotlin
+       var x = n
+       var count = 0
+       while (x > 0 && x and 1 == 0) {
+          x = x shr 1
+          count++
+       }
+       return x == 1 && count % 2 == 0
+```
+
+Bit mask approach:
+
+```kotlin
+n > 0 && (n and (n - 1)) == 0 && (n and 0b0101_0101_0101_0101__0101_0101_0101_0101 != 0)
+```
+
+Use Kotlin `countTrailingZeroBits`. Or do a [Binary Search](https://graphics.stanford.edu/~seander/bithacks.html#ZerosOnRightParallel) if you write that algorithm by hand:
+
+```
+unsigned int c = 32; // c will be the number of zero bits on the right
+v &= -signed(v);
+if (v) c--;
+if (v & 0x0000FFFF) c -= 16;
+if (v & 0x00FF00FF) c -= 8;
+if (v & 0x0F0F0F0F) c -= 4;
+if (v & 0x33333333) c -= 2;
+if (v & 0x55555555) c -= 1;
+```
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$, for bit mask solution
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun isPowerOfFour(n: Int): Boolean = n > 0 &&
+      (n and (n - 1)) == 0 && n.countTrailingZeroBits() % 2 == 0
+
+```
+
+# 22.10.2023
 [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/description/) hard
 [blog post](https://leetcode.com/problems/maximum-score-of-a-good-subarray/solutions/4194715/kotlin-must-include-nums-k/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23102023-1793-maximum-score-of-a?r=2bam17&utm_campaign=post&utm_medium=web)
@@ -71,7 +150,7 @@ $$O(1)$$
 
 ```
 
-# 22.10.2023
+# 21.10.2023
 [1425. Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/description/) hard
 [blog post](https://leetcode.com/problems/constrained-subsequence-sum/solutions/4191510/kotlin-decreasing-queue-evolve/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22102023-1425-constrained-subsequence?r=2bam17&utm_campaign=post&utm_medium=web)
