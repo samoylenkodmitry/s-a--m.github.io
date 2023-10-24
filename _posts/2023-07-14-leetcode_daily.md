@@ -13,6 +13,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 24.10.2023
+[515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/) medium
+[blog post](https://leetcode.com/problems/find-largest-value-in-each-tree-row/solutions/4201719/kotlin-bfs/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24102023-515-find-largest-value-in?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/588e12da-db23-4409-bf23-7e2f852fef37_1698120762.6644943.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/380
+
+#### Problem TLDR
+
+Binary Tree's maxes of the levels
+
+#### Intuition
+
+Just use Breadth-First Search
+
+#### Approach
+
+Let's use some Kotlin's API:
+* generateSequence
+* maxOf
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun largestValues(root: TreeNode?): List<Int> = 
+    with(ArrayDeque<TreeNode>()) {
+      root?.let { add(it) }
+      generateSequence { if (isEmpty()) null else 
+        (1..size).maxOf {
+          with(removeFirst()) {
+            left?.let { add(it) }
+            right?.let { add(it) }
+            `val`
+          }
+        }
+      }.toList()
+    }
+
+```
+
 # 23.10.2023
 [342. Power of Four](https://leetcode.com/problems/power-of-four/description/) easy
 [blog post](https://leetcode.com/problems/power-of-four/solutions/4197944/kotlin-trailing-zero-bits/)
