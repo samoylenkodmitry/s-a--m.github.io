@@ -13,6 +13,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 27.10.2023
+[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) medium
+[blog post](https://leetcode.com/problems/longest-palindromic-substring/solutions/4212765/kotlin-dp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/27102023-5-longest-palindromic-substring?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/515b6208-3cf6-4464-a414-54c82db942fa_1698382112.3016844.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/383
+
+#### Problem TLDR
+
+Longest palindrome substring
+
+#### Intuition
+
+If `dp[from][to]` answering whether substring `s(from, to)` is a palindrome, then `dp[from][to] = s[from] == s[to] && dp[from + 1][to - 1]`
+
+#### Approach
+
+* We can cleverly initialize the `dp` array to avoid some corner cases checks.
+* It is better to store just two indices. For simplicity, let's just do `substring` each time.
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun longestPalindrome(s: String): String {
+      val dp = Array(s.length) { i -> BooleanArray(s.length) { i >= it } }
+      var res = s.take(1)
+      for (to in s.indices) for (from in to - 1 downTo 0) {
+        dp[from][to] = s[from] == s[to] && dp[from + 1][to - 1]
+        if (dp[from][to] && to - from + 1 > res.length) 
+          res = s.substring(from, to + 1)
+      }
+      return res
+    }
+
+```
+
 # 26.10.2023
 [823. Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/description/) medium
 [blog post](https://leetcode.com/problems/binary-trees-with-factors/solutions/4209575/kotlin-dfs-memo/)
