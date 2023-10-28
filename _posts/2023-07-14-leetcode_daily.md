@@ -73,6 +73,8 @@ Another one-liner
 [blog post](https://leetcode.com/problems/longest-palindromic-substring/solutions/4212765/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27102023-5-longest-palindromic-substring?r=2bam17&utm_campaign=post&utm_medium=web)
 ![image.png](https://assets.leetcode.com/users/images/515b6208-3cf6-4464-a414-54c82db942fa_1698382112.3016844.png)
+Golf version
+![image.png](https://assets.leetcode.com/users/images/859a3701-ae43-4631-8900-a58f0654274e_1698488522.5377073.png)
 
 #### Join me on Telegram
 
