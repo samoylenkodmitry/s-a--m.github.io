@@ -13,6 +13,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 28.10.2023
+[1220. Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/description/) hard
+[blog post](https://leetcode.com/problems/count-vowels-permutation/solutions/4216643/kotlin-dfs-memo/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/28102023-1220-count-vowels-permutation?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/672ec04a-2f6a-4472-af14-accc1f7ab6e9_1698468852.2900698.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/384
+
+#### Problem TLDR
+
+Count of `n` lengths paths according to graph rules `a`->`e`, `e`->(`a`, `i`), etc
+
+#### Intuition
+
+This is a straghtforward DFS + memoization dynamic programming problem. Given the current position and the previous character, we know the suffix answer. It is independent of any other factors, so can be cached.
+
+#### Approach
+
+Let's write DFS + memo
+* use Kotlin's `sumOf` API
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun countVowelPermutation(n: Int): Int {
+      val vs = mapOf('a' to arrayOf('e'),
+                     'e' to arrayOf('a', 'i'),
+                     'i' to arrayOf('a', 'e', 'o', 'u'),
+                     'o' to arrayOf('i', 'u'),
+                     'u' to arrayOf('a'),
+                     '.' to arrayOf('a', 'e', 'i', 'o', 'u'))
+      val dp = mutableMapOf<Pair<Int, Char>, Long>()
+      fun dfs(i: Int, c: Char): Long = if (i == n) 1L else 
+        dp.getOrPut(i to c) { vs[c]!!.sumOf { dfs(i + 1, it) } } %
+        1_000_000_007L
+      return dfs(0, '.').toInt()
+    }
+
+```
+
 # 27.10.2023
 [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) medium
 [blog post](https://leetcode.com/problems/longest-palindromic-substring/solutions/4212765/kotlin-dp/)
