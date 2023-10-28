@@ -65,6 +65,8 @@ $$O(n)$$
 ```
 Iterative version
 ![image.png](https://assets.leetcode.com/users/images/11246247-d54a-4814-9034-bc1339765e4f_1698470949.3224041.png)
+Another one-liner
+![image.png](https://assets.leetcode.com/users/images/50f61a72-868f-4c21-8cec-ef4134349331_1698487033.7955854.png)
 
 # 27.10.2023
 [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) medium
