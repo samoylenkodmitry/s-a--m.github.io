@@ -31,7 +31,7 @@ Minimum `pigs` to find a poison in `buckets` in `k` rounds
 
 #### Intuition
 
-The first idea is with the number of bigs increasing, the possibility to succesfully test in the given time grows from `impossible` to `possible`. This gives us the idea to use a `Binary Search`.
+The first idea is, with the number of pigs increasing, the possibility to successfully test in the given time grows from `impossible` to `possible`. This gives us the idea to use a `Binary Search`.
 
 However, now we must solve another problem: given the `pigs` and `rounds`, how many buckets we can test?
 
@@ -76,11 +76,11 @@ or,
     //   3   3   3   3 <-- pig #3
 ```
 
-Now, if one bucket is a poison, we immeidately know which one of those `8` buckets by it's unique pattern.
+Now, if one bucket is a poison, we immediately know which one of those `8` buckets by its unique pattern.
 
-Ok, so `3` pigs for `1` round enables to test `8` or `2^3` buckets. It is evident, that for `1` round the number of possbiel buckets is `2^pigs`
+Ok, so `3` pigs for `1` round enables to test `8` or `2^3` buckets. It is evident, that for `1` round the number of possible buckets is `2^pigs`
 
-How this changes with the grouws of rounds? Let's observe another example, `3` pigs, `2` rounds:
+How this changes with the growth of rounds? Let's observe another example, `3` pigs, `2` rounds:
 
 ```kotlin
     //
