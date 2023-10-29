@@ -17,7 +17,10 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [458. Poor Pigs](https://leetcode.com/problems/poor-pigs/description/) hard
 [blog post](https://leetcode.com/problems/poor-pigs/solutions/4221582/kotlin-understand-encoding/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29102023-458-poor-pigs?r=2bam17&utm_campaign=post&utm_medium=web)
+
 ![image.png](https://assets.leetcode.com/users/images/173a289d-0edd-4952-974b-2f49bc8f78a4_1698567330.8798213.png)
+![image.png](https://assets.leetcode.com/users/images/5297d617-d4a8-4940-9731-eb3ef873958f_1698582545.39781.png)
+
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/385
@@ -28,25 +31,41 @@ Minimum `pigs` to find a poison in `buckets` in `k` rounds
 
 #### Intuition
 
-The first idea is, with the number of bigs increasing, the possibility to successfully test in the given time growth from `impossible` to `possible`. This gives us the idea to use a `Binary Search`.
+The first idea is with the number of bigs increasing, the possibility to succesfully test in the given time grows from `impossible` to `possible`. This gives us the idea to use a `Binary Search`.
 
 However, now we must solve another problem: given the `pigs` and `rounds`, how many buckets we can test?
 
-Let's jump to the hint and a comment section immediately, as this problem uses some predefined trick for solving: `encoding the states`.
+One simple insight is: let's assign unique `pigs pattern` to each of the bucket.
 
-If we have just one round, 3 pigs, there are total 8 states:
+We can brute-force this problem and use memorization. Consider each pig, it can avoid participation, and can participate in all the rounds:
+
+```kotlin
+    val dp = mutableMapOf<Int, Int>()
+    fun numPatterns(pigs: Int): Int {
+      fun dfs(curr: Int): Int = if (curr == 0) 1 else dp.getOrPut(curr) {
+        val take = dfs(curr - 1)
+        if (take >= buckets) take else take + take * minutesToTest / minutesToDie
+      }
+      return dfs(pigs)
+    }
+```
+This number grows quickly, so we trim it by the buckets number maximum.
+
+Another way to solve this, is to observe those unique patterns.
+
+If we have just one round, 3 pigs, there are total 8 patterns:
 
 ```kotlin
     // pigs = 3 rounds = 1
     //   123
-    // 0 000
-    // 1 001
-    // 2 010
-    // 3 011
-    // 4 100
-    // 5 101
-    // 6 110
-    // 7 111
+    // 0 000 no pig drinks
+    // 1 001 pig #3 drinks
+    // 2 010 pig #2 drinks
+    // 3 011 pigs #2 and #3 drinks
+    // 4 100 pig #1 drinks
+    // 5 101 pigs #1 and #3 drinks
+    // 6 110 pigs #1 and #2 drinks
+    // 7 111 all pig drinks
 ```
 or, 
 ```kotlin
@@ -56,7 +75,8 @@ or,
     //     2 2     2 2 <-- pig #2
     //   3   3   3   3 <-- pig #3
 ```
-This is an `optimal` overlapping picture: now if one of the pig dies, we immediately know the answer.
+
+Now, if one bucket is a poison, we immeidately know which one of those `8` buckets by it's unique pattern.
 
 Ok, so `3` pigs for `1` round enables to test `8` or `2^3` buckets. It is evident, that for `1` round the number of possbiel buckets is `2^pigs`
 
@@ -106,8 +126,9 @@ or,
     //             2 2 2                   2  2  2                    2  2  2
     //     3     3     3       3         3       3        3        3        3
 ```
+Each `pigs pattern` consists of the `3` pigs, and each pig defined as round 1 or round 2.
 
-This results in `27` buckets being able to test, or `3^3`. Let's extrapolate this formula: `buckets = (1 + rounds) ^ pigs`
+This results in `27` unique patterns, or buckets being able to test, or `3^3`. Let's extrapolate this formula: `buckets = (1 + rounds) ^ pigs`
 
 #### Approach
 
@@ -126,6 +147,33 @@ $$O(log^2(buckets))$$, one `log` for the Binary Search, another is for `canTest`
 $$O(1)$$
 
 #### Code
+
+DFS + memo
+```kotlin
+  fun poorPigs(buckets: Int, minutesToDie: Int, minutesToTest: Int): Int {
+    val dp = mutableMapOf<Int, Int>()
+    fun numPatterns(pigs: Int): Int {
+      fun dfs(curr: Int): Int = if (curr == 0) 1 else dp.getOrPut(curr) {
+        val take = dfs(curr - 1)
+        if (take >= buckets) take else take + take * minutesToTest / minutesToDie
+      }
+      return dfs(pigs)
+    }
+    var lo = 0
+    var hi = buckets
+    var min = hi
+    while (lo <= hi) {
+      val mid = lo + (hi - lo) / 2
+      if (numPatterns(mid) >= buckets) {
+        min = min(min, mid)
+        hi = mid - 1
+      } else lo = mid + 1
+    }
+    return min
+  }
+```
+
+The more clever version:
 
 ```kotlin
 
