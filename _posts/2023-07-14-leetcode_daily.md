@@ -17,8 +17,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [458. Poor Pigs](https://leetcode.com/problems/poor-pigs/description/) hard
 [blog post](https://leetcode.com/problems/poor-pigs/solutions/4221582/kotlin-understand-encoding/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29102023-458-poor-pigs?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](https://assets.leetcode.com/users/images/25dfe7ae-da53-4721-a279-af60c97cbf1d_1698565161.3287408.png)
-
+![image.png](https://assets.leetcode.com/users/images/173a289d-0edd-4952-974b-2f49bc8f78a4_1698567330.8798213.png)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/385
