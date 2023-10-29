@@ -13,6 +13,148 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 29.10.2023
+[458. Poor Pigs](https://leetcode.com/problems/poor-pigs/description/) hard
+[blog post](https://leetcode.com/problems/poor-pigs/solutions/4221582/kotlin-understand-encoding/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29102023-458-poor-pigs?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/25dfe7ae-da53-4721-a279-af60c97cbf1d_1698565161.3287408.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/385
+
+#### Problem TLDR
+
+Minimum `pigs` to find a poison in `buckets` in `k` rounds
+
+#### Intuition
+
+The first idea is, with the number of bigs increasing, the possibility to successfully test in the given time growth from `impossible` to `possible`. This gives us the idea to use a `Binary Search`.
+
+However, now we must solve another problem: given the `pigs` and `rounds`, how many buckets we can test?
+
+Let's jump to the hint and a comment section immediately, as this problem uses some predefined trick for solving: `encoding the states`.
+
+If we have just one round, 3 pigs, there are total 8 states:
+
+```kotlin
+    // pigs = 3 rounds = 1
+    //   123
+    // 0 000
+    // 1 001
+    // 2 010
+    // 3 011
+    // 4 100
+    // 5 101
+    // 6 110
+    // 7 111
+```
+or, 
+```kotlin
+    //
+    // 0 1 2 3 4 5 6 7
+    //         1 1 1 1 <-- pig #1
+    //     2 2     2 2 <-- pig #2
+    //   3   3   3   3 <-- pig #3
+```
+This is an `optimal` overlapping picture: now if one of the pig dies, we immediately know the answer.
+
+Ok, so `3` pigs for `1` round enables to test `8` or `2^3` buckets. It is evident, that for `1` round the number of possbiel buckets is `2^pigs`
+
+How this changes with the grouws of rounds? Let's observe another example, `3` pigs, `2` rounds:
+
+```kotlin
+    //
+    // 3 pigs, 2 rounds:
+    //   123
+    // 0 000
+    // 1 001
+    // 2 002
+    // 3 010
+    // 4 011
+    // 5 012
+    // 6 020
+    // 7 021
+    // 8 022
+    // 9 100
+    //10 101
+    //11 102
+    //12 110
+    //13 111
+    //14 112
+    //15 120
+    //16 121
+    //17 122
+    //18 200
+    //19 201
+    //20 202
+    //21 210
+    //22 211
+    //23 212
+    //24 220
+    //25 221
+    //26 222
+```
+or,
+```kotlin
+    // 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+    // - round 1 -
+    //                   1  1  1  1  1  1  1  1  1
+    //       2 2 2                2  2  2                    2  2  2
+    //   3     3     3      3        3        3        3        3        3
+    // - round 2 -
+    //                                              1  1  1  1  1  1  1  1  1
+    //             2 2 2                   2  2  2                    2  2  2
+    //     3     3     3       3         3       3        3        3        3
+```
+
+This results in `27` buckets being able to test, or `3^3`. Let's extrapolate this formula: `buckets = (1 + rounds) ^ pigs`
+
+#### Approach
+
+For better Binary Search, use:
+* inclusive `lo` and `hi`
+* check the last condition `lo == hi`
+* always move `lo` or `hi`
+* always compute the result independently `min = min(min, mid)`
+
+#### Complexity
+
+- Time complexity:
+$$O(log^2(buckets))$$, one `log` for the Binary Search, another is for `canTest` function
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun poorPigs(buckets: Int, minutesToDie: Int, minutesToTest: Int): Int {
+      fun canTest(pigs: Int): Boolean {
+        var p = 0
+        var bs = 1
+        while (p++ < pigs) {
+          bs *= 1 + minutesToTest / minutesToDie
+          if (bs >= buckets) return true
+        }
+        return bs >= buckets
+      }
+      var lo = 0
+      var hi = buckets
+      var min = hi
+      while (lo <= hi) {
+        val mid = lo + (hi - lo) / 2
+        if (canTest(mid)) {
+          min = min(min, mid)
+          hi = mid - 1
+        } else lo = mid + 1
+      }
+      return min
+    }
+
+```
+
 # 28.10.2023
 [1220. Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/description/) hard
 [blog post](https://leetcode.com/problems/count-vowels-permutation/solutions/4216643/kotlin-dfs-memo/)
