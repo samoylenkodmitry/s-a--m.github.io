@@ -13,6 +13,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 30.10.2023
+[1356. Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description/) easy
+[blog post](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/solutions/4224952/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30102023-1356-sort-integers-by-the?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/6353f6bd-1bad-463a-9946-c3f2fdf4a77d_1698642824.8370373.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/386
+
+#### Problem TLDR
+
+Sort an array comparing by bit count and value
+
+#### Intuition
+
+Let's use some Kotlin API
+
+#### Approach
+
+* `countOneBits`
+* `sortedWith`
+* `compareBy`
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun sortByBits(arr: IntArray): IntArray = arr
+      .sortedWith(compareBy({ it.countOneBits() }, { it }))
+      .toIntArray()
+
+```
+
 # 29.10.2023
 [458. Poor Pigs](https://leetcode.com/problems/poor-pigs/description/) hard
 [blog post](https://leetcode.com/problems/poor-pigs/solutions/4221582/kotlin-understand-encoding/)
