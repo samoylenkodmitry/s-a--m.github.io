@@ -13,6 +13,45 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 04.11.2023
+[1503. Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/description/) medium
+[blog post](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/solutions/4246680/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04112023-1503-last-moment-before?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/612a447f-1fec-4022-8b33-0fbe52b2c4d4_1699075479.3040485.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/392
+
+#### Problem TLDR
+
+Max time ants on a line when goint left and right
+
+#### Intuition
+
+Use the hint: ants can pass through
+
+#### Approach
+
+The problem becomes trivial
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun getLastMoment(n: Int, left: IntArray, right: IntArray): Int =
+       max(left.maxOrNull() ?: 0, n - (right.minOrNull() ?: n)) 
+
+```
+
 # 03.11.2023
 [767. Reorganize String](https://leetcode.com/problems/reorganize-string/description/) medium
 [blog post](https://leetcode.com/problems/reorganize-string/solutions/4242006/kotlin-priorityqueue/)
