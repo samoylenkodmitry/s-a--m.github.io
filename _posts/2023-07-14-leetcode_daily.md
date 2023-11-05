@@ -17,7 +17,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [1535. Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/description/) medium
 [blog post](https://leetcode.com/problems/find-the-winner-of-an-array-game/solutions/4250991/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05112023-1535-find-the-winner-of?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](https://assets.leetcode.com/users/images/43690b52-796f-4d83-88fc-8f260fd7489e_1699163439.431109.png)
+![image.png](https://assets.leetcode.com/users/images/c759f6c1-387c-4522-8f02-fe29aae328f4_1699164085.9284768.png)
 
 #### Join me on Telegram
 
