@@ -13,6 +13,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 08.11.2023
+[2849. Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description/) medium
+[blog post](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/solutions/4262992/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/08112023-2849-determine-if-a-cell?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/0f615d90-0ab9-4029-a606-19b76608197d_1699418072.6650553.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/397
+
+#### Problem TLDR
+
+Is path possible on grid `sx, sy -> fx, fy`
+
+#### Intuition
+
+Given the problem size, we can't use DP, as it will take O(n^2). However, we must notice, that if the shortest path is reachable, than any other path can be formed to travel at any time.
+
+#### Approach
+
+The shortest path will consist of only the difference between coordinates.
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun isReachableAtTime(sx: Int, sy: Int, fx: Int, fy: Int, t: Int): Boolean {
+      var dx = Math.abs(fx - sx)
+      var dy = Math.abs(fy - sy)
+      var both = min(dx, dy)
+      var other = max(dx, dy) - both
+      var total = both + other
+      return total <= t && (total > 0 || t != 1)
+    }
+
+```
+
 # 07.11.2023
 [1921. Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/description/) medium
 [blog post](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/solutions/4259171/kotlin-sort-by-arrival-time/)
