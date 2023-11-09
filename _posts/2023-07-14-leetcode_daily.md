@@ -13,6 +13,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 09.11.2023
+[1759. Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/description/) medium
+[blog post](https://leetcode.com/problems/count-number-of-homogenous-substrings/solutions/4267188/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09112023-1759-count-number-of-homogenous?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/3f0cda7f-4c8b-4843-9139-12e0c2af0c5c_1699506077.2088804.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/398
+
+#### Problem TLDR
+
+Count of substrings of same chars
+
+#### Intuition
+
+Just count current len and add to total
+
+```
+  // abbcccaa   c t
+  // a          1 1
+  //  b         1 2
+  //   b        2 4
+  //    c       1 5
+  //     c      2 7
+  //      c     3 10
+  //       a    1 11
+  //        a   2 13
+```
+
+#### Approach
+
+* don't forget to update `prev`
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun countHomogenous(s: String): Int {
+    var total = 0
+    var count = 0
+    var prev = '.'
+    for (c in s) {
+      if (c == prev) count++
+      else count = 1
+      total = (total + count) % 1_000_000_007
+      prev = c
+    }
+    return total
+  }
+
+```
+
 # 08.11.2023
 [2849. Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description/) medium
 [blog post](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/solutions/4262992/kotlin/)
