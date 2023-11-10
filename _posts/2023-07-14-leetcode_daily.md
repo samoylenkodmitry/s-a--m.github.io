@@ -13,6 +13,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 10.11.2023
+[1743. Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/description/) medium
+[blog post](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/solutions/4271483/kotlin-graph/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10112023-1743-restore-the-array-from?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/e6fb5bbf-ea10-46ad-af4a-d49216a483c3_1699595317.9363484.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/399
+
+#### Problem TLDR
+
+Restore an array from adjacent pairs
+
+#### Intuition
+
+We can form an undirected graph and do a Depth-First Search
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun restoreArray(adjacentPairs: Array<IntArray>): IntArray {
+      val fromTo = mutableMapOf<Int, MutableList<Int>>()
+      for ((from, to) in adjacentPairs) {
+        fromTo.getOrPut(from) { mutableListOf() } += to
+        fromTo.getOrPut(to) { mutableListOf() } += from
+      }
+      val visited = HashSet<Int>()
+      with(ArrayDeque<Int>()) {
+        add(fromTo.keys.first { fromTo[it]!!.size == 1 }!!)
+        return IntArray(adjacentPairs.size + 1) {
+          while (first() in visited) removeFirst()
+          removeFirst().also {
+            visited.add(it)
+            fromTo[it]?.onEach { add(it) }
+          }
+        }
+      }
+    }
+
+```
+
 # 09.11.2023
 [1759. Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/description/) medium
 [blog post](https://leetcode.com/problems/count-number-of-homogenous-substrings/solutions/4267188/kotlin/)
