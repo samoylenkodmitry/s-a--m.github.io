@@ -13,6 +13,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 12.11.2023
+[815. Bus Routes](https://leetcode.com/problems/bus-routes/description/) hard
+[blog post](https://leetcode.com/problems/bus-routes/solutions/4278516/kotlin-bfs/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12112023-815-bus-routes?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/6587a028-c343-43b9-88ab-7943f08f5156_1699767967.602056.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/401
+
+#### Problem TLDR
+
+Minimum busses to travel by given routes
+
+#### Intuition
+
+The Breadth-First Search in a routes graph would work.
+Build `stop to route` association to know which of the routes are next.
+
+#### Approach
+
+Some optimizations:
+
+* eleminate the trivial case `source == target`
+* remove a visited stop from `stopToRoute` graph 
+* there is at most `routes.size` busses needed
+* remember the visited stop
+
+#### Complexity
+
+- Time complexity:
+$$O(RS)$$ 
+
+- Space complexity:
+$$O(RS)$$
+
+#### Code
+
+```kotlin
+
+    fun numBusesToDestination(routes: Array<IntArray>, source: Int, target: Int): Int {
+      if (source == target) return 0
+      val stopToRoute = mutableMapOf<Int, MutableList<Int>>()
+      for (i in routes.indices)
+        for (stop in routes[i])
+          stopToRoute.getOrPut(stop) { mutableListOf() } += i
+      return with(ArrayDeque<Int>()) {
+        add(source)
+        val visited = mutableSetOf<Int>()
+        for (bus in 1..routes.size)
+          repeat(size) {
+            for (route in stopToRoute.remove(removeFirst()) ?: emptyList())
+              if (visited.add(route)) for (s in routes[route])
+                if (s == target) return@with bus else add(s)
+          }
+        -1
+      }
+    }
+
+```
+
 # 11.11.2023
 [2642. Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/description/) hard
 [blog post](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/solutions/4274939/kotlin-dijkstra/)
