@@ -25,7 +25,7 @@ https://t.me/leetcode_daily_unstoppable/401
 
 #### Problem TLDR
 
-Minimum busses to travel by given routes
+Minimum buses to travel by given routes
 
 #### Intuition
 
@@ -36,9 +36,9 @@ Build `stop to route` association to know which of the routes are next.
 
 Some optimizations:
 
-* eleminate the trivial case `source == target`
+* eliminate the trivial case `source == target`
 * remove a visited stop from `stopToRoute` graph 
-* there is at most `routes.size` busses needed
+* there is at most `routes.size` buses needed
 * remember the visited stop
 
 #### Complexity
