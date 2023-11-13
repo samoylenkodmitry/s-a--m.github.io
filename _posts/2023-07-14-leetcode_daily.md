@@ -13,6 +13,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 13.11.2023
+[2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/) medium
+[blog post](https://leetcode.com/problems/sort-vowels-in-a-string/solutions/4281721/kotlin-count-sort/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13112023-2785-sort-vowels-in-a-string?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/8586f4df-9d2f-44da-a057-a73ca1145af4_1699854141.8061037.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/402
+
+#### Problem TLDR
+
+Sort vowels in a string
+
+#### Intuition
+
+The sorted result will only depend of the vowels frequencies.
+
+#### Approach
+
+Let's use Kotlin API:
+* groupBy
+* mapValues
+* buildString
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```
+
+    fun sortVowels(s: String): String {
+      val freq = s.groupBy { it }.mapValues({ it.value.size }).toMutableMap()
+      val vl = mutableListOf('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u')
+      val vs = vl.toSet()
+      return buildString {
+        for (c in s)
+          if (c in vs) {
+            while (freq[vl.first()].let { it == null || it <= 0 }) vl.removeFirst()
+            freq[vl.first()] = freq[vl.first()]!! - 1
+            append(vl.first())
+          } else append(c)
+      }
+    }
+
+```
+
 # 12.11.2023
 [815. Bus Routes](https://leetcode.com/problems/bus-routes/description/) hard
 [blog post](https://leetcode.com/problems/bus-routes/solutions/4278516/kotlin-bfs/)
