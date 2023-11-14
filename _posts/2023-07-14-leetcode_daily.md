@@ -13,6 +13,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 14.11.2023
+[1930. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/) medium
+[blog post](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/4285632/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/14112023-1930-unique-length-3-palindromic?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/b42fb353-f89a-42fc-84bc-be7ada01ff3f_1699938807.875277.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/403
+
+#### Problem TLDR
+
+Count of unique palindrome substrings of length 3
+
+#### Intuition
+
+We can count how many other characters between group of the current
+
+#### Approach
+
+Let's use Kotlin API:
+* groupBy
+* filterValues
+* indexOf
+* lastIndexOf
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, we can also use `withIndex` to avoid searching `indexOf` and `lastIndexOf`.
+
+- Space complexity:
+$$O(1)$$, if we store frequencies in an `IntArray`
+
+#### Code
+
+```kotlin
+
+    fun countPalindromicSubsequence(s: String): Int {
+      val freq = s.groupBy { it }.filterValues { it.size > 1 }
+      var count = 0
+      for ((l, f) in freq) {
+        if (f.size > 2) count++
+        val visited = HashSet<Char>()
+        for (i in s.indexOf(l)..s.lastIndexOf(l)) 
+          if (s[i] != l && visited.add(s[i])) count++
+      }
+      return count
+    }
+
+```
+
 # 13.11.2023
 [2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/) medium
 [blog post](https://leetcode.com/problems/sort-vowels-in-a-string/solutions/4281721/kotlin-count-sort/)
