@@ -64,6 +64,8 @@ $$O(n)$$
   }
 
 ```
+Shorter version:
+![image.png](https://assets.leetcode.com/users/images/6602078f-12e1-46cf-a08f-52fb12e3d0b5_1700024814.7780728.png)
 
 # 14.11.2023
 [1930. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/) medium
