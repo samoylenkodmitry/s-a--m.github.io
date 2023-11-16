@@ -13,6 +13,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 16.11.2023
+[1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/) medium
+[blog post](https://leetcode.com/problems/find-unique-binary-string/solutions/4293360/kotlin-sort/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16112023-1980-find-unique-binary?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/ddcbfc6c-e23e-49a7-a587-b426beea1762_1700112204.4885535.png)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/406
+
+#### Problem TLDR
+
+First absent number in a binary string array
+
+#### Intuition
+
+The naive solution would be searching in all the numbers `0..2^n`. However, if we convert strings to ints and sort them, we can do a linear scan to detect first absent.
+
+#### Approach
+
+* use padStart to convert back
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun findDifferentBinaryString(nums: Array<String>): String {
+      var next = 0
+      for (x in nums.sorted()) {
+        if (x.toInt(2) > next) break
+        next++
+      }
+      return next.toString(2).padStart(nums[0].length, '0')
+    }
+
+```
+
 # 15.11.2023
 [1846. Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/description/) medium
 [blog post](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4289555/kotlin-priority-queue/)
