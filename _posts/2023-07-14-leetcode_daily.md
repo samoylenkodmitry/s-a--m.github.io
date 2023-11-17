@@ -13,6 +13,47 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 17.11.2023
+[1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/) medium
+[blog post](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/4297218/kotlin-two-pointers/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17112023-1877-minimize-maximum-pair?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/2c1c9f93-a471-468e-b59e-87b6af0fd531_1700195482.317724.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/407
+
+#### Problem TLDR
+
+Minimum possible max of array pairs sums
+
+#### Intuition
+
+The optimal construction way is to pair smallest to largest.  
+
+#### Approach
+
+We can use two pointers and iteration, let's write non-optimal one-liner however
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(1)$$, this solution takes O(n), but can be rewritten
+
+#### Code
+
+```kotlin
+
+    fun minPairSum(nums: IntArray): Int = 
+      nums.sorted().run {
+          zip(asReversed()).maxOf { it.first + it.second }
+      }
+
+```
+
 # 16.11.2023
 [1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/) medium
 [blog post](https://leetcode.com/problems/find-unique-binary-string/solutions/4293360/kotlin-sort/)
