@@ -13,6 +13,49 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 19.11.2023
+[1887. Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/description/) medium
+[blog post](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/solutions/4304937/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19112023-1887-reduction-operations?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/8d0d3c25-390a-4047-a3cc-78333051cc10_1700373002.3296654.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/410
+
+#### Problem TLDR
+
+Number of operations to decrease all elements to the next smallest
+
+#### Intuition
+
+The algorithm pretty much in a problem definition, just implement it. 
+
+#### Approach
+
+* iterate from the second position, to simplify the initial conditions
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog())$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun reductionOperations(nums: IntArray): Int {
+      nums.sort()
+      return (nums.size - 2 downTo 0).sumBy {
+        if (nums[it] < nums[it + 1]) nums.size - 1 - it else 0
+      }
+    }
+
+```
+
 # 18.11.2023
 [1838. Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/) medium
 [blog post](https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/4301306/kotlin-two-pointers/)
