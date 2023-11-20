@@ -13,6 +13,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 20.11.2023
+[2391. Minimum Amount of Time to Collect Garbage](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/description/) medium
+[blog post](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/solutions/4308211/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20112023-2391-minimum-amount-of-time?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/3a19ffd1-298a-482c-97a6-978236bda3de_1700457162.759656.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/411
+
+#### Problem TLDR
+
+Time to pick 3-typed `garbage[]` by 3 trucks traveling to the right `travel[]` time 
+
+#### Intuition
+
+We can hardcode the algorithm from the description examples, for each truck individually.
+
+#### Approach
+
+Let's try to minify the code:
+* all garbage must be picked up, so add `garbage.sumBy { it.length }`
+* for each type, truck will travel until the last index with this type
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun garbageCollection(garbage: Array<String>, travel: IntArray): Int =
+      garbage.sumBy { it.length } +
+        "MPG".sumBy { c ->
+          (1..garbage.indexOfLast { c in it }).sumBy { travel[it - 1] }
+        }
+
+```
+
 # 19.11.2023
 [1887. Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/description/) medium
 [blog post](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/solutions/4304937/kotlin/)
