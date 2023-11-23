@@ -13,6 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 23.11.2023
+[1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/) medium
+[blog post](https://leetcode.com/problems/arithmetic-subarrays/solutions/4319276/kotlin-priorityqueue/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23112023-1630-arithmetic-subarrays?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/2f03aac4-d6d9-4991-b12e-49460f627a8c_1700714301.0309656.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/414
+
+
+#### Problem TLDR
+
+Query array ranges can form arithmetic sequence
+
+#### Intuition
+
+Given the problem contraints, the naive solution would work: just sort the subarray and check the `diff`.
+
+#### Approach
+
+We can use PriorityQueue
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2log(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```
+
+  fun checkArithmeticSubarrays(nums: IntArray, l: IntArray, r: IntArray) = 
+  List(l.size) { ind ->
+    val pq = PriorityQueue<Int>() 
+    for (i in l[ind]..r[ind]) pq.add(nums[i])
+    val diff = -pq.poll() + pq.peek()
+    var prev = pq.poll()
+    while (pq.isNotEmpty()) {
+      if (pq.peek() - prev != diff) return@List false
+      prev = pq.poll()
+    }
+    true
+  }
+
+```
+
 # 22.11.2023
 [1424. Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/description/) medium
 [blog post](https://leetcode.com/problems/diagonal-traverse-ii/solutions/4315814/kotlin-priorityqueue/)
