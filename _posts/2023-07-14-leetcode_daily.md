@@ -13,6 +13,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 24.11.2023
+[1561. Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/description/) medium
+[blog post](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4323147/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24112023-1561-maximum-number-of-coins?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/wsx94MZvALk)
+![image.png](https://assets.leetcode.com/users/images/9764474a-395b-44ce-bfa6-391fce59a28c_1700801724.9396522.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/415
+
+#### Problem TLDR
+
+Get sum of second maxes of triples from array
+
+#### Intuition
+
+Observing the example:
+
+```kotlin
+  // 1 2 3 4 5 6 7 8 9
+  // *             * *  8
+  //   *       * *      6
+  //     * * *          4
+  // size = x + 2x
+```
+we can deduce an optimal algorithm: give bob the smallest value, and take the second largest. There are exactly `size / 3` moves total.
+
+#### Approach
+
+Let's write it in a functional style, using Kotlin's API:
+* sorted
+* drop
+* chunked
+* sumBy
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$, can be O(1) when sorted in-place
+
+#### Code
+
+```kotlin
+
+  fun maxCoins(piles: IntArray): Int =
+    piles.sorted()
+      .drop(piles.size / 3)
+      .chunked(2)
+      .sumBy { it[0] }
+
+```
+
 # 23.11.2023
 [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/) medium
 [blog post](https://leetcode.com/problems/arithmetic-subarrays/solutions/4319276/kotlin-priorityqueue/)
