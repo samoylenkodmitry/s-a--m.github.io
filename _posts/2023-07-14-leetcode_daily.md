@@ -13,6 +13,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 26.11.2023
+[1727. Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/description/) medium
+[blog post](https://leetcode.com/problems/largest-submatrix-with-rearrangements/solutions/4330761/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/26112023-1727-largest-submatrix-with?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/K-EQs20YOF0)
+![image.png](https://assets.leetcode.com/users/images/18a04410-cce3-43cd-9b69-97d67cbc5378_1700977163.3572178.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/417
+
+#### Problem TLDR
+
+Max area of `1` submatrix after sorting columns optimally
+
+#### Intuition
+
+Use hint :(
+Ok, if we store the heights of the columns we can analyze each row independently, by choosing the largest heights first. The area will be `height * width`, where width will be the current position:
+![image.png](https://assets.leetcode.com/users/images/0bfd7ec0-9bdb-434e-a6ab-d40a236c3812_1700977461.3205564.png)
+
+![image.png](https://assets.leetcode.com/users/images/bf0a2a94-dee9-4f14-8dc9-aee7bd98a40b_1700977446.7752476.png)
+
+#### Approach
+
+We can reuse the matrix, but don't do this in a production code without a warning.
+
+#### Complexity
+
+- Time complexity:
+$$O(nmlog(m))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun largestSubmatrix(matrix: Array<IntArray>): Int {
+    for (y in 1..<matrix.size)
+      for (x in 0..<matrix[y].size)
+        if (matrix[y][x] > 0)
+          matrix[y][x] += matrix[y - 1][x]
+    var max = 0
+    for (row in matrix) {
+      row.sort()
+      for (x in row.lastIndex downTo 0)
+        max = max(max, row[x] * (row.size - x))
+    }
+    return max
+  }
+
+```
+
 # 25.11.2023
 [1685. Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/description/) medium
 [blog post](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/solutions/4326893/kotlin/)
