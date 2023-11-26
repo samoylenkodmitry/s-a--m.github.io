@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ставим try-catch на все приложение (Android)
+title: Implementing a Global try-catch for an Android Application
 ---
-# Где в приложении спрятался метод main()?
+# Where in the Application is the main() Method Hidden?
 
-Найти его можно опытным путем. Поставим брекпоинт в колбэк Application.onCreate и
-обнаружим его в вершине стек-трейса, класс ActivityThread.
-Вот она, "привычная" точка входа jvm-приложение:
+It can be found empirically. Set a breakpoint in the Application.onCreate callback and
+you will discover it at the top of the stack trace, in the class ActivityThread.
+Here it is, the "familiar" entry point of a JVM application:
 ```
     public static void main(String[] args) {
         ...
@@ -22,34 +22,32 @@ title: Ставим try-catch на все приложение (Android)
     }
 
 ```
-Пропустив нерелевантные нашей теме вещи, опишу что тут происходит:
-1. `Looper.prepareMainLooper()` "подготавливается" Looper (создается thread-local экземпляр класса Looper)
-2. `ActivityThread thread =...` Создается экземпляр ActivityThread
-3. `thread.attach` Выполняется метод attach ActivityThread (создается экземпляр приложения и вызывается колбэк Application.onCreate)
-4. `Looper.loop()` Запускается лупер. С этого момента лупер начинает опрашивать свою внутреннюю очередь и выполнять
-из нее задания. Туда попадут всех остальные колбэки активити.
-5. `throw new RuntimeException("Main thread loop unexpectedly exited")` в самой последней строке раскрывается
-суть архитектуры сдк - на эту строчку приложение попасть не должно за всю свою жизнь. Если же мы в нее попали,
-то приложение завершается ошибкой.
-Таким образом, вырисовывается проблема и ее решение: если какой-нибудь произвольный колбэк Activity или, еще
-интереснее, View, бросит ошибку, то все приложение упадет. Заранее подстраховаться от этого не получится никак.
-Вообще в java есть универсальный глобальный механизм отлова ошибок:
+Skipping things irrelevant to our topic, here's what's happening:
+1. `Looper.prepareMainLooper()` "prepares" the Looper (creates a thread-local instance of the Looper class)
+2. `ActivityThread thread =...` An instance of ActivityThread is created
+3. `thread.attach` The attach method of ActivityThread is executed (creates an instance of the application and calls the Application.onCreate callback)
+4. `Looper.loop()` The looper starts. From this moment, the looper begins to poll its internal queue and execute
+tasks from it. All other activity callbacks will end up here.
+5. `throw new RuntimeException("Main thread loop unexpectedly exited")` The last line reveals
+the essence of the SDK architecture - the application should not reach this line in its lifetime. If we do, 
+the application terminates with an error.
+Thus, a problem and its solution emerge: if some random Activity or View callback throws an error, the entire application crashes. There's no way to safeguard against this in advance.
+In Java, there is a universal global mechanism for catching errors:
 
 ```
 		Thread.currentThread().setUncaughtExceptionHandler((t, e) -> ... ); //ловим все ошибки
 ```
-Но представленная выше архитектура не позволит воспользоваться этим механизмом, т.к. сперва ошибка пробросится
-в вызов Looper.loop(), завершив его, и лишь затем выйдет в main() и наш установленный хэндлер ошибок.
-После того, как ошибка поймается хэндлером у нас остается проблема завершенного Looper.loop, и соответственно
-приложения, больше _не_реагирующего_на_системные_колбэки_и_клики.
+But the above architecture doesn't allow this mechanism to be used, as the error will first be thrown in the Looper.loop() call, ending it, and only then it will come out in main() and our set error handler.
+Once the error is caught by the handler, we are left with the problem of the completed Looper.loop, and therefore
+an application that no longer responds to system callbacks and clicks.
 
-# Решение проблемы зависшего приложения
-Чтобы активити снова реагировало на клики и колбэки достаточно опять запустить лупер:
+# Solution to the Frozen Application Problem
+To get the activity to respond to clicks and callbacks again, just restart the looper:
 ```
 		Looper.loop();
 ```
 
-Итого, финальное решение. В Application.onCreate:
+So, the final solution. In Application.onCreate:
 ```
 		Thread.currentThread().setUncaughtExceptionHandler((t, e) -> continueSafeLoop(e));
 ```
@@ -68,7 +66,7 @@ title: Ставим try-catch на все приложение (Android)
 				if ((ptr == null || ptr != 0) && (quitting == null || !quitting.booleanValue())) {
 					Looper.loop();
 				} else {
-					break; //тут просто детект завершения лупера; делается только рефлексивно
+				break; //this is just detecting the end of the looper; done only reflectively
 				}
 			} catch (final Throwable err) {
 				error = err;
@@ -76,16 +74,16 @@ title: Ставим try-catch на все приложение (Android)
 		}
 	}
 ```
-Теперь вы можете проэкспериментировать, бросив ошибку в любом из колбэков, и убедиться, что приложение не падает
-и не зависает.
-Конечно же, вам все равно придется абстрагироваться от прямых колбэков активити, т.к. в нем есть детект вызова super метода.
-И обязательно нужно позаботиться об отсылке пойманных крашей в firebase/crashlytics, т.к. теперь
-в стандартных отчетах об ошибках в консоли гугл плей не будет крашей.
+Now you can experiment by throwing an error in any of the callbacks and see that the application does not crash
+and does not freeze.
+Of course, you will still need to abstract away from direct activity callbacks, as there is a detect call to the super method.
+And you must ensure sending caught crashes to Firebase/Crashlytics, as there will no longer be crashes
+in the standard error reports in the Google Play console.
 
-P.S.: Примечательно, что класс ActivityThread не является потоком Thread и совсем не про андроидовский класс
-Activity, а как раз про "активность" в смысле "набор действий", и создает не одно активити, а все приложение
-Application. По сути он является делегатом всех системных колбэков приложения, отвечает за переходы его состояний.
-Об этом также говорит его javadoc:
+P.S.: It is noteworthy that the class ActivityThread is not a Thread and is not about the Android class
+Activity, but rather about "activity" in the sense of "a set of actions," and creates not one activity, but the entire Application.
+In essence, it acts as a delegate of all system callbacks of the application, responsible for its state transitions.
+This is also stated in its JavaDoc:
 ```
 /**
  * This manages the execution of the main thread in an
@@ -96,4 +94,8 @@ Application. По сути он является делегатом всех с�
  * {@hide}
  */
 ```
-Неудачный выбор имени, как по мне :)
+A bit of an unfortunate name choice, in my opinion :)
+
+
+
+

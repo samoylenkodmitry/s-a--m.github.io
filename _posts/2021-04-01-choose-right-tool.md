@@ -1,70 +1,68 @@
 ---
 layout: post
-title: Допиливаем Thiсс-15
+title: Finishing the Thiсс-15
 ---
-# Или ноутбук для Андроид-разработки
-Пункт первый - покупаем вот [этого толстячка](https://www.eluktronics.com/THICC15-BYO) Update: на их сайте остался только полный вариант с внутренностями [THICC-15](https://www.eluktronics.com/THICC-15/)
+# Or a Laptop for Android Development
+First step - we buy [this chunky guy](https://www.eluktronics.com/THICC15-BYO) Update: on their site, only the full version with internals [THICC-15](https://www.eluktronics.com/THICC-15/) is left
 
-Что это: пустой ноутбук без процессора, оперативки, жесткого диска. 
+What is it: an empty laptop without a processor, RAM, hard drive.
 
-Почему его?
+Why choose it?
 
-Во-первых, без этих компонентов будет меньше пошлина. А во-вторых, это единственный 
-в своем роде (кроме его близнецов, вроде Xmg Apex-15) ноут с поддержкой деcктопного Ryzen 9.
+Firstly, without these components, the duty will be less. Secondly, it's the only one of its kind (apart from its twins, like Xmg Apex-15) laptop supporting a desktop Ryzen 9.
 
-Пока посылка идет, покупаем себе быстренько Ryzen 3950x (потому что Android проект - это серьезно)
+While the package is on its way, we quickly buy ourselves a Ryzen 3950x (because an Android project is serious business)
 
 ![ryzen]({{ site.url }}/assets/ryzen.jpg)
 
-Заказали, получили, распаковали, радуемся?
+Ordered, received, unpacked, happy?
 
 ![delivery]({{ site.url }}/assets/delivery.jpg)
 
-
-К сожалению, он слегка чересчур шумный даже без большой нагрузки. 16 ядер как-никак.
+Unfortunately, it's slightly too noisy even without heavy load. 16 cores after all.
 
 ![inside]({{ site.url }}/assets/inside.jpg)
-Думаем, что с этим делать.
+Thinking about what to do with it.
 
-# Допиливаем
+# Finishing
 
-В прямом смысле. Берем лобзик, снимаем крышку и аккуратно вырезаем из нее середину. О_О
+Literally. We take a jigsaw, remove the cover and carefully cut out the middle of it. O_O
 
 ![saw1]({{ site.url }}/assets/saw1.jpg)
 
-Обратной дороги нет :)
+No turning back now :)
 
 ![saw2]({{ site.url }}/assets/saw2.jpg)
 
-Теперь нужна сеточка. Её вырезаем из старой подставки под ноутбук.
+Now we need a mesh. We cut it out of an old laptop stand.
 
 ![net]({{ site.url }}/assets/net.jpg)
 
-Приклеиваем сетку к раме крышке на эпоксидную смолу и суперклей.
+Glue the mesh to the frame of the cover with epoxy resin and super glue.
 
 ![back]({{ site.url }}/assets/back.jpg)
 
-Почти готово.
+Almost ready.
 
-Покупаем отдельно небольшие медные пластины для охлаждения. Высота ~3.5 мм.
+We buy small copper plates for cooling separately. Height ~3.5 mm.
 
 ![cu]({{ site.url }}/assets/cu.jpg)
 
-Крепить их будем сверху системы охлаждения, поэтому нужно оторвать от нее этикетки-ручки и зачистить поверхность. 
+We will attach them on top of the cooling system, so we need to remove the labels-handles from it and clean the surface.
 
-Для крепления подойдет медная проволока и теплоупорные кольца-резинки.
+Copper wire and heat-resistant rubber rings will be suitable for attachment.
 
 ![circles]({{ site.url }}/assets/circles.jpg)
 
 ![install]({{ site.url }}/assets/install.jpg)
 
-Не забыть нанести термопасту, так как поверхность неровная.
+Don't forget to apply thermal paste, as the surface is uneven.
 
 ![installed1]({{ site.url }}/assets/installed1.jpg)
 
 ![installed2]({{ site.url }}/assets/installed2.jpg)
 
-Все, готово, можно собирать.
+All done, ready to assemble.
 
 
 ![ready1]({{ site.url }}/assets/ready1.jpg)
@@ -73,8 +71,8 @@ title: Допиливаем Thiсс-15
 
 ![under]({{ site.url }}/assets/under.jpg)
 
-# А для чего такая мощь?
+# Why Such Power?
 
-Ноут подойдет как переносной настольный компьютер. Удобно, когда все окружение всегда при тебе в полной мощности.
+The laptop is suitable as a portable desktop computer. It's convenient when your entire environment is always with you in full power.
 
 ![final]({{ site.url }}/assets/final.jpg)

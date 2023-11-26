@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Первый взгляд на Jetpack Compose
+title: First Look at Jetpack Compose
 ---
-# Создадим сто тысяч вьюх
-Сразу скажу, что данная статья не ставит задачу придраться к этой библиотеке, т.к. мне самому она очень симпатична. 
-Сначала создадим простой список, куда будем добавлять вьюхи. 
-Это неоптимальный способ, но он покажет общую картинку, насколько в новом фреймворке уделялось внимание производительности.
-Итак, сравним старый способ:
+# Let's Create a Hundred Thousand Views
+I should say upfront that this article is not intended to nitpick this library, as I personally find it quite appealing. 
+First, we'll create a simple list to add views to. 
+This is an inefficient method, but it will illustrate the overall picture of how much attention was paid to performance in the new framework.
+So, let's compare the old method:
 ```
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
-И новый способ:
+And the new method:
 ```
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,38 +47,39 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
-Это простой скроллящийся список, в котором N текстовых вьюх расположены по вертикали.
+This is a simple scrolling list, where N text views are arranged vertically.
 
-Показатели замеряем с помощью Android Studio на вкладке `Profiler` после некоторого устаканивания роста хипа.
+We measure performance using Android Studio's `Profiler` tab after the heap growth stabilizes.
 1. N = 1
 ![c_1]({{ site.url }}/assets/c_1.png)
-Размер heap View - 1.5M vs размер Compose - 2.7M
-Это базовое различие при всего лишь одной вьюхе. В 2 раза, но не критично для современных девайсов.
+Heap size for View - 1.5M vs Compose - 2.7M
+This is the basic difference with just one view. Twice as much, but not critical for modern devices.
 
-2. N = 40_000
+2. N = 40,000
 ![c_2]({{ site.url }}/assets/c_2.png)
 View 723M vs Compose 26778M
-Видно насколько сильно растет память в зависимости от количества элементов у compose.
+You can see how memory usage significantly increases depending on the number of elements in compose.
 
-3. N = 60_000 тут у эмулятора не хватило heap в размере 512 мб (при выделенной RAM=30GB) и compose упал с OutOfMemoryError
+3. N = 60,000 here the emulator ran out of heap space of 512 MB (with allocated RAM=30GB) and compose crashed with OutOfMemoryError
 
-4. N = 100_000 продолжаю тестировать View - 1807М. Очень большой потенциал роста количества одновременно присутствующих элементов.
+4. N = 100,000 continue testing View - 1807M. There's a huge potential for growth in the number of elements present at the same time.
 ![c_3]({{ site.url }}/assets/c_3.png)
 
-Составим график роста памяти от количества элементов.
+Let's plot the memory growth against the number of elements.
 ![c_4]({{ site.url }}/assets/c_4.png)
-Объем памяти View растет линейно, чего не скажешь про Compose. Штошш.
+Memory usage for View grows linearly, which is not the case for Compose.
 
-# Настоящая сила jetpack compose
+# The Real Power of Jetpack Compose
 
-Нужно всего 3 строки для создания lazy-списка типа RecyclerView
+It takes just 3 lines to create a lazy list like RecyclerView
 
 ```
 LazyColumnFor(items = (1..1_000_000).toList()) {
   Text(text="Hello $it")
 }
 ```
-Для сравнения, тот же результат с помощью RecyclerView:
+For comparison, achieving the same result using RecyclerView:
+
 ```
 RecyclerView(this).apply {
   adapter = object : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -96,10 +97,9 @@ RecyclerView(this).apply {
 }
 
 ```
-
-Рассмотрим Lazy-список подробнее. 
-Интересно, как часто он перерисовывает элементы. 
-Нарисуем с помощью Canvas разноцветные круги:
+Let's take a closer look at the Lazy list. 
+It's interesting to see how often it redraws elements. 
+Let's draw multicolored circles using Canvas:
 
 ```
 LazyColumnFor(items = (1..N).toList()) {
@@ -117,21 +117,20 @@ LazyColumnFor(items = (1..N).toList()) {
 
 ```
 
-Как видим, Canvas() перерисовывается каждый тик
+As we can see, Canvas() redraws every tick
 ![compose_lazy_flashes.gif]({{ site.url }}/assets/compose_lazy_flashes.gif)
 
-Однако Text() перерисовывается только при выходе за границу видимой области:
+However, Text() redraws only when it leaves the visible area:
 ![compose_lazy_text_redraw.gif]({{ site.url }}/assets/compose_lazy_text_redraw.gif)
 
+This is encouraging: they are thinking about component redraw optimizations in advance.
 
-Это радует: об оптимизациях прорисовки компонентов думают заранее.
-
-Также интерфейс функции `LazyColumnFor(items) ` пока что не позволяет создать по-настоящему бесконечный список. Всегда ожидается конечное множество items элементов.
+Also, the `LazyColumnFor(items)` function interface does not yet allow creating a truly infinite list. A finite set of items is always expected.
 
 # tl;dr
-Jetpack Compose пока что находится в альфа версии и видно, что приоритет отдается лаконичности API. Будет надеяться, что гугл не остановится на первой итерации и оптимизирует компоненты. 
+Jetpack Compose is still in alpha version and it's evident that priority is given to API conciseness. Let's hope that Google doesn't stop at the first iteration and optimizes the components. 
 
-В конце концов, это их собственный лозунг - #pert_matters, про который они постепенно забывают (все помнят, что енумы и автобоксинг - это плохо? :) <https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE>)
+After all, it's their own slogan - #pert_matters, which they gradually seem to forget <https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE>)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWz5rJ2EKKc9CBxr3BVjPTPoDPLdPIFCE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

@@ -1,36 +1,40 @@
 ---
 layout: post
-title: Базовые ориентиры при написании кода
+title: Basic Guidelines for Writing Code
 ---
-# Базовые ориентиры при написании кода
+# Basic Guidelines for Writing Code
 
-#### 1. Код должен быть максимально понятным. Если на ревью кто-то не понимает ваш код, значит код не максимально понятен. Если кто-то правил ваш код, рефакторил и допустил ошибку - код не максимально понятен.
-#### 2. Код должен быть простым. Простой код делает всегда одну вещь. Если это метод - он делает одно действие. Если это класс - он отвечает за одну область ответственности. Если это модуль - он содержит только то, что нужно и относится к нему.
-#### 3. Код должен быть оптимальным по производительности. Это означает:
+#### 1. The code should be as clear as possible. If someone doesn't understand your code during a review, it means the code is not clear enough. If someone has edited your code, refactored it, and made a mistake - the code is not clear enough.
+#### 2. The code should be simple. Simple code always does one thing. If it’s a method - it performs one action. If it’s a class - it is responsible for one area. If it’s a module - it contains only what is necessary and relevant to it.
+#### 3. The code should be optimally performant. This means:
 
-  * не создавать лишних объектов для GC
-  * не выполнять ожидающих io действий там, где их можно выполнить отложенно
-  * не наполнять память (например, создавая множество потоков)
-  * не допускать удерживание объектов дольше их жизненного цикла (утечки памяти), деинициализировать то, что больше не нужно
-  * знать среднее время каждной операции, которую вы пишете (например, сколько стоит вызов new Error(), new Thread() и т.д.)
-  * прочтите книгу Effective Java
+  * not creating unnecessary objects for GC
+  * not performing waiting IO actions where they can be executed later
+  * not filling up memory (e.g., by creating many threads)
+  * not allowing objects to be retained beyond their lifecycle (memory leaks), deinitialize what is no longer needed
+  * knowing the average time of each operation you write (e.g., how much it costs to call new Error(), new Thread(), etc.)
+  * read the book Effective Java
   
-#### 4. Код не должен содержать ошибок многопоточности.
+#### 4. The code should not contain concurrency errors.
 
-  * Всегда следите за жизненным циклом объектов
-  * Многопоточным может быть также и однопоточный код, выполняющийся в Looper.loop()
-  * Всегда подразумевайте, что код многопоточный. Поле в которое вы пишите/читаете может быть null. Текст, который собирается в StringBuilder и читается из разных потоков может превратиться в мусор
-  * прочтите книгу Concurrency in Practice
+  * Always monitor the lifecycle of objects
+  * Concurrency can also occur in single-threaded code executed in Looper.loop()
+  * Always assume that the code is multi-threaded. A field you write/read to may be null. Text that is assembled in StringBuilder and read from different threads can turn into garbage
+  * read the book Concurrency in Practice
   
-#### 5. Код не должен падать в продакшене.
+#### 5. The code should not crash in production.
 
-  * Пишите юнит-тесты тех мест, где вы сомневаетесь. (Pro-level: пишите юнит тесты еще и для тех мест где вы не сомневаетесь)
-  * Если вы в себе (или сторонней либе) не уверены, оберните все в try..catch + отсылку нон-фатала в фабрик
+  * Write unit tests for places where you have doubts. (Pro-level: also write unit tests for places where you don't have doubts)
+  * If you are not sure about yourself (or a third-party library), wrap everything in try..catch + send a non-fatal report to your crash reporting service
   
-#### 6. Код не должен падать в продакшене никогда.
+#### 6. The code should never crash in production.
 
-  * Если ошибка появляется из-за сменившегося формата сервера - виноват клиент. Код должен уметь не падать, но сообщать о проблеме.
-  * Если ошибка проявляется раз в год из-за фазы луны на фоне созвездия Стрельца - виноват клиент.
-  * В работающем коде не должно возникать не пойманных Exceptions.
+  * If an error occurs due to a changed server format - it's the client's fault. The code should be able to not crash, but report the problem.
+  * If an error occurs once a year due to the phase of the moon against the backdrop of the Sagittarius constellation - it's the client's fault.
+  * There should be no uncaught Exceptions in working code.
   
-#### 6. Вы должны получать удовольствие от своего кода. Если вы этого не чувствуете, попробуйте отдохнуть, взять отпуск. Если вы этого никогда не чувствовали, вам стоит расширить границы восприятия. Устройте себе challenge, поучаствуйте в соревнованиях codegolf, aicup, пощелкайте задачи hackerrank, leetcode. Попробуйте написать что-нибудь для себя лично в своем телефоне.
+#### 7. You should enjoy your code. If you don't feel this, try to rest, take a vacation. If you have never felt this, you should expand your horizons. Challenge yourself, participate in codegolf, aicup, solve problems on hackerrank, leetcode. Try to write something for yourself personally on your phone.
+
+
+
+

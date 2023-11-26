@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Модификация опций gradle на лету
+title: Modifying Gradle Options on the Fly
 ---
-# Модификация опций gradle на лету
+# Modifying Gradle Options on the Fly
 
-Часто, гугл дает нам попробовать свои недоделанные разработки. Например, новый компилятор ресурсов R8.
-Он пришел на замену "старого" Proguard, более быстр и теперь занимается еще и вырезанием классов. 
-Включить можно в gradle.properties:
+Often, Google lets us try out their unfinished developments. For example, the new R8 resource compiler.
+It has replaced the "old" Proguard, is faster, and now also handles class removal. 
+You can enable it in gradle.properties:
 ```
 android.enableR8=true
 ```
 
-И если у вас в build.gradle что-то вроде:
+And if you have something like this in your build.gradle:
+
 ```
 	buildTypes {
 
@@ -22,17 +23,22 @@ android.enableR8=true
 		}
   }
 ```
-То узнать о стабильности его работы вы сможете только собрав релизную apk. Если вы это делаете не часто, то проблем не избежать.
-Например, недавно он вырезал часть полей, аннотаций и классов в нашем проекте. Проделал так аккуратно, 
-что обнаружить это мы смогли только по не загружающейся одной из страниц приложения. 
+You can only learn about its stability by building a release APK. If you don't do this often, problems are inevitable.
+For instance, recently it removed part of the fields, annotations, and classes in our project. It did so neatly,
+that we could only detect it when one of the pages of the application failed to load.
 
-Нам хотелось быстрой сборки, поэтому возникла задача разрешать R8 только в сборке из студии.
+We wanted fast assembly, so the task arose to allow R8 only in builds from the studio.
 
-Итак, вот как это можно сделать через build.gradle:
+So, here's how it can be done through build.gradle:
 
 ```
 boolean isInvokeFromIde = project.properties['android.injected.invoked.from.ide']//определяем сборку из студии
 this['android.enableR8']  = isInvokeFromIde//меняем настройку gradle.properties в build.gradle в рантайме
 ```
-Подмена должна происходить до вызова android-plugin.
+The substitution must occur before the android-plugin is called.
+
+
+
+
+
 

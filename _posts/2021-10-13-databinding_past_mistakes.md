@@ -2,13 +2,14 @@
 layout: post
 title: Databinding Episode II; Past Mistakes
 ---
-# Databinding Эпизод II; Ошибки прошлого
 
-Иногда в повседневной разработке под Android сталкиваешься со странными, если не сказать мистическими багами. (стандартное вступление)
+# Databinding Episode II; Mistakes of the Past
 
-В предыдущем эпизоде [Databinding Episode I; Hidden Danger](http://dmitrysamoylenko.com/2019/04/16/databinding_hidden_danger.html)
+Sometimes in everyday Android development, you encounter strange, if not mystical bugs. (standard introduction)
 
-Предположим, имеется класс *.kt:
+In the previous episode [Databinding Episode I; Hidden Danger](http://dmitrysamoylenko.com/2019/04/16/databinding_hidden_danger.html)
+
+Let's assume there is a \*.kt class:
 
 ```
 Base.kt
@@ -17,7 +18,7 @@ open class Base {
 }
 ```
 
-и его наследник *.java:
+and its \*.java inheritor:
 
 ```
 Child.java
@@ -26,11 +27,11 @@ class Child extends Base {
 }
 ```
 
-Уже тут можно заметить, что мы выстрелили себе в ногу. Но продолжим.
+Here we can already notice that we have shot ourselves in the foot. But let's continue.
 
-Мы захотели использовать класс Child в databidning-е. 
+We wanted to use the Child class in databinding. 
 
-Внимание, вопрос: будет ли видна следующая View?
+Attention, question: will the following View be visible?
 
 ```
 some.xml
@@ -45,7 +46,7 @@ some.xml
   ...
 ```
 
-# Мораль истории
+# Moral of the Story
 
-1. Не наследуйте java-классы от kotlin-классов
-2. А может быть пора переходить на Jetpack Compose?
+1. Do not inherit Java classes from Kotlin classes.
+2. Maybe it's time to switch to Jetpack Compose?

@@ -1,34 +1,33 @@
 ---
 layout: post
-title: Один классный рефакторинг спрятанный в Intellij Idea
+title: A Cool Refactoring Hidden in IntelliJ IDEA
 ---
-# Это замена доступа к полю геттером
-По умолчанию на виду для этого есть рефакторинг по `alt+insert` -  `getter`. 
+# This is about replacing field access with a getter
+By default, there's a visible refactoring option for this through `alt+insert` - `getter`. 
 
 ![enq1]({{ site.url }}/assets/enq1.png)
 
-Проблема в том, что если поле уже используется во многих местах, то просто создание геттера мало, нужно еще заменить прямой доступ на этот геттер во всех местах.
+The problem is that if a field is already used in many places, just creating a getter is not enough. You also need to replace direct access with this getter everywhere.
 
 ![enq2]({{ site.url }}/assets/enq2.png)
 
-К счастью Jetbrains об этом позаботилась! 
-Нажимаем `ctrl+shift+A` вводим и открываем действие `refactor this`
+Fortunately, JetBrains has thought of this! 
+Press `ctrl+shift+A`, enter and open the `refactor this` action.
 
 ![enq3]({{ site.url }}/assets/enq3.png)
 
-В меню есть множество различных рефакторингов. Выбираем `encapsulate`.
+In the menu, there are many different refactorings. We select `encapsulate`.
 
 ![enq4]({{ site.url }}/assets/enq4.png)
 
-Откроется диалог, где выбираем нужные поля, ставим галочки напротив геттеров/сеттеров и жмем `refactor`.
+A dialog will open where you select the needed fields, tick the getters/setters, and click `refactor`.
 
 ![enq5]({{ site.url }}/assets/enq5.png)
 
-Готово! 
+Done! 
 
 ![enq6]({{ site.url }}/assets/enq6.png)
 
-Как видим во всем коде произошла замена прямого доступа на геттер.
+As we can see, direct access has been replaced with the getter throughout the code.
 
 ![enq7]({{ site.url }}/assets/enq7.png)
-

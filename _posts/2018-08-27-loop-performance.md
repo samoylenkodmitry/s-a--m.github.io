@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Как быстрее итерировать массивы
+title: How to Iterate Through Arrays Faster
 ---
-# Никому не доверяй, все сам проверяй
+# Trust No One, Always Verify Yourself
 
-Для сравнения напишем несколько вариантов итерации. Чтобы компилятор не выкидывал бесполезный код, добавим подсчет суммы чисел:
+To compare, let's write several versions of iteration. To prevent the compiler from discarding useless code, we'll add a sum of numbers calculation:
+
 ```java
 public class Test {
 	
@@ -66,7 +67,9 @@ public class Test {
 }
 ```
 
-Скомпилируем со следующими версиями:
+We'll compile with the following versions:
+
+
 ```
 targetSdkVersion 27
 minSdkVersion 16
@@ -79,7 +82,8 @@ debuggable true
 android.enableD8=true
 ```
 
-Посмотрим байт-код из получившегося apk:
+Let's examine the bytecode from the resulting apk:
+
 
 ```java
 .class public Lru/ivi/client/screensimpl/downloadscatalogserial/Test;
@@ -302,9 +306,9 @@ android.enableD8=true
 .end method
 ```
 
-Померяем "на глаз" (через SystemClock.elapsedRealtimeNanos) на устройстве OnePlus 3T (Android 8, API 26, Snapdragon 835, 6Gb).
-На каждый запуск выделяется отдельный массив размером 100_000_000. Действие происходит в главном потоке.
-Запустим 10 раз, смотрим на среднее, минимальное, максимальное и суммарное время. (наносекунды)
+We'll measure "by eye" (using SystemClock.elapsedRealtimeNanos) on a OnePlus 3T device (Android 8, API 26, Snapdragon 835, 6Gb).
+A separate array of size 100,000,000 is allocated for each run. The action takes place in the main thread.
+We'll run it 10 times, looking at the average, minimum, maximum, and total time. (nanoseconds)
 
 ox | avg | min | max | count | sum
 --- | --- | --- | --- | --- | ---
@@ -316,15 +320,15 @@ o4 | 230323713 | 175824167 | 679445365 | 10 | 2303237132
 o5 | 220798156 | 173832551 | 550448177 | 10 | 2207981563
 
 
-Победитель - o1, не кеширующий размер массива.
-Не сильно отстает от него o0 использующий enhanced-loop запись.
+Winner - o1, not caching the array size.
+Close behind it is o0 using enhanced-loop notation.
 
-o5 и o3 приблизительно равны.
-На последних местах o2 и o4.
+o5 and o3 are approximately equal.
+In last places are o2 and o4.
 
-Неожиданно.
+Unexpectedly.
 
-Попробуем Megafon Login (Android 4.4.2, MediaTek MT6582, 1Gb). Создать массив из 100млн интов на нем не удалось из-за OOM, поэтому только 1млн.
+Let's try on Megafon Login (Android 4.4.2, MediaTek MT6582, 1Gb). Failed to create an array of 100 million ints due to OOM, so only 1 million.
 
 ox | avg | min | max | count | sum
 --- | --- | --- | --- | --- | ---
@@ -335,12 +339,12 @@ o3 | 58443446 | 54400077 | 66102384 | 10 | 584434461
 o4 | 59261446 | 53455846 | 73940461 | 10 | 592614463
 o5 | 60955246 | 53510924 | 80854770 | 10 | 609552461
 
-Немного другой расклад:
-В лидерах остался o0 enhanced-loop. 
-На одном уровне с ним o3, o4, o2 и o5. 
-Сильно проиграл всем o1 - метод без кеширования array.length.
+A different scenario:
+The leader remains o0 with the enhanced-loop.
+On the same level with it are o3, o4, o2, and o5.
+Far behind them all is o1 - the method without caching array.length.
 
-Наконец, пирог 2018 - Pixel XL (Android P, API 29). Размер массива 1млн.
+Finally, the 2018 flagship - Pixel XL (Android P, API 29). Array size is 1 million.
 
 ox | avg | min | max | count | sum
 --- | --- | --- | --- | --- | ---
@@ -351,15 +355,15 @@ o3 | 81853331 | 41240004 | 133074909 | 10 | 818533314
 o4 | 56166797 | 47559536 | 95691885 | 10 | 561667976
 o5 | 42000582 | 34823546 | 90243446 | 10 | 420005824
 
-Лидер - enhanced-loop o0, рядом с ним o1 с некешированным array.length.
-Середнячки - o2, o5. Чуть медленнее o4.
-Совсем плохи дела у o3, проходящего массив в обратном порядке.
+The leader is the enhanced-loop o0, closely followed by o1 with non-cached array.length.
+Mid-range performers are o2, o5. Slightly slower is o4.
+Things are quite bad for o3, going through the array in reverse order.
 
-Похоже на оптимизацию, видимо ART распознает только обычный цикл for.
+It seems like an optimization, as ART apparently only recognizes the standard for loop.
 
-# Выводы
+# Conclusions
 
-Как видим в байткоде есть разница между сравнением с переменной и сравнением с нулем, в одном случае if-ge, в другом if-ltz, if-gez. Но основную заметную разницу (в Android 4) делает вызов array-length. 
+As we can see in the bytecode, there is a difference between comparison with a variable and comparison with zero, in one case if-ge, in the other if-ltz, if-gez. But the main noticeable difference (in Android 4) is made by calling array-length.
 
-В целом рекомендация использовать enhanced-loop актуальна для всех поддерживаемых android-API.
+In general, the recommendation to use enhanced-loop is valid for all supported Android APIs.
 

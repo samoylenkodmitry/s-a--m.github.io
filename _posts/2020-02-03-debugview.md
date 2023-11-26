@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Как дебажить верстку в Android
+title: How to Debug Layouts in Android
 ---
-# Как дебажить верстку в Android
+# How to Debug Layouts in Android
 
-Иногда верстка начинает показывать магию: скрывать в ненужный момент контролы, неправильно определять свои размеры и положение.
-Обычно такое бывает когда код, управляющий версткой, излишне сложен. Например, когда одна часть приложения пытается скрыть вьюху, другая показать. 
-И выполняются эти действия в произвольные моменты времени.
+Sometimes, layouts start showing magic: hiding controls at the wrong moment, incorrectly determining their sizes and positions. 
+Usually, this happens when the code controlling the layout is overly complex. For example, when one part of the application tries to hide a view while another tries to show it. 
+And these actions are performed at arbitrary moments in time.
 
-Как правило, это говорит о неправильной архитектуре, и правильным решением было бы переписать сложное управление на модель redux с одним источником правды.
+As a rule, this indicates improper architecture, and the correct solution would be to rewrite the complex control into a redux model with a single source of truth.
 
-Но если у вас нет времени переписывать большую часть приложения, поможет следующий подход:
-* создаем класс наследующий исследуемую view  (в данном примере FrameLayout) и переопределяем метод setVisibility.
+But if you don't have time to rewrite a large part of the application, the following approach will help:
+* create a class inheriting the view under investigation (in this example, FrameLayout) and override the setVisibility method.
+
 ```java
 class DebugView @JvmOverloads constructor(
 	context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
@@ -30,7 +31,8 @@ class DebugView @JvmOverloads constructor(
 	}
 }
 ```
-в верстке заменяем исследуемую view на нашу DebugView:
+In the layout, replace the view under investigation with our DebugView:
+
 
 ```xml
 	<DebugView
@@ -43,5 +45,5 @@ class DebugView @JvmOverloads constructor(
 			  
 ```
 
-Теперь, когда в коде кто-либо поменяет видимость исследуемой view, то это можно будет поймать.
-Готово!
+Now, when someone in the code changes the visibility of the investigated view, it can be caught.
+Done!

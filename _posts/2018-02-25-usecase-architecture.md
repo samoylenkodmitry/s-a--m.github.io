@@ -1,30 +1,31 @@
 ---
 layout: post
-title: UseCase-архитектура Android-приложения
+title: Use Case Architecture for Android Applications
 ---
 
-# Предпосылки
-В андроид-сообществе сформировалось много различных подходов к архитектуре. Начнинали с Activity, затем к ним добавились Fragments и нужно было все это как-то организовывать. Да так, чтобы это не превращалось со временем в God-объекты подпертые костылями, а было удобным и для расширения и для изменения. Разработчики почесали голову и вспомнили, что за них уже придумали MVC, MVP и другие аббревиатуры.  Сейчас на странице https://github.com/googlesamples/android-architecture представлены наиболее популярные архитектуры.
+# Background
+In the Android community, many different architectural approaches have formed. We started with Activity, then Fragments were added, and we needed to organize all this in a way that didn't turn into God objects supported by crutches over time, but was convenient for both expansion and modification. Developers scratched their heads and remembered that MVC, MVP, and other abbreviations were already invented for them. Currently, the most popular architectures are presented on the page https://github.com/googlesamples/android-architecture.
 
-# Что такое архитектура?
-Не только UI.
+# What is Architecture?
+It's not just UI.
 
-# Одно Activity или несколько?
-Я думаю - одно. Если у приложения будет всего одна активити, то мы можем точно сказать, что визуальное взаимодействие с пользователем происходит с момента onCreate до момента onDestroy (с перерывами на onStop-onStart при сворачивании). Как минимум, это удобно.
+# One Activity or Several?
+I think - one. If the application has only one activity, we can say for sure that the visual interaction with the user occurs from the moment of onCreate to the moment of onDestroy (with breaks for onStop-onStart when minimized). At the very least, this is convenient.
 
-# Что предлагает Google
+# What Google Offers
 
 https://developer.android.com/topic/libraries/architecture/index.html
 
-В активити есть жизненный цикл. В новых Architecture Components от Google он был прокинут в данные и так появился LiveData. Также любой объект теперь можно усложнить жизненным циклом, используя LifecycleOwner интерфейс компонентов LifecycleActivity и LifecycleFragment. Впоследствии эти классы были объявлены @Deprecated, наследовать чужой класс не удобно, если есть уже построенная иерархия. 
+Activity has a lifecycle. In Google's new Architecture Components, this lifecycle has been extended to data, resulting in LiveData. Any object can now be complicated with a lifecycle using the LifecycleOwner interface of LifecycleActivity and LifecycleFragment components. Subsequently, these classes were declared @Deprecated, as inheriting someone else's class is not convenient if there is already an established hierarchy.
 
-# Реактивный подход
+# Reactive Approach
 
-Что, если рассмотреть приложение как набор эвентов и реакций на них?
+What if we consider the application as a set of events and reactions to them?
 
-Действительно, что такое Activity? Это класс-точка входа. У него есть эвенты-события, говорящие, что пользователь увидел визуальную часть и что визуальная часть скрыта. Также там присутствуют некоторые дополнительные колбэки, вроде нового пришедшего интента, с помощью которого можно понять, откуда произошел запуск. Или нажатия физических кнопок громкости. Еще можно поймать результат запуска другой активити. На этом все, в остальном приложении мы пользуемся только этой основной информацией.
+Indeed, what is Activity? It's a class-entry point. It has event-events, telling that the user saw the visual part and that the visual part is hidden. There are also some additional callbacks, like a new incoming intent, through which you can understand where the launch came from. Or pressing physical volume buttons. You can also catch the result of launching another activity. That's all, in the rest of the application we use only this basic information.
 
-Попробуем теперь представить, что мы можем обойтись без активити. Отделим события пользователя в отдельный поток событий. Для этого хорошо подходит BehaviorSubject. Он будет хранить только последнее состояние.
+Let's now imagine that we can do without activity. Let's separate user events into a separate stream of events. BehaviorSubject is well suited for this. It will store only the last state.
+
 
 ```
 	BehaviorSubject<StateEvent> getStateEventBehaviorSubject(final int type) {
@@ -36,14 +37,15 @@ https://developer.android.com/topic/libraries/architecture/index.html
 		return eventsObservable;
 	}
 ```
-Теперь на события жизненного цикла можно подписаться:
+Now you can subscribe to lifecycle events:
 
 ```
 appStatesGraph
 				.eventsOfType(AppStatesGraph.Type.LIFECYCLE, LifecycleEventResume.class)
         .subscribe()
 ```
-Другие состояния приложения превращаем в потоки событий смены состояний. Например, состояние наличия и отсутствия интернет-соединения будут представлены двумя событиями:
+Other application states are turned into streams of state change events. For example, the state of having or not having an internet connection will be represented by two events:
+
 ```
 public class Connected extends SimpleEvent {
 	
@@ -58,7 +60,8 @@ public class Disconnected extends SimpleEvent {
 	}
 }
 ```
-И мы можем вводить нетривиальную логику, построенную на комбинации состояний. Например, вот старт приложения только при наличии интернета и завершения первоначальной инициализации:
+And we can introduce non-trivial logic based on a combination of states. For example, here's the start of the application only with internet and after initial initialization:
+
 
 ```
 appStatesGraph
@@ -78,21 +81,26 @@ appStatesGraph
          .subscribe(); //todo стартуем, когда все условия соблюдены
 ```
 
-Такие комбинации будем называть UseCase - юз кейсами в переводе на англицизм. Удобство их заключается в том, что логика действия вынесена в отдельную сущность юз-кейса, которую можно покрывать тестами. Она не требует зависимости от активити или от какого-либо другого компонента sdk, требующего нетривиального мока в тесте. Второй плюс в инкапсуляции - все правила данного юз-кейса лежат в отдельном и единственном классе. Но в нем не должно быть других правил, не связанных с текущим юз-кейсом и за этим нужно следить (в этом я вижу минус подхода). Назовите класс именем, в котором содержится информация что_делает и когда_делает данный конкретный юз-кейс и придерживайтесь строгих ограничений. 
+Such combinations will be called UseCases. The convenience of them lies in the fact that the action logic is moved to a separate UseCase entity, which can be covered with tests. It does not require dependence on Activity or any other SDK component that requires non-trivial mock in the test. Another plus is encapsulation - all the rules of this UseCase are in a separate and only class. But in it, there should be no other rules not related to the current UseCase, and you need to follow this (I see this as a minus of the approach). Name the class with a name that contains information about what_does and when_does this particular UseCase do, and adhere to strict restrictions.
 
-Например, в текущем проекте с данным подходом есть такие классы юз-кейсов:
+For example, in the current project with this approach, there are such UseCase classes:
+
 ```
 UseCaseAppCheckWhoAmIOnStart
 UseCaseShowOnboardingOnGuideEndOrSkip
 UseCaseShowMainPageAfterOnboardings
 UseCaseShowDialogsOnAppStart
 ...
-```
 
-Эти классы подписываются на стримы и делают ровно одну вещь, которая отражена в их названии.
+These classes subscribe to streams and do exactly one thing, which is reflected in their names.
 
-# Заключение
+# Conclusion
 
-В статье привел лишь подход. Конкретная реализация может быть любой на ваше усмотрение. Мне, например, понравилось, как это можно сделать с помощью отдельных классов, соединенных с помощью даггера. Это позволило создать именно центральную часть приложения с бизнес-логикой, находящеся на уровне выше, чем просто логика одного экрана. Обычно эта логика находится в частях, связанных с классами-точками входа, как-то: активити, фрагменты, ресиверы. 
+The article presents just an approach. The specific implementation can be any at your discretion. For example, I liked how it can be done using separate classes, connected with the help of Dagger. This allowed creating the central part of the application with business logic, located on a higher level than just the logic of one screen. Usually, this logic is found in parts associated with entry-point classes, such as Activity, Fragments, Receivers. 
 
-Присмотритесь к данному подходу, если логика вашего приложения выходит из контекста одного экрана.
+Consider this approach if the logic of your application goes beyond the context of one screen.
+
+
+
+
+

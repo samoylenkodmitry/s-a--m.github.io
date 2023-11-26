@@ -1,30 +1,31 @@
 ---
 layout: post
-title: Kotlin don't kill us please
+title: Kotlin Don't Kill Us Please
 ---
-# Kotlin don't kill us please
+# Kotlin Don't Kill Us Please
 
-Все мы, хотим мы этого или нет, любим котлин.
-А вот пользователю вашего приложения любить котлин не обязательно. 
-Им гораздо важнее чтобы приложение не падало и выполняло свою основную функцию - работало.
-Даже если строка, которую ты хотел показать во всплывающей подсказке пуста. Зачем приложению падать? Мы же фильм смотреть пришли! (мы занимаемся показом видео)
+We all, whether we want to or not, love Kotlin.
+But your app's user doesn't necessarily need to love Kotlin. 
+What's far more important to them is that the app doesn't crash and performs its primary function - to work.
+Even if the string you wanted to show in a tooltip is empty. Why should the app crash? We came to watch a movie! (we're in the business of showing videos)
 
-Так вот, если вы уже пишите на котлине, как все успешные люди, то наверное успели заметить такую картину:
+So, if you're already writing in Kotlin, like all successful people, you might have noticed something like this:
+
 ```
 kotlin.UninitializedPropertyAccessException: lateinit property mChatAdapter has not been initialized // что-то вроде вот этого 
 ```
-Все мы конечно любим абсолютно правильный безошибочный код, но пора признаться себе, такого кода не существует (пока)
+We all love absolutely correct, error-free code, but it's time to admit to ourselves that such code doesn't exist (yet).
 
-Постойте, у меня есть решение. Давайте наше приложение будет делать максимально возможное, чтобы выполнить основную функцию. А всякие проверки, ассерты и прочее - пусть это куда-нибудь логгируется, отправляется, пишется. 
-Вообще, мы так и писали наше приложение. Если есть где-то ошибка, надо быстро ее поймать, отправить лог в fabric, но приложение не крашить.
+Wait, I have a solution. Let's make our application do as much as possible to perform its main function. And all kinds of checks, asserts, etc., let them be logged, sent somewhere, written down. 
+Actually, this is how we wrote our application. If there's an error somewhere, we need to quickly catch it, send the log to Fabric, but not crash the app.
 
-Хорошо, но как быть с котлином?
+Okay, but what about Kotlin?
 
-Тут нам поможет Proguard. Мы уже умеем вырезать логи, убирать лишние конкатенации строк https://www.guardsquare.com/en/products/proguard/manual/examples#logging
+Here Proguard will help us. We already know how to cut out logs, remove unnecessary string concatenations https://www.guardsquare.com/en/products/proguard/manual/examples#logging
 
-Теперь наш враг (в релизе, конечно, в дебаге и процессе разработки - помощник) вот этот класс https://github.com/JetBrains/kotlin/blob/v1.3.40/libraries/stdlib/jvm/runtime/kotlin/jvm/internal/Intrinsics.java
+Now our enemy (in the release, of course, in debug and development process - a helper) is this class https://github.com/JetBrains/kotlin/blob/v1.3.40/libraries/stdlib/jvm/runtime/kotlin/jvm/internal/Intrinsics.java
 
-Добавим в прогвард его!
+Let's add it to Proguard!
 
 
 ```

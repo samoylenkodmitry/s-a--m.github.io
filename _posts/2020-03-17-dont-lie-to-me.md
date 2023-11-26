@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Не лги мне
+title: Don't Lie to Me
 ---
-# А вы любите, когда ваш код вам врет?
+# Do You Like When Your Code Lies to You?
 
-Так уж получилось, что любой фронтенд по мере усложнения задачи и фреймворков имеет свойство скатываться в непонятное нечто. 
-Взять к примеру мой любимый пример с javascript:
+It turns out that any frontend, as it becomes more complex with tasks and frameworks, tends to devolve into an incomprehensible something. 
+Take, for example, my favorite case with JavaScript:
 ```
 Console.log("3"+2); //5
 Console.log("3"-2); //1
 ```
-и перенести его на Android со сладким-сладким котлином:
+and transfer it to Android with the sweet, sweet Kotlin:
 
 ```
 operator fun String.minus(n : Int) = this.toInt() - n
@@ -20,19 +20,25 @@ fun main() {
    println("3" - 2) //1
 }
 ```
-Когда вы в последний раз видели такое в строгой но справедливой матушке Java? (на самом деле, куча ловушек и в ней, просто мы их выучили)
+When was the last time you saw something like this in strict but fair mother Java? (actually, there are plenty of traps in it, we just learned them)
 
-И вот сегодня, меня порадовали еще одним квизом. Угадайте что делает следующая строка в xml:
+And today, I was delighted with another quiz. Guess what the following line in XML does:
+
 ```
 app:myCustomBinding="@{SystemUiHider.SInsetsHolder.top + ResourceUtils.dipToPx(context, @dimen/statement_padding_16dp)}"
 ```
-Если ваш ответ: складывает между собой два числа `SystemUiHider.SInsetsHolder.top` и `ResourceUtils.dipToPx(context, @dimen/statement_padding_16dp)` и 
-отдает их на вход кастомному байндинг-адаптеру, то поздравляю. Вы отстали от жизни, ок бумер, иди кодь на своем делфи и не лезь к клевым пацанам.
+If your answer is: it adds together two numbers `SystemUiHider.SInsetsHolder.top` and `ResourceUtils.dipToPx(context, @dimen/statement_padding_16dp)` and 
+passes them to a custom binding adapter, then congratulations. You are behind the times, okay boomer, go code in your Delphi and don't bother the cool kids.
 
-Ответ от gen-z: так как переменная `SInsetsHolder` имеет тип `androidx.databinding.BaseObservable`, то "умная" кодогенерация подпишет все выражение
- в скобках `@{..}` на изменение параметра `top` и будет вызывать его когда нужно. Возможно главная ошибка проектировщиков датабайндинга
-  в том, что они попытались имитировать синтаксис простой java в xml. Когда на самом деле, нужен был свой dsl-синтаксис. Тогда бы не было недопониманий.
+The answer from gen-z: since the variable `SInsetsHolder` is of type `androidx.databinding.BaseObservable`, the "smart" code generation will subscribe the entire expression
+in the brackets `@{..}` to the change of the `top` parameter and will call it when necessary. Perhaps the main mistake of the data binding designers
+was that they tried to imitate the syntax of simple Java in XML. When in fact, their own DSL syntax was needed. Then there would be no misunderstandings.
   
   
-Ну и вывод:
-Конечно, сахар может ускорить процесс написания кода и сделать его `fun`. Но цена - это полная утеря понятия о том, что происходит в приложении на самом деле.
+Conclusion:
+Of course, sugar can speed up the coding process and make it `fun`. But the price is a complete loss of understanding of what is actually happening in the application.
+
+
+
+
+

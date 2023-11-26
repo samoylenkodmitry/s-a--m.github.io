@@ -2,16 +2,15 @@
 layout: post
 title: Databinding Episode I; Hidden Danger
 ---
-# Databinding Эпизод I; Скрытая угроза
+# Databinding Episode I; Hidden Danger
 
-Иногда в повседневной разработке под Android сталкиваешься со странными, если не сказать мистическими багами. (стандартное вступление)
+Sometimes in everyday Android development, you encounter strange, if not mystical bugs. (standard introduction)
 
-Наш QA заметил странный баг, который трое из наших разработчиков не могли заметить глядя на экран в упор. 
-При переходе на экран очень быстро "промаргивала" часть экрана, которая затем скрывалась. Очень хороший FPS у тестировщика :)
-Отловив в предложенном видео кадр с "промаргиванием" я усомнился в своей способности видеть этот мир, по крайней мере в сравнении 
-с некоторыми людьми. Что ж, нужно править.
+Our QA noticed a peculiar bug that three of our developers couldn't see even when staring at the screen. 
+When transitioning to a screen, a part of it quickly "blinked" and then was hidden. The tester had very good FPS :)
+Catching the frame with the "blink" in the suggested video, I doubted my ability to see this world, at least compared to some people. Well, it needs fixing.
 
-Забравшись в верстку обнаруживаю в общем-то безобидный кусок xml-ля:
+Digging into the layout, I found a seemingly harmless piece of XML:
 
 ```
 				...
@@ -21,11 +20,11 @@ title: Databinding Episode I; Hidden Danger
 				...
 ```
 
-Эта часть лэйаута должна была быть скрыта по умолчанию, а затем либо появляться, либо нет, в зависимости от статуса авторизации.
-Но почему-то по умолчанию она показывалась и затем скрывалась как и должна для авторизованного юзера.
+This part of the layout was supposed to be hidden by default and then appear or not, depending on the authorization status.
+But for some reason, by default, it was shown and then hidden as it should be for an authorized user.
 
-Похоже где-то в этой строке есть ошибка. Может быть ", default=gone"? Тут нам не подскажет документация, придется лезть в устройство
-дата-байндинга:
+It seems there is a mistake in this line. Maybe ", default=gone"? The documentation won't help us here; we need to delve into the workings of data-binding:
+
 
 ```
        UserAuthorizedState authState = mAuthState;
@@ -55,28 +54,32 @@ title: Databinding Episode I; Hidden Danger
             this.motivationToRegistration.setVisibility(authStateIsUserAuthorizedViewGONEViewVISIBLE);
         }
 ```
-Если проследить за логикой этого сгенерированного кода, то видим, что authStateIsUserAuthorized по умолчанию false.
-Если байндинг еще не произошел, то есть authState==null, то значение переменной не меняется. 
-В результате переменная authStateIsUserAuthorizedViewGONEViewVISIBLE содержит View.VISIBLE.
-А как же то что мы указали в коде ", default=gone"? 
+Following the logic of this generated code, we see that authStateIsUserAuthorized defaults to false.
+If binding hasn't occurred yet, i.e., authState==null, then the variable's value doesn't change. 
+As a result, the variable authStateIsUserAuthorizedViewGONEViewVISIBLE contains View.VISIBLE.
+What about what we specified in the code ", default=gone"? 
 
-Нет никакого default! Вот документация и там его нет https://developer.android.com/topic/libraries/data-binding/expressions смотрите сами!
-Он есть только для строк и только в одном из ответом на stackoverflow https://stackoverflow.com/questions/39241191/error-with-default-value-in-databinding?rq=1
+There's no such thing as default! Here's the documentation, and it's not there https://developer.android.com/topic/libraries/data-binding/expressions see for yourself!
+It only exists for strings and only in one of the answers on StackOverflow https://stackoverflow.com/questions/39241191/error-with-default-value-in-databinding?rq=1
 
-Такие дела. 
+That's the situation. 
 
-Теперь уберем из xml слово default и сравним сгенерированный код - ничего не поменялось.
-Давайте просто сделаем вид, что default это наша фантазия о том как должен выглядеть databinding. 
-А пока что заменим код в xml на что-то более надежное:
+Now let's remove the word default from the XML and compare the generated code - nothing has changed.
+Let's just pretend that default is our fantasy of what databinding should look like. 
+For now, let's replace the code in the XML with something more reliable:
 
 ```
 android:visibility="@{authState==null||authState.isUserAuthorized ? View.GONE : View.VISIBLE}"
 ```
 
-Теперь никаким супер-зрением наш лэйаут не увидеть.
+Now our layout can't be seen with any super-vision.
 
 
-Вывод такой:
-будьте осторожны с кодом внутри xml и databinding и еще осторожнее с Android SDK ༼ʘ̚ل͜ʘ̚༽
+Conclusion:
+be careful with code inside XML and databinding, and even more cautious with the Android SDK ༼ʘ̚ل͜ʘ̚༽
 
-UPD: default - работает, но только как параметр, который подставится в xml при inflate'е. Далее может вызваться байндинг с null-данными и затереть default значение. 
+UPD: default - works, but only as a parameter that will be substituted in the XML upon inflation. Then a binding with null data may be called and overwrite the default value. 
+
+
+
+
