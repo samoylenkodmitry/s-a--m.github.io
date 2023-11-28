@@ -13,6 +13,73 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 28.11.2023
+[2147. Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/description/) hard
+[blog post](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/solutions/4337973/kotlin-cumulative-sum/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/28112023-2147-number-of-ways-to-divide?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/cbmDt5_-TSY)
+![image.png](https://assets.leetcode.com/users/images/a2a43dc4-4c90-4e99-ada7-484926ac7785_1701151566.0360487.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/419
+
+#### Problem TLDR
+
+Count ways to place borders separating pairs of 'S' in 'SP' string
+
+#### Intuition
+
+We can scan linearly and do the interesting stuff after each two 'S': each new 'P' adds 'sum' ways to the total. 
+The last pair of 'S' don't need a border.
+
+```
+  // ssppspsppsspp
+  // ss         1
+  // ssp        2
+  // sspp       3
+  //     sps    3
+  //     spsp   3+3=6
+  //     spspp  6+3=9 <-- return this
+  //           ss    9
+  //           ssp   9+9=18
+  //           sspp  18+9=27 discard this result, as it is last
+```
+
+#### Approach
+
+Carefult what 'sum' to add, save the last sum to a separate variable.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun numberOfWays(corridor: String): Int {
+    var prev = 1
+    var sum = 1
+    var s = 0
+    for (c in corridor)
+      if (c == 'S') {
+        if (s == 2) {
+          prev = sum
+          s = 0
+        }
+        s++
+      } else if (s == 2) 
+        sum = (prev + sum) % 1_000_000_007
+    return if (s == 2) prev else 0
+  }
+
+```
+
 # 27.11.2023
 [935. Knight Dialer](https://leetcode.com/problems/knight-dialer/description/) medium
 [blog post](https://leetcode.com/problems/knight-dialer/solutions/4334170/kotlin-dfs-cache/)
