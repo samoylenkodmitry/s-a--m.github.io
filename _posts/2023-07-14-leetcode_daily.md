@@ -13,6 +13,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 29.11.2023
+[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) easy
+[blog post](https://leetcode.com/problems/number-of-1-bits/solutions/4341552/kotlin-dp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29112023-191-number-of-1-bits?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/yQ8lwrNYKFw)
+![image.png](https://assets.leetcode.com/users/images/3ceed2e2-505b-4eb8-944a-c7375b4c98e1_1701234019.0787268.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/420
+
+#### Problem TLDR
+
+Bits count
+
+#### Intuition
+
+The optimal solution would be using built-in `n.countOneBits()`.
+
+However, there is a knonw technique using tabulation DP to count bits. The recurrence is: count(n) = count(n << 1) + 1?1:0. For example, count(1111) = 1 + count(111). Or, count(110) = 0 + count(11)
+
+#### Approach
+
+* carefult with the table size, it must be 2^8=256
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  val dp = IntArray(256).apply {
+    for (i in 1..<size) 
+      this[i] = this[i / 2] + (i and 1)
+  }
+  fun hammingWeight(n:Int):Int =
+    dp[n and 255] + 
+    dp[(n ushr 8) and 255] +
+    dp[(n ushr 16) and 255] +
+    dp[(n ushr 24) and 255]
+
+```
+
 # 28.11.2023
 [2147. Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/description/) hard
 [blog post](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/solutions/4337973/kotlin-cumulative-sum/)
