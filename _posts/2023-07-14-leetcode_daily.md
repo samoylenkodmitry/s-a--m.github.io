@@ -13,6 +13,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 02.12.2023
+[1160. Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/description/) easy
+[blog post](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/solutions/4352470/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02122023-1160-find-words-that-can?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/EIwFek_6qNM)
+![image.png](https://assets.leetcode.com/users/images/86d2cbf9-69e2-470e-823a-a2f92d0b9993_1701493337.388044.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/425
+
+#### Problem TLDR
+
+Sum of `words` lengths constructed by `chairs`
+
+#### Intuition
+
+Just use the char frequencies map
+
+#### Approach
+
+Some Kotlin's API:
+* groupBy
+* sumBy
+* all
+* let
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, can be O(1)
+
+#### Code
+
+```kotlin
+
+  fun countCharacters(words: Array<String>, chars: String): Int =
+    chars.groupBy { it }.let { freq -> 
+      words.sumBy {
+        val wfreq = it.groupBy { it }
+        if (wfreq.keys.all { freq[it] != null 
+          && wfreq[it]!!.size <= freq[it]!!.size })
+        it.length else 0
+      }
+  }
+
+```
+
 # 01.12.2023
 [1662. Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/) easy
 [blog post](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/solutions/4348780/kotlin/)
