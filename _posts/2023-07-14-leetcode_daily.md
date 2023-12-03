@@ -13,6 +13,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 03.12.2023
+[1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/description/) easy
+[blog post](https://leetcode.com/problems/minimum-time-visiting-all-points/solutions/4356193/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03122023-1266-minimum-time-visiting?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/VjqIpuHXCF4)
+![image.png](https://assets.leetcode.com/users/images/7e6065d0-2da3-4953-95cf-ed109a44b877_1701582243.5067244.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/426
+
+#### Problem TLDR
+
+Path coordinates distance in XY plane
+
+#### Intuition
+
+For each pair of points lets compute diagonal distance and the remainder: `time = diag + remainder`. Given that `remainder = max(dx, dy) - diag`, we derive the formula.
+
+#### Approach
+
+Let's use some Kotlin's API:
+* [asSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/as-sequence.html)
+* [windowed](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/windowed.html)
+* [sumBy](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/sum-by.html)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun minTimeToVisitAllPoints(points: Array<IntArray>): Int =
+    points.asSequence().windowed(2).sumBy { (from, to) ->
+      max(abs(to[0] - from[0]), abs(to[1] - from[1]))
+    }
+
+```
+
 # 02.12.2023
 [1160. Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/description/) easy
 [blog post](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/solutions/4352470/kotlin/)
