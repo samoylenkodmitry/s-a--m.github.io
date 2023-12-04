@@ -13,6 +13,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 04.12.2023
+[2264. Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/description/) easy
+[blog post](https://leetcode.com/problems/largest-3-same-digit-number-in-string/solutions/4360039/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04122023-2264-largest-3-same-digit?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/EWZZKljZf_s)
+![image.png](https://assets.leetcode.com/users/images/fda86a5c-0c76-43b7-86bf-a47488272630_1701668231.514587.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/427
+
+#### Problem TLDR
+
+Largest 3-same-digit number in a string
+
+#### Intuition
+
+There are totally 10 such numbers: `000, 111, ..., 999`. 
+
+#### Approach
+
+Let's use Kotlin's API
+* [windowed](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/windowed.html)
+* [filter](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/filter.html)
+* [maxByOrNull](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/max-by-or-null.html)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, can be O(1) with `asSequence()`
+
+#### Code
+
+```kotlin
+    fun largestGoodInteger(num: String): String =
+      num.windowed(3)
+      .filter { it[0] == it[1] && it[0] == it[2] }
+      .maxByOrNull { it[0] } ?: ""
+
+```
+
 # 03.12.2023
 [1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/description/) easy
 [blog post](https://leetcode.com/problems/minimum-time-visiting-all-points/solutions/4356193/kotlin/)
