@@ -13,6 +13,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 07.12.2023
+[1688. Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/description/) easy
+[blog post](https://leetcode.com/problems/count-of-matches-in-tournament/solutions/4364363/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122023-1688-count-of-matches-in?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/K_fMbBNu8N0)
+![image.png](https://assets.leetcode.com/users/images/12ccc1ff-e10c-433e-9d56-d2637b05709d_1701755239.040814.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/428
+
+#### Problem TLDR
+
+Count of odd-even matches according to the rules `x/2` or `1+(x-1)/2`.
+
+#### Intuition
+
+The naive solution is to just implement what is asked.
+
+#### Approach
+
+Then you go read others people solutions and found this: `n-1`.
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun numberOfMatches(n: Int): Int {
+    var x = n
+    var matches = 0
+    while (x > 1) {
+      if (x % 2 == 0) {
+        matches += x / 2
+        x = x / 2
+      } else {
+        matches += (x - 1) / 2
+        x = 1 + (x - 1) / 2
+      }
+    }
+    return matches
+  }
+
+```
+
 # 04.12.2023
 [2264. Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/description/) easy
 [blog post](https://leetcode.com/problems/largest-3-same-digit-number-in-string/solutions/4360039/kotlin/)
