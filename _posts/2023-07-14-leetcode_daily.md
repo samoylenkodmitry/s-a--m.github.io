@@ -14,6 +14,46 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
 # 07.12.2023
+[1903. Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/description/) easy
+[blog post](https://leetcode.com/problems/largest-odd-number-in-string/solutions/4374041/kotlin-one-liner/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122023-1903-largest-odd-number?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/1a474af3-1fe8-49d7-b027-b61f50417512_1701940815.7034397.png)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/431
+
+#### Problem TLDR
+
+Largest odd number in a string
+
+#### Intuition
+
+Just search for the last odd
+
+#### Approach
+
+Let's write Kotlin one-liner
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun largestOddNumber(num: String): String =
+    num.dropLastWhile { it.toInt() % 2 == 0 }
+
+```
+
+# 05.12.2023
 [1688. Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/description/) easy
 [blog post](https://leetcode.com/problems/count-of-matches-in-tournament/solutions/4364363/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122023-1688-count-of-matches-in?r=2bam17&utm_campaign=post&utm_medium=web)
