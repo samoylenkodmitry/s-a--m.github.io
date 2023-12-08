@@ -13,6 +13,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 08.12.2023
+[606. Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/description/) easy
+[blog post](https://leetcode.com/problems/construct-string-from-binary-tree/solutions/4377687/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/08122023-606-construct-string-from?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/S0UF6M72Xyc)
+![image.png](https://assets.leetcode.com/users/images/d118fa6a-3b39-477d-ad76-76244a9d5131_1702019587.5468535.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/432
+
+#### Problem TLDR
+
+Pre-order binary tree serialization
+
+#### Intuition
+
+Let's write a recursive solution.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+    fun tree2str(root: TreeNode?): String = root?.run {
+      val left = tree2str(left)
+      val right = tree2str(right)
+      val curr = "${`val`}"
+      if (left == "" && right == "") curr
+        else if (right == "") "$curr($left)"
+        else "$curr($left)($right)"
+    } ?: ""
+
+```
+
 # 07.12.2023
 [1903. Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/description/) easy
 [blog post](https://leetcode.com/problems/largest-odd-number-in-string/solutions/4374041/kotlin-one-liner/)
