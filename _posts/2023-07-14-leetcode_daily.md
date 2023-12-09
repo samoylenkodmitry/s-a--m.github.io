@@ -13,6 +13,43 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 09.12.2023
+[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) easy
+[blog post](https://leetcode.com/problems/binary-tree-inorder-traversal/solutions/4381000/kotlin-recursion/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09122023-94-binary-tree-inorder-traversal?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/O2NK3P6h3QE)
+![image.png](https://assets.leetcode.com/users/images/c0d88a2c-e6b7-4b19-a065-9f05a813d65c_1702104642.499651.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/433
+
+#### Problem TLDR
+
+Inorder traversal
+
+#### Intuition
+
+Nothing special. For the iterative solution we can use Morris traversal.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```koltin
+
+  fun inorderTraversal(root: TreeNode?): List<Int> = root?.run {
+    inorderTraversal(left) + listOf(`val`) + inorderTraversal(right)
+  } ?: listOf<Int>()
+
+```
+
 # 08.12.2023
 [606. Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/description/) easy
 [blog post](https://leetcode.com/problems/construct-string-from-binary-tree/solutions/4377687/kotlin/)
