@@ -13,6 +13,44 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 10.12.2023
+[867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix/description/) easy
+[blog post](https://leetcode.com/problems/transpose-matrix/solutions/4385162/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10122023-867-transpose-matrix?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/nyXU1WVpcuo)
+![image.png](https://assets.leetcode.com/users/images/7bdc337c-9d5d-4a0c-93e1-4509850988e1_1702190774.9135063.png)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/434
+
+#### Problem TLDR
+
+Transpose 2D matrix
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun transpose(matrix: Array<IntArray>): Array<IntArray> =
+    Array(matrix[0].size) { x ->
+      IntArray(matrix.size) { y ->
+        matrix[y][x]
+      }
+    }
+
+```
+
 # 09.12.2023
 [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) easy
 [blog post](https://leetcode.com/problems/binary-tree-inorder-traversal/solutions/4381000/kotlin-recursion/)
