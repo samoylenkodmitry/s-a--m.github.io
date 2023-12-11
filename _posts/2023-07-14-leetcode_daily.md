@@ -13,6 +13,39 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 11.12.2023
+[1287. Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description/) easy
+[blog post](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/solutions/4389153/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11122023-1287-element-appearing-more?r=2bam17&utm_campaign=post&utm_medium=web)
+![image.png](https://assets.leetcode.com/users/images/8513936c-d6ca-45c3-9ef2-5f4e8f25456a_1702274138.2855735.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/435
+
+#### Problem TLDR
+
+Most frequent element
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, can be O(1)
+
+#### Code
+
+```kotlin
+
+  fun findSpecialInteger(arr: IntArray): Int =
+    arr.groupBy { it }
+      .maxBy { (k, v) -> v.size }!!
+      .key
+
+```
+
 # 10.12.2023
 [867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix/description/) easy
 [blog post](https://leetcode.com/problems/transpose-matrix/solutions/4385162/kotlin/)
