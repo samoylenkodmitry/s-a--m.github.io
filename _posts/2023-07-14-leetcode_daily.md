@@ -13,6 +13,40 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 12.12.2023
+[1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/) easy
+[blog post](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/4393721/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12122023-1464-maximum-product-of?r=2bam17&utm_campaign=post&utm_medium=web)
+[youtube](https://youtu.be/nyXU1WVpcuo)
+![image.png](https://assets.leetcode.com/users/images/5bb41ae8-e6a9-4e65-9931-853516f933a0_1702359427.9549353.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/436
+
+#### Intuition
+
+We can sort, we can search twice for indices, we can scan once with two variables.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun maxProduct(nums: IntArray): Int = with(nums.indices){
+    maxBy { nums[it] }.let { i ->
+    (nums[i] - 1) * (nums[filter { it != i }.maxBy { nums[it] }] - 1)
+  }}
+
+```
+
 # 11.12.2023
 [1287. Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description/) easy
 [blog post](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/solutions/4389153/kotlin/)
