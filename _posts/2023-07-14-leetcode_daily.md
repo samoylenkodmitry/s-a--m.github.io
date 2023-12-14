@@ -13,6 +13,44 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 14.12.2023
+[2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/description/) easy
+[blog post](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/solutions/4402623/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/14122023-2482-difference-between?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/739235b3-e4ba-45fb-89d7-19f3e73f50ec_1702533632.6391437.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/438
+
+#### Problem TLDR
+
+diff[i][j] = onesRowi + onesColj - zerosRowi - zerosColj
+
+#### Complexity
+
+- Time complexity:
+$$O(nm)$$
+
+- Space complexity:
+$$O(nm)$$
+
+#### Code
+
+```kotlin
+
+    fun onesMinusZeros(grid: Array<IntArray>): Array<IntArray> {
+      val onesRow = grid.map { it.count { it == 1 } }
+      val zerosRow = grid.map { it.count { it == 0 } }
+      val onesCol = grid[0].indices.map { x -> grid.indices.count { grid[it][x] == 1 } }
+      val zerosCol = grid[0].indices.map { x -> grid.indices.count { grid[it][x] == 0 } }
+      return Array(grid.size) { y -> IntArray(grid[0].size) { x ->
+        onesRow[y] + onesCol[x] - zerosRow[y] - zerosCol[x]
+      }}
+    }
+
+```
+
 # 13.12.2023
 [1582. Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/) easy
 [blog post](https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4398174/kotlin/)
