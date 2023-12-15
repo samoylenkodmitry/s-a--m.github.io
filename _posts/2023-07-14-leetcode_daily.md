@@ -13,6 +13,34 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 15.12.2023
+[1436. Destination City](https://leetcode.com/problems/destination-city/description/) easy
+[blog post](https://leetcode.com/problems/destination-city/solutions/4406829/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15122023-1436-destination-city?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/27fdfb51-e0d7-4d41-954f-0af71a6f52ac_1702618317.0490959.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/439
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, with `toSet`
+
+#### Code
+
+```kotlin
+
+    fun destCity(paths: List<List<String>>): String =
+      (paths.map { it[1] } - paths.map { it[0] }).first()
+
+```
+
 # 14.12.2023
 [2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/description/) easy
 [blog post](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/solutions/4402623/kotlin/)
