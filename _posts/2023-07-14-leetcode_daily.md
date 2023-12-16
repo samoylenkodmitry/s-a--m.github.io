@@ -13,6 +13,34 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 16.12.2023
+[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) easy
+[blog post](https://leetcode.com/problems/valid-anagram/solutions/4411609/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16122023-242-valid-anagram?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/86c77ded-7026-488e-a8c0-b8cafd21bd19_1702714130.5302339.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/440
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, can also be solved in O(1) by computing the `hash`
+
+#### Code
+
+```kotlin
+
+    fun isAnagram(s: String, t: String): Boolean =
+      s.groupBy { it } == t.groupBy { it }
+
+```
+
 # 15.12.2023
 [1436. Destination City](https://leetcode.com/problems/destination-city/description/) easy
 [blog post](https://leetcode.com/problems/destination-city/solutions/4406829/kotlin/)
