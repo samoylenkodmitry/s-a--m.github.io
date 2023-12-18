@@ -13,6 +13,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 18.12.2023
+[1913. Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description/) easy
+[blog post](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/4419716/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18122023-1913-maximum-product-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/dqZXeeme8fE)
+![image.png](https://assets.leetcode.com/users/images/7484306a-6b62-4566-833b-b2d9826f1d29_1702885611.3235745.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/443
+
+#### Problem TLDR
+
+max * second_max - min * second_min
+
+#### Intuition
+
+We can sort an array, or just find max and second max in a linear way. 
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun maxProductDifference(nums: IntArray): Int {
+    var (a, b, c, d) = listOf(0, 0, Int.MAX_VALUE, Int.MAX_VALUE)
+    for (x in nums) {
+      if (x > a) b = a.also { a = x } else if (x > b) b = x
+      if (x < d) c = d.also { d = x } else if (x < c) c = x
+    }
+    return a * b - c * d
+  }
+
+```
+
 # 17.12.2023
 [2353. Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/description/) medium
 [blog post](https://leetcode.com/problems/design-a-food-rating-system/solutions/4415744/kotlin-treeset/)
