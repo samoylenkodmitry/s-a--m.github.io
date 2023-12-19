@@ -13,6 +13,43 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 19.12.2023
+[661. Image Smoother](https://leetcode.com/problems/image-smoother/description/) easy
+[blog post](https://leetcode.com/problems/image-smoother/solutions/4424198/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19122023-661-image-smoother?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/fd0aeef7-3ec5-412e-a727-e20788d73f97_1702970551.9007933.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/444
+
+#### Problem TLDR
+
+3x3 average of each cell in 2D matrix
+
+#### Complexity
+
+- Time complexity:
+$$O(nm)$$
+
+- Space complexity:
+$$O(nm)$$
+
+#### Code
+
+```kotlin
+
+  fun imageSmoother(img: Array<IntArray>): Array<IntArray> =
+    Array(img.size) {
+      val ys = (max(0, it - 1)..min(img.lastIndex, it + 1)).asSequence()
+      IntArray(img[0].size) {
+        val xs = (max(0, it - 1)..min(img[0].lastIndex, it + 1)).asSequence()
+        ys.flatMap { y -> xs.map { img[y][it] } }.average().toInt()
+      }
+    }
+
+```
+
 # 18.12.2023
 [1913. Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description/) easy
 [blog post](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/4419716/kotlin/)
