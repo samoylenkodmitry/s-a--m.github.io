@@ -13,6 +13,42 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 20.12.2023
+[2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/) easy
+[blog post](https://leetcode.com/problems/buy-two-chocolates/solutions/4428790/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20122023-2706-buy-two-chocolates?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/988397d6-7a9f-485b-bd77-f6463e89e4f4_1703055509.262011.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/445
+
+#### Problem TLDR
+
+Money change after two chocolates bought
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun buyChoco(prices: IntArray, money: Int): Int {
+    var (a, b) = Int.MAX_VALUE to Int.MAX_VALUE
+    for (x in prices)
+      if (x < a) a = x.also { b = a }
+      else if (x < b) b = x
+    return (money - a - b).takeIf { it >= 0 } ?: money
+  }
+
+```
+
 # 19.12.2023
 [661. Image Smoother](https://leetcode.com/problems/image-smoother/description/) easy
 [blog post](https://leetcode.com/problems/image-smoother/solutions/4424198/kotlin/)
