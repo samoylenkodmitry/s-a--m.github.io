@@ -13,6 +13,44 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 21.12.2023
+[1637. Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/) easy
+[blog post](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/solutions/4434526/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21122023-1637-widest-vertical-area?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/a2331051-5977-4e0a-ab3e-088bdb5d3af5_1703145171.9102602.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/446
+
+#### Problem TLDR
+
+Max x window between xy points
+
+#### Intuition
+
+We can sort points by `x` and scan max window between them
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun maxWidthOfVerticalArea(points: Array<IntArray>): Int =
+    points
+      .sortedBy { it[0] }
+      .windowed(2)
+      .maxOf { it[1][0] - it[0][0] }
+
+```
+
 # 20.12.2023
 [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/) easy
 [blog post](https://leetcode.com/problems/buy-two-chocolates/solutions/4428790/kotlin/)
