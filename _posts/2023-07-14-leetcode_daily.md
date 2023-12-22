@@ -13,6 +13,45 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 22.12.2023
+[1422. Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/) easy
+[blog post](https://leetcode.com/problems/maximum-score-after-splitting-a-string/solutions/4440027/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22122023-1422-maximum-score-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/fc7131a8-c481-4845-bab9-9cb399ca8a43_1703229799.8052046.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/447
+
+#### Problem TLDR
+
+Max left_zeros + right_ones in 01-array
+
+#### Intuition
+
+We can count `ones` and then scan from the beginning modifying the `ones` and `zeros` counts. After some retrospect, we can do this with `score` variable.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$, dropLast(1) creates the second list, but we can just use pointers or `asSequence`
+
+#### Code
+
+```kotlin
+
+    fun maxScore(s: String): Int {
+      var score = s.count { it == '1' }
+      return s.dropLast(1).maxOf {
+        if (it == '0') ++score else --score
+      }
+    }
+
+```
+
 # 21.12.2023
 [1637. Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/) easy
 [blog post](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/solutions/4434526/kotlin/)
