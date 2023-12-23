@@ -13,6 +13,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 23.12.2023
+[1496. Path Crossing](https://leetcode.com/problems/path-crossing/description/) easy
+[blog post](https://leetcode.com/problems/path-crossing/solutions/4445205/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23122023-1496-path-crossing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+![image.png](https://assets.leetcode.com/users/images/fee68608-8d11-4ef3-976f-ac778cbda571_1703318008.0640187.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/448
+
+#### Problem TLDR
+
+Is path string of 'N', 'E', 'W', 'S' crosses
+
+#### Intuition
+
+We can simulate the path and remember visited coordinates
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun isPathCrossing(path: String): Boolean {
+    val visited = mutableSetOf(0 to 0)
+    var x = 0
+    var y = 0
+    return !path.all { when (it) {
+      'N' -> y++
+      'S' -> y--
+      'E' -> x++
+      else -> x-- }
+      visited.add(x to y)
+    }
+  } 
+
+```
+
 # 22.12.2023
 [1422. Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/) easy
 [blog post](https://leetcode.com/problems/maximum-score-after-splitting-a-string/solutions/4440027/kotlin/)
