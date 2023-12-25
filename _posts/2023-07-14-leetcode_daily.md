@@ -13,6 +13,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 25.12.2023
+[91. Decode Ways](https://leetcode.com/problems/decode-ways/description/) medium
+[blog post](https://leetcode.com/problems/decode-ways/solutions/4455343/kotlin-dp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25122023-91-decode-ways?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/7F_rqD4daDU)
+![image.png](https://assets.leetcode.com/users/images/711cc645-c26b-4870-bc17-fb1dff4ca583_1703490216.7498636.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/450
+
+#### Problem TLDR
+
+Ways to decode back 'A' -> '1', 'B' -> '2' … 'Z' -> '26'
+
+#### Intuition
+
+Let's consider each position and do a DFS to check how many successfull paths exist.
+
+For each position, we know the answer for the rest of the string, so it can be cached. 
+
+#### Approach
+
+Start from implementing brute-force DFS, consider two cases: take just one char and take two chars. After that, introduce the cache, it can be an array or a HashMap<position, result>. Extra step, is to notice, the current value only depends on the two next values, so rewrite DFS into a reversed loop and store two previous results. The boss step is to do some code golf.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```
+
+  fun numDecodings(s: String): Int =
+    s.indices.reversed().fold(0 to 1) { (prev, curr), i ->
+      curr to if (s[i] == '0') 0 else
+      curr + if (s.drop(i).take(2).toInt() in 10..26) prev else 0
+    }.second
+
+```
+
 # 24.12.2023
 [1758. Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/description/) easy
 [blog post](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4450527/kotlin/)
