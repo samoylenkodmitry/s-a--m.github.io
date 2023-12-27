@@ -13,6 +13,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 27.12.2023
+[1578. Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/description/) medium
+[blog post](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4464920/kotlin-greedy-scan/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/27122023-1578-minimum-time-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/JBitP1oM2Ac)
+![image.png](https://assets.leetcode.com/users/images/308bbd34-1437-4c70-bd0c-b4bacbf31ebb_1703660855.2316728.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/452
+
+#### Problem TLDR
+
+Min sum of removed duplicates in array.
+
+#### Intuition
+
+The brute-force approach is to just consider keeping/remove every item, that can be cached in [size, 26] array.
+
+However, there is a more optimal greedy solution: scan symbols one by one, and from each duplicate island remove the maximum of it.
+
+#### Approach
+
+Start from writing more verbose solution, keeping separate variables for `currentSum`, `totalSum`, and two separate conditions: if we meet a duplicate or not.
+Then optimize it out.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun minCost(colors: String, neededTime: IntArray): Int {
+    var sum = 0
+    var max = 0
+    var prev = '.'
+    for ((i, c) in colors.withIndex()) {
+      sum += neededTime[i]
+      if (prev != c) sum -= max.also { max = 0 }
+      max = max(max, neededTime[i])
+      prev = c
+    }
+    return sum - max
+  }
+
+```
+
 # 26.12.2023
 [1155. Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description/) medium
 [blog post](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/solutions/4459886/kotlin-dp/)
