@@ -13,6 +13,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 29.12.2023
+[1335. Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/description/) hard
+[blog post](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4473265/kotlin-dp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29122023-1335-minimum-difficulty?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/WvIIpPh9UZo)
+![image.png](https://assets.leetcode.com/users/images/452cb766-e733-4b3e-afe0-b69d04a83a9d_1703834174.1208222.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/454
+
+#### Problem TLDR
+
+Min sum of maximums jobDifficulty[i] per day d preserving the order
+
+#### Intuition
+
+Let's brute-force optimal interval of jobs `jobInd..j` for every day using Depth-First Search. Result will onle depend on the starting `jobInd` and the current `day`, so can be cached.
+
+#### Approach
+
+* pay attention to the problem description, preserving jobs order matters here
+
+#### Complexity
+
+- Time complexity:
+$$O(dn^2)$$, `dn` for the recursion depth and another `n` for the inner loop
+
+- Space complexity:
+$$O(dn)$$
+
+#### Code
+
+```kotlin
+
+  fun minDifficulty(jobDifficulty: IntArray, d: Int): Int {
+    val dp = mutableMapOf<Pair<Int, Int>, Int>()
+    fun dfs(jobInd: Int, day: Int): Int = when {
+      jobInd == jobDifficulty.size -> if (day == d) 0 else Int.MAX_VALUE / 2
+      day == d -> Int.MAX_VALUE / 2
+      else -> dp.getOrPut(jobInd to day) {
+        var max = 0
+        (jobInd..jobDifficulty.lastIndex).minOf { i ->
+          max = max(max, jobDifficulty[i])
+          max + dfs(i + 1, day + 1)
+        }
+    }}
+    return dfs(0, 0).takeIf { it < Int.MAX_VALUE / 2 } ?: -1
+  }
+
+```
+
 # 28.12.2023
 [1531. String Compression II](https://leetcode.com/problems/string-compression-ii/description/) hard
 [blog post](https://leetcode.com/problems/string-compression-ii/solutions/4469888/kotlin-dp/)
