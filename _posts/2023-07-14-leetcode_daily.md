@@ -30,7 +30,7 @@ Min sum of maximums jobDifficulty[i] per day d preserving the order
 
 #### Intuition
 
-Let's brute-force optimal interval of jobs `jobInd..j` for every day using Depth-First Search. Result will onle depend on the starting `jobInd` and the current `day`, so can be cached.
+Let's brute-force optimal interval of jobs `jobInd..j` for every day using Depth-First Search. The result will only depend on the starting `jobInd` and the current `day`, so can be cached.
 
 #### Approach
 
