@@ -13,6 +13,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 3.01.2024
+[2125. Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/) medium
+[blog post](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/solutions/4496627/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/3012024-2125-number-of-laser-beams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/h-SRyUsiCZc)
+![image.png](https://assets.leetcode.com/users/images/08d91810-f0d6-4b69-a194-2e1531b201f9_1704263974.5441504.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/460
+
+#### Problem TLDR
+
+Beams count between consequent non-empty row's `1`s.
+
+#### Intuition
+
+By the problem definition, `count = sum_i_j(count_i * count_j)`
+
+#### Approach
+
+Let's use some Kotlin's API:
+* map
+* filter
+* windowed
+* sum
+
+#### Complexity
+
+- Time complexity:
+$$O(nm)$$
+
+- Space complexity:
+$$O(n)$$, can be reduced to O(1) with `asSequence` and `fold`.
+
+#### Code
+
+```kotlin
+
+  fun numberOfBeams(bank: Array<String>) =
+    bank.map { it.count { it == '1' } }
+      .filter { it > 0 }
+      .windowed(2)
+      .map { (a, b) -> a * b }
+      .sum() ?: 0
+
+```
+
 # 2.01.2024
 [2610. Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description/) medium
 [blog post](https://open.substack.com/pub/dmitriisamoilenko/p/2012024-2610-convert-an-array-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
