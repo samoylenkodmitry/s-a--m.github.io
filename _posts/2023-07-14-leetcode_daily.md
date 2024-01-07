@@ -13,6 +13,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 7.01.2024
+[446. Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/description/) hard
+[blog post](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4521808/kotlin-dp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/7012024-446-arithmetic-slices-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/3kFB0lC8oxM)
+![image.png](https://assets.leetcode.com/users/images/52e9c285-2cde-414f-8f44-f43bef6e5461_1704611937.7219915.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/464
+
+#### Problem TLDR
+
+Count of arithmetic subsequences.
+
+#### Intuition
+
+We can take every pair and search for the third element.
+The result only depends on the `diff` and suffix array position, so can be cached.
+
+#### Approach
+
+* be careful how to count each new element: first add the `1` then add the suffix count. Wrong approach: just count the `1` at the end of the sequence.
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$, it looks like n^4, but the `dfs` n^2 part will only go deep once
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+  fun numberOfArithmeticSlices(nums: IntArray): Int {
+    val dp = mutableMapOf<Pair<Int, Int>, Int>()
+    fun dfs(i: Int, k: Int): Int = dp.getOrPut(i to k) {
+      var count = 0
+      for (j in i + 1..<nums.size) 
+        if (nums[i].toLong() - nums[k] == nums[j].toLong() - nums[i])
+          count += 1 + dfs(j, i)
+      count
+    }
+    var count = 0
+    for (i in nums.indices)
+      for (j in i + 1..<nums.size)
+        count += dfs(j, i)
+    return count
+  }
+
+```
+
 # 6.01.2024
 [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/) hard
 [blog post](https://leetcode.com/problems/maximum-profit-in-job-scheduling/solutions/4516146/kotlin-dp/)
