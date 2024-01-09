@@ -13,6 +13,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 9.01.2024
+[872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/) easy
+[blog post](https://leetcode.com/problems/leaf-similar-trees/solutions/4532654/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/9012024-872-leaf-similar-trees?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/cjhu8RUxUuo)
+![image.png](https://assets.leetcode.com/users/images/94bc595b-998f-4542-8235-c0a8e7679823_1704777686.8159046.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/466
+
+#### Problem TLDR
+
+Are leafs sequences equal for two trees.
+
+#### Intuition
+
+Let's build a leafs lists and compare them.
+
+#### Approach
+
+Let's use recursive function.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun leafs(n: TreeNode?): List<Int> = n?.run {
+    (leafs(left) + leafs(right))
+    .takeIf { it.isNotEmpty() } ?: listOf(`val`)
+  } ?: listOf()
+  fun leafSimilar(root1: TreeNode?, root2: TreeNode?) =
+    leafs(root1) == leafs(root2)
+
+```
+
 # 8.01.2024
 [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/) easy
 [blog post](https://leetcode.com/problems/range-sum-of-bst/solutions/4526585/kotlin/)
