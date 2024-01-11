@@ -13,6 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 11.01.2024
+[1026. Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/) medium
+[blog post](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/solutions/4544360/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11012024-1026-maximum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/0ZbZ7yV4gY8)
+![image.png](https://assets.leetcode.com/users/images/0e8f648d-bf30-4bb8-b740-4d617cd49c18_1704949476.070614.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/468
+
+#### Problem TLDR
+
+Max diff between node and ancestor in a binary tree.
+
+#### Intuition
+
+Let's traverse the tree with Depth-First Search and keep track of the max and min values.
+
+#### Approach
+
+* careful with corner case: min and max must be in the same ancestor-child hierarchy
+* we can use external variable, or put it in each result
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin
+
+  fun maxAncestorDiff(root: TreeNode?): Int {
+    var res = 0
+    fun dfs(n: TreeNode?): List<Int> = n?.run {
+      (dfs(left) + dfs(right) + listOf(`val`)).run { 
+        listOf(min(), max()).onEach { res = max(res, abs(`val` - it)) }
+      }
+    } ?: listOf()
+    dfs(root)
+    return res
+  }
+
+```
+
+
 # 10.01.2024
 [2385. Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/) medium
 [blog post](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/4539119/kotlin-bfs/)
