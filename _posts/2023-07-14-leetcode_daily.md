@@ -13,6 +13,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 12.01.2024
+[1704. Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/description/) easy
+[blog post](https://leetcode.com/problems/determine-if-string-halves-are-alike/solutions/4550111/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12012024-1704-determine-if-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/TSdjY4YTRkc)
+![image.png](https://assets.leetcode.com/users/images/e326bab1-e773-407d-984f-fc3d30a94f6b_1705034677.4932156.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/469
+
+#### Problem TLDR
+
+https://t.me/leetcode_daily_unstoppable/469
+
+#### Approach
+
+Let's use some Kotlin's API:
+* toSet
+* take
+* drop
+* count
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, can be O(1) with `asSequence`
+
+#### Code
+
+```kotlin
+
+  val vw = "aeiouAEIOU".toSet()
+  fun halvesAreAlike(s: String) = 
+    s.take(s.length / 2).count { it in vw } == 
+    s.drop(s.length / 2).count { it in vw }
+
+```
+
 # 11.01.2024
 [1026. Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/) medium
 [blog post](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/solutions/4544360/kotlin/)
