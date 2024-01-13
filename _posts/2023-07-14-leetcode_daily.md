@@ -13,6 +13,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 13.01.2024
+[1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/description/) medium
+[blog post](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/solutions/4556656/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13012024-1347-minimum-number-of-steps?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/7yGUxNR6cVI)
+![image.png](https://assets.leetcode.com/users/images/8418468e-5216-4eda-83de-8b3bd3a2f99f_1705125457.905481.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/470
+
+#### Problem TLDR
+
+Min operations to make string `t` anagram of `s`.
+
+#### Intuition
+
+Let's compare char's frequencies of those two strings.
+
+#### Approach
+
+* careful: as we replacing one kind of chars with another, we must decrease that another counter
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun minSteps(s: String, t: String) = 
+    IntArray(128).let {
+      for (c in s) it[c.toInt()]++
+      for (c in t) it[c.toInt()]--
+      it.sumOf { abs(it) } / 2
+    }
+
+```
+
 # 12.01.2024
 [1704. Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/description/) easy
 [blog post](https://leetcode.com/problems/determine-if-string-halves-are-alike/solutions/4550111/kotlin/)
