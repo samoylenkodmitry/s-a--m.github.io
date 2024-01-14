@@ -13,6 +13,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 14.01.2024
+[1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/description/) medium
+[blog post](https://leetcode.com/problems/determine-if-two-strings-are-close/solutions/4562444/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/14012024-1657-determine-if-two-strings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/enAXGzsmVB8)
+![image.png](https://assets.leetcode.com/users/images/93b7a052-4680-4d72-b39f-22ecf4ee8cb7_1705211713.4177547.png)
+
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/471
+
+#### Problem TLDR
+
+Are strings convertible by swapping existing chars positions or frequencies.
+
+#### Intuition
+
+By the problem definition, we must compare the frequencies numbers. Also, sets of chars must be equal.
+
+#### Approach
+
+Let's use some Kotlin's API:
+* groupingBy
+* eachCount
+* run
+* sorted
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, as we are sorting only 26 elements
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun String.f() = groupingBy { it }.eachCount()
+    .run { keys to values.sorted() }
+  fun closeStrings(word1: String, word2: String) =
+    word1.f() == word2.f()
+
+```
+
 # 13.01.2024
 [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/description/) medium
 [blog post](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/solutions/4556656/kotlin/)
