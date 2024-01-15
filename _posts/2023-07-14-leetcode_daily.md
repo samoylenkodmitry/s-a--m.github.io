@@ -13,6 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 15.01.2024
+[2225. Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/) medium
+[blog post](https://leetcode.com/problems/find-players-with-zero-or-one-losses/solutions/4567940/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15012024-2225-find-players-with-zero?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/SjZnYy5X244)
+![image.png](https://assets.leetcode.com/users/images/f19d8463-3751-4f15-a213-53747f8b78a3_1705296441.3465347.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/472
+
+#### Problem TLDR
+
+[sorted winners list, sorted single lose list]
+
+#### Intuition
+
+No special algorithms here, just a `set` manipulation.
+
+#### Approach
+
+Let's use some Kotlin's API:
+* map
+* groupingBy
+* eachCount
+* filter
+* sorted
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun findWinners(matches: Array<IntArray>) = buildList {
+    val winners = matches.map { it[0] }.toSet()
+    val losers = matches.groupingBy { it[1] }.eachCount()
+    add((winners - losers.keys).sorted())
+    add(losers.filter { (k, v) -> v == 1 }.keys.sorted())
+  }
+
+```
+
+
 # 14.01.2024
 [1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/description/) medium
 [blog post](https://leetcode.com/problems/determine-if-two-strings-are-close/solutions/4562444/kotlin/)
