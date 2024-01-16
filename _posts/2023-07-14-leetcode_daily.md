@@ -70,6 +70,48 @@ class RandomizedSet(): ArrayList<Int>() {
 
 ```
 
+```rust
+
+use rand::{thread_rng, Rng};
+use std::collections::HashMap;
+
+struct RandomizedSet {
+  vec: Vec<i32>,
+  v_to_i: HashMap<i32, usize>,
+}
+
+impl RandomizedSet {
+
+  fn new() -> Self {
+    Self { vec: vec![], v_to_i: HashMap::new() }
+  }
+  
+  fn insert(&mut self, v: i32) -> bool {
+    if self.v_to_i.entry(v).or_insert(self.vec.len()) != &self.vec.len() {
+      return false;
+    }
+    self.vec.push(v);
+    true
+  }
+  
+  fn remove(&mut self, v: i32) -> bool {
+    self.v_to_i.remove(&v).map_or(false, |i| {
+      let last = self.vec.pop().unwrap();
+      if (last != v) {
+        self.vec[i] = last;
+        self.v_to_i.insert(last, i);
+      }
+      true
+    })
+  }
+  
+  fn get_random(&self) -> i32 {
+    self.vec[thread_rng().gen_range(0, self.vec.len())]
+  }
+}
+
+```
+
 # 15.01.2024
 [2225. Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/) medium
 [blog post](https://leetcode.com/problems/find-players-with-zero-or-one-losses/solutions/4567940/kotlin/)
