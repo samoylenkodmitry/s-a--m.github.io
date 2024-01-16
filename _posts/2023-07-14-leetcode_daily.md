@@ -13,6 +13,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 16.01.2024
+[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/description/) medium
+[blog post](https://leetcode.com/problems/insert-delete-getrandom-o1/solutions/4573497/kotlin/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16012024-380-insert-delete-getrandom?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/MTxB74kat0k)
+![image.png](https://assets.leetcode.com/users/images/5c69cb0b-f5fa-4dc4-be93-a6342747240c_1705381227.8578985.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/473
+
+#### Problem TLDR
+
+Implement HashSet<Int> with random method.
+
+#### Intuition
+
+There is a `random` method exists in Kotlin's `MutableSet` https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/random.html. 
+
+However, let's just use array to store values and save positions in a `HashMap`. The order in array didn't matter, so we can remove elements in O(1).
+
+#### Approach
+
+To save some symbols of code, we can extend from ArrayList.
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$, per operation
+
+- Space complexity:
+$$O(1)$$, per operation
+
+#### Code
+
+```kotlin
+
+class RandomizedSet(): ArrayList<Int>() {
+  val vToPos = HashMap<Int, Int>()
+  fun insert(v: Int): Boolean {
+    if (vToPos.contains(v)) return false
+    add(v)
+    vToPos[v] = lastIndex
+    return true
+  }
+  override fun remove(v: Int): Boolean {
+    val pos = vToPos.remove(v) ?: return false
+    set(pos, last())
+    if (last() != v) vToPos[last()] = pos
+    removeLast()
+    return true
+  }
+  fun getRandom() = random()
+}
+
+```
+
 # 15.01.2024
 [2225. Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/) medium
 [blog post](https://leetcode.com/problems/find-players-with-zero-or-one-losses/solutions/4567940/kotlin/)
