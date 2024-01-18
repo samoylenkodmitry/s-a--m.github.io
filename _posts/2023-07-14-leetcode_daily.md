@@ -13,6 +13,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 18.01.2024
+[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) easy
+[blog post](https://leetcode.com/problems/climbing-stairs/solutions/4585271/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18012024-70-climbing-stairs?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/knbSaxXScFY)
+![image.png](https://assets.leetcode.com/users/images/01bbc7b0-4d88-465c-af98-bfbb5080e175_1705554981.7993681.png)
+![image.png](https://assets.leetcode.com/users/images/a9c9dd47-f746-4187-ad14-22f94ad4f993_1705555736.284463.png)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/476
+
+#### Problem TLDR
+
+Ways to climb n stairs by 1 or 2 steps.
+
+#### Intuition
+
+Start with brute force DFS search: either go one or two steps and cache the result in a HashMap<Int, Int>. Then convert solution to iterative version, as only two previous values matter.
+
+#### Approach
+
+* no need to check `if n < 4`
+* save some lines of code with `also`
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun climbStairs(n: Int): Int {
+    var p = 0
+    var c = 1
+    for (i in 1..n) c += p.also { p = c }
+    return c
+  }
+
+```
+```rust
+
+    pub fn climb_stairs(n: i32) -> i32 {
+      (0..n).fold((0, 1), |(p, c), _| (c, p + c)).1
+    }
+
+```
+
+
 # 17.01.2024
 [1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) easy
 [blog post](https://leetcode.com/problems/unique-number-of-occurrences/solutions/4579328/kotlin-rust/)
@@ -54,7 +109,7 @@ $$O(n)$$
 
 #### Code
 
-```kotlin []
+```kotlin
 
     fun uniqueOccurrences(arr: IntArray) =
       arr.asList().groupingBy { it }.eachCount().values.run {
@@ -63,7 +118,7 @@ $$O(n)$$
 
 ```
 
-```rust []
+```rust
 
   pub fn unique_occurrences(arr: Vec<i32>) -> bool {
     let occ = arr.iter().fold(HashMap::new(), |mut m, &x| {
