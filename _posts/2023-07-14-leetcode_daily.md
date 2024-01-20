@@ -69,7 +69,7 @@ $$O(n)$$
 
 #### Code
 
-```kotlin []
+```kotlin
 
   fun sumSubarrayMins(arr: IntArray) = with(Stack<Int>()) {
     val g = IntArray(arr.size + 1)
@@ -84,7 +84,7 @@ $$O(n)$$
 
 ```
 
-```rust []
+```rust
 
     pub fn sum_subarray_mins(arr: Vec<i32>) -> i32 {
       let (mut s, mut g) = (Vec::new(), vec![0; arr.len() + 1]);
