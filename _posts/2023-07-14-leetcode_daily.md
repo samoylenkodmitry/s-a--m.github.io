@@ -13,6 +13,69 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 21.01.2024
+[198. House Robber](https://leetcode.com/problems/house-robber/description/) medium
+[blog post](https://leetcode.com/problems/house-robber/solutions/4601559/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21012024-198-house-robber?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/UeejjxR-skM)
+![image.png](https://assets.leetcode.com/users/images/d2656cfc-85e1-464b-b8c3-e83b4d52a422_1705817306.266974.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/479
+
+#### Problem TLDR
+
+Max sum to rob non adjacent items in array.
+
+#### Intuition
+
+Let's inspect how robber acts by scanning array home by home:
+
+```bash
+  // 2 7 9 3 1
+  // 2          max(2) = 2
+  //   7        max(7, 2) = 7
+  // b a 9      max(9 + b, a) = 11
+  //   b a 3    max(3 + b, a) = 11
+  //     b a 1  max(1 + b, a) = 12
+```
+
+We see that he can choose to take the current home and drop the previous, or keep the previous. Only the two last sums matter.
+
+#### Approach
+
+* save some lines of code by using `fold`
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotiln[]
+
+  fun rob(nums: IntArray): Int {
+    var b = 0
+    return nums.fold(0) { a, x -> 
+      max(x + b, a).also { b = a }
+    }
+  }
+
+```
+
+```rust[]
+
+    pub fn rob(nums: Vec<i32>) -> i32 {
+      nums.iter().fold((0, 0), |(a, b), &x| (b, b.max(a + x))).1
+    }
+
+```
+
 # 20.01.2024
 [907. Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/description) medium
 [blog post](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/4596749/kotlin-rust/)
