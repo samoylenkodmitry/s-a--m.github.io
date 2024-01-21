@@ -58,14 +58,14 @@ $$O(1)$$
 
 #### Code
 
-```kotiln[]
+```kotlin
 
   fun rob(nums: IntArray) = 
     nums.fold(0 to 0) { (a, b), x -> max(x + b, a) to a }.first
 
 ```
 
-```rust[]
+```rust
 
     pub fn rob(nums: Vec<i32>) -> i32 {
       nums.iter().fold((0, 0), |(a, b), &x| (b, b.max(a + x))).1
