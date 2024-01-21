@@ -18,7 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/house-robber/solutions/4601559/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21012024-198-house-robber?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/UeejjxR-skM)
-![image.png](https://assets.leetcode.com/users/images/ad84643d-fc16-44a6-ae8f-fa9e80b6870a_1705818487.5737438.png)
+![image.png](https://assets.leetcode.com/users/images/ceb459e8-bc5d-4699-b35b-39dc250abccb_1705827468.1912947.png)
 
 https://youtu.be/UeejjxR-skM
 #### Join me on Telegram
