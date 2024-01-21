@@ -18,8 +18,9 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/house-robber/solutions/4601559/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21012024-198-house-robber?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/UeejjxR-skM)
-![image.png](https://assets.leetcode.com/users/images/d2656cfc-85e1-464b-b8c3-e83b4d52a422_1705817306.266974.png)
+![image.png](https://assets.leetcode.com/users/images/ad84643d-fc16-44a6-ae8f-fa9e80b6870a_1705818487.5737438.png)
 
+https://youtu.be/UeejjxR-skM
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/479
@@ -59,12 +60,8 @@ $$O(1)$$
 
 ```kotiln[]
 
-  fun rob(nums: IntArray): Int {
-    var b = 0
-    return nums.fold(0) { a, x -> 
-      max(x + b, a).also { b = a }
-    }
-  }
+  fun rob(nums: IntArray) = 
+    nums.fold(0 to 0) { (a, b), x -> max(x + b, a) to a }.first
 
 ```
 
