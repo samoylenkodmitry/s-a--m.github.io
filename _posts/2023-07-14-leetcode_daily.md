@@ -13,6 +13,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 22.01.2024
+[645. Set Mismatch](https://leetcode.com/problems/set-mismatch/description) easy
+[blog post](https://leetcode.com/problems/set-mismatch/solutions/4607363/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22012024-645-set-mismatch?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/BdRqoNZ3Hi8)
+![image.png](https://assets.leetcode.com/users/images/9044651b-8327-47ea-bb09-fbbca9934852_1705904280.8302882.png)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/480
+
+#### Problem TLDR
+
+Return missing and duplicated number in 1..n array with one number replaced.
+
+#### Intuition
+
+First try to find a `xor` solution by observing xor differencies. Then give up and just compare sorted order or even better HashSet with expected.
+
+#### Approach
+
+* delta sums is a trivial approach, use it in an interview
+* learn about xor solution (homework)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin []
+
+  fun findErrorNums(nums: IntArray) = with(nums) {
+    val missing = ((1..size) - toSet()).first()
+    val delta = sum() - (size + 1) * size / 2
+    intArrayOf(missing + delta, missing)
+  }
+
+```
+```rust []
+
+  pub fn find_error_nums(nums: Vec<i32>) -> Vec<i32> {
+    let sz = nums.len() as i32;
+    let sum: i32 = nums.iter().sum();
+    let set_sum: i32 = nums.into_iter().collect::<HashSet<_>>().iter().sum();
+    vec![sum - set_sum, sz * (sz + 1) / 2 - set_sum]
+  }
+
+```
+
 # 21.01.2024
 [198. House Robber](https://leetcode.com/problems/house-robber/description/) medium
 [blog post](https://leetcode.com/problems/house-robber/solutions/4601559/kotlin-rust/)
