@@ -18,8 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4612267/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23012024-1239-maximum-length-of-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/tnX2d8zkPJ0)
-![image.png](https://assets.leetcode.com/users/images/dd4906ad-1fb8-4de5-ae4f-71021537348c_1705989080.7361205.png)
-
+![image.png](https://assets.leetcode.com/users/images/ba271f67-2676-4749-ac53-9339c76db8b3_1705990170.4945078.png)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/481
