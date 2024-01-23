@@ -64,17 +64,16 @@ $$O(n)$$
 ```rust
 
   pub fn max_length(arr: Vec<String>) -> i32 {
-    let bits: Vec<i32> = arr.into_iter()
+    let bits: Vec<_> = arr.into_iter()
       .filter(|s| s.len() == s.chars().collect::<HashSet<_>>().len())
       .map(|s| s.bytes().fold(0, |m, c| m | 1 << (c - b'a')))
       .collect();
     fn dfs(bits: &[i32], i: usize, mask: i32) -> i32 {
-      if i == bits.len() {
-        return 0;
-      }
-      dfs(bits, i + 1, mask).max(if (bits[i] | mask != bits[i] ^ mask) { 0 } else {
-        bits[i].count_ones() as i32 + dfs(bits, i + 1, mask | bits[i])
-      })
+      if i == bits.len() { 0 } else {
+      dfs(bits, i + 1, mask).max(
+        if (bits[i] | mask != bits[i] ^ mask) { 0 } else 
+        { bits[i].count_ones() as i32 + dfs(bits, i + 1, mask | bits[i]) }
+      )}
     }
     dfs(&bits, 0, 0)
   }
