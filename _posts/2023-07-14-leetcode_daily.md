@@ -13,6 +13,81 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 29.01.2024
+[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) easy
+[blog post](https://leetcode.com/problems/implement-queue-using-stacks/solutions/4641938/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29012024-232-implement-queue-using?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
+[youtube](https://youtu.be/ZJnPxa6nRtw)
+![image.png](https://assets.leetcode.com/users/images/debf13bb-1cb4-485c-b831-374d32af0f01_1706505526.6673849.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/487
+
+#### Problem TLDR
+
+Queue by 2 stacks.
+
+#### Intuition
+
+Let's write down how the numbers are added:
+```
+stack a: [1 2]
+stack b: [] 
+
+peek:
+
+a: [1]
+b: [2]
+
+a: []
+b: [2 1], b.peek == 1
+```
+
+
+#### Approach
+
+Let's do some code golf.
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$ for total operations. In general, stack drain is a rare operation
+
+- Space complexity:
+$$O(n)$$ for total operations.
+
+#### Code
+
+```kotlin 
+
+class MyQueue() {
+  val a = Stack<Int>()
+  val b = Stack<Int>()
+  fun push(x: Int) = a.push(x)
+  fun pop() = peek().also { b.pop() }
+  fun peek(): Int {
+    if (b.size < 1) while (a.size > 0) b += a.pop()
+    return b.peek()
+  }
+  fun empty() = a.size + b.size == 0
+}
+
+```
+```rust 
+struct MyQueue(Vec<i32>, Vec<i32>);
+impl MyQueue {
+    fn new() -> Self { Self(vec![], vec![]) }
+    fn push(&mut self, x: i32) { self.0.push(x); }
+    fn pop(&mut self) -> i32 { self.peek(); self.1.pop().unwrap() }
+    fn peek(&mut self) -> i32 {
+      if self.1.is_empty() { self.1.extend(self.0.drain(..).rev()); }
+      *self.1.last().unwrap()
+    }
+    fn empty(&self) -> bool { self.0.len() + self.1.len() == 0 }
+}
+```
+
 # 28.01.2024
 [1074. Number of Submatrices That Sum to Target](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/description/) hard
 [blog post](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/solutions/4637569/kotlin-rust/)
@@ -47,7 +122,7 @@ $$O(n^2)$$
 
 #### Code
 
-```kotlin []
+```kotlin 
 
   fun numSubmatrixSumTarget(matrix: Array<IntArray>, target: Int): Int {
     val s = Array(matrix.size + 1) { IntArray(matrix[0].size + 1) }
@@ -60,7 +135,7 @@ $$O(n^2)$$
   }
 
 ```
-```rust []
+```rust 
 
     pub fn num_submatrix_sum_target(matrix: Vec<Vec<i32>>, target: i32) -> i32 {
       let mut s = vec![vec![0; matrix[0].len() + 1]; matrix.len() + 1];
@@ -222,7 +297,7 @@ $$O(k)$$
 
 #### Code
 
-```kotlin []
+```kotlin 
 
   fun kInversePairs(n: Int, k: Int): Int {
     var fib = 1
@@ -242,7 +317,7 @@ $$O(k)$$
   }
 
 ```
-```rust []
+```rust 
 
   pub fn k_inverse_pairs(n: i32, k: i32) -> i32 {
     let mut fib = 1;
@@ -297,7 +372,7 @@ $$O(nmv)$$
 
 #### Code
 
-```kotlin []
+```kotlin 
 
   fun findPaths(m: Int, n: Int, maxMove: Int, startRow: Int, startColumn: Int): Int {
     val dp = mutableMapOf<Pair<Pair<Int, Int>, Int>, Long>()
@@ -313,7 +388,7 @@ $$O(nmv)$$
 
 
 ```
-```rust []
+```rust 
 
   pub fn find_paths(m: i32, n: i32, max_move: i32, start_row: i32, start_column: i32) -> i32 {
       let mut dp = HashMap::new();
