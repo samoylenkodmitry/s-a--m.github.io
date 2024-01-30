@@ -46,7 +46,7 @@ $$O(n)$$
 
 #### Code
 
-```kotlin []
+```kotlin 
 
   fun evalRPN(tokens: Array<String>) = Stack<Int>().run {
     for (s in tokens) push(when (s) {
@@ -60,7 +60,7 @@ $$O(n)$$
   }
 
 ```
-```rust []
+```rust 
 
   pub fn eval_rpn(tokens: Vec<String>) -> i32 {
     let mut s = vec![];
