@@ -13,6 +13,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 30.01.2024
+[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description) medium
+[blog post](https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/4646986/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30012024-150-evaluate-reverse-polish?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ue5KCzQcGTc)
+![image.png](https://assets.leetcode.com/users/images/9551aac3-0ea0-405e-91d5-edbde4f70e72_1706590505.2540433.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/488
+
+#### Problem TLDR
+
+Solve Reverse Polish Notation.
+
+#### Intuition
+
+Push to stack until operation met, then pop twice and do op.
+
+#### Approach
+
+Let's try to be brief.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin []
+
+  fun evalRPN(tokens: Array<String>) = Stack<Int>().run {
+    for (s in tokens) push(when (s) {
+      "+" -> pop() + pop()
+      "-" -> -pop() + pop()
+      "*" -> pop() * pop()
+      "/" -> pop().let { pop() / it }
+      else -> s.toInt()
+    })
+    pop()
+  }
+
+```
+```rust []
+
+  pub fn eval_rpn(tokens: Vec<String>) -> i32 {
+    let mut s = vec![];
+    for t in tokens { if let Ok(n) = t.parse() { s.push(n) }
+     else { let (a, b) = (s.pop().unwrap(), s.pop().unwrap());
+      s.push(match t.as_str() { 
+        "+" => a + b, "-" => b - a, "*" => a * b, _ => b / a }) }}
+    s[0]
+  }
+
+```
+
 # 29.01.2024
 [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) easy
 [blog post](https://leetcode.com/problems/implement-queue-using-stacks/solutions/4641938/kotlin-rust/)
