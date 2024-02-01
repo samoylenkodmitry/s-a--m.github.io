@@ -820,7 +820,7 @@ $$O(n)$$
 
 #### Code
 
-```kotlin []
+```kotlin
 
   fun findErrorNums(nums: IntArray) = with(nums) {
     val missing = ((1..size) - toSet()).first()
@@ -829,7 +829,7 @@ $$O(n)$$
   }
 
 ```
-```rust []
+```rust
 
   pub fn find_error_nums(nums: Vec<i32>) -> Vec<i32> {
     let sz = nums.len() as i32;
