@@ -13,6 +13,73 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 03.02.2024
+[1043. Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/description) medium
+[blog post](https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4669799/kotlin-rust/)
+[substack](https://dmitriisamoilenko.substack.com/publish/posts/detail/141333259/share-center)
+[youtube](https://youtu.be/A4LDXHos0Ho)
+![image.png](https://assets.leetcode.com/users/images/ea89d498-53e0-47ae-bd7f-b778dfb08f9e_1706945938.483209.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/493
+
+#### Problem TLDR
+
+Max sum of partition array into chunks size of at most k filled with max value in chunk.
+
+#### Intuition
+
+Let's just brute force with Depth-First Search starting from each `i` position: search for the end of chunk `j` and choose the maximum of the sum. max_sum[i] = optimal_chunk + max_sum[chunk_len]. This can be cached by the `i`.
+
+Then rewrite into bottom up DP.
+
+#### Approach
+
+* use size + 1 for dp, to avoid 'if's
+* careful with the problem definition: it is not the max count of chunks, it is the chunks lengths up to `k`
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+  fun maxSumAfterPartitioning(arr: IntArray, k: Int): Int {
+    val dp = IntArray(arr.size + 1)
+    for (i in arr.indices) {
+      var max = 0
+      for (j in i downTo max(0, i - k + 1)) {
+        max = max(max, arr[j])
+        dp[i + 1] = max(dp[i + 1], (i - j + 1) * max + dp[j])
+      }
+    }
+    return dp[arr.size]
+  }
+
+```
+```rust 
+
+  pub fn max_sum_after_partitioning(arr: Vec<i32>, k: i32) -> i32 {
+    let mut dp = vec![0; arr.len() + 1];
+    for i in 0..arr.len() {
+      let mut max_v = 0;
+      for j in (0..=i).rev().take(k as usize) {
+        max_v = max_v.max(arr[j]);
+        dp[i + 1] = dp[i + 1].max((i - j + 1) as i32 * max_v + dp[j]);
+      }
+    }
+    dp[arr.len()]
+  }
+
+```
+
 # 02.02.2024
 [1291. Sequential Digits](https://leetcode.com/problems/sequential-digits/description) medium
 [blog post](https://leetcode.com/problems/sequential-digits/solutions/4664230/kotlin-rust/)
