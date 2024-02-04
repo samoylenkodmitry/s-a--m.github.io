@@ -18,7 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/minimum-window-substring/solutions/4675063/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04022024-76-minimum-window-substring?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/dy5yAUf2SvQ)
-![image.png](https://assets.leetcode.com/users/images/348d50f2-6b7b-44a2-bb83-00f493939ec0_1707032534.0363069.png)
+![image.png](https://assets.leetcode.com/users/images/174ffc21-381d-4302-8b49-fc38ed52c702_1707034018.3439875.png)
 
 #### Join me on Telegram
 
@@ -75,18 +75,18 @@ $$O(1)$$
   pub fn min_window(s: String, t: String) -> String {
     let mut freq = vec![0; 128];
     for b in t.bytes() { freq[b as usize] += 1; }
-    let (mut i, mut r, mut c) = (0, 0..s.len() + 1, t.len());
+    let (mut i, mut r, mut c) = (0, 0..0, t.len());
     for (j, b) in s.bytes().enumerate() {
       if freq[b as usize] > 0 { c -= 1; }
       freq[b as usize] -= 1;
       while c == 0 {
-        if j - i + 1 < r.len() { r = i..j + 1; }
-        freq[s.as_bytes()[i] as usize] += 1;
-        if freq[s.as_bytes()[i] as usize] > 0 { c += 1; }
+        if j - i + 1 < r.len() || r.len() == 0 { r = i..j + 1; }
+        let a = s.as_bytes()[i] as usize;
+        freq[a] += 1; if freq[a] > 0 { c += 1; }
         i += 1;
       }
     }
-    if r.len() > s.len() { "".into() } else { s[r].into() }
+    s[r].into()
   }
   
 ```
