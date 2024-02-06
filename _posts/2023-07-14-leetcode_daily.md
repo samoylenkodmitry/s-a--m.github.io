@@ -13,6 +13,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 06.02.2024
+[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) medium
+[blog post](https://leetcode.com/problems/group-anagrams/solutions/4685010/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/06022024-49-group-anagrams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/kJG2XizPubY)
+![image.png](https://assets.leetcode.com/users/images/74f4e29d-839d-4c84-b6fe-d31a253f1f8f_1707200050.7013333.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/497
+
+#### Problem TLDR
+
+Group words by chars in them.
+
+#### Intuition
+
+We can use char's frequencies or just sorted words as keys to grouping.
+
+#### Approach
+
+Use the standard API for Kotlin and Rust:
+* groupBy vs no grouping method in Rust (but have in itertools)
+* entry().or_insert_with for Rust
+* keys are faster to just sort instead of count in Rust
+
+#### Complexity
+
+- Time complexity:
+$$O(mn)$$, for counting, mlog(n) for sorting
+
+- Space complexity:
+$$O(mn)$$
+
+#### Code
+
+```kotlin 
+
+    fun groupAnagrams(strs: Array<String>): List<List<String>> =
+       strs.groupBy { it.groupBy { it } }.values.toList() 
+
+```
+```rust 
+
+  pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
+    let mut groups = HashMap::new();
+    for s in strs {
+      let mut key: Vec<_> = s.bytes().collect();
+      key.sort_unstable();
+      groups.entry(key).or_insert_with(Vec::new).push(s);
+    }
+    groups.into_values().collect()
+  }
+
+```
+
 # 05.02.2024
 [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description) easy
 [blog post](https://leetcode.com/problems/first-unique-character-in-a-string/solutions/4679671/kotlin-rust/)
