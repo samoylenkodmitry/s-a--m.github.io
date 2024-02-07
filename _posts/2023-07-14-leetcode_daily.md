@@ -13,6 +13,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 07.02.2024
+[451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description) medium
+[blog post](https://leetcode.com/problems/sort-characters-by-frequency/solutions/4690399/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07022024-451-sort-characters-by-frequency?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/LoTEmZ1Vl7M)
+![image.png](https://assets.leetcode.com/users/images/b5d72a24-76ef-44be-a85d-e33d77c5b447_1707285039.609199.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/498
+
+#### Problem TLDR
+
+Sort string by char's frequencies.
+
+#### Intuition
+
+The optimal solution would be to sort `[128]` size array of frequencies, then build a string in O(n). There are some other ways, however...
+
+#### Approach
+
+Let's explore the shortest versions of code by using the API:
+* Kotlin: groupBy, sortedBy, flatMap, joinToString
+* Rust: vec![], sort_unstable_by_key, just sorting the whole string takes 3ms
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, or O(nlog(n)) for sorting the whole string
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+  fun frequencySort(s: String) = s
+    .groupBy { it }.values 
+    .sortedBy { -it.size }
+    .flatMap { it }
+    .joinToString("")
+
+```
+```rust 
+
+  pub fn frequency_sort(s: String) -> String {
+    let mut f = vec![0; 128];
+    for b in s.bytes() { f[b as usize] += 1 }
+    let mut cs: Vec<_> = s.chars().collect();
+    cs.sort_unstable_by_key(|&c| (-f[c as usize], c));
+    cs.iter().collect()
+  }
+
+```
+
 # 06.02.2024
 [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) medium
 [blog post](https://leetcode.com/problems/group-anagrams/solutions/4685010/kotlin-rust/)
