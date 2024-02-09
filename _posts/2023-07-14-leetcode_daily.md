@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 # 09.02.2024
 [368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description/) medium
 [blog post](https://leetcode.com/problems/largest-divisible-subset/solutions/4700794/kotlin-rust-it-s-a-hard-problem/)
-
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09022024-368-largest-divisible-subset?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YlXDUoA-XnU)
 ![image.png](https://assets.leetcode.com/users/images/29040263-f5e0-441c-b5e0-84551d15d227_1707462670.4198048.png)
 
