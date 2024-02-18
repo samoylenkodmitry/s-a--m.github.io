@@ -18,7 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/meeting-rooms-iii/solutions/4745785/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18022024-2402-meeting-rooms-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/q3nIjTzhYHw)
-![image.png](https://assets.leetcode.com/users/images/9543137a-939f-414e-8d63-a2cdc4200892_1708248037.3337512.png)
+![image.png](https://assets.leetcode.com/users/images/258e1669-8bd3-4664-8da7-18a7f3d8eb74_1708273368.8753326.png)
 
 #### Join me on Telegram
 
@@ -93,43 +93,31 @@ $$O(n)$$
 
   fun mostBooked(n: Int, meetings: Array<IntArray>): Int {
     meetings.sortWith(compareBy { it[0] })
-    val pq = PriorityQueue<List<Long>>(compareBy({ it[0] }, { it[1] }))
-    val freq = IntArray(n)
-    for ((s,f) in meetings) {
-      if (pq.size > 0 && pq.peek()[0] <= s || pq.size >= n) {
-        while (pq.peek()[0] < s) pq += listOf(s.toLong(), pq.poll()[1])
-        val (e, room) = pq.poll()
-        freq[room.toInt()]++
-        pq += listOf(e + f - s.toLong(), room)
-      } else {
-        freq[pq.size]++
-        pq += listOf(f.toLong(), pq.size.toLong())
-      }
+    val v = LongArray(n); val freq = IntArray(n)
+    for ((s, f) in meetings) {
+      val room = (0..<n).firstOrNull { v[it] <= s } ?: v.indexOf(v.min())
+      if (v[room] > s) v[room] += (f - s).toLong() else v[room] = f.toLong()
+      freq[room]++
     }
-    return (0..<n).maxBy { freq[it] }
+    return freq.indexOf(freq.max())
   }
 
 ```
 ```rust
 
     pub fn most_booked(n: i32, mut meetings: Vec<Vec<i32>>) -> i32 {
-      let mut pq: BinaryHeap<(i64, i64)> = BinaryHeap::new();
+      let (mut v, mut freq) = (vec![0; n as usize], vec![0; n as usize]);
       meetings.sort_unstable();
-      let mut freq = vec![0; n as usize];
       for m in meetings {
-        let (s, f, l) = (m[0] as i64, m[1] as i64, pq.len() as i32);
-        if  l >= n || l > 0 && -pq.peek().unwrap().0 <= s {
-          while -pq.peek().unwrap().0 < s { let r = pq.pop().unwrap().1; pq.push((-s, r)) }
-          let (e, room) = pq.pop().unwrap();
-          freq[(-room) as usize] +=1;
-          pq.push((e - f + s, room))
-        } else {
-          freq[pq.len()] +=1;
-          pq.push((-f, -(l as i64)))
-        }
+        let (s, f) = (m[0] as i64, m[1] as i64);
+        let room = v.iter().position(|&v| v <= s).unwrap_or_else(|| {
+          let min = *v.iter().min().unwrap();
+          v.iter().position(|&v| v == min).unwrap() });
+        freq[room] += 1;
+        v[room] = if v[room] > s { f - s + v[room] } else { f } 
       }
       let max = *freq.iter().max().unwrap();
-      (0..n).find(|&i| freq[i as usize] == max).unwrap()
+      freq.iter().position(|&f| f == max).unwrap() as i32
     }
 
 ```
