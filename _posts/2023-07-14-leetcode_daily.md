@@ -13,6 +13,127 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 18.02.2024
+[2402. Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/description) hard
+[blog post](https://leetcode.com/problems/meeting-rooms-iii/solutions/4745785/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18022024-2402-meeting-rooms-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/q3nIjTzhYHw)
+![image.png](https://assets.leetcode.com/users/images/670684af-cafd-4865-892a-7a3d8a6a5102_1708246069.152808.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/510
+
+#### Problem TLDR
+
+Most frequent room of 0..<n where each meeting[i]=[start, end) takes or delays until first available.
+
+#### Intuition
+
+Let's observe the process of choosing the room for each meeting:
+
+```bash
+    // 0 1     0,10 1,5 2,7 3,4
+    //10       0,10
+    //   5          1,5
+    //                  2,7
+    //   10             5,10=5+(7-2)
+    //                       3,4
+    //11                    10,11
+
+    // 0 1 2    1,20  2,10  3,5  4,9  6,8
+    //20        1,20
+    //  10            2,10
+    //     5                3,5
+    //                           4,9
+    //    10                     5,10
+    //                                6,8
+    //  12                           10,12
+
+    //  0  1  2  3  18,19  3,12  17,19  2,13  7,10
+    //               2,13  3,12   7,10 17,19 18,19
+    // 13            2,13
+    //    12               3,12
+    //       10                   7,10
+    //          19                     17,19
+    //     <-19                               18,19
+    //  1  1  2  1
+
+    // 0  1  2  3   19,20 14,15 13,14 11,20
+    //              11,20 13,14 14,15 19,20
+    //20              *
+    //   14                 *
+    //    <-15
+```
+
+Some caveats are: 
+* we must take room with lowest index
+* this room must be empty or meeting must already end
+* the interesting case is when some rooms are still empty, but some already finished the meeting.
+
+To handle finished meetings, we can just repopulate the PriorityQueue with the current time.
+
+#### Approach
+
+Let's try to write a minimal code implementation.
+* Kotiln heap is a min-heap, Rust is a max-heap
+* Kotlin `maxBy` is not greedy, returns first max. Rust `max_by_key` is greedy and returns the last visited max, so not useful here.
+
+#### Complexity
+
+- Time complexity:
+$$O(mnlon(n))$$, `m` is a meetings size. Repopulation process is `nlog(n)`.
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun mostBooked(n: Int, meetings: Array<IntArray>): Int {
+    meetings.sortWith(compareBy { it[0] })
+    val pq = PriorityQueue<List<Long>>(compareBy({ it[0] }, { it[1] }))
+    val counts = IntArray(n)
+    for ((s,f) in meetings) {
+      if (pq.size > 0 && pq.peek()[0] <= s || pq.size >= n) {
+        while (pq.peek()[0] < s) pq += listOf(s.toLong(), pq.poll()[1])
+        val (e, room) = pq.poll()
+        counts[room.toInt()]++
+        pq += listOf((if (e > s) e + f - s else f).toLong(), room)
+      } else {
+        counts[pq.size]++
+        pq += listOf(f.toLong(), pq.size.toLong())
+      }
+    }
+    return (0..<n).maxBy { counts[it] }
+  }
+
+```
+```rust
+
+    pub fn most_booked(n: i32, mut meetings: Vec<Vec<i32>>) -> i32 {
+      let mut pq: BinaryHeap<(i64, i64)> = BinaryHeap::new();
+      meetings.sort_unstable();
+      let mut freq = vec![0; n as usize];
+      for m in meetings {
+        let (s, f, l) = (m[0] as i64, m[1] as i64, pq.len() as i32);
+        if  l >= n || l > 0 && -pq.peek().unwrap().0 <= s {
+          while -pq.peek().unwrap().0 < s { let r = pq.pop().unwrap().1; pq.push((-s, r)) }
+          let (e, room) = pq.pop().unwrap();
+          freq[(-room) as usize] +=1; 
+          pq.push((-if -e > s { -e + f - s } else { f }, room))
+        } else {
+          freq[pq.len()] +=1; 
+          pq.push((-f, -(l as i64)))
+        }
+      }
+      let max = *freq.iter().max().unwrap();
+      (0..n).find(|&i| freq[i as usize] == max).unwrap()
+    }
+
+```
+
 # 17.02.2024
 [1642. Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/description) medium
 [blog post](https://leetcode.com/problems/furthest-building-you-can-reach/solutions/4740195/kotlin-rust/)
