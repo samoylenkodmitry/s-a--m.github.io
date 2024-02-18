@@ -18,7 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/meeting-rooms-iii/solutions/4745785/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18022024-2402-meeting-rooms-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/q3nIjTzhYHw)
-![image.png](https://assets.leetcode.com/users/images/670684af-cafd-4865-892a-7a3d8a6a5102_1708246069.152808.png)
+![image.png](https://assets.leetcode.com/users/images/9543137a-939f-414e-8d63-a2cdc4200892_1708248037.3337512.png)
 
 #### Join me on Telegram
 
@@ -94,19 +94,19 @@ $$O(n)$$
   fun mostBooked(n: Int, meetings: Array<IntArray>): Int {
     meetings.sortWith(compareBy { it[0] })
     val pq = PriorityQueue<List<Long>>(compareBy({ it[0] }, { it[1] }))
-    val counts = IntArray(n)
+    val freq = IntArray(n)
     for ((s,f) in meetings) {
       if (pq.size > 0 && pq.peek()[0] <= s || pq.size >= n) {
         while (pq.peek()[0] < s) pq += listOf(s.toLong(), pq.poll()[1])
         val (e, room) = pq.poll()
-        counts[room.toInt()]++
-        pq += listOf((if (e > s) e + f - s else f).toLong(), room)
+        freq[room.toInt()]++
+        pq += listOf(e + f - s.toLong(), room)
       } else {
-        counts[pq.size]++
+        freq[pq.size]++
         pq += listOf(f.toLong(), pq.size.toLong())
       }
     }
-    return (0..<n).maxBy { counts[it] }
+    return (0..<n).maxBy { freq[it] }
   }
 
 ```
@@ -121,10 +121,10 @@ $$O(n)$$
         if  l >= n || l > 0 && -pq.peek().unwrap().0 <= s {
           while -pq.peek().unwrap().0 < s { let r = pq.pop().unwrap().1; pq.push((-s, r)) }
           let (e, room) = pq.pop().unwrap();
-          freq[(-room) as usize] +=1; 
-          pq.push((-if -e > s { -e + f - s } else { f }, room))
+          freq[(-room) as usize] +=1;
+          pq.push((e - f + s, room))
         } else {
-          freq[pq.len()] +=1; 
+          freq[pq.len()] +=1;
           pq.push((-f, -(l as i64)))
         }
       }
