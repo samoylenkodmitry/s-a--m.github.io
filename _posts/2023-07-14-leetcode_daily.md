@@ -82,7 +82,7 @@ Let's try to write a minimal code implementation.
 #### Complexity
 
 - Time complexity:
-$$O(mnlon(n))$$, `m` is a meetings size. Repopulation process is `nlog(n)`.
+$$O(mnlon(n))$$, `m` is a meetings size. Repopulation process is `nlog(n)`. Just finding the minimum is O(mn).
 
 - Space complexity:
 $$O(n)$$
