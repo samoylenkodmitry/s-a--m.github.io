@@ -13,6 +13,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 19.02.2024
+[231. Power of Two](https://leetcode.com/problems/power-of-two/description/) easy
+[blog post](https://leetcode.com/problems/power-of-two/solutions/4749689/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19022024-231-power-of-two?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/qn7lUSK8UUI)
+![image.png](https://assets.leetcode.com/users/images/c2371419-3d88-4c7c-9332-8ad72eeb1543_1708318953.2096884.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/511
+
+#### Problem TLDR
+
+Is number 2^x?
+
+#### Intuition
+
+Power of two number has just one bit on: `2 -> 10`, `4 -> 100`, `8 -> 1000`.
+There is a known bit trick to turn off a single rightmost bit: `n & (n - 1)`.
+
+#### Approach
+
+* careful with the negative numbers and zero
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun isPowerOfTwo(n: Int) =
+      n > 0 && n and (n - 1) == 0
+
+```
+```rust 
+
+    pub fn is_power_of_two(n: i32) -> bool {
+      n > 0 && n & (n - 1) == 0
+    }
+
+```
+
 # 18.02.2024
 [2402. Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/description) hard
 [blog post](https://leetcode.com/problems/meeting-rooms-iii/solutions/4745785/kotlin-rust/)
