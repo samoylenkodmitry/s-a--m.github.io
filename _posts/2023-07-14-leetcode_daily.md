@@ -13,6 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 20.02.2024
+[268. Missing Number](https://leetcode.com/problems/missing-number/description/) easy
+[blog post](https://leetcode.com/problems/missing-number/solutions/4755419/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20022024-268-missing-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/UBDYS1bz7yY)
+![image.png](https://assets.leetcode.com/users/images/a5b8a21b-2a50-418c-a7f3-db3e4de047f4_1708407940.7822766.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/513
+
+#### Problem TLDR
+
+Missing in [0..n] number.
+
+#### Intuition
+
+There are several ways to find it: 
+* subtracting sums
+* doing xor
+* computing sum with a math `n * (n + 1) / 2`
+
+#### Approach
+
+Write what is easier for you, then learn the other solutions. Xor especially.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun missingNumber(nums: IntArray): Int =
+    (1..nums.size).sum() - nums.sum()
+
+```
+```rust
+
+  pub fn missing_number(nums: Vec<i32>) -> i32 {
+    nums.iter().enumerate().map(|(i, n)| i as i32 + 1 - n).sum()
+  }
+
+```
+
 # 19.02.2024
 [231. Power of Two](https://leetcode.com/problems/power-of-two/description/) easy
 [blog post](https://leetcode.com/problems/power-of-two/solutions/4749689/kotlin-rust/)
