@@ -13,6 +13,76 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 21.02.2024
+[201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description) medium
+[blog post](https://leetcode.com/problems/bitwise-and-of-numbers-range/solutions/4760909/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21022024-201-bitwise-and-of-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/VXQznHHZnNE)
+![image.png](https://assets.leetcode.com/users/images/e10b7eaf-15dd-492e-97c2-d41d063cb315_1708495081.6376052.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/514
+
+#### Problem TLDR
+
+Bitwise AND for [left..right].
+
+#### Intuition
+
+To understand the problem, let's observe how this works:
+
+```bash
+    // 0  0000
+    // 1  0001           2^0
+    // 2  0010
+    // 3  0011
+    // 4  0100 3..4 = 0  2^2
+    // 5  0101 3..5 = 0
+    // 6  0110
+    // 7  0111 6..7
+    // 8  1000           2^3
+    // 9  1001  7..9 = 0
+```
+Some observations:
+* When interval intersects `4`, `8` and so on, it `AND` operation becomes `0`.
+* Otherwise, we take the common prefix: `6: 0110 & 7: 0111 = 0110`.
+
+#### Approach
+
+We can take the `most significant bit` and compare it.
+In another way, we can just find the common prefix trimming the bits from the right side.
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$, at most 32 calls happens
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+  fun rangeBitwiseAnd(left: Int, right: Int): Int {
+    if (left == right) return left
+    val l = left.takeHighestOneBit()
+    val r = right.takeHighestOneBit()
+    return if (l != r) 0 else 
+      l or rangeBitwiseAnd(left xor l, right xor r)
+  }
+
+```
+```rust 
+
+  pub fn range_bitwise_and(left: i32, right: i32) -> i32 {
+    if left == right { left }
+    else { Self::range_bitwise_and(left / 2, right / 2) * 2 }
+  }
+
+```
+
 # 20.02.2024
 [268. Missing Number](https://leetcode.com/problems/missing-number/description/) easy
 [blog post](https://leetcode.com/problems/missing-number/solutions/4755419/kotlin-rust/)
