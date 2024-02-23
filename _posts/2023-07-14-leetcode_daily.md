@@ -18,8 +18,6 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/cheapest-flights-within-k-stops/solutions/4770565/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23022024-787-cheapest-flights-within?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vzlJMoFQ3Pc)
-# Intuition
-<!-- Describe your first thoughts on how to solve this problem. -->
 
 ![image.png](https://assets.leetcode.com/users/images/d5c65dad-69df-40e7-9d69-5620cd220f60_1708666291.114761.png)
 
