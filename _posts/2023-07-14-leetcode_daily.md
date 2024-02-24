@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24022024-2092-find-all-people-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3a91b826JmI)
 
-![image.png](https://assets.leetcode.com/users/images/e9e4f85f-7a67-4fab-afa0-074946deb302_1708759965.5721765.png)
+![image.png](https://assets.leetcode.com/users/images/2392ec72-cc55-4db9-bde1-10b3538cc0b7_1708761117.3875864.png)
 
 #### Join me on Telegram
 
@@ -52,17 +52,16 @@ $$O(n)$$
   fun findAllPeople(n: Int, meetings: Array<IntArray>, firstPerson: Int): List<Int> {
     meetings.sortWith(compareBy { it[2] })
     val uf = HashMap<Int, Int>()
-    fun root(a: Int): Int = if (a == uf[a]) a else 
-      uf[a]?.let { root(it).also { uf[a] = it } } ?: a
+    fun root(a: Int): Int = 
+      uf[a]?.let { if (a == it) a else root(it).also { uf[a] = it } } ?: a
     uf[0] = firstPerson
     val s = mutableListOf<Int>()
     var prev = 0
     for ((a, b, t) in meetings) {
       if (t > prev) for (x in s) if (root(x) != root(0)) uf[x] = x
       if (t > prev) s.clear()
-      prev = t
       uf[root(a)] = root(b)
-      s += a; s += b
+      s += a; s += b; prev = t
     }
     return (0..<n).filter { root(0) == root(it) }
   }
@@ -74,7 +73,7 @@ $$O(n)$$
     meetings.sort_unstable_by_key(|m| m[2]);
     let mut uf: Vec<_> = (0..n as usize).collect();
     fn root(uf: &mut Vec<usize>, mut x: usize) -> usize {
-      while uf[x] != x {  uf[x] = uf[uf[x]]; x = uf[x] } x
+      while uf[x] != x { uf[x] = uf[uf[x]]; x = uf[x] } x
     }
     uf[0] = first_person as _;
     let (mut prev, mut s) = (0, vec![]);
