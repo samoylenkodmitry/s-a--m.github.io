@@ -13,6 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 26.02.2024
+[100. Same Tree](https://leetcode.com/problems/same-tree/description/) easy
+[blog post](https://leetcode.com/problems/same-tree/solutions/4783401/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/26022024-100-same-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/zCo9Z70UeJY)
+![image.png](https://assets.leetcode.com/users/images/c51d1595-bf52-43ed-88a4-e3c2ab888f99_1708925464.7263465.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/519
+
+#### Problem TLDR
+
+Are two binary trees equal?
+
+#### Intuition
+
+Use recursion to check current nodes and subtrees.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(log(n))$$ for the recursion depth
+
+#### Code
+
+```kotlin 
+
+    fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean = 
+      p?.`val` == q?.`val` && (p == null || 
+      isSameTree(p.left, q?.left) && 
+      isSameTree(p.right, q?.right))
+
+```
+```rust 
+
+  pub fn is_same_tree(p: Option<Rc<RefCell<TreeNode>>>, q: Option<Rc<RefCell<TreeNode>>>) -> bool {
+    p.as_ref().zip(q.as_ref()).map_or_else(|| p.is_none() && q.is_none(), |(p, q)| {
+      let (p, q) = (p.borrow(), q.borrow()); 
+      p.val == q.val &&
+      Self::is_same_tree(p.left.clone(), q.left.clone()) &&
+      Self::is_same_tree(p.right.clone(), q.right.clone())
+    })
+  }
+
+```
+
 # 25.02.2024
 [2709. Greatest Common Divisor Traversal](https://leetcode.com/problems/greatest-common-divisor-traversal/description/) hard
 [blog post](https://leetcode.com/problems/greatest-common-divisor-traversal/solutions/4779877/kotlin-rust/)
