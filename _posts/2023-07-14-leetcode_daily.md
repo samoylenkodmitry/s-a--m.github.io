@@ -13,6 +13,79 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 29.02.2024
+[1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/) medium
+[blog post](https://leetcode.com/problems/even-odd-tree/solutions/4798182/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29022024-1609-even-odd-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/XKn1GucBfzU)
+![image.png](https://assets.leetcode.com/users/images/63b685de-684a-4996-9f17-0281a7fc659f_1709184694.168826.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/523
+
+#### Problem TLDR
+
+Binary tree levels are odd increasing and even decreasing.
+
+#### Intuition
+
+Just use level-order BFS traversal.
+
+#### Approach
+
+Let's try to make code shorter by simplifying the `if` condition. 
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, the last level of the Binary Tree is almost `n/2` nodes.
+
+#### Code
+
+```kotlin
+
+  fun isEvenOddTree(root: TreeNode?) = ArrayDeque<TreeNode>().run {
+    root?.let { add(it) }
+    var inc = true
+    while (size > 0) {
+      var prev = 0
+      repeat(size) { removeFirst().run {
+        if (`val` % 2 > 0 != inc || `val` == prev
+         || `val` < prev == inc && prev > 0) return false
+        left?.let { add(it) }; right?.let { add(it) }
+        prev = `val`
+      }}
+      inc = !inc
+    }; true
+  }
+
+```
+```rust
+
+  pub fn is_even_odd_tree(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
+    let mut q = VecDeque::new();
+    if let Some(n) = root { q.push_back(n) }
+    let mut inc = true;
+    while !q.is_empty() {
+      let mut prev = 0;
+      for _ in 0..q.len() { if let Some(n) = q.pop_front() {
+        let n = n.borrow(); let v = n.val;
+        if (v % 2 > 0) != inc || v == prev 
+        || (v < prev) == inc && prev > 0 { return false }
+        if let Some(l) = n.left.clone() { q.push_back(l) }
+        if let Some(r) = n.right.clone() { q.push_back(r) }
+        prev = v
+      }}
+      inc = !inc
+    } true
+  }
+
+```
+
 # 28.02.2024
 [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/) medium
 [blog post](https://leetcode.com/problems/find-bottom-left-tree-value/solutions/4793004/kotlin-rust/)
