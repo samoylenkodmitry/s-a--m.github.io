@@ -13,6 +13,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 01.03.2024
+[2864. Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/description/) easy
+[blog post](https://leetcode.com/problems/maximum-odd-binary-number/solutions/4803325/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01032024-2864-maximum-odd-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/dCrtKV1U35U)
+![image.png](https://assets.leetcode.com/users/images/b0bb2e13-40b0-4189-9ba4-0f59bb3770a4_1709269605.9711545.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/525
+
+#### Problem TLDR
+
+Max odd number string rearrangement.
+
+#### Intuition
+
+Count zeros and ones and build a string.
+
+#### Approach
+
+Let's try to find the shortest version of code.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun maximumOddBinaryNumber(s: String) = 
+  s.count { it == '0' }.let { 
+    "1".repeat(s.length - it - 1) + "0".repeat(it) + "1"
+  }
+
+```
+```rust
+
+  pub fn maximum_odd_binary_number(s: String) -> String {
+    let c0 = s.bytes().filter(|b| *b == b'0').count();
+    format!("{}{}1", "1".repeat(s.len() - c0 - 1), "0".repeat(c0))
+  }
+
+```
+
 # 29.02.2024
 [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/) medium
 [blog post](https://leetcode.com/problems/even-odd-tree/solutions/4798182/kotlin-rust/)
