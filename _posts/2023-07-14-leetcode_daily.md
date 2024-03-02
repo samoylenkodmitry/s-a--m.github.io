@@ -13,6 +13,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 02.03.2024
+[977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) easy
+[blog post](https://leetcode.com/problems/squares-of-a-sorted-array/solutions/4808833/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02032024-977-squares-of-a-sorted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ytGHSEDwtgs)
+![image.png](https://assets.leetcode.com/users/images/e0a4ebdd-0063-47a2-adc5-94862f77a495_1709358797.7343304.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/526
+
+#### Problem TLDR
+
+Sorted squares.
+
+#### Intuition
+
+We can build the result bottom up or top down. Either way, we need two pointers: for the negative and for the positive.
+
+#### Approach
+
+Can we made it shorter?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun sortedSquares(nums: IntArray): IntArray {
+    var i = 0; var j = nums.lastIndex;
+    return IntArray(nums.size) {
+      (if (abs(nums[i]) > abs(nums[j])) 
+        nums[i++] else nums[j--]).let { it * it }
+    }.apply { reverse() }
+  }
+
+```
+```rust
+
+  pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
+    let (mut i, mut j) = (0, nums.len() - 1);
+    let mut v: Vec<_> = (0..=j).map(|_| 
+      if nums[i].abs() > nums[j].abs() {
+        i += 1; nums[i - 1] * nums[i - 1]
+      } else { j -= 1; nums[j + 1] * nums[j + 1] })
+      .collect(); v.reverse(); v
+  }
+
+```
+
 # 01.03.2024
 [2864. Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/description/) easy
 [blog post](https://leetcode.com/problems/maximum-odd-binary-number/solutions/4803325/kotlin-rust/)
