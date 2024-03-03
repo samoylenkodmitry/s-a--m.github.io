@@ -13,6 +13,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 03.03.2024
+[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) medium
+[blog post](https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/4814951/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03032024-19-remove-nth-node-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/Iz7KFMO0-RU)
+![image.png](https://assets.leetcode.com/users/images/049129b7-1515-4b91-be21-42e4147406d1_1709447962.2611136.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/527
+
+#### Problem TLDR
+
+Remove `n`th node from the tail of linked list.
+
+#### Intuition
+
+There is a two-pointer technique: fast pointer moves `n` nodes from the slow, then they go together until the end. 
+![image.png](https://assets.leetcode.com/users/images/df882fca-7e41-45d6-a000-76d16fc2fad5_1709448211.8521395.png)
+
+#### Approach
+
+Some tricks:
+* Use dummy first node to handle the head removal case.
+* We can use counter to make it one pass.
+Rust borrow checker makes the task non trivial: one pointer must be mutable, another must be cloned.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
+    var r: ListNode = ListNode(0).apply { next = head }
+    var a: ListNode? = r; var b: ListNode? = r; var i = 0
+    while (b != null) { if (i++ > n) a = a?.next; b = b?.next }
+    a?.next = a?.next?.next
+    return r.next
+  }
+
+```
+```rust
+
+  pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
+    let mut r = ListNode { val: 0, next: head }; let mut r = Box::new(r);
+    let mut b = r.clone(); let mut a = r.as_mut(); let mut i = 0;
+    while b.next.is_some() {
+      i+= 1; if i > n { a = a.next.as_mut().unwrap() }
+      b = b.next.unwrap()
+    }
+    let n = a.next.as_mut().unwrap(); a.next = n.next.clone(); r.next
+  }
+
+```
+
 # 02.03.2024
 [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) easy
 [blog post](https://leetcode.com/problems/squares-of-a-sorted-array/solutions/4808833/kotlin-rust/)
