@@ -13,6 +13,81 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * doge DEb3wN29UCYvfsiv1EJYHpGk6QwY4HMbH7
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 
+# 04.03.2024
+[948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/) medium
+[blog post](https://leetcode.com/problems/bag-of-tokens/solutions/4819971/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04032024-948-bag-of-tokens?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/MtGQimyUUJk)
+![image.png](https://assets.leetcode.com/users/images/ae89a282-6a34-4474-bf0e-56b378e10770_1709530978.8615923.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/528
+
+#### Problem TLDR
+
+Max `score` converting `power` to `token[i]` and `token[i]` to `score`. #medium
+
+#### Intuition
+
+Let's observe some examples by our bare hands:
+
+```j
+    // 100 200 300 400     p 200  s 0
+    // -                     100    1
+    //             +         500    0
+    //     -                 300    1
+    //         -             0      2
+    // 200 400 400 400     p 200  s 0
+    // -                       0    1
+    //             +         400    0
+    //     -               
+```
+
+As we can see, the greedy approach can possibly be the optimal one after sorting the array.
+
+#### Approach
+
+* careful with empty arrays in Rust: `len() - 1` will crash
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun bagOfTokensScore(tokens: IntArray, power: Int): Int {
+    tokens.sort()
+    var i = 0; var j = tokens.lastIndex
+    var p = power; var s = 0; var m = 0
+    while (i <= j)
+      if (p >= tokens[i]) { p -= tokens[i++]; m = max(m, ++s) }
+      else if (s-- > 0) p += tokens[j--] else break
+    return m
+  }
+
+```
+```rust
+
+  pub fn bag_of_tokens_score(mut tokens: Vec<i32>, mut power: i32) -> i32 {
+    tokens.sort_unstable(); if tokens.is_empty() { return 0 }
+    let (mut i, mut j, mut s, mut m) = (0, tokens.len() - 1, 0, 0);
+    while i <= j {
+      if power >= tokens[i] {
+        s += 1; power -= tokens[i]; i += 1; m = m.max(s)
+      } else if s > 0 {
+        s -= 1; power += tokens[j]; j -= 1;
+      } else { break }
+    }; m
+  }
+
+```
 # 03.03.2024
 [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) medium
 [blog post](https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/4814951/kotlin-rust/)
