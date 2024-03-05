@@ -14,6 +14,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 05.03.2024
+[1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/) medium
+[blog post](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/solutions/4825399/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05032024-1750-minimum-length-of-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/xuqYQW-zyMo)
+![image.png](https://assets.leetcode.com/users/images/97c9cbd1-d3fa-4c5a-9549-738916c231eb_1709618238.072147.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/529
+
+#### Problem TLDR
+
+Min length after trimming matching prefix-suffix several times. #medium
+
+#### Intuition
+
+By looking at the examples, greedy approach should be the optimal one.
+
+#### Approach
+
+* careful with indices, they must stop at the remaining part
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun minimumLength(s: String): Int {
+    var i = 0; var j = s.lastIndex
+    while (i < j && s[i] == s[j]) {
+      while (i + 1 < j && s[i + 1] == s[j]) i++
+      while (i < j - 1 && s[i] == s[j - 1]) j--
+      i++; j--
+    }
+    return j - i + 1
+  }
+
+```
+```rust
+
+  pub fn minimum_length(s: String) -> i32 {
+    let (mut i, mut j, s) = (0, s.len() - 1, s.as_bytes());
+    while i < j && s[i] == s[j] {
+      while i + 1 < j && s[i + 1] == s[j] { i += 1 }
+      while i < j - 1 && s[i] == s[j - 1] { j -= 1 }
+      i += 1; j -= 1
+    }
+    1 + (j - i) as i32
+  }
+
+```
+
 # 04.03.2024
 [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/) medium
 [blog post](https://leetcode.com/problems/bag-of-tokens/solutions/4819971/kotlin-rust/)
