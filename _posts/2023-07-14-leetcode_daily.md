@@ -14,6 +14,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 07.03.2024
+[876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) easy
+[blog post](https://leetcode.com/problems/middle-of-the-linked-list/solutions/4836061/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07032024-876-middle-of-the-linked?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/oynybfr75wU)
+![image.png](https://assets.leetcode.com/users/images/001db6cd-43fb-45ac-a9ee-7aeb990570e1_1709792343.4474275.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/531
+
+#### Problem TLDR
+
+Middle of the Linked List #easy
+
+#### Intuition
+
+Use Tortoise and Hare algorithm https://cp-algorithms.com/others/tortoise_and_hare.html
+
+#### Approach
+
+We can check `fast.next` or just `fast`, but careful with moving `slow`. Better test yourself with examples: `[1], [1,2], [1,2,3], [1,2,3,4]`.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+  fun middleNode(head: ListNode?): ListNode? {
+    var s = head; var f = s
+    while (f?.next != null) {
+      f = f?.next?.next; s = s?.next
+    }
+    return s
+  }
+
+```
+```rust 
+
+    pub fn middle_node(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+      let (mut s, mut f) = (head.clone(), head);
+      while f.is_some() {
+        f = f.unwrap().next;
+        if f.is_some() { f = f.unwrap().next; s = s.unwrap().next }
+      }
+      s
+    }
+
+```
+
 # 06.03.2024
 [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) easy
 [blog post](https://leetcode.com/problems/linked-list-cycle/solutions/4830993/kotlin-c/)
