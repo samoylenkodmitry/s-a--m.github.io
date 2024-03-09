@@ -14,6 +14,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 09.03.2024
+[2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/description/) easy
+[blog post](https://leetcode.com/problems/minimum-common-value/solutions/4846251/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09032024-2540-minimum-common-value?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/vZHLrXTNNpw)
+![image.png](https://assets.leetcode.com/users/images/2b6561c7-3d7c-4143-aefc-99bcf1557e5b_1709963182.737769.png)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/533
+
+#### Problem TLDR
+
+First common number in two sorted arrays #easy
+
+#### Intuition
+
+There is a short solution with `Set` and more optimal with two pointers: move the lowest one.
+
+#### Approach
+
+Let's implement both of them.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$, or O(n) for `Set` solution
+
+#### Code
+
+```kotlin
+
+  fun getCommon(nums1: IntArray, nums2: IntArray) = nums1
+    .toSet().let { s -> nums2.firstOrNull { it in  s}} ?: -1
+
+```
+```rust
+
+    pub fn get_common(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
+      let (mut i, mut j) = (0, 0);
+      while i < nums1.len() && j < nums2.len() {
+        if nums1[i] == nums2[j] { return nums1[i] }
+        else if nums1[i] < nums2[j] { i += 1 } else { j += 1 }
+      }; -1
+    }
+
+```
+
 # 08.03.2024
 [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/) easy
 [blog post](https://leetcode.com/problems/count-elements-with-maximum-frequency/solutions/4841086/kotlin-rust/)
