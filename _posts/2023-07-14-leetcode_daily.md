@@ -14,6 +14,64 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 11.03.2024
+[791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/) medium
+[blog post](https://leetcode.com/problems/custom-sort-string/solutions/4857722/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11032024-791-custom-sort-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/9aFn8ccDZuI)
+![2024-03-11_09-08.jpg](https://assets.leetcode.com/users/images/fdf8f92e-1ada-45e0-aa55-d77a9bd0579d_1710137344.8916898.jpeg)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/535
+
+#### Problem TLDR
+
+Construct string from `s` using `order` #medium
+
+#### Intuition
+
+Two ways to solve: use sort (we need a stable sort algorithm), or use frequency.
+
+#### Approach
+
+When using sort, take care of `-1` case. 
+When using frequency, we can use it as a counter too (` -= 1`).
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, or nlog(n) for sorting
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+  fun customSortString(order: String, s: String) = s
+    .toMutableList()
+    .sortedBy { order.indexOf(it).takeIf { it >= 0 } ?: 200 }
+    .joinToString("")
+
+```
+```rust
+
+  pub fn custom_sort_string(order: String, s: String) -> String {
+    let (mut freq, mut res) = (vec![0; 26], String::new());
+    for b in s.bytes() { freq[(b - b'a') as usize] += 1 }
+    for b in order.bytes() {
+      let i = (b - b'a') as usize;
+      while freq[i] > 0 {  freq[i] -= 1; res.push(b as char) }
+    }
+    for b in s.bytes() { 
+      if freq[(b - b'a') as usize] > 0 { res.push(b as char) }
+    }; res
+  }
+
+```
+
 # 10.03.2024
 [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/) easy
 [blog post](https://leetcode.com/problems/intersection-of-two-arrays/solutions/4852330/kotlin-rust/)
