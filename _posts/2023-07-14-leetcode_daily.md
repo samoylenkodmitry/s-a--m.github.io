@@ -14,6 +14,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 21.03.2024
+[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) easy
+[blog post](https://leetcode.com/problems/reverse-linked-list/solutions/4904985/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21032024-206-reverse-linked-list?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/d0DrIgmWtGQ)
+![2024-03-21_09-47.jpg](https://assets.leetcode.com/users/images/12a287a0-1c28-4e34-8adb-22a378e2fd89_1711003698.4372177.jpeg)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/545
+
+#### Problem TLDR
+
+Reverse a Linked List #easy
+
+#### Intuition
+
+We need at least two pointers to store current node and previous. 
+
+#### Approach
+
+In a recursive approach:
+* treat result as a new head
+* erase the link to the next
+* next.next must point to the current
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$ or log(n) for the recursion
+
+#### Code
+
+```kotlin 
+
+  fun reverseList(head: ListNode?): ListNode? =
+    head?.next?.let { next ->
+      head.next = null
+      reverseList(next).also { next?.next = head }
+    } ?: head
+
+```
+```rust 
+
+  pub fn reverse_list(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    let mut curr = head; let mut prev = None;
+    while let Some(mut curr_box) = curr {
+      let next = curr_box.next;
+      curr_box.next = prev;
+      prev = Some(curr_box);
+      curr = next;
+    }
+    prev
+  }
+
+```
+
 # 20.03.2024
 [1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/description/) medium
 [blog post](https://leetcode.com/problems/merge-in-between-linked-lists/solutions/4900331/kotlin-rust/)
