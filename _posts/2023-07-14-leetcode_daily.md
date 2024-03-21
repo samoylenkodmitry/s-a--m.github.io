@@ -74,6 +74,25 @@ $$O(1)$$ or log(n) for the recursion
 
 ```
 
+Bonus: just a single pointer solution
+
+```Kotlin
+
+  fun reverseList(head: ListNode?): ListNode? {
+    var prev = head
+    while (head?.next != null) {
+      val next = head?.next?.next
+      head?.next?.next = prev
+      prev = head?.next
+      head?.next = next
+    }
+    return prev
+  }
+
+```
+
+![2024-03-21_13-02.jpg](https://assets.leetcode.com/users/images/3fe19928-754c-479e-8677-dd4cdee270a0_1711015416.6348042.jpeg)
+
 # 20.03.2024
 [1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/description/) medium
 [blog post](https://leetcode.com/problems/merge-in-between-linked-lists/solutions/4900331/kotlin-rust/)
