@@ -14,6 +14,100 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 23.03.2024
+[143. Reorder List](https://leetcode.com/problems/reorder-list/description/) medium
+[blog post](https://leetcode.com/problems/reorder-list/solutions/4913477/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23032024-143-reorder-list?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/8CaS-LRiszw)
+![2024-03-23_11-24.jpg](https://assets.leetcode.com/users/images/6a5a5d84-eee3-4a6c-a649-63ffccaac3b5_1711182289.8028018.jpeg)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/547
+
+#### Problem TLDR
+
+Reorder Linked List `1->2->3->4->5` -> `1->5->2->4->3` #medium
+
+#### Intuition
+
+There are no special hints here. However, the optimal solution will require some tricks:
+* use Tortoise And Hare algorithm to find the middle
+* reverse the second half
+* merge two lists
+
+#### Approach
+
+* Tortoise And Hare: check `fast.next != null` to stop right at the middle
+* merge lists cleverly: always one into another and swap the points (don't do this on the interview however, not from the start at least) 
+* Rust: just gave up and implemented `clone()`-solution, sorry
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$, O(n) for my Rust solution. There are O(1) solutions exists on the leetcode.
+
+#### Code
+
+```kotlin 
+
+  fun reorderList(head: ListNode?): Unit {
+    var s = head; var f = s
+    while (f?.next != null) {
+      f = f?.next?.next
+      s = s?.next
+    }
+    f = null
+    while (s != null) {
+      val next = s.next
+      s.next = f
+      f = s
+      s = next
+    }
+    s = head
+    while (s != null) {
+      val next = s.next
+      s.next = f
+      s = f
+      f = next
+    }
+  }
+
+```
+```rust 
+
+  pub fn reorder_list(mut head: &mut Option<Box<ListNode>>) {
+    let (mut f, mut s, mut c) = (head.clone(), head.clone(), 0);
+    while f.is_some() && f.as_mut().unwrap().next.is_some()  {
+      f = f.unwrap().next.unwrap().next;
+      s = s.unwrap().next; c += 1
+    }
+    if c < 1 { return }
+    let mut prev = None;
+    while let Some(mut s_box) = s {
+      let next = s_box.next;
+      s_box.next = prev;
+      prev = Some(s_box);
+      s = next;
+    }
+    let mut s = head;
+    while let Some(mut s_box) = s.take() {
+      let next = s_box.next;
+      if prev.is_none() && !f.is_some() || next.is_none() && f.is_some()  { 
+        s_box.next = None;
+        return;
+      }
+      s_box.next = prev;
+      s = &mut s.insert(s_box).next;
+      prev = next;
+    }
+  }
+
+```
+
 # 22.03.2024
 [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) easy
 [blog post](https://leetcode.com/problems/palindrome-linked-list/solutions/4909180/kotlin-rust/)
