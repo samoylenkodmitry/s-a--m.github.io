@@ -14,6 +14,82 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 24.03.2024
+[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium
+[blog post](https://leetcode.com/problems/find-the-duplicate-number/solutions/4918291/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24032024-287-find-the-duplicate-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/XFLC-YG7N14)
+![2024-03-24_11-13_1.webp](https://assets.leetcode.com/users/images/c6eb9c39-1874-46e1-aa9a-65d8838153c3_1711268160.8541477.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/548
+
+#### Problem TLDR
+
+Duplicate single number in `1..n` array, no extra memory #medium
+
+# Intuition
+
+The idea of existing cycle would come to mind after some hitting your head against the wall. The interesting fact is we must find the node that is not a port of the cycle: so the meeting point will be our answer:
+![2024-03-24_10-35.jpg](https://assets.leetcode.com/users/images/0b7a172c-3a6c-4c65-bd98-61eab0640da7_1711267077.5625849.jpeg)
+Now the clever trick is we can treat `node 0` as this external node:
+![2024-03-24_10-55.jpg](https://assets.leetcode.com/users/images/c5c49966-0eab-4452-ba5e-8b98c8a5bce3_1711267097.0983937.jpeg)
+This will coincidentally make our code much cleaner, I think this was the intention of the question authors.
+
+
+#### Approach
+
+Draw some circles and arrows, walk the algorithm with your hands.
+To find the meeting point you must reset one pointer to the start.
+* The Rust's `do-while-do` loop is perfectly legal https://programming-idioms.org/idiom/78/do-while-loop/795/rust
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+  fun findDuplicate(nums: IntArray): Int {
+    var fast = 0; var slow = 0
+    do {
+      fast = nums[nums[fast]]
+      slow = nums[slow]
+    } while (fast != slow)
+    slow = 0
+    while (fast != slow) {
+      fast = nums[fast]
+      slow = nums[slow]
+    }
+    return slow
+  }
+
+```
+```rust
+
+  pub fn find_duplicate(nums: Vec<i32>) -> i32 {
+    let (mut tortoise, mut hare) = (0, 0); 
+    while {
+      hare = nums[nums[hare as usize] as usize];
+      tortoise = nums[tortoise as usize];
+      hare != tortoise
+    }{}
+    hare = 0;
+    while (hare != tortoise) {
+      hare = nums[hare as usize];
+      tortoise = nums[tortoise as usize]
+    }
+    tortoise
+  }
+
+```
+
 # 23.03.2024
 [143. Reorder List](https://leetcode.com/problems/reorder-list/description/) medium
 [blog post](https://leetcode.com/problems/reorder-list/solutions/4913477/kotlin-rust/)
