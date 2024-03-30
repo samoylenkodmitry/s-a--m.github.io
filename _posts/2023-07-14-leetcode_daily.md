@@ -14,6 +14,84 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 30.03.2024
+[992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/) hard
+[blog post](https://leetcode.com/problems/subarrays-with-k-different-integers/solutions/4945526/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30032024-992-subarrays-with-k-different?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/H1AQoy2hg38)
+![2024-03-30_10-14.webp](https://assets.leetcode.com/users/images/96ce0665-f609-4195-aa27-4fb3ea15335b_1711782909.7180567.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/554
+
+#### Problem TLDR
+
+Count subarrays with `k` distinct numbers #hard
+
+#### Intuition
+
+We surely can count `at most k` numbers using sliding window technique: move the right pointer one step at a time, adjust the left pointer until condition met. All subarrays `start..k` where `start in 0..j` will have more or equal than `k` number of distincts if `j..k` have exatly `k` of them, so take `j` at each step.
+
+To count exactly `k` we can remove subset of `at most k` from `at most k - 1`. (The trick here is that the number of `at most k - 1` is the bigger one)
+
+#### Approach
+
+Let's use a HashMap and some languages sugar:
+* Kotlin: `sumOf`
+* Rust: lambda to capture the parameters, `entry.or_insert`
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, we have a frequencies stored in a map, can be up to `n`
+
+#### Code
+
+```kotlin 
+
+  fun subarraysWithKDistinct(nums: IntArray, k: Int): Int {
+    fun countAtMost(k: Int): Int {
+      val freq = mutableMapOf<Int, Int>()
+      var j = 0; var count = 0
+      return nums.indices.sumOf { i -> 
+        freq[nums[i]] = 1 + (freq[nums[i]] ?: 0)
+        if (freq[nums[i]] == 1) count++
+        while (count > k) {
+          freq[nums[j]] = freq[nums[j]]!! - 1
+          if (freq[nums[j++]] == 0) count--
+        }
+        j
+      }
+    }
+    return countAtMost(k - 1) - countAtMost(k)
+  }
+
+```
+```rust 
+
+  pub fn subarrays_with_k_distinct(nums: Vec<i32>, k: i32) -> i32 {
+    let count_at_most = |k: i32| -> i32 {
+      let (mut freq, mut j, mut count) = (HashMap::new(), 0, 0);
+      (0..nums.len()).map(|i| {
+        *freq.entry(&nums[i]).or_insert(0) += 1;
+        if freq[&nums[i]] == 1  { count += 1 }
+        while count > k {
+          *freq.get_mut(&nums[j]).unwrap() -= 1;
+          if freq[&nums[j]] == 0 { count -= 1}
+          j += 1;
+        }
+        j as i32
+      }).sum()
+    };
+    count_at_most(k - 1) - count_at_most(k)
+  }
+
+```
+
 # 29.03.2024
 [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/) medium
 [blog post](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/solutions/4940899/kotlin-rust/)
