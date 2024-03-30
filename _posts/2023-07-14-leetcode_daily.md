@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/subarrays-with-k-different-integers/solutions/4945526/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30032024-992-subarrays-with-k-different?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/H1AQoy2hg38)
-![2024-03-30_10-14.webp](https://assets.leetcode.com/users/images/96ce0665-f609-4195-aa27-4fb3ea15335b_1711782909.7180567.webp)
+![2024-03-30_10-33.webp](https://assets.leetcode.com/users/images/eb7c9de7-865c-4cbb-9542-554a1e61f9c9_1711784041.249182.webp)
 
 #### Join me on Telegram
 
@@ -33,7 +33,7 @@ Count subarrays with `k` distinct numbers #hard
 
 We surely can count `at most k` numbers using sliding window technique: move the right pointer one step at a time, adjust the left pointer until condition met. All subarrays `start..k` where `start in 0..j` will have more or equal than `k` number of distincts if `j..k` have exatly `k` of them, so take `j` at each step.
 
-To count exactly `k` we can remove subset of `at most k` from `at most k - 1`. (The trick here is that the number of `at most k - 1` is the bigger one)
+To count exactly `k` we can remove subset of `at least k` from `at least k - 1`. (The trick here is that the number of `at least k - 1` is the bigger one)
 
 #### Approach
 
@@ -54,7 +54,7 @@ $$O(n)$$, we have a frequencies stored in a map, can be up to `n`
 ```kotlin 
 
   fun subarraysWithKDistinct(nums: IntArray, k: Int): Int {
-    fun countAtMost(k: Int): Int {
+    fun countAtLeast(k: Int): Int {
       val freq = mutableMapOf<Int, Int>()
       var j = 0; var count = 0
       return nums.indices.sumOf { i -> 
@@ -67,14 +67,14 @@ $$O(n)$$, we have a frequencies stored in a map, can be up to `n`
         j
       }
     }
-    return countAtMost(k - 1) - countAtMost(k)
+    return countAtLeast(k - 1) - countAtLeast(k)
   }
 
 ```
 ```rust 
 
   pub fn subarrays_with_k_distinct(nums: Vec<i32>, k: i32) -> i32 {
-    let count_at_most = |k: i32| -> i32 {
+    let count_at_least = |k: i32| -> i32 {
       let (mut freq, mut j, mut count) = (HashMap::new(), 0, 0);
       (0..nums.len()).map(|i| {
         *freq.entry(&nums[i]).or_insert(0) += 1;
@@ -87,7 +87,7 @@ $$O(n)$$, we have a frequencies stored in a map, can be up to `n`
         j as i32
       }).sum()
     };
-    count_at_most(k - 1) - count_at_most(k)
+    count_at_least(k - 1) - count_at_least(k)
   }
 
 ```
