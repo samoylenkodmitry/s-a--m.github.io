@@ -14,6 +14,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 01.04.2024
+[58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/) easy
+[blog post](https://leetcode.com/problems/length-of-last-word/solutions/4955206/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01042024-58-length-of-last-word?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/YaRWWIW6Krw)
+![2024-04-01_08-06.webp](https://assets.leetcode.com/users/images/d8b2bee9-6bb1-49f5-b6e6-c54482b3cb72_1711948052.6199074.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/557
+
+#### Problem TLDR
+
+Last word length #easy
+
+#### Intuition
+
+There are many ways, let's try to write an efficient solution.
+Iterate from the end, stop after the first word.
+
+#### Approach
+
+In Kotlin we can use `first`, `takeWhile` and `count`.
+In Rust let's to write a simple `for` loop over `bytes`.
+
+#### Complexity
+
+- Time complexity:
+$$O(w + b)$$, where `w` is a last word length, and `b` suffix blank space length
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+  fun lengthOfLastWord(s: String) =
+    ((s.lastIndex downTo 0).first { s[it] > ' ' } downTo 0)
+    .asSequence().takeWhile { s[it] > ' ' }.count()
+
+```
+```rust 
+
+  pub fn length_of_last_word(s: String) -> i32 {
+    let mut c = 0;
+    for b in s.bytes().rev() {
+      if b > b' ' { c += 1 } else if c > 0 { return c }
+    }
+    c
+  }
+
+```
+
 # 31.03.2024
 [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/) hard
 [blog post](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/solutions/4951301/kotlin-rust/)
