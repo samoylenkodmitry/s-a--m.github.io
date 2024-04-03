@@ -14,6 +14,84 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 03.04.2024
+[79. Word Search](https://leetcode.com/problems/word-search/description/) medium
+[blog post](https://leetcode.com/problems/word-search/solutions/4965734/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03042024-79-word-search?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/QoqCx12KIYQ)
+![2024-04-03_08-01.webp](https://assets.leetcode.com/users/images/79e74fd4-4311-49a9-9994-7346639f2270_1712120515.856519.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/559
+
+#### Problem TLDR
+
+Does grid have a `word` path? #medium
+
+#### Intuition
+
+Simple Depth-First Search for every starting point will give the answer. One trick is to store `visited` set in a grid itself.
+
+#### Approach
+
+* Use dummy char to mark visited in a path.
+* Don't forget to restore back.
+* Only mark visited right before traveling to the next to avoid failing at restoring.
+
+#### Complexity
+
+- Time complexity:
+$$O(n3^n)$$, n is a grid area
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+  fun exist(board: Array<CharArray>, word: String): Boolean {
+    fun dfs(x: Int, y: Int, i: Int): Boolean {
+      if (i == word.length) return true
+      if (x !in 0..<board[0].size || y !in 0..<board.size) return false
+      val c = board[y][x]
+      if (c != word[i]) return false
+      board[y][x] = '.'
+      val res = dfs(x - 1, y, i + 1) || dfs(x + 1, y, i + 1)
+             || dfs(x, y - 1, i + 1) || dfs(x, y + 1, i + 1)
+      board[y][x] = c
+      return res
+    }
+    for (y in 0..<board.size) for (x in 0..<board[0].size)
+      if (dfs(x, y, 0)) return true
+    return false
+  }
+
+```
+```rust 
+
+  pub fn exist(mut board: Vec<Vec<char>>, word: String) -> bool {
+    fn dfs(mut board: &mut Vec<Vec<char>>, word: &String, x: i32, y: i32, i: usize) -> bool {
+      if i == word.len() { return true }
+      if x < 0 || y < 0 || x == board[0].len() as i32 || y == board.len() as i32 { return false }
+      let c = board[y as usize][x as usize];
+      if c as u8 != word.as_bytes()[i] { return false }
+      board[y as usize][x as usize] = '.';
+      let res = 
+        dfs(board, word, x - 1, y, i + 1) || dfs(board, word, x + 1, y, i + 1) ||
+        dfs(board, word, x, y - 1, i + 1) || dfs(board, word, x, y + 1, i + 1);
+      board[y as usize][x as usize] = c; res
+    }
+    let (n, m) = (board.len() as i32, board[0].len() as i32);
+    for y in 0..n { for x in 0..m {
+      if dfs(&mut board, &word, x, y, 0) { return true }
+    }}
+    false
+  }
+
+```
+
 # 02.04.2024
 [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) easy
 [blog post](https://leetcode.com/problems/isomorphic-strings/solutions/4961313/kotlin-rust/)
