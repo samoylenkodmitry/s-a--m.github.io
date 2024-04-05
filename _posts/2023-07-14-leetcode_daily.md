@@ -51,7 +51,7 @@ In Rust: `Vec` can be used as a Stack. There is no `to_lowercase` method returni
 $$O(n)$$
 
 - Space complexity:
-$$O(1)$$
+$$O(n)$$
 
 #### Code
 
