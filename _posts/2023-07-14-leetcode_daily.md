@@ -40,7 +40,7 @@ We can use `ArrayDeque` in Kotlin and just a `vec[]` in Rust (however `VecDeque`
 #### Complexity
 
 - Time complexity:
-$$O(n)$$, O(n^2) for vec[] solution, but the real time is still 0ms.
+$$O(nlogn)$$, O(n^2) for vec[] solution, but the real time is still 0ms.
 
 - Space complexity:
 $$O(n)$$
