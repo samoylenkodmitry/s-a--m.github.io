@@ -14,6 +14,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 10.04.2024
+[950. Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/description/) medium
+[blog post](https://leetcode.com/problems/reveal-cards-in-increasing-order/solutions/5002042/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10042024-950-reveal-cards-in-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/g1AtbyjjmhU)
+![2024-04-10_09-01.webp](https://assets.leetcode.com/users/images/f3154cd4-a7f5-4841-850e-a688dc4ee1c7_1712728914.1955042.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/567
+
+#### Problem TLDR
+
+Sort cards by rules: take top, next goes bottom #medium
+
+#### Intuition
+
+Let's reverse the problem: go from the last number, then prepend a value and rotate.
+
+#### Approach
+
+We can use `ArrayDeque` in Kotlin and just a `vec[]` in Rust (however `VecDeque` is also handy and make O(1) operation instead of O(n)).
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, O(n^2) for vec[] solution, but the real time is still 0ms.
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun deckRevealedIncreasing(deck: IntArray) = with(ArrayDeque<Int>()) {
+        deck.sortDescending()
+        for (n in deck) {
+            if (size > 0) addFirst(removeLast())
+            addFirst(n)
+        }
+        toIntArray()
+    }
+
+```
+```rust 
+
+    pub fn deck_revealed_increasing(mut deck: Vec<i32>) -> Vec<i32> {
+        deck.sort_unstable_by_key(|n| -n);
+        let mut queue = vec![];
+        for n in deck {
+            if queue.len() > 0 { queue.rotate_right(1) }
+            queue.insert(0, n)
+        }
+        queue
+    }
+
+```
+
 # 09.04.2024
 [2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/description/) easy
 [blog post](https://leetcode.com/problems/time-needed-to-buy-tickets/solutions/4996548/kotlin-rust/)
