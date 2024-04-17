@@ -14,6 +14,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 17.04.2024
+[988. Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/description/) medium
+[blog post](https://leetcode.com/problems/smallest-string-starting-from-leaf/solutions/5035072/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17042024-988-smallest-string-starting?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/rDcok_WRbQo)
+![2024-04-17_08-17.webp](https://assets.leetcode.com/users/images/d3e43831-31fe-4a60-82b2-fdc546b0cc7d_1713331071.471167.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/574
+
+#### Problem TLDR
+
+Smallest string from `leaf` to `root` in a Binary Tree #medium
+
+#### Intuition
+
+After trying some examples with bottom-up approach, we find out one that would not work:
+![2024-04-17_08-02.webp](https://assets.leetcode.com/users/images/24936f26-d67f-4591-b73c-8aec3a608091_1713331137.2248256.webp)
+That means, we should use top down.
+
+
+#### Approach
+
+* We can avoid using a global variable, comparing the results.
+* The `if` branching can be smaller if we add some symbol after `z` for a single-leafs.
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog^2(n))$$, we prepending to string with length of log(n) log(n) times, can be avoided with StringBuilder and reversing at the last step
+
+- Space complexity:
+$$O(log(n))$$, recursion depth
+
+#### Code
+
+```kotlin 
+
+    fun smallestFromLeaf(root: TreeNode?, s: String = ""): String = root?.run {
+        val s = "${'a' + `val`}" + s
+        if (left == null && right == null) s 
+        else minOf(smallestFromLeaf(left, s), smallestFromLeaf(right, s))
+    } ?: "${ 'z' + 1 }"
+
+```
+```rust 
+
+    pub fn smallest_from_leaf(root: Option<Rc<RefCell<TreeNode>>>) -> String {
+        fn dfs(n: &Option<Rc<RefCell<TreeNode>>>, s: String) -> String {
+            n.as_ref().map_or("{".into(), |n| { let n = n.borrow();
+                let s = ((b'a' + (n.val as u8)) as char).to_string() + &s;
+                if n.left.is_none() && n.right.is_none() { s } 
+                else { dfs(&n.left, s.clone()).min(dfs(&n.right, s)) }
+            })
+        }
+        dfs(&root, "".into())
+    }
+
+```
+
 # 16.04.2024
 [623. Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/description/) medium
 [blog post](https://leetcode.com/problems/add-one-row-to-tree/solutions/5030293/kotlin-rust/)
