@@ -14,6 +14,70 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 18.04.2024
+[463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/) easy
+[blog post](https://leetcode.com/problems/island-perimeter/solutions/5039886/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18042024-463-island-perimeter?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/d91pFLXHb5k)
+![2024-04-18_08-48.webp](https://assets.leetcode.com/users/images/6fab8580-3299-418e-a5d3-220873f46031_1713419313.9885764.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/575
+
+#### Problem TLDR
+
+Perimeter of `1`'s islands in `01`-matrix #easy
+
+#### Intuition
+
+Let's observe the problem example:
+![2024-04-18_08-05.webp](https://assets.leetcode.com/users/images/4186cc80-78c2-456d-87f9-0faca8406708_1713418941.0219064.webp)
+As we see, the perimeter increases on the `0`-`1` transitions, we can just count them.
+Another neat approach I steal from someone: every `1` increases by 4 and then decreases by `1-1` borders.
+
+#### Approach
+
+Let's try to save some keystrokes
+* did you know `compareTo(false)` will convert Boolean to Int? (same is `as i32` in Rust)
+
+#### Complexity
+
+- Time complexity:
+$$O(nm)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun islandPerimeter(grid: Array<IntArray>) =
+        (0..<grid.size * grid[0].size).sumBy { xy ->
+            val x = xy % grid[0].size; val y = xy / grid[0].size
+            if (grid[y][x] < 1) 0 else
+            (x < 1 || grid[y][x - 1] < 1).compareTo(false) +
+            (y < 1 || grid[y - 1][x] < 1).compareTo(false) +
+            (x == grid[0].lastIndex || grid[y][x + 1] < 1).compareTo(false) +
+            (y == grid.lastIndex || grid[y + 1][x] < 1).compareTo(false)
+        }
+
+```
+```rust 
+
+    pub fn island_perimeter(grid: Vec<Vec<i32>>) -> i32 {
+        let mut p = 0;
+        for y in 0..grid.len() { for x in 0..grid[0].len() {
+            if grid[y][x] < 1 { continue }
+            if y > 0 && grid[y - 1][x] > 0 { p -= 2 }
+            if x > 0 && grid[y][x - 1] > 0 { p -= 2 }
+            p += 4
+        } }; p
+    }
+
+```
+
 # 17.04.2024
 [988. Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/description/) medium
 [blog post](https://leetcode.com/problems/smallest-string-starting-from-leaf/solutions/5035072/kotlin-rust/)
