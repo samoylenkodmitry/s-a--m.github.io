@@ -14,6 +14,86 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 22.04.2024
+[752. Open the Lock](https://leetcode.com/problems/open-the-lock/description/) medium
+[blog post](https://leetcode.com/problems/open-the-lock/solutions/5057788/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22042024-752-open-the-lock?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/o6UfQa5LlsE)
+![2024-04-22_09-28.webp](https://assets.leetcode.com/users/images/716c1ac3-a6f0-458c-a69b-566ccfa3b7b5_1713767308.9623294.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/580
+
+#### Problem TLDR
+
+Steps to rotate 4-wheel `0000` -> target #medium #bfs #deque
+
+#### Intuition
+
+Whe can imagine each rotation as a graph edge and each combination as a graph node. The task now is to find the shortest path. This can be done with BFS.
+
+#### Approach
+
+We can use Strings or better to just use numbers.
+
+#### Complexity
+
+- Time complexity:
+$$O(E)$$, there are total 9999 number of nodes, and each node connected to 4*2=8 other nodes, so E = 8*10^4, V = 10^4
+
+- Space complexity:
+$$O(N)$$, N is size of deadends
+
+#### Code
+
+```kotlin 
+
+    fun openLock(deadends: Array<String>, target: String) = 
+        with(ArrayDeque<String>(listOf("0000"))) {
+            val visited = deadends.toMutableSet()
+            var step = 0
+            while (size > 0) {
+                repeat(size) {
+                    val curr = removeFirst()
+                    if (!visited.add(curr)) return@repeat
+                    if (curr == target) return step
+                    for ((i, c) in curr.withIndex()) {
+                        add(curr.replaceRange(i, i + 1, "${if (c == '9') '0' else c + 1}"))
+                        add(curr.replaceRange(i, i + 1, "${if (c == '0') '9' else c - 1}"))
+                    }
+                }
+                step++
+            }
+            -1
+        }
+
+```
+```rust 
+
+    pub fn open_lock(deadends: Vec<String>, target: String) -> i32 {
+        let target = target.parse::<u16>().unwrap();
+        let (mut deque, mut step) = (VecDeque::new(), 0);
+        let mut visited: HashSet<_> = deadends.iter().map(|s| s.parse().unwrap()).collect();
+        deque.push_back(0000);
+        while deque.len() > 0 {
+            for _ in 0..deque.len() {
+                let curr = deque.pop_front().unwrap();
+                if !visited.insert(curr) { continue }
+                if curr == target { return step }
+                for i in &[1000, 0100, 0010, 0001] {
+                    let wheel = (curr / i) % 10;
+                    deque.push_back((curr - i * wheel) + (i * ((wheel + 1) % 10)));
+                    deque.push_back((curr - i * wheel) + (i * ((wheel + 9) % 10)));
+                }
+            }
+            step += 1
+        }
+        -1
+    }
+
+```
+
 # 21.04.2024
 [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/) easy
 [blog post](https://leetcode.com/problems/find-if-path-exists-in-graph/solutions/5053142/kotlin-rust/)
