@@ -14,6 +14,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 24.04.2024
+[1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/) easy
+[blog post](https://leetcode.com/problems/n-th-tribonacci-number/solutions/5065642/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24042024-1137-n-th-tribonacci-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ZrwbZORpDro)
+![2024-04-24_08-41.webp](https://assets.leetcode.com/users/images/c013ed52-26b9-4db0-bca7-721ea71a23ff_1713937288.7728226.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/582
+
+#### Problem TLDR
+
+`n`th Tribonacci number f(n + 3) = f(n) + f(n + 1) + f(n + 2) #easy
+
+#### Intuition
+
+Use tree variables and compute the result in a for-loop.
+
+#### Approach
+
+There are some clever approaches:
+* we can use an array and loop the index
+* we can try to play this with tree variables but without a temp variable  
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun tribonacci(n: Int): Int {
+        if (n < 2) return n
+        val t = intArrayOf(0, 1, 1)
+        for (i in 3..n) t[i % 3] = t.sum()
+        return t[n % 3]
+    }
+
+```
+```rust
+
+    pub fn tribonacci(n: i32) -> i32 {
+        if n < 2 { return n }
+        let (mut t1, mut t2, mut t0t1) = (1, 1, 1);
+        for _ in 2..n as usize {
+            t2 += t0t1;
+            t0t1 = t1 + t2 - t0t1;
+            t1 = t0t1 - t1
+        }; t2
+    }
+
+```
+
 # 23.04.2024
 [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) medium
 [blog post](https://leetcode.com/problems/minimum-height-trees/solutions/5061843/kotlin-rust/)
