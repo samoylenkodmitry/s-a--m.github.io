@@ -31,7 +31,7 @@ Min steps to produce `key` by rotating `ring` #hard #dynamic_programming #recurs
 
 #### Intuition
 
-Let's from the current position do the full search by trying each position with give letter. The minimum path is only depends of the current position of the `ring` and position in the `key` so can be memoized.
+Let's from the current position do the full search by trying each position with give letter. The minimum path is only depending on the current position of the `ring` and position in the `key` so it can be memoized.
 
 However, don't forget to rotate optimally, sometimes it's a left rotation:
 ![2024-04-27_08-36.webp](https://assets.leetcode.com/users/images/508110f5-34ff-46c1-b936-1ac14b0b34e8_1714198262.6979213.webp)
