@@ -14,6 +14,64 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 02.05.2024
+[2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/description/) easy
+[blog post](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/solutions/5099630/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02052024-2441-largest-positive-integer?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/qbhha9HEXxU)
+![2024-05-02_08-34.webp](https://assets.leetcode.com/users/images/9f475eb7-f119-4673-8683-fc6a7f84c2a6_1714628079.3045254.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/590
+
+#### Problem TLDR
+
+Max number that has its negative in array #easy #two_pointers
+
+#### Intuition
+
+One possible solution is to sort array and compare minimums with maximums by moving two pointers from left and right of the array.
+Another way is to remember which numbers are seen and choose the maximum of them.
+
+#### Approach
+
+* For the second solution, we can use just a [2000] array, as the total count is not that big.
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$ and $$O(n)$$
+
+- Space complexity:
+$$O(1)$$ and $$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun findMaxK(nums: IntArray): Int {
+        nums.sort()
+        var i = 0; var j = nums.lastIndex
+        while (i < j)
+            if (nums[i] == -nums[j]) return nums[j]
+            else if (-nums[i] < nums[j]) j-- else i++
+        return -1
+    }
+
+```
+```rust 
+
+    pub fn find_max_k(nums: Vec<i32>) -> i32 {
+        let (mut counts, mut res) = (vec![0; 2001], -1);
+        for x in nums {
+            if counts[1000 - x as usize] > 0 { res = res.max(x.abs()) }
+            counts[x as usize + 1000] += 1
+        }; res
+    }
+
+```
+
 # 01.05.2024
 [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/description/) easy
 [blog post](https://leetcode.com/problems/reverse-prefix-of-word/solutions/5094699/kotlin-rust/)
