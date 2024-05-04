@@ -17,7 +17,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 # 04.05.2024
 [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) medium
 [blog post](https://leetcode.com/problems/boats-to-save-people/solutions/5109541/kotlin-rust/)
-[substack]()
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04052024-881-boats-to-save-people?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZJSjkMMBSkA)
 ![2024-05-04_08-54.webp](https://assets.leetcode.com/users/images/87a4b6ea-ecf1-4f8e-b2f8-6efff11cc7e5_1714802074.5178337.webp)
 
