@@ -14,6 +14,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 05.05.2024
+[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) medium
+[blog post](https://leetcode.com/problems/delete-node-in-a-linked-list/solutions/5114307/kotlin-c/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05052024-237-delete-node-in-a-linked?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/GZNHEMZEt3o)
+![2024-05-05_08-14.webp](https://assets.leetcode.com/users/images/7d0a2681-8fee-483e-88d9-43e1c682e5e2_1714886377.2033033.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/593
+
+#### Problem TLDR
+
+Delete current node in a Linked List #medium
+
+#### Intuition
+
+The O(n) solution is trivial: swap current and next values until the last node reached.
+There is an O(1) solution exists, and it's clever: remove just the next node.
+
+#### Approach
+
+No Rust solution, as there is no template for it in leetcode.com.
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun deleteNode(node: ListNode?) {
+        node?.`val` = node?.next?.`val`
+        node?.next = node?.next?.next
+    }
+
+```
+```c++ 
+
+    void deleteNode(ListNode* node) {
+        *node = *node->next;
+    }
+
+```
+
 # 04.05.2024
 [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) medium
 [blog post](https://leetcode.com/problems/boats-to-save-people/solutions/5109541/kotlin-rust/)
