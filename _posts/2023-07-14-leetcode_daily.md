@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/maximize-happiness-of-selected-children/solutions/5134240/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09052024-3075-maximize-happiness?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/c5Vv4uRUrYU)
-![2024-05-09_11-02.webp](https://assets.leetcode.com/users/images/cf8fe0cc-8b79-488d-88be-a7026aec5a1f_1715241786.2053216.webp)
+![2024-05-09_11-24.webp](https://assets.leetcode.com/users/images/e8fb5036-f548-4f74-a5e8-c91a50f90548_1715243059.043448.webp)
 
 #### Join me on Telegram
 
@@ -63,10 +63,9 @@ $$O(n)$$ for the Heap, $$O(1)$$ for the QuickSelect
 ```rust 
 
     pub fn maximum_happiness_sum(mut happiness: Vec<i32>, k: i32) -> i64 {
-        let (mut a, mut n) = (vec![], happiness.len() as i32);
-        let count = 0.max(n - k - 1) as usize;
-        let (_, _, gt) = if count > 0 { happiness.select_nth_unstable(count) }
-                         else { (&mut a[..], &mut n, &mut happiness[..]) };
+        let count = 0.max(happiness.len() as i32 - k - 1) as usize;
+        let gt = if count > 0 { happiness.select_nth_unstable(count).2 }
+                 else { &mut happiness[..] };
         gt.sort_unstable_by(|a, b| b.cmp(a));
         (0..k).map(|i| 0.max(gt[i as usize] - i) as i64).sum()
     }
