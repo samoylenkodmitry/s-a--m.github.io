@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f638b510-1f2d-4048-a1c4-c4f5774d8f50" name="Default Changelist" comment="leetcode daily" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "samoylenkodmitry"
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:samoylenkodmitry/s-a--m.github.io.git",
+    "accountId": "37c46968-618a-4042-b805-42d124dba8b6"
+  }
+}]]></component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="l1hj0zj7" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="1qZaYhkHbGPewgqlNwpvsgrVWmM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "app.teamhub.selectedTeam": "github.com/samoylenkodmitry/s-a--m.github.io",
+    "app.teamhub.trackedBranches": "1g70b1f/master",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/s/develop/projects/s-a--m.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "aws.codewhisperer",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/_posts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f638b510-1f2d-4048-a1c4-c4f5774d8f50" name="Default Changelist" comment="" />
+      <created>1617289615739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617289615739</updated>
+      <workItem from="1617289618245" duration="3303000" />
+      <workItem from="1617293104141" duration="592000" />
+      <workItem from="1617295707982" duration="155000" />
+      <workItem from="1617295981709" duration="154000" />
+      <workItem from="1617368678939" duration="15000" />
+      <workItem from="1617614328687" duration="206000" />
+      <workItem from="1617635849972" duration="251000" />
+      <workItem from="1617707055216" duration="1000" />
+      <workItem from="1667925286273" duration="251000" />
+      <workItem from="1667925867454" duration="22000" />
+      <workItem from="1668097480997" duration="238000" />
+      <workItem from="1668182027409" duration="492000" />
+      <workItem from="1668241110538" duration="340000" />
+      <workItem from="1668314614436" duration="439000" />
+      <workItem from="1668316475978" duration="37000" />
+      <workItem from="1668447561590" duration="232000" />
+      <workItem from="1668530320692" duration="367000" />
+      <workItem from="1668615665614" duration="255000" />
+      <workItem from="1668615936902" duration="614000" />
+      <workItem from="1668707054759" duration="369000" />
+      <workItem from="1668788561502" duration="154000" />
+      <workItem from="1668864014912" duration="503000" />
+      <workItem from="1668928666265" duration="396000" />
+      <workItem from="1668929077243" duration="158000" />
+      <workItem from="1669047582775" duration="353000" />
+      <workItem from="1669133456752" duration="304000" />
+      <workItem from="1669220573968" duration="358000" />
+      <workItem from="1669305717722" duration="329000" />
+      <workItem from="1669397042446" duration="472000" />
+      <workItem from="1669451213818" duration="1439000" />
+      <workItem from="1669547724466" duration="1442000" />
+      <workItem from="1669653139461" duration="293000" />
+      <workItem from="1669740915899" duration="870000" />
+      <workItem from="1669825300727" duration="196000" />
+      <workItem from="1669911968149" duration="19000" />
+      <workItem from="1669911999695" duration="743000" />
+      <workItem from="1669994488344" duration="210000" />
+      <workItem from="1670051943089" duration="345000" />
+      <workItem from="1670138349118" duration="250000" />
+      <workItem from="1670256357703" duration="204000" />
+      <workItem from="1670344453627" duration="749000" />
+      <workItem from="1670430391566" duration="592000" />
+      <workItem from="1670516714052" duration="111000" />
+      <workItem from="1670603284174" duration="245000" />
+      <workItem from="1670658310492" duration="500000" />
+      <workItem from="1670686802418" duration="120000" />
+      <workItem from="1670747719876" duration="181000" />
+      <workItem from="1670747984948" duration="208000" />
+      <workItem from="1670775783373" duration="6000" />
+      <workItem from="1670861629560" duration="200000" />
+      <workItem from="1670948618713" duration="248000" />
+      <workItem from="1671035104530" duration="486000" />
+      <workItem from="1671035595718" duration="112000" />
+      <workItem from="1671120721205" duration="912000" />
+      <workItem from="1671121885895" duration="11000" />
+      <workItem from="1671208901525" duration="184000" />
+      <workItem from="1671298640554" duration="623000" />
+      <workItem from="1671346460979" duration="190000" />
+      <workItem from="1671462296013" duration="256000" />
+      <workItem from="1671551106561" duration="195000" />
+      <workItem from="1671643468407" duration="249000" />
+      <workItem from="1671730604129" duration="203000" />
+      <workItem from="1671813267282" duration="165000" />
+      <workItem from="1671814277131" duration="24000" />
+      <workItem from="1671904202192" duration="268000" />
+      <workItem from="1671949293188" duration="272000" />
+      <workItem from="1672041913298" duration="120000" />
+      <workItem from="1672131455680" duration="237000" />
+      <workItem from="1672211515554" duration="147000" />
+      <workItem from="1672310997867" duration="139000" />
+      <workItem from="1672393414424" duration="265000" />
+      <workItem from="1672478878834" duration="243000" />
+      <workItem from="1672562144091" duration="156000" />
+      <workItem from="1672652767130" duration="140000" />
+      <workItem from="1672748401694" duration="92000" />
+      <workItem from="1672826319991" duration="405000" />
+      <workItem from="1672827438539" duration="622000" />
+      <workItem from="1672911646357" duration="743000" />
+      <workItem from="1672990664609" duration="172000" />
+      <workItem from="1673095997924" duration="437000" />
+      <workItem from="1673173517443" duration="155000" />
+      <workItem from="1673246547402" duration="176000" />
+      <workItem from="1673332826915" duration="114000" />
+      <workItem from="1673506821452" duration="101000" />
+      <workItem from="1673507166733" duration="56000" />
+      <workItem from="1673627987133" duration="130000" />
+      <workItem from="1673689419946" duration="102000" />
+      <workItem from="1673786758108" duration="827000" />
+      <workItem from="1673852375186" duration="801000" />
+      <workItem from="1673941455264" duration="290000" />
+      <workItem from="1673942102787" duration="13000" />
+      <workItem from="1673942334937" duration="13000" />
+      <workItem from="1674054166416" duration="3000" />
+      <workItem from="1674059627336" duration="303000" />
+      <workItem from="1674145060786" duration="302000" />
+      <workItem from="1674193742055" duration="792000" />
+      <workItem from="1674290040188" duration="1580000" />
+      <workItem from="1674378153402" duration="168000" />
+      <workItem from="1674460376349" duration="116000" />
+      <workItem from="1674632247453" duration="229000" />
+      <workItem from="1674662909458" duration="39000" />
+      <workItem from="1674750317369" duration="370000" />
+      <workItem from="1674806656633" duration="272000" />
+      <workItem from="1674900203238" duration="113000" />
+      <workItem from="1674932193224" duration="1000" />
+      <workItem from="1674982115085" duration="791000" />
+      <workItem from="1675065366904" duration="135000" />
+      <workItem from="1675181543129" duration="189000" />
+      <workItem from="1675236110277" duration="158000" />
+      <workItem from="1675324351070" duration="131000" />
+      <workItem from="1675410022788" duration="168000" />
+      <workItem from="1675499589513" duration="93000" />
+      <workItem from="1675586798178" duration="272000" />
+      <workItem from="1675593540356" duration="16000" />
+      <workItem from="1675701346338" duration="126000" />
+      <workItem from="1675756434929" duration="123000" />
+      <workItem from="1675880070089" duration="149000" />
+      <workItem from="1675929591596" duration="136000" />
+      <workItem from="1676014157979" duration="112000" />
+      <workItem from="1676044986794" duration="3000" />
+      <workItem from="1676106813380" duration="389000" />
+      <workItem from="1676194510530" duration="212000" />
+      <workItem from="1676272044396" duration="116000" />
+      <workItem from="1676357919689" duration="150000" />
+      <workItem from="1676358076618" duration="14000" />
+      <workItem from="1676462806546" duration="5000" />
+      <workItem from="1676705397680" duration="222000" />
+      <workItem from="1676876855345" duration="216000" />
+      <workItem from="1677051550719" duration="367000" />
+      <workItem from="1677150080040" duration="172000" />
+      <workItem from="1677150677874" duration="290000" />
+      <workItem from="1677179139611" duration="93000" />
+      <workItem from="1677571492403" duration="134000" />
+      <workItem from="1677851639321" duration="82000" />
+    </task>
+    <task id="LOCAL-00083" summary="leetcode daily">
+      <created>1673689509773</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1673689509773</updated>
+    </task>
+    <task id="LOCAL-00084" summary="leetcode daily">
+      <created>1673786983245</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1673786983245</updated>
+    </task>
+    <task id="LOCAL-00085" summary="leetcode daily">
+      <created>1673852558040</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1673852558040</updated>
+    </task>
+    <task id="LOCAL-00086" summary="leetcode daily">
+      <created>1673853547080</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1673853547081</updated>
+    </task>
+    <task id="LOCAL-00087" summary="leetcode daily">
+      <created>1673941626136</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1673941626136</updated>
+    </task>
+    <task id="LOCAL-00088" summary="leetcode daily">
+      <created>1673941740797</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1673941740797</updated>
+    </task>
+    <task id="LOCAL-00089" summary="leetcode daily">
+      <created>1673942110965</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1673942110965</updated>
+    </task>
+    <task id="LOCAL-00090" summary="leetcode daily">
+      <created>1673942344007</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1673942344008</updated>
+    </task>
+    <task id="LOCAL-00091" summary="leetcode daily">
+      <created>1674145356476</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1674145356477</updated>
+    </task>
+    <task id="LOCAL-00092" summary="leetcode daily">
+      <created>1674193933309</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1674193933309</updated>
+    </task>
+    <task id="LOCAL-00093" summary="leetcode daily">
+      <created>1674290188889</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1674290188889</updated>
+    </task>
+    <task id="LOCAL-00094" summary="leetcode daily">
+      <created>1674290632442</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1674290632442</updated>
+    </task>
+    <task id="LOCAL-00095" summary="leetcode daily">
+      <created>1674378293392</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1674378293393</updated>
+    </task>
+    <task id="LOCAL-00096" summary="leetcode daily">
+      <created>1674460486858</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1674460486858</updated>
+    </task>
+    <task id="LOCAL-00097" summary="leetcode daily">
+      <created>1674632470326</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1674632470327</updated>
+    </task>
+    <task id="LOCAL-00098" summary="leetcode daily">
+      <created>1674662943201</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1674662943202</updated>
+    </task>
+    <task id="LOCAL-00099" summary="leetcode daily">
+      <created>1674750508076</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1674750508076</updated>
+    </task>
+    <task id="LOCAL-00100" summary="leetcode daily">
+      <created>1674806924158</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1674806924158</updated>
+    </task>
+    <task id="LOCAL-00101" summary="leetcode daily">
+      <created>1674900309292</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1674900309293</updated>
+    </task>
+    <task id="LOCAL-00102" summary="leetcode daily">
+      <created>1674982412911</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1674982412911</updated>
+    </task>
+    <task id="LOCAL-00103" summary="latex support with MathJax on a Github Page">
+      <created>1674982878704</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1674982878704</updated>
+    </task>
+    <task id="LOCAL-00104" summary="leetcode daily">
+      <created>1675065491797</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1675065491797</updated>
+    </task>
+    <task id="LOCAL-00105" summary="leetcode daily">
+      <created>1675181692637</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1675181692637</updated>
+    </task>
+    <task id="LOCAL-00106" summary="leetcode daily">
+      <created>1675236223588</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1675236223588</updated>
+    </task>
+    <task id="LOCAL-00107" summary="leetcode daily">
+      <created>1675236262849</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1675236262849</updated>
+    </task>
+    <task id="LOCAL-00108" summary="leetcode daily">
+      <created>1675324477433</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1675324477433</updated>
+    </task>
+    <task id="LOCAL-00109" summary="leetcode daily">
+      <created>1675410111499</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1675410111499</updated>
+    </task>
+    <task id="LOCAL-00110" summary="leetcode daily">
+      <created>1675499665923</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1675499665923</updated>
+    </task>
+    <task id="LOCAL-00111" summary="leetcode daily">
+      <created>1675587064347</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1675587064347</updated>
+    </task>
+    <task id="LOCAL-00112" summary="leetcode daily">
+      <created>1675756549413</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1675756549414</updated>
+    </task>
+    <task id="LOCAL-00113" summary="leetcode daily">
+      <created>1675880187585</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1675880187585</updated>
+    </task>
+    <task id="LOCAL-00114" summary="leetcode daily">
+      <created>1675929720655</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1675929720655</updated>
+    </task>
+    <task id="LOCAL-00115" summary="leetcode daily">
+      <created>1676014260798</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1676014260798</updated>
+    </task>
+    <task id="LOCAL-00116" summary="leetcode daily">
+      <created>1676107196672</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1676107196672</updated>
+    </task>
+    <task id="LOCAL-00117" summary="leetcode daily">
+      <created>1676194628719</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1676194628719</updated>
+    </task>
+    <task id="LOCAL-00118" summary="leetcode daily">
+      <created>1676194713637</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1676194713637</updated>
+    </task>
+    <task id="LOCAL-00119" summary="leetcode daily">
+      <created>1676272154534</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1676272154535</updated>
+    </task>
+    <task id="LOCAL-00120" summary="leetcode daily">
+      <created>1676357988656</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1676357988656</updated>
+    </task>
+    <task id="LOCAL-00121" summary="leetcode daily">
+      <created>1676444107002</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1676444107003</updated>
+    </task>
+    <task id="LOCAL-00122" summary="leetcode daily">
+      <created>1676532247861</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1676532247861</updated>
+    </task>
+    <task id="LOCAL-00123" summary="leetcode daily">
+      <created>1676532405626</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1676532405626</updated>
+    </task>
+    <task id="LOCAL-00124" summary="leetcode daily">
+      <created>1676619813469</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1676619813470</updated>
+    </task>
+    <task id="LOCAL-00125" summary="leetcode daily">
+      <created>1676705500727</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1676705500727</updated>
+    </task>
+    <task id="LOCAL-00126" summary="leetcode daily">
+      <created>1676793045911</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1676793045911</updated>
+    </task>
+    <task id="LOCAL-00127" summary="leetcode daily">
+      <created>1676876967787</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1676876967788</updated>
+    </task>
+    <task id="LOCAL-00128" summary="leetcode daily">
+      <created>1677051936490</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1677051936491</updated>
+    </task>
+    <task id="LOCAL-00129" summary="leetcode daily">
+      <created>1677150244928</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1677150244929</updated>
+    </task>
+    <task id="LOCAL-00130" summary="leetcode daily">
+      <created>1677150730762</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1677150730762</updated>
+    </task>
+    <task id="LOCAL-00131" summary="leetcode daily">
+      <created>1677150920883</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1677150920884</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="new post april 1" />
+    <MESSAGE value="покрасил крышку :)" />
+    <MESSAGE value="spellcheck?" />
+    <MESSAGE value="latex support with MathJax on a Github Page" />
+    <MESSAGE value="leetcode daily" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode daily" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
