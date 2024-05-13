@@ -14,6 +14,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 13.05.2024
+[861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/) medium
+[blog post](https://leetcode.com/problems/score-after-flipping-matrix/solutions/5150832/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13052024-861-score-after-flipping?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/yKgQQujHu7M)
+![2024-05-13_08-42.webp](https://assets.leetcode.com/users/images/6df691e7-285f-4074-8513-bdcc63c2af03_1715578951.5872483.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/601
+
+#### Problem TLDR
+
+Max binary-row sum after toggling rows and columns #medium 
+
+#### Intuition
+
+Let's consider example:
+![2024-05-13_08-10.webp](https://assets.leetcode.com/users/images/88f106db-b60b-4498-bb6a-1fbdcc6af09d_1715577723.0855603.webp)
+Our intuition:
+* we can toggle rows only if the `first` bit is `0` otherwise it will make the number smaller
+* we can toggle the column only if the number of `0` bits is bigger that `1` bits, otherwise sum will be smaller
+
+
+#### Approach
+
+We can toggle rows then toggle columns.
+
+* We didn't have to actually toggle columns, just choose the `max(count, height - count)`.
+* (The tricky part): we didn't have to toggle rows, just invert each bit if the first bit is zero.
+
+#### Complexity
+
+- Time complexity:
+$$O(nm)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun matrixScore(grid: Array<IntArray>) =
+        grid[0].indices.fold(0) { sum, x -> 
+            var count = grid.indices.sumOf { grid[it][x] xor grid[it][0] }
+            sum * 2 + max(count, grid.size - count)
+        }
+
+```
+```rust 
+
+    pub fn matrix_score(mut grid: Vec<Vec<i32>>) -> i32 {
+        (0..grid[0].len()).fold(0, |sum, x| {
+            let count: i32 = (0..grid.len()).map(|y| grid[y][0] ^ grid[y][x]).sum();
+            sum * 2 + count.max(grid.len() as i32 - count)
+        })
+    }
+
+```
+
 # 12.05.2024
 [2373. Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/description/) easy
 [blog post](https://leetcode.com/problems/largest-local-values-in-a-matrix/solutions/5146347/kotlin-rust/)
