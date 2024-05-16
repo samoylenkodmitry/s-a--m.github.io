@@ -35,7 +35,7 @@ We can solve a subproblem for each node in a recursion.
 
 #### Approach
 
-Let's try to avoid the double walk by changin the boolean operations order.
+Let's try to avoid the double walk by changing the boolean operations order.
 
 #### Complexity
 
