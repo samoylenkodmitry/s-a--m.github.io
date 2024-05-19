@@ -14,6 +14,74 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 19.05.2024
+[3068. Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/) hard
+[blog post](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/solutions/5178257/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19052024-3068-find-the-maximum-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/3vk2zlIMUww)
+![2024-05-19_11-13.webp](https://assets.leetcode.com/users/images/00bd11b8-2529-47d9-9752-0c17a757e35f_1716106422.975781.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/607
+
+#### Problem TLDR
+
+Max sum after `xor k` any edges in a tree #hard #math
+
+#### Intuition
+
+Let's just draw and try to build an intuition.
+![2024-05-19_09-10.webp](https://assets.leetcode.com/users/images/374a0d4e-34d4-4cde-8978-8e9b8cab6ae1_1716106596.3770046.webp)
+![2024-05-19_09-21.webp](https://assets.leetcode.com/users/images/340cd54d-b921-497e-a282-0b813186e472_1716106626.607704.webp)
+We can cancel out `xor` if we apply an even number of times.
+
+This is where I was stuck and gave up after trying to build the DP solution.
+
+Now, the actual solution: we can cancel out `all` xor between any two nodes: `a-b-c-d, a^k-b^k-c-d, a^k-b-c^k-d, a^k-b-c-d^k`. Effectively, the task now is to do `xor` on all nodes where it gives us increase in the sum.
+
+However, as `xor` must happen in `pairs` we still need to consider how many operations we do. For even just take the sum, but for odd there are `two` cases: flip one xor back, or do one extra xor (that's why we use `abs`). To do the extra flip we must choose the minimum return of the value.
+
+#### Approach
+
+Spend at least 1 hour before giving up.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun maximumValueSum(nums: IntArray, k: Int, edges: Array<IntArray>): Long {
+        var sum = 0L; var xorCount = 0; var minMax = Int.MAX_VALUE / 2
+        for (n in nums) {
+            sum += max(n, n xor k).toLong()
+            if (n xor k > n) xorCount++
+            minMax = min(minMax, abs((n xor k) - n))
+        }
+        return sum - minMax * (xorCount % 2)
+    }
+
+```
+```rust 
+
+    pub fn maximum_value_sum(nums: Vec<i32>, k: i32, edges: Vec<Vec<i32>>) -> i64 {
+        let (mut sum, mut cnt, mut min) = (0, 0, i32::MAX);
+        for n in nums {
+            sum += n.max(n ^ k) as i64;
+            if n ^ k > n { cnt += 1 }
+            min = min.min(((n ^ k) - n).abs())
+        }; sum - (min * (cnt % 2)) as i64
+    }
+
+```
+
 # 18.05.2024
 [979. Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/) medium
 [blog post](https://leetcode.com/problems/distribute-coins-in-binary-tree/solutions/5173456/kotlin-rust/)
