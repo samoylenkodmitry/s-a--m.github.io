@@ -14,6 +14,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 21.05.2024
+[78. Subsets](https://leetcode.com/problems/subsets/description/) medium
+[blog post](https://leetcode.com/problems/subsets/solutions/5187316/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21052024-78-subsets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/xRtcs1VgxXg)
+![2024-05-21_08-23.webp](https://assets.leetcode.com/users/images/5d4e437a-292b-480c-a99b-752b9747a5be_1716269013.6561294.webp)
+https://youtu.be/xRtcs1VgxXg
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/609
+
+#### Problem TLDR
+
+All subsets #medium #backtrack
+
+#### Intuition
+
+The are several ways to solve this: 
+1. DFS with a single choice: take or leave. Effectively this is a `2` ways exploration with depth of `n` and `n` copy operations at each end, so `O(2 + n)^n) = O(n^n)`. 
+2. DFS with cycle from index so far until the end. The depth is the same `n`, however, it slighly more optimal, as we are skipping some go-in-depth invocations. The time complexity not changes.
+3. DP: `res[i] = nums[i] added to each of res[i - 1]`. Time complexity is the same, as `res[i]` hold all the results and we are iterating over.
+
+#### Approach
+
+Can you make it shorter?
+
+#### Complexity
+
+- Time complexity:
+$$O(n^n)$$
+
+- Space complexity:
+$$O(n^n)$$
+
+
+#### Code
+
+```kotlin 
+
+    fun subsets(nums: IntArray): List<List<Int>> = buildList {
+        add(listOf())
+        for (n in nums) for (i in indices) add(get(i) + n)
+    }
+
+```
+```rust 
+
+    pub fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {
+        let mut res = vec![vec![]; 1]; 
+        for n in nums { for i in 0..res.len() {
+            res.push(res[i].iter().chain([&n]).cloned().collect())
+        }}; res
+    }
+
+```
+
 # 20.05.2024
 [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/) easy
 [blog post](https://leetcode.com/problems/sum-of-all-subset-xor-totals/solutions/5182581/kotlin-rust/)
