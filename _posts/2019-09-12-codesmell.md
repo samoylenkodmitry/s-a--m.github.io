@@ -2,6 +2,7 @@
 layout: post
 title: Basic Guidelines for Writing Code
 ---
+
 # Basic Guidelines for Writing Code
 
 #### 1. The code should be as clear as possible. If someone doesn't understand your code during a review, it means the code is not clear enough. If someone has edited your code, refactored it, and made a mistake - the code is not clear enough.

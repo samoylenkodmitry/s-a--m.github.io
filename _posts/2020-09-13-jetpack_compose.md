@@ -2,6 +2,7 @@
 layout: post
 title: First Look at Jetpack Compose
 ---
+
 # Let's Create a Hundred Thousand Views
 I should say upfront that this article is not intended to nitpick this library, as I personally find it quite appealing. 
 First, we'll create a simple list to add views to. 

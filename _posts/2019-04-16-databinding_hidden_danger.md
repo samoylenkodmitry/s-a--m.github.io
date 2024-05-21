@@ -2,6 +2,7 @@
 layout: post
 title: Databinding Episode I; Hidden Danger
 ---
+
 # Databinding Episode I; Hidden Danger
 
 Sometimes in everyday Android development, you encounter strange, if not mystical bugs. (standard introduction)

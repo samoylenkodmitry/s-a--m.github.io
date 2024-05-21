@@ -2,6 +2,7 @@
 layout: post
 title: Modifying Gradle Options on the Fly
 ---
+
 # Modifying Gradle Options on the Fly
 
 Often, Google lets us try out their unfinished developments. For example, the new R8 resource compiler.

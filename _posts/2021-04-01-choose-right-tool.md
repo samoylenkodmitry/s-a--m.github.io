@@ -2,6 +2,7 @@
 layout: post
 title: Finishing the Thiсс-15
 ---
+
 # Or a Laptop for Android Development
 First step - we buy [this chunky guy](https://www.eluktronics.com/THICC15-BYO) Update: on their site, only the full version with internals [THICC-15](https://www.eluktronics.com/THICC-15/) is left
 

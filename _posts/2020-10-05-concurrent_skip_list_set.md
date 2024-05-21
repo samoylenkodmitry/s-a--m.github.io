@@ -2,6 +2,7 @@
 layout: post
 title: Which is faster? ConcurrentSkipListSet vs TreeSet+synchronized
 ---
+
 # What's the difference
 Those two collections are all sorted and very useful when you need to maintain some order in dynamically filled data.
 However, when concurrency takes place there is a gotcha. We have a choice: use manual synchronization or use ConcurrentSkipListSet from java.concurrent package.

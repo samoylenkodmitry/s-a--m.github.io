@@ -2,6 +2,7 @@
 layout: post
 title: The Dangers of Anonymous Classes
 ---
+
 # Never Underestimate the Danger of Everyday Things
 
 Sometimes in everyday Android development, you encounter strange, if not mystical bugs.

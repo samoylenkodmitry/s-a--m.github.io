@@ -2,6 +2,7 @@
 layout: post
 title: How to cast Linux audio and microphone to Discord
 ---
+
 # How to cast Linux audio and microphone to Discord
 
 ## The problem

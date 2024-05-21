@@ -2,6 +2,7 @@
 layout: post
 title: Kotlin Don't Kill Us Please
 ---
+
 # Kotlin Don't Kill Us Please
 
 We all, whether we want to or not, love Kotlin.

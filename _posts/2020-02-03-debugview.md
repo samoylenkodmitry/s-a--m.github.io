@@ -2,6 +2,7 @@
 layout: post
 title: How to Debug Layouts in Android
 ---
+
 # How to Debug Layouts in Android
 
 Sometimes, layouts start showing magic: hiding controls at the wrong moment, incorrectly determining their sizes and positions. 

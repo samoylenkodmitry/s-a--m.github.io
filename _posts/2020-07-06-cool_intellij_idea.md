@@ -2,6 +2,7 @@
 layout: post
 title: A Cool Refactoring Hidden in IntelliJ IDEA
 ---
+
 # This is about replacing field access with a getter
 By default, there's a visible refactoring option for this through `alt+insert` - `getter`. 
 

@@ -2,6 +2,7 @@
 layout: post
 title: Implementing a Global try-catch for an Android Application
 ---
+
 # Where in the Application is the main() Method Hidden?
 
 It can be found empirically. Set a breakpoint in the Application.onCreate callback and

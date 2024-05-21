@@ -2,6 +2,7 @@
 layout: post
 title: Setting up precommit lints for all team members
 ---
+
 # What lints?
 
 Current actively developed lints are Detekt and ktlint. klint have a `don't overengineer` philosophy while detekt is more configurable.

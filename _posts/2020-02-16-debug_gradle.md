@@ -2,6 +2,7 @@
 layout: post
 title: Connecting the Debugger to the Android App Build Process
 ---
+
 # To do this, you only need to...
 1. In Android Studio, select the Edit Configurations item
 ![edit_configurations]({{ site.url }}/assets/edit_configurations.png)

@@ -2,6 +2,7 @@
 layout: post
 title: Don't Lie to Me
 ---
+
 # Do You Like When Your Code Lies to You?
 
 It turns out that any frontend, as it becomes more complex with tasks and frameworks, tends to devolve into an incomprehensible something. 

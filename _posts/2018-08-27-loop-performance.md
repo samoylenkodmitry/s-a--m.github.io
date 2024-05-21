@@ -2,6 +2,7 @@
 layout: post
 title: How to Iterate Through Arrays Faster
 ---
+
 # Trust No One, Always Verify Yourself
 
 To compare, let's write several versions of iteration. To prevent the compiler from discarding useless code, we'll add a sum of numbers calculation:
