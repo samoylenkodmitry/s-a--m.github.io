@@ -14,6 +14,64 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 25.05.2024
+[140. Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard
+[blog post](https://leetcode.com/problems/word-break-ii/solutions/5205033/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25052024-140-word-break-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/vdedW8CTvUE)
+![2024-05-25_10-17.webp](https://assets.leetcode.com/users/images/34828523-e8b6-4a33-aa30-ed5b09a38355_1716621482.4936144.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/617
+
+#### Problem TLDR
+
+All string splits with dictionary #hard #dfs #dynamic_programming
+
+#### Intuition
+
+There are several ways to attack this problem: we can make a Trie or HashSet from the dictionary, then just walk the string for all suffixes and use a Dynamic Programming formula for the answer `dp[s] = prefix + dp[s - prefix]`.
+
+#### Approach
+
+Let's try to be clever and reuse the method signature with the cost of performance loss of not using memoization.
+
+#### Complexity
+
+- Time complexity:
+$$O(ws^s^2)$$, the recursion depth is in the worst case `aaaaa` is `s`, at each level we try `s` times and in each successfull prefix iterating over `2^s` next results each prepending `s` symbols. With memoization it is $$O(w2^s)$$. With helper function and the single set precalculation is $$O(w + 2^s)$$.
+
+- Space complexity:
+$$O(ws + 2^s)$$, recursion depth is `s`, each level holds `w` copy and `2^s` result. 
+
+#### Code
+
+```kotlin 
+
+    fun wordBreak(s: String, wordDict: List<String>): List<String> = buildList {
+        val set = wordDict.toSet()
+        for (i in s.indices) if (s.take(i + 1) in set) 
+            if (i == s.lastIndex) add(s) else
+                for (next in wordBreak(s.drop(i + 1), wordDict)) 
+                    add("${ s.take(i + 1) } $next")
+    }
+
+```
+```rust 
+
+    pub fn word_break(s: String, word_dict: Vec<String>) -> Vec<String> {
+        let (mut res, set) = (vec![], word_dict.iter().map(|w| w.as_str()).collect::<HashSet<_>>());
+        for i in 0..s.len() { let w = &s[0..=i]; if set.contains(w) {
+            if i == s.len() - 1 { res.push(w.to_string()) } else {
+                for n in Self::word_break(s[i + 1..].to_string(), word_dict.clone()) {
+                    res.push(format!("{} {}", w, n).to_string())
+                }}
+        }}; res
+    }
+
+```
+
 # 24.05.2024
 [1255. Maximum Score Words Formed by Letters](https://leetcode.com/problems/maximum-score-words-formed-by-letters/description/) hard
 [blog post](https://leetcode.com/problems/maximum-score-words-formed-by-letters/solutions/5200230/kotlin-rust/)
