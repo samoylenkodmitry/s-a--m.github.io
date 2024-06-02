@@ -14,6 +14,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 02.06.2024
+[344. Reverse String](https://leetcode.com/problems/reverse-string/description/) easy
+[blog post](https://leetcode.com/problems/reverse-string/solutions/5244079/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02062024-344-reverse-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/rV_lL6Ywi6Y)
+![2024-06-02_08-19.webp](https://assets.leetcode.com/users/images/0ff6d267-d32d-45cc-919c-6cb54d45b449_1717305597.0712378.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/626
+
+#### Problem TLDR
+
+Reverse an array #easy
+
+#### Intuition
+
+We can use two pointers or just a single for-loop until the middle.
+
+#### Approach
+
+* Careful with the corner case: exclude the middle for the even size
+* try to use built-in functions
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun reverseString(s: CharArray) = s.reverse()
+
+```
+```rust 
+
+    pub fn reverse_string(s: &mut Vec<char>) {
+        s.reverse()
+    }
+
+```
+
 # 01.06.2024
 [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/) easy
 [blog post](https://leetcode.com/problems/score-of-a-string/solutions/5238663/kotlin-rust/)
