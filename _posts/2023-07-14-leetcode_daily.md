@@ -14,6 +14,76 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 03.06.2024
+[2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/) medium
+[blog post](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5250254/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03062024-2486-append-characters-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/UznTsb9zosc)
+![2024-06-03_08-01.webp](https://assets.leetcode.com/users/images/2f0727c4-d6d6-446a-94d9-fc49602d73b6_1717390887.7602808.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/627
+
+#### Problem TLDR
+
+Min diff to make `t` substring of `s` #medium
+
+#### Intuition
+
+Try to first solve it with bare hands: take the `s` string and walk over the chars, simultaneously adjusting the `t` char position:
+
+```j
+s        t
+abcccccd abdd
+i      . j
+ i     .  j
+  i    .  j
+   i   .  j
+    i  .  j
+     i .  j
+      i.  j
+       i   j
+```
+Looking at this example, the algorithm is clear: search for the next `t[j]` char in `s`.
+
+#### Approach
+
+* save three lines of code with `getOrNull ?: return` in Kotlin
+* walking over `bytes` is only valid for ascii chars (Rust)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun appendCharacters(s: String, t: String): Int {
+        var j = 0
+        for (c in s) if (c == t.getOrNull(j) ?: return 0) j++
+        return t.length - j
+    }
+
+```
+```rust 
+
+    pub fn append_characters(s: String, t: String) -> i32 {
+        let (mut j, tb) = (0, t.as_bytes());
+        for b in s.bytes() {
+            if b == tb[j] { j += 1 }
+            if j == tb.len() { return 0 }
+        }
+        (tb.len() - j) as i32
+    }
+
+```
+
 # 02.06.2024
 [344. Reverse String](https://leetcode.com/problems/reverse-string/description/) easy
 [blog post](https://leetcode.com/problems/reverse-string/solutions/5244079/kotlin-rust/)
