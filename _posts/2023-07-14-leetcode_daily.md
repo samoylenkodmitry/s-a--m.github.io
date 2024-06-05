@@ -14,6 +14,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 05.06.2024
+[1002. Find Common Characters](https://leetcode.com/problems/find-common-characters/description/) easy
+[blog post](https://leetcode.com/problems/find-common-characters/solutions/5261457/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05062024-1002-find-common-characters?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/DHo74a78GCU)
+![2024-06-05_07-42.webp](https://assets.leetcode.com/users/images/5d563ad6-0589-4b8f-87ab-65c4c8b7f17f_1717562572.2466617.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/629
+
+#### Problem TLDR
+
+Common letters in words #easy
+
+#### Intuition
+
+We can count frequencies, then choose minimums for each char. Or do the reverse: for each char count minimum count in all words.
+
+#### Approach
+
+The frequencies code is faster, but the opposite approach is less verbose.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$, but can be O(n) to hold the result
+
+#### Code
+
+```kotlin 
+
+    fun commonChars(words: Array<String>) = 
+        ('a'..'z').map { c -> 
+            List(words.minOf { it.count { it == c } }) { "$c" }
+        }.flatten()
+
+```
+```rust 
+
+    pub fn common_chars(words: Vec<String>) -> Vec<String> {
+        ('a'..='z').map(|c| {
+            let min_cnt = words.iter().map(|w| 
+                w.chars().filter(|a| *a == c).count()).min();
+            vec![format!("{c}"); min_cnt.unwrap_or(0)]
+        }).flatten().collect()
+    }
+
+```
+
 # 04.06.2024
 [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/description/) easy
 [blog post](https://leetcode.com/problems/longest-palindrome/solutions/5255875/kotlin-rust/)
