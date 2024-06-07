@@ -14,6 +14,75 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 07.06.2024
+[648. Replace Words](https://leetcode.com/problems/replace-words/description/) medium
+[blog post](https://leetcode.com/problems/replace-words/solutions/5272240/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07062024-648-replace-words?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/FAnZD16Ltw4)
+![2024-06-07_07-09_1.webp](https://assets.leetcode.com/users/images/c735f12e-7731-4998-9ce6-2f9934bfa4e4_1717733417.9556.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/632
+
+#### Problem TLDR
+
+Replace words with suffixes from dictionary #medium #trie
+
+#### Intuition
+
+Walk through the word and check if the suffix is in the dictionary. To speed up this we can use a HashMap or a Trie.
+
+#### Approach
+
+Let's use both HashMap and Trie. HashMap code is shorter but slower.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, O(nw^2) for HashMap solution, as we rebuilding each suffix in the word of `w` length
+
+- Space complexity:
+$$O(d + w)$$
+
+#### Code
+
+```kotlin 
+
+    fun replaceWords(dictionary: List<String>, sentence: String): String {
+        class Trie(var word: Int = -1): HashMap<Char, Trie>()
+        val trie = Trie()
+        for ((i, r) in dictionary.withIndex()) {
+            var t = trie
+            for (c in r) t = t.getOrPut(c) { Trie() }
+            t.word = i
+        }
+        return sentence.split(" ").map {
+            var t = trie
+            for (c in it) {
+                if (t.word >= 0) break
+                t = t[c] ?: break
+            }
+            dictionary.getOrNull(t.word) ?: it
+        }.joinToString(" ")
+    }
+
+```
+```rust 
+
+    pub fn replace_words(dictionary: Vec<String>, sentence: String) -> String {
+        let set = dictionary.into_iter().collect::<HashSet<_>>();
+        sentence.split(" ").map(|s| {
+            let mut w = String::new();
+            for c in s.chars() {
+                w.push(c);
+                if set.contains(&w) { break }
+            }; w
+        }).collect::<Vec<_>>().join(" ")
+    }
+
+```
+
 # 06.06.2024
 [846. Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/) medium
 [blog post](https://leetcode.com/problems/hand-of-straights/solutions/5266860/kotlin-rust/)
