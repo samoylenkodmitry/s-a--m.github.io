@@ -14,6 +14,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 10.06.2024
+[1051. Height Checker](https://leetcode.com/problems/height-checker/description/) easy
+[blog post](https://leetcode.com/problems/height-checker/solutions/5287009/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10062024-1051-height-checker?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/9HWfTXU-o4c)
+![2024-06-10_06-29_1.webp](https://assets.leetcode.com/users/images/4288cb04-6c65-4fbf-9e60-052af657480b_1717990221.5069942.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/635
+
+#### Problem TLDR
+
+Count unsorted elements in array #easy
+
+#### Intuition
+
+We can use bucket sort to do this in O(n).
+
+#### Approach
+
+Let's just use a simple sort to save the effort.
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun heightChecker(heights: IntArray) = heights
+        .toList().sorted().withIndex()
+        .count { (i, h) -> h != heights[i] }
+
+```
+```rust 
+
+    pub fn height_checker(heights: Vec<i32>) -> i32 {
+        let mut s = heights.clone(); s.sort_unstable();
+        (0..s.len()).map(|i| (s[i] != heights[i]) as i32).sum()
+    }
+
+```
+
 # 09.06.2024
 [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/description/) medium
 [blog post](https://leetcode.com/problems/subarray-sums-divisible-by-k/solutions/5281959/kotlin-rust/)
