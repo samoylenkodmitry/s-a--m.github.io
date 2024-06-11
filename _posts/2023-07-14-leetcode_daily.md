@@ -17,7 +17,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 # 11.06.2024
 [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/) easy
 [blog post](https://leetcode.com/problems/relative-sort-array/solutions/5292985/kotlin-rust/)
-[substack]()
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11062024-1122-relative-sort-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/hBpNvGP8YYg)
 ![2024-06-11_07-08.webp](https://assets.leetcode.com/users/images/541db483-ed73-4e2d-8ae5-8271adbb968b_1718078908.3366604.webp)
 
