@@ -14,6 +14,82 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 12.06.2024
+[75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) medium
+[blog post](https://leetcode.com/problems/sort-colors/solutions/5299392/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12062024-75-sort-colors?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ybIEv9AYScU)
+![2024-06-12_08-17_1.webp](https://assets.leetcode.com/users/images/353f3aac-7f70-400b-9c63-1af5e61140c2_1718169500.5643234.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/637
+
+#### Problem TLDR
+
+Sort `012` array #medium
+
+#### Intuition
+
+The simple solution is to just counting sort. However, we can do one pass solution - use zeros and twos zones and fill them:
+
+```j
+    // 1 2 0
+    // z   t
+    // i
+    //   i
+    //   0 2
+    //   t
+    //     i
+    // 2 1 2
+    // z   t
+    // i
+    //   t
+    //   i
+```
+The corner case is when `2` and `0` must be swapped before next `i`. One way is to write `if (nums[i] == 2) two--`, another way is to not increment `i` when `2` swapped. 
+
+#### Approach
+
+Let's implement both solutions.
+* `Slice.fill` in Rust helps
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```Kotlin 
+
+    fun sortColors(nums: IntArray): Unit {
+        var zero = 0; var two = nums.lastIndex; var i = 0
+        while (i <= two)
+            if (nums[i] < 1) {
+                nums[zero] = nums[i].also { nums[i++] = nums[zero++] }
+            } else if (nums[i] > 1) {
+                nums[two] = nums[i].also { nums[i] = nums[two--] }
+            } else i++
+        }
+
+```
+```Rust 
+
+    pub fn sort_colors(nums: &mut Vec<i32>) {
+        let (mut cnt, mut j) = ([0, 0, 0], 0);
+        for &n in &*nums { cnt[n as usize] += 1 }
+        for i in 0..cnt.len() {
+            nums[j..j + cnt[i]].fill(i as _);
+            j += cnt[i]
+        }
+    }
+
+```
+
 # 11.06.2024
 [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/) easy
 [blog post](https://leetcode.com/problems/relative-sort-array/solutions/5292985/kotlin-rust/)
