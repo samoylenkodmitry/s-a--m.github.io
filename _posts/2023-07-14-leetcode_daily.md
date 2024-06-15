@@ -14,6 +14,75 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 15.06.2024
+[502. IPO](https://leetcode.com/problems/ipo/description/) hard
+[blog post](https://leetcode.com/problems/ipo/solutions/5315389/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15062024-502-ipo?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/w1YDfTyy7vU)
+![2024-06-15_06-36_1.webp](https://assets.leetcode.com/users/images/7e9fa1e8-d8c0-4bcb-a7bd-0c0b1698391a_1718422643.0711062.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/640
+
+#### Problem TLDR
+
+Max capital by choosing `k` jobs with `profits[] & capital[]` given `w` on start #hard #heap
+
+#### Intuition
+
+Let's observe how this works:
+
+```j
+    // profits        capital
+    // 2 3 4 5 6      1 2 0 3 3      w = 0   k = 3
+    // 1 1 4 2 3
+    // `cap` only increases
+```
+We can choose from a bucket of jobs, each must have `capital <= current money`. After each job done our money will only grow, and the bucket will expand. And to choose optimally, just take max capital job.
+
+The growing sorted bucket can be done with `heap`. It is evident that bucket must take new job with the smalled capital first, so sort by capital initially.
+
+#### Approach
+
+* note that heap in Kotlin is a min-heap; in Rust is a max-heap
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun findMaximizedCapital(k: Int, w: Int, profits: IntArray, capital: IntArray): Int {
+        val inds = profits.indices.sortedBy { capital[it] }; val pq = PriorityQueue<Int>()
+        var cap = w; var j = 0
+        repeat (k) {
+            while (j < inds.size && capital[inds[j]] <= cap) pq += -profits[inds[j++]]
+            cap -= pq.poll() ?: 0
+        }
+        return cap
+    }
+
+```
+```rust 
+
+    pub fn find_maximized_capital(k: i32, w: i32, profits: Vec<i32>, capital: Vec<i32>) -> i32 {
+        let mut inds: Vec<_> = (0..profits.len()).collect(); inds.sort_by_key(|&i| capital[i]);
+        let (mut cap, mut bh, mut j) = (w, BinaryHeap::new(), 0);
+        for _ in 0..k {
+            while j < inds.len() && capital[inds[j]] <= cap { bh.push(profits[inds[j]]); j += 1 }
+            cap += bh.pop().unwrap_or(0)
+        }; cap
+    }
+
+```
+
 # 14.06.2024
 [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/description/) medium
 [blog post](https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5310347/kotlin-rust/)
