@@ -34,7 +34,7 @@ Is `c` sum of squares? #medium #binary_search
 From simple brute force of `0..c` for `a` and `b` we can do the following optimizations:
 * use `sqrt` upper bound O(n^2) -> O((sqrt(n))^2)
 * notice that `sum` function grows linearly and we can do a Binary Search of `c` in it O((sqrt(n))^2) -> O(sqrt(n)log(n))
-* the trickest part: `a` and `b` can themselves be the upper and lower bounds -> O(sqrt(n))
+* the trickiest part: `a` and `b` can themselves be the upper and lower bounds -> O(sqrt(n))
 
 #### Approach
 
