@@ -14,6 +14,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 25.06.2024
+[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/) medium
+[blog post](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/solutions/5364892/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25062024-1038-binary-search-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/1z9Yicjf5bM)
+![2024-06-25_07-02_1.webp](https://assets.leetcode.com/users/images/6e70f167-579c-4f97-82f1-88c18a466167_1719288178.8972218.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/650
+
+#### Problem TLDR
+
+Aggregate Binary Search Tree from the right #medium #tree
+
+#### Intuition
+
+Just iterate from the tail in an inorder DFS traversal.
+
+![2024-06-25_06-24.webp](https://assets.leetcode.com/users/images/2d97a280-07b4-4c9d-974d-de5a08357feb_1719288281.1142936.webp)
+
+
+#### Approach
+
+* notice how `26` jumps straight to the root, so we must store the result somewhere
+* there is a nice patter in Rust: `let Some(..) = .. else { .. }
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(log(n))$$ for the call stack, however, it can be O(1) for the Morris Traversal
+
+#### Code
+
+```kotlin 
+
+    var s = 0
+    fun bstToGst(root: TreeNode?): TreeNode? = root?.apply {
+        bstToGst(right); `val` += s; s = `val`; bstToGst(left)
+    }
+
+```
+```rust 
+
+    pub fn bst_to_gst(mut root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
+        fn dfs(n: &Option<Rc<RefCell<TreeNode>>>, s: i32) -> i32 {
+            let Some(n) = n.as_ref() else { return s }; let mut n = n.borrow_mut();
+            n.val += dfs(&n.right, s); dfs(&n.left, n.val) 
+        }
+        dfs(&root, 0); root
+    }
+
+```
+
 # 24.06.2024
 [995. Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/description/) medium
 [blog post](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359962/kotlin-rust/)
