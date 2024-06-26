@@ -14,6 +14,74 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 26.06.2024
+[1382. Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/description/) medium
+[blog post](https://leetcode.com/problems/balance-a-binary-search-tree/solutions/5370166/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/26062024-1382-balance-a-binary-search?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/mg8PhviL2_k)
+![2024-06-26_06-42_1.webp](https://assets.leetcode.com/users/images/dbd53ce5-f51a-4d9a-9847-78157ca28d7c_1719373378.1085825.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/651
+
+
+#### Problem TLDR
+
+Make a balanced Binary Search Tree #medium
+
+#### Intuition
+
+Construct it back from a sorted array: always peek the middle.
+
+#### Approach
+
+* notice how slices in Rust are helping to reduce the complexity 
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun balanceBST(root: TreeNode?): TreeNode? {
+        val sorted = mutableListOf<Int>()
+        fun dfs1(n: TreeNode?): Unit? = n?.run { 
+            dfs1(left); sorted += `val`; dfs1(right) }
+        fun dfs2(lo: Int, hi: Int): TreeNode? =
+            if (lo > hi) null else {
+            val mid = (lo + hi) / 2
+            TreeNode(sorted[mid]).apply {
+                left = dfs2(lo, mid - 1); right = dfs2(mid + 1, hi)
+            }}
+        dfs1(root); return dfs2(0, sorted.lastIndex)
+    }
+
+```
+```rust 
+
+    pub fn balance_bst(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
+        fn dfs1(n: &Option<Rc<RefCell<TreeNode>>>, sorted: &mut Vec<i32>) {
+            let Some(n) = n.as_ref() else { return; }; let n = n.borrow();
+            dfs1(&n.left, sorted); sorted.push(n.val); dfs1(&n.right, sorted)
+        }
+        fn dfs2(sorted: &[i32]) -> Option<Rc<RefCell<TreeNode>>> {
+            if sorted.len() < 1 { return None }; let mid = sorted.len() / 2;
+            let left = dfs2(&sorted[..mid]);
+            let right = dfs2(&sorted[mid + 1..]);
+            Some(Rc::new(RefCell::new(TreeNode { val: sorted[mid], left: left, right: right })))
+        }
+        let mut sorted = vec![]; dfs1(&root, &mut sorted); dfs2(&sorted[..])
+    }
+
+```
+
 # 25.06.2024
 [1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/) medium
 [blog post](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/solutions/5364892/kotlin-rust/)
