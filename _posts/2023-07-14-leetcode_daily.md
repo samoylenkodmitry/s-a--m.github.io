@@ -14,6 +14,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 27.06.2024
+[1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/) easy
+[blog post](https://leetcode.com/problems/find-center-of-star-graph/solutions/5375299/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/27062024-1791-find-center-of-star?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/oBFqZCzcyd8)
+![2024-06-27_06-48_1.webp](https://assets.leetcode.com/users/images/5198e3db-8fbb-4a3b-9347-93e0a33075aa_1719460132.7475727.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/652
+
+#### Problem TLDR
+
+Center of a start graph #easy
+
+#### Intuition
+
+It's just a common node between two edges.
+
+#### Approach
+
+Can you make it shorter?
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun findCenter(e: Array<IntArray>) =
+        e[0].first { it in e[1] }
+
+```
+```rust 
+
+    pub fn find_center(e: Vec<Vec<i32>>) -> i32 {
+       if e[1].contains(&e[0][0]) { e[0][0] } else { e[0][1] }
+    }
+
+```
+
 # 26.06.2024
 [1382. Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/description/) medium
 [blog post](https://leetcode.com/problems/balance-a-binary-search-tree/solutions/5370166/kotlin-rust/)
