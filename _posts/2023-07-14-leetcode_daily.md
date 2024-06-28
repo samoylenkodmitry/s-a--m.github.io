@@ -14,6 +14,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 28.06.2024
+[2285. Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/description/) medium
+[blog post](https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380529/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/28062024-2285-maximum-total-importance?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/bsOXQ3vwlMg)
+![2024-06-28_06-37.webp](https://assets.leetcode.com/users/images/2615620b-e74e-4c5e-ac80-0cfd22b55bc7_1719545871.201949.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/653
+
+#### Problem TLDR
+
+Sort graph by siblings and compute sum(i*s) #medium
+
+#### Intuition
+
+Notice that the more siblings the bigger rank should be to produce the optimal result.
+
+#### Approach
+
+We can sort the count array or use bucket sort of size n to reduce time complexity to O(n).
+
+#### Complexity
+
+- Time complexity:
+$$nlog(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun maximumImportance(n: Int, roads: Array<IntArray>): Long {
+        val counts = IntArray(n); var i = 1
+        for ((a, b) in roads) { counts[a]++; counts[b]++ }
+        return counts.sorted().sumOf { it * (i++).toLong() }
+    }
+
+```
+```rust 
+
+    pub fn maximum_importance(n: i32, roads: Vec<Vec<i32>>) -> i64 {
+        let mut counts = vec![0; n as usize];
+        for r in roads { counts[r[0] as usize] += 1; counts[r[1] as usize] += 1}
+        counts.sort_unstable();
+        (0..n as usize).map(|i| counts[i] * (i + 1) as i64).sum()
+    }
+
+```
+
+
 # 27.06.2024
 [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/) easy
 [blog post](https://leetcode.com/problems/find-center-of-star-graph/solutions/5375299/kotlin-rust/)
