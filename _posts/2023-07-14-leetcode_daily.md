@@ -14,6 +14,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 1.07.2024
+[1550. Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/description/) easy
+[blog post](https://leetcode.com/problems/three-consecutive-odds/solutions/5394159/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/1072024-1550-three-consecutive-odds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/jnoO7yObgvE)
+![2024-07-01_07-12_1.webp](https://assets.leetcode.com/users/images/14432226-d3a9-4ffd-834b-99e033111c76_1719807218.18325.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/656
+
+#### Problem TLDR
+
+Has window of 3 odds? #easy
+
+#### Intuition
+
+Such questions are helping to start with a new language.
+
+#### Approach
+
+Can you make it shorter?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$ for Rust, O(n) for Kotlin, can be O(1) with `asSequence`.
+
+#### Code
+
+```kotlin 
+
+    fun threeConsecutiveOdds(arr: IntArray) =
+        arr.asList().windowed(3).any { it.all { it % 2 > 0 }}
+
+```
+```rust 
+
+    pub fn three_consecutive_odds(arr: Vec<i32>) -> bool {
+        arr[..].windows(3).any(|w| w.iter().all(|n| n % 2 > 0))
+    }
+
+```
+
 # 30.06.2024
 [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/) medium
 [blog post](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/solutions/5390506/kotiln-rust/)
