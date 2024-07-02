@@ -14,6 +14,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 2.07.2024
+[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) easy
+[blog post](https://leetcode.com/problems/intersection-of-two-arrays-ii/solutions/5400615/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/2072024-350-intersection-of-two-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/qya4KzC40OQ)
+![2024-07-02_07-44_1.webp](https://assets.leetcode.com/users/images/3ac6fba6-decb-4299-ad18-5d884e7ac02b_1719895528.7859662.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/657
+
+#### Problem TLDR
+
+Array intersection with duplicates #easy
+
+#### Intuition
+
+We can do sorting and two pointers. 
+If nums2 on a hard disk, let's not touch it, just iterate once. For nums1 we can use a counting sort for O(n) solution. 
+For code golf, we can modify nums1 in-place with O(n^2) solution.
+
+#### Approach
+
+Golf in Kotlin, can you make it shorter?
+Counting sort in Rust.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$ for counting sort, O(nlogn) for both sort & two pointers
+
+- Space complexity:
+$$O(n)$$ for counting sort (n = 1000), O(1) for sort & two pointers
+
+#### Code
+
+```kotlin 
+
+    fun intersect(nums1: IntArray, nums2: IntArray) = nums2.filter { 
+        val i = nums1.indexOf(it); if (i >= 0) nums1[i] = -1; i >= 0
+    }
+
+```
+```rust 
+
+    pub fn intersect(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+        let mut f = vec![0; 1001]; for n in nums1 { f[n as usize] += 1 }
+        nums2.into_iter().filter(|&n| {
+            let b = f[n as usize] > 0; f[n as usize] -= 1; b
+        }).collect()
+    }
+
+```
+
 # 1.07.2024
 [1550. Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/description/) easy
 [blog post](https://leetcode.com/problems/three-consecutive-odds/solutions/5394159/kotlin-rust/)
