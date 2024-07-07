@@ -14,6 +14,76 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 7.07.2024
+[1518. Water Bottles](https://leetcode.com/problems/water-bottles/description/) easy
+[blog post](https://leetcode.com/problems/water-bottles/solutions/5433062/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/7072024-1518-water-bottles?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/uRBtuUsbw0s)
+![2024-07-07_09-25_1.webp](https://assets.leetcode.com/users/images/cafba317-6d6b-461b-a91d-ecc111192ed4_1720333617.1816661.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/662
+
+#### Problem TLDR
+
+Bottles drink and exchange simulation #easy #math #simulation
+
+#### Intuition
+
+Run the simulation:
+
+```j
+
+    // a n
+    // drink                      empty
+    // a                          a
+    // a/n                        a/n+a%n
+    // (a/n+a%n)/n                (a/n+a%n)/n+(a/n+a%n)%n
+```
+
+There is also a math solution based on geometric series sum $$a + a/n + a/n^2 + ... = a/(1-1/n) = an/(n-1)$$ (https://en.wikipedia.org/wiki/Geometric_series). Given that, it is sometimes off by one, we can write $$(an - 1)/(n - 1)$$. I doubt I could remember this in an interview or a contest though.
+
+#### Approach
+
+Let's use as little variables as possible.
+
+#### Complexity
+
+- Time complexity:
+$$O(log_e(b))$$, e - numExchange, b - numBottles
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun numWaterBottles(numBottles: Int, numExchange: Int): Int {
+        var drink = numBottles
+        var empty = numBottles
+        while (empty >= numExchange) {
+            drink += empty / numExchange
+            empty = empty / numExchange + empty % numExchange
+        }
+        return drink
+    }
+
+```
+```rust 
+
+    pub fn num_water_bottles(num_bottles: i32, num_exchange: i32) -> i32 {
+        let (mut drink, mut empty) = (num_bottles, num_bottles);
+        while empty >= num_exchange {
+            drink += empty / num_exchange;
+            empty = empty / num_exchange + empty % num_exchange
+        }
+        drink
+    }
+
+```
+
 # 6.07.2024
 [2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/description/) easy
 [blog post](https://leetcode.com/problems/pass-the-pillow/solutions/5425379/kotlin-rust/)
