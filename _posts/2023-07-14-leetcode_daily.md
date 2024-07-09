@@ -14,6 +14,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 9.07.2024
+[1701. Average Waiting Time](https://leetcode.com/problems/average-waiting-time/description/) medium
+[blog post](https://leetcode.com/problems/average-waiting-time/solutions/5444506/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/9072024-1701-average-waiting-time?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/s5KyVW1BZXI)
+![2024-07-09_07-43_1.webp](https://assets.leetcode.com/users/images/4455003c-a9f2-4f1a-aa9f-aa94d97cdccc_1720500235.6788151.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/664
+
+#### Problem TLDR
+
+Average of intersecting intervals #medium #simulation
+
+#### Intuition
+
+Just simulate the process.
+
+#### Approach
+
+Let's use iterators to save lines of code.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun averageWaitingTime(customers: Array<IntArray>): Double {
+        var time = 0
+        return customers.sumOf { (start, delta) ->
+            time = max(start, time) + delta
+            (time - start).toDouble()
+        } / customers.size
+    }
+
+```
+```rust 
+
+    pub fn average_waiting_time(customers: Vec<Vec<i32>>) -> f64 {
+        let mut time = 0;
+        customers.iter().map(|c| {
+            time = time.max(c[0]) + c[1];
+            (time - c[0]) as f64
+        }).sum::<f64>() / customers.len() as f64
+    }
+
+```
+
 # 8.07.2024
 [1823. Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/) medium
 [blog post](https://leetcode.com/problems/find-the-winner-of-the-circular-game/solutions/5438770/kotlin-rust/)
