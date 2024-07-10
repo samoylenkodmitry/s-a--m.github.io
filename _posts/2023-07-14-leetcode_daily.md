@@ -14,6 +14,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 10.07.2024
+[1598. Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/description/) easy
+[blog post](https://leetcode.com/problems/crawler-log-folder/solutions/5451533/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10072024-1598-crawler-log-folder?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/RUzb5ZbMcPw)
+![2024-07-10_07-40_1.webp](https://assets.leetcode.com/users/images/c9fb888f-558f-4377-9848-dd89ec8972a2_1720586466.3733504.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/665
+
+#### Problem TLDR
+
+Filesystem path depth #easy
+
+#### Intuition
+
+Simulate the process and compute depth. Corner case: a path doesn't move up from the root.
+
+#### Approach
+
+Let's use `fold` iterator.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun minOperations(logs: Array<String>) =
+        logs.fold(0) { depth, op -> when (op) {
+            "../" -> max(0, depth - 1) 
+            "./" -> depth else -> depth + 1 }}
+
+```
+```rust 
+
+    pub fn min_operations(logs: Vec<String>) -> i32 {
+        logs.iter().fold(0, |depth, op| match op.as_str() {
+            "../" => 0.max(depth - 1), 
+            "./" => depth,  _ =>  depth + 1 })
+    }
+
+```
+
 # 9.07.2024
 [1701. Average Waiting Time](https://leetcode.com/problems/average-waiting-time/description/) medium
 [blog post](https://leetcode.com/problems/average-waiting-time/solutions/5444506/kotlin-rust/)
