@@ -14,6 +14,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 22.07.2024
+[2418. Sort the People](https://leetcode.com/problems/sort-the-people/description/) easy
+[blog post](https://leetcode.com/problems/sort-the-people/solutions/5514920/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22072024-2418-sort-the-people?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/pw5pyrufU-8)
+![2024-07-22_08-22_1.webp](https://assets.leetcode.com/users/images/02b745c7-f5e4-41c0-9f3a-99180a69ca67_1721625791.7787464.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/678
+
+#### Problem TLDR
+
+Sort one array by another #easy
+
+#### Intuition
+
+We must use some extra memory for the relations between the arrays: it can be an indices array, or a zipped collection. Then sort it and recreate the answer.
+
+#### Approach
+
+* Kotlin: withIndex, sortedByDescending.
+* Rust: using indices vec and recreating the result makes us use .clone(), so better use zip.
+
+#### Complexity
+
+- Time complexity:
+$$O(nlogn)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun sortPeople(names: Array<String>, heights: IntArray) = names
+        .withIndex()
+        .sortedByDescending { heights[it.index] }
+        .map { it.value }
+    
+
+```
+```rust 
+
+    pub fn sort_people(names: Vec<String>, heights: Vec<i32>) -> Vec<String> {
+        let mut zip: Vec<_> = names.into_iter().zip(heights.into_iter()).collect();
+        zip.sort_unstable_by_key(|(n, h)| -h);
+        zip.into_iter().map(|(n, h)| n).collect()
+    }
+
+```
+
 # 21.07.2024
 [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/) hard
 [blog post](https://leetcode.com/problems/build-a-matrix-with-conditions/solutions/5510359/kotlin-rust/)
