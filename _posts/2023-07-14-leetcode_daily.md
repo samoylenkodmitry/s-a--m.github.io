@@ -14,6 +14,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 23.07.2024
+[1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/description/) easy
+[blog post](https://leetcode.com/problems/sort-array-by-increasing-frequency/solutions/5520670/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23072024-1636-sort-array-by-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ZVR0kndyTnY)
+![2024-07-23_08-14.webp](https://assets.leetcode.com/users/images/67c474ca-240d-4d09-a238-5d3cc703096d_1721711679.3416324.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/679
+
+#### Problem TLDR
+
+Sort by frequency or descending #easy
+
+#### Intuition
+
+Sort with comparator.
+Another way is to do sorting two times but with a stable sort (in Kotlin it is by default, in Rust you must use sort instead of sort_unstable).
+
+#### Approach
+
+* pay attention: there are negative numbers
+* Kotlin doesn't have sortWith for IntArray
+
+#### Complexity
+
+- Time complexity:
+$$O(nlogn)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun frequencySort(nums: IntArray): IntArray {
+        val f = IntArray(202)
+        for (n in nums) f[n + 100]++
+        return nums
+            .sortedWith(compareBy({ f[it + 100]}, { -it }))
+            .toIntArray()
+    }
+
+```
+```rust 
+
+    pub fn frequency_sort(mut nums: Vec<i32>) -> Vec<i32> {
+        let mut f = vec![0; 201];
+        for n in &nums { f[(n + 100) as usize] += 1 }
+        nums.sort_unstable_by_key(|n| (f[(n + 100) as usize], -n));
+        nums
+    }
+
+```
+
 # 22.07.2024
 [2418. Sort the People](https://leetcode.com/problems/sort-the-people/description/) easy
 [blog post](https://leetcode.com/problems/sort-the-people/solutions/5514920/kotlin-rust/)
