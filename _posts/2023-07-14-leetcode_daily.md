@@ -36,6 +36,7 @@ Just sort using a comparator by key
 #### Approach
 
 * careful with the corner case n = 0
+* in Rust using `sort_by_cached_key` has improved runtime from 170ms to 20ms
 
 #### Complexity
 
@@ -66,7 +67,7 @@ $$O(1)$$, O(n) for Kotlin, as it didn't have a proper sorting method for IntArra
 ```rust 
 
     pub fn sort_jumbled(mapping: Vec<i32>, mut nums: Vec<i32>) -> Vec<i32> {
-        nums.sort_unstable_by_key(|&x| {
+        nums.sort_by_cached_key(|&x| {
             let (mut n, mut pow, mut res) = (x as usize, 1, 0);
             if x < 1 { res = mapping[n] }
             while n > 0 {
