@@ -14,6 +14,80 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 25.07.2024
+[912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/) medium
+[blog post](https://leetcode.com/problems/sort-an-array/solutions/5532420/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25072024-912-sort-an-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/6xFxZ6ybaN0)
+![2024-07-25_09-51.webp](https://assets.leetcode.com/users/images/125f2500-b7f0-42c8-8e90-45f1afecac05_1721890291.041572.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/681
+
+#### Problem TLDR
+
+Sort array using minimum memory #medium
+
+#### Intuition
+
+The most memory-friendly algorithm would be the Heap Sort - O(1).
+However, I didn't know it, so let's implement a QuickSort.
+
+#### Approach
+
+* in the `partition` we must use some `border` value and `border` position, everything less must be to the left of the border.
+* worst case is O(n^2), so we must use the `shuffle`
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin 
+
+    fun sortArray(nums: IntArray): IntArray {
+        fun swap(a: Int, b: Int) 
+            { nums[a] = nums[b].also { nums[b] = nums[a] }}
+        fun partition(from: Int, to: Int) {
+            if (from >= to) return
+            var x = nums[from]
+            var lo = from
+            for (i in from + 1..to) if (nums[i] <= x)
+                swap(i, ++lo)
+            swap(from, lo)
+            partition(from, lo - 1)
+            partition(lo + 1, to)
+        }
+        nums.shuffle()
+        partition(0, nums.lastIndex)
+        return nums
+    }
+
+```
+```rust 
+
+    pub fn sort_array(mut nums: Vec<i32>) -> Vec<i32> {
+        fn partition(nums: &mut Vec<i32>, from: usize, to: usize) {
+            if from >= to { return }
+            let (mut x, mut lo) = (nums[to], from);
+            for i in from..to { 
+                if nums[i] < x { nums.swap(i, lo); lo += 1 }}
+            nums.swap(to, lo);
+            if lo > 0 { partition(nums, from, lo - 1) }
+            partition(nums, lo + 1, to);
+        }
+        nums.shuffle(&mut thread_rng()); let n = nums.len();
+        partition(&mut nums, 0, n - 1); nums
+    }
+
+```
+
 # 24.07.2024
 [2191. Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/description/) medium
 [blog post](https://leetcode.com/problems/sort-the-jumbled-numbers/solutions/5526254/kotlin-rust/)
