@@ -14,6 +14,143 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 29.07.2024
+[1395. Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/description/) medium
+[blog post](https://leetcode.com/problems/count-number-of-teams/solutions/5551372/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29072024-1395-count-number-of-teams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/CCdEKYJvQAc)
+![2024-07-29_07-57_1.webp](https://assets.leetcode.com/users/images/fa97ae5e-64d6-4ccf-bbb3-a7029f69ed9b_1722229081.8639252.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/685
+
+#### Problem TLDR
+
+Count increasing or decreasing `(i, j, k)` #medium
+
+#### Intuition
+
+The brute-force n^3 solution is accepted.
+Now, let's think about the optimization. One way is to precompute some `less[i]` and `bigger[i]` arrays in O(n^2).
+Another way is to just multiply count to the left and count to the right.
+
+#### Approach
+
+* just count the lesser values, the bigger will be all the others
+* on the right side, just do the additions of the left counts
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun numTeams(rating: IntArray) = 
+        rating.withIndex().sumOf { (i, r) ->
+            var s = (0..<i).count { rating[it] < r }
+            (i + 1..<rating.size).sumOf { if (rating[it] < r) i - s else s }
+        }
+
+```
+```rust 
+
+    pub fn num_teams(rating: Vec<i32>) -> i32 {
+        (0..rating.len()).map(|i| {
+            let s = (0..i).filter(|&j| rating[j] < rating[i]).count();
+            (i + 1..rating.len()).map(|j|
+                if rating[j] < rating[i] { i - s } else { s } as i32
+            ).sum::<i32>()
+        }).sum()
+    }
+
+```
+
+# 28.07.2024
+[2045. Second Minimum Time to Reach Destination](https://leetcode.com/problems/second-minimum-time-to-reach-destination/description/) hard
+[blog post](https://leetcode.com/problems/second-minimum-time-to-reach-destination/solutions/5547657/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/28072024-2045-second-minimum-time?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/CcAep5fdevc)
+![2024-07-28_11-29_1.webp](https://assets.leetcode.com/users/images/e16700a5-e0e3-4cb9-99da-7df0bdb8013c_1722155404.055286.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/684
+
+#### Problem TLDR
+
+Second min time to travel from `1` to `n` in `time`-edged graph stopping every `change` seconds #hard #graph #bfs
+
+#### Intuition
+
+Let's try to find the 2nd-shortest path with BFS. This solution will be accepted with a one optimization: remove the duplicate nodes from the queue.
+
+Another way to think about the problem is to consider every (path & time) individually and keep track of the best and the 2nd best visited times for each node. Repeat BFS until there are no more improvements in the arrival times. 
+
+#### Approach
+
+Let's implement both the solutions.
+
+#### Complexity
+
+- Time complexity:
+$$O((EV)^p)$$, for the naive BFS, p - second path length,
+$$O(E + V^2)$$ or $$((E + V)log(V))$$ for PQ, like for the Dijkstra algorithm 
+
+- Space complexity:
+$$O(E + V)$$
+
+#### Code
+
+```kotlin 
+
+    fun secondMinimum(n: Int, edges: Array<IntArray>, time: Int, change: Int): Int {
+        val g = mutableMapOf<Int, MutableList<Int>>()
+        for ((u, v) in edges) {
+            g.getOrPut(u) { mutableListOf() } += v; g.getOrPut(v) { mutableListOf() } += u
+        }
+        val q = ArrayDeque<Int>(); val s = IntArray(n + 1) { -1 }
+        q += 1; var found = 0; var totalTime = 0
+        while (q.size > 0) {
+            repeat(q.size) {
+                val c = q.removeFirst()
+                if (c == n && found++ > 0) return totalTime
+                g[c]?.forEach { if (s[it] != totalTime) { s[it] = totalTime; q += it }}
+            }
+            totalTime += time + ((totalTime / change) % 2) * (change - (totalTime % change))
+        }
+        return totalTime
+    }
+
+```
+```rust 
+
+    pub fn second_minimum(n: i32, edges: Vec<Vec<i32>>, time: i32, change: i32) -> i32 {
+        let n = n as usize; let (mut g, mut q) = (vec![vec![]; n + 1], VecDeque::from([(1, 0)]));
+        let mut s = vec![i32::MAX; n + 1]; let mut ss = s.clone();
+        for e in edges {
+            let u = e[0] as usize; let v = e[1] as usize;
+            g[u].push(v); g[v].push(u)
+        }
+        while let Some((curr, total_time)) = q.pop_front() {
+            let new_time = total_time + time + 
+                ((total_time / change) % 2) * (change - (total_time % change));
+            for &next in &g[curr] { if ss[next] > new_time {
+                if s[next] > new_time { ss[next] = s[next]; s[next] = new_time }
+                else if s[next] < new_time { ss[next] = new_time }
+                q.push_back((next, new_time))
+            }}
+        }; ss[n]
+    }
+
+```
+
 # 27.07.2024
 [2976. Minimum Cost to Convert String I](https://leetcode.com/problems/minimum-cost-to-convert-string-i/description/) medium
 [blog post](https://leetcode.com/problems/minimum-cost-to-convert-string-i/solutions/5542204/kotlin-rust/)
