@@ -14,6 +14,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 01.08.2024
+[2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/) easy
+[blog post](https://leetcode.com/problems/number-of-senior-citizens/solutions/5566623/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01082024-2678-number-of-senior-citizens?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/sIosDHiKyKE)
+![2024-08-01_08-08_1.webp](https://assets.leetcode.com/users/images/c6ed0144-3c4d-4c6d-946a-3f822e1a0408_1722488920.2945857.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/689
+
+#### Problem TLDR
+
+Count filtered by a substring #easy
+
+#### Intuition
+
+The `11th` and `12th` symbols are our target.
+
+#### Approach
+
+We can avoid Int parsing just by comparint symbols to `6` and `0`.
+
+Let's use some API:
+* Kotlin: count, drop, take
+* Rust: string[..], parse, filter, count
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun countSeniors(details: Array<String>) =
+        details.count { it.drop(11).take(2).toInt() > 60 }
+
+```
+```rust 
+
+    pub fn count_seniors(details: Vec<String>) -> i32 {
+        details.iter().filter(|s| 
+            s[11..13].parse::<u8>().unwrap() > 60
+        ).count() as _
+    }
+
+```
+
 # 31.07.2024
 [1105. Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves/description/) medium
 [blog post](https://leetcode.com/problems/filling-bookcase-shelves/solutions/5561897/kotlin-rust/)
