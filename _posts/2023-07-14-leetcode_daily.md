@@ -35,7 +35,7 @@ The `11th` and `12th` symbols are our target.
 
 #### Approach
 
-We can avoid Int parsing just by comparint symbols to `6` and `0`.
+We can avoid Int parsing just by comparing symbols to `6` and `0`.
 
 Let's use some API:
 * Kotlin: count, drop, take
