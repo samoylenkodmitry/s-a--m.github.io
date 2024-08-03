@@ -14,6 +14,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 03.08.2024
+[1460. Make Two Arrays Equal by Reversing Subarrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/description/) easy
+[blog post](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5577994/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03082024-1460-make-two-arrays-equal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/sEkfoM-0bAE)
+![2024-08-03_09-07_1.webp](https://assets.leetcode.com/users/images/07e26dd6-e552-4281-a639-af252f85c0f5_1722665317.2604775.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/691
+
+#### Problem TLDR
+
+Can `arr` transform to `target` by rotating subarrays? #easy
+
+#### Intuition
+
+By swapping every subarray we can move any position to any other position, effectively sorting the array as we want. So, compare the sorted arrays, or compare the numbers frequencies.
+
+#### Approach
+
+Let's implement both variants.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$ and $$O(nlogn)$$ for sorting
+
+- Space complexity:
+$$O(n)$$ and $$O(1)$$ for sorting
+
+#### Code
+
+```kotlin 
+
+    fun canBeEqual(target: IntArray, arr: IntArray) =
+        target.groupBy { it } == arr.groupBy { it }
+
+```
+```rust 
+
+    pub fn can_be_equal(mut target: Vec<i32>, mut arr: Vec<i32>) -> bool {
+        target.sort_unstable(); arr.sort_unstable(); target == arr
+    }
+
+```
+
 # 02.08.2024
 [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/) medium
 [blog post](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5572682/kotlin-rust/)
