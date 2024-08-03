@@ -31,7 +31,7 @@ Can `arr` transform to `target` by rotating subarrays? #easy
 
 #### Intuition
 
-By swapping every subarray we can move any position to any other position, effectively sorting the array as we want. So, compare the sorted arrays, or compare the numbers frequencies.
+By swapping every subarray we can move any position to any other position, effectively sorting the array as we want. So, compare the sorted arrays or compare the numbers' frequencies.
 
 #### Approach
 
