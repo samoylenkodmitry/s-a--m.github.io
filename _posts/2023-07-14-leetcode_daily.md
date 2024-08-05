@@ -14,6 +14,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 05.08.2024
+[2053. Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/description/) easy
+[blog post](https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5588979/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05082024-2053-kth-distinct-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/FAn8jqZw2B8)
+![1.webp](https://assets.leetcode.com/users/images/a3a9db95-265e-4f88-841b-26381789093d_1722834536.7509494.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/693
+
+#### Problem TLDR
+
+`kth` unique #easy
+
+#### Intuition
+
+Filter out all the duplicates first.
+
+### Approach
+
+We can use a HashMap for counter or just two HashSets.
+Let's use some API:
+* Kotlin: groupingBy.eachCount, filter
+* Rust: filter, skip, next
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun kthDistinct(arr: Array<String>, k: Int): String {
+        val freq = arr.groupingBy { it }.eachCount()
+        return arr.filter { freq[it] == 1 }.getOrNull(k - 1) ?: ""
+    }
+
+```
+```rust 
+
+    pub fn kth_distinct(arr: Vec<String>, k: i32) -> String {
+        let (mut uniq, mut dup) = (HashSet::new(), HashSet::new());
+        for s in &arr { if !uniq.insert(s) { dup.insert(s); }}
+        arr.iter().filter(|&s| !dup.contains(s)).skip(k as usize - 1)
+           .next().unwrap_or(&"".to_string()).to_string()
+    }
+
+```
+
 # 04.08.2024
 [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/description/) meidum
 [blog post](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/solutions/5584473/kotlin-rust/)
