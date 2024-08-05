@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5588979/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05082024-2053-kth-distinct-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/FAn8jqZw2B8)
-![1.webp](https://assets.leetcode.com/users/images/a3a9db95-265e-4f88-841b-26381789093d_1722834536.7509494.webp)
+![1.webp](https://assets.leetcode.com/users/images/51e5d377-3aff-428e-af2e-6102b4417417_1722835671.7317145.webp)
 
 #### Join me on Telegram
 
@@ -52,11 +52,9 @@ $$O(1)$$
 
 ```kotlin 
 
-    fun kthDistinct(arr: Array<String>, k: Int): String {
-        val freq = arr.groupingBy { it }.eachCount()
-        return arr.filter { freq[it] == 1 }.getOrNull(k - 1) ?: ""
-    }
-
+    fun kthDistinct(arr: Array<String>, k: Int) = arr
+        .groupingBy { it }.eachCount().filter { it.value == 1 }
+        .keys.elementAtOrNull(k - 1) ?: ""
 ```
 ```rust 
 
