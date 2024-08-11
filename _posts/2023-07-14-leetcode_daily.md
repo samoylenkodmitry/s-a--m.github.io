@@ -68,6 +68,7 @@ $$O(nm)$$
         }
         return if (isDisconnected()) 0 else if (ones.any { e = it; isDisconnected() }) 1 else 2
     }
+```
 
 ```rust 
 
