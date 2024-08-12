@@ -14,10 +14,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 12.08.2024
+[703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/) easy
+[blog post](https://leetcode.com/problems/kth-largest-element-in-a-stream/solutions/5624559/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12082024-703-kth-largest-element?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/Mw92X1fITu8)
+![1.webp](https://assets.leetcode.com/users/images/1f08f10d-59a7-4ba8-8094-d317978e200b_1723439235.0497365.webp)
+
+#### Problem TLDR
+
+`k`th largest in a stream of values #easy #heap
+
+#### Intuition
+
+Use the heap.
+
+#### Approach
+
+In Kotlin PriorityQueue is a max-heap, in Rust BinaryHeap is a min-heap.
+
+#### Complexity
+
+- Time complexity:
+$$O(log(k))$$ for `add` operation, O(nlog(k)) total
+
+- Space complexity:
+$$O(k)$$
+
+#### Code
+
+```kotlin 
+
+class KthLargest(val k: Int, nums: IntArray) {
+    val pq = PriorityQueue<Int>()
+    init { for (n in nums) add(n) }
+    fun add(v: Int) = pq
+        .run { pq += v; if (size > k) poll(); peek() }
+}
+
+```
+```rust 
+
+struct KthLargest { bh: BinaryHeap<i32>, k: usize }
+impl KthLargest {
+    fn new(k: i32, nums: Vec<i32>) -> Self {
+        let mut kth =  Self { bh: BinaryHeap::new(), k: k as usize };
+        for &n in nums.iter() { kth.add(n); }
+        kth
+    }
+    fn add(&mut self, val: i32) -> i32 {
+        self.bh.push(-val);
+        if self.bh.len() > self.k { self.bh.pop(); }
+        -self.bh.peek().unwrap()
+    }
+}
+
+```
+
 # 11.08.2024
 [1568. Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/description/) hard
 [blog post](https://open.substack.com/pub/dmitriisamoilenko/p/11082024-1568-minimum-number-of-days?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-[substack]()
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11082024-1568-minimum-number-of-days?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/zx9Hi0rY_Qg)
 ![1.webp](https://assets.leetcode.com/users/images/d0ea9493-accd-4df3-a28f-eb585a60bf0c_1723361551.1959555.webp)
 
