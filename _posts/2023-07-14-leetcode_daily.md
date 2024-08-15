@@ -14,6 +14,70 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 15.08.2024
+[860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/) easy
+[blog post](https://leetcode.com/problems/lemonade-change/solutions/5638776/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15082024-860-lemonade-change?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/Aq1G1oqHrV0)
+
+![1.webp](https://assets.leetcode.com/users/images/77ebb8c5-b28e-42e1-a1fc-de95ad550ace_1723699672.0952182.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/703
+
+#### Problem TLDR
+
+Simulate money exchange #easy #simulation
+
+#### Intuition
+
+* queue order must not be changed
+
+Just simulate the process.
+
+#### Approach
+
+* we don't have to keep $20's
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+    fun lemonadeChange(bills: IntArray): Boolean {
+        val s = IntArray(21)
+        return bills.all { b ->
+            s[b]++
+            if (b > 5) s[5]--
+            if (b > 10) if (s[10] > 0) s[10]-- else s[5] -= 2
+            s[5] >= 0
+        }
+    }
+
+```
+```rust
+
+    pub fn lemonade_change(bills: Vec<i32>) -> bool {
+        let (mut s5, mut s10) = (0, 0);
+        bills.iter().all(|&b| {
+            if b == 5 { s5 += 1 }
+            if b == 10 { s10 += 1 }
+            if b > 5 { s5 -= 1 }
+            if b > 10 { if s10 > 0 { s10 -= 1 } else { s5 -= 2 }}
+            s5 >= 0
+        })
+    }
+
+```
+
 # 14.08.2024
 [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) hard
 [blog post](https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5634024/kotlin-rust/)
