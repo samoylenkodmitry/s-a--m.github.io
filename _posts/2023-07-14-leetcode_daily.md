@@ -14,6 +14,64 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 19.08.2024
+[650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) medium
+[blog post](https://leetcode.com/problems/2-keys-keyboard/solutions/5658803/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19082024-650-2-keys-keyboard?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ifG3rihFVjo)
+![1.webp](https://assets.leetcode.com/users/images/7e6ab55d-a4cf-44ad-b0e9-d95ae1fb7129_1724047215.4717352.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/707
+
+#### Problem TLDR
+
+Min copy-pastes to make `n` `A`'s from one #medium #dynamic_programming #math
+
+#### Intuition
+
+Let's just do a full Depth-First Search, by making a choice between pasting and copy-pasting. The result can be cached making this solution n^2 from 2^n.
+
+Another mathematical approach is to consider prime divisors of n: if `n` is divided by `p`, then we can make `p` `paste` presses. Primes can only be obtained by single `paste` presses. (This is not mine solution, and I'm still not getting it.)
+
+#### Approach
+
+* careful with edge cases of the DP solution: buf = 0
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin 
+
+    val dp = mutableMapOf<Pair<Int, Int>, Int>()
+    fun minSteps(n: Int, buf: Int = 0, a: Int = 1): Int = 
+        if (a > n || buf > n) Int.MAX_VALUE / 2
+        else if (n == a) 0 else dp.getOrPut(buf to a) { min(
+            if (buf < 1) Int.MAX_VALUE / 2 else 1 + minSteps(n, buf, a + buf),
+            2 + minSteps(n, a, a + a)
+        )}
+
+```
+```rust 
+
+    pub fn min_steps(n: i32) -> i32 {
+        let primes = [2, 3, 5, 7, 11, 13, 19, 23, 29, 31];
+        if n <= 5 { return if n == 1 { 0 } else { n }}
+        for p in primes { if n % p == 0 { 
+            return p + Self::min_steps(n / p) }}
+        n
+    }
+
+```
+
 # 18.08.2024
 [264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/) medium
 [blog post](https://leetcode.com/problems/ugly-number-ii/solutions/5653905/kotlin-rust/)
