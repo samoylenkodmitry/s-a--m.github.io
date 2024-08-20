@@ -14,6 +14,72 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 20.08.2024
+[1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/) medium
+[blog post](https://leetcode.com/problems/stone-game-ii/solutions/5663455/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20082024-1140-stone-game-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/0Tq1PVcx26I)
+![1.webp](https://assets.leetcode.com/users/images/c2aa21ce-b1d8-4163-b142-35318f47d763_1724133796.449363.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/708
+
+#### Problem TLDR
+
+Max Alice price taking 1..2m piles optimally with Bob #medium #dynamic_programming
+
+#### Intuition
+
+Let's do a full search with Depth-First Search, choosing how many piles to take to maximize the result.
+The catch is we should somehow consider the Bob results. One way is to return a pair of Alice and Bob result for the suffix. Anothe approach is some math: total_sum = Alice + Bob, and derive Alice's next result.
+
+#### Approach
+
+* we can use slices in Rust
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+
+    fun stoneGameII(piles: IntArray): Int {
+        val dp = mutableMapOf<Pair<Int, Int>, Int>()
+        fun dfs(i: Int, m: Int, s: Int, t: Int): Int = 
+            if (i < piles.size) dp.getOrPut(i to m) {
+                var sum = 0
+                (i..<min(piles.size, i + 2 * m)).maxOf { j ->
+                    sum += piles[j]
+                    t - s - dfs(j + 1, max(m, j - i + 1), s + sum, t)
+                }
+            } else 0
+        return dfs(0, 1, 0, piles.sum())
+    }
+
+```
+```rust
+
+    pub fn stone_game_ii(piles: Vec<i32>) -> i32 {
+        let mut dp = vec![vec![-1; 101]; 101]; 
+        fn dfs(m: usize, t: i32, s: i32, dp: &mut [Vec<i32>], p: &[i32]) -> i32 {
+            if dp[0][m] >= 0 { return dp[0][m] }
+            let mut sum = 0;
+            dp[0][m] = (1..=p.len().min(2 * m)).map(|j| {
+                sum += p[j - 1];
+                t - s - dfs(m.max(j), t, s + sum, &mut dp[j..], &p[j..])
+            }).max().unwrap_or(0); dp[0][m]}
+        dfs(1, piles.iter().sum(), 0, &mut dp, &piles)
+    }
+
+```
+
 # 19.08.2024
 [650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) medium
 [blog post](https://leetcode.com/problems/2-keys-keyboard/solutions/5658803/kotlin-rust/)
