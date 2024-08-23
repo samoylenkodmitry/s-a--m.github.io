@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/fraction-addition-and-subtraction/solutions/5678060/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23082024-592-fraction-addition-and?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pycLsCkzhAQ)
-![1.webp](https://assets.leetcode.com/users/images/4e3c5812-b6eb-49e9-8966-b5628431ae51_1724394672.1662998.webp)
+![1.webp](https://assets.leetcode.com/users/images/c2bf977c-9d86-492f-8ded-c08ca76e6f3b_1724395478.5469832.webp)
 
 #### Join me on Telegram
 
