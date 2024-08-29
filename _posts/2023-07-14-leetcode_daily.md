@@ -14,6 +14,71 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 29.08.2024
+[947. Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/) medium
+[blog post](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/solutions/5705615/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/29082024-947-most-stones-removed?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/r787T_UaceQ)
+![1.webp](https://assets.leetcode.com/users/images/2e7a3354-f74d-4d2f-8076-78bd2cd7a219_1724911618.5091236.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/717
+
+#### Problem TLDR
+
+Count islands of intersecting x and y #medium #union-find
+
+#### Intuition
+
+The first intuition is to build a graph of connected dots and try to explore them.
+
+![2.png](https://assets.leetcode.com/users/images/baa10054-077b-4666-aa8e-0c658e07f379_1724911715.8139527.png)
+
+After some meditation (or using a hint), one can see that all the connected dots are removed. Union-Find helps to find the connected islands.
+
+#### Approach
+
+* we can connect each with each dot in O(n^2) (Rust solution)
+* or we can connect each row with each column and find how many unique rows and columns are in O(n) (Kotlin solution)
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$ or $$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun removeStones(stones: Array<IntArray>): Int {
+        val uf = mutableMapOf<Int, Int>()
+        fun f(a: Int): Int = uf[a]?.let { if (it == a) a else 
+            f(it).also { uf[a] = it }} ?: a
+        for ((r, c) in stones) uf[f(r)] = f(-c - 1)
+        return stones.size - uf.values.map { f(it) }.toSet().size
+    }
+
+```
+```rust 
+
+    pub fn remove_stones(stones: Vec<Vec<i32>>) -> i32 {
+        let (mut uf, mut res) = ((0..=stones.len()).collect::<Vec<_>>(), 0);
+        fn f(a: usize, uf: &mut Vec<usize>) -> usize { 
+            while uf[a] != uf[uf[a]] { uf[a] = uf[uf[a]] }; uf[a] }
+        for i in 0..stones.len() { for j in i + 1..stones.len() {
+            if stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1] {
+                let a = f(i, &mut uf); let b = f(j, &mut uf);
+                if (a != b) { res += 1; uf[a] = b }
+            }
+        }}; res
+    }
+
+```
+
 # 28.08.2024
 [1905. Count Sub Islands](https://leetcode.com/problems/count-sub-islands/description/) medium
 [blog post](https://leetcode.com/problems/count-sub-islands/solutions/5701082/kotlin-rust/)
