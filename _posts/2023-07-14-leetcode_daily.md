@@ -14,6 +14,72 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 02.09.2024
+[1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/description/) medium
+[blog post](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/solutions/5724001/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02092024-1894-find-the-student-that?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/_8MT4fyjo-w)
+![1.webp](https://assets.leetcode.com/users/images/737216df-8707-4959-b5de-26fce4d58837_1725256158.714817.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/722
+
+#### Problem TLDR
+
+Position of a `k` sum in a cyclic array #medium
+
+#### Intuition
+
+First, eliminate the full loops, then find the position.
+To find it, we can just scan again, or do a Binary Search.
+
+#### Approach
+
+* avoid Integer overflow
+* let's use languages' APIs: `sumOf`, `indexOfFirst`, `position`
+* in C++ let's implement the Binary Search
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun chalkReplacer(chalk: IntArray, k: Int): Int {
+        var k = k.toLong() % chalk.sumOf { it.toLong() }
+        return max(0, chalk.indexOfFirst { k -= it;  k < 0 })
+    }
+
+```
+```rust 
+
+    pub fn chalk_replacer(chalk: Vec<i32>, k: i32) -> i32 {
+       let mut k = k as i64 % chalk.iter().map(|&c| c as i64).sum::<i64>(); 
+       chalk.iter().position(|&c| { k -= c as i64; k < 0 }).unwrap_or(0) as i32
+    }
+
+```
+```c++ 
+
+    int chalkReplacer(vector<int>& chalk, int k) {
+        for (int i = 0; i < chalk.size(); i++) {
+            if (i > 0) chalk[i] += chalk[i - 1];
+            if (chalk[i] > k || chalk[i] < 0) return i;
+        }
+        k %= chalk[chalk.size() - 1];
+        return upper_bound(chalk.begin(), chalk.end(), k) - chalk.begin();
+    }
+
+```
+
 # 01.09.2024
 [2022. Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/description/) easy
 [blog post](https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5719190/kotlin-rust/)
