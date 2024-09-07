@@ -14,6 +14,70 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 07.09.2024
+[1367. Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/description/) medium
+[blog post](https://leetcode.com/problems/linked-list-in-binary-tree/solutions/5749980/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07092024-1367-linked-list-in-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/NIIx34wsYMQ)
+![1.webp](https://assets.leetcode.com/users/images/3fe95a4f-288a-4c87-8f36-7af31efc6808_1725697790.1418922.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/727
+
+#### Problem TLDR
+
+Is the LinkedList in the BinaryTree? #medium #linked_list #tree
+
+#### Intuition
+
+The problem size `n` is not that big, we can do a full Depth-First search and try to match Linked List at every tree node.
+
+#### Approach
+
+* the corner case is: `list: [1,2], tree: [1->1->2]`
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun isSubPath(head: ListNode?, root: TreeNode?, start: Boolean = false): Boolean =
+        head == null || head.`val` == root?.`val` && 
+        (isSubPath(head.next, root.left, true) || isSubPath(head.next, root.right, true))
+        || root != null && !start && (isSubPath(head, root.left) || isSubPath(head, root.right))
+
+```
+```rust 
+
+    pub fn is_sub_path(head: Option<Box<ListNode>>, root: Option<Rc<RefCell<TreeNode>>>) -> bool {
+        fn dfs(head: &Option<Box<ListNode>>, root: &Option<Rc<RefCell<TreeNode>>>, start: bool) -> bool {
+            let Some(h) = head else { return true }; let Some(r) = root else { return false };
+            let r = r.borrow();
+            h.val == r.val && (dfs(&h.next, &r.left, true) || dfs(&h.next, &r.right, true))
+            || !start && (dfs(head, &r.left, false) || dfs(head, &r.right, false))
+        }
+        dfs(&head, &root, false)
+    }
+
+```
+```c++ 
+
+    bool isSubPath(ListNode* head, TreeNode* root, bool start = 0) {
+        return !head || root && root->val == head->val 
+        && (isSubPath(head->next, root->left, 1) || isSubPath(head->next, root->right, 1))
+        || root && !start && (isSubPath(head, root->left) || isSubPath(head, root->right));
+    }
+
+```
+
 # 06.09.2024
 [3217. Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/) medium
 [blog post](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5745013/kotlin-rust/)
