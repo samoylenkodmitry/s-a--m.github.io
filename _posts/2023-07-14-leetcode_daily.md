@@ -14,6 +14,88 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 11.09.2024
+[2220. Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/) easy
+[blog post](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/5769518/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11092024-2220-minimum-bit-flips-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/BfaJBZ9Hjeo)
+![1.webp](https://assets.leetcode.com/users/images/d7929cfd-9e9d-41da-916a-e49e792bcd32_1726034785.7937598.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/731
+
+#### Problem TLDR
+
+Bit diff between two numbers #easy #bit_manipulation
+
+#### Intuition
+
+```j
+
+    // 10 1010
+    //  7 0111
+    //    ** *
+
+```
+
+To find the bits count there are several hacks:
+https://stackoverflow.com/a/109025/23151041
+
+https://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel
+
+```j
+
+x = (x & 0b1010101010101010101010101010101) + ((x >> 1) & 0b1010101010101010101010101010101);
+x = (x & 0b0110011001100110011001100110011) + ((x >> 2) & 0b0110011001100110011001100110011);
+x = (x & 0x0F0F0F0F) + ((x >> 4) & 0x0F0F0F0F);
+x = (x & 0x00FF00FF) + ((x >> 8) & 0x00FF00FF);
+x = (x & 0x0000FFFF) + ((x >> 16)& 0x0000FFFF);
+
++-------------------------------+
+| 1 | 1 | 0 | 1 | 0 | 1 | 0 | 1 |  <- x
+|  1 0  |  0 1  |  0 1  |  0 1  |  <- first time merge
+|    0 0 1 1    |    0 0 1 0    |  <- second time merge
+|        0 0 0 0 0 1 0 1        |  <- third time ( answer = 00000101 = 5)
++-------------------------------+
+
+```
+
+#### Approach
+
+* let's use built-in methods
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun minBitFlips(start: Int, goal: Int) = 
+        (start xor goal).countOneBits()
+
+```
+```rust 
+
+    pub fn min_bit_flips(start: i32, goal: i32) -> i32 {
+        (start ^ goal).count_ones() as i32
+    }
+
+```
+```c++ 
+
+    int minBitFlips(int start, int goal) {
+        return __builtin_popcount(start ^ goal);
+    }
+
+```
+
 # 10.09.2024
 [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/) medium
 [blog post](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/solutions/5764441/kotlin-rust/)
