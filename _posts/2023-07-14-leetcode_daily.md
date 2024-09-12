@@ -14,6 +14,70 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 12.09.2024
+[1684. Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/description/) easy
+[blog post](https://leetcode.com/problems/count-the-number-of-consistent-strings/solutions/5774693/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12092024-1684-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/in268wIDmeg)
+![1.webp](https://assets.leetcode.com/users/images/e7642019-ac8f-4339-a210-5da95f4fd4bf_1726121731.9610698.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/732
+
+#### Problem TLDR
+
+Count words with `allowed` characters #easy
+
+#### Intuition
+
+There are total of `26` characters, check them.
+
+#### Approach
+
+* we can use a HashSet
+* we can use a bit mask
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun countConsistentStrings(allowed: String, words: Array<String>) =
+        words.count { it.all { it in allowed }}
+
+```
+```rust 
+
+    pub fn count_consistent_strings(allowed: String, words: Vec<String>) -> i32 {
+        let set: HashSet<_> = allowed.bytes().collect();
+        words.iter().filter(|w| w.bytes().all(|b| set.contains(&b))).count() as _
+    }
+
+```
+```c++ 
+
+    int countConsistentStrings(string allowed, vector<string>& words) {
+        auto bits = [](string w) {
+            int mask = 0; for (int i = 0; i < w.length(); i++) 
+                mask |= 1 << (w[i] - 'a');
+            return mask;
+        };
+        int mask = bits(allowed); int count = 0;
+        for (int i = 0; i < words.size(); i++)
+            count += (mask | bits(words[i])) == mask;
+        return count;
+    }
+
+```
+
 # 11.09.2024
 [2220. Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/) easy
 [blog post](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/5769518/kotlin-rust/)
