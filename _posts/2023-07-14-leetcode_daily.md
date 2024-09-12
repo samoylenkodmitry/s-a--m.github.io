@@ -70,10 +70,9 @@ $$O(1)$$
                 mask |= 1 << (w[i] - 'a');
             return mask;
         };
-        int mask = bits(allowed); int count = 0;
-        for (int i = 0; i < words.size(); i++)
-            count += (mask | bits(words[i])) == mask;
-        return count;
+        int mask = bits(allowed);
+        return std::count_if(words.begin(), words.end(), 
+            [mask, &bits](string w){return (mask | bits(w)) == mask;});
     }
 
 ```
