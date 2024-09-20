@@ -141,6 +141,24 @@ $$O(n)$$
     }
 
 ```
+```kotlin(space-optimmized-kmp)
+
+    fun shortestPalindrome(s: String): String {
+        val f = IntArray(s.length + 1); var j = 0
+        for (i in 2..s.length) {
+            j = f[i - 1]
+            while (j > 0 && s[j] != s[i - 1]) j = f[j]
+            if (s[j] == s[i - 1]) f[i] = j + 1
+        }
+        j = 0
+        for (i in s.indices) {
+            while (j > 0 && s[j] != s[s.length - i - 1]) j = f[j]
+            if (s[j] == s[s.length - i - 1]) j++
+        }
+        return s.drop(j).reversed() + s
+    }
+
+```
 
 # 19.09.2024
 [241. Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) medium
