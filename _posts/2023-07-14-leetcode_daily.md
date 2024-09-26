@@ -14,6 +14,81 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 26.09.2024
+[729. My Calendar I](https://leetcode.com/problems/my-calendar-i/description/) medium
+[blog post](https://leetcode.com/problems/my-calendar-i/solutions/5835486/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/26092024-729-my-calendar-i?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/YxGh9K-mt3A)
+![1.webp](https://assets.leetcode.com/users/images/dc20a969-c155-46b8-be05-a4c61d03059f_1727339809.9408374.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/747
+
+#### Problem TLDR
+
+Insert non-intersection interval #medium #binary_search
+
+#### Intuition
+
+The problem size of `1000` allows the n^2 algorithm to pass.
+However, we can optimise it by finding a place to insert into sorted list. The intervals are non-intersection by definition.
+
+#### Approach
+
+* there is a cool `partition_point` method exists
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$ or n^2 for Kotlin's solution
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+class MyCalendar() : ArrayList<Pair<Int, Int>>() {
+    fun book(start: Int, end: Int): Boolean =
+        none { (s, e) -> start < e && end > s }
+        .also { if (it) add(start to end) }
+}
+
+```
+```rust 
+
+struct MyCalendar(Vec<(i32, i32)>);
+impl MyCalendar {
+    fn new() -> Self { Self(vec![]) }
+    fn book(&mut self, start: i32, end: i32) -> bool {
+        let less = self.0.partition_point(|&(s, e)| e <= start);
+        let more = self.0.partition_point(|&(s, e)| s < end);
+        less == more && { self.0.insert(more, (start, end)); true }
+    }
+}
+
+```
+```c++ 
+
+class MyCalendar {
+public:
+    MyCalendar() {}
+    vector<pair<int, int>> list;
+    bool book(int start, int end) {
+        auto less = partition_point(list.begin(), list.end(), 
+            [start](const auto& b){ return b.second <= start; });
+        auto more = partition_point(list.begin(), list.end(), 
+            [end](const auto& b){ return b.first < end; });
+        if (less != more) return false;
+        list.insert(more, {start, end});
+        return true;
+    }
+};
+
+```
+
 # 25.09.2024
 [2416. Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/) hard
 [blog post](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/solutions/5831195/kotlin-rust/)
