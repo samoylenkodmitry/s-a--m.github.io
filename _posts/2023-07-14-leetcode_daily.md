@@ -100,8 +100,8 @@ public:
         f = (f + 1) % arr.size(); return true; }
     bool deleteLast() { if (isEmpty()) return false;
         l = (arr.size() + l - 1) % arr.size(); return true; }
-    int getFront() { if (isEmpty()) return -1; return arr[f]; }
-    int getRear() { if (isEmpty()) return -1; return arr[l]; }
+    int getFront() { return isEmpty() ? -1 : arr[f]; }
+    int getRear() { return isEmpty() ? -1 : arr[l]; }
     bool isEmpty() { return size() == 0; }
     bool isFull() { return size() == arr.size() - 1; }
     int size() { return (arr.size() + l - f + 1) % arr.size(); }
