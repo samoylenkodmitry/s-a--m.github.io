@@ -14,6 +14,102 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 30.09.2024
+[1381. Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/description/) medium
+[blog post](https://leetcode.com/problems/design-a-stack-with-increment-operation/solutions/5850904/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30092024-1381-design-a-stack-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/Y5hBYwmX8UU)
+![1.webp](https://assets.leetcode.com/users/images/1993eb58-16ef-4a02-af5c-feb6c7719165_1727678006.977871.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/751
+
+#### Problem TLDR
+
+Stack with range increment operation #medium #design
+
+#### Intuition
+
+The naive solution with a single array and O(n) increment operation is accepted.
+
+The clever one is to maintain a second array for `increments` and compute them only for the `pop` operation, shrinking it by one position. Only the `last` increment matters for the stack top.
+
+#### Approach
+
+* let's implement both solutions
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$ for n calls
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+class CustomStack(maxSize: Int) {
+    val arr = IntArray(maxSize); var head = 0
+    fun push(x: Int) { 
+        if (head < arr.size) arr[head++] = x }
+    fun pop() = if (head == 0) -1 else arr[--head]
+    fun increment(k: Int, v: Int) { 
+        for (i in 0..<min(k, head)) arr[i] += v }
+}
+
+```
+```kotlin 
+
+class CustomStack(maxSize: Int) {
+    val arr = IntArray(maxSize); var size = 0
+    val inc = IntArray(maxSize + 1)
+    fun push(x: Int) { if (size < arr.size) arr[size++] = x }
+    fun pop() = if (size < 1) -1 else inc[size] + arr[size - 1].also {
+        inc[size - 1] += inc[size]; inc[size--] = 0
+    }
+    fun increment(k: Int, v: Int) {  inc[min(k, size)] += v }
+}
+
+```
+```rust 
+
+struct CustomStack(Vec<i32>, Vec<i32>, usize);
+impl CustomStack {
+    fn new(maxSize: i32) -> Self { 
+        Self(vec![0; maxSize as usize], vec![0; maxSize as usize + 1], 0) }
+    fn push(&mut self, x: i32) {
+        if self.2 < self.0.len() { self.0[self.2] = x; self.2 += 1 } }
+    fn pop(&mut self) -> i32 { if self.2 < 1 { -1 } else {
+        let res = self.1[self.2] + self.0[self.2 -1];
+        self.1[self.2 - 1] += self.1[self.2];
+        self.1[self.2] = 0; self.2 -= 1;
+        res }}
+    fn increment(&mut self, k: i32, val: i32) {
+        self.1[self.2.min(k as usize)] += val }
+}
+
+```
+```c++ 
+
+class CustomStack {
+public:
+    vector<int> arr, inc; int size;
+    CustomStack(int maxSize): arr(maxSize), inc(maxSize + 1), size(0){}
+    void push(int x) { if (size < arr.size()) arr[size++] = x; }
+    int pop() {
+        if (size < 1) return -1;
+        int res = inc[size] + arr[size - 1];
+        inc[size - 1] += inc[size]; inc[size--] = 0;
+        return res;
+    }
+    void increment(int k, int val) { inc[min(k, size)] += val; }
+};
+
+```
+
 # 29.09.2024
 [432. All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) hard
 [blog post](https://leetcode.com/problems/all-oone-data-structure/solutions/5848184/kotlin-rust/)
