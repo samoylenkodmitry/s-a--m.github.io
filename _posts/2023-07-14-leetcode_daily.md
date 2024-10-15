@@ -15,6 +15,79 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 15.10.2024
+[2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/description/) medium
+[blog post](https://leetcode.com/problems/separate-black-and-white-balls/solutions/5914908/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15102024-2938-separate-black-and?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ptl7zYHaPx0)
+![1.webp](https://assets.leetcode.com/users/images/83d492f8-403e-4870-a364-711542c2a185_1728972793.760527.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/769
+
+#### Problem TLDR
+
+Min moves to sort `01` string #medium #greedy
+
+#### Intuition
+
+Let's try to do this for each of `1` in our example:
+
+```j
+
+    // 0123456789
+    // 1001001001
+    //       .**  2
+    //    .****   4
+    // .******    6 = 12
+
+```
+There is a pattern: the number of moves to push each `1` to the right is equal to the number of `0` between it and its final position. So, going from the end and counting zeros is the answer. 
+
+#### Approach
+
+* we can make iteration forward and count `1` instead to speed up and shorten the code
+* some arithmetic is also applicable (to remove `if` branching)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun minimumSteps(s: String): Long {
+        var x = 0L
+        return s.sumOf { x += it - '0'; x * ('1' - it) }
+    }
+
+```
+```rust 
+
+    pub fn minimum_steps(s: String) -> i64 {
+        let mut x = 0;
+        s.bytes().map(|b| {
+            if b > b'0' { x += 1; 0 } else { x }
+        }).sum()
+    }
+
+```
+```c++ 
+
+    long long minimumSteps(string s) {
+        long long x = 0, res = 0;
+        for (auto c: s) res += ('1' - c) * (x += c - '0');
+        return res;
+    }
+
+```
+
 # 14.10.2024
 [2530. Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/description/) medium
 [blog post](https://leetcode.com/problems/maximal-score-after-applying-k-operations/solutions/5910552/kotlin-rust/)
