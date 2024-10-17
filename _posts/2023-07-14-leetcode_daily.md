@@ -15,6 +15,90 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 17.10.2024
+[670. Maximum Swap](https://leetcode.com/problems/maximum-swap/description/) medium
+[blog post](https://leetcode.com/problems/maximum-swap/solutions/5924164/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17102024-670-maximum-swap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/qq2cmVPrm7k)
+[deep-dive](https://notebooklm.google.com/notebook/251aab6e-edf5-4e41-92ba-71676711a55a/audio)
+![1.webp](https://assets.leetcode.com/users/images/ffa836a8-7104-4173-b9a7-c1e1a520cdf3_1729149881.1619146.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/771
+
+#### Problem TLDR
+
+Max number after a single digits swap #medium #greedy
+
+#### Intuition
+
+This can be done in a single pass, let's try an example:
+
+```j
+
+    // 43210
+    // 90909
+    //  .  * maxI = 0
+    //  . *
+    //  .*
+    //  * j = 3
+    // *
+
+```
+Going backwards we find the last `max` and a swap it with the most recent value lower than it.
+
+#### Approach
+
+* some arithmetics is applicable, for our example `90909 -> 99900` we do `-9` and `+9000`, so we can track and maximize the total delta `8991`
+
+#### Complexity
+
+- Time complexity:
+$$O(lg(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun maximumSwap(num: Int): Int {
+        var maxd = 0; var plow = 0; var n = num; var pow = 1; var delta = 0
+        while (n > 0) {
+            if (n % 10 > maxd) { maxd = n % 10 ; plow = pow }
+            else delta = max(delta, (pow - plow) * (maxd - n % 10)) 
+            pow *= 10; n /= 10
+        }
+        return num + delta
+    }
+
+```
+```rust 
+
+    pub fn maximum_swap(num: i32) -> i32 {
+        let (mut maxd, mut plow, mut n, mut pow, mut delta) = (0, 0, num, 1, 0);
+        while n > 0 {
+            if n % 10 > maxd { maxd = n % 10; plow = pow }
+            else { delta = delta.max((pow - plow) * (maxd - n % 10)) }
+            pow *= 10; n /= 10
+        }
+        num + delta
+    }
+
+```
+```c++ 
+
+    int maximumSwap(int num) {
+        int maxd = 0, plow = 0, n = num, pow = 1, delta = 0;
+        for (; n; pow *= 10, n /= 10) n % 10 > maxd ?
+            (maxd = n % 10, plow = pow) : delta = max(delta, (pow - plow) * (maxd - n % 10));
+        return num + delta;
+    }
+
+```
+
 # 16.10.2024
 [1405. Longest Happy String](https://leetcode.com/problems/longest-happy-string/description/) medium
 [blog post](https://leetcode.com/problems/longest-happy-string/solutions/5919764/kotlin-rust/)
