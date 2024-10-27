@@ -20,6 +20,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27102024-1277-count-square-submatrices?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Gj8Up_J5b9Q)
 [deep-dive](https://notebooklm.google.com/notebook/38118315-ea9f-40e9-9280-7db675a7287d/audio)
+![1.webp](https://assets.leetcode.com/users/images/c1a8c425-10db-49bc-b077-12048f444a79_1730022744.2291765.webp)
+
 #### Problem TLDR
 
 Count `1`-filled squares in 2D matrix #medium #dynamic_programming
