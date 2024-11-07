@@ -90,6 +90,20 @@ $$O(1)$$
     }
 
 ```
+```rust(optimized)
+
+    pub fn largest_combination(candidates: Vec<i32>) -> i32 {
+        let mut r = [0; 32];
+        for mut n in candidates {
+            while n > 0 {
+                r[n.trailing_zeros() as usize] += 1;
+                n = n & (n - 1);
+            }
+        }
+        *r.iter().max().unwrap()
+    }
+
+```
 
 # 06.11.2024
 [3011. Find if Array Can Be Sorted](https://leetcode.com/problems/find-if-array-can-be-sorted/description/) medium
