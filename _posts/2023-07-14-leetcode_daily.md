@@ -15,6 +15,81 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 08.11.2024
+[1829. Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/description/) medium
+[blog post](https://leetcode.com/problems/maximum-xor-for-each-query/solutions/6022237/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/08112024-1829-maximum-xor-for-each?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/yoKp2xrbnk4)
+[deep-dive](https://notebooklm.google.com/notebook/430f6625-3c93-4df6-bd22-c150ce1ffa7e/audio)
+![1.webp](https://assets.leetcode.com/users/images/f02d69ee-cb55-4d31-ba52-091e399ba4c5_1731051115.5323389.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/794
+
+#### Problem TLDR
+
+Running `xor` to make `2^k-1` #medium #bit_manipulation
+
+#### Intuition
+
+Let's observe what's happening:
+
+```j
+
+    //     n  xor[..i]    k < 2^mb(=b100)
+    // b00  0  00          00^x = 11  11 = 3
+    // b01  1  01          01^x = 11  10 = 2
+    // b01  1  00          00^x = 11  11 = 3
+    // b11  3  11          11^x = 11  00 = 0
+    // 100                              ans = [ 0 3 2 3 ]
+
+```
+For `k=2` we have to make maximum `2^k-1 = b011`. Consider each column of bits independently: we can count them and `even` would give `0`, odd `1`. So, one way to solve it is to count `k` bits and set all that happens to be `even` to `1`.
+On second thought, all this equalized into a `xor` operation: `xor[0..i] ^ res[i] = 0b11`.
+
+#### Approach
+
+* we don't have to do `xor 2^k-1` on each item, just start with it
+* let's use `scan` iterator in Kotlin
+* Rust also has a `scan` but it is more verbose
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun getMaximumXor(nums: IntArray, maximumBit: Int) = nums
+        .scan((1 shl maximumBit) - 1) { r, t -> r xor t }
+        .drop(1).reversed()
+
+```
+```rust 
+
+    pub fn get_maximum_xor(nums: Vec<i32>, maximum_bit: i32) -> Vec<i32> {
+        let mut r = (1 << maximum_bit) - 1;
+        let mut res = nums.iter().map(|n| { r ^= n; r }).collect::<Vec<_>>();
+        res.reverse(); res
+    }
+
+```
+```c++ 
+
+    vector<int> getMaximumXor(vector<int>& nums, int maximumBit) {
+        int x = (1 << maximumBit) - 1, i = nums.size(); vector<int> res(i); 
+        for (;i;i--) res[i - 1] = x ^= nums[nums.size() - i];
+        return res;
+    }
+
+```
+
 # 07.11.2024
 [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/) medium
 [blog post](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/solutions/6018558/kotlin-rust/)
