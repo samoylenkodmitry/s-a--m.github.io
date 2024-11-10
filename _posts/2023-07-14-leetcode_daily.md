@@ -35,9 +35,9 @@ Min subarray with `OR[..] >= k` #medium #bit_manipulation #sliding_window
 
 First, don't solve the wrong problem, `OR[..]` must be `at least k`, not the `exact k`.
 
-Now, the simple idea is to use the `Sliding Window` technique: expand it with each number, calculating the `OR`. However, the shrinking is not trivial, as the `OR` operation is not reversable. So, we should track how each number bits are add in the final `OR` result to be able to remove them. To do this, count each bit frequency.
+Now, the simple idea is to use the `Sliding Window` technique: expand it with each number, calculating the `OR`. However, the shrinking is not trivial, as the `OR` operation is not reversable. So, we should track how each number bits are add to the final `OR` result to be able to remove them. To do this, count each bit frequency.
 
-Another way to look at this problem is no maintain the most recent index of each bit:
+Another way to look at this problem is to maintain the most recent index of each bit:
 
 ```j
 
