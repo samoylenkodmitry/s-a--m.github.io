@@ -15,6 +15,138 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 10.11.2024
+[3097. Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/description/) medium
+[blog post](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/solutions/6029875/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10112024-3097-shortest-subarray-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/8B3Zmw0GOrA)
+[deep-dive](https://notebooklm.google.com/notebook/9470a533-a1ff-42d7-a510-c8d62bcf1957/audio)
+![1.webp](https://assets.leetcode.com/users/images/11fd10be-043e-4359-a0ac-be466d4a0d91_1731234017.8480213.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/796
+
+#### Problem TLDR
+
+Min subarray with `OR[..] >= k` #medium #bit_manipulation #sliding_window
+
+#### Intuition
+
+First, don't solve the wrong problem, `OR[..]` must be `at least k`, not the `exact k`.
+
+Now, the simple idea is to use the `Sliding Window` technique: expand it with each number, calculating the `OR`. However, the shrinking is not trivial, as the `OR` operation is not reversable. So, we should track how each number bits are add in the final `OR` result to be able to remove them. To do this, count each bit frequency.
+
+Another way to look at this problem is no maintain the most recent index of each bit:
+
+```j
+
+    //                             not exact, but 'at least k'!
+    // k=101
+    //  1000 <-- good, bigger than b101, any number with higher bit => 1
+    //   110 <-- good, bigger than b101, any number with same prefix => 1
+    //   010 <---------------------------. 
+    //   001 -> search for second bit    |
+    //  *011 -> update pos for first bit | this OR will give 110 > 101, good
+    //   000                             |
+    //  *100 <-- second bit--------------J
+
+```
+
+This solution is more complex, as we should analyze every bit for possible corner cases. 
+
+#### Approach
+
+* one optimization is if the number is bigger than `k` we can return 1
+* pointers approach is a single-pass but is slower than frequencies approach for the test dataset (30ms vs 5ms)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun minimumSubarrayLength(nums: IntArray, k: Int): Int {
+        var min = nums.size + 1
+        val pos = IntArray(32) { -1 }
+        for ((i, n) in nums.withIndex()) {
+            if (n >= k) return 1
+            var max = -1; var all = true
+            for (b in 31 downTo 0) {
+                if ((n shr b) % 2 > 0) pos[b] = i
+                val kBit = (k shr b) % 2 > 0
+                if (kBit && pos[b] < 0) all = false
+                if (all && !kBit && pos[b] >= 0) min = min(min, max(max, i - pos[b] + 1))
+                if (all && kBit) max = max(max, i - pos[b] + 1)
+            }
+            if (all) min = min(min, max)
+        }
+        return if (min > nums.size) -1 else min
+    }
+
+```
+```kotlin 
+
+    fun minimumSubarrayLength(nums: IntArray, k: Int): Int {
+        var min = nums.size + 1; val f = IntArray(30)
+        var j = 0; var o = 0
+        for ((i, n) in nums.withIndex()) {
+            o = o or n; if (n >= k) return 1
+            for (b in 0..29) f[b] += (n shr b) % 2
+            while (o >= k) {
+                min = min(min, i - j + 1)
+                for (b in 0..29) if ((nums[j] shr b) % 2 > 0)
+                    if (--f[b] < 1) o -= 1 shl b
+                j++
+            }
+        }
+        return if (min > nums.size) -1 else min
+    }  
+
+```
+```rust 
+
+    pub fn minimum_subarray_length(nums: Vec<i32>, k: i32) -> i32 {
+        let (mut r, mut f, mut j, mut o) = (nums.len() as i32 + 1, [0; 31], 0, 0);
+        for (i, &n) in nums.iter().enumerate() {
+            o |= n; if n >= k { return 1 }
+            for b in 0..30 { f[b as usize] += (n >> b) & 1 }
+            while o >= k {
+                r = r.min(i as i32 - j as i32 + 1);
+                for b in 0..30 { if (nums[j] >> b) & 1 > 0 {
+                    f[b as usize] -= 1;
+                    if f[b] < 1 { o -= 1 << b }
+                }}
+                j += 1
+            }
+        }
+        if r > nums.len() as i32 { -1 } else { r }
+    }
+
+```
+```c++ 
+
+    int minimumSubarrayLength(vector<int>& a, int k) {
+        int r = a.size() + 1, j = 0, o = 0, b = 0;
+        int f[31] = {};
+        for (int i = 0; i < a.size(); ++i) {
+            if (a[i] >= k) return 1;
+            for (b = 0; b < 30; b++) f[b] += a[i] >> b & 1;
+            for (o |= a[i]; o >= k; j++)
+                for (r = min(r, i - j + 1), b = 0; b < 30; b++)
+                    if ((a[j] >> b & 1) && !--f[b]) o -= 1 << b;
+        }
+        return r > a.size() ? -1 : r;
+    }
+
+```
+
 # 09.11.2024
 [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/) medium
 [blog post](https://leetcode.com/problems/minimum-array-end/solutions/6026342/kotlin-rust/)
