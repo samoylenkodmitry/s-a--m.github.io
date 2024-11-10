@@ -147,6 +147,25 @@ $$O(n)$$
 
 ```
 
+Bonus solution without bits array:
+
+```kotlin
+    fun minimumSubarrayLength(nums: IntArray, k: Int): Int {
+        var ans = nums.size + 1
+        var o = 0
+        for ((i, n) in nums.withIndex()) {
+            if (n >= k) return 1
+            o = o or n
+            if (o < k) continue
+            o = 0
+            var j = i
+            while (o or nums[j] < k) o = o or nums[j--]
+            ans = minOf(ans, i - j + 1)
+        }
+        return if (ans > nums.size) -1 else ans
+    }
+```
+
 # 09.11.2024
 [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/) medium
 [blog post](https://leetcode.com/problems/minimum-array-end/solutions/6026342/kotlin-rust/)
