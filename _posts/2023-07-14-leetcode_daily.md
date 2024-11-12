@@ -21,7 +21,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12112024-2070-most-beautiful-item?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BnRaBTepoqI)
 [deep-dive](https://notebooklm.google.com/notebook/0c4ed67b-0c04-45cf-a66b-6f119fb889be/audio)
-![1.webp](https://assets.leetcode.com/users/images/eebdd07b-35c5-458d-b927-6ae9da96103d_1731399409.257749.webp)
+![1.webp](https://assets.leetcode.com/users/images/beb7dc46-abd3-4dd2-bbb9-040673e26d39_1731399874.2511334.webp)
+
 
 #### Join me on Telegram
 
@@ -68,7 +69,7 @@ $$O(n)$$
 
     pub fn maximum_beauty(mut items: Vec<Vec<i32>>, queries: Vec<i32>) -> Vec<i32> {
         items.sort_unstable();
-        for i in 1..items.len() { items[i][1] = items[i][1].max(items[i - 1][1]) }
+        items.dedup_by(|a, b| a[1] <= b[1]);
         queries.iter().map(|&q| {
             let j = items.partition_point(|t| q >= t[0]);
             if j < 1 { 0 } else { items[j - 1][1] }
