@@ -15,6 +15,83 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 12.11.2024
+[2070. Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query/description/) medium
+[blog post](https://leetcode.com/problems/most-beautiful-item-for-each-query/solutions/6036393/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12112024-2070-most-beautiful-item?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/BnRaBTepoqI)
+[deep-dive](https://notebooklm.google.com/notebook/0c4ed67b-0c04-45cf-a66b-6f119fb889be/audio)
+![1.webp](https://assets.leetcode.com/users/images/a018c105-1516-486e-a835-58f101855a4f_1731398559.8396554.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/798
+
+#### Problem TLDR
+
+Queries of `max` beauty for `q[i]` price #medium #binary_search
+
+#### Intuition
+
+If we sort everything, we can do a line sweep: for each increasing `query` price move `items` pointer and pick `max` beauty.
+
+More shorter solution is to do a BinarySearch for each query. But we should precompute `max beauty` for each item price range.
+
+#### Approach
+
+* Kotlin has a `binarySearchBy` but only for `List`
+* Rust & C++ has a more elegant `partition_point`
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$ for the Line Sweep and for the Binary Search
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun maximumBeauty(items: Array<IntArray>, queries: IntArray): IntArray {
+        items.sortWith(compareBy({ it[0] }, { -it[1] }))
+        for (i in 1..<items.size) items[i][1] = max(items[i][1], items[i - 1][1])
+        return IntArray(queries.size) { i ->
+            var j = items.asList().binarySearchBy(queries[i]) { it[0] }
+            if (j == -1) 0 else if (j < 0) items[-j - 2][1] else items[j][1]
+        }
+    }
+
+```
+```rust 
+
+    pub fn maximum_beauty(mut items: Vec<Vec<i32>>, queries: Vec<i32>) -> Vec<i32> {
+        items.sort_unstable();
+        for i in 1..items.len() { items[i][1] = items[i][1].max(items[i - 1][1]) }
+        queries.iter().map(|&q| {
+            let j = items.partition_point(|t| q >= t[0]);
+            if j < 1 { 0 } else { items[j - 1][1] }
+        }).collect()
+    }
+
+```
+```c++ 
+
+    vector<int> maximumBeauty(vector<vector<int>>& items, vector<int>& queries) {
+        sort(begin(items), end(items));
+        for (int i = 1; i < items.size(); ++i) items[i][1] = max(items[i][1], items[i - 1][1]);
+        vector<int> res;
+        for (int q: queries) {
+            auto it = partition_point(begin(items), end(items), 
+                [q](const auto& x) { return q >= x[0];});
+            res.push_back(it == begin(items) ? 0 : (*(it - 1))[1]);
+        }
+        return res;
+    }
+
+```
+
 # 11.11.2024
 [2601. Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/description/) medium
 [blog post](https://leetcode.com/problems/prime-subtraction-operation/solutions/6032862/kotlin-rust/)
