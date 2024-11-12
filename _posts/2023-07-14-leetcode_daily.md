@@ -21,7 +21,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12112024-2070-most-beautiful-item?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BnRaBTepoqI)
 [deep-dive](https://notebooklm.google.com/notebook/0c4ed67b-0c04-45cf-a66b-6f119fb889be/audio)
-![1.webp](https://assets.leetcode.com/users/images/a018c105-1516-486e-a835-58f101855a4f_1731398559.8396554.webp)
+![1.webp](https://assets.leetcode.com/users/images/eebdd07b-35c5-458d-b927-6ae9da96103d_1731399409.257749.webp)
 
 #### Join me on Telegram
 
