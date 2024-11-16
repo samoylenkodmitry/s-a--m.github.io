@@ -89,15 +89,11 @@ $$O(n)$$
 ```kotlin 
 
     fun resultsArray(nums: IntArray, k: Int): IntArray {
-        val queue = ArrayDeque<Int>()
-        var prev = 0
-        var res = mutableListOf<Int>()
+        var queue = 1; var prev = 0
         return nums.map { n ->
-            if (n != prev + 1) queue.clear()
-            queue += n
+            queue = if (n == prev + 1) min(queue + 1, k) else 1
             prev = n
-            if (queue.size > k) queue.removeFirst()
-            if (queue.size == k) n else -1
+            if (queue == k) n else -1
         }.takeLast(nums.size - k + 1).toIntArray()
     }
 
