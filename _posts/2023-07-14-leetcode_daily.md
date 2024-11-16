@@ -15,6 +15,94 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 16.11.2024
+[3254. Find the Power of K-Size Subarrays I](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/description/) medium
+[blog post](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/solutions/6050665/kotlin-rust/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16112024-3254-find-the-power-of-k?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/uY_uQ3pcylM)
+[deep-dive](https://notebooklm.google.com/notebook/a030195d-fc29-4894-88cf-0e5e9a623b57/audio)
+![1.webp](https://assets.leetcode.com/users/images/dc54c630-e034-4f43-872d-e84ea16e5366_1731748737.1215198.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/802
+
+#### Problem TLDR
+
+Tops of consecutive increasing windows #medium #sliding_window
+
+#### Intuition
+
+Keep track of the start of the increasing part.
+
+#### Approach
+
+* brain-fog friendly approach is to maintain some queue to avoid one-offs with pointers
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun resultsArray(nums: IntArray, k: Int): IntArray {
+        val res = IntArray(nums.size - k + 1) { -1 }; var j = 0
+        for ((i, n) in nums.withIndex()) {
+            if (i > 0 && n != nums[i - 1] + 1) j = i
+            if (i - k + 1 >= j) res[i - k + 1] = n
+        }
+        return res
+    }
+
+```
+
+```rust 
+
+    pub fn results_array(nums: Vec<i32>, k: i32) -> Vec<i32> {
+        let (mut j, k) = (0, k as usize);
+        let mut res = vec![-1; nums.len() - k + 1];
+        for i in 0..nums.len() {
+            if i > 0 && nums[i] != nums[i - 1] + 1 { j = i }
+            if i + 1 >= j + k { res[i - k + 1] = nums[i] }
+        }; res
+    }
+
+```
+```c++ 
+
+    vector<int> resultsArray(vector<int>& n, int k) {
+        vector<int> r(n.size() - k + 1, -1);
+        for (int i = 0, j = 0; i < n.size(); ++i) {
+            if (i && n[i] != n[i - 1] + 1) j = i;
+            if (i - k + 1 >= j) r[i - k + 1] = n[i];
+        }
+        return r;
+    }
+
+```
+```kotlin 
+
+    fun resultsArray(nums: IntArray, k: Int): IntArray {
+        val queue = ArrayDeque<Int>()
+        var prev = 0
+        var res = mutableListOf<Int>()
+        return nums.map { n ->
+            if (n != prev + 1) queue.clear()
+            queue += n
+            prev = n
+            if (queue.size > k) queue.removeFirst()
+            if (queue.size == k) n else -1
+        }.takeLast(nums.size - k + 1).toIntArray()
+    }
+
+```
+
 # 15.11.2024
 [1574. Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/description/) medium
 [blog post](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/solutions/6047263/kotlin-rust/)
