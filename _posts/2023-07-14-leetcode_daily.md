@@ -180,13 +180,13 @@ $$O(nm)$$
     }
 
 ```
-```c++ 
+```
 
     int minimumObstacles(vector<vector<int>>& g) {
         int m = g.size(), n = g[0].size();
         vector<vector<int>> obs(m, vector<int>(n, INT_MAX));
         deque<tuple<int, int, int>> q; q.emplace_back(0, 0, 0);
-        vector<pair<int, int>>dxy{{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
+        vector<pair<int, int>>dxy..-1, 0}, {0, 1}, {1, 0}, {0, -1..; // replace . to {
         while (q.size()) {
             auto [y, x, o] = q.front(); q.pop_front();
             for (auto [dy, dx]: dxy) {
