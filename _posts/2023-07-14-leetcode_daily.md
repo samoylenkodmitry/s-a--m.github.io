@@ -66,8 +66,9 @@ $$mn$$
                     q += listOf(y1, x1, 1 + max(grid[y1][x1] - max(0, grid[y1][x1] - t) % 2, t))
         }; return -1
     }
-``k
+
 ```
+
 ```rust
 
     pub fn minimum_time(grid: Vec<Vec<i32>>) -> i32 {
