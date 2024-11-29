@@ -93,7 +93,7 @@ $$mn$$
         vector<vector<int>> time(g.size(), vector<int>(g[0].size(), INT_MAX));
         while (pq.size()) {
             auto [t, y, x] = pq.top(); pq.pop();
-            for (auto [y1, x1] : array<int[2],4>\{\{{y - 1, x}, {y + 1, x}, {y, x - 1}, {y, x + 1\}\}}) { // '\' symbol prevent site parser's crash
+            for (auto [y1, x1] : array<int[2],4>..{y - 1, x}, {y + 1, x}, {y, x - 1}, {y, x + 1\}..) { // replace '.' to '{' 
                 if (min(y1, x1) < 0 || y1 >= g.size() || x1 >= g[0].size()) continue;
                 int t1 = max(-t + 1, g[y1][x1] + (g[y1][x1] + t + 1) % 2);
                 if (t1 >= time[y1][x1]) continue;
