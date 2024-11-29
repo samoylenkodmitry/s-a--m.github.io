@@ -85,7 +85,7 @@ $$mn$$
     }
 
 ```
-```c++ 
+```
 
     int minimumTime(vector<vector<int>>& g) {
         if (min(g[0][1], g[1][0]) > 1) return -1;
