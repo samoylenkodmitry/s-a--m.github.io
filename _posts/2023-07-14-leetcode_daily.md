@@ -21,8 +21,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15122024-1792-maximum-average-pass?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Y3GsodbgXK8)
 [deep-dive](https://notebooklm.google.com/notebook/8838b02a-d70f-4057-a8bd-90e92a6d7cb1/audio)
-![1.webp](https://assets.leetcode.com/users/images/56468132-0b8b-4e48-8988-695295dd565f_1734254483.3896348.webp)
-
+![1.webp](https://assets.leetcode.com/users/images/5482d86c-5db9-459b-943b-bf69b98e78bc_1734255723.345543.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/833
