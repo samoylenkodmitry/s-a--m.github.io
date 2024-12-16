@@ -15,6 +15,73 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 16.12.2024
+[3264. Final Array State After K Multiplication Operations I](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/description/) easy
+[blog post](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/solutions/6151467/kotlin-rust-by-samoylenkodmitry-zyup/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16122024-3264-final-array-state-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/g3oQ_y-icNo)
+[deep-dive](https://notebooklm.google.com/notebook/a1a2ede1-8cc5-4c8b-b017-9f28aaefb553/audio)
+![1.webp](https://assets.leetcode.com/users/images/ed1d0405-38bf-40d9-ba8b-9ff19eeb3734_1734332167.2837386.webp)
+
+#### Join me on Telegram 
+
+https://t.me/leetcode_daily_unstoppable/834
+
+#### Problem TLDR
+
+Mutliply `k` minimums #easy
+
+#### Intuition
+
+The problem size is small, the brute force works.
+
+One improvement is to use a heap.
+
+#### Approach
+
+* will bucket sort work?
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$ or nlog(n)
+
+- Space complexity:
+$$O(1)$$ or O(n)
+
+#### Code
+
+```kotlin 
+
+    fun getFinalState(nums: IntArray, k: Int, multiplier: Int) = nums.apply {
+        for (i in 1..k) nums[indexOf(min())] *= multiplier
+    }
+
+```
+```rust 
+
+    pub fn get_final_state(mut nums: Vec<i32>, k: i32, multiplier: i32) -> Vec<i32> {
+        let mut h = BinaryHeap::from_iter(nums.iter().enumerate().map(|(i, &x)| (-x, -(i as i32))));
+        for i in 0..k {
+            let (x, i) = h.pop().unwrap();
+            nums[(-i) as usize] *= multiplier;
+            h.push((x * multiplier, i));
+        }; nums
+    }
+
+```
+```c++ 
+
+    vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
+        while (k--) {
+            int j = 0;
+            for (int i = 0; i < nums.size(); ++i) if (nums[i] < nums[j]) j = i;
+            nums[j] *= multiplier;
+        } return nums;
+    }
+
+```
+
 # 15.12.2024
 [1792. Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/description/) medium
 [blog post](https://leetcode.com/problems/maximum-average-pass-ratio/solutions/6148543/kotlin-rust-by-samoylenkodmitry-8aod/)
