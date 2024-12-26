@@ -15,7 +15,94 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
-# 24.12.2024
+# 26.12.2024
+[494. Target Sum](https://leetcode.com/problems/target-sum/description/) medium
+[blog post](https://leetcode.com/problems/target-sum/solutions/6188557/kotlin-rust-by-samoylenkodmitry-d2jw/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/26122024-494-target-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/8__oX8KSRPU)
+[deep-dive](https://notebooklm.google.com/notebook/b6213920-2531-4c4a-8a07-d19c04dfe813/audio)
+![1.webp](https://assets.leetcode.com/users/images/2029e222-284e-466a-8745-6cae16fbf367_1735205867.4473562.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/844
+
+#### Problem TLDR
+
+Count signs permutations to sum equal target #medium #dynamic_programming
+
+#### Intuition
+
+The DFS + memo: for every position and current target try `plus` sign and `minus` sign; terminal condition is `target == 0`; add memo using a HashMap or 2D array.
+
+More interesting is how to do this bottom-up: for each new number `nums[i]`, check if we have previous results in `dp[i - 1][target]` for every target in range `-1000..1000`, and if so, do a `plus` action and a `minus` action by adding it to `dp[i][target-nums[i]]` and `dp[i][target+nums[i]]`.
+
+The super-clever variant is a 1D dp (stealing it from others). It starts with math:
+* we are adding another number to the previous result
+* new_target + n = sum
+* new_target - n = target
+
+`2 * new_target = sum + target, or new_target = (sum + target) / 2`.
+
+That gives us the freedom to do just a `plus` operation, and reuse the same `dp` array, by adding the extra false-positive check: (sum + target) % 2 == 0, and abs(sum) >= abs(target).
+
+#### Approach
+
+* let's implement all of the approaches to feel the numbers
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$ to O(n)
+
+- Space complexity:
+$$O(n^2)$$ to O(n) 
+
+#### Code
+
+```kotlin 
+
+    fun findTargetSumWays(nums: IntArray, target: Int): Int {
+        val dp = HashMap<Pair<Int, Int>, Int>()
+        fun dfs(pos: Int, target: Int): Int = dp.getOrPut(pos to target) {
+            if (pos == nums.size) if (target == 0) 1 else 0
+            else dfs(pos + 1, target - nums[pos]) + 
+                 dfs(pos + 1, target + nums[pos])
+        }
+        return dfs(0, target)
+    }
+
+```
+```rust 
+
+    pub fn find_target_sum_ways(nums: Vec<i32>, target: i32) -> i32 {
+        let mut dp = vec![vec![0; 2001]; nums.len()];
+        dp[0][1000 + nums[0] as usize] = 1; dp[0][1000 - nums[0] as usize] += 1;
+        for i in 1..dp.len() {
+            for target in 0..2001 {
+                if dp[i - 1][target] > 0 {
+                    dp[i][target + nums[i] as usize] += dp[i - 1][target];
+                    dp[i][target - nums[i] as usize] += dp[i - 1][target]
+                }
+            }
+        }; dp[dp.len() - 1][1000 + target as usize]
+    }
+
+```
+```c++ 
+
+    int findTargetSumWays(vector<int>& nums, int target) {
+        vector<int> dp(2001, 0); dp[0] = 1; int s = 0;
+        for (int n : nums) {
+            s += n;
+            for (int t = 1000 + target; t >= n; --t) dp[t] += dp[t - n];
+        }
+        return abs(s) < abs(target) || (s + target) % 2 > 0 ? 0: dp[(s + target) / 2];
+    }
+
+```
+
+# 25.12.2024
 [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/) medium
 [blog post](https://leetcode.com/problems/find-largest-value-in-each-tree-row/solutions/6184465/kotlin-rust-by-samoylenkodmitry-p92i/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24122024-515-find-largest-value-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
@@ -90,7 +177,7 @@ $$O(log(n))$$
 
 ```
 
-# 23.12.2024
+# 24.12.2024
 [3203. Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/description/) hard
 [blog post](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/solutions/6180735/kotlin-rust-by-samoylenkodmitry-6638/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23122024-3203-find-minimum-diameter?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
