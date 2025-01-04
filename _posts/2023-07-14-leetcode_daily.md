@@ -15,6 +15,74 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 04.01.2025
+[1930. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/) medium
+[blog post](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/6228724/kotlin-rust-by-samoylenkodmitry-htcr/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04012025-1930-unique-length-3-palindromic?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/I3QXiWEylZk)
+[deep-dive](https://notebooklm.google.com/notebook/5d386e3a-3633-46a5-b9b1-87175fb47cb1/audio)
+![1.webp](https://assets.leetcode.com/users/images/e9f3e504-dfaa-464d-a33c-c9923c8e42c7_1735985793.385788.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/854
+
+#### Problem TLDR
+
+Count palindromes of length 3 #medium
+
+#### Intuition
+
+Count unique characters between each pair of the same chars
+
+#### Approach
+
+* building a HashSet can be slower then just checking for contains 26 times
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun countPalindromicSubsequence(s: String) =
+        ('a'..'z').sumOf { c ->
+            val s = s.slice(s.indexOf(c) + 1..< s.lastIndexOf(c))
+            ('a'..'z').count { it in s }
+        }
+
+```
+```rust 
+
+    pub fn count_palindromic_subsequence(s: String) -> i32 {
+        ('a'..='z').map(|c| {
+            let i = s.find(c).unwrap_or(0);
+            let j = s.rfind(c).unwrap_or(0);
+            if i + 1 >= j { 0 } else
+            { ('a'..='z').filter(|&c| s[i+1..j].contains(c)).count() }
+        }).sum::<usize>() as i32
+    }
+
+```
+```c++
+
+    int countPalindromicSubsequence(string s) {
+        int f[26] = {}, l[26] = {}, r = 0; fill(f, f+26, INT_MAX);
+        for (int i = 0; i < s.size(); ++i)
+            f[s[i] - 'a'] = min(f[s[i] - 'a'], i), l[s[i] - 'a'] = i;
+        for (int i = 0; i < 26; ++i) if (f[i] < l[i])
+            r += unordered_set<char>(begin(s) + f[i] + 1, begin(s) + l[i]).size();
+        return r;
+    }
+
+```
+
 # 03.01.2025
 [2270. Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/description/) medium
 [blog post](https://leetcode.com/problems/number-of-ways-to-split-array/solutions/6223552/kotlin-rust-by-samoylenkodmitry-rpz3/)
