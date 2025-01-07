@@ -14,6 +14,69 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 07.01.2025
+[1408. String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/description/) easy
+[blog post](https://leetcode.com/problems/string-matching-in-an-array/solutions/6243721/kotlin-rust-by-samoylenkodmitry-s0hg/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07012025-1408-string-matching-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/UHgFY3seZCo)
+[deep-dive](https://notebooklm.google.com/notebook/ad5d34b7-a8d1-4f14-a324-8e099d2d7408/audio)
+![1.webp](https://assets.leetcode.com/users/images/3dee358e-30dc-4780-9ab5-599e056b75b2_1736242570.3162892.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/857
+
+#### Problem TLDR
+
+All substrings #easy
+
+#### Intuition
+
+Brute force is accepted. 
+
+#### Approach
+
+* we can improve speed by searching for at least 2 matches in the joined words (and speed this up with KMP or Robin-Karp rolling hash)
+* careful to not include the word twice
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2w^2)$$, w^2 for `word1.contains(word2)`
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun stringMatching(words: Array<String>) = 
+        words.filter { w -> words.any { w != it && w in it }}
+
+```
+```rust 
+
+    pub fn string_matching(words: Vec<String>) -> Vec<String> {
+        words.iter().filter(|w| words.iter().any(|w2| 
+            *w != w2 && w2.contains(*w))).cloned().collect()
+    }
+
+```
+```c++ 
+
+    vector<string> stringMatching(vector<string>& words) {
+        vector<string> r;
+        for (int i = 0; i < words.size(); ++i)
+            for (int j = 0; j < words.size(); ++j)
+                if (i != j && words[j].find(words[i]) != string::npos) {
+                    r.push_back(words[i]); break;
+                }
+        return r;
+    }
+
+```
+
 # 06.01.2025
 [1769. Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description/) medium
 [blog post](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/solutions/6238518/kotlin-rust-by-samoylenkodmitry-3kow/)
