@@ -14,6 +14,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 09.01.2025
+[2185. Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/description/) easy
+[blog post](https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6253530/kotlin-rust-by-samoylenkodmitry-dz1s/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09012025-2185-counting-words-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/vou1HeSppHc)
+[deep-dive](https://notebooklm.google.com/notebook/f178b954-9a22-4606-91d6-0905671c671f/audio)
+![1.webp](https://assets.leetcode.com/users/images/41fd078c-36ae-4fca-9907-ead82b0b485d_1736406417.528314.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/859
+
+#### Problem TLDR
+
+Count words with prefix #easy
+
+#### Intuition
+
+Brute-force is optimal.
+
+#### Approach
+
+* how short can it be?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun prefixCount(words: Array<String>, pref: String) = 
+        words.count { it.startsWith(pref) }
+
+```
+```rust 
+
+    pub fn prefix_count(words: Vec<String>, pref: String) -> i32 {
+        words.iter().filter(|w| w.starts_with(&pref)).count() as _
+    }
+
+```
+```c++ 
+
+    int prefixCount(vector<string>& words, string pref) {
+        int r = 0;
+        for (auto &w: words) r += w.starts_with(pref);
+        return r;
+    }
+
+```
+
 # 08.01.2025
 [3042. Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/description/) easy
 [blog post](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/solutions/6248509/kotlin-rust-by-samoylenkodmitry-234n/)
