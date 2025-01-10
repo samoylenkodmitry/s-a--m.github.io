@@ -14,6 +14,81 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 10.01.2025
+[916. Word Subsets](https://leetcode.com/problems/word-subsets/description/) medium
+[blog post](https://leetcode.com/problems/word-subsets/solutions/6259279/kotlin-rust-by-samoylenkodmitry-ts9b/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10012025-916-word-subsets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/z5O2cvLYTpI)
+[deep-dive](https://notebooklm.google.com/notebook/c7a944bf-c59c-477a-8d27-78f1e08b19e2/audio)
+![1.webp](https://assets.leetcode.com/users/images/68e40f60-24a6-4ab6-88db-b4277745ac53_1736500546.8594441.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/860
+
+#### Problem TLDR
+
+Words containing all chars of words2 #medium
+
+#### Intuition
+
+Calculate the maximum frequency of words2, then filter words1.
+
+#### Approach
+
+* how short can it be?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun wordSubsets(words1: Array<String>, words2: Array<String>) = buildList {
+        val f2 = IntArray(26)
+        fun Array<String>.f() = asSequence().map { w ->
+            val f = IntArray(26); for (c in w) f[c - 'a']++; f to w
+        }
+        for ((f, w) in words2.f()) for (i in 0..<26) f2[i] = max(f2[i], f[i])
+        for ((f, w) in words1.f()) if ((0..<26).all { f2[it] <= f[it] }) add(w)
+    }
+
+```
+```rust 
+
+    pub fn word_subsets(words1: Vec<String>, words2: Vec<String>) -> Vec<String> {
+        let mut f2 = vec![0; 26];
+        let f = |w: &String| { let mut f = vec![0; 26]; 
+                          for c in w.bytes() { f[(c - b'a') as usize] += 1 }; f };
+        for w in words2.iter() { 
+          let f = f(w); for i in 0..26 { f2[i] = f2[i].max(f[i]) } }
+        words1.into_iter().filter(|w| { 
+          let f = f(w); (0..26).all(|i| f2[i] <= f[i]) }).collect()
+    }
+
+```
+```c++ 
+
+    vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
+        int f2[26] = {0}; vector<string> res;
+        for (auto &w: words2) {
+            int f[26] = {0}; for (char c: w) f2[c - 'a'] = max(f2[c - 'a'], ++f[c - 'a']);
+        }
+        for (auto &w: words1) {
+            int f[26] = {0}; for (char c: w) ++f[c - 'a'];
+            for (int i = 0; i < 26; ++i) if (f2[i] > f[i]) goto out;
+            res.push_back(w); out:
+        } return res;
+    }
+
+```
+
 # 09.01.2025
 [2185. Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/description/) easy
 [blog post](https://leetcode.com/problems/counting-words-with-a-given-prefix/solutions/6253530/kotlin-rust-by-samoylenkodmitry-dz1s/)
