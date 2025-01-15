@@ -14,6 +14,97 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 15.01.2025
+[2429. Minimize XOR](https://leetcode.com/problems/minimize-xor/description/) medium
+[blog post](https://leetcode.com/problems/minimize-xor/solutions/6282970/kotlin-rust-by-samoylenkodmitry-h1ck/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15012025-2429-minimize-xor?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/bjDK_HtJcic)
+[deep-dive](https://notebooklm.google.com/notebook/b281817d-e83e-43c4-bfc4-e437b2f2e881/audio)
+![1.webp](https://assets.leetcode.com/users/images/db22d600-6975-4a68-b15b-0243cb1e4d8d_1736927697.0759778.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/865
+
+#### Problem TLDR
+
+Min xor with num1, bits count of num2 #medium
+
+#### Intuition
+
+```j
+
+    // 0011
+    // 0101
+
+    // 0101
+    //  1 1
+
+    // 11001
+    // 1001000
+
+```
+
+* if bits count are equal, just return num1, as num1 ^ num1 = 0
+* if bits count is more, bc(num1) > bc(num2), we want all the bits of num1 plus the lowest possible vacancies filled
+* otherwise, we want lowest possible bits of num1 turned off to make `res ^ num1` minimum (so, leave highest bits of num1 set in `res`)
+
+#### Approach
+
+* we can iterate over bits, or over counts differences
+* careful of the Rust `usize` overflow
+
+#### Complexity
+
+
+- Time complexity:
+$$O(log(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun minimizeXor(num1: Int, num2: Int): Int {
+        var cnt = num2.countOneBits() - num1.countOneBits()
+        var res = num1; var b = 0
+        while (cnt != 0) {
+            while ((num1 and (1 shl b) > 0) == cnt > 0) b++
+            res = res xor (1 shl b++)
+            if (cnt > 0) cnt-- else cnt++
+        }
+        return res
+    }
+
+```
+```rust 
+
+    pub fn minimize_xor(num1: i32, num2: i32) -> i32 {
+        let (mut cnt, mut r) = 
+          ((num2.count_ones() - num1.count_ones()) as i8, num1);
+        for b in 0..32 {
+            if cnt != 0 && ((num1 & (1 << b)) > 0) != (cnt > 0) {
+                r ^= 1 << b; if cnt > 0 { cnt -= 1 } else { cnt += 1 }
+            }
+        }; r
+    }
+
+
+```
+```c++
+
+    int minimizeXor(int num1, int num2) {
+        int cnt = __builtin_popcount(num2) - __builtin_popcount(num1), r = num1;
+        for (int b = 0; b < 32 && cnt; ++b)
+            if ((num1 & (1 << b)) > 0 != cnt > 0)
+                r ^= 1 << b, cnt -= 2 * (cnt > 0) - 1;
+        return r;
+    }
+
+```
+
 # 14.01.2025
 [2657. Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/) medium
 [blog post](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/solutions/6278083/kotlin-rust-by-samoylenkodmitry-rmm7/)
