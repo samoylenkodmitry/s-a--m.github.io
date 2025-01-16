@@ -20,7 +20,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16012025-2425-bitwise-xor-of-all?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/4jtajUTdAaU)
 [deep-dive](https://notebooklm.google.com/notebook/22533cbe-d611-41df-a7a5-539e71901972/audio)
-![1.webp](https://assets.leetcode.com/users/images/893af34f-6879-4daf-8cb9-fc5be8af202f_1737012844.1150873.webp)
+![1.webp](https://assets.leetcode.com/users/images/2c6779b4-e985-492e-b2e6-a869ba676c41_1737013498.1621196.webp)
 
 #### Join me on Telegram
 
@@ -62,12 +62,9 @@ $$O(1)$$
 
 ```kotlin
 
-    fun xorAllNums(nums1: IntArray, nums2: IntArray): Int {
-        var r = 0
-        if (nums2.size % 2 > 0) for (x in nums1) r = r xor x
-        if (nums1.size % 2 > 0) for (x in nums2) r = r xor x
-        return r
-    }
+    fun xorAllNums(nums1: IntArray, nums2: IntArray) =
+        nums1.reduce(Int::xor) * (nums2.size % 2) xor
+        nums2.reduce(Int::xor) * (nums1.size % 2)
 
 ```
 ```rust 
