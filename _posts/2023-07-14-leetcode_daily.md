@@ -14,6 +14,96 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 21.01.2025
+[2017. Grid Game](https://leetcode.com/problems/grid-game/description/) medium
+[blog post](https://leetcode.com/problems/grid-game/solutions/6309994/kotlin-rust-by-samoylenkodmitry-rr0l/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21012025-2017-grid-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/wApKvjtYm-o)
+![1.webp](https://assets.leetcode.com/users/images/e118ce7a-c120-4150-b802-7dbe4f548190_1737446904.9384813.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/871
+
+#### Problem TLDR
+
+Maximum of minimized paths #medium #prefix_sum
+
+#### Intuition
+
+Observe some examples:
+
+```j
+
+    // 0  1  2  3  4  5  6  7  8  9
+    // 0 ,3 ,20,17,2 ,12,15,17,4 ,15
+    // 20,10,13,14,15,5 ,2 ,3 ,14,3
+
+    // 0  1  2  3  4  5  6  7  8  9
+    //                12,15,17,4 ,15
+    // 20,10,13,14
+
+
+    // 0 1 2
+    // 2 5 4
+    // 1 5 1
+    // *      a = 5+4=9 b = 0
+    //   *
+
+```
+
+The optimal strategy of the minimizer is *not* to maximize it's own path.
+
+The second robot path is either bottom left or top right prefix sums. Choose the minimium between any possible splits of them.
+
+#### Approach
+
+* to find this insight you have to draw what possible paths can the second robot take
+* minimize the maximum of a and b: first robot minimizes, second maximizes
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun gridGame(grid: Array<IntArray>): Long {
+        var a = grid[0].sumOf { it.toLong() }; var b = 0L
+        return grid[1].withIndex().minOf { (x, v) ->
+            a -= grid[0][x]; max(a, b).also { b += v }
+        }
+    }
+
+```
+```rust 
+
+    pub fn grid_game(grid: Vec<Vec<i32>>) -> i64 {
+        let (mut a, mut b) = (0, 0); 
+        for &v in grid[0].iter() { a += v as i64 }
+        (0..grid[0].len()).map(|x| {
+            a -= grid[0][x] as i64; let m = a.max(b);
+            b += grid[1][x] as i64; m
+        }).min().unwrap()
+    }
+
+```
+```c++ 
+
+    long long gridGame(vector<vector<int>>& g) {
+        long long a = 0, b = 0, r = 1e18; for (int v: g[0]) a += v;
+        for (int x = 0; auto v: g[0])
+            a -= v, r = min(r, max(a, b)), b += g[1][x++];
+        return r;
+    }
+
+```
+
 # 20.01.2025
 [2661. First Completely Painted Row or Column](https://leetcode.com/problems/first-completely-painted-row-or-column/description/) medium
 [blog post](https://leetcode.com/problems/first-completely-painted-row-or-column/solutions/6305619/kotlin-rust-by-samoylenkodmitry-w33a/)
