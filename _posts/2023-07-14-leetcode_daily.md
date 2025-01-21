@@ -19,7 +19,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/grid-game/solutions/6309994/kotlin-rust-by-samoylenkodmitry-rr0l/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21012025-2017-grid-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wApKvjtYm-o)
-![1.webp](https://assets.leetcode.com/users/images/e118ce7a-c120-4150-b802-7dbe4f548190_1737446904.9384813.webp)
+![1.webp](https://assets.leetcode.com/users/images/a2336390-21cf-4e25-be88-5e946f51c8bf_1737447653.5984046.webp)
+
 
 #### Join me on Telegram
 
@@ -75,8 +76,8 @@ $$O(1)$$
 
     fun gridGame(grid: Array<IntArray>): Long {
         var a = grid[0].sumOf { it.toLong() }; var b = 0L
-        return grid[1].withIndex().minOf { (x, v) ->
-            a -= grid[0][x]; max(a, b).also { b += v }
+        return grid[0].zip(grid[1]).minOf { (u, v) ->
+            a -= u; max(a, b).also { b += v }
         }
     }
 
