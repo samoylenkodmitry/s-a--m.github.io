@@ -95,7 +95,7 @@ $$O(n)$$
         queue<pair<int, int>> q;
         int d[] = {1, 0, -1, 0, 1}, m = size(w), n = size(w[0]);
         for (int i = 0; i < m; ++i) for (int j = 0; j < n; ++j)
-            if (w[i][j]) { w[i][j] = 0; q.push({i, j});} else w[i][j] = -1;
+            if (w[i][j]) w[i][j] = 0, q.push({i, j}); else w[i][j] = -1;
         while (size(q)) {
             auto [y, x] = q.front(); q.pop();
             for (int i = 0; i < 4; ++i) 
