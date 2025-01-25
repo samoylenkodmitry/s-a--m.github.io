@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/solutions/6327211/kotlin-rust-by-samoylenkodmitry-7avo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25012025-2948-make-lexicographically?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/lFQyQTgf3bg)
-![1.webp](https://assets.leetcode.com/users/images/6d851677-9257-4fcc-8f6a-aeef44b84b6e_1737798311.2728906.webp)
+![1.webp](https://assets.leetcode.com/users/images/e1013f3f-5c6f-4a0d-ac4c-373da0c7b5dd_1737799120.4198298.webp)
 
 #### Join me on Telegram
 
@@ -72,7 +72,7 @@ $$O(n)$$
         val qi = PriorityQueue<Int>(); val res = IntArray(nums.size)
         for (i in ix.indices) {
             qi += ix[i]
-            if (i == ix.size - 1 || qi.size > 0 && nums[ix[i + 1]] - nums[ix[i]] > limit)
+            if (i == ix.size - 1 || nums[ix[i + 1]] - nums[ix[i]] > limit)
                 while (qi.size > 0) res[qi.poll()] = nums[ix[j++]]
         }
         return res
