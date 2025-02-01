@@ -14,6 +14,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 01.02.2025
+[3151. Special Array I](https://leetcode.com/problems/special-array-i/description/) easy
+[blog post](https://leetcode.com/problems/special-array-i/solutions/6356313/kotlin-rust-by-samoylenkodmitry-ognc/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01022025-3151-special-array-i?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/F4Q1sUavzzg)
+![1.webp](https://assets.leetcode.com/users/images/4cee8aa8-3aaa-46a6-876f-14ff272087dd_1738404987.8164663.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/882
+
+#### Problem TLDR
+
+All siblings even-odd #easy
+
+#### Intuition
+
+Let's golf
+
+#### Approach
+
+* there is also a bitmask solution for i128 ints: only two masks possible `010101...` and `101010...`
+* can you make it shorter?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$ O(n) for Kotlin golf
+
+#### Code
+
+```kotlin 
+
+    fun isArraySpecial(nums: IntArray) = 
+        Regex("0, 0|1, 1") !in "${nums.map { it % 2 }}"
+
+```
+```rust 
+
+    pub fn is_array_special(nums: Vec<i32>) -> bool {
+        (1..nums.len()).all(|i| nums[i] % 2 != nums[i - 1] % 2)
+    }
+
+```
+```c++ 
+
+    bool isArraySpecial(vector<int>& n) {
+        int r = 1; for(int i = size(n); --i; r &= n[i] % 2 ^ n[i - 1] % 2); return r;
+    }
+
+```
+
 # 31.01.2025
 [827. Making A Large Island](https://leetcode.com/problems/making-a-large-island/description/) hard
 [blog post](https://leetcode.com/problems/making-a-large-island/solutions/6351552/kotlin-rust-by-samoylenkodmitry-cqr5/)
