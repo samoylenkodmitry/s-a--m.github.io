@@ -14,6 +14,74 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 03.02.2025
+[3105. Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/description/) easy
+[blog post](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/6366396/kotlin-rust-by-samoylenkodmitry-yuyb/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03022025-3105-longest-strictly-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/XfoPWcZhqKQ)
+![1.webp](https://assets.leetcode.com/users/images/1a7f5d47-614c-46ec-8e6e-7930ae528a48_1738568235.8592417.webp)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/884
+
+#### Problem TLDR
+
+Longest strict monotonic subarray #easy
+
+#### Intuition
+
+Don't forget we can use brute force when the problem size is small. Sometimes that code can be easy to write and check.
+
+#### Approach
+
+* the optimal solution is not that different from the brute force: drop the counter to 1
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, O(n^2) for the brute-force
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun longestMonotonicSubarray(nums: IntArray) = 
+        nums.indices.maxOf { i -> 
+            var a = i + 1; var b = a
+            while (a < nums.size && nums[a - 1] > nums[a]) a++
+            while (b < nums.size && nums[b - 1] < nums[b]) b++
+            max(b - i, a - i) }
+
+```
+```rust 
+
+    pub fn longest_monotonic_subarray(nums: Vec<i32>) -> i32 {
+        let (mut a, mut b) = (1, 1);
+        (1..nums.len()).map(|i| {
+            a = if nums[i] > nums[i - 1] { a + 1 } else { 1 };
+            b = if nums[i] < nums[i - 1] { b + 1 } else { 1 };
+            a.max(b)
+        }).max().unwrap_or(1)
+    }
+
+```
+```c++ 
+
+    int longestMonotonicSubarray(vector<int>& n) {
+        int a = 1, b = 1, r = 1;
+        for (int i = 1; i < size(n); ++i)
+            r = max({r, n[i] > n[i - 1] ? ++a : (a = 1),
+                        n[i] < n[i - 1] ? ++b : (b = 1)});
+        return r;
+    }
+
+```
+
 # 02.02.2025
 [1752. Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/) easy
 [blog post](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/solutions/6361204/kotlin-rust-by-samoylenkodmitry-ik0h/)
