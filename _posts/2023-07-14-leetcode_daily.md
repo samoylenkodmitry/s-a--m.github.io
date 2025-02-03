@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/6366396/kotlin-rust-by-samoylenkodmitry-yuyb/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03022025-3105-longest-strictly-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XfoPWcZhqKQ)
-![1.webp](https://assets.leetcode.com/users/images/1a7f5d47-614c-46ec-8e6e-7930ae528a48_1738568235.8592417.webp)
+![1.webp](https://assets.leetcode.com/users/images/74e88f8e-ba08-4a02-8118-18ee1681aec6_1738569309.1189113.webp)
 
 
 #### Join me on Telegram
@@ -61,12 +61,8 @@ $$O(1)$$
 ```rust 
 
     pub fn longest_monotonic_subarray(nums: Vec<i32>) -> i32 {
-        let (mut a, mut b) = (1, 1);
-        (1..nums.len()).map(|i| {
-            a = if nums[i] > nums[i - 1] { a + 1 } else { 1 };
-            b = if nums[i] < nums[i - 1] { b + 1 } else { 1 };
-            a.max(b)
-        }).max().unwrap_or(1)
+        nums.chunk_by(|a, b| a > b).chain(nums.chunk_by(|a, b| a < b))
+        .map(|c| c.len() as _).max().unwrap_or(1)
     }
 
 ```
