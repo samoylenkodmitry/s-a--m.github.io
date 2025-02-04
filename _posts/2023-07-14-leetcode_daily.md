@@ -14,6 +14,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 04.02.2025
+[1800. Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/description/) easy
+[blog post](https://leetcode.com/problems/maximum-ascending-subarray-sum/solutions/6372426/kotlin-rust-by-samoylenkodmitry-zdpp/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04022025-1800-maximum-ascending-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/AQyTzVAzSWY)
+![1.webp](https://assets.leetcode.com/users/images/26c56103-b798-40bc-b1d9-a71b3730540f_1738656506.0630393.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/885
+
+#### Problem TLDR
+
+Max increasing subarray sum #easy
+
+#### Intuition
+
+Use brute-force, two-pointers or running sum.
+
+#### Approach
+
+* Rust has a nice chunk_by
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun maxAscendingSum(nums: IntArray) =
+        nums.indices.maxOf { i -> 
+            var j = i + 1; while (j < nums.size && nums[j] > nums[j - 1]) j++
+            nums.slice(i..<j).sum()
+        }
+
+```
+```rust 
+
+    pub fn max_ascending_sum(nums: Vec<i32>) -> i32 {
+        nums.chunk_by(|a, b| a < b).map(|c| c.iter().sum()).max().unwrap()
+    }
+
+```
+```c++ 
+
+    int maxAscendingSum(vector<int>& n) {
+        int r = n[0];
+        for (int i = 1, s = n[0]; i < size(n); ++i)
+            r = max(r, s = n[i - 1] < n[i] ? s + n[i] : n[i]);
+        return r;
+    }
+
+```
+
 # 03.02.2025
 [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/description/) easy
 [blog post](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/6366396/kotlin-rust-by-samoylenkodmitry-yuyb/)
