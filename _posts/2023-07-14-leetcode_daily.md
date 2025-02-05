@@ -14,6 +14,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 05.02.2025
+[1790. Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/description/) easy
+[blog post](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/solutions/6378602/kotlin-rust-by-samoylenkodmitry-mjav/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05022025-1790-check-if-one-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/F6M84pzAVMg)
+![1.webp](https://assets.leetcode.com/users/images/a00fda50-e263-4150-99f6-b8d97e53d591_1738744625.7423387.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/886
+
+
+#### Problem TLDR
+
+One swap to make stings equal #easy
+
+#### Intuition
+
+Find all differences, then analyze them. Or do a single swap, then compare strings.
+
+#### Approach
+
+* zip - unzip is a good match here
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$ or O(n) for Kotlin/Rust worst 
+
+#### Code
+
+```kotlin 
+
+    fun areAlmostEqual(s1: String, s2: String) = 
+        s1.zip(s2).filter { (a, b) -> a != b }.unzip()
+        .let { (a, b) -> a.size < 3 && a == b.reversed() }
+
+```
+```rust 
+
+    pub fn are_almost_equal(s1: String, s2: String) -> bool {
+        let (a, mut b): (Vec<_>, Vec<_>) = s1.bytes().zip(s2.bytes())
+        .filter(|(a, b)| a != b).unzip(); b.reverse(); a.len() < 3 && a == b
+    }
+
+```
+```c++ 
+
+    bool areAlmostEqual(string s1, string s2) {
+        for (int i = 0, j = -1, c = 0; i < size(s1) && !c; ++i)
+            if (s1[i] != s2[i]) j < 0 ? j = i : (swap(s1[j], s1[i]),++c);
+        return s1 == s2;
+    }
+
+```
+
 # 04.02.2025
 [1800. Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/description/) easy
 [blog post](https://leetcode.com/problems/maximum-ascending-subarray-sum/solutions/6372426/kotlin-rust-by-samoylenkodmitry-zdpp/)
