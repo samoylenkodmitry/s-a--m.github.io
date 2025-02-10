@@ -14,6 +14,70 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 10.02.2025
+[3174. Clear Digits](https://leetcode.com/problems/clear-digits/description/) easy
+[blog post](https://leetcode.com/problems/clear-digits/solutions/6401516/kotlin-rust-by-samoylenkodmitry-7u9z/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10022025-3174-clear-digits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/6BNUmhbnuY0)
+![1.webp](https://assets.leetcode.com/users/images/128cf9be-597c-45ef-93f5-4440277bd111_1739172103.3380232.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/891
+
+#### Problem TLDR
+
+Remove [char][digit] pairs from string #easy
+
+#### Intuition
+
+Go forwards or backwards. Use builders, pointers or replace in-place. 
+
+#### Approach
+
+* how about recursion + regex?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, O(1) for in-place
+
+#### Code
+
+```kotlin 
+
+    fun clearDigits(s: String) = buildString {
+        for (c in s) if (!c.isDigit()) append(c)
+            else if (length > 0) setLength(lastIndex)
+    }
+
+```
+```rust 
+
+    pub fn clear_digits(mut s: String) -> String {
+        let mut b = 0;
+        for i in (0..s.len()).rev() {
+            if (b'0'..=b'9').contains(&s.as_bytes()[i]) {
+                b += 1; s.remove(i);
+            } else {
+                if b > 0 { s.remove(i); }; b = 0.max(b - 1)
+            }
+        }; s
+    }
+
+```
+```c++ 
+
+    string clearDigits(string s) {
+        string x = regex_replace(s, regex("\\D\\d"), "");
+        return x == s ? x : clearDigits(x);
+    }
+
+```
+
 # 09.02.2025
 [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/description/) medium
 [blog post](https://leetcode.com/problems/count-number-of-bad-pairs/solutions/6397416/kotlin-rust-by-samoylenkodmitry-4j0k/)
