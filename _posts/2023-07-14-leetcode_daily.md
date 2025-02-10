@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/clear-digits/solutions/6401516/kotlin-rust-by-samoylenkodmitry-7u9z/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10022025-3174-clear-digits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6BNUmhbnuY0)
-![1.webp](https://assets.leetcode.com/users/images/128cf9be-597c-45ef-93f5-4440277bd111_1739172103.3380232.webp)
+![1.webp](https://assets.leetcode.com/users/images/78ce7271-cb22-425d-8096-d27a012f571c_1739172955.5067785.webp)
 
 #### Join me on Telegram
 
@@ -50,8 +50,7 @@ $$O(n)$$, O(1) for in-place
 ```kotlin 
 
     fun clearDigits(s: String) = buildString {
-        for (c in s) if (!c.isDigit()) append(c)
-            else if (length > 0) setLength(lastIndex)
+        for (c in s) if (c.isLetter()) append(c) else setLength(lastIndex)
     }
 
 ```
@@ -60,11 +59,8 @@ $$O(n)$$, O(1) for in-place
     pub fn clear_digits(mut s: String) -> String {
         let mut b = 0;
         for i in (0..s.len()).rev() {
-            if (b'0'..=b'9').contains(&s.as_bytes()[i]) {
-                b += 1; s.remove(i);
-            } else {
-                if b > 0 { s.remove(i); }; b = 0.max(b - 1)
-            }
+            if (b'0'..=b'9').contains(&s.as_bytes()[i]) { b += 1; s.remove(i); } 
+            else { if b > 0 { s.remove(i); }; b = 0.max(b - 1) }
         }; s
     }
 
