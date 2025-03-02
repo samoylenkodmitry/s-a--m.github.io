@@ -67,9 +67,8 @@ $$O(n)$$
 ```
 ```Rust(map) 
     pub fn merge_arrays(mut a: Vec<Vec<i32>>, mut b: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
-        let mut m = BTreeMap::new();
-        for v in a.into_iter().chain(b) { *m.entry(v[0]).or_default() += v[1]; }
-        m.into_iter().map(|(k, v)| vec![k, v]).collect()
+        a.into_iter().chain(b).fold(BTreeMap::new(), |mut m, v| { *m.entry(v[0]).or_default() += v[1]; m })
+        .into_iter().map(|(k, v)| vec![k, v]).collect()
     }
 ```
 ```Rust(pointers) 
