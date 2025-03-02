@@ -14,6 +14,83 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 02.03.2025
+[2570. Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/description/) easy
+[blog post](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/solutions/6484913/kotlin-rust-by-samoylenkodmitry-nv0o/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02032025-2570-merge-two-2d-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/jnA1rA0lpdk)
+![1.webp](https://assets.leetcode.com/users/images/b188d8c3-4850-42e7-ab3a-6de2afa4042c_1740899974.2606008.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/912
+
+#### Problem TLDR
+
+Merge two ascending [key, value] lists #easy
+
+#### Intuition
+
+The possibilities are:
+* two pointers: increase the smallest
+* map then sort
+* sorted map
+* use array as a map
+
+#### Approach
+
+* let's golf
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, or O(nlog(n)) for sorting
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+    fun mergeArrays(a: Array<IntArray>, b: Array<IntArray>) = (a + b)
+    .groupBy { it[0] }.toSortedMap().map { (k, v) -> listOf(k, v.sumBy { it[1] })}
+
+```
+```rust 
+
+    pub fn merge_arrays(mut a: Vec<Vec<i32>>, mut b: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+        let mut s = [0; 1001]; for x in a.into_iter().chain(b) { s[x[0] as usize] += x[1] }
+        (1..1001).filter(|&i| s[i] > 0).map(|i| vec![i as i32, s[i]]).collect()
+    }
+
+```
+```Rust(map) 
+    pub fn merge_arrays(mut a: Vec<Vec<i32>>, mut b: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+        let mut m = BTreeMap::new();
+        for v in a.into_iter().chain(b) { *m.entry(v[0]).or_default() += v[1]; }
+        m.into_iter().map(|(k, v)| vec![k, v]).collect()
+    }
+```
+```Rust(pointers) 
+    pub fn merge_arrays(mut a: Vec<Vec<i32>>, mut b: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+        let (mut r, mut i, mut j) = (vec![], 0, 0);
+        while i < a.len() || j < b.len() { r.push((
+            if i == a.len() { j += 1; &b[j - 1] } else if j == b.len() { i += 1; &a[i - 1] }
+            else if a[i][0] == b[j][0] { a[i][1] += b[j][1]; j += 1; i += 1; &a[i - 1] }
+            else if a[i][0] < b[j][0] { i += 1; &a[i - 1] } else { j += 1; &b[j - 1] }
+        ).clone())}; r
+    }
+```
+```c++ 
+
+    vector<vector<int>> mergeArrays(vector<vector<int>>& a, vector<vector<int>>& b) {
+        map<int, int> m; for (auto x: {a, b}) for (auto& v: x) m[v[0]] += v[1];
+        vector<vector<int>> r; for (auto [k, v]: m) r.push_back({k, v}); return r;
+    }
+
+```
+
 # 01.03.2025
 [2460. Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/description/) easy
 [blog post](https://leetcode.com/problems/apply-operations-to-an-array/solutions/6480393/kotlin-rust-by-samoylenkodmitry-7gbx/)
