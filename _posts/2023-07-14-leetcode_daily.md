@@ -14,6 +14,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 03.03.2025
+[2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/description/) medium
+[blog post](https://leetcode.com/problems/partition-array-according-to-given-pivot/solutions/6489093/kotlin-rust-by-samoylenkodmitry-356j/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03032025-2161-partition-array-according?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/3n4yOm1hwHI)
+![1.webp](https://assets.leetcode.com/users/images/021462f7-9a3a-4451-9db1-f7329e7780c2_1740984143.497836.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/913
+
+#### Problem TLDR
+
+Partition around p #medium
+
+#### Intuition
+
+In-place solution is possible, but O(nlog(n)).
+Otherwise, there are two-pass solution with two pointers tracking, or 3-pass with a single pointer.
+
+#### Approach
+
+* golf it in Kotlin
+* in-place in Rust
+* 2-pass in C++
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, or NlogN for sorting
+
+- Space complexity:
+$$O(n)$$, or O(1) for in-place sorting
+
+#### Code
+
+```kotlin 
+
+    fun pivotArray(n: IntArray, p: Int) =
+        n.filter { it < p } + n.filter { it == p } + n.filter { it > p }
+
+```
+```rust 
+
+    pub fn pivot_array(mut n: Vec<i32>, p: i32) -> Vec<i32> {
+        n.sort_by_key(|&x| x.cmp(&p)); n
+    }
+
+```
+```c++ 
+
+    vector<int> pivotArray(vector<int>& a, int p) {
+        int n = size(a), i = 0; vector<int> r(n); 
+        for (auto& x: a) if (x < p) r[i++] = x; else n -= x > p;
+        while (i < n) r[i++] = p;
+        for (auto& x: a) if (x > p) r[i++] = x;
+        return r;
+    }
+
+```
+
 # 02.03.2025
 [2570. Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/description/) easy
 [blog post](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/solutions/6484913/kotlin-rust-by-samoylenkodmitry-nv0o/)
