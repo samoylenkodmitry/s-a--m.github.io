@@ -14,6 +14,81 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 05.03.2025
+[2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/) medium
+[blog post](https://leetcode.com/problems/count-total-number-of-colored-cells/solutions/6498715/kotlin-rust-by-samoylenkodmitry-93u4/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05032025-2579-count-total-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/kAoXb1fq4-w)
+![1.webp](https://assets.leetcode.com/users/images/7c6e2778-4639-41d5-8651-1836b39f7519_1741156007.7349777.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/915
+
+#### Problem TLDR
+
+Arithmetic sum #medium #math
+
+#### Intuition
+![x.webp](https://assets.leetcode.com/users/images/fa316f41-fd1e-47bb-b042-66e836cf0ece_1741155487.327372.webp)
+The diagonal wall grows one item at a time.
+
+```j
+
+    // 1
+    // 1 + 4 = 5
+    // 5 + 8 = 13
+    // 13 + 12 = f(n - 1) + n * 2 + (n - 2) * 2
+
+```
+
+Arithmetic sum of n:
+```j
+coloredCells(n) = coloredCells(1) + ∑(i=2 to n) (i*4 - 4)
+                = 1 + 4*∑(i=2 to n) i - 4*(n-1)
+                = 1 + 4*[n(n+1)/2 - 1] - 4*(n-1)
+                = 1 + 4*[n(n+1)/2 - 1] - 4n + 4
+                = 1 + 2n(n+1) - 4 - 4n + 4
+                = 1 + 2n² + 2n - 4 - 4n + 4
+                = 2n² - 2n + 1
+```
+
+#### Approach
+
+* draw, notice the pattern, write the code
+* ask claude for the math formula
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$ for the recursion
+
+#### Code
+
+```kotlin 
+
+    fun coloredCells(n: Int): Long =
+        if (n < 2) 1 else coloredCells(n - 1) + n * 4 - 4
+
+```
+```rust 
+
+    pub fn colored_cells(n: i32) -> i64 {
+        let n = n as i64; 2 * n * n - 2 * n + 1
+    }
+
+```
+```c++ 
+
+    long long coloredCells(int n) {
+       long long x = n; return 2 * x * x - 2 * x + 1; 
+    }
+
+```
+
 # 04.03.2025
 [1780. Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description/) medium
 [blog post](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/solutions/6494085/kotlin-rust-by-samoylenkodmitry-fjjv/)
