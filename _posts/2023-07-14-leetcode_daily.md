@@ -14,6 +14,76 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 09.03.2025
+[3208. Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/description) medium
+[blog post](https://leetcode.com/problems/alternating-groups-ii/solutions/6516544/kotlin-rust-by-samoylenkodmitry-7q9h/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09032025-3208-alternating-groups?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/k58d6C0reqI)
+![1.webp](https://assets.leetcode.com/users/images/2b0dd1d9-0fed-418b-a9bc-3f6b951a2163_1741507135.1213527.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/920
+
+#### Problem TLDR
+
+Count cycling alterating k-subarrays #medium #two_pointers
+
+#### Intuition
+
+`Two pointers` solution:
+* the right pointer goes at k distance from the left
+* if next not alterating, stop, and move left = right 
+* otherwise res++ and move both +1
+
+The more simple solution is the `counting`:
+* move a single pointer
+* increase on alteratings or set back to 1
+* everything >= k is good
+
+
+#### Approach
+
+* the cycle simpler handled with the current and next instead of previous
+* use `xor` to look cooler
+* in Rust slices are O(1) memory, concat the tail
+* golf in Kotlin costs O(n) memory
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$ or O(1)
+
+#### Code
+
+```kotlin 
+
+    fun numberOfAlternatingGroups(c: IntArray, k: Int) = {
+        var f = 0; (c.asList() + c.take(k)).zipWithNext()
+        .count { (a, b) -> f *= a xor b; ++f >= k }}()
+
+```
+```rust 
+
+    pub fn number_of_alternating_groups(c: Vec<i32>, k: i32) -> i32 {
+        let mut f = 0; [&c[..], &c[..k as usize]].concat().windows(2)
+        .map(|w| { f *= w[0] ^ w[1]; f += 1; (f >= k) as i32 }).sum()
+    }
+
+```
+```c++ 
+
+    int numberOfAlternatingGroups(vector<int>& c, int k) {
+        int r = 0, f = 0, n = size(c), i = 0;
+        for (; i < n + k - 1;) f *= c[i % n] ^ c[(i++ + 1) % n], r += k <= ++f;
+        return r;
+    }
+
+```
+
 # 08.03.2025
 [2379. Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/description) easy
 [blog post](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6512098/kotlin-rust-by-samoylenkodmitry-1ntp/)
