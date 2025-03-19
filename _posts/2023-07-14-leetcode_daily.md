@@ -64,7 +64,7 @@ $$O(1)$$
     pub fn min_operations(nums: Vec<i32>) -> i32 {
         let (mut r, mut b) = (0, 0);
         for i in 0..nums.len() {
-            b ^= nums[i]; r += 1 - b & 1; b ^= 7 * (1 - b & 1); b >>= 1
+            b ^= nums[i]; r += b & 1 ^ 1; b ^= 7 * (b & 1 ^ 1); b >>= 1
         } if b == 0 { r } else { -1 }
     }
 
@@ -73,10 +73,10 @@ $$O(1)$$
 
     int minOperations(vector<int>& n) {
         int r = 0;
-        for (int i = 0, j; i < size(n); ++i) {
-            if (n[i]) continue; r++, j = i + 1;
+        for (int i = 0; i < size(n); ++i) {
+            if (n[i]) continue; r++;
             if (i + 3 > size(n)) return -1;
-            n[j++] = 1 - n[j]; n[j] = 1 - n[j];
+            n[i + 1] ^= 1; n[i + 2] ^= 1;
         } return r;
     }
 
