@@ -14,6 +14,74 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 19.03.2025
+[3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description/) medium
+[blog post](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6554321/kotlin-rust-by-samoylenkodmitry-vvo7/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19032025-3191-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/QdUq8hMeTzU)
+![1.webp](https://assets.leetcode.com/users/images/9fc1eae6-bd58-490c-bc80-afc3bce26f65_1742365278.13114.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/932
+
+#### Problem TLDR
+
+3-bits flips to make all 1 #medium #bit_manipulation
+
+#### Intuition
+
+The order of operations is irrelevant, flip greedily from start to finish.
+
+#### Approach
+
+* we can modify in-place
+* or we can use bitmask with 3 bits, to flip it xor with `7 = b111`
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun minOperations(nums: IntArray) =
+        nums.indices.count { i ->
+            (nums[i] < 1).also { 
+            if (it) for (j in i..i + 2) nums[j] = 
+                1 - (nums.getOrNull(j) ?: return -1) }
+        }
+
+```
+```rust 
+
+    pub fn min_operations(nums: Vec<i32>) -> i32 {
+        let (mut r, mut b) = (0, 0);
+        for i in 0..nums.len() {
+            b ^= nums[i]; r += 1 - b & 1; b ^= 7 * (1 - b & 1); b >>= 1
+        } if b == 0 { r } else { -1 }
+    }
+
+```
+```c++ 
+
+    int minOperations(vector<int>& n) {
+        int r = 0;
+        for (int i = 0, j; i < size(n); ++i) {
+            if (n[i]) continue; r++, j = i + 1;
+            if (i + 3 > size(n)) return -1;
+            n[j++] = 1 - n[j]; n[j] = 1 - n[j];
+        } return r;
+    }
+
+```
+
 # 18.03.2025
 [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/) medium
 [blog post](https://leetcode.com/problems/longest-nice-subarray/solutions/6550425/kotlin-rust-by-samoylenkodmitry-w3nu/)
