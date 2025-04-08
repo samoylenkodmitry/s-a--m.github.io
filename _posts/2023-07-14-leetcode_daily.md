@@ -14,6 +14,96 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 08.04.2025
+[3396. Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/description/) easy
+[blog post](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/solutions/6628052/kotlin-rust-by-samoylenkodmitry-zvvz/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/08042025-3396-minimum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/rjDPkSjQekA)
+![1.webp](https://assets.leetcode.com/users/images/0b623396-7e69-4f22-b8e3-2ed92252e862_1744093270.7946496.webp)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/952
+
+#### Problem TLDR
+
+Count removals 3-prefixes to deduplicate #easy
+
+#### Intuition
+
+Brute force is accepted.
+
+Linear solution: start from the tail and stop on first duplicate.
+
+#### Approach
+
+Observations by golfing:
+
+* `count` works, after some border we always have duplicate (meaning, we also can do a binary search)
+* forward pass possible (and gives faster speed with CPU caches)
+* bitset can be used
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(max)$$
+
+#### Code
+
+```kotlin
+
+    fun minimumOperations(nums: IntArray) = nums.indices
+    .count { nums.drop(it * 3).let { it.distinct() != it }}
+
+
+```
+```kotlin
+
+    fun minimumOperations(nums: IntArray): Int {
+        val o = IntArray(101)
+        return nums.withIndex().maxOf { (i, x) ->
+            o[x].also { o[x] = 1 + i / 3 }
+        }
+    }
+
+
+```
+```kotlin
+
+    fun minimumOperations(nums: IntArray): Int {
+        val f = IntArray(101)
+        for (i in nums.lastIndex downTo 0)
+            if (f[nums[i]]++ > 0) return 1 + i / 3
+        return 0
+    }
+
+
+```
+```rust 
+
+    pub fn minimum_operations(nums: Vec<i32>) -> i32 {
+        let mut o = [0; 101];
+        nums.iter().enumerate().map(|(i, &x)| { let x = x as usize;
+            let r = o[x]; o[x] = 1 + i as i32 / 3; r}).max().unwrap()
+    }
+
+
+```
+```c++ 
+
+    int minimumOperations(vector<int>& nums) {
+        for (int i = size(nums) - 1, f[101]; i >= 0; --i)
+            if (f[nums[i]]++ > 0) return 1 + i / 3;
+        return 0;
+    }
+
+
+```
+
 # 07.04.2025
 [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/) medium
 [blog post](https://leetcode.com/problems/partition-equal-subset-sum/solutions/6624628/kotlin-rust-by-samoylenkodmitry-qud0/)
