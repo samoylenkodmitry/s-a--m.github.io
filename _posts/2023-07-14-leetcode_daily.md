@@ -118,6 +118,19 @@ $$O(1)$$
 ```kotlin 
 
     fun countFairPairs(n: IntArray, lower: Int, upper: Int): Long {
+        n.sort(); var r = 0L; val n = Array(n.size) { n[it] }
+        val cmp = Comparator<Int> { a, b -> if (a < b) -1 else 1 }
+        for (i in 0..<n.size) r -= 
+            Arrays.binarySearch(n, i + 1, n.size, upper - n[i] + 1, cmp) -
+            Arrays.binarySearch(n, i + 1, n.size, lower - n[i], cmp)
+        return r
+    }
+
+
+```    
+```kotlin 
+
+    fun countFairPairs(n: IntArray, lower: Int, upper: Int): Long {
         n.sort(); var l = n.size - 1; var r = l
         return (0..r).sumOf { i ->
             while (l > i && n[l] + n[i] >= lower) l--
