@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/count-the-number-of-ideal-arrays/solutions/6676406/kotlin-by-samoylenkodmitry-nd7e/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22042025-2338-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zAXhbfWrc6c)
-![1.webp](https://assets.leetcode.com/users/images/48ba2a68-52df-4617-a0bf-b57e0bef7490_1745306967.8011823.webp)
+![1.webp](https://assets.leetcode.com/users/images/8397cdcd-2095-48a4-ae4b-ad75b8f6ec1b_1745317228.5518875.webp)
 
 #### Join me on Telegram
 
