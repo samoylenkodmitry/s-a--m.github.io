@@ -66,10 +66,8 @@ $$O(nlog(n))$$
             for (r in 1..13) comb[s][r] = (comb[s - 1][r - 1] + comb[s - 1][r]) % M }
         for (div in 1..10000) {
             ++cnt[div][0]
-            for (i in 2 * div..10000 step div) {
-                var bars = 0
-                while (cnt[div][bars] > 0) cnt[i][bars + 1] += cnt[div][bars++]
-            }
+            for (i in 2 * div..10000 step div)
+                for (bars in 0..12) cnt[i][bars + 1] += cnt[div][bars]
         }
         for (i in 1..maxValue) for (bars in 0..min(13, n)) 
             res = (1L * cnt[i][bars] * comb[n - 1][bars] + res) % M
