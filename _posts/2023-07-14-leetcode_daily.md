@@ -84,6 +84,20 @@ $$O(n)$$
 
 
 ```
+```kotlin
+
+    fun countCompleteSubarrays(nums: IntArray): Int {
+        val f = IntArray(2001); var j = 0; var r = 0
+        for (x in nums) {
+            if (f[x]++ < 1) r = 0
+            while (f[nums[j]] > 1) --f[nums[j++]]
+            r += j + 1
+        }
+        return r
+    }
+
+
+```
 ```rust
 
     pub fn count_complete_subarrays(nums: Vec<i32>) -> i32 {
