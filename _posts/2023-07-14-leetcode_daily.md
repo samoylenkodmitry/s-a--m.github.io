@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/count-complete-subarrays-in-an-array/solutions/6682469/kotlin-rust-by-samoylenkodmitry-mnqn/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24042025-2799-count-complete-subarrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_gn_JSLwAxc)
-![1.webp](https://assets.leetcode.com/users/images/5891bc6d-a929-489a-bdd8-f5b265e7f727_1745475744.5590093.webp)
+![1.webp](https://assets.leetcode.com/users/images/0d54ee1d-ea36-4c05-b0e3-9bfbc1f1ff3d_1745477015.2950962.webp)
 
 #### Join me on Telegram
 
