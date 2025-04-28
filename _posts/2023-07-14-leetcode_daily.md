@@ -48,7 +48,7 @@ $$O(1)$$
 
 #### Code
 
-```kotl
+```kotlin
 
 // 28ms
     fun countSubarrays(n: IntArray, k: Long): Long {
@@ -371,7 +371,7 @@ $$O(n)$$
 
 #### Code
 
-```kotlin [Kotlin(51ms)]
+```kotlin 
 
     fun countInterestingSubarrays(nums: List<Int>, m: Int, k: Int): Long {
         var r = 0L; var cnt = 0; var map = HashMap<Int, Int>(); map[0] = 1
@@ -384,7 +384,7 @@ $$O(n)$$
     }
 
 ```
-```rust [Rust(23ms)]
+```rust 
 
     pub fn count_interesting_subarrays(n: Vec<i32>, m: i32, k: i32) -> i64 {
         let (mut cnt, mut r, mut map) = (0, 0, HashMap::new()); map.insert(0, 1);
@@ -397,7 +397,7 @@ $$O(n)$$
 
 
 ```
-```c++ [C++(51ms)]
+```c++
 
     long long countInterestingSubarrays(vector<int>& n, int m, int k) {
         unordered_map<int, int> map; long long r = 0; int cnt = 0; map[0] = 1;
