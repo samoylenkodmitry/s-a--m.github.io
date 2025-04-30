@@ -14,6 +14,80 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 30.04.2025
+[1295. Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/) easy
+[blog post](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/solutions/6701042/kotlin-rust-by-samoylenkodmitry-ucch/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30042025-1295-find-numbers-with-even?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ZvBKPB7VZAs)
+![1.webp](https://assets.leetcode.com/users/images/8919a311-a7a2-4650-9cdd-802d0c1bf5cc_1745994379.0986874.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/974
+
+#### Problem TLDR
+
+Even length numbers #easy
+
+#### Intuition
+
+Do what is asked
+
+#### Approach
+
+* some golf and counter acrobatics possible
+* how the input range can be used?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 3ms
+    fun findNumbers(n: IntArray) = 
+    n.count { "$it".length % 2 < 1 }
+
+
+```
+```kotlin 
+
+// 1ms
+    fun findNumbers(n: IntArray) = n
+    .count { it in 10..99 || it in 1000..9999 || it == 100000 }
+
+
+```
+```rust 
+
+// 0ms
+    pub fn find_numbers(n: Vec<i32>) -> i32 {
+        n.iter().map(|&x| { let (mut x, mut c) = (x, 1);
+            while x > 0 { x /= 10; c = 1 - c }; c
+        }).sum()
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    int findNumbers(vector<int>& n) {
+        int r = 0;
+        for (int c = 0; int x: n)
+            for (c = 1, r++; x > 0; x /= 10 ) r +=  2 * (++c & 1) - 1;
+        return r;
+    }
+
+
+```
+
 # 29.04.2025
 [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description) medium
 [blog post](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/solutions/6697812/kotlin-rust-by-samoylenkodmitry-xa55/)
