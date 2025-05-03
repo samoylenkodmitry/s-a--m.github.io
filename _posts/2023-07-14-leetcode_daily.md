@@ -80,22 +80,22 @@ $$O(1)$$
 
 
 ```
-```kotlin 
+```kotlin []
 
-// 5ms
+// 4ms
     fun minDominoRotations(top: IntArray, bottom: IntArray): Int {
-        var r = -1; var d = top[0]; var a = 0; var b = 0
+        var d = top[0]; var a = 0; var b = 0
         for (i in top.indices) {
             if (top[i] != d && bottom[i] != d) { a  = -1; b = -1; break }
             if (top[i] == d) ++a; if (bottom[i] == d) ++b
         }
-        r = max(r, max(a, b))
+        var r = max(a, b); if (r >= 0) return top.size - r
         d = bottom[0]; a = 0; b = 0
         for (i in top.indices) {
             if (top[i] != d && bottom[i] != d) { a  = -1; b = -1; break }
             if (top[i] == d) ++a; if (bottom[i] == d) ++b
         }
-        r = max(r, max(a, b))
+        r = max(a, b)
         return if (r < 0) -1 else top.size - r
     }
 
