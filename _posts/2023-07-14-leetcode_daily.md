@@ -14,6 +14,87 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 04.05.2025
+[1128. Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/description/) easy
+[blog post](https://leetcode.com/problems/number-of-equivalent-domino-pairs/solutions/6713083/kotlin-rust-by-samoylenkodmitry-v67f/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04052025-1128-number-of-equivalent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/2z3xSB9UmrM)
+![1.webp](https://assets.leetcode.com/users/images/3e88eac0-a021-4df7-a77d-804c23d662fe_1746342682.2401621.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/978
+
+#### Problem TLDR
+
+Dominoes pairs #easy #hash
+
+#### Intuition
+
+The brute-force O(n^2) is accepted.
+More optimal O(n) is the counting pattern: count visited pairs, each new will pair with previous count.
+
+#### Approach
+
+* we can try to CPU-branching optimize by using a symmetric cache key `a * b + 10 * (a + b)`
+* otherwise, space-optimizations are possible too: we have a symmetric matrix of 9x9 and a total of 45 uniq keys
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 4ms
+    fun numEquivDominoPairs(ds: Array<IntArray>): Int {
+        val m = Array(10) { IntArray(10) }
+        return ds.sumOf { (a, b) -> m[min(a, b)][max(a, b)]++ }
+    }
+
+
+```
+```kotlin 
+
+// 2ms https://leetcode.com/problems/number-of-equivalent-domino-pairs/submissions/1625039917
+fun numEquivDominoPairs(ds: Array<IntArray>): Int {
+    val m = IntArray(262); var c = 0
+    for ((a, b) in ds) c += m[a * b + 10 * (a + b)]++
+    return c
+}
+
+
+```
+```rust 
+
+// 0ms
+    pub fn num_equiv_domino_pairs(ds: Vec<Vec<i32>>) -> i32 {
+        let mut m = [0; 100];
+        ds.iter().map(|d| { 
+            let k = (d[0].min(d[1]) * 10 + d[0].max(d[1])) as usize; 
+            let c = m[k]; m[k] += 1; c
+        }).sum()
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    int numEquivDominoPairs(vector<vector<int>>& ds) {
+        int m[100], c = 0;
+        for (auto& d: ds) c += m[min(d[0], d[1]) * 10 + max(d[0], d[1])]++;
+        return c;
+    }
+
+
+```
+
 # 03.05.2025
 [1007. Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/) medium
 [blog post](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6710134/kotlin-rust-by-samoylenkodmitry-akgg/)
