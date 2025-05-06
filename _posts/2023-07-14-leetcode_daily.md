@@ -14,6 +14,97 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 06.05.2025
+[1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/) easy
+[blog post](https://leetcode.com/problems/build-array-from-permutation/solutions/6719273/kotlin-rust-by-samoylenkodmitry-uyq5/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/06052025-1920-build-array-from-permutation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/BD3EfOChLAc)
+![1.webp](https://assets.leetcode.com/users/images/9076c4f9-c8bc-4e41-a379-d2d0577671fc_1746515025.1202931.webp)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/980
+
+#### Problem TLDR
+
+n[n[i]] #easy
+
+#### Intuition
+
+The follow up is more tricky: we have to store the result and preserver the initial values somehow, shift bits or do * and % operations.
+
+#### Approach
+
+* do golf
+* do follow-up
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$ or O(1)
+
+#### Code
+
+```kotlin 
+
+// 3ms
+    fun buildArray(n: IntArray) = n.map { n[it] }
+
+
+```
+```kotlin
+
+// 2ms
+    fun buildArray(n: IntArray): IntArray {
+        for (i in n.indices) n[i] += (n[n[i]] and 0xFFFF) shl 16
+        for (i in n.indices) n[i] = n[i] shr 16
+        return n;
+    }
+
+
+```
+```kotlin 
+
+// 1ms
+    fun buildArray(n: IntArray) = IntArray(n.size) { n[n[i]] }
+
+
+```
+```rust 
+
+// 0ms
+    pub fn build_array(mut n: Vec<i32>) -> Vec<i32> {
+        for i in 0..n.len() { n[i] |= (n[n[i] as usize] & 0xFFFF) << 16 }
+        for i in 0..n.len() { n[i] >>= 16 } n
+    }
+
+
+```
+```rust 
+
+// 0ms
+    pub fn build_array(n: Vec<i32>) -> Vec<i32> {
+        n.iter().map(|&x| n[x as usize]).collect()
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    vector<int> buildArray(vector<int>& n) {
+        vector<int> r(size(n));
+        for (int i = 0; auto& x: n) r[i++] = n[x];
+        return r;
+    }
+
+
+```
+
 # 05.05.2025
 [790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/description/) meidum
 [blog post](https://leetcode.com/problems/domino-and-tromino-tiling/solutions/6715961/kotlin-rust-by-samoylenkodmitry-tzbu/)
