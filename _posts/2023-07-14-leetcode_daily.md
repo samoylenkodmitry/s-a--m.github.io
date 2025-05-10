@@ -47,12 +47,13 @@ $$O(1)$$
 
 #### Code
 
-
 |Kotlin|Rust|C++|
 |------|----|---|
-|![image.png](https://assets.leetcode.com/users/images/8d3d8910-adc7-47f1-a996-06418fddde88_1746871622.8794403.png){:style="width:100px"}|![image.png](https://assets.leetcode.com/users/images/e061d4bf-c690-473d-a9d6-bbac06a0abec_1746876153.918546.png){:style="width:100px"}|![image.png](https://assets.leetcode.com/users/images/24adc0e3-8697-4678-be7d-5f868535e5a9_1746876894.0528185.png){:style="width:100px"}|
+|![image.png](https://assets.leetcode.com/users/images/6c54645d-411d-498b-8803-378eabe99d29_1746893194.148643.png){:style="width:100px"}|![image.png](https://assets.leetcode.com/users/images/e061d4bf-c690-473d-a9d6-bbac06a0abec_1746876153.918546.png){:style="width:100px"}|![image.png](https://assets.leetcode.com/users/images/7b514ba4-29d8-4d49-a0f4-ae6d783addc0_1746893926.371043.png){:style="width:100px"}|
 
-```kotlin 
+
+
+```kotlin
 
 // 523ms
     fun minSum(n1: IntArray, n2: IntArray): Long {
@@ -62,18 +63,18 @@ $$O(1)$$
 
 
 ```
-```kotlin 
+```kotlin
 
-// 446ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1629966913
+// 411ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1630261946
     fun minSum(nums1: IntArray, nums2: IntArray): Long {
-        var s1 = 0L; var s2 = 0L; var z1 = 0; var z2 = 0; var z = 0
-        for (x in nums1) { z = (x or -x).ushr(31) xor 1; s1 += x + z; z1 += z }
-        for (x in nums2) { z = (x or -x).ushr(31) xor 1; s2 += x + z; z2 += z }
+        var s1 = 0L; var s2 = 0L; var z1 = 0; var z2 = 0
+        for (x in nums1) { s1 += x + ((x or -x).ushr(31) xor 1); z1 = z1 or ((x or -x).ushr(31) xor 1) }
+        for (x in nums2) { s2 += x + ((x or -x).ushr(31) xor 1); z2 = z2 or ((x or -x).ushr(31) xor 1) }
         return if (s1 < s2 && z1 < 1 || s1 > s2 && z2 < 1) -1 else max(s1, s2)
     }
 
 ```
-```rust 
+```rust
 
 // 8ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1630002606
     pub fn min_sum(n1: Vec<i32>, n2: Vec<i32>) -> i64 {
@@ -85,13 +86,13 @@ $$O(1)$$
 
 
 ```
-```c++ 
+```c++
 
-// 56ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1630018233
+// 43ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1630272912
     long long minSum(vector<int>& n1, vector<int>& n2) {
-        long long s1 = 0, s2 = 0; int z1 = 0, z2 = 0;
-        for (int& n: n1) s1 += n + (n < 1), z1 |= n < 1;
-        for (int& n: n2) s2 += n + (n < 1), z2 |= n < 1;
+        long long s1 = size(n1), s2 = size(n2); int z1 = s1, z2 = s2;
+        for (int& n: n1) s1 += n + ((n|-n)>>31), z1 += (n|-n)>>31;
+        for (int& n: n2) s2 += n + ((n|-n)>>31), z2 += (n|-n)>>31;
         return s1 < s2 && !z1 || s1 > s2 && !z2 ? -1 : max(s1, s2);
     }
 
@@ -804,7 +805,7 @@ $$O(1)$$
 
 
 ```
-```kotlin []
+```kotlin
 
 // 4ms
     fun minDominoRotations(top: IntArray, bottom: IntArray): Int {
