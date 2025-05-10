@@ -14,6 +14,90 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 10.05.2025
+[2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description/) medium
+[blog post](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/solutions/6730634/kotlin-rust-by-samoylenkodmitry-udm7/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10052025-2918-minimum-equal-sum-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/tTCD1ZB3FLU)
+![1.webp](https://assets.leetcode.com/users/images/b1dc6236-b450-469c-8254-3f85a4e48e65_1746877798.1524184.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/984
+
+#### Problem TLDR
+
+Min equal array sum, fill zeros #medium
+
+#### Intuition
+
+Any zero place can act as any number. Compare minimum sums by filling zeros with ones, then equalize.
+
+#### Approach
+
+* the interesting golf is how to make it CPU-branchless: `if (x == 0) 1 else 0` can be written as `((x | -x) >> 31) + 1` where `x | -x` would will everything but a sign bit, transforming into -1 for any non-zero value
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+
+|Kotlin|Rust|C++|
+|------|----|---|
+|![image.png](https://assets.leetcode.com/users/images/8d3d8910-adc7-47f1-a996-06418fddde88_1746871622.8794403.png){:style="width:100px"}|![image.png](https://assets.leetcode.com/users/images/e061d4bf-c690-473d-a9d6-bbac06a0abec_1746876153.918546.png){:style="width:100px"}|![image.png](https://assets.leetcode.com/users/images/24adc0e3-8697-4678-be7d-5f868535e5a9_1746876894.0528185.png){:style="width:100px"}|
+
+```kotlin 
+
+// 523ms
+    fun minSum(n1: IntArray, n2: IntArray): Long {
+        val s1 = n1.sumOf { 1L * max(1, it) }; val s2 = n2.sumOf { 1L * max(1, it) }
+        return if (s1 < s2 && 0 !in n1 || s1 > s2 && 0 !in n2) -1 else max(s1, s2)
+    }
+
+
+```
+```kotlin 
+
+// 446ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1629966913
+    fun minSum(nums1: IntArray, nums2: IntArray): Long {
+        var s1 = 0L; var s2 = 0L; var z1 = 0; var z2 = 0; var z = 0
+        for (x in nums1) { z = (x or -x).ushr(31) xor 1; s1 += x + z; z1 += z }
+        for (x in nums2) { z = (x or -x).ushr(31) xor 1; s2 += x + z; z2 += z }
+        return if (s1 < s2 && z1 < 1 || s1 > s2 && z2 < 1) -1 else max(s1, s2)
+    }
+
+```
+```rust 
+
+// 8ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1630002606
+    pub fn min_sum(n1: Vec<i32>, n2: Vec<i32>) -> i64 {
+        let s1: i64 = n1.iter().map(|&n| n.max(1) as i64).sum();
+        let s2: i64 = n2.iter().map(|&n| n.max(1) as i64).sum();
+        let z1 = n1.contains(&0); let z2 = n2.contains(&0);
+        if (s1 < s2 && !z1) || (s1 > s2 && !z2) { -1 } else { s1.max(s2) }
+    }
+
+
+```
+```c++ 
+
+// 56ms https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/submissions/1630018233
+    long long minSum(vector<int>& n1, vector<int>& n2) {
+        long long s1 = 0, s2 = 0; int z1 = 0, z2 = 0;
+        for (int& n: n1) s1 += n + (n < 1), z1 |= n < 1;
+        for (int& n: n2) s2 += n + (n < 1), z2 |= n < 1;
+        return s1 < s2 && !z1 || s1 > s2 && !z2 ? -1 : max(s1, s2);
+    }
+
+
+```
+
 # 09.05.2025
 [3343. Count Number of Balanced Permutations](https://leetcode.com/problems/count-number-of-balanced-permutations/description/) hard
 [blog post](https://leetcode.com/problems/count-number-of-balanced-permutations/solutions/6727609/kotlin-rust-by-samoylenkodmitry-870e/)
