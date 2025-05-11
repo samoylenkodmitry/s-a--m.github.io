@@ -19,7 +19,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/three-consecutive-odds/solutions/6733247/kotlin-rust-by-samoylenkodmitry-becf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11052025-1550-three-consecutive-odds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zlC_SDO8Jus)
-![1.webp](https://assets.leetcode.com/users/images/adcf5158-5550-4f85-b433-3f14b583f262_1746948663.9425735.webp)
+![1.webp](https://assets.leetcode.com/users/images/2c1e43fe-14d4-4e86-82b0-69296d2988d0_1746963239.3274436.webp)
+
 
 
 #### Join me on Telegram
@@ -53,7 +54,7 @@ $$O(1)$$
 
 // 22ms
     fun threeConsecutiveOdds(a: IntArray) =
-        "1, 1, 1" in a.joinToString { "" + it % 2 }
+        "1, 1, 1" in "" + a.map { it % 2 }
 
 
 ```
@@ -105,7 +106,7 @@ $$O(1)$$
 
 // 0ms https://leetcode.com/problems/three-consecutive-odds/submissions/1630796680
     pub fn three_consecutive_odds(a: Vec<i32>) -> bool {
-        a[..].windows(3).any(|w| w[0] & w[1] & w[2] & 1 == 1)
+        a[..].windows(3).any(|w| 0 < 1 & w[0] & w[1] & w[2])
     }
 
 
