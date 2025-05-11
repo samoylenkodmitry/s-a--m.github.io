@@ -14,6 +14,104 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 11.05.2025
+[1550. Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/description/) easy
+[blog post](https://leetcode.com/problems/three-consecutive-odds/solutions/6733247/kotlin-rust-by-samoylenkodmitry-becf/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11052025-1550-three-consecutive-odds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/zlC_SDO8Jus)
+![1.webp](https://assets.leetcode.com/users/images/f4c1ea22-539c-473d-9466-4a7d06230600_1746948130.5072207.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/985
+
+#### Problem TLDR
+
+3 odds #easy #bitmask
+
+#### Intuition
+
+Count odds.
+
+#### Approach
+
+* use bit `& 1` to check for odds
+* use bitmask `0b111 = 7` to check for 3 odds
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 21ms
+    fun threeConsecutiveOdds(a: IntArray) =
+        a.asList().windowed(3).any { it.all { it % 2 > 0 }}
+
+
+```
+```kotlin 
+
+// 23ms
+    fun threeConsecutiveOdds(a: IntArray) =
+        a.asList().windowed(3).any { it.reduce(Int::and) % 2 > 0 }
+
+
+```
+```kotlin
+
+// 4ms
+    fun threeConsecutiveOdds(a: IntArray) = (1..<a.size - 1)
+        .any { a[it - 1] and a[it] and a[it + 1] % 2 > 0 }
+
+
+```
+```kotlin 
+
+// 0ms https://leetcode.com/problems/three-consecutive-odds/submissions/1630809266
+    fun threeConsecutiveOdds(a: IntArray): Boolean {
+        var c = 0
+        return a.any { c = (it % 2) * (c + 1); c > 2 }
+    }
+
+
+```
+```kotlin 
+
+// 0ms
+    fun threeConsecutiveOdds(a: IntArray): Boolean {
+        var c = 0
+        return a.any { c = it and 1 or (c shl 1) and 7; c > 6 }
+    }
+
+
+```
+```rust 
+
+// 0ms https://leetcode.com/problems/three-consecutive-odds/submissions/1630796680
+    pub fn three_consecutive_odds(a: Vec<i32>) -> bool {
+        a[..].windows(3).any(|w| w[0] & w[1] & w[2] & 1 == 1)
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    bool threeConsecutiveOdds(vector<int>& a) {
+        for(int c = 0; int &x: a) if ((c = x & 1 | (c << 1) & 7) > 6)
+        return 1; return 0;
+    }
+
+
+```
+
 # 10.05.2025
 [2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description/) medium
 [blog post](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/solutions/6730634/kotlin-rust-by-samoylenkodmitry-udm7/)
