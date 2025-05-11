@@ -19,7 +19,8 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/three-consecutive-odds/solutions/6733247/kotlin-rust-by-samoylenkodmitry-becf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11052025-1550-three-consecutive-odds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zlC_SDO8Jus)
-![1.webp](https://assets.leetcode.com/users/images/f4c1ea22-539c-473d-9466-4a7d06230600_1746948130.5072207.webp)
+![1.webp](https://assets.leetcode.com/users/images/adcf5158-5550-4f85-b433-3f14b583f262_1746948663.9425735.webp)
+
 
 #### Join me on Telegram
 
@@ -48,6 +49,14 @@ $$O(1)$$
 
 #### Code
 
+```kotlin []
+
+// 22ms
+    fun threeConsecutiveOdds(a: IntArray) =
+        "1, 1, 1" in a.joinToString { "" + it % 2 }
+
+
+```
 ```kotlin 
 
 // 21ms
