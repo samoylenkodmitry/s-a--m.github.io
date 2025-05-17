@@ -14,6 +14,115 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 17.05.2025
+[75. Sort Colors](https://leetcode.com/problems/sort-colors/description) medium
+[blog post](https://leetcode.com/problems/sort-colors/solutions/6752338/kotlin-rust-by-samoylenkodmitry-u0c7/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17052025-75-sort-colors?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/TT0Gaadx7OM)
+![1.webp](https://assets.leetcode.com/users/images/9087a946-0ad8-493e-b0f6-dd612969bf7b_1747464806.9438534.webp)
+
+
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/991
+
+#### Problem TLDR
+
+Sort 0,1,2 array #medium #two_pointers
+
+#### Intuition
+
+The two-pass solution is trivial: count, then write.
+Was very close to implement the single-pass solution:
+
+```j
+    // 2,0,2,1,1,0
+    // z         t
+    // i
+    // 0       t 2
+    //   i
+    //   z
+    //     i
+    //     1 t 2
+    //        
+    // 0 0 1 1 2 2
+
+    // 2 0 1
+    // z   t
+    // i
+    //   t
+    // 1 0 2
+```
+What was missing: the final check `i == t` to check if `nums[t]` is zero.
+
+
+
+#### Approach
+
+Single pass:
+* fill prefix with `0` and suffix with `2`
+* skip `1`
+* the corner case is `10`: swap `nums[t]` with prefix if it is `0`
+* or, we can make the final check `i == t`, then it is handled by the `nums[i] == 0` condition 
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun sortColors(nums: IntArray): Unit {
+        val c = IntArray(3); var i = 0
+        for (x in nums) ++c[x]
+        for (x in 0..2) while (c[x]-- > 0) nums[i++] = x
+    }
+
+```
+```kotlin 
+
+    fun sortColors(n: IntArray): Unit {
+        var z = 0; var t = n.size - 1; var i = 0
+        while (i <= t)
+            if (n[i] == 2) { n[i] = n[t]; n[t--] = 2 } 
+            else if (n[i] == 0) { n[i++] = n[z]; n[z++] = 0 } 
+            else i++
+    }
+
+
+```
+```rust 
+
+    pub fn sort_colors(n: &mut Vec<i32>) {
+        let (mut z, mut t, mut i) = (0, n.len() - 1, 0);
+        while i <= t && t < n.len() { match n[i] {
+            0 => { n.swap(i, z); i += 1; z += 1 }
+            2 => { n.swap(i, t); t -= 1 }
+            _ => { i += 1 }
+        }}
+    }
+
+
+```
+```c++ 
+
+    void sortColors(vector<int>& n) {
+        for (int i = 0, z = 0, t = size(n) - 1; i <= t;)
+            if (n[i] == 0) n[i++] = n[z], n[z++] = 0;
+            else if (n[i] == 2) n[i] = n[t], n[t--] = 2;
+            else i++;
+    }
+
+
+```
+
 # 16.05.2025
 [2901. Longest Unequal Adjacent Groups Subsequence II](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/description) medium
 [blog post](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/solutions/6749642/kotlin-rust-by-samoylenkodmitry-zwok/)
