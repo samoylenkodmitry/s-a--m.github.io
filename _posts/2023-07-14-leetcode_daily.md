@@ -14,6 +14,70 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 19.05.2025
+[3024. Type of Triangle](https://leetcode.com/problems/type-of-triangle/description) easy
+[blog post](https://leetcode.com/problems/type-of-triangle/solutions/6758249/kotlin-rust-by-samoylenkodmitry-r1yj/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19052025-3024-type-of-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/tolXlmCf2rY)
+![1.webp](https://assets.leetcode.com/users/images/a98cbe3a-9a57-47ff-9f8c-18992fbc03b1_1747633284.563089.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/993
+
+#### Problem TLDR
+
+Triangle type by lengths #easy
+
+#### Intuition
+
+Was surprisingly hard to work all the corner cases.
+
+#### Approach
+
+* a = max(), b = min(), c = sum() - a - b
+
+#### Complexity
+
+- Time complexity:
+$$O(brain)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+    fun triangleType(n: IntArray) = 
+        listOf("none", "scalene", "isosceles", "equilateral")[
+        if (2 * n.max() >= n.sum()) 0 else n.groupBy { it }.maxOf { it.value.size }]
+
+
+
+```
+```rust 
+
+    pub fn triangle_type(mut n: Vec<i32>) -> String {
+        n.sort();
+        (if n[2] >= n[0] + n[1] { "none" } else
+        if n[0] == n[2] { "equilateral" } else
+        if n[0] == n[1] || n[1] == n[2] { "isosceles" } else { "scalene" }).into()
+    }
+
+
+```
+```c++ 
+
+    string triangleType(vector<int>& nums) {
+        int f[101]={}, m = 0, mf = 0, s = 0;
+        for (int x: nums) mf = max(mf, ++f[x]), m = max(m, x), s += x;
+        return array{"none", "scalene", "isosceles", "equilateral"}[2 * m >= s ? 0 : mf];
+    }
+
+
+```
+
 # 18.05.2025
 [1931. Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/description) hard
 [blog post](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755765/kotlin-rust-by-samoylenkodmitry-pgvg/)
