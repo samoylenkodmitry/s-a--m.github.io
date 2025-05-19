@@ -19,7 +19,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/type-of-triangle/solutions/6758249/kotlin-rust-by-samoylenkodmitry-r1yj/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19052025-3024-type-of-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tolXlmCf2rY)
-![1.webp](https://assets.leetcode.com/users/images/a98cbe3a-9a57-47ff-9f8c-18992fbc03b1_1747633284.563089.webp)
+![1.webp](https://assets.leetcode.com/users/images/655f88a8-46f0-4fdb-89ca-d2faba412aca_1747633960.0875957.webp)
 
 #### Join me on Telegram
 
@@ -49,9 +49,10 @@ $$O(1)$$
 
 ```kotlin 
 
+
     fun triangleType(n: IntArray) = 
-        listOf("none", "scalene", "isosceles", "equilateral")[
-        if (2 * n.max() >= n.sum()) 0 else n.groupBy { it }.maxOf { it.value.size }]
+        listOf("none", "equilateral", "isosceles", "scalene")[
+        if (2 * n.max() >= n.sum()) 0 else n.toSet().size]
 
 
 
