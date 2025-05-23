@@ -133,6 +133,33 @@ $$O(1)$$, O(n) for dp
 
 
 ```
+```kotlin 
+
+    fun maximumValueSum(nums: IntArray, k: Int, edges: Array<IntArray>): Long {
+        val g = Array(nums.size) { ArrayList<Int>() }
+        for ((u, v) in edges) { g[u] += v; g[v] += u }
+        val dp = HashMap<Pair<Int, Int>, Long>()
+        val s = nums.indices.first { g[it].size < 2 }
+        fun dfs(u: Int, p: Int, f: Int): Long = dp.getOrPut(u to f) {
+            val flip = (nums[u] xor k xor f).toLong()
+            val stay = (nums[u] xor f).toLong() 
+            var sum = max(flip, stay)
+            var flips = if (flip > stay) 1 else 0
+            var diff = abs(flip - stay)
+            for (v in g[u]) if (v != p) {
+                val flip = dfs(v, u, k)
+                val stay = dfs(v, u, 0)
+                if (flip > stay) flips = flips xor 1
+                diff = min(diff, abs(flip - stay))
+                sum += max(flip, stay)
+            }
+            sum - diff * flips
+        }
+        return dfs(s, -1, 0)
+    }
+
+
+```
 ```rust 
 
     pub fn maximum_value_sum(n: Vec<i32>, k: i32, edges: Vec<Vec<i32>>) -> i64 {
