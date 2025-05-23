@@ -126,7 +126,7 @@ $$O(1)$$, O(n) for dp
             val flip = stay xor k
             sumFlip = max(sumStay + stay, sumFlip + flip).also {
             sumStay = max(sumStay + flip, sumFlip + stay) }
-            return sumFlip to sumStay
+            sumFlip to sumStay
         }
         return dfs(0, -1).first
     }
@@ -139,7 +139,6 @@ $$O(1)$$, O(n) for dp
         val g = Array(nums.size) { ArrayList<Int>() }
         for ((u, v) in edges) { g[u] += v; g[v] += u }
         val dp = HashMap<Pair<Int, Int>, Long>()
-        val s = nums.indices.first { g[it].size < 2 }
         fun dfs(u: Int, p: Int, f: Int): Long = dp.getOrPut(u to f) {
             val flip = (nums[u] xor k xor f).toLong()
             val stay = (nums[u] xor f).toLong() 
@@ -155,7 +154,7 @@ $$O(1)$$, O(n) for dp
             }
             sum - diff * flips
         }
-        return dfs(s, -1, 0)
+        return dfs(0, -1, 0)
     }
 
 
