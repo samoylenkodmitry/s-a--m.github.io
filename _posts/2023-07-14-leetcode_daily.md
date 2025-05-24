@@ -14,6 +14,93 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 24.05.2025
+[2942. Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/) easy
+[blog post](https://leetcode.com/problems/find-words-containing-character/solutions/6775555/kotlin-rust-by-samoylenkodmitry-p4db/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24052025-2942-find-words-containing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/9DTaFrwQoxE)
+![1.webp](https://assets.leetcode.com/users/images/299ae35b-a686-4b47-8c76-8b799b134bf5_1748072163.6644711.webp)
+
+
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/998
+
+#### Problem TLDR
+
+Indices with x #easy
+
+#### Intuition
+
+Do what is asked
+
+#### Approach
+
+* the answer can be in `any order` suggests some interesting optimizations: what if we unroll loops or even start work in parallel? (however, in Kotlin I wasnt able to gain any performance)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 25ms
+    fun findWordsContaining(w: Array<String>, x: Char) =
+        w.indices.filter { x in w[it] }
+
+```
+```kotlin 
+
+// 9ms
+    fun findWordsContaining(w: Array<String>, x: Char): List<Int> {
+        val res = ArrayList<Int>(w.size)
+        for (i in w.indices) if (x in w[i]) res += i
+        return res
+    } 
+
+
+```
+```kotlin 
+
+// 3ms
+    fun findWordsContaining(w: Array<String>, x: Char): List<Int> {
+        val res = ArrayList<Int>(w.size)
+        for (i in w.indices) 
+            for (c in w[i]) if (c == x) { res += i; break }
+        return res
+    } 
+
+
+```
+```rust 
+
+// 0ms
+    pub fn find_words_containing(w: Vec<String>, x: char) -> Vec<i32> {
+        (0..w.len()).filter(|&i| w[i].contains(x)).map(|i| i as _).collect()
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    vector<int> findWordsContaining(vector<string>& w, char x) {
+        vector<int> r;
+        for (int i = 0; i < size(w); ++i) if (w[i].contains(x)) r.push_back(i);
+        return r;
+    }
+
+
+```
+
 # 23.05.2025
 [3068. Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/) hard
 [blog post](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/solutions/6772330/kotlin-rust-by-samoylenkodmitry-c2fw/)
