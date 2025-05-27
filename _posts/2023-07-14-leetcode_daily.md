@@ -14,6 +14,105 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 27.05.2025
+[2894. Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description/) easy
+[blog post](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/solutions/6785229/kotlin-rust-by-samoylenkodmitry-gurb/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/27052025-2894-divisible-and-non-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/_kw_Q0JEyTo)
+![1.webp](https://assets.leetcode.com/users/images/7953a2f2-1b42-4c11-8527-657af9ac064e_1748320974.0060377.webp)
+
+
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1001
+
+#### Problem TLDR
+
+Sum non-divisible minus sum divisible #easy #math
+
+
+#### Intuition
+
+I was happy to spot we can do this in a single iteration, `sum += x % m ? x : -x`
+
+There is an arithmetic math solution however:
+
+```j
+
+    // a + b = n*(n+1)/2
+    // b = m * k*(k+1)/2, k = n/m, m, 2m, 3m...km
+    // a - b = (a + b) - 2b
+    // a - b = n*(n+1)/2 - 2*m*k*(k+1)/2
+
+```
+
+#### Approach
+
+* how short can it be?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$, or O(1)
+
+- Space complexity:
+$$O(1)$$
+
+
+#### Code
+
+```kotlin 
+
+// 5ms (52 symbols)
+    fun differenceOfSums(n: Int, m: Int) = 
+        (1..n).sumOf { if (it % m < 1) -it else it }
+
+```
+```kotlin 
+
+// 0ms (49 symbols)
+    fun differenceOfSums(n: Int, m: Int) =
+        n * (n + 1) / 2 - n / m * (n / m + 1) * m
+
+
+```
+```kotlin 
+
+// 13ms (47 symbols)
+    fun differenceOfSums(n: Int, m: Int) =
+        (1..n).sum() - n / m * (n / m + 1) * m
+
+
+```
+```kotlin 
+
+// 12ms (46 symbols)
+    fun differenceOfSums(n: Int, m: Int) =
+        (1..n).sum() - (1..n/m).sum() * m * 2
+
+
+```
+```rust 
+
+// 0ms
+    pub fn difference_of_sums(n: i32, m: i32) -> i32 {
+        n * (n + 1) / 2 - n / m * (n / m + 1) * m
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    int differenceOfSums(int n, int m) {
+        return n * (n + 1) / 2 - n / m * (n / m + 1) * m;
+    }
+
+
+```
+
 # 26.05.2025
 [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/) hard
 [blog post](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6782066/kotlin-rust-by-samoylenkodmitry-ould/)
