@@ -95,25 +95,21 @@ $$O(n)$$
 ```c++ 
 
 // 277ms
-    int n = e1.size() + 1;
-    auto f = [&](auto& e){
-        vector<vector<int>> g(n);
-        for(auto& p: e) g[p[0]].push_back(p[1]), g[p[1]].push_back(p[0]);
-        vector<int> m(n), c(3);
-        queue<int> q;
-        q.push(0); m[0] = 1; c[1]++;
-        while(!q.empty()){
-            int u = q.front(); q.pop();
-            for(int v: g[u]) if(!m[v]) m[v] = 3 - m[u], c[m[v]]++, q.push(v);
-        }
-        return pair{c, m};
-    };
-    auto [c1, m1] = f(e1), [c2, m2] = f(e2);
-    int cm = max(c2[1], c2[2]);
-    vector<int> r(n);
-    for(int i = 0; i < n; ++i) r[i] = c1[m1[i]] + cm;
-    return r;
-
+    vector<int> maxTargetNodes(vector<vector<int>>& e1, vector<vector<int>>& e2) {
+        auto f = [&](auto& e){
+            vector<vector<int>> g(size(e) + 1);
+            for (auto& p: e) g[p[0]].push_back(p[1]), g[p[1]].push_back(p[0]);
+            vector<int> m(size(g)), c(3); queue<int> q; q.push(0); m[0] = 1; c[1]++;
+            while (size(q)) {
+                int u = q.front(); q.pop();
+                for(int v: g[u]) if(!m[v]) m[v] = 3 - m[u], c[m[v]]++, q.push(v); }
+            return pair {c, m};
+        };
+        auto [c1, m1] = f(e1); auto [c2, m2] = f(e2);
+        int cm = max(c2[1], c2[2]); vector<int> r(size(m1));
+        for (int i = 0; i < size(m1); ++i) r[i] = c1[m1[i]] + cm;
+        return r;
+    }
 
 
 ```
