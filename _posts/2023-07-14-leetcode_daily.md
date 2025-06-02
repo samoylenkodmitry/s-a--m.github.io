@@ -14,6 +14,179 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 02.06.2025
+[135. Candy](https://leetcode.com/problems/candy/description/) hard
+[blog post](https://leetcode.com/problems/candy/solutions/6803838/kotlin-rust-by-samoylenkodmitry-g4gf/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02062025-135-candy?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/YdbXCOOJHq0)
+![1.webp](https://assets.leetcode.com/users/images/a6a4b709-e63d-4494-9526-93cb886b77ed_1748853309.9315877.webp)
+
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1007
+
+#### Problem TLDR
+
+Min candies, fair siblings by ratings #hard #greedy
+
+#### Intuition
+
+I was busy to find a single-pass solution, trying to sum the monotonic lengths sums, but it didn't worked. So, looked for hints.
+
+The hint: two passes works.
+
+Chain-of-thoughts:
+
+```j
+    // 1 2    2 
+    // a a+1  1
+    // 1 2 1 2 1 2 3 4 5
+    // 
+    // 5 4 3 2 1 2 3 4 5 4 3
+    // 6 5 4 3 2 3 4 5 6 5 4 -1 to all
+
+    // 1 0 2     +1 to all
+    // 2 1 2
+    // 1 2 2 2 3
+    //   1     1
+    // 1 2 1 1 2
+
+    // 2 2 1 1 1 2 2 2 3 3 2 2  12
+    //   1       1     1 1      +4
+
+    // 1 2 3 5 4 3   6
+    //   1 1 1 1     
+
+    // 1 2 3 4 2 1
+    //
+
+    // 1 2 5 3 4 1 2
+    // 1 2 3 1 2 1 2
+    //       ^ if (next is bigger && prev is bigger) give 1
+    //
+    // 1 2 5 3 2 1    
+    //       ^ if (next is smaller && prev is bigger) give prev - 1
+
+    //  1 2 3 4 5 4 5 6 7
+    //  1 2 3 4 5 1 2 3 4
+    //
+    // ok what if we are decreasing
+    // 7 6 3 4 3 2 1
+    // a b c            3*4/2=6
+    //     1
+    //   2
+    // 3     a b c d    4*5/2=10
+    //             1
+    //           2
+    //         3
+    //       4
+    // 1 2 3 4 7 6 3 4 3 2 1
+
+    // 1 2 4 3 2 1
+    // * * 
+    //     * * * *
+    //    vs
+    // * * *
+    //       * * * two passes works
+    // 1 2 3 0 0 0
+    // 0 0 4 3 2 1
+
+    // 1 0 2
+    // * *
+    //     *
+
+    // 1 2 3 4 7 6 3 4 3 2 1
+    // 1 2 3 4 5 1 1 2 1 1 1
+    //           2 1 4 3 2 1
+
+```
+
+Here is the correct single pass intuition:
+
+```j
+    //    5*3      3*5    3 and 5 is in conflict
+    //   4*.*2    2*.*4   choose max(3,5) = 5, so subtract min(3, 5)=-3
+    //  3* . *1  1* . *3  or just shorten the smallest length by 1
+    // 2*  . .    . .  *2
+    //1*   . .    . .   *1
+    // i   j k    i j   k
+```
+
+#### Approach
+
+* single pass solution can be more trickier to find, start with several passes (forward, back)
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$ or O(1)
+
+#### Code
+
+```kotlin 
+
+// 16ms
+    fun candy(r: IntArray): Int {
+        val c = IntArray(r.size) { 1 }
+        for (i in 1..<r.size) if (r[i] > r[i - 1]) c[i] = c[i - 1] + 1
+        for (i in r.lastIndex - 1 downTo 0) if (r[i] > r[i + 1]) c[i] = max(c[i], c[i + 1] + 1)
+        return c.sum()
+    }
+
+
+
+```
+```kotlin 
+
+// 4ms
+    fun candy(r: IntArray): Int {
+        var i = 1; var res = r.size
+        while (i < r.size) {
+            if (r[i] == r[i - 1]) { i++; continue }
+            var j = i; while (j < r.size && r[j] > r[j - 1]) ++j
+            var k = j; while (k < r.size && r[k] < r[k - 1]) ++k
+            var a = min(j - i, k - j) - 1; var b = max(j - i, k - j)
+            res += a * (a + 1) / 2 + b * (b + 1) / 2; i = k
+        }
+        return res
+    }
+
+```
+```rust 
+
+// 0ms
+    pub fn candy(r: Vec<i32>) -> i32 {
+        let (mut i, mut res, mut a, mut b) = (1, r.len() as i32, 0, 0);
+        while i < r.len() {
+            if r[i] == r[i - 1] { i += 1; continue }
+            a = 0; while i < r.len() && r[i] > r[i - 1] { i += 1; a += 1  }
+            b = 0; while i < r.len() && r[i] < r[i - 1] { i += 1; b += 1  }
+            (a, b) = (a.min(b) - 1, a.max(b)); res += a * (a + 1) / 2 + b * (b + 1) / 2
+        } res
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    int candy(vector<int>& r) {
+        int i = 1, res = size(r), a, b;
+        while (i < size(r)) {
+            if (r[i] == r[i - 1]) { ++i; continue; }
+            a = 0; while (i < size(r) && r[i] > r[i - 1]) ++i, res += ++a;
+            b = 0; while (i < size(r) && r[i] < r[i - 1]) ++i, res += ++b;
+            res -= min(a, b);
+        } return res;
+    }
+
+
+```
+
 # 01.06.2025
 [2929. Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii/description/) medium
 [blog post](https://leetcode.com/problems/distribute-candies-among-children-ii/solutions/6801343/kotlin-rust-by-samoylenkodmitry-c29k/)
