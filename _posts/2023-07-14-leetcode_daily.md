@@ -60,7 +60,7 @@ $$O(n)$$
 
 // 23ms
     fun divideArray(n: IntArray, k: Int): Array<IntArray> {
-        val f = IntArray(100001); var x = 0; for (n in n) { x = min(x, n); ++f[n] }
+        val f = IntArray(100001); for (x in n) ++f[x]; var x = 0
         val r = Array(n.size / 3) { IntArray(3) }
         for (r in r) {
             while (f[x] < 1) ++x; --f[x]; r[0] = x; val m = k + x
