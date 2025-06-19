@@ -35,7 +35,8 @@ Sort, then expand each subsequence as much as possible, the tail with thank you.
 
 #### Approach
 
-* Kotlin has a `chunked`
+* we can use bucket sort or a bitset
+
 
 #### Complexity
 
