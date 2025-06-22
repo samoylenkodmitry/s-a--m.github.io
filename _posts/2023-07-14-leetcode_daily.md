@@ -15,6 +15,111 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 22.06.2025
+[2138. Divide a String Into Groups of Size k](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/description/) easy
+[blog post](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/solutions/6871846/kotlin-rust-by-samoylenkodmitry-ajm8/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22062025-2138-divide-a-string-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/TUiVCSC3H_I)
+![1.webp](https://assets.leetcode.com/users/images/902e17b6-fdb5-4b6a-aa22-98cd6f4c7ba3_1750579719.9991503.webp)
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1027
+
+#### Problem TLDR
+
+k-chunked string, filled tail #easy
+
+#### Intuition
+
+Pad then chunk, or chunk then pad. Prefill everything, or write a precise filling code. Great task to learn the language built-ins.
+
+#### Approach
+
+* if you know Kotlin `padEnd` & `chunked` you don't have to think
+* Rust doesn't allow `fmt` with dynamic fill character
+* `1 + (size - 1) / k` or `(k + size - 1) / k` will pad to `% k`
+* Kotln / Java `String` has `CharArray` constructor arguments
+* Rust has `resize` to pad-fill a `Vec`
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 14ms
+    fun divideString(s: String, k: Int, fill: Char) =
+        s.chunked(k).map { it.padEnd(k, fill) }
+
+
+```
+```kotlin 
+
+// 9ms
+    fun divideString(s: String, k: Int, fill: Char) =
+        Array(1 + (s.length - 1) / k) {  s.drop(it * k).take(k).padEnd(k, fill) }
+
+
+```
+```kotlin 
+
+// 8ms
+    fun divideString(s: String, k: Int, fill: Char) =
+        s.padEnd((1 + (s.length - 1) / k) * k, fill).chunked(k)
+
+
+```
+```kotlin 
+
+// 1ms
+    fun divideString(s: String, k: Int, fill: Char): Array<String> {
+        val s = s.toCharArray()
+        return Array(1 + (s.size - 1) / k) { i ->
+            val sz = min(s.size - i * k, k)
+            if (sz == k) String(s, i * k, k)
+            else {
+                val tmp = CharArray(k) { fill }; 
+                System.arraycopy(s, i * k, tmp, 0, sz)
+                String(tmp)
+            }
+        }
+    }
+
+
+```
+
+```rust
+
+// 0ms
+    pub fn divide_string(s: String, k: i32, fill: char) -> Vec<String> {
+        let mut s = s.chars().collect::<Vec<_>>(); let k = k as usize;
+        s.resize((1 + (s.len() - 1) / k) * k, fill);
+        s.chunks(k).map(|c| c.iter().collect()).collect()
+    }
+
+
+```
+
+```c++ 
+
+// 0ms
+    vector<string> divideString(string s, int k, char fill) {
+        vector<string> r(1 + (size(s) - 1) / k, string(k, fill));
+        for (int i = 0; i < size(s); ++i) r[i / k][i % k] = s[i];
+        return r;
+    }
+
+
+```
+
+
 
 # 21.06.2025
 [3085. Minimum Deletions to Make String K-Special](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/description/) medium
