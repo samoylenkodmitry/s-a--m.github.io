@@ -15,6 +15,79 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 30.06.2025
+[594. Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/description) easy
+[blog post](https://leetcode.com/problems/longest-harmonious-subsequence/solutions/6901687/kotlin-rust-by-samoylenkodmitry-d31j/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30062025-594-longest-harmonious-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/kPVCbgimEJg)
+![1.webp](https://assets.leetcode.com/users/images/908b5476-f3a3-4ff2-8042-75b04fcc890d_1751267713.2738209.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1035
+
+#### Problem TLDR
+
+Longest subsequence with max-min=1 #easy #counting #sort #two_pointers
+
+#### Intuition
+
+Calculate the frequencies. For each value `x` find count `x-1` and `x+1`. 
+
+Another was: sort, then linear scan.
+
+#### Approach
+
+* should be `exactly 1`, not `at most`
+* we can check only the `x + 1` (because we `x - 1` would still be checked)
+
+#### Complexity
+
+- Time complexity:
+$$O(n$$ 
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 25ms
+    fun findLHS(n: IntArray): Int {
+        val f = n.groupBy { it }
+        return f.maxOf { (k, v) -> v.size + (f[k + 1]?.size ?: -v.size) }
+    }
+
+
+```
+
+```rust 
+
+// 0ms
+    pub fn find_lhs(mut n: Vec<i32>) -> i32 {
+        n.sort_unstable(); n.chunk_by(|a, b| b - a < 1)
+        .collect::<Vec<_>>().windows(2)
+        .map(|w| if w[1][0] - w[0][0] == 1 { w[0].len() + w[1].len() } else { 0 })
+        .max().unwrap_or(0) as _
+    }
+
+
+```
+```c++
+
+// 6ms
+    int findLHS(vector<int>& n) {
+        sort(begin(n), end(n)); int r = 0;
+        for (int i = 1, j = 0; i < size(n); ++i) {
+            while (j < i && n[i] - n[j] > 1) j++;
+            if (n[i] - n[j] == 1) r = max(r, i - j + 1);
+        } return r;
+    }
+
+
+```
+
+
 # 29.06.2025
 [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/) medium
 [blog post](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/solutions/6898516/kotlin-rust-by-samoylenkodmitry-ba5s/)
