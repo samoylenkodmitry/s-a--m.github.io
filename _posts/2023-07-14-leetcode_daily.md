@@ -15,6 +15,103 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+#  1.07.2025
+[3330. Find the Original Typed String I](https://leetcode.com/problems/find-the-original-typed-string-i/description/) easy
+[blog post](https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6905864/kotlin-rust-by-samoylenkodmitry-2tvw/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30062025-594-longest-harmonious-subsequence-65d?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/N7cO7hOoK3w)
+![1.webp](https://assets.leetcode.com/users/images/7eab97a3-43e1-40ea-880b-becd24e7a5b9_1751353916.5297964.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1036
+
+#### Problem TLDR
+
+ways to remove duplicates #easy #counting
+
+#### Intuition
+
+Count duplicates, answer is sum of `count - 1`.
+Corner case: duplicates must be adjacent.
+
+#### Approach
+
+* count `same chars islands` 
+* or just count equal adjacent pairs
+
+#### Complexity
+
+- Time complexity:
+$$O(n$$ 
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+
+```kotlin 
+
+// 136ms
+    fun possibleStringCount(w: String) = 1 +
+        w.windowed(2).count { it[0] == it[1] }
+
+
+```
+```kotlin 
+
+// 108ms
+    fun possibleStringCount(w: String): Int {
+        var cnt = 1; var p = '.'
+        for (c in w) if (c == p) ++cnt else p = c
+        return cnt
+    }
+
+
+```
+```kotlin 
+
+// 98ms
+    fun possibleStringCount(w: String): Int {
+        var cnt = 1; var r = 0; var p = '.'
+        for (c in w) if (c == p) ++r else { cnt += r; r = 0; p = c  }
+        return cnt + r
+    }
+
+
+```
+```rust 
+
+// 2ms
+    pub fn possible_string_count(w: String) -> i32 {
+       w.as_bytes().chunk_by(|a, b| a == b).collect::<Vec<_>>() 
+       .iter().map(|w| 0.max(w.len() as i32 - 1)).sum::<i32>() + 1
+    }
+
+
+```
+```rust 
+
+// 0ms
+    pub fn possible_string_count(w: String) -> i32 {
+       1 + w.as_bytes().windows(2).filter(|w| w[0] == w[1]).count() as i32
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    int possibleStringCount(string w) {
+        int cnt = 1; char p = '.';
+        for (char c: w) c == p ? ++cnt : p = c;
+        return cnt;
+    }
+
+
+```
+
+
 # 30.06.2025
 [594. Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/description) easy
 [blog post](https://leetcode.com/problems/longest-harmonious-subsequence/solutions/6901687/kotlin-rust-by-samoylenkodmitry-d31j/)
