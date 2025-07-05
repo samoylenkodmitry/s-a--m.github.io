@@ -15,6 +15,231 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 5.07.2025
+[1394. Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/description) easy
+[blog post](https://leetcode.com/problems/find-lucky-integer-in-an-array/solutions/6922267/kotlin-rust-by-samoylenkodmitry-0tjw/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/5072025-1394-find-lucky-integer-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/-2pzlHKEU4M)
+![1.webp](https://assets.leetcode.com/users/images/32dc9aae-9e4a-473d-abad-8e1e9cfc41c5_1751699733.272932.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1040
+
+#### Problem TLDR
+
+Max x == freq(x) #easy
+
+#### Intuition
+
+The most brute-force is O(n^2), the fastest is O(n) and O(1) memory.
+
+#### Approach
+
+* how many ways to write this code?
+* skip all numbers bigger than size
+* sort, group, chunk, build a table, bit shift
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$ 
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 14ms
+    fun findLucky(arr: IntArray): Int {
+        arr.sortDescending(); var c = 0; var p = -1
+        for (x in arr) if (x == p) ++c else { if (c == p) return p; c = 1; p = x }
+        return if (c == p) p else -1
+    }
+
+
+```
+```kotlin 
+
+// 13ms
+    fun findLucky(arr: IntArray) =
+        (500 downTo 1).firstOrNull { x -> x == arr.count { it == x } } ?: -1
+
+
+```
+```kotlin 
+
+// 6ms
+    fun findLucky(arr: IntArray) =
+        arr.groupBy { it }.maxOf { (k, v) -> if (v.size == k) k else -1 }
+
+
+```
+```kotlin 
+
+// 2ms
+    fun findLucky(a: IntArray): Int {
+        for (x in a) if ((x and 0xfff) <= a.size) a[(x and 0xfff) - 1] += 1 shl 12
+        for (x in a.size downTo 1) if (x == a[x - 1] shr 12) return x
+        return -1
+    }
+
+
+```
+```kotlin 
+
+// 1ms
+    fun findLucky(arr: IntArray): Int {
+        val f = IntArray(501); for (x in arr) ++f[x]
+        for (x in arr.size downTo 1) if (x == f[x]) return x
+        return -1
+    }
+
+
+```
+```rust 
+
+// 0ms
+    pub fn find_lucky(mut a: Vec<i32>) -> i32 {
+        a.sort_unstable(); a.chunk_by(|a, b| a == b)
+        .filter(|c| c.len() as i32 == c[0]).map(|c| c[0] as i32).max().unwrap_or(-1)
+    }
+
+
+```
+```c++
+
+// 0ms
+    int findLucky(vector<int>& a) {
+        int f[501]={}, r = -1; f[0] = 1; 
+        for (int x: a) ++f[x];
+        for (int x: f) if (x == f[x]) r = max(r, x);
+        return r;
+    }
+
+
+```
+
+
+# 4.07.2025
+[3307. Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/description) hard
+[blog post](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6918431/kotlin-rust-by-samoylenkodmitry-tye0/)
+[substack](https://dmitriisamoilenko.substack.com/p/4072025-3307-find-the-k-th-character?r=2bam17)
+[youtube](https://youtu.be/V22PF_PM5Gw)
+![1.webp](https://assets.leetcode.com/users/images/db1c72f3-2049-44ec-ad0e-a11806697d0a_1751615563.6187959.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1039
+
+#### Problem TLDR
+
+kth char in double+shift by ops[i] string #hard #bit_manipulation
+
+#### Intuition
+
+Took me too long to spot the reversive order of operations.
+
+```j
+    // a
+    // ab
+    // 1234
+    // abab
+
+    // 12345678910
+    //          *
+    //     *
+    //  *
+    // *
+
+    // 0123456789
+    // abbcbccdbc
+    // 0112122312
+    //   . .    *+1 op = 1  single conversion
+    //   . *+0 op=0
+    //   *+0 op=1
+    //  *+1 op=0
+    // *0
+
+    // 0123456789
+    // abbcbccdbc    k=3   op=[1,0]
+    // 0112122312
+    //   *+0 op=0
+    //  *+1 op=1
+    // *0  
+
+    // a - ab op=1
+    // ab - abab op=0 notice the reversive order of `op`
+    // 0123
+    // abab
+    //   *
+```
+
+* each time string doubles
+* the `left` part is always skips shift
+* the `right` part do shift if `operations[op] == 1`
+* given position `x` can be from the left if `x % 2 == 0` or from the right if `x % 2 == 1`
+* as we go from child to parent, operations[] are inversed
+
+#### Approach
+
+* this time overflow of `z` is actually possible, don't forget %26
+
+#### Complexity
+
+- Time complexity:
+$$O(o)$$ 
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+
+```kotlin 
+
+// 1ms
+    fun kthCharacter(k: Long, operations: IntArray): Char {
+        var x = 0L; var p = 1L
+        for (o in operations) { x += p * o; p *= 2 }
+        return 'a' + (x and (k - 1)).countOneBits() % 26
+    }
+
+
+```
+```kotlin 
+
+// 1ms
+    fun kthCharacter(k: Long, operations: IntArray, i: Int = 0, l: Long = 1L): Char =
+        if (k == l) 'a' else 'a' + (kthCharacter((k - l) / 2, operations, i + 1, 0) + ((k - l) % 2).toInt() * operations[i] - 'a') % 26
+
+
+```
+```rust 
+
+// 0ms
+    pub fn kth_character(k: i64, operations: Vec<i32>) -> char {
+       let (mut x, mut p) = (0, 1); for o in operations { x += p * o as i64; p *= 2 }
+       "abcdefghijklmnopqrstuvwxyz".as_bytes()[((x & (k - 1)).count_ones() % 26) as usize] as char
+    }
+
+
+```
+```c++
+
+// 0ms
+    char kthCharacter(long long k, vector<int>& o) {
+        --k; char c = 'a';
+        for (int o: o) c = 'a' + (c + ((k & 1) & o) - 'a') % 26, k /= 2;
+        return c;
+    }
+
+
+```
+
+
+
+
 # 3.07.2025
 [3304. Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/description/) easy
 [blog post](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6914362/kotlin-rust-by-samoylenkodmitry-os9r/)
