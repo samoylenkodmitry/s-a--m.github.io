@@ -20,7 +20,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [blog post](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/solutions/6926886/kotlin-rust-by-samoylenkodmitry-mmxf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/6072025-1865-finding-pairs-with-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kXWn1y2zNsQ)
-![1.webp](https://assets.leetcode.com/users/images/a1420698-8c0a-4946-8d40-9b018aeaefea_1751793761.7659605.webp)
+![1.webp](https://assets.leetcode.com/users/images/19d858ce-06d7-4168-8dff-c42e50a5adbc_1751795313.14092.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1041
