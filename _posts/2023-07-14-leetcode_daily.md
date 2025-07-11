@@ -144,8 +144,8 @@ $$O(n)$$
 
 
 ```
-kotlin
-```
+
+```kotlin
 
 // 132ms
     fun mostBooked(n: Int, ms: Array<IntArray>): Int {
