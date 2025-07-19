@@ -77,15 +77,15 @@ $$O(n)$$
 ```
 ```rust 
 
-// 27ms
+// 25ms
     pub fn remove_subfolders(mut f: Vec<String>) -> Vec<String> {
         #[derive(Default)] struct T(bool, HashMap<u8, T>);
         let (mut tr, mut r) = (T::default(), vec![]); f.sort_unstable();
-        for w in f { let mut t = &mut tr;
+        'o: for w in f { let mut t = &mut tr;
             for b in w.bytes().chain(once(b'/')) {
-                t = t.1.entry(b).or_default(); if t.0 { break }
+                t = t.1.entry(b).or_default(); if t.0 { continue 'o }
             }
-            if !t.0 { t.0 = true; r.push(w.into()) }
+            t.0 = true; r.push(w)
         } r
     }
 
