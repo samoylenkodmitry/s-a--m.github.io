@@ -15,6 +15,100 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 30.07.2025
+[2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/) medium
+[blog post](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/solutions/7023340/kotlin-rust-by-samoylenkodmitry-s9za/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30072025-2419-longest-subarray-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/RwyDoaDPDNQ)
+![1.webp](https://assets.leetcode.com/users/images/bd36b630-498a-4e72-b06b-612e179e9f04_1753863764.0467296.webp)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1065
+
+#### Problem TLDR
+
+Longest max OR subarray #medium #counting
+
+#### Intuition
+
+```j
+    // 011
+    // 010
+    // 111
+    // 100
+```
+Each new element decreases OR, consider only equal values.
+
+#### Approach
+
+* longest subarray of `max`es
+* many one-liners possible
+* 09/2024 - 13 minutes, 07/2025 - 10 minutes
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 43ms
+    fun longestSubarray(n: IntArray, m: Int = n.max()) =
+        n.runningFold(0) { l, x -> if (x == m) l + 1 else 0 }.max()
+
+
+```
+```kotlin 
+
+// 4ms
+    fun longestSubarray(n: IntArray): Int {
+        var m = 0; var r = 0; var l = 0
+        for (x in n) if (x > m) { m = x; r = 1; l = 1 }
+            else if (x < m) l = 0 else r = max(r, ++l)
+        return r
+    }
+
+
+```
+```rust
+
+// 0ms
+    pub fn longest_subarray(n: Vec<i32>) -> i32 {
+        n.into_iter().dedup_with_count()
+        .max_by_key(|&d| (d.1, d.0)).unwrap().0 as _
+    }
+
+
+```
+```c++
+
+// 1ms
+    int longestSubarray(vector<int>& n) {
+        int r = 0;
+        for (int l = 0, m = 0; int x: n)
+            x > m ? m = x, l = 1, r = 1 :
+            x < m ? l = 0 : r = max(r, ++l);
+        return r;
+    }
+
+
+```
+```python3
+
+// 36ms
+    def longestSubarray(self, n: List[int]) -> int:
+        m=max(n);return max(sum(1for _ in g) for x, g in groupby(n) if x==m)
+
+
+```
+
 # 29.07.2025
 [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/description/) medium
 [blog post](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/solutions/7019034/kotlin-rust-by-samoylenkodmitry-fboa/)
