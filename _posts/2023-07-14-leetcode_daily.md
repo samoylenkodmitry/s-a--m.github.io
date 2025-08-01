@@ -15,6 +15,83 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 1.08.2025
+[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) easy
+[blog post](https://leetcode.com/problems/pascals-triangle/solutions/7031375/kotlin-rust-by-samoylenkodmitry-hbpk/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/1082025-118-pascals-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/TPNlXnW3aM8)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+![1.webp](https://assets.leetcode.com/users/images/95e10ccb-3f1b-4f41-9297-f7566270223d_1754035546.9359865.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1067
+
+#### Problem TLDR
+
+Pascal's Triangle #easy
+
+#### Intuition
+
+Classic problem, reuse the previous row.
+
+#### Approach
+
+* many ways to write this: fold, scan, recursion, zip
+
+#### Complexity
+
+- Time complexity:
+$$O(2^n)$$
+
+- Space complexity:
+$$O(2^n)$$
+
+#### Code
+
+```kotlin 
+
+// 15ms
+    fun generate(n: Int) = (2..n).runningFold(listOf(1)) 
+    { r, t -> listOf(1) + r.windowed(2) { it.sum() } + 1 }
+
+
+```
+
+```rust
+
+// 0ms
+    pub fn generate(n: i32) -> Vec<Vec<i32>> {
+        (0..n).scan(vec![1], |c, _| { let r = c.clone();
+            *c = vec![vec![1], c.windows(2).map(|w| w[0] + w[1]).collect(), vec![1]].concat();
+            Some(r)
+        }).collect()
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    vector<vector<int>> generate(int n) {
+        if (n == 1) return {{1}}; auto p = generate(n - 1); vector<int>r{1};
+        for (int i = 1; i < size(p[n - 2]); ++i)
+            r.push_back(p[n - 2][i - 1] + p[n - 2][i]);
+        r.push_back(1); p.push_back(r); return p;
+    }
+
+
+```
+```python3 
+
+// 0ms
+    def generate(self, n: int) -> List[List[int]]:
+        r=[]
+        for _ in[0]*n:r+=[[1]]if not r else[[1]+[a+b for a,b in zip(r[-1],r[-1][1:])]+[1]]
+        return r
+
+
+```
+
 # 31.07.2025
 [898. Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/description) medium
 [blog post](https://leetcode.com/problems/bitwise-ors-of-subarrays/solutions/7027650/kotlin-rust-by-samoylenkodmitry-pehv/)
