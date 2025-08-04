@@ -15,6 +15,105 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 4.08.2025
+[904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/description/) medium
+[blog post](https://leetcode.com/problems/fruit-into-baskets/solutions/7042478/kotlin-rust-by-samoylenkodmitry-tdo0/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/4082025-904-fruit-into-baskets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/TrGPw_NpnjU)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+![1.webp](https://assets.leetcode.com/users/images/8c89019a-e28c-4481-8654-8f614e33bf62_1754297248.2662416.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1070
+
+#### Problem TLDR
+
+Max consequent two-types range #medium #counting
+
+#### Intuition
+
+Scan from left to right.
+Count current type and previous.
+On a third type drop the previous.
+
+#### Approach
+
+* how many extra variables we need?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 39ms
+    fun totalFruit(f: IntArray): Int {
+        var p = -1; var c = 0; var j = 0
+        return f.withIndex().maxOf { (i, t) ->
+            if (t != f[j]) {
+                if (t != p) c = i - j
+                p = f[j]; j = i
+            }
+            ++c
+        }
+    }
+
+
+```
+
+```rust 
+
+// 0ms
+    pub fn total_fruit(f: Vec<i32>) -> i32 {
+        let (mut p, mut k, mut j) = (-1, 0, 0);
+        f.iter().enumerate().map(|(i, &t)| {
+            if t != f[j] {
+                if t != p { k = j }
+                p = f[j]; j = i
+            }
+            i - k + 1
+        }).max().unwrap() as _
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    int totalFruit(vector<int>& f) {
+        int r = 0;
+        for (int i = 0, j = 0, p = -1, k = 0; i < size(f); ++i) {
+            if (f[i] != f[j]) {
+                if (f[i] != p) k = j;
+                p = f[j]; j = i;
+            }
+            r = max(r, i - k + 1);
+        } return r;
+    }
+
+
+```
+```python 
+
+// 77ms
+    def totalFruit(self, f: List[int]) -> int:
+        r = j = k = 0; p = -1
+        for i, t in enumerate(f):
+            if t != f[j]:
+                if t != p: k = j
+                p,j = f[j],i
+            r = max(r, i - k + 1)
+        return r
+
+
+```
+
 # 3.08.2025
 [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description/) hard
 [blog post](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/solutions/7038844/kotlin-rust-by-samoylenkodmitry-2eg7/)
