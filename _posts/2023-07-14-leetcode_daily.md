@@ -15,6 +15,198 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 10.08.2025
+[869. Reordered Power of 2](https://leetcode.com/problems/reordered-power-of-2/description/) medium
+[blog post](https://leetcode.com/problems/reordered-power-of-2/solutions/7063607/kotlin-rust-by-samoylenkodmitry-u5zx/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10082025-869-reordered-power-of-2?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/uPz9eLlQv2s)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+![1.webp](https://assets.leetcode.com/users/images/7272d130-df70-43c3-9f38-6ee0d56d31ea_1754810416.105182.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1076
+
+#### Problem TLDR
+
+Rearrange digits to make power of two #medium #dfs #bits
+
+#### Intuition
+
+The naive brute force of `O(log(n)!)` is accepted, we only have `9` digits, n is 10^9.
+
+The trick: think from the finish line - we only have `30` powers of two, let's just check them.
+
+#### Approach
+
+* compare by frequency
+* optimization: for `9` digits, each max frequency is `9`, we can put freqency array into a single `10` digits number (c++ solution)
+
+#### Complexity
+
+- Time complexity:
+$$O(log^2(n))$$, 
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin [-Kotlin (233ms]
+
+// 233ms
+    fun reorderedPowerOf2(n: Int): Boolean {
+        val ds = "$n"
+        fun dfs(curr: Int, m: Int): Boolean {
+            if (m == 0) return curr.countOneBits() == 1
+            for (i in 0..30) if (m and (1 shl i) != 0) {
+                if (ds[i] == '0' && curr == 0) continue
+                if (dfs(curr * 10 + (ds[i] - '0'), m xor (1 shl i))) return true
+            }
+            return false
+        }
+        return dfs(0, (1 shl ds.length) - 1)
+    }
+
+
+```
+```kotlin [-18ms)]
+
+// 18ms
+    fun reorderedPowerOf2(n: Int) =
+        (0..30).any { "$n".groupBy { it } == "${1 shl it}".groupBy { it }}
+
+
+```
+```rust [-Rust (0ms]
+
+// 0ms
+    pub fn reordered_power_of2(mut n: i32) -> bool {
+        let mut nf = [0; 10]; while n > 0 { nf[(n % 10) as usize] += 1; n /= 10 }
+        (0..30).any(|i| {
+            let mut x = 1 << i; let mut f = [0; 10];
+            while x > 0 { f[(x % 10) as usize] += 1; x /= 10 }
+            f == nf
+        })
+    }
+
+
+```
+```c++ [-c++ (0ms]
+
+// 0ms
+    bool reorderedPowerOf2(int n) {
+        long c = 0; while (n) c += pow(10, n % 10), n /= 10;
+        for (int i = 0, x=0, y=1; i < 30; ++i, x = 0, y = 1<<i) {
+            while (y) x += pow(10, y % 10), y /= 10;
+            if (x == c) return 1;
+        }
+        return 0;
+    }
+
+
+```
+```python [-python 0ms]
+
+// 0ms
+    def reorderedPowerOf2(self, n: int) -> bool:
+        return any(sorted(str(n)) == sorted(str(1 << i)) for i in range(31))
+
+
+```
+# 9.08.2025
+[231. Power of Two](https://leetcode.com/problems/power-of-two/description/) easy
+[blog post](https://leetcode.com/problems/power-of-two/solutions/7060229/kotlin-rust-by-samoylenkodmitry-ap99/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/9082025-231-power-of-two?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/dpCsHFQK4pE)
+![1.webp](https://assets.leetcode.com/users/images/33c2aae2-dbd0-45ff-ae1d-4e84fe253ea9_1754724011.4405978.webp)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1075
+
+#### Problem TLDR
+
+
+Is int 32 power of 2? #easy #bits
+
+#### Intuition
+
+Any negative number is not power of 2 by problem description.
+
+#### Approach
+
+* there are built-in functions
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$, 
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+```kotlin [-Kotlin (0ms]
+
+// 0ms
+    fun isPowerOfTwo(n: Int) = 
+    n > 0 && n.countOneBits() < 2
+
+
+```
+```kotlin [-0ms)]
+
+// 0ms
+    fun isPowerOfTwo(n: Int) = 
+    n > 0 && n and (n - 1) < 1
+
+
+```
+```rust [-Rust (0ms]
+
+// 0ms
+    pub fn is_power_of_two(n: i32) -> bool {
+        n > 0 && n.count_ones() == 1
+    }
+
+
+```
+```rust [-0ms]
+
+// 0ms
+    pub fn is_power_of_two(n: i32) -> bool {
+        n > 0 && (n as u32).is_power_of_two()
+    }
+
+
+```
+```c++ [-c++ (0ms]
+
+// 0ms
+    bool isPowerOfTwo(int n) {
+        return n > 0 && !(n&(n-1));
+    }
+
+
+```
+```c++[-0ms]
+
+// 0ms
+    bool isPowerOfTwo(int n) {
+        return n > 0 && __builtin_popcount(n) < 2;
+    }
+
+
+```
+```python [-python 0ms]
+
+// 0ms
+    def isPowerOfTwo(_, n: int) -> bool: return n > 0 and not n & (n-1)
+
+
+```
+
 # 8.08.2025
 [808. Soup Servings](https://leetcode.com/problems/soup-servings/description/) medium
 [blog post](https://leetcode.com/problems/soup-servings/solutions/7057068/kotlin-rust-by-samoylenkodmitry-8a2i/)
