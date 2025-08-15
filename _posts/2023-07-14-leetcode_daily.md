@@ -15,6 +15,100 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 15.08.2025
+[342. Power of Four](https://leetcode.com/problems/power-of-four/description/) easy
+[blog post](https://leetcode.com/problems/power-of-four/solutions/7083288/kotlin-rust-by-samoylenkodmitry-wtsv/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15082025-342-power-of-four?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/-eFQOY4x1KQ)
+![1.webp](https://assets.leetcode.com/users/images/3d44a4b1-d190-47c3-8dd2-87da23b3fe63_1755245790.4349303.webp)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1081
+
+#### Problem TLDR
+
+Is number power of 4? #easy
+
+#### Intuition
+
+* count bits, look at trailing zeros count, should be even
+* use a bitmask `...1010101010101`
+* use `(n-1)%3`: `n-1 = 4^k -1 = (2^k -1)(2^k + 1)`, from `odd,2^n,odd` row, one of the odds is always `%3`: `123, 345, 789, and so on` 
+
+#### Approach
+
+* also fun regex solution
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 16ms
+    fun isPowerOfFour(n: Int) =
+        Regex("^1(?:00)*$").matches(n.toString(2))
+
+
+```
+```kotlin 
+
+// 4ms
+    fun isPowerOfFour(n: Int) =
+        (0..15).any { n == 1 shl it*2 }
+
+```
+```kotlin 
+
+// 1ms
+    fun isPowerOfFour(n: Int) =
+       n.countOneBits() == 1 && n and 1431655765 == n
+
+
+```
+```kotlin
+
+// 1ms
+    fun isPowerOfFour(n: Int) =
+        n.countOneBits() == 1 && (n-1)%3 == 0
+
+
+```
+```rust
+
+// 0ms
+    pub fn is_power_of_four(n: i32) -> bool {
+        (0..16).any(|p| n == 1 << p * 2)
+    }
+
+
+```
+```c++ 
+
+// 0ms
+    bool isPowerOfFour(int n) {
+        return n > 0 && (n & n-1) + (n-1)%3 == 0;
+    }
+
+
+```
+```python 
+
+// 0ms
+    def isPowerOfFour(self, n: int) -> bool:
+        return n in [1<<p*2 for p in range(16)]
+
+
+```
+
 # 14.08.2025
 [2264. Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/description/) easy
 [blog post](https://leetcode.com/problems/largest-3-same-digit-number-in-string/solutions/7078939/kotlin-rust-by-samoylenkodmitry-c3cp/)
