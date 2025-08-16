@@ -61,8 +61,7 @@ $$O(1)$$
 
 // 12ms
     fun maximum69Number (n: Int) = 
-    n + 3 * (listOf(1000, 100, 10, 1).firstOrNull { n/it%10==6 }?:0)
-
+    n + 3 * (setOf(1000, 100, 10, 1).firstOrNull { n/it%9>0 }?:0)
 
 
 ```
