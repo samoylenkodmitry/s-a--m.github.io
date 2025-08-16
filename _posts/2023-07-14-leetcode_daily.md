@@ -15,6 +15,85 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 16.08.2025
+[1323. Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/description) easy
+[blog post](https://leetcode.com/problems/maximum-69-number/solutions/7087812/kotlin-rust-by-samoylenkodmitry-msnj/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16082025-1323-maximum-69-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/slqHZkvybTk)
+![1.webp](https://assets.leetcode.com/users/images/fca5f69d-aed4-4282-9dc2-3268ca4f05cf_1755335653.1330016.webp)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1082
+
+#### Problem TLDR
+
+Bigger number by replacing 6 to 9 #easy
+
+#### Intuition
+
+The simpliest way is to convert to char array, replace first, then stop.
+
+#### Approach
+
+* let's explore other unusual ways
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+// 7ms
+    fun maximum69Number (n: Int) = 
+    "$n".replaceFirst('6', '9').toInt()
+
+
+```
+```kotlin
+
+// 12ms
+    fun maximum69Number (n: Int) = 
+    n + 3 * (listOf(1000, 100, 10, 1).firstOrNull { n/it%10==6 }?:0)
+
+
+
+```
+```rust
+
+// 0ms
+    pub fn maximum69_number(n: i32) -> i32 {
+        n + 3 * [1000, 100, 10, 1].iter().find(|&&p| n/p%10==6).unwrap_or(&0)
+    }
+
+
+```
+```c++
+
+// 0ms
+    int maximum69Number (int n) {
+        for (int p = 1000; p; p /= 10)
+            if (n/p%10 == 6) return n + 3*p;
+        return n;
+    }
+
+
+```
+```python
+
+// 0ms
+    maximum69Number = lambda _, n: int(str(n).replace('6','9',1))
+
+
+```
+
 # 15.08.2025
 [342. Power of Four](https://leetcode.com/problems/power-of-four/description/) easy
 [blog post](https://leetcode.com/problems/power-of-four/solutions/7083288/kotlin-rust-by-samoylenkodmitry-wtsv/)
