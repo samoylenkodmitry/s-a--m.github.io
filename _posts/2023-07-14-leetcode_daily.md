@@ -15,6 +15,111 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 17.08.2025
+[837. New 21 Game](https://leetcode.com/problems/new-21-game/description) medium
+[blog post](https://leetcode.com/problems/new-21-game/solutions/7091582/kotlin-by-samoylenkodmitry-y8wq/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17082025-837-new-21-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/di8TDfXdbtY)
+
+![1.webp](https://assets.leetcode.com/users/images/019c97f0-1299-4343-bbbe-b7f80d7eb3ec_1755420874.8639035.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1084
+
+#### Problem TLDR
+
+Probability sum of random(1..m) less than n when stop adding at k #medium #math #probability
+
+#### Intuition
+
+Didn't solved without TLE
+```j
+    // each step:
+    // sum +=
+    // + random(1..maxpts)
+    // + random(1..maxpts)
+    // + random(1..maxpts)
+    // + random(1..maxpts)
+    // stop if sum bigger than k
+    //
+    // probability sum <= n
+
+    // n=10 k=1 m=10
+    // s += 
+    // 1..10   (let's be 1)
+    // s = 1 bigger k -- stop
+    // s less 10 true
+
+    // n=6 k=1 m=10
+    // s +=
+    //   1,2,3,4,5,6
+    //   7,8,9,10
+    // s is more than k; stop
+    // only 6/10 is less than n
+
+    // n=21 k=17 m=10
+    // 1..10   
+    // 1..10
+    // making +1 calls is too heavy 10^4 x 10^4 TLE
+    // maybe wrong dp dimension?
+    //  no hints; i'll give up
+    // i didn't get why p20=p16*p4+p15*p5+..p10*p10
+
+```
+
+The math intuition:
+(credits https://leetcode.com/problems/new-21-game/solutions/220949/python-3-memorize-dfs-from-o-kw-w-to-o-k-w/)
+
+```j
+f(s) = f(s+1)+f(s+2)+...+f(s+m)  /m
+f(s+1) = f(s+2)+f(s+3)+...+f(s+m)+f(s+1+m)  /m
+
+f(s) - f(s+1) = (f(s+1) - f(s+1+m)) /m
+```
+The final condition:
+```j
+
+k......n......m means we take (n-k)/m
+
+k.............m....n means we always good 1.0
+
+```
+
+
+#### Approach
+
+* try to understand at least one intuition fully
+
+#### Complexity
+
+- Time complexity:
+$$O(k + m)$$
+
+- Space complexity:
+$$O(k + m)$$
+
+#### Code
+
+```kotlin
+
+// 28ms
+    fun new21Game(n: Int, k: Int, m: Int): Double {
+        val dp = HashMap<Int, Double>()
+        fun dfs(s: Int): Double = 
+            if (s == k - 1) 1.0*min(n - k + 1, m) / m
+            else if (s >= k) { if (s <= n) 1.0 else 0.0 }
+            else dp.getOrPut(s) {
+                dfs(s + 1) - (dfs(s + 1 + m) - dfs(s + 1)) / m
+            }
+        return dfs(0)
+    }
+
+
+```
+
 # 16.08.2025
 [1323. Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/description) easy
 [blog post](https://leetcode.com/problems/maximum-69-number/solutions/7087812/kotlin-rust-by-samoylenkodmitry-msnj/)
