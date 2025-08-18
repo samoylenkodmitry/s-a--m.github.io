@@ -15,6 +15,101 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 18.08.2025
+[679. 24 Game](https://leetcode.com/problems/24-game/description) hard
+[blog post](https://leetcode.com/problems/24-game/solutions/7094810/kotlin-by-samoylenkodmitry-9eyc/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/18082025-679-24-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/MpQP04t4YmM)
+
+![1.webp](https://assets.leetcode.com/users/images/711c1747-d5b6-48be-b811-638e8d73b056_1755507555.8150444.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1085
+
+#### Problem TLDR
+
+Can a,b,c,d = 24 with ops */+-() #hard #backtracking #math
+
+#### Intuition
+
+Solved not optimally.
+
+```j
+    // 1..9
+    // ()+-/*
+    // 12 * 2
+    // 8 * 3
+    // 6 * 4
+    // 2 * 3 * 4
+    // 2 * 3 * 2 * 2
+    // 1 - 2/3 = 1/3; 8 / (1 - 2/3)
+    // 1 - 3/4 = 1/4; 6 / (1 - 3/4)
+    // 1 - 5/6 = 1/6; 4 / (1 - 5/6)
+    // 1 - 7/8 = 1/8; 3 / (1 - 7/8)
+    // 20+4; 5*4+2+2    2+2=1..3 + 3..1
+    //       5*(2+2)+4
+    // 21+3; too many to list them all
+    // implement eval?
+
+    // 1 3 4 6
+    // 6/(1-3/4)
+
+    // i don't think my solution is the expected
+    // 0123456789012
+    // .x..x...x..x.   13 positions
+    // (  (   (   
+    //      )   )  )
+    //   +   +   +
+    //   -   -   -
+    //   *   *   *
+    //   /   /   /
+    //  a  a   a  a
+    //  b  b   b  b
+    //  c  c   c  c
+    //  d  d   d  d
+```
+My intuition was just to build all possible equations, then parse them and eval.
+
+The optimal intuition (not mine): every equation has the first step than you can do, just compute by picking any two numbers.
+
+
+#### Approach
+
+* solve not optimally to appreciate the cleverness of an idea
+
+#### Complexity
+
+- Time complexity:
+$$O(n^(2n))$$, n levels deep, n^2 at each level
+
+- Space complexity:
+$$O(n^n)$$, n levels, n size at each level
+
+#### Code
+
+```kotlin 
+
+// 80ms
+    fun judgePoint24(cards: IntArray): Boolean {
+        fun dfs(cs: List<Double>): Boolean {
+            for (i in cs.indices) for (j in cs.indices) if (i != j) {
+                val a = cs[i]; val b = cs[j]
+                val next = arrayListOf(a+b, a-b,b-a, a*b); if(b!=0.0) next += a/b
+                val rest = (cs.indices - i - j).map {cs[it]}
+                for (x in next) if (dfs(rest + x)) return true
+            }
+            return cs.size == 1 && abs(24.0-cs[0])<0.001
+        }
+        return dfs(cards.map { 1.0 * it })
+    }
+
+
+```
+
 # 17.08.2025
 [837. New 21 Game](https://leetcode.com/problems/new-21-game/description) medium
 [blog post](https://leetcode.com/problems/new-21-game/solutions/7091582/kotlin-by-samoylenkodmitry-y8wq/)
