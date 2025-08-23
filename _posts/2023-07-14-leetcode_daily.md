@@ -15,6 +15,71 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 23.08.2025
+[3197. Find the Minimum Area to Cover All Ones II](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/description/) hard
+[blog post](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/solutions/7112959/kotlin-by-samoylenkodmitry-rfeh/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23082025-3197-find-the-minimum-area?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/XpPIkVrLWUE)
+
+![1.webp](https://assets.leetcode.com/users/images/1fb8c9a1-05d7-40fe-aa42-7f2cebc5730e_1755946072.6175299.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1090
+
+#### Problem TLDR
+
+Min sum all-1 areas of 3-split #hard
+
+#### Intuition
+
+Use hint: try every split
+
+#### Approach
+
+* corner case: consider reverse split and sum
+
+#### Complexity
+
+- Time complexity:
+$$O(nm^4)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 51ms
+    fun minimumSum(g: Array<IntArray>): Int {
+        val w = g[0].size; val h = g.size
+        fun sum(x1: Int, y1: Int, x2: Int, y2: Int): Int {
+            var r = 0; var b = 0; var l = w; var t = h
+            for (y in y1..y2) for (x in x1..x2) if (g[y][x] > 0) 
+            { r = max(r, x); l = min(l, x); b = max(b, y); t = min(t, y) }
+            return (r-l+1)*(b-t+1)
+        } 
+        fun split(x1: Int, y1: Int, x2: Int, y2: Int): Int {
+            var res = 30*30
+            for (y in y1..<y2) res = min(res, sum(x1, y1, x2, y) + sum(x1, y+1, x2, y2))
+            for (x in x1..<x2) res = min(res, sum(x1, y1, x, y2) + sum(x+1, y1, x2, y2))
+            return res
+        } 
+        var res = 30*30
+        for (y in 0..<h-1) res = min(res, sum(0, 0, w-1, y) + split(0, y+1, w-1, h-1))
+        for (y in 0..<h-1) res = min(res, split(0, 0, w-1, y) + sum(0, y+1, w-1, h-1))
+        for (x in 0..<w-1) res = min(res, sum(0, 0, x, h-1) + split(x+1, 0, w-1, h-1))
+        for (x in 0..<w-1) res = min(res, split(0, 0, x, h-1) + sum(x+1, 0, w-1, h-1))
+        return res
+    }
+
+
+```
+
 # 22.08.2025
 [3195. Find the Minimum Area to Cover All Ones I](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/description/) medium
 [blog post](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/solutions/7109329/kotlin-rust-by-samoylenkodmitry-sws5/)
