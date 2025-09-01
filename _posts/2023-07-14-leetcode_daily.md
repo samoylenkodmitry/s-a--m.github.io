@@ -15,6 +15,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 01.09.2025
+[1792. Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/description) medium
+[blog post](https://leetcode.com/problems/maximum-average-pass-ratio/solutions/7143969/kotlin-by-samoylenkodmitry-k4id/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01092025-1792-maximum-average-pass?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/STUaNN6HzxA)
+
+![1.webp](https://assets.leetcode.com/users/images/13d531d0-5247-4a50-a43e-4668d4118261_1756714882.161019.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1099
+
+#### Problem TLDR
+
+Max avg ratio after assigning extra to ratios #medium
+
+#### Intuition
+
+Greedy works: for each extra choose the class that will make the most difference.
+```j
+    //[1,2],[3,5],[2,2]] 
+    // 2/3 vs 3/5
+    // 10/15  9/15
+    //
+    // 2/3 4/6 2/2   vs   3/4 3/5 2/2
+    // a/b c/d
+    // a+1/b+1 +c/d   vs   a/b + c+1/d+1
+```
+
+#### Approach
+
+* we don't have to validate in the end; choose only available numbers
+* there is a bitmask optimization
+* we can prioritize rows, cols or subs with more numbers filled
+
+#### Complexity
+
+- Time complexity:
+$$O(nlogn)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 332ms
+    fun maxAverageRatio(cls: Array<IntArray>, ext: Int): Double {
+        val q = PriorityQueue<IntArray>(compareBy { (a,b) -> 1.0*a/b-1.0*(a+1)/(b+1)})
+        q += cls; for (e in 1..ext) q += q.poll().also { ++it[0]; ++it[1] }
+        return cls.sumOf { (a,b) -> 1.0*a/b } / cls.size
+    }
+
+
+```
+
 # 31.08.2025
 [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) hard
 [blog post](https://leetcode.com/problems/sudoku-solver/solutions/7141177/kotlin-by-samoylenkodmitry-feha/)
