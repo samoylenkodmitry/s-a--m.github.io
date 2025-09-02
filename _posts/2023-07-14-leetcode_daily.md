@@ -15,6 +15,73 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 02.09.2025
+[3025. Find the Number of Ways to Place People I](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/description/) medium
+[blog post](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/solutions/7147340/kotlin-by-samoylenkodmitry-8wm7/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02092025-3025-find-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/pMiePyA3pbs)
+
+![1.webp](https://assets.leetcode.com/users/images/a969a362-0323-451e-88af-ee2085d1c607_1756801176.049418.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1100
+
+#### Problem TLDR
+
+Left-top, bottom-right pairs with empty rectangles #medium
+
+#### Intuition
+
+Brute-force is accepted for n=50.
+
+Another intuition: sort by `x` then rotate CCW around each point.
+
+#### Approach
+
+* should we learn quad trees?
+
+#### Complexity
+
+- Time complexity:
+$$O(n^3)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 55ms
+    fun numberOfPairs(p: Array<IntArray>): Int {
+        var res = 0
+        for (i in p.indices) for (j in p.indices)
+            if (i != j && p[i][0] <= p[j][0] && p[i][1] >= p[j][1] && 
+                p.indices.none { k -> k != i && k != j && 
+                    p[k][0] in p[i][0]..p[j][0] && p[k][1] in p[j][1]..p[i][1] }) ++res
+        return res
+    }
+
+
+```
+```kotlin 
+
+// 43ms
+    fun numberOfPairs(p: Array<IntArray>): Int {
+        p.sortBy { it[0]*1000-it[1] }
+        return p.indices.sumOf { i ->
+            var y = -1
+            p.drop(i+1).count { (_,d) -> d <= p[i][1] && d > y.also{y=max(y,d)}}
+        }
+    }
+
+
+```
+
 # 01.09.2025
 [1792. Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/description) medium
 [blog post](https://leetcode.com/problems/maximum-average-pass-ratio/solutions/7143969/kotlin-by-samoylenkodmitry-k4id/)
