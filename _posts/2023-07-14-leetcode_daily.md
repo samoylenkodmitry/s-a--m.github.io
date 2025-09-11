@@ -15,6 +15,77 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 11.09.2025
+[2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description) medium
+[blog post](https://leetcode.com/problems/sort-vowels-in-a-string/solutions/7178103/kotlin-rust-by-samoylenkodmitry-zl36/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11092025-2785-sort-vowels-in-a-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/1zQ0Ee-Lk8w)
+
+![1.webp](https://assets.leetcode.com/users/images/3abb1b97-90df-4329-b2cf-bab1f704a59d_1757579526.049517.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1109
+
+#### Problem TLDR
+
+Sort vowels #medium
+
+#### Intuition
+
+Just implementation, no extra tricks.
+
+#### Approach
+
+* copy vowels, sort, put back
+* or do a counting sort
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 102ms
+    fun sortVowels(s: String) = buildString {
+        val vw = s.filter { it in "aeiouAEIOU" }.toList().sorted()
+        var i = 0
+        for (c in s) append(if (c in "aeiouAEIOU") vw[i++] else c)
+    }
+
+
+```
+```kotlin
+
+// 27ms
+    fun sortVowels(s: String) = buildString {
+        val v = "AEIOUaeiou"; val vw = IntArray(12)
+        for (c in s) ++vw[1 + v.indexOf(c)]
+        for (c in s) append(if (c in v) 
+            v[(0..10).first {vw[it+1] > 0}.also {--vw[it+1]}] else c)
+    }
+
+
+```
+```rust 
+
+// 10ms
+    pub fn sort_vowels(s: String) -> String {
+        let mut t = s.chars().filter(|&c| "AEIOUaeiou".contains(c)).sorted();
+        s.chars().map(|c| if "AEIOUaeiou".contains(c) { t.next().unwrap() } else { c }).collect()
+    }
+
+
+```
+
 # 10.09.2025
 [1733. Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/description/) medium
 [blog post](https://leetcode.com/problems/minimum-number-of-people-to-teach/solutions/7174800/kotlin-by-samoylenkodmitry-pqa7/)
