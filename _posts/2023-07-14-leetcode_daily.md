@@ -15,6 +15,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 13.09.2025
+[3541. Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/description/) easy
+[blog post](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/7185210/kotlin-by-samoylenkodmitry-7jsh/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13092025-3541-find-most-frequent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/B5eDJXNtIhY)
+
+![1.webp](https://assets.leetcode.com/users/images/3ff9e10a-655f-42e9-87c9-cf10eb7074e5_1757755298.9274602.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1111
+
+#### Problem TLDR
+
+Max freq vowels + consonants #easy
+
+#### Intuition
+
+Make a frequency array, then find max of vowel and max of consonant.
+
+#### Approach
+
+* can we do a one-liner?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 27ms
+    fun maxFreqSum(s: String) = s.partition { it in "aeiou" }.toList()
+        .sumOf { it.groupBy { it }.maxOfOrNull { it.value.size } ?: 0 }
+
+
+```
+
 # 12.09.2025
 [3227. Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/description) medium
 [blog post](https://leetcode.com/problems/vowels-game-in-a-string/solutions/7181814/kotlin-rust-by-samoylenkodmitry-dyno/)
