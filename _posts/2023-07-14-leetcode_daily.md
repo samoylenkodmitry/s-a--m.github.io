@@ -15,6 +15,76 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 22.09.2025
+[3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/) easy
+[blog post](https://leetcode.com/problems/count-elements-with-maximum-frequency/solutions/7213082/kotlin-rust-by-samoylenkodmitry-scof/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22092025-3005-count-elements-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/bnI54WtsBgs)
+
+![1.webp](https://assets.leetcode.com/users/images/5a20c55d-ca22-4b45-a29d-fe2c41ccc3f0_1758525843.7169316.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1120
+
+#### Problem TLDR
+
+Count max-freq elements #easy #counting
+
+#### Intuition
+
+Maintain frequency map. Count on-line or in the second iteration.
+
+#### Approach
+
+* for n=100 brute force is accepted
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 13ms
+    fun maxFrequencyElements(n: IntArray) =
+    n.groupBy{it}.values.map{it.size}.run {max()*count{it==max()}}
+
+
+```
+```kotlin 
+
+// 1ms
+    fun maxFrequencyElements(n: IntArray): Int {
+        var res = 0; var maxF = 0; val f = IntArray(101)
+        for (x in n) if (++f[x] > maxF) { maxF = f[x]; res = 1 }
+                     else if (f[x] == maxF) ++res;
+        return res * maxF
+    }
+
+
+```
+```rust
+
+
+// 0ms
+    pub fn max_frequency_elements(mut n: Vec<i32>) -> i32 {
+        n.sort_unstable(); n.chunk_by(|a, b| a == b)
+        .fold((0, 0, 0), |r, c| if c.len() > r.0 { (c.len(), 1, c.len())} 
+            else if c.len() == r.0 { (r.0, r.1 + 1, r.0 * (r.1+1))} else { r }).2 as _
+    }
+
+
+```
+
 # 21.09.2025
 [1912. Design Movie Rental System](https://leetcode.com/problems/design-movie-rental-system/description) medium
 [blog post](https://leetcode.com/problems/design-movie-rental-system/solutions/7210372/kotlin-rust-by-samoylenkodmitry-btis/)
