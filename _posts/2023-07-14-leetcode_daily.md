@@ -15,6 +15,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 23.09.2025
+[165. Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description) medium
+[blog post](https://leetcode.com/problems/compare-version-numbers/solutions/7216721/kotlin-rust-by-samoylenkodmitry-dtgc/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23092025-165-compare-version-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/-qstZnKVbNs)
+
+![1.webp](https://assets.leetcode.com/users/images/3933d9d4-ac31-407e-815f-503aea42b79f_1758620949.95975.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1121
+
+#### Problem TLDR
+
+Compare versions x.x.x.x #medium
+
+#### Intuition
+
+Pad start strings or convert to ints.
+
+#### Approach
+
+* 25 characters for pad start
+* pad lists of numbers length to the largest
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 23ms
+    fun compareVersion(v1: String, v2: String) = listOf(v1, v2)
+        .map { it.split('.').map {it.toInt()}}
+        .let { (a, b) -> val d = List(abs(a.size - b.size)){0}; (a+d).zip(b+d)}
+        .map { (a, b) -> a.compareTo(b) }.firstOrNull { it != 0 } ?: 0
+
+```
+
+```rust 
+
+
+// 0ms
+    pub fn compare_version(v: String, w: String) -> i32 {
+        v.split('.').zip_longest(w.split('.')).map(|e|e.or("0","0"))
+        .map(|(l,r)|l.parse::<i32>().unwrap().cmp(&r.parse::<i32>().unwrap()) as i32)
+        .find(|&x| x != 0).unwrap_or(0)
+    }
+
+
+```
+
 # 22.09.2025
 [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/) easy
 [blog post](https://leetcode.com/problems/count-elements-with-maximum-frequency/solutions/7213082/kotlin-rust-by-samoylenkodmitry-scof/)
