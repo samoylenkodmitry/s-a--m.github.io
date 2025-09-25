@@ -15,6 +15,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 25.09.2025
+[120. Triangle](https://leetcode.com/problems/triangle/description) medium
+[blog post](https://leetcode.com/problems/triangle/solutions/7222434/kotlin-rust-by-samoylenkodmitry-561x/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25092025-120-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/7XhH0MzLSR0)
+
+![1.webp](https://assets.leetcode.com/users/images/14026ee7-a9a6-41c7-86a8-93710899994d_1758789956.8380303.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1123
+
+#### Problem TLDR
+
+Min path sum in triangle #medium #dp
+
+#### Intuition
+
+Go from top to bottom, keeping the previous result: `curr[i] = t[j][i] + min(prev[i], prev[i-1])`
+
+#### Approach
+
+* careful with out of bounds exceptions
+* use Int.MAX_VALUE / 200
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+
+// 19ms
+    fun minimumTotal(t: List<List<Int>>) = t.drop(1)
+    .fold(t[0]) { p,t -> listOf(p[0] + t[0]) + (1..<t.size)
+        .map { i-> t[i]+min(p[min(i, p.size-1)],p[i-1])}}.min()
+
+
+```
+
+```rust 
+
+
+// 0ms
+    pub fn minimum_total(t: Vec<Vec<i32>>) -> i32 {
+        t.iter().skip(1).fold(vec![t[0][0]], |p, r| { once(p[0]+r[0])
+            .chain((1..r.len()).map(|i| r[i]+p[i.min(p.len()-1)].min(p[i-1]))).collect()
+        }).into_iter().min().unwrap()
+    }
+
+
+```
+
 # 24.09.2025
 [166. Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/description) medium
 [blog post](https://leetcode.com/problems/fraction-to-recurring-decimal/solutions/7219619/kotlin-rust-by-samoylenkodmitry-95of/)
