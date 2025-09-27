@@ -15,6 +15,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 27.09.2025
+[812. Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/description/) easy
+[blog post](https://leetcode.com/problems/largest-triangle-area/solutions/7227777/kotlin-rust-by-samoylenkodmitry-55cv/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/27092025-812-largest-triangle-area?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/G6-rCzqV0GY)
+
+![1.webp](https://assets.leetcode.com/users/images/7b8f59e1-6328-4887-9bd4-6e417d43702c_1758965792.6773875.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1125
+
+#### Problem TLDR
+
+Max area triangle #easy
+
+#### Intuition
+
+Brute-force & Google for formula.
+
+#### Approach
+
+* max are triangle lies on a convex-hull
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2log(n))$$ or n^2
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+
+// 31ms
+    fun largestTriangleArea(p: Array<IntArray>) =
+        p.maxOf {(x1,y1)-> p.maxOf{(x2,y2)-> p.maxOf{(x3,y3) ->
+        abs((x2-x1)*(y3-y1)-(x3-x1)*(y2-y1)) }}} * 0.5
+
+
+```
+
+```rust 
+
+
+// 3ms
+    pub fn largest_triangle_area(p: Vec<Vec<i32>>) -> f64 {
+        let mut r = 0f64;
+        for p1 in &p { for p2 in &p { for p3 in &p {
+            r = r.max(((p2[0]-p1[0])*(p3[1]-p1[1])-(p3[0]-p1[0])*(p2[1]-p1[1])).abs()as f64)
+        }}}; r * 0.5
+    }
+
+
+```
+
 # 26.09.2025
 [611. Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/description) medium
 [blog post](https://leetcode.com/problems/valid-triangle-number/solutions/7225186/kotlin-rust-by-samoylenkodmitry-2wf4/)
