@@ -15,6 +15,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 28.09.2025
+[976. Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/description/) easy
+[blog post](https://leetcode.com/problems/largest-perimeter-triangle/solutions/7230895/kotlin-rust-by-samoylenkodmitry-ml7d/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/28092025-976-largest-perimeter-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/JLBa2i5asi0)
+
+![1.webp](https://assets.leetcode.com/users/images/e6bfdf29-df17-484e-9bb7-6a6cfc6bae97_1759054006.577921.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1126
+
+#### Problem TLDR
+
+Max triangle perimeter from array of lengths #easy #sliding_window
+
+#### Intuition
+
+Sort. Consider every 3-sliding window from biggest: when `a+b <= c` move next, discard the `c`, otherwise finish.
+When `c` is bigger than closes `a+b`, then it will be bigger than any other pair sum.
+
+#### Approach
+
+* this is not an easy problem
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$ or O(1)
+
+#### Code
+
+```kotlin 
+
+// 81ms
+    fun largestPerimeter(n: IntArray) = 
+        max(0, n.sorted().windowed(3)
+        .maxOf{(a,b,c) -> (a+b+c)*(a+b).compareTo(c)})
+
+
+```
+
+```rust 
+
+
+// 0ms
+    pub fn largest_perimeter(n: Vec<i32>) -> i32 {
+        n.iter().sorted_by_key(|&x|-x).tuple_windows()
+        .find(|&(c,b,a)| a+b>*c).map_or(0, |(a,b,c)| a+b+c)
+    }
+
+
+```
+
 # 27.09.2025
 [812. Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/description/) easy
 [blog post](https://leetcode.com/problems/largest-triangle-area/solutions/7227777/kotlin-rust-by-samoylenkodmitry-55cv/)
