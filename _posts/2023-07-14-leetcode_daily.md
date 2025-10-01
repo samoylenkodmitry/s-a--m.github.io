@@ -15,6 +15,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 01.10.2025
+[1518. Water Bottles](https://leetcode.com/problems/water-bottles/description) easy
+[blog post](https://leetcode.com/problems/water-bottles/solutions/7238427/kotlin-rust-by-samoylenkodmitry-t15z/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01102025-1518-water-bottles?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/W1vpRvv9goc)
+
+![1.jpg](https://assets.leetcode.com/users/images/2fc2eed9-ed83-439c-b725-95a5b7d48fce_1759298898.1584098.jpeg)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1129
+
+#### Problem TLDR
+
+Total drinks with exchange empty for full #easy #simulation
+
+#### Intuition
+
+Simulate the process. Don't forget to keep lefover empty bottles.
+
+
+
+#### Approach
+
+* the single math formula can be derived from: `s = b + b/x + (b/x+b%x)/x + ((b/x+b%x)/x+(b/x+b%x)%x)/x...`
+* or `s = b*(1 + 1/x + 1/x^2 + 1/x^3 + ...)`, geometric series converges to `1/(1-r)` where `r=1/x`
+* so `s = b*(1/(1-1/x)) = b/(1-1/x) = b*x/(x-1)` (ask chatgpt why it is (b*x-1) instead)
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 0ms
+    fun numWaterBottles(b: Int, x: Int, e: Int = 0): Int = 
+    b + if (b < 1) 0 else numWaterBottles((b+e)/x, x, (b+e)%x)
+
+
+```
+```rust 
+
+
+// 0ms
+    pub fn num_water_bottles(b: i32, x: i32) -> i32 {
+        (b*x-1)/(x-1)
+    }
+
+
+```
+
 # 30.09.2025
 [2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/description) medium
 [blog post](https://leetcode.com/problems/find-triangular-sum-of-an-array/solutions/7235930/kotlin-rust-by-samoylenkodmitry-gzhc/)
