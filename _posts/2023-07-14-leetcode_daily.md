@@ -15,6 +15,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 02.10.2025
+[3100. Water Bottles II](https://leetcode.com/problems/water-bottles-ii/description) medium
+[blog post](https://leetcode.com/problems/water-bottles-ii/solutions/7242154/kotlin-rust-by-samoylenkodmitry-jzlf/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02102025-3100-water-bottles-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/fe7dj6FkfYM)
+
+![1.webp](https://assets.leetcode.com/users/images/60b05ec1-2af9-4871-8e76-d8361d874633_1759394544.600998.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1130
+
+#### Problem TLDR
+
+Total drinks with growing exchange rate empty for full #medium #simulation
+
+#### Intuition
+
+Simulate the process. Don't forget to keep lefover empty bottles.
+
+
+
+#### Approach
+
+* there is a O(1) math solution exists
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 103ms
+    fun maxBottlesDrunk(b: Int, x: Int, e: Int = 0): Int =
+    b + if (b+e<x) 0 else maxBottlesDrunk(1,x+1,b+e-x)
+
+
+```
+```rust 
+
+
+// 3ms
+    pub fn max_bottles_drunk(mut b: i32, mut x: i32) -> i32 {
+        let (mut e, mut d) = (0, 0);
+        while b > 0 || e >= x {
+            d += b; e += b; b = if (e < x) {0} else {e-=x;x+=1;1};
+        } d
+    }
+
+
+```
+
 # 01.10.2025
 [1518. Water Bottles](https://leetcode.com/problems/water-bottles/description) easy
 [blog post](https://leetcode.com/problems/water-bottles/solutions/7238427/kotlin-rust-by-samoylenkodmitry-t15z/)
