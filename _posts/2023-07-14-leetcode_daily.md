@@ -15,7 +15,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
-# 05.10.2025
+# 10.10.2025
+[3147. Taking Maximum Energy From the Mystic Dungeon](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/) medium
+[blog post](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/solutions/7263797/kotlin-rust-by-samoylenkodmitry-wtmn/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/10102025-3147-taking-maximum-energy?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/RAU7BBuYb98)
+
+![6c72b184-248f-4f18-8f48-de7d078824ff (1).webp](https://assets.leetcode.com/users/images/fbd43bde-5fc8-46e8-ac66-b8efaed0d516_1760084308.7767444.webp)
+
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1138
+
+#### Problem TLDR
+
+Max k-distant suffix sum #medium #array
+
+#### Intuition
+
+Each `k` sums have stable positions. Track `k` sums, drop if negative.
+
+#### Approach
+
+* can be done in-place
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$ or O(1) with input mutation
+
+#### Code
+
+```kotlin 
+
+// 724ms
+    fun maximumEnergy(e: IntArray, k: Int) = (e.size-1 downTo 0)
+    .maxOf { e[it] += if (it+k < e.size) e[it+k] else 0; e[it] }
+
+```
+```rust 
+
+// 21ms
+    pub fn maximum_energy(mut e: Vec<i32>, k: i32) -> i32 {
+        let k = k as usize; for i in k..e.len() { e[i%k] = e[i] + 0.max(e[i%k]) }
+        *e[..k].iter().max().unwrap()
+    }
+
+```
+
+# 09.10.2025
 [3494. Find the Minimum Amount of Time to Brew Potions](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/) medium
 [blog post](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/solutions/7261240/kotlin-rust-by-samoylenkodmitry-js0f/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05102025-3494-find-the-minimum-amount?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
@@ -89,7 +145,7 @@ $$O(n)$$
 
 ```
 
-# 05.10.2025
+# 08.10.2025
 [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/description) medium
 [blog post](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/solutions/7258583/kotlin-rust-by-samoylenkodmitry-68jz/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05102025-2300-successful-pairs-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
