@@ -15,6 +15,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 13.10.2025
+[2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description) medium
+[blog post](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/solutions/7271212/kotlin-rust-by-samoylenkodmitry-jtmb/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13102025-2273-find-resultant-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/tAvFWsJgASQ)
+
+![ef5404c8-652d-4e6c-ac76-4e95cfe41880 (1).webp](https://assets.leetcode.com/users/images/d3d43761-53aa-4725-aa0d-3e54069df036_1760341457.6102457.webp)
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1141
+
+#### Problem TLDR
+
+Dedup anagrams #easy
+
+#### Intuition
+
+Simulate the process. 
+The islands of equal-by-anagram are not influence each other when split by non-equal word.
+
+#### Approach
+
+* going from left to right, take value if previous is not anagram to current
+* check anagrams by: a) sorting b) comparing the frequency map
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+
+// 42ms
+    fun removeAnagrams(w: Array<String>) = w.take(1) + w.asList()
+    .zipWithNext().mapNotNull {(a,b) -> b.takeIf{a.groupBy{it}!=b.groupBy{it}}}
+
+```
+```rust 
+
+// 3ms
+    pub fn remove_anagrams(mut w: Vec<String>) -> Vec<String> {
+       w.dedup_by_key(|w| w.bytes().counts()); w
+    }
+
+```
+
 # 12.10.2025
 [3539. Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/description/) medium
 [blog post](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/solutions/7269299/kotlin-rust-by-samoylenkodmitry-as5v/)
