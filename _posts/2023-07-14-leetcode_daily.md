@@ -15,6 +15,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 20.10.2025
+[2011. Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description) easy
+[blog post](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/solutions/7287908/kotlin-rust-by-samoylenkodmitry-m3j5/)
+[substack]()
+[youtube](https://youtu.be/FBnBfpq2wnc)
+
+
+![1476e184-c73b-4b5f-a496-0feaf1535283 (1).webp](https://assets.leetcode.com/users/images/7ede13fc-3d34-4778-92ed-309d8c368fa2_1760945957.9504435.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1148
+
+#### Problem TLDR
+
+do ++ or -- operation from 0 #easy
+
+#### Intuition
+
+Simulate the process.
+
+#### Approach
+
+* just check '+' in string
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+
+// 7ms
+    fun finalValueAfterOperations(o: Array<String>) = 
+        2 * o.count { '+' in it } - o.size
+
+```
+```rust
+
+// 1ms
+    pub fn final_value_after_operations(o: Vec<String>) -> i32 {
+        (o.join("").matches('+').count() - o.len()) as _
+    }
+
+```
+
 # 19.10.2025
 [1625. Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/description) medium
 [blog post](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/solutions/7285975/kotlin-rust-by-samoylenkodmitry-g5mp/)
