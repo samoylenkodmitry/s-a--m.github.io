@@ -15,6 +15,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 27.10.2025
+[2125. Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description) medium
+[blog post](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/solutions/7304802/kotlin-rust-by-samoylenkodmitry-zy7p/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/27102025-2125-number-of-laser-beams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/WESY-QrWFLU)
+
+![5a71695d-3b4c-4c0b-bbf8-0c85a67b717f (1).webp](https://assets.leetcode.com/users/images/192644a6-95b1-4b00-84ac-555a27095b2b_1761554255.1214697.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1155
+
+#### Problem TLDR
+
+Count multiplications between rows #medium
+
+#### Intuition
+
+Total += previous * current (count '1')
+
+#### Approach
+
+* empty rows are irrelevant
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$ or O(1)
+
+#### Code
+
+```kotlin 
+// 56ms
+    fun numberOfBeams(b: Array<String>) = b
+    .mapNotNull { it.sumOf { it - '0' }.takeIf { it > 0 }}
+    .windowed(2).sumOf { it[0]*it[1] }
+
+```
+```rust 
+// 0ms
+    pub fn number_of_beams(b: Vec<String>) -> i32 {
+        b.iter().map(|s| s.bytes().filter(|&b| b == b'1').count())
+         .filter(|&c| c > 0).tuple_windows().map(|(a,b)| (a*b) as i32).sum()
+    }
+
+```
+
 # 26.10.2025
 [2043. Simple Bank System](https://leetcode.com/problems/simple-bank-system/description) medium
 [blog post](https://leetcode.com/problems/simple-bank-system/solutions/7302551/kotlin-rust-by-samoylenkodmitry-08f3/)
