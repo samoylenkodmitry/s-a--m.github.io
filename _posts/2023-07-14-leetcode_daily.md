@@ -15,6 +15,80 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 31.10.2025
+[3289. The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/description/) easy
+[blog post](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/solutions/7315730/kotlin-rust-by-samoylenkodmitry-g6fn/)
+[substack]()
+[youtube](https://youtu.be/axzoIKlXIT4)
+
+
+![5cd75984-aef3-440e-932d-e589bbaac92e (1).webp](https://assets.leetcode.com/users/images/08cbf034-1e17-4f7c-a0dd-3dc578649e1b_1761904100.3903308.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1159
+
+#### Problem TLDR
+
+Two extra numbers from 0..n #easy
+
+#### Intuition
+
+Use any of:
+* HashSet for visited
+* bitmask for visited
+* array itself for visited
+
+The clever solution with bit manipulation:
+* total xor, no extras: a^b^c -- can compute as x1
+* total xor for single extra: a^b^c^a
+* total xor for two extras: a^b^c^a^b -- can compute as x2
+* xor of x1^x2: a^b^c ^ a^b^c^a^b = a^b -- can compute as x1^x2
+
+Now we have a^b, each bits is a different between `a` and `b`.
+
+Split all given numbers by have or have-nots of this bit.
+xor(have_bit) = xx1
+xor(have_not_bit) == xx2
+
+Then split range numbers similarly:
+xor(have_bit) == yy1
+xor(have_not_bit) == yy2
+
+Then a = xx1 ^ yy1, b = xx2 ^ yy2
+
+#### Approach
+
+* just brute-force
+
+#### Complexity
+
+- Time complexity:
+$$O()$$
+
+- Space complexity:
+$$O()$$
+
+#### Code
+
+```kotlin 
+// 17ms
+    fun getSneakyNumbers(n: IntArray) = 
+        n.indices.filter { x -> n.count { it == x } > 1 }
+
+```
+```rust 
+// 0ms
+    pub fn get_sneaky_numbers(n: Vec<i32>) -> Vec<i32> {
+        let mut m = 0u128;
+        n.into_iter().filter(|x| { let u = (1 << x) & m > 0; m |= 1<<x; u}).collect()
+    }
+
+```
+
 # 30.10.2025
 [1526. Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/description) hard
 [blog post](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/solutions/7312982/kotlin-rust-by-samoylenkodmitry-2wvy/)
