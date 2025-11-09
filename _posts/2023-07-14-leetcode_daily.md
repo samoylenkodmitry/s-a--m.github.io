@@ -15,6 +15,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 09.11.2025
+[2169. Count Operations to Obtain Zero](https://leetcode.com/problems/count-operations-to-obtain-zero/description/) easy
+[blog post](https://leetcode.com/problems/count-operations-to-obtain-zero/solutions/7336766/kotlin-rust-by-samoylenkodmitry-e5iz/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09112025-2169-count-operations-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/EQUm48CGOs0)
+
+
+![ed52662d-317d-4c76-9e3f-e3fcd2ee7132 (1).webp](https://assets.leetcode.com/users/images/3de4f59b-5b07-4ec6-8c55-8469db8d4169_1762677380.0603647.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1168
+
+#### Problem TLDR
+
+Count numbers subtractions until 0 #easy
+
+#### Intuition
+
+Simulate the process.
+
+Another way to look at it: the biggest would be subtracted `big/small` times until numbers flip.
+
+#### Approach
+
+* recursion space complexity is log(depth)
+* it is Euclidian algorithm (a,b) to (b, a%b)
+* there is a golden ratio hidden here
+* consequtive Fibonacci numbers would give the slowest path: Fibonacci sequence backwards
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin
+// 0ms
+    fun countOperations(a: Int, b: Int): Int =
+        if (a<1||b<1) 0 else a/b + countOperations(b,a%b)
+```
+```rust
+// 0ms
+    pub fn count_operations(a: i32, b: i32) -> i32 {
+        if a<1 || b<1 { 0 } else { a/b + Self::count_operations(b,a%b) }
+    }
+```
+
 # 08.11.2025
 [1611. Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/description) hard
 [blog post](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/7334462/kotlin-rust-by-samoylenkodmitry-pnon/)
