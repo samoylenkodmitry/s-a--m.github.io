@@ -15,6 +15,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 16.11.2025
+[1513. Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s/description/) medium
+[blog post](https://leetcode.com/problems/number-of-substrings-with-only-1s/solutions/7352028/kotlin-rust-by-samoylenkodmitry-2m4m/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16112025-1513-number-of-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/egWge3s-qBU)
+
+![5e173ed0-6bd3-4f9b-99fa-250efe0725c7 (1).webp](https://assets.leetcode.com/users/images/39e32fb6-e31c-469e-ac03-dc72f67074ff_1763279686.9233139.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1175
+
+#### Problem TLDR
+
+Substrings of ones #medium #counting
+
+#### Intuition
+
+Sum the separate islands of ones. Each island length is n(n+1)/2 arithmetic sum.
+
+#### Approach
+
+* or compute the arithmetic sum on the go
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 21ms
+    fun numSub(s: String) = s.fold(0 to 0) { (r,curr), c ->
+        val curr = (c-'0')*curr + (c-'0')
+        (r + curr) % 1000000007 to curr
+    }.first
+```
+```rust 
+// 0ms
+    pub fn num_sub(s: String) -> i32 {
+        s.bytes().fold((0, 0), |(r, curr), c| {
+            let curr = (c-b'0')as i32*curr + (c-b'0')as i32;
+            ((r+curr)%1000000007, curr)
+        }).0
+    }
+```
+
 # 15.11.2025
 [3234. Count the Number of Substrings With Dominant Ones](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/description/) medium
 [blog post](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/solutions/7349987/kotlin-rust-by-samoylenkodmitry-8xy9/)
