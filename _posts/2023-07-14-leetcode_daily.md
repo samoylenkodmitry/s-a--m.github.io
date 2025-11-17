@@ -15,6 +15,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 17.11.2025
+[1437. Check If All 1's Are at Least Length K Places Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/description) easy
+[blog post](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/solutions/7354571/kotlin-rust-by-samoylenkodmitry-fjcr/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17112025-1437-check-if-all-1s-are?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/8DrG_10KmYQ)
+
+
+![dc32b130-129d-412c-b438-b0e73b728df3 (1).webp](https://assets.leetcode.com/users/images/c0db769d-3032-4358-89a5-882e33059b4f_1763368910.3868966.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1176
+
+#### Problem TLDR
+
+All ones k-distant #easy
+
+#### Intuition
+
+Count zeros in-between.
+
+#### Approach
+
+* we can write it with 1 extra variable
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 3ms
+    fun kLengthApart(nums: IntArray, k: Int): Boolean {
+        var z = k
+        return nums.all { n -> (n < 1 || z >= k).also { z = (1-n)*(z+1-n)}}
+    }
+```
+```rust 
+// 0ms
+    pub fn k_length_apart(n: Vec<i32>, k: i32) -> bool {
+        let mut z = k;
+        n.iter().all(|&n|{ let r = n < 1 || z >= k; z = (1-n)*(z+1-n); r})
+    }
+```
+
 # 16.11.2025
 [1513. Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s/description/) medium
 [blog post](https://leetcode.com/problems/number-of-substrings-with-only-1s/solutions/7352028/kotlin-rust-by-samoylenkodmitry-2m4m/)
