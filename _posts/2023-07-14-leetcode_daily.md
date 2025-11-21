@@ -15,6 +15,64 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 21.11.2025
+[1930. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/) medium
+[blog post](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/7364368/kotlin-rust-by-samoylenkodmitry-16c9/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/21112025-1930-unique-length-3-palindromic?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/pFZatmL5wyY)
+
+
+![d3163fea-afa0-4a08-9973-cf6a15c7b5d3 (1).webp](https://assets.leetcode.com/users/images/b814fb7e-f075-4e4f-8e61-797a72cb51d5_1763716521.5111632.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1180
+
+#### Problem TLDR
+
+3-palindroms subsequences #medium
+
+#### Intuition
+
+```j
+    // how many pairs we have for alphabet?
+    // 26*26 - 500*10^5 = 10^7 too big
+    // a b c d a  so, between same chars every uniq counts
+    // a......b........a.......b  can intersect
+```
+
+#### Approach
+
+* we can use bitmask for speedup
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 121ms
+    fun countPalindromicSubsequence(s: String) =
+    ('a'..'z').sumOf { s.slice(s.indexOf(it)+1..<s.lastIndexOf(it)).toSet().size }
+```
+```rust 
+// 127ms
+    pub fn count_palindromic_subsequence(s: String) -> i32 {
+        ('a'..='z').filter_map(|c| {
+            let r = s.rfind(c)?; let l = s[..r].find(c)?; 
+            Some(s[l+1..r].chars().unique().count() as i32)
+        }).sum()
+    }
+```
+
 # 20.11.2025
 [757. Set Intersection Size At Least Two](https://leetcode.com/problems/set-intersection-size-at-least-two/description) hard
 [blog post](https://leetcode.com/problems/set-intersection-size-at-least-two/solutions/7362269/kotlin-rust-by-samoylenkodmitry-y8ld/)
