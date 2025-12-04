@@ -15,6 +15,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 04.10.2025
+[2211. Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/description/) medium
+[blog post](https://leetcode.com/problems/count-collisions-on-a-road/solutions/7390958/kotlin-rust-by-samoylenkodmitry-852v/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04102025-2211-count-collisions-on?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/pdIdPSHuL8c)
+
+
+![95c23113-c2d5-4f60-8fd7-6d1c65dc353a (1).webp](https://assets.leetcode.com/users/images/c453cc17-2e4f-4396-b881-cec0a8212869_1764837410.8184676.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1193
+
+#### Problem TLDR
+
+Collisions R vs L #medium
+
+#### Intuition
+
+Do separate pass for R, then backwards pass for L.
+Drop counter every time opposite meets.
+
+#### Approach
+
+* notice, only the prefix L and suffix R are excluded.
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$, can be O(1)
+
+#### Code
+
+```kotlin
+// 42ms
+    fun countCollisions(d: String) =
+        d.trimStart('L').trimEnd('R').count { it != 'S' }
+```
+```rust
+// 0ms
+    pub fn count_collisions(d: String) -> i32 {
+       d.trim_start_matches('L').trim_end_matches('R').bytes()
+       .filter(|&b| b != b'S').count() as _
+    }
+```
+
 # 03.11.2025
 [3625. Count Number of Trapezoids II](https://leetcode.com/problems/count-number-of-trapezoids-ii) hard
 [blog post](https://leetcode.com/problems/count-number-of-trapezoids-ii/solutions/7389188/kotlin-by-samoylenkodmitry-qcg4/)
