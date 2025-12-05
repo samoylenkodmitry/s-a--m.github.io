@@ -15,6 +15,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 05.11.2025
+[3432. Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/description/) easy
+[blog post](https://leetcode.com/problems/count-partitions-with-even-sum-difference/solutions/7393372/kotlin-rust-by-samoylenkodmitry-mlko/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05112025-3432-count-partitions-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/7KtVrBXb4DA)
+
+![9d93b705-13db-48c9-9709-31ab503779dd (1).webp](https://assets.leetcode.com/users/images/3683edb2-4bbb-468d-831a-4524d37e376c_1764925551.2024643.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1194
+
+#### Problem TLDR
+
+Count Left sum - Right sum % 2 #easy
+
+#### Intuition
+
+Just brute-force.
+
+#### Approach
+
+* a more interesting solution: A-B %2 == 0 only if both odd or both even.
+* step i+0, [.......even_sum][..........even_sum]
+* step i+1, [.......even_sum,odd][..........even_sum-odd]
+* step i+1, [.......even_sum,even][..........even_sum-even]
+* basically, the even-ness will be the same for every partition
+* same proof for odd-ness
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$, or O(n) for clever solution
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+// 11ms
+    fun countPartitions(n: IntArray) =
+        (n.size-1)* (1-n.sum()%2)
+```
+```rust 
+// 0ms
+    pub fn count_partitions(n: Vec<i32>) -> i32 {
+       (n.len()as i32-1)*(1-n.iter().sum::<i32>()%2)
+    }
+```
+
 # 04.10.2025
 [2211. Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/description/) medium
 [blog post](https://leetcode.com/problems/count-collisions-on-a-road/solutions/7390958/kotlin-rust-by-samoylenkodmitry-852v/)
