@@ -15,6 +15,123 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 08.12.2025
+[1925. Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/description/) easy
+[blog post](https://leetcode.com/problems/count-square-sum-triples/solutions/7399838/kotlin-rust-by-samoylenkodmitry-csii/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/08122025-1925-count-square-sum-triples?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/EFxlZn9oLvM)
+
+
+![1a7fcc8f-43cd-4f69-94d4-012239f197d7 (1).webp](https://assets.leetcode.com/users/images/202e0d19-1ac7-49c5-a797-0c16a65bd90a_1765182767.9431524.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1197
+
+#### Problem TLDR
+
+Count a^2+b^2=c^2 in 1..n range #easy
+
+#### Intuition
+
+O(n^3) is accepted
+O(n^2): precompute n^2 numbers, lookup (a+b) in them
+
+#### Approach
+
+* we have to be in range 1..n, not in 1..250
+* or check sqrt(a*a+b*b)
+
+#### Complexity
+
+- Time complexity:
+$$O(n^3)$$ or O(n^2)
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+// 49ms
+    fun countTriples(n: Int): Int {
+        val s = (1..n).map { it * it }.toSet()
+        return s.sumOf { a-> s.count { b-> (a+b) in s}}
+    }
+```
+```rust 
+// 5ms
+    pub fn count_triples(n: i32) -> i32 {
+        (1..=n).map(|a| 2*(a..=n).filter(|b| { 
+        let c = (a*a+b*b).isqrt(); c <= n && c*c==a*a+b*b}).count() as i32).sum::<i32>()
+    }
+```
+
+# 07.12.2025
+[1523. Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/) easy
+[blog post](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/7397704/kotlin-rust-by-samoylenkodmitry-gw8p/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122025-1523-count-odd-numbers-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/qjWcxt3lY18)
+
+
+![ff0763dc-acf5-46ba-a96b-cd897810f634 (1).webp](https://assets.leetcode.com/users/images/05ef3c44-cb2c-468d-a950-88e289bd8842_1765100303.199584.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1196
+
+#### Problem TLDR
+
+Odds l..h #easy
+
+#### Intuition
+
+Look at total numbers count `d`:
+* even d - just divide by 2
+* odd d - divide by 2 plus look at first number if it is odd
+
+```j
+    // 1 2      2-1+1=2,  l=o, h = e, 2/2
+    // 1 2 3 4  4, l=o h=e 4/2
+    // 1 2 3    3   l=o h=o   1+3/2
+    // 2 3      2   l=e    2/2
+    // 2 3 4 5  4   l=e    4/2
+    // 3 4 5    3   l=o    1+3/2
+    // 2 3 4    3   l=e    3/2
+    // 3 4 5 6  4   l=o    4/2
+```
+
+#### Approach
+
+* or brillian lee compression of this logic: (h+1)/2-l/2
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+// 76ms
+    fun countOdds(l: Int, h: Int) =
+        (h-l+1)/2 + (l%2)*((h-l+1)%2)
+```
+```rust 
+// 0ms
+    pub fn count_odds(l: i32, h: i32) -> i32 {
+       (h+1)/2 - l/2 
+    }
+```
+
 # 06.12.2025
 [3578. Count Partitions With Max-Min Difference at Most K](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/description/) medium
 [blog post](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/solutions/7395692/kotlin-rust-by-samoylenkodmitry-5qwx/)
@@ -315,67 +432,7 @@ $$O(n^2)$$
 ```
 
 
-# 07.12.2025
-[1523. Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/) easy
-[blog post](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/solutions/7397704/kotlin-rust-by-samoylenkodmitry-gw8p/)
-[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122025-1523-count-odd-numbers-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-[youtube](https://youtu.be/qjWcxt3lY18)
 
-
-![ff0763dc-acf5-46ba-a96b-cd897810f634 (1).webp](https://assets.leetcode.com/users/images/05ef3c44-cb2c-468d-a950-88e289bd8842_1765100303.199584.webp)
-
-https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-
-#### Join me on Telegram
-
-https://t.me/leetcode_daily_unstoppable/1196
-
-#### Problem TLDR
-
-Odds l..h #easy
-
-#### Intuition
-
-Look at total numbers count `d`:
-* even d - just divide by 2
-* odd d - divide by 2 plus look at first number if it is odd
-
-```j
-    // 1 2      2-1+1=2,  l=o, h = e, 2/2
-    // 1 2 3 4  4, l=o h=e 4/2
-    // 1 2 3    3   l=o h=o   1+3/2
-    // 2 3      2   l=e    2/2
-    // 2 3 4 5  4   l=e    4/2
-    // 3 4 5    3   l=o    1+3/2
-    // 2 3 4    3   l=e    3/2
-    // 3 4 5 6  4   l=o    4/2
-```
-
-#### Approach
-
-* or brillian lee compression of this logic: (h+1)/2-l/2
-
-#### Complexity
-
-- Time complexity:
-$$O(1)$$
-
-- Space complexity:
-$$O(1)$$
-
-#### Code
-
-```kotlin
-// 76ms
-    fun countOdds(l: Int, h: Int) =
-        (h-l+1)/2 + (l%2)*((h-l+1)%2)
-```
-```rust 
-// 0ms
-    pub fn count_odds(l: i32, h: i32) -> i32 {
-       (h+1)/2 - l/2 
-    }
-```
 
 # 02.12.2025
 [3623. Count Number of Trapezoids I](https://leetcode.com/problems/count-number-of-trapezoids-i/description) medium
