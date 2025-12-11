@@ -15,6 +15,69 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 11.12.2025
+[3531. Count Covered Buildings](https://leetcode.com/problems/count-covered-buildings/description/) medium
+[blog post](https://leetcode.com/problems/count-covered-buildings/solutions/7406516/kotlin-rust-by-samoylenkodmitry-0meq/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11122025-3531-count-covered-buildings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/eO-naf6KpeY)
+
+
+![9328c4f5-787e-4249-9694-cf67f91a8579 (1).webp](https://assets.leetcode.com/users/images/d842ad5d-9086-40cf-8aad-cca7efe76a68_1765444919.3616753.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1200
+
+#### Problem TLDR
+
+Count surrounded dots on XY plane #medium
+
+#### Intuition
+
+```j
+    // idea line sweep Y then X, collect in-betweens, intersect them
+```
+Line sweep: collect lines, sort each line, drop first and last, intersect with orthogonal sweep.
+
+#### Approach
+
+* optimization: instead of collecting, just look max and min on each line.
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$, or O(n) for min-max
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+// 463ms
+    fun countCoveredBuildings(n: Int, b: Array<IntArray>) =
+        listOf(b.indices.groupBy { b[it][0] }.values.map { it.sortedBy { b[it][1] }},
+               b.indices.groupBy { b[it][1] }.values.map { it.sortedBy { b[it][0] }})
+        .map { it.fold(HashSet<Int>()) { r, t -> r += t.drop(1).dropLast(1); r }}
+        .reduce(Set<Int>::intersect).size
+```
+```rust 
+// 17ms
+    pub fn count_covered_buildings(n: i32, b: Vec<Vec<i32>>) -> i32 {
+        let (mut minY, mut maxY) = (vec![100000; n as usize+1], vec![0; n as usize+1]);
+        let (mut minX, mut maxX) = (minY.clone(), maxY.clone());
+        for b in &b { let (x,y) = (b[0] as usize, b[1] as usize);
+            minY[x] = minY[x].min(y); maxY[x] = maxY[x].max(y);
+            minX[y] = minX[y].min(x); maxX[y] = maxX[y].max(x);
+        }
+        b.iter().filter(|&b| { let (x,y) = (b[0] as usize, b[1] as usize);
+            minX[y] < x && x < maxX[y] && minY[x] < y && y < maxY[x] }).count() as _
+    }
+```
+
 # 10.12.2025
 [3577. Count the Number of Computer Unlocking Permutations](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/) medium
 [blog post](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/solutions/7404358/kotlin-rust-by-samoylenkodmitry-g60q/)
