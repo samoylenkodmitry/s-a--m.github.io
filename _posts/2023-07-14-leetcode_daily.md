@@ -15,6 +15,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 13.12.2025
+[3606. Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/description/) easy
+[blog post](https://leetcode.com/problems/coupon-code-validator/solutions/7410815/kotlin-rust-by-samoylenkodmitry-tkji/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/13122025-3606-coupon-code-validator?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/-HSIbCyUbAU)
+
+![fd4f17a4-698f-410e-9dd9-1d3d56a1caf3 (1).webp](https://assets.leetcode.com/users/images/c7fa59f0-3853-49b1-b3b0-9a66104ccb9a_1765625300.4786096.webp)
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1203
+
+#### Problem TLDR
+
+Filter a,b,c accroding to rules #easy
+
+#### Intuition
+
+Just read the rules.
+
+#### Approach
+
+* some rules can be hacked around
+* the regex in koglin faster than in rust
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+// 57ms
+    fun validateCoupons(c: Array<String>, b: Array<String>, a: BooleanArray) =
+    c.indices.filter { a[it] && Regex("\\w+") matches c[it] && b[it][0] in "egpr" }
+    .sortedBy { b[it][0] + c[it] }.map { c[it] }
+```
+```rust
+// 0ms
+    pub fn validate_coupons(c: Vec<String>, b: Vec<String>, a: Vec<bool>) -> Vec<String> {
+        b.iter().map(|b|b.as_bytes()[0]).zip(c).zip(a).filter(|((b,c),a)| 
+            *a && b"egrp".contains(b) && c != "" && c.chars().all(|c|c.is_alphanumeric() || c == '_'))
+        .sorted().map(|((_,c),_)|c).collect()
+    }
+```
+
 # 12.12.2025
 [3433. Count Mentions Per User](https://leetcode.com/problems/count-mentions-per-user/description) medium
 [blog post](https://leetcode.com/problems/count-mentions-per-user/solutions/7408541/kotlin-rust-by-samoylenkodmitry-rc6d/)
