@@ -15,6 +15,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 15.12.2025
+[2110. Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/description/) medium
+[blog post](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/solutions/7415252/kotlin-rust-by-samoylenkodmitry-a4jj/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15122025-2110-number-of-smooth-descent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/pICkmctr-WM)
+
+![d210a905-4fd3-482d-a2a6-97376705d4cb (1).webp](https://assets.leetcode.com/users/images/172a734b-ee03-4895-a005-9a6c5d1d3552_1765790224.1666932.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1205
+
+#### Problem TLDR
+
+Decreasing subarrays #medium
+
+#### Intuition
+
+Just count them like and arithmetic progression.
+
+#### Approach
+
+* res += count++
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 40ms
+    fun getDescentPeriods(p: IntArray) =
+    p.indices.fold(0 to 0L) { (cnt, res), i ->
+        val c = 1 + if (i > 0 && p[i] == p[i-1] - 1) cnt else 0
+        c to (res + c)
+    }.second
+```
+```rust 
+// 0ms
+    pub fn get_descent_periods(p: Vec<i32>) -> i64 {
+        (0..p.len()).fold((0,0), |(cnt,res), i| {
+            let c = 1 + if i > 0 && p[i] == p[i-1]-1 { cnt } else { 0 };
+            (c, res + c)
+        }).1
+    }
+```
+
 # 14.12.2025
 [2147. Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/description/) hard
 [blog post](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/solutions/7413028/kotlin-rust-by-samoylenkodmitry-0wwj/)
