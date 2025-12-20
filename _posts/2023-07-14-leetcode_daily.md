@@ -15,6 +15,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 20.12.2025
+[944. Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/description/) easy
+[blog post](https://leetcode.com/problems/delete-columns-to-make-sorted/solutions/7425776/kotlin-rust-by-samoylenkodmitry-rg1z/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20122025-944-delete-columns-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/vYRmx1MBQHk)
+
+
+![67d1f3d5-cce9-4f1d-8679-a72de527fec3 (1).webp](https://assets.leetcode.com/users/images/80942605-a30b-4ae0-88e3-acc2fb932e0b_1766224014.5033388.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1210
+
+#### Problem TLDR
+
+Count unsorted columns #easy
+
+#### Intuition
+
+Compare column with its sorted variant. 
+
+#### Approach
+
+* or compare adjucent rows in a column
+
+#### Complexity
+
+- Time complexity:
+$$O(nm)$$ or nmlogn
+
+- Space complexity:
+$$O(n)$$ or O(1)
+
+#### Code
+
+```kotlin 
+// 84ms
+    fun minDeletionSize(s: Array<String>) = 
+        s[0].indices.map{i -> s.map{it[i]}}.count { it != it.sorted() }
+```
+```rust 
+// 1ms
+    pub fn min_deletion_size(s: Vec<String>) -> i32 {
+        (0..s[0].len()).filter(|&i| (1..s.len()).any(|j| s[j-1].as_bytes()[i]>s[j].as_bytes()[i])).count() as _
+```
+
 # 19.12.2025
 [2092. Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/description) hard
 [blog post](https://leetcode.com/problems/find-all-people-with-secret/solutions/7423867/kotlin-rust-by-samoylenkodmitry-uw26/)
