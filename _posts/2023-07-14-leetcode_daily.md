@@ -15,6 +15,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 24.12.2025
+[3074. Apple Redistribution into Boxes](https://leetcode.com/problems/apple-redistribution-into-boxes/description/) easy
+[blog post](https://leetcode.com/problems/apple-redistribution-into-boxes/solutions/7435158/kotlin-rust-by-samoylenkodmitry-muoc/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24122025-3074-apple-redistribution?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/xaP4i6FooFM)
+
+![b4baba22-df27-4293-96e0-a74d93d0bb8d (1).webp](https://assets.leetcode.com/users/images/6d3b1324-5bdd-43dd-935e-0e7329a39200_1766563674.6827655.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1214
+
+#### Problem TLDR
+
+Min containers for all apples #easy #counting_sort
+
+#### Intuition
+
+Sum all apples. Take largest containers first.
+
+#### Approach
+
+* (1..51).first for number of containers
+* sort by counting
+
+#### Complexity
+
+- Time complexity:
+$$O(sort)$$, the sort can be NlogN or N for counting
+
+- Space complexity:
+$$O(sort)$$, Kotlin's IntArray.sort is O(1) space complexity
+
+#### Code
+
+```kotlin
+// 29ms
+    fun minimumBoxes(a: IntArray, c: IntArray) =
+        (1..c.size).first { a.sum() <= c.sortedDescending().take(it).sum() }
+```
+```rust
+// 0ms
+    pub fn minimum_boxes(a: Vec<i32>, c: Vec<i32>) -> i32 {
+        let mut s = a.iter().sum::<i32>(); let mut f = [0;51];
+        for c in c { f[c as usize] += 1 }; let mut j = 50;
+        (1..51).find(|i| { while f[j] < 1 { j-=1 }; s -= j as i32; f[j] -= 1; s <= 0}).unwrap() as _
+    }
+```
+
 # 23.12.2025
 [2054. Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/description) medium
 [blog post](https://leetcode.com/problems/two-best-non-overlapping-events/solutions/7432722/kotlin-rust-by-samoylenkodmitry-lr27/)
