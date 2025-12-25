@@ -15,6 +15,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 25.12.2025
+[3075. Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/description) medium
+[blog post](https://leetcode.com/problems/maximize-happiness-of-selected-children/solutions/7437881/kotlin-rust-by-samoylenkodmitry-dh7g/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25122025-3075-maximize-happiness?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/pVXiXEODprI)
+
+![75aecedd-9c48-4d4c-8be0-6480c83821ea (1).webp](https://assets.leetcode.com/users/images/8fd52ad9-1143-4cee-913b-53327068bc0c_1766657137.7302039.webp)
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1215
+
+#### Problem TLDR
+
+K max values, decreas each pick #medium #quickselect
+
+#### Intuition
+
+Sort and pick K largest.
+
+#### Approach
+
+* optimize with quickselect
+* we still have to sort K items to check 0 overflow
+
+#### Complexity
+
+- Time complexity:
+$$O(n + klog(k))$$, for optimal; the simplest is O(nlogn)
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 693ms
+    fun maximumHappinessSum(h: IntArray, k: Int) =
+        h.sortedDescending().take(k).withIndex().sumOf {(i,h)->max(0,1L*h-i)}
+```
+```rust 
+// 12ms
+    pub fn maximum_happiness_sum(mut h: Vec<i32>, k: i32) -> i64 {
+        h.sort_unstable_by(|a,b|b.cmp(a));
+        h.iter().zip(0..k).map(|(h,i)|0.max(h-i)as i64).sum()
+    }
+```
+```rust 
+// 18ms
+    pub fn maximum_happiness_sum(mut h: Vec<i32>, k: i32) -> i64 {
+        let (l,m,_) = h.select_nth_unstable_by_key(k as usize-1, |h|-h); 
+        l.sort_unstable_by(|a,b|b.cmp(a));
+        l.iter().chain(once(&*m)).zip(0..).map(|(h,i)|0.max(h-i)as i64).sum()
+    }
+```
+
 # 24.12.2025
 [3074. Apple Redistribution into Boxes](https://leetcode.com/problems/apple-redistribution-into-boxes/description/) easy
 [blog post](https://leetcode.com/problems/apple-redistribution-into-boxes/solutions/7435158/kotlin-rust-by-samoylenkodmitry-muoc/)
