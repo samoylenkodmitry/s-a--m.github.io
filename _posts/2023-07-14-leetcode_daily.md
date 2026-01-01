@@ -14,6 +14,44 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 01.01.2026
+[66. Plus One](https://leetcode.com/problems/plus-one/description/) easy
+[blog post](https://leetcode.com/problems/plus-one/solutions/7455520/kotlin-rust-by-samoylenkodmitry-6m3x/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01012026-66-plus-one?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/9l82b2V_D9I)
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+![c9513975-0f11-4aac-af43-cf8d3f5dbf95 (1).webp](https://assets.leetcode.com/users/images/0d80966f-92f6-47c9-9dd1-cc00d26b9888_1767266538.6243665.webp)
+
+#### Join me on Telegram
+https://t.me/leetcode_daily_unstoppable/1222
+#### Problem TLDR
+Increment big number #easy
+#### Intuition
+The simplest and robust solution is a separate container for result digits and a counter for carry.
+#### Approach
+* optimization: stop at first non-nine
+* optimization: count suffix nines in a forward cache-friendly pass
+#### Complexity
+- Time complexity:
+$$O(n)$$
+- Space complexity:
+$$O(n)$$
+#### Code
+```kotlin
+// 0ms
+    fun plusOne(d: IntArray): IntArray {
+        for (i in d.size-1 downTo 0) if (d[i]<9) {++d[i]; return d} else d[i]=0 
+        return IntArray(d.size+1).also {it[0]=1}
+    }
+```
+```rust
+// 0ms
+    pub fn plus_one(mut d: Vec<i32>) -> Vec<i32> {
+        let (mut c,n) = (0,d.len()); for &d in &d {if d < 9 {c=0} else {c+=1}}
+        if c==n { let mut r = vec![0;c+1];r[0]=1; return r}
+        d[n-c..n].fill(0); d[n-c-1] += 1; d
+    }
+```
 
 # 31.12.2025
 [1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/description) hard
