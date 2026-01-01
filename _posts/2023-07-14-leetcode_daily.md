@@ -18,7 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [66. Plus One](https://leetcode.com/problems/plus-one/description/) easy
 [blog post](https://leetcode.com/problems/plus-one/solutions/7455520/kotlin-rust-by-samoylenkodmitry-6m3x/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01012026-66-plus-one?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-[youtube](https://youtu.be/9l82b2V_D9I)
+[youtube](https://youtu.be/iO4zoGMmmec)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 ![c9513975-0f11-4aac-af43-cf8d3f5dbf95 (1).webp](https://assets.leetcode.com/users/images/0d80966f-92f6-47c9-9dd1-cc00d26b9888_1767266538.6243665.webp)
 
