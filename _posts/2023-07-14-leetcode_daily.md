@@ -18,7 +18,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [961. N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/description/) easy
 [blog post](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/submissions/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02012026-961-n-repeated-element-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-[youtube](https://youtu.be/KdQEK07N2HE)
+[youtube](https://youtu.be/3mUp18Z9T98)
 
 
 ![050f42ea-ddaf-4223-be5b-5384a627223e (1).webp](https://assets.leetcode.com/users/images/8156f0bb-699c-4bd8-a122-5d82f2bf2bea_1767350452.0110674.webp)
