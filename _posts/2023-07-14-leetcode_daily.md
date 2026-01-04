@@ -15,6 +15,80 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 04.12.2025
+[1390. Four Divisors](https://leetcode.com/problems/four-divisors/description) medium
+[blog post](https://leetcode.com/problems/four-divisors/solutions/7464955/kotlin-rust-by-samoylenkodmitry-49na/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04122025-1390-four-divisors?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/WBcXJqBI1Rg)
+
+
+
+![55965326-ca03-4961-b37a-c13ca29fecc8 (1).webp](https://assets.leetcode.com/users/images/0a105deb-b5fc-4733-999e-2e734ba1f4d4_1767521528.4402335.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1225
+
+#### Problem TLDR
+
+Sum of exactly four-divisors of each number #medium #math
+
+#### Intuition
+
+Brute-force divisors up to sqrt(n) for each number.
+
+```j
+    // math problem
+    // lets brute-force?
+    // two is 1 and number itself; two others we should find
+    //
+    // strange case: [7286,18704,70773,8224,91675] 10932
+    // 10932 = 8224 + 1 + a + b
+    // a*b = 10932
+    //
+    // 10932 = 8224 + 1 + 10932/b + b
+    //
+    // divisors are uniq    for 4: 1 2 4, 2 is collapsed
+    //
+    // ok 27 minute looking for hints
+    // ok they suggest brute-force O(nsqrt(n))
+    //
+```
+
+#### Approach
+
+* another way: pre-find all divisors for 1..max
+
+#### Complexity
+
+- Time complexity:
+$$O(nsqrt(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 33ms
+    fun sumFourDivisors(n: IntArray) = n.sumOf { n ->
+        var f = 0; var x = 1; var s = 1+n
+        while (++x*x <= n) if (n%x==0) {++f;s += x+n/x}
+        if (f==1&&--x*x<n) s else 0
+    }
+```
+```rust 
+// 31ms
+    pub fn sum_four_divisors(n: Vec<i32>) -> i32 {
+        let m = *n.iter().max().unwrap() as usize;
+        let (mut c, mut s, mut r) = (vec![0; m+1], vec![0;m+1], 0);
+        for a in 1..=m { for v in (a..=m).step_by(a) {c[v]+=1; s[v]+=a as i32}}
+        n.iter().map(|&n|if (c[n as usize]==4) {s[n as usize]}else{0}).sum::<i32>()
+    }
+```
+
 # 03.12.2026
 [1411. Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/description) hard
 [blog post](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/solutions/7461704/kotlin-rust-by-samoylenkodmitry-2d1q/)
