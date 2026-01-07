@@ -15,6 +15,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 07.01.2026
+[1339. Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/description) medium
+[blog post](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/solutions/7474724/kotlin-rust-by-samoylenkodmitry-y523/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07012026-1339-maximum-product-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/v5xmJIcPlbs)
+
+
+![cc4ddd10-55f6-4511-819b-97e43c288f51 (1).webp](https://assets.leetcode.com/users/images/62d28409-15d8-4626-bec6-3c78c3b0f39a_1767782392.4772062.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1230
+
+#### Problem TLDR
+
+Max sumA*sumB of a tree split #medium
+
+#### Intuition
+
+Find the total sum, then subtract each subtree to find the other sum.
+
+#### Approach
+
+* we can calculate in 32 bit if use extemum of x = s/2
+* we can collect visited sums into a hashset
+* we can skip sums that are smaller than max/2
+* the fastest runtime speed is still calculation of x*(max-x) in-place
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(logn)$$
+
+#### Code
+
+```kotlin
+// 11ms
+    fun maxProduct(r: TreeNode?): Long {
+        val a = ArrayList<Int>()
+        fun s(r: TreeNode?): Int = r
+            ?.run {val s = s(left)+s(right)+`val`; a += s; s}?:0
+        val s = s(r); return a.maxOf {1L*it*(s-it)}%1000000007
+    }
+```
+```rust
+// 3ms
+    pub fn max_product(r: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        fn s(r: &Option<Rc<RefCell<TreeNode>>>, res: &mut i64, max: &mut i32) -> i32 {
+            let Some(n) = r else { return 0 }; let n = n.borrow();
+            let s = s(&n.left,res,max)+s(&n.right,res,max)+n.val; *max = s.max(*max);
+            *res = (*res).max(s as i64*(*max - s)as i64); s
+        }
+        let (mut res,mut max) = (0,0); for _ in 0..2 {s(&r, &mut res, &mut max);} (res%1000000007) as i32
+    }
+```
+
 # 06.01.2026
 [1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description) medium
 [blog post](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/7471349/kotlin-rust-by-samoylenkodmitry-mm59/)
