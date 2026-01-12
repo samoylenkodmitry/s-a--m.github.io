@@ -15,6 +15,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 12.01.2026
+[1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/description) easy
+[blog post](https://leetcode.com/problems/minimum-time-visiting-all-points/solutions/7488565/kotlin-rust-by-samoylenkodmitry-0ck3/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/12012026-1266-minimum-time-visiting?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ZojOi34kLHY)
+
+![cf961b43-5360-4846-bd81-549443325d86 (1).webp](https://assets.leetcode.com/users/images/e241a623-4331-49e4-a449-d84340b2ab6d_1768210447.2981293.webp)
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1235
+
+#### Problem TLDR
+
+Euclid travel distance #easy #brainteaser
+
+#### Intuition
+
+D = max(dx,dy)
+
+#### Approach
+
+* indices: [1..n)
+* zip, zipWithNext, windows, fold
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 6ms
+    fun minTimeToVisitAllPoints(p: Array<IntArray>) = (1..<p.size)
+    .sumOf {i->max(abs(p[i][0]-p[i-1][0]), abs(p[i][1]-p[i-1][1]))}
+```
+```rust
+// 0ms
+    pub fn min_time_to_visit_all_points(p: Vec<Vec<i32>>) -> i32 {
+        p.iter().zip(&p[1..]).map(|(a,b)|(a[0]-b[0]).abs().max((a[1]-b[1]).abs())).sum()
+    }
+```
+
 # 11.01.2026
 [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/) hard
 [blog post](https://leetcode.com/problems/maximal-rectangle/solutions/7485928/kotlin-rust-by-samoylenkodmitry-m1iq/)
