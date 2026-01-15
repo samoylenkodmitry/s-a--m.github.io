@@ -15,6 +15,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 15.01.2026
+[2943. Maximize Area of Square Hole in Grid](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/description) medium
+[blog post](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/solutions/7496492/kotlin-rust-by-samoylenkodmitry-vbr8/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15012026-2943-maximize-area-of-square?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/FdEqql8wE5o)
+
+
+![fa08aa27-6ff7-4712-a51a-bf99478a31fe (1).webp](https://assets.leetcode.com/users/images/1ffa1a56-7b6d-4736-8170-29deb6d1fe0b_1768472320.5852354.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1238
+
+#### Problem TLDR
+
+Max square area after removing bars in a grid #medium #intervals
+
+#### Intuition
+
+Count consequtive intervals separately for horizontal and vertical bars. Then min(max(h,v))^2.
+
+One way: sort bars, count consequtive with counter
+Second way: use a HashMap(x, length) and update x-l, x+r with 1+m[x-1]+m[x+1]
+
+#### Approach
+
+* do +1 or just init counter with 2
+* for the HashMap we can skip writing to the middle m[x]
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$, or O(n)
+
+- Space complexity:
+$$O(1)$$ or O(n)
+
+#### Code
+
+```kotlin 
+// 22ms
+    fun maximizeSquareHoleArea(n: Int, m: Int, h: IntArray, v: IntArray) = 
+        listOf(h,v).minOf { val m = HashMap<Int, Int>()
+            1 + it.maxOf { x -> val l = m[x-1]?:0; val r = m[x+1]?:0 
+                (l+r+1).also{m[x-l]=it;m[x+r]=it}}
+        }.let{it*it}
+```
+```rust 
+// 0ms
+    pub fn maximize_square_hole_area(_: i32, _: i32, h: Vec<i32>, v: Vec<i32>) -> i32 {
+        [h, v].map(|s| s.into_iter().sorted().collect::<Vec<_>>()
+            .chunk_by(|a, b| b - a < 2).map(|c| c.len() + 1).max().unwrap_or(2)
+        ).into_iter().min().unwrap().pow(2) as _
+    }
+```
+
 # 14.01.2026
 [3454. Separate Squares II](https://leetcode.com/problems/separate-squares-ii/description/) hard
 [blog post](https://leetcode.com/problems/separate-squares-ii/solutions/7493956/kotlin-rust-by-samoylenkodmitry-t19c/)
