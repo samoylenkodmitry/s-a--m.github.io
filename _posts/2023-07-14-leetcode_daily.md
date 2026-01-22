@@ -15,6 +15,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 22.01.2026
+[3507. Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/description/) easy
+[blog post](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/solutions/7514933/kotlin-rust-by-samoylenkodmitry-fwmb/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22012026-3507-minimum-pair-removal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/xaSCtlhNe6o)
+
+![64566dd5-2f58-4333-8e15-3c6318b38b2f (1).webp](https://assets.leetcode.com/users/images/7bd81ba7-3b49-4bf5-8241-29fc69204296_1769076681.280781.webp)
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1245
+
+#### Problem TLDR
+
+Sort by removing lowest sum pairs #easy
+
+#### Intuition
+
+Simulate the process.
+
+#### Approach
+
+* just create a new array each time
+* or in Rust we can actually remove by index in-place
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$ n^2log(n) for golfing in Kotlin
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+// 76ms
+    fun minimumPairRemoval(l: IntArray): Int {
+        val l = l.toList()
+        if (l == l.sorted()) return 0
+        val j = (1..<l.size).minBy { l[it-1] + l[it] }
+        return 1 + minimumPairRemoval((l.take(j-1) + (l[j-1]+l[j]) + l.drop(j+1)).toIntArray())
+    }
+```
+```rust 
+// 0ms
+    pub fn minimum_pair_removal(mut l: Vec<i32>) -> i32 {
+        (0..).find(|_| {
+            let ok = l.windows(2).all(|w| w[0] <= w[1]);
+            if let Some(j) = (1..l.len()).min_by_key(|&i| l[i-1] + l[i]) { l[j-1] += l[j];  l.remove(j); }
+            ok
+        }).unwrap()
+    }
+```
+
 # 21.01.2026
 [3315. Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/description/) medium
 [blog post](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/solutions/7512180/kotlin-rust-by-samoylenkodmitry-e9c1/)
