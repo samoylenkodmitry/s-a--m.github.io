@@ -15,6 +15,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 24.01.2026
+[1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description) medium
+[blog post](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/7520290/kotlin-rust-by-samoylenkodmitry-h8ac/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24012026-1877-minimize-maximum-pair?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/nzghO7COqZQ)
+
+![394c3372-ac47-4f65-9e3c-129ebc57ea97 (1).webp](https://assets.leetcode.com/users/images/9346c5e4-228a-487e-ba7e-5c499cee37e0_1769257838.2577627.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1247
+
+#### Problem TLDR
+
+Min max pair #medium #brainteaser
+
+#### Intuition
+
+Sort. Pair maxes with mins.
+
+#### Approach
+
+* counting sort works too
+
+#### Complexity
+
+- Time complexity:
+$$O(nlog(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+// 629ms
+    fun minPairSum(n: IntArray) =
+    n.run{sort();zip(reversed(),Int::plus).max()}
+```
+```rust
+// 13ms
+    pub fn min_pair_sum(mut n: Vec<i32>) -> i32 {
+        let (mut c,mut i) = ([0; 100001],0); for &x in &n { c[x as usize]+=1 }
+        for v in 0..100001 { for _ in 0..c[v] { n[i]=v as i32;i+=1}}
+        n.iter().zip(n.iter().rev()).map(|(a,b)|a+b).max().unwrap()
+    }
+```
+
 # 23.01.2026
 [3510. Minimum Pair Removal to Sort Array II](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/description/) hard
 [blog post](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/solutions/7517576/kotlin-by-samoylenkodmitry-wfql/)
