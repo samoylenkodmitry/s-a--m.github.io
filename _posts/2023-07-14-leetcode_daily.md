@@ -15,6 +15,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 26.01.2026
+[1200. Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/description) easy
+[blog post](https://leetcode.com/problems/minimum-absolute-difference/solutions/7525930/kotlin-rust-by-samoylenkodmitry-hhk4/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/26012026-1200-minimum-absolute-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/kCrw4PxV1e8)
+
+![e7c9fdb5-0db6-4819-97ab-47f397a1bf45 (1).webp](https://assets.leetcode.com/users/images/9c725c66-fa3e-41d5-8310-7e1c3d68426d_1769416696.3721213.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1249
+
+#### Problem TLDR
+
+Min diff pairs #easy
+
+#### Intuition
+
+Sort, compare adjucent pairs, find min, collect.
+
+#### Approach
+
+* groupBy.min also works
+* updating the min diff and collecting can be done in a single go
+
+#### Complexity
+
+- Time complexity:
+$$O(nlogn)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+// 138ms
+    fun minimumAbsDifference(a: IntArray) = a.sorted()
+    .windowed(2).groupBy{(a,b)->b-a}.minBy{(k,v)->k}.value
+```
+```rust
+// 3ms
+    pub fn minimum_abs_difference(mut a: Vec<i32>) -> Vec<Vec<i32>> {
+        a.sort(); let mut d = (1..a.len()).map(|i|a[i]-a[i-1]).min().unwrap();
+        a.windows(2).filter(|w|w[1]-w[0]==d).map(Vec::from).collect()
+    }
+```
+
 # 25.01.2026
 [1984. Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/description) easy
 [blog post](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/solutions/7523215/kotlin-rust-by-samoylenkodmitry-ybup/)
