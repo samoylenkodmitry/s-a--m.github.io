@@ -15,6 +15,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 05.02.2026
+[3379. Transformed Array](https://leetcode.com/problems/transformed-array/description/) easy
+[blog post](https://leetcode.com/problems/transformed-array/solutions/7554382/kotlin-rust-by-samoylenkodmitry-yka5/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05022026-3379-transformed-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/hybx24nUqmg)
+
+![4e8b7ea9-79b8-45a4-b35d-bb8e83d8dfee (1).webp](https://assets.leetcode.com/users/images/0fd4b32c-dbfc-4a3f-a89e-229455a5f81b_1770282925.0215237.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1259
+
+#### Problem TLDR
+
+Shuffled list i+n[i] #easy
+
+#### Intuition
+
+It took me 8 minutes to understand the problem.
+i - is the index of a result array
+i+n[i] is the index of a value we take
+
+#### Approach
+
+* in Kotlin & Rust we have built-in for negative mod: `mod` & `rem_euclid`
+* in-place solution possible if we store results in a left bits
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+// 162ms
+    fun constructTransformedArray(n: IntArray) = 
+    List(n.size) { n[(it + n[it]).mod(n.size)] }
+```
+```rust 
+// 3ms
+    pub fn construct_transformed_array(n: Vec<i32>) -> Vec<i32> {
+        (0..n.len()).map(|i|n[((n[i]+i as i32).rem_euclid(n.len() as i32)) as usize]).collect()
+    }
+```
+
 # 03.02.2026
 [3637. Trionic Array I](https://leetcode.com/problems/trionic-array-i/) easy
 [blog post](https://leetcode.com/problems/trionic-array-i/solutions/7548258/kotlin-rust-by-samoylenkodmitry-2itq/)
