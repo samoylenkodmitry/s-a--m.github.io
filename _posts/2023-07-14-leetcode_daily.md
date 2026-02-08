@@ -15,6 +15,68 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 08.02.2026
+[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description) easy
+[blog post](https://leetcode.com/problems/balanced-binary-tree/solutions/7563036/kotlin-rust-by-samoylenkodmitry-fs76/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/08022026-110-balanced-binary-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/zjIc3QUg2KI)
+
+
+![a2bb7e56-105b-45cc-a303-72c60366d33c (1).webp](https://assets.leetcode.com/users/images/7f398ed1-b2e4-4531-8eb1-7b0eafb4066d_1770549436.3003724.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1262
+
+#### Problem TLDR
+
+Is tree balanced? #easy #dfs
+
+#### Intuition
+
+Solve the sub-problem for every node.
+Compare max depths for the left and right.
+
+#### Approach
+
+* we can use 'marker' depth as a boolean
+* we can shortcircuit and don't check the right subtree
+* we can override values in a tree to golf the solutino
+* BFS will not solve this: leafs can be at any heights, only max depths left&right for each node matters
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin
+// 0ms
+    fun isBalanced(r: TreeNode?): Boolean = r?.run {
+        val b = isBalanced(left) && isBalanced(right)
+        val l = left?.`val`?:0; val r = right?.`val`?:0
+        `val`= 1 + max(l,r); b && abs(l-r) < 2
+    } ?: true
+```
+```rust 
+// 0ms
+    pub fn is_balanced(r: Option<Rc<RefCell<TreeNode>>>) -> bool {
+        fn d(r: &Option<Rc<RefCell<TreeNode>>>) -> Result<i8, ()> {
+            let Some(n) = r else { return Ok(0) }; let n = n.borrow();
+            let l = d(&n.left)?; let r = d(&n.right)?;
+            if (l-r).abs() > 1 { Err(()) } else { Ok(1 + l.max(r)) }
+        } 
+        d(&r).is_ok()
+    }
+```
+
 # 07.02.2026
 [1653. Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/description) medium
 [blog post](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/solutions/7560273/kotlin-rust-by-samoylenkodmitry-dhxr/)
