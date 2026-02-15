@@ -15,6 +15,66 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 15.02.2026
+[67. Add Binary](https://leetcode.com/problems/add-binary/description) easy
+[blog post](https://leetcode.com/problems/add-binary/solutions/7581123/kotlin-rust-by-samoylenkodmitry-cn2w/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15022026-67-add-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/TZUrWkZWfMo)
+
+![63029afe-a537-444e-8e13-0761c7dbdc2a (1).webp](https://assets.leetcode.com/users/images/bc305b8c-6964-44ef-a96f-45a21418d25d_1771152056.150119.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1269
+
+#### Problem TLDR
+
+Binary strings sum #easy
+
+#### Intuition
+
+Carry = value / base
+
+#### Approach
+
+* '0' = 48, so &1 converts char to 1 or 0
+* insert(0) is O(n^2) but only 9ms for the test cases
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin 
+// 9ms
+    fun addBinary(a: String, b: String) = buildString {
+        var c = 0; var i = a.lastIndex; var j = b.lastIndex
+        while (i >= 0 || j >= 0 || c > 0) {
+            c += if (i < 0) 0 else a[i--]-'0'
+            c += if (j < 0) 0 else b[j--]-'0'
+            insert(0, c % 2); c /= 2
+        }
+    }
+```
+```rust 
+// 0ms
+    pub fn add_binary(a: String, b: String) -> String {
+        let (mut a, mut b, mut c) = (a.bytes().rev(), b.bytes().rev(), 0);
+        from_fn(|| (a.len() > 0 || b.len() > 0 || c > 0).then(|| {
+            c += (a.next().unwrap_or(0)&1) + (b.next().unwrap_or(0)&1);
+            let v = c % 2 + 48; c /= 2; v as char
+        })).collect::<Vec<_>>().iter().rev().collect()
+    }
+```
+
 # 14.02.2026
 [799. Champagne Tower](https://leetcode.com/problems/champagne-tower/description/) medium
 [blog post](https://leetcode.com/problems/champagne-tower/solutions/7578388/kotlin-rust-by-samoylenkodmitry-obbo/)
