@@ -15,6 +15,63 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 16.02.2026
+[190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description) easy
+[blog post](https://leetcode.com/problems/reverse-bits/solutions/7583223/kotlin-rust-by-samoylenkodmitry-nnpm/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/16022026-190-reverse-bits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/Y566LGnPPpU)
+
+
+![c4badb58-92a0-4dad-9520-04573afa0f74 (1).webp](https://assets.leetcode.com/users/images/9c0a2f02-2fdc-4f71-b885-f35eb98fe186_1771229793.8117507.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1271
+
+#### Problem TLDR
+
+Reverse bits #easy #bits
+
+#### Intuition
+
+Manually reverse all 31 positions.
+
+#### Approach
+
+* if called many times: use built-in functions (they should be optimized and cached) and use lookup tables if memory allows
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+// 103ms
+    fun reverseBits(n: Int) =
+        Integer.reverse(n)
+        /*
+        (0..31).sumOf { b -> n shr b and 1 shl (31-b) }
+        n.toString(2).reversed().padEnd(32,'0').toInt(2)
+        (0..31).fold(0) { r, b -> n shr b and 1 shl (31-b) or r }
+         */
+```
+```rust
+// 2ms
+    pub const reverse_bits: fn(i32) -> i32 = i32::reverse_bits;
+    /*
+    pub fn reverse_bits(n: i32) -> i32 {
+        (0..32).map(|b| (n >> b & 1) << (31-b)).sum()
+    }
+    */
+```
+
 # 15.02.2026
 [67. Add Binary](https://leetcode.com/problems/add-binary/description) easy
 [blog post](https://leetcode.com/problems/add-binary/solutions/7581123/kotlin-rust-by-samoylenkodmitry-cn2w/)
