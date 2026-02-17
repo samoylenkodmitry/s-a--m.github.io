@@ -15,6 +15,93 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 17.02.2026
+[401. Binary Watch](https://leetcode.com/problems/binary-watch/description) easy
+[blog post](https://leetcode.com/problems/binary-watch/solutions/7586098/kotlin-rust-by-samoylenkodmitry-u7n0/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17022026-401-binary-watch?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/HrlYUmX08Dw)
+
+
+
+![2452a5d7-dbae-4b54-95d4-3d274d7463cb (1).webp](https://assets.leetcode.com/users/images/bf4645c1-abca-4b3c-9b0c-a4f8331a91e4_1771324181.8240933.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1272
+
+#### Problem TLDR
+
+All times with count bits set #easy #brainteaser
+
+#### Intuition
+
+Not an easy problem.
+```j
+    // i don't understand the description
+    // is AM/PM a separate bit?
+    // H: 8 4 2 1
+    // M: 32 16 8 4 2 1
+    // input is count of turned on bits?
+    // t=1, should be 10 results - correct
+    // now we need:
+    // dfs to collect all possible bits permutations
+    // (1 shl (t-1))
+    // then a way to convert a bitmask to the time string
+    // or maybe inversed problem is simpler:
+    // iterate hours and minutes, convert to bits, check count
+    // 
+    // how to convert numbe to bits?
+    // 3: 11, ITS just a binary representation
+```
+
+The brainteaser brute-force: check every hour-minute pair.
+The honest worker solution: backtrack every set bit of possible 10 bit positions.
+The hard solution: compute next smallest bitmask with set bits.
+
+
+#### Approach
+
+* hours to bits conversion: just a binary representation
+* bits to hours conversion: just an int value of a bitmask
+* only 720 possible values (60*12)
+* we can call countOneBits once on H*64+M
+* use format or padStart
+* next smallest bitmask: mode left the first 1-bit of the '11..'s tail, put leftower '11..'s-1 tail to the end (100110 becomes 101011)
+![Gemini_Generated_Image_ol14zlol14zlol14.webp](https://assets.leetcode.com/users/images/9282adf4-f0b3-4f1b-8ea4-a3f8f8b25bb6_1771324224.1483548.webp)
+
+
+#### Complexity
+
+- Time complexity:
+$$O(h*m)$$
+
+- Space complexity:
+$$O(h*m)$$
+
+#### Code
+
+```kotlin
+// 25ms
+    fun readBinaryWatch(t: Int) = (0..719)
+    .filter { (it/60 * 64 + it%60).countOneBits() == t }
+    .map { "%d:%02d".format(it/60,it%60) }
+```
+```rust
+// 0ms
+    pub fn read_binary_watch(t: i32) -> Vec<String> {
+        successors(Some((1<<t)-1), |&s:&i32| {
+            let tz = s.trailing_zeros(); let to = (s >> tz).trailing_ones();
+            (tz + to < 10).then(|| s + (1 << tz) + (1 << (to - 1)) - 1)
+        })
+        .filter_map(|s| {
+            let (h,m) = (s>>6, s&63);
+            (h < 12 && m < 60).then(|| format!("{}:{:02}", h, m)) 
+        }).collect()
+    }
+```
+
 # 16.02.2026
 [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description) easy
 [blog post](https://leetcode.com/problems/reverse-bits/solutions/7583223/kotlin-rust-by-samoylenkodmitry-nnpm/)
