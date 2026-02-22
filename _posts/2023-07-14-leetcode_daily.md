@@ -15,6 +15,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 22.02.2026
+[868. Binary Gap](https://leetcode.com/problems/binary-gap/description/) easy
+[blog post](https://leetcode.com/problems/binary-gap/solutions/7599379/kotlin-rust-by-samoylenkodmitry-859q/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/22022026-868-binary-gap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/Z_zuTpqWoFE)
+
+![8a9d5d07-3d31-4013-9259-420ff2a0c2f6 (1).webp](https://assets.leetcode.com/users/images/9dd9b4e8-ae92-45e1-995b-b180207f3af7_1771753241.2251966.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1277
+
+#### Problem TLDR
+
+Distance between onces in a binary #easy
+
+#### Intuition
+
+The simplest way is to convert to string, then scan the positions.
+
+#### Approach
+
+* `n & (n-1)` erases the last set bit
+* trailing_zeros, count_ones
+* regex to match (?=(10*1))
+* regex to split ^0+|1|0+$
+
+#### Complexity
+
+- Time complexity:
+$$O(log(n))$$ or less
+
+- Space complexity:
+$$O(log(n))$$ or less
+
+#### Code
+
+```kotlin
+// 17ms
+    fun binaryGap(n: Int) = 
+    (28 downTo 0).firstOrNull{("1"+"0".repeat(it)+"1") in n.toString(2)}?.plus(1)?:0
+    /*
+    Regex("(?=(10*1))").findAll(n.toString(2)).maxOfOrNull{it.groupValues[1].length-1}?:0
+    */
+```
+```rust 
+// 0ms
+    pub fn binary_gap(mut n: i32) -> i32 {
+        (1..n.count_ones()).map(|_| { 
+            n >>= n.trailing_zeros() + 1; n.trailing_zeros() as i32 + 1 }).max().unwrap_or(0)
+    }
+```
+
 # 21.02.2026
 [762. Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/description) easy
 [blog post](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/solutions/7596334/kotlin-rust-by-samoylenkodmitry-d11h/)
