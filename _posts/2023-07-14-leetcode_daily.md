@@ -15,6 +15,61 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 24.02.2026
+[1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) easy
+[blog post](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/solutions/7604837/kotlin-rust-by-samoylenkodmitry-e39h/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24022026-1022-sum-of-root-to-leaf?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/s0FsciC8tGY)
+
+
+![ff6f701b-2549-4e1f-94d5-5e39d794d8cd (1).webp](https://assets.leetcode.com/users/images/637159f7-b5d9-446d-bac7-28f95fd8c14c_1771922528.7126744.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1279
+
+#### Problem TLDR
+
+Sum of a binary numbers in a binary tree #easy
+
+#### Intuition
+
+The simplest way: helper method, global sum variable, track leafs.
+
+#### Approach
+
+* we can skip checking the leafs
+* we can use tree itself as a storage
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(log(n))$$
+
+#### Code
+
+```kotlin
+// 18ms
+    fun sumRootToLeaf(r: TreeNode?): Int = r?.run {
+        max(`val`, setOf(left,right).sumOf { it?.`val` += `val`*2; sumRootToLeaf(it) })
+    } ?: 0
+```
+```rust
+// 0ms
+    pub fn sum_root_to_leaf(r: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        r.map_or(0, |n| { let n = n.borrow_mut(); 
+            [&n.left, &n.right].into_iter().flatten().map(|x| {
+                x.borrow_mut().val += n.val * 2;
+                Self::sum_root_to_leaf(Some(x.clone()))}).sum::<i32>().max(n.val)
+        })
+    }
+```
+
 # 23.02.2026
 [1461. Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/description) medium
 [blog post](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/solutions/7602035/kotlin-rust-by-samoylenkodmitry-qxtj/)
