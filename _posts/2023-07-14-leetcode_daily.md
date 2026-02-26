@@ -15,6 +15,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 26.02.2026
+[1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/) medium
+[blog post](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/solutions/7610354/kotlin-rust-by-samoylenkodmitry-2kr0/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/26022026-1404-number-of-steps-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/BHQNA5xMXKk)
+
+![22a9c953-789e-4786-8de8-7160633fdc92 (1).webp](https://assets.leetcode.com/users/images/0534618d-b3cc-4708-8105-c054ee8fb668_1772096685.240045.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1281
+
+#### Problem TLDR
+
+Ops /2+1 to make 1 #medium #simulation
+
+#### Intuition
+
+Simulate the process, O(n^2) is accepted
+
+#### Approach
+
+* to optimize propagate the carry to the next op instead of doing full +1 operation
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 10ms
+    fun numSteps(s: String) = s.lastIndexOf('1') + 
+    (if (Regex("^10*$") in s) 0 else 2) + s.count {it<'1'}
+```
+```rust
+// 0ms
+    pub fn num_steps(s: String) -> i32 {
+        let mut c = 0;
+        (1..s.len()).rev().map(|i| {
+            c += (s.as_bytes()[i] - b'0') as i32;
+            let r = 1 + c % 2; c = c/2+c%2; r
+        }).sum::<i32>() + c
+    }
+```
+
 # 25.02.2026
 [1356. Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description) easy
 [blog post](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/solutions/7607662/kotlin-rust-by-samoylenkodmitry-x2hn/)
