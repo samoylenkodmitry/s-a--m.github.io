@@ -15,6 +15,87 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 01.02.2026
+[1689. Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/description/) medium
+[blog post](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/solutions/7617027/kotlin-rust-by-samoylenkodmitry-bwhe/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/01022026-1689-partitioning-into-minimum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/5kz6Fk-eQVA)
+
+
+![e1f08fed-fa61-41b4-b9c2-128ee956ab97 (1).webp](https://assets.leetcode.com/users/images/108c9535-074a-43d0-8c45-847820ff8411_1772352949.1041124.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1284
+
+#### Problem TLDR
+
+Min 01-strings add up to target #medium
+
+#### Intuition
+
+```j
+    // 279
+    // 101
+    // 101
+    //  11 * 7
+    // 2
+    //  7
+    //   (2+7)
+    //
+    // 12345
+    // 11111
+    //  1111
+    //   111
+    //    11
+    //     1
+    //
+    // 54321
+    // 11111
+    // 1111
+    // 111
+    // 11
+    // 1
+    //
+    // 105
+    //
+    // 50
+    //
+    // 505
+```
+
+Greedy idea: take as big binary number as possible to quickly fill to target.
+
+
+#### Approach
+
+* max
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+// 24ms
+    fun minPartitions(n: String) = 
+        n.max() - '0'
+```
+```rust 
+// 0ms
+    pub fn min_partitions(n: String) -> i32 {
+        (n.bytes().max().unwrap() - 48) as _
+    }
+```
+
 # 28.02.2026
 [1680. Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/description/) medium
 [blog post](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/solutions/7614530/kotlin-rust-by-samoylenkodmitry-no1j/)
