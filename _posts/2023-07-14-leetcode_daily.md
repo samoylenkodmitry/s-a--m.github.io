@@ -15,7 +15,99 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
-# 02.08.2026
+# 03.03.2026
+[1545. Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/description/) medium
+[blog post](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/7622193/kotlin-rust-by-samoylenkodmitry-ptjb/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03032026-1545-find-kth-bit-in-nth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/KxoF88DW9jE)
+
+![cb47841f-071e-4cef-a28c-043dba8bcf89 (1).webp](https://assets.leetcode.com/users/images/6f09da9a-7a41-4ff2-9eac-f0499567df93_1772534965.903635.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1286
+
+#### Problem TLDR
+
+Kth bit in s=s+1+inv(rev(s)) sequence #medium
+
+#### Intuition
+
+```j
+    // 2^20 is 1M
+    //
+    //  011100110110001  15
+    //  0111001 1 0110001  7-1-7
+    //  a       1 inv(rev(a))
+    //  011 1 001          3-1-3
+    //  0 1 1              1-1-1
+    //
+    //  011100110110001  15
+    //                   15-1-15 = 31
+    //                   31-1-31 = 63
+    //                   63-1-63 = 127
+    // 1 3 7 15 31 63 127
+    // 2^n-1
+    //
+    // 0
+    // 0 1 1
+    // 011 1 001
+    // 0111001 1 0110001
+    //             ^
+    //     ^
+    //   ^
+```
+
+* current middle of K is the highest one bit, 110 - 100
+* reverse jump: k = 2*k.takeHighestOneBit()-k
+* the glue-positions are all powers of two
+
+O(1) intuition (is just observation of the patterns):
+123456789101112
+0111001101 1 0
+ 1 1   1       blue bits are powers of two
+0 1 0 1 0  1   odd positions are alterating bits sequence (infinite)
+  3  *       * even positions have all the same odd 'core' by dividing by 2 (+flip)
+    5    10
+
+* rule 1: odd k is alterating bits 01010101, just return k/2%2
+* rule 2: even k goes to the core by dividing /2 until odd met, then it is rule1+flip
+
+#### Approach
+
+* start with drawing the patterns
+* look for the unique properties, how many you can spot, useful or not
+* use small examples to test theory, k = 0, 1, 2, 3
+* use one big example to prove it still works k = 11
+* spend another 2 hours asking ai to give as many other ideas as possible
+
+#### Complexity
+
+- Time complexity:
+$$O(log(k))$$ or O(1)
+
+- Space complexity:
+$$O(log(k))$$ or O(1)
+
+#### Code
+
+```kotlin
+// 0ms
+    fun findKthBit(n: Int, k: Int): Char =
+        if (k < 2) '0' else if (k and (k-1)==0) '1' else 
+        '1'+ ('0'-findKthBit(n, 2*k.takeHighestOneBit()-k))
+```
+```rust
+// 0ms
+    pub fn find_kth_bit(n: i32, mut k: i32) -> char {
+        (b'0' + if k % 2 > 0 { k/2 % 2 } else { 1-(k >> k.trailing_zeros())/2%2 }as u8) as _
+    }
+```
+
+# 02.03.2026
 [1536. Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/description/) medium
 [blog post](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/7619631/kotlin-rust-by-samoylenkodmitry-n5ns/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02082026-1536-minimum-swaps-to-arrange?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
@@ -100,7 +192,7 @@ $$O(n)$$
     }
 ```
 
-# 01.02.2026
+# 01.03.2026
 [1689. Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/description/) medium
 [blog post](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/solutions/7617027/kotlin-rust-by-samoylenkodmitry-bwhe/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01022026-1689-partitioning-into-minimum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
