@@ -15,6 +15,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 04.08.2026
+[1582. Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/) easy
+[blog post](https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/7624305/kotlin-rust-by-samoylenkodmitry-qgmy/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/W8c8wr4GaWw)
+
+
+![7e6d1320-c887-4b63-976e-83ef9189f37b (1).webp](https://assets.leetcode.com/users/images/6ba8ab86-c855-4fd5-bd1f-712d7b7966cb_1772613946.2332826.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1287
+
+#### Problem TLDR
+
+Count single 1-row-column #easy
+
+#### Intuition
+
+Brute-force.
+
+
+#### Approach
+
+* check each cell
+* or check each row
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2m^2)$$, can be O(nm)
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 14ms
+    fun numSpecial(m: Array<IntArray>) = m.count { r ->
+        r.sum()==1 && m.sumOf { it[r.indexOf(1)] }==1
+    }
+```
+```rust
+// 0ms
+    pub fn num_special(m: Vec<Vec<i32>>) -> i32 {
+        m.iter().filter(|r|r.iter().sum::<i32>()==1&&
+        m.iter().map(|R|R[r.iter().position(|&x|x>0).unwrap()]).sum::<i32>()==1).count() as _
+    }
+```
+
 # 03.03.2026
 [1545. Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/description/) medium
 [blog post](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/7622193/kotlin-rust-by-samoylenkodmitry-ptjb/)
