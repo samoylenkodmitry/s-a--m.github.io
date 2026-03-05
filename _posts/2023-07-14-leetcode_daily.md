@@ -15,6 +15,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 05.03.2026
+[1758. Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/description/) easy
+[blog post](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/7626832/kotlin-rust-by-samoylenkodmitry-a1lq/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05032026-1758-minimum-changes-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/UKM1YmZMmEQ)
+
+
+![4823be9e-b115-47a6-8a53-ebca54caf6c0 (1).webp](https://assets.leetcode.com/users/images/688c2c0c-8167-4fd1-babc-97a53058d484_1772703288.4653385.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1288
+
+#### Problem TLDR
+
+Min flips to make bits alterating #easy
+
+#### Intuition
+
+Check two targets: 01-type and 10-type.
+
+#### Approach
+
+* we can count a balance: |balance| = |correct-wrong|, L=C+W, L-|B|=(C+W)-(C-W)=2W, W=(L-|B|)/2 
+* (i + s[i]) %2 is an even-odd match
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+// 16ms
+    fun minOperations(s: String) = s.length/2-
+    abs(s.indices.sumOf { 1-2*((it+s[it].code)%2) })/2
+```
+```rust 
+// 0ms
+    pub fn min_operations(s: String) -> i32 {
+        s.len()as i32/2 - s.bytes().enumerate().map(|(i,b)|(1-2*((i as u8^b)&1)as i32)).sum::<i32>().abs()/2
+    }
+```
+
 # 04.08.2026
 [1582. Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/) easy
 [blog post](https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/7624305/kotlin-rust-by-samoylenkodmitry-qgmy/)
