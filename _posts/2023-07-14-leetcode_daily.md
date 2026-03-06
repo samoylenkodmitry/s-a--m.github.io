@@ -15,6 +15,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 06.03.2026
+[1784. Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description) easy
+[blog post](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/7629247/kotlin-rust-by-samoylenkodmitry-y2hr/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/06032026-1784-check-if-binary-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/wI2Z8EUBRIQ)
+
+
+![ccfe0859-5820-4dff-8521-1e41fe93539e (1).webp](https://assets.leetcode.com/users/images/a8e537b7-42e5-444b-8a6e-e25d777fad64_1772782533.1907356.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1289
+
+#### Problem TLDR
+
+1+0* pattern #easy
+
+#### Intuition
+
+1. Regex ^1+0*$
+
+#### Approach
+
+* or just check of 01
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 7ms
+    fun checkOnesSegment(s: String) = 
+    "01" !in s
+```
+```rust
+// 0ms
+    pub fn check_ones_segment(s: String) -> bool {
+        !s.contains("01")
+    }
+```
+
 # 05.03.2026
 [1758. Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/description/) easy
 [blog post](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/7626832/kotlin-rust-by-samoylenkodmitry-a1lq/)
