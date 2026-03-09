@@ -15,6 +15,67 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 09.03.2026
+[3129. Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/description/) medium
+[blog post](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/solutions/7636580/kotlin-by-samoylenkodmitry-xs83/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09032026-3129-find-all-possible-stable?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/femYUYMT-gU)
+
+
+![8a864214-ee89-4c40-85b3-f89e71cb222c (1).webp](https://assets.leetcode.com/users/images/8a9b27e8-f534-4543-827f-61dba520e363_1773048893.3709514.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1292
+
+#### Problem TLDR
+
+Count 01-arrays with z zeros, o ones, at most l repeat #medium
+
+#### Intuition
+
+Didn't solve.
+```j
+    // length = z+o = 400
+    // consequent repeats at most l
+    // this can be DFS + memo n^3
+    // my solution is n^4 TLE
+    // the symmetry trick didn't help 
+    // lets look hints
+    // MLE
+```
+The working intuition: build arrays by alterating blocks.
+
+#### Approach
+
+* inside DFS: try at most min(l, current) to take, flip the arguments
+
+#### Complexity
+
+- Time complexity:
+$$O(zol)$$
+
+- Space complexity:
+$$O(zo)$$
+
+#### Code
+
+```kotlin
+// 218ms
+    fun numberOfStableArrays(z: Int, o: Int, l: Int): Int {
+        val dp = HashMap<Int, Int>()
+        fun d(z: Int, o: Int): Int = 
+        if (z == 0) 0 else if (o == 0) {if (z <= l) 1 else 0}
+        else dp.getOrPut(z*400+o) {
+            (1..min(z,l)).fold(0){ r, nz -> (r+d(o,z-nz))%1000000007}
+        }
+        return (d(z, o) + d(o, z))%1000000007
+    }
+```
+
 # 08.03.2026
 [1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description) medium
 [blog post](https://leetcode.com/problems/find-unique-binary-string/solutions/7634500/kotlin-rust-by-samoylenkodmitry-zwmz/)
