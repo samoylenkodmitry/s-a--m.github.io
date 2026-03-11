@@ -15,6 +15,58 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 11.03.2026
+[1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/) easy
+[blog post](https://leetcode.com/problems/complement-of-base-10-integer/solutions/7640624/kotlin-rust-by-samoylenkodmitry-oene/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/11032026-1009-complement-of-base?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/lAA3Q_j5X2M)
+
+![f0a013aa-d52d-4f76-9773-52e129098a53 (1).webp](https://assets.leetcode.com/users/images/5aa7e506-adf8-4e1f-bf0e-12485030db4f_1773214182.584188.webp)
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1294
+
+#### Problem TLDR
+
+Invert binary #easy
+
+#### Intuition
+
+Use a bitmask of the next power of two - 1.
+
+#### Approach
+
+* Kotlin: takeHighestOneBit, countLeadingZeroBits
+* Rust: leasing_zeros, next_power_of_two, ilog2
+* 0 case trick: use |1 to check bits count at least 1
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 0ms
+    fun bitwiseComplement(n: Int) = 
+    (n or 1).takeHighestOneBit()*2 - n - 1
+```
+```rust 
+// 0ms
+    pub fn bitwise_complement(n: i32) -> i32 {
+        n^(2<<(n|1).ilog2())-1
+    }
+```
+
 # 10.03.2026
 [3130. Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/description/) hard
 [blog post](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/solutions/7638572/kotlin-rust-by-samoylenkodmitry-63e9/)
