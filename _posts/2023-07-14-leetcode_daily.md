@@ -15,6 +15,75 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 14.03.2026
+[1415. The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/) medium
+[blog post](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/solutions/7647436/kotlin-rust-by-samoylenkodmitry-8wps/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/14032026-1415-the-k-th-lexicographical?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/5V0OO4TmabM)
+
+
+![d4ce69c3-5e30-4fd4-9342-a9f803a9732a (1).webp](https://assets.leetcode.com/users/images/0a1e783b-44ee-4cb9-b6da-6723a60b3330_1773487110.7312746.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1297
+
+#### Problem TLDR
+
+K-th generated abc non-repeating string #medium #dfs
+
+#### Intuition
+
+```j
+    // the problem is small, just generate all, sort
+    // abab
+    // abac
+    // abca
+    // abcb
+    // acab
+    // acac
+    // baba
+    // 2^10
+```
+
+The simple solution: just generate all strings in DFS, sort.
+
+
+#### Approach
+
+* the DFS already generates in a sorted order, no need to sort
+* no need to keep strings, just count until k
+* the math intuition: each char generates subtree with known elements count, initial a: 2^(n-1), b: 2^(n-1), c: 2^(n-1)
+* index is "abc"[k/count] at first, then {"ab", "bc", "ac"}[k/count], k %= count, count /= 2
+
+#### Complexity
+
+- Time complexity:
+$$O(2^n)$$, or O(n)
+
+- Space complexity:
+$$O(2^n)$$, or O(1)
+
+#### Code
+
+```kotlin
+// 11ms
+    fun getHappyString(n: Int, k: Int, s: String = "abc", b: Int = 1 shl n-1): String =
+        if (n==0 || (k-1)/b > s.lastIndex) "" else 
+        s[(k-1)/b] + getHappyString(n-1, (k-1)%b+1, "abc".replace(""+s[(k-1)/b],""))
+```
+```rust 
+// 12ms
+    pub fn get_happy_string(n: i32, k: i32) -> String {
+        (0..n).map(|_| *b"abc").multi_cartesian_product()
+        .filter(|s| s.windows(2).all(|w| w[0] != w[1]))
+        .nth(k as usize-1).and_then(|v| String::from_utf8(v).ok()).unwrap_or_default()
+    }
+```
+
 # 13.03.2026
 [3296. Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/description/) medium
 [blog post](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/7645168/kotlin-rust-by-samoylenkodmitry-18q5/)
