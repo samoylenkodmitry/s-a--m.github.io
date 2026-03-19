@@ -50,10 +50,10 @@ Freq = freq_left + freq_top
 #### Complexity
 
 - Time complexity:
-$$O()$$
+$$O(nm)$$
 
 - Space complexity:
-$$O()$$
+$$O(m)$$
 
 #### Code
 
