@@ -15,6 +15,73 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 19.03.2026
+[3212. Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/description/) medium
+[blog post](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/7664531/kotlin-rust-by-samoylenkodmitry-99c5/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19032026-3212-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/M7-_BA5VpMQ)
+
+![a71324ae-df67-47de-812a-01bd74ff9a85 (1).webp](https://assets.leetcode.com/users/images/b46cf717-d59e-4261-b0fa-1a99ffde10fc_1773911536.7720547.webp)
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1302
+
+#### Problem TLDR
+
+Count prefix freq X == freq Y #medium #matrix
+
+#### Intuition
+
+Keep two prefixes: for the X and for the Y. 
+Freq = freq_left + freq_top
+
+#### Approach
+
+* we can just look at balance x++ y--
+* we can store just the last row
+* to keep track 'at least one' rule, use a single bit per column
+
+#### Complexity
+
+- Time complexity:
+$$O()$$
+
+- Space complexity:
+$$O()$$
+
+#### Code
+
+```kotlin 
+// 18ms
+    pub fn number_of_submatrices(g: Vec<Vec<char>>) -> i32 {
+        let mut v = vec![0; g[0].len()];
+        g.iter().map(|r| {
+            let (mut b, mut s) = (0, 0);
+            r.iter().zip(&mut v).map(|(&c, x)| {
+                if c > '.' { s = 1; b += (c as i32 - 88)*4-2 }
+                *x = *x + b|s; (*x == 1) as i32
+            }).sum::<i32>()
+        }).sum()
+    }
+```
+```rust
+// 18ms
+    pub fn number_of_submatrices(g: Vec<Vec<char>>) -> i32 {
+        let mut v = vec![0; g[0].len()];
+        g.iter().map(|r| {
+            let (mut b, mut s) = (0, 0);
+            r.iter().zip(&mut v).map(|(&c, x)| {
+                if c > '.' { s = 1; b += (c as i32 - 88)*4-2 }
+                *x = *x + b|s; (*x == 1) as i32
+            }).sum::<i32>()
+        }).sum()
+    }
+```
+
 # 18.03.2026
 [3070. Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/description/) medium
 [blog post](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/solutions/7656364/kotlin-rust-by-samoylenkodmitry-smle/)
