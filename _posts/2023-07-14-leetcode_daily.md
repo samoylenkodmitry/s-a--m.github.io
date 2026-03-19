@@ -21,7 +21,9 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19032026-3212-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/M7-_BA5VpMQ)
 
-![a71324ae-df67-47de-812a-01bd74ff9a85 (1).webp](https://assets.leetcode.com/users/images/b46cf717-d59e-4261-b0fa-1a99ffde10fc_1773911536.7720547.webp)
+
+![26191ddf-56db-4114-bec4-248112584d32 (1).webp](https://assets.leetcode.com/users/images/2b732ac9-7683-4c06-a68b-928fef5328c0_1773911882.8374445.webp)
+
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -57,16 +59,16 @@ $$O()$$
 
 ```kotlin 
 // 18ms
-    pub fn number_of_submatrices(g: Vec<Vec<char>>) -> i32 {
-        let mut v = vec![0; g[0].len()];
-        g.iter().map(|r| {
-            let (mut b, mut s) = (0, 0);
-            r.iter().zip(&mut v).map(|(&c, x)| {
-                if c > '.' { s = 1; b += (c as i32 - 88)*4-2 }
-                *x = *x + b|s; (*x == 1) as i32
-            }).sum::<i32>()
-        }).sum()
-    }
+    fun numberOfSubmatrices(g: Array<CharArray>) = 
+        IntArray(g[0].size).let { X ->
+            g.sumOf { r ->
+                var x = 0; var s = 0; var j = 0
+                r.count { c -> 
+                    if (c > '.') { s = 1; x += 4*(c - 'X')-2 }
+                    X[j] = X[j] + x or s; X[j++] == 1
+                }
+            }
+        }
 ```
 ```rust
 // 18ms
