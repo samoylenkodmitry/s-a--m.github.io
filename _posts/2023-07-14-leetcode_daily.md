@@ -15,6 +15,62 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 20.03.2026
+[3567. Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/description) medium
+[blog post](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/solutions/7673595/kotlin-rust-by-samoylenkodmitry-q192/)
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20032026-3567-minimum-absolute-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/i7A7OTiQO_8)
+
+
+![bc90b16a-87bd-424d-aef7-2c539e5acf59 (1).webp](https://assets.leetcode.com/users/images/6e7d6daa-4db9-46c8-a6f0-595d88c6c2b6_1773997820.9543548.webp)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1303
+
+#### Problem TLDR
+
+Mid diffs in k*k submatrices #medium #matrix
+
+#### Intuition
+
+Just brute-force, the size is small, 30
+
+#### Approach
+
+* Kotlin: toSortedSet(), windowed
+* Rust: itertools allows to use sorted in a single expression, tuple_windows
+
+#### Complexity
+
+- Time complexity:
+$$O(nmk^2)$$
+
+- Space complexity:
+$$O(nmk^2)$$
+
+#### Code
+
+```kotlin
+// 86ms
+    fun minAbsDiff(g: Array<IntArray>, k: Int)= 
+        List(g.size-k+1) { y -> List(g[0].size-k+1) { x ->
+            List(k*k){ g[y+it/k][x+it%k] }.toSortedSet()
+            .windowed(2) {it[1]-it[0]}.minOrNull() ?: 0
+        }}
+```
+```rust 
+// 2ms
+    pub fn min_abs_diff(g: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {
+        let k = k as usize; (0..=g.len()-k).map(|y|  (0..=g[0].len()-k).map(|x| 
+            (0..k*k).map(|i| g[y+i/k][x+i%k]).sorted().dedup().tuple_windows()
+            .map(|(a,b)|b-a).min().unwrap_or(0)
+        ).collect()).collect()
+    }
+```
+
 # 19.03.2026
 [3212. Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/description/) medium
 [blog post](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/7664531/kotlin-rust-by-samoylenkodmitry-99c5/)
