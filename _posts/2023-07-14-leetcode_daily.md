@@ -22,7 +22,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 
 
-![33991ffb-8ced-4270-89c6-2c888059ee38 (1).webp](assets/leetcode_daily_images/e59f5def.webp)
+![33991ffb-8ced-4270-89c6-2c888059ee38 (1).webp](/assets/leetcode_daily_images/e59f5def.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -75,7 +75,7 @@ $$O(n^2)$$
 [youtube](https://youtu.be/XbIS6u_HRVQ)
 
 
-![c7ed576b-3e7e-4a96-bdcf-e4e9c381c632 (1).webp](assets/leetcode_daily_images/35531c83.webp)
+![c7ed576b-3e7e-4a96-bdcf-e4e9c381c632 (1).webp](/assets/leetcode_daily_images/35531c83.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -131,7 +131,7 @@ $$O(1)$$
 [youtube](https://youtu.be/i7A7OTiQO_8)
 
 
-![bc90b16a-87bd-424d-aef7-2c539e5acf59 (1).webp](assets/leetcode_daily_images/192c08d7.webp)
+![bc90b16a-87bd-424d-aef7-2c539e5acf59 (1).webp](/assets/leetcode_daily_images/192c08d7.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -187,7 +187,7 @@ $$O(nmk^2)$$
 [youtube](https://youtu.be/M7-_BA5VpMQ)
 
 
-![26191ddf-56db-4114-bec4-248112584d32 (1).webp](assets/leetcode_daily_images/9799c5d4.webp)
+![26191ddf-56db-4114-bec4-248112584d32 (1).webp](/assets/leetcode_daily_images/9799c5d4.webp)
 
 
 
@@ -256,7 +256,7 @@ $$O(m)$$
 [youtube](https://youtu.be/e8W7RyJi0io)
 
 
-![c5dfe7df-4595-411f-8b72-d0b56c7e85a3 (1).webp](assets/leetcode_daily_images/35b1d40f.webp)
+![c5dfe7df-4595-411f-8b72-d0b56c7e85a3 (1).webp](/assets/leetcode_daily_images/35b1d40f.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -315,7 +315,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17032026-1727-largest-submatrix-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5CJSufeR7ts)
 
-![13158f9f-a659-4fd4-bfdb-725ce8938b90 (1).webp](assets/leetcode_daily_images/5f6052bc.webp)
+![13158f9f-a659-4fd4-bfdb-725ce8938b90 (1).webp](/assets/leetcode_daily_images/5f6052bc.webp)
 
 
 
@@ -393,7 +393,7 @@ $$O(m)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16032026-1878-get-biggest-three-rhombus?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1wTfpCtE428)
 
-![6e2cf9bd-9a75-4740-9c8a-9e4299b41f05 (1).webp](assets/leetcode_daily_images/48e8339e.webp)
+![6e2cf9bd-9a75-4740-9c8a-9e4299b41f05 (1).webp](/assets/leetcode_daily_images/48e8339e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -461,7 +461,7 @@ $$O((mn)^2)$$, can be O(1)
 [youtube](https://youtu.be/_X6u1bG4wlY)
 
 
-![f6b9d004-5aeb-4ecd-bea2-5f1c04f1d060 (1).webp](assets/leetcode_daily_images/1ef8435d.webp)
+![f6b9d004-5aeb-4ecd-bea2-5f1c04f1d060 (1).webp](/assets/leetcode_daily_images/1ef8435d.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -555,7 +555,7 @@ impl Fancy {
 [youtube](https://youtu.be/5V0OO4TmabM)
 
 
-![d4ce69c3-5e30-4fd4-9342-a9f803a9732a (1).webp](assets/leetcode_daily_images/b84d5532.webp)
+![d4ce69c3-5e30-4fd4-9342-a9f803a9732a (1).webp](/assets/leetcode_daily_images/b84d5532.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -623,7 +623,7 @@ $$O(2^n)$$, or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13032026-3296-minimum-number-of-seconds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ulyJXpETKLc)
 
-![ff059a99-0832-43e9-a470-b09da8c22eb4 (1).webp](assets/leetcode_daily_images/1c267ce3.webp)
+![ff059a99-0832-43e9-a470-b09da8c22eb4 (1).webp](/assets/leetcode_daily_images/1c267ce3.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -702,7 +702,7 @@ $$O(w)$$ can be O(1)
 [youtube](https://youtu.be/uDg48-HtW5A)
 
 
-![b7368096-8e84-4e37-ba9f-0e28359d9712 (1).webp](assets/leetcode_daily_images/36211855.webp)
+![b7368096-8e84-4e37-ba9f-0e28359d9712 (1).webp](/assets/leetcode_daily_images/36211855.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -807,7 +807,7 @@ $$O(e+n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11032026-1009-complement-of-base?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/lAA3Q_j5X2M)
 
-![f0a013aa-d52d-4f76-9773-52e129098a53 (1).webp](assets/leetcode_daily_images/e00fe607.webp)
+![f0a013aa-d52d-4f76-9773-52e129098a53 (1).webp](/assets/leetcode_daily_images/e00fe607.webp)
 
 
 
@@ -860,7 +860,7 @@ $$O(1)$$
 [youtube](https://youtu.be/Ccn-2zM23lc)
 
 
-![86ab161b-a052-42a4-b55c-1517fb33ef65 (1).webp](assets/leetcode_daily_images/8f3aa5eb.webp)
+![86ab161b-a052-42a4-b55c-1517fb33ef65 (1).webp](/assets/leetcode_daily_images/8f3aa5eb.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -956,7 +956,7 @@ $$O(zo)$$
 [youtube](https://youtu.be/femYUYMT-gU)
 
 
-![8a864214-ee89-4c40-85b3-f89e71cb222c (1).webp](assets/leetcode_daily_images/d43426b0.webp)
+![8a864214-ee89-4c40-85b3-f89e71cb222c (1).webp](/assets/leetcode_daily_images/d43426b0.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -1017,7 +1017,7 @@ $$O(zo)$$
 [youtube](https://youtu.be/UHbsuAGRb1w)
 
 
-![d9203387-451a-452f-8f7f-0e3ae568d179 (1).webp](assets/leetcode_daily_images/90bdbc48.webp)
+![d9203387-451a-452f-8f7f-0e3ae568d179 (1).webp](/assets/leetcode_daily_images/90bdbc48.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -1071,7 +1071,7 @@ $$O(n)$$
 
 
 
-![48a41980-c2b0-494d-80ae-7e0bba337b75 (1).webp](assets/leetcode_daily_images/e20c4259.webp)
+![48a41980-c2b0-494d-80ae-7e0bba337b75 (1).webp](/assets/leetcode_daily_images/e20c4259.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -1198,7 +1198,7 @@ $$O(1)$$, or O(n) for prefix sum
 [youtube](https://youtu.be/wI2Z8EUBRIQ)
 
 
-![ccfe0859-5820-4dff-8521-1e41fe93539e (1).webp](assets/leetcode_daily_images/7418ee05.webp)
+![ccfe0859-5820-4dff-8521-1e41fe93539e (1).webp](/assets/leetcode_daily_images/7418ee05.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -1248,7 +1248,7 @@ $$O(1)$$
 [youtube](https://youtu.be/UKM1YmZMmEQ)
 
 
-![4823be9e-b115-47a6-8a53-ebca54caf6c0 (1).webp](assets/leetcode_daily_images/4cf5f89c.webp)
+![4823be9e-b115-47a6-8a53-ebca54caf6c0 (1).webp](/assets/leetcode_daily_images/4cf5f89c.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -1298,7 +1298,7 @@ $$O(1)$$
 [youtube](https://youtu.be/W8c8wr4GaWw)
 
 
-![7e6d1320-c887-4b63-976e-83ef9189f37b (1).webp](assets/leetcode_daily_images/6dfe3e7e.webp)
+![7e6d1320-c887-4b63-976e-83ef9189f37b (1).webp](/assets/leetcode_daily_images/6dfe3e7e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -1351,7 +1351,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03032026-1545-find-kth-bit-in-nth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KxoF88DW9jE)
 
-![cb47841f-071e-4cef-a28c-043dba8bcf89 (1).webp](assets/leetcode_daily_images/24f2fd37.webp)
+![cb47841f-071e-4cef-a28c-043dba8bcf89 (1).webp](/assets/leetcode_daily_images/24f2fd37.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -1443,7 +1443,7 @@ $$O(log(k))$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02082026-1536-minimum-swaps-to-arrange?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5PDig8FsghM)
 
-![13f2bfea-b565-4bcf-bae8-9497cdd67bfd (1).webp](assets/leetcode_daily_images/e88431b2.webp)
+![13f2bfea-b565-4bcf-bae8-9497cdd67bfd (1).webp](/assets/leetcode_daily_images/e88431b2.webp)
 
 
 
@@ -1529,7 +1529,7 @@ $$O(n)$$
 [youtube](https://youtu.be/5kz6Fk-eQVA)
 
 
-![e1f08fed-fa61-41b4-b9c2-128ee956ab97 (1).webp](assets/leetcode_daily_images/42aafbe1.webp)
+![e1f08fed-fa61-41b4-b9c2-128ee956ab97 (1).webp](/assets/leetcode_daily_images/42aafbe1.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -1610,7 +1610,7 @@ $$O(1)$$
 [youtube](https://youtu.be/A8od0NdRN2o)
 
 
-![img](assets/leetcode_daily_images/866f190f.webp)
+![img](/assets/leetcode_daily_images/866f190f.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -1688,7 +1688,7 @@ $$O(1)$$
 [youtube](https://youtu.be/PBxyeNXKqag)
 
 
-![img](assets/leetcode_daily_images/7e72480f.webp)
+![img](/assets/leetcode_daily_images/7e72480f.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -1811,7 +1811,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26022026-1404-number-of-steps-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BHQNA5xMXKk)
 
-![22a9c953-789e-4786-8de8-7160633fdc92 (1).webp](assets/leetcode_daily_images/83352c31.webp)
+![22a9c953-789e-4786-8de8-7160633fdc92 (1).webp](/assets/leetcode_daily_images/83352c31.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -1865,7 +1865,7 @@ $$O(1)$$
 [youtube](https://youtu.be/aQ89OpjetAU)
 
 
-![9a58f8d1-aaaa-4b92-a674-3a6792b31633 (1).webp](assets/leetcode_daily_images/5c5fe2e3.webp)
+![9a58f8d1-aaaa-4b92-a674-3a6792b31633 (1).webp](/assets/leetcode_daily_images/5c5fe2e3.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -1915,7 +1915,7 @@ $$O(n)$$
 [youtube](https://youtu.be/s0FsciC8tGY)
 
 
-![ff6f701b-2549-4e1f-94d5-5e39d794d8cd (1).webp](assets/leetcode_daily_images/b796c5ce.webp)
+![ff6f701b-2549-4e1f-94d5-5e39d794d8cd (1).webp](/assets/leetcode_daily_images/b796c5ce.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -1970,7 +1970,7 @@ $$O(log(n))$$
 [youtube](https://youtu.be/-JMK3yYBk2A)
 
 
-![79e0f1f4-62cc-4ab3-b79c-6b7183b02def (1).webp](assets/leetcode_daily_images/3347f649.webp)
+![79e0f1f4-62cc-4ab3-b79c-6b7183b02def (1).webp](/assets/leetcode_daily_images/3347f649.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -2021,7 +2021,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22022026-868-binary-gap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Z_zuTpqWoFE)
 
-![8a9d5d07-3d31-4013-9259-420ff2a0c2f6 (1).webp](assets/leetcode_daily_images/7a41e6db.webp)
+![8a9d5d07-3d31-4013-9259-420ff2a0c2f6 (1).webp](/assets/leetcode_daily_images/7a41e6db.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -2077,7 +2077,7 @@ $$O(log(n))$$ or less
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21022026-762-prime-number-of-set?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/X63Rkrgew6A)
 
-![5f0418bb-1a61-41b3-ad9d-84bd31aafa6f (1).webp](assets/leetcode_daily_images/e5d75ead.webp)
+![5f0418bb-1a61-41b3-ad9d-84bd31aafa6f (1).webp](/assets/leetcode_daily_images/e5d75ead.webp)
 
 
 
@@ -2162,7 +2162,7 @@ $$O(1)$$
 [youtube](https://youtu.be/ZNdaIujUycI)
 
 
-![42c4c4c5-d78e-4f1e-a571-baa88a450791 (1).webp](assets/leetcode_daily_images/4b61981e.webp)
+![42c4c4c5-d78e-4f1e-a571-baa88a450791 (1).webp](/assets/leetcode_daily_images/4b61981e.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -2283,7 +2283,7 @@ $$O(n)$$
 [youtube](https://youtu.be/mm8w6ijHkeA)
 
 
-![ca5bca1d-de86-418b-815f-1df4df895c62 (1).webp](assets/leetcode_daily_images/4b06dbaf.webp)
+![ca5bca1d-de86-418b-815f-1df4df895c62 (1).webp](/assets/leetcode_daily_images/4b06dbaf.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -2337,7 +2337,7 @@ $$O(1)$$
 [youtube](https://youtu.be/pot5OUHEMfc)
 
 
-![c2a476b9-d0a9-4fc9-b2d3-646f51977522 (1).webp](assets/leetcode_daily_images/65fa3b6b.webp)
+![c2a476b9-d0a9-4fc9-b2d3-646f51977522 (1).webp](/assets/leetcode_daily_images/65fa3b6b.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -2396,7 +2396,7 @@ $$O(1)$$
 
 
 
-![2452a5d7-dbae-4b54-95d4-3d274d7463cb (1).webp](assets/leetcode_daily_images/79890042.webp)
+![2452a5d7-dbae-4b54-95d4-3d274d7463cb (1).webp](/assets/leetcode_daily_images/79890042.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -2442,7 +2442,7 @@ The hard solution: compute next smallest bitmask with set bits.
 * we can call countOneBits once on H*64+M
 * use format or padStart
 * next smallest bitmask: mode left the first 1-bit of the '11..'s tail, put leftower '11..'s-1 tail to the end (100110 becomes 101011)
-![Gemini_Generated_Image_ol14zlol14zlol14.webp](assets/leetcode_daily_images/b10606f6.webp)
+![Gemini_Generated_Image_ol14zlol14zlol14.webp](/assets/leetcode_daily_images/b10606f6.webp)
 
 
 #### Complexity
@@ -2482,7 +2482,7 @@ $$O(h*m)$$
 [youtube](https://youtu.be/Y566LGnPPpU)
 
 
-![c4badb58-92a0-4dad-9520-04573afa0f74 (1).webp](assets/leetcode_daily_images/78f6bd44.webp)
+![c4badb58-92a0-4dad-9520-04573afa0f74 (1).webp](/assets/leetcode_daily_images/78f6bd44.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -2538,7 +2538,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15022026-67-add-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/TZUrWkZWfMo)
 
-![63029afe-a537-444e-8e13-0761c7dbdc2a (1).webp](assets/leetcode_daily_images/2896d380.webp)
+![63029afe-a537-444e-8e13-0761c7dbdc2a (1).webp](/assets/leetcode_daily_images/2896d380.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -2598,7 +2598,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14022026-799-champagne-tower?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/dGVSq6mblVA)
 
-![77e66a34-bf79-41a8-83a6-c5e8f1976b59 (1).webp](assets/leetcode_daily_images/a2c7bd23.webp)
+![77e66a34-bf79-41a8-83a6-c5e8f1976b59 (1).webp](/assets/leetcode_daily_images/a2c7bd23.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -2699,7 +2699,7 @@ $$O(r)$$
 [youtube](https://youtu.be/YImtUgzjpmQ)
 
 
-![d842c03c-b56c-40dc-b84c-1e6598b2664c (1).webp](assets/leetcode_daily_images/4672ea96.webp)
+![d842c03c-b56c-40dc-b84c-1e6598b2664c (1).webp](/assets/leetcode_daily_images/4672ea96.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -2801,7 +2801,7 @@ $$O(n)$$
 [youtube](https://youtu.be/tyAS-4wTnBc)
 
 
-![8720b147-110d-40c5-83e4-c98559eb564f (1).webp](assets/leetcode_daily_images/b32916bf.webp)
+![8720b147-110d-40c5-83e4-c98559eb564f (1).webp](/assets/leetcode_daily_images/b32916bf.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -2864,7 +2864,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11022026-3721-longest-balanced-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/LuRCi31Yl_U)
 
-![a0f6bd95-d9f3-467a-b781-d170cc970ba3 (1).webp](assets/leetcode_daily_images/d6dc4ac8.webp)
+![a0f6bd95-d9f3-467a-b781-d170cc970ba3 (1).webp](/assets/leetcode_daily_images/d6dc4ac8.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -2949,7 +2949,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10022026-3719-longest-balanced-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5Sr-e4d4sT0)
 
-![a329e53f-9de6-4ee1-93ec-567f59924069 (1).webp](assets/leetcode_daily_images/96fbff42.webp)
+![a329e53f-9de6-4ee1-93ec-567f59924069 (1).webp](/assets/leetcode_daily_images/96fbff42.webp)
 
 
 
@@ -3034,7 +3034,7 @@ $$O(n)$$
 [youtube](https://youtu.be/jBgLB7dJP0k)
 
 
-![16abb998-7e00-4441-a0c6-61995998c0f3 (1).webp](assets/leetcode_daily_images/66a5d686.webp)
+![16abb998-7e00-4441-a0c6-61995998c0f3 (1).webp](/assets/leetcode_daily_images/66a5d686.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -3104,7 +3104,7 @@ $$O(n)$$, O(log(n)) for the lazy iterator
 [youtube](https://youtu.be/zjIc3QUg2KI)
 
 
-![a2bb7e56-105b-45cc-a303-72c60366d33c (1).webp](assets/leetcode_daily_images/b6453dc6.webp)
+![a2bb7e56-105b-45cc-a303-72c60366d33c (1).webp](/assets/leetcode_daily_images/b6453dc6.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -3165,7 +3165,7 @@ $$O(log(n))$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07022026-1653-minimum-deletions-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tm9vYGMMZMI)
 
-![f761f76d-8f1c-40ff-83bb-b0d5ee98e67a (1).webp](assets/leetcode_daily_images/7746762f.webp)
+![f761f76d-8f1c-40ff-83bb-b0d5ee98e67a (1).webp](/assets/leetcode_daily_images/7746762f.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -3218,7 +3218,7 @@ $$O(1)$$
 [youtube](https://youtu.be/IBSUuFzMoAA)
 
 
-![388e4676-09f0-49fe-b476-f6dcf405a4a9 (1).webp](assets/leetcode_daily_images/a76b7a6e.webp)
+![388e4676-09f0-49fe-b476-f6dcf405a4a9 (1).webp](/assets/leetcode_daily_images/a76b7a6e.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -3278,7 +3278,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05022026-3379-transformed-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/hybx24nUqmg)
 
-![4e8b7ea9-79b8-45a4-b35d-bb8e83d8dfee (1).webp](assets/leetcode_daily_images/1b403862.webp)
+![4e8b7ea9-79b8-45a4-b35d-bb8e83d8dfee (1).webp](/assets/leetcode_daily_images/1b403862.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -3330,7 +3330,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03022026-3637-trionic-array-i?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/POsTm9HyUQk)
 
-![6836c4d7-90a4-489e-b6b1-2efbe8b6a980 (1).webp](assets/leetcode_daily_images/25101d2b.webp)
+![6836c4d7-90a4-489e-b6b1-2efbe8b6a980 (1).webp](/assets/leetcode_daily_images/25101d2b.webp)
 
 
 
@@ -3393,7 +3393,7 @@ $$O(1)$$
 [youtube](https://youtu.be/yeZWsowld9E)
 
 
-![e4bff72e-a552-41a0-b499-e1adf5145668 (1).webp](assets/leetcode_daily_images/fb3ca13f.webp)
+![e4bff72e-a552-41a0-b499-e1adf5145668 (1).webp](/assets/leetcode_daily_images/fb3ca13f.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -3480,7 +3480,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01022026-3010-divide-an-array-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BO7QVtLO2JI)
 
-![8e018255-29fb-4bde-8fd3-fc38dbcc4632 (1).webp](assets/leetcode_daily_images/503e73ad.webp)
+![8e018255-29fb-4bde-8fd3-fc38dbcc4632 (1).webp](/assets/leetcode_daily_images/503e73ad.webp)
 
 
 
@@ -3543,7 +3543,7 @@ $$O(n)$$, fastest is O(1)
 [youtube](https://youtu.be/KGLwVag6MiU)
 
 
-![ebdac7eb-6f7b-4fa2-9204-29d66866f239 (1).webp](assets/leetcode_daily_images/b48a7f10.webp)
+![ebdac7eb-6f7b-4fa2-9204-29d66866f239 (1).webp](/assets/leetcode_daily_images/b48a7f10.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -3600,7 +3600,7 @@ $$O(1)$$
 [youtube](https://youtu.be/nh9hqzaBT5w)
 
 
-![c1fd649a-b247-4377-a4ae-b999f37dfc6b (1).webp](assets/leetcode_daily_images/25e4185f.webp)
+![c1fd649a-b247-4377-a4ae-b999f37dfc6b (1).webp](/assets/leetcode_daily_images/25e4185f.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -3702,7 +3702,7 @@ $$O(n^2)$$
 [youtube](https://youtu.be/8Oy5jS9s0nk)
 
 
-![adb99ef8-8026-4882-bd51-ff5f06585d9b (2).webp](assets/leetcode_daily_images/43f72c24.webp)
+![adb99ef8-8026-4882-bd51-ff5f06585d9b (2).webp](/assets/leetcode_daily_images/43f72c24.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -3772,7 +3772,7 @@ $$O(n + fw)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28012026-3651-minimum-cost-path-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/JgrJMR2Neyk)
 
-![85e6716f-65a8-4af7-a0a6-c82521ea5836 (1).webp](assets/leetcode_daily_images/584a2bac.webp)
+![85e6716f-65a8-4af7-a0a6-c82521ea5836 (1).webp](/assets/leetcode_daily_images/584a2bac.webp)
 
 
 
@@ -3888,7 +3888,7 @@ $$O(n^2k)$$ for Dijkstra, n^2 for dp
 [youtube](https://youtu.be/2xGssuWoFMc)
 
 
-![91f5b752-fce8-4bd7-9d94-09b6bc56809d (1).webp](assets/leetcode_daily_images/c834395c.webp)
+![91f5b752-fce8-4bd7-9d94-09b6bc56809d (1).webp](/assets/leetcode_daily_images/c834395c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -3968,7 +3968,7 @@ $$O(v^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26012026-1200-minimum-absolute-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kCrw4PxV1e8)
 
-![e7c9fdb5-0db6-4819-97ab-47f397a1bf45 (1).webp](assets/leetcode_daily_images/0d8a1d2f.webp)
+![e7c9fdb5-0db6-4819-97ab-47f397a1bf45 (1).webp](/assets/leetcode_daily_images/0d8a1d2f.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -4020,7 +4020,7 @@ $$O(n)$$
 [youtube](https://youtu.be/N1rGlao8a8o)
 
 
-![92716dbf-5bfe-4f84-a465-17644c73b00b (1).webp](assets/leetcode_daily_images/598f3a5e.webp)
+![92716dbf-5bfe-4f84-a465-17644c73b00b (1).webp](/assets/leetcode_daily_images/598f3a5e.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -4068,7 +4068,7 @@ $$O(n)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24012026-1877-minimize-maximum-pair?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/nzghO7COqZQ)
 
-![394c3372-ac47-4f65-9e3c-129ebc57ea97 (1).webp](assets/leetcode_daily_images/bd1de6a2.webp)
+![394c3372-ac47-4f65-9e3c-129ebc57ea97 (1).webp](/assets/leetcode_daily_images/bd1de6a2.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -4119,7 +4119,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23012026-3510-minimum-pair-removal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/IwcuKlvWyvc)
 
-![2aaada48-9d5c-422c-a4e9-fb4df9ce90bc (1).webp](assets/leetcode_daily_images/589e53a5.webp)
+![2aaada48-9d5c-422c-a4e9-fb4df9ce90bc (1).webp](/assets/leetcode_daily_images/589e53a5.webp)
 
 
 
@@ -4199,7 +4199,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22012026-3507-minimum-pair-removal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xaSCtlhNe6o)
 
-![64566dd5-2f58-4333-8e15-3c6318b38b2f (1).webp](assets/leetcode_daily_images/1de8a99b.webp)
+![64566dd5-2f58-4333-8e15-3c6318b38b2f (1).webp](/assets/leetcode_daily_images/1de8a99b.webp)
 
 
 
@@ -4259,7 +4259,7 @@ $$O(n)$$
 [youtube](https://youtu.be/0Idxr_-Jqdc)
 
 
-![72fdf644-52d3-4fde-86e4-2bdddf19affe (1).webp](assets/leetcode_daily_images/81f32d9b.webp)
+![72fdf644-52d3-4fde-86e4-2bdddf19affe (1).webp](/assets/leetcode_daily_images/81f32d9b.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -4356,7 +4356,7 @@ $$O(n)$$
 [youtube](https://youtu.be/nPIRhjJj8zI)
 
 
-![a4f2597c-ea61-4722-ba55-8133a91c435f (1).webp](assets/leetcode_daily_images/d23b594e.webp)
+![a4f2597c-ea61-4722-ba55-8133a91c435f (1).webp](/assets/leetcode_daily_images/d23b594e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -4423,7 +4423,7 @@ $$O(n)$$
 [youtube](https://youtu.be/SKYBGRtLiGc)
 
 
-![4395fb37-c24d-497d-b519-7265fd6064bb (1).webp](assets/leetcode_daily_images/67838260.webp)
+![4395fb37-c24d-497d-b519-7265fd6064bb (1).webp](/assets/leetcode_daily_images/67838260.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -4491,7 +4491,7 @@ $$O(nm)$$, can be in-place
 [youtube](https://youtu.be/40ioP_-hf0E)
 
 
-![a0b54509-fbad-4d5b-bbab-028d42549ee3 (1).webp](assets/leetcode_daily_images/656c6d19.webp)
+![a0b54509-fbad-4d5b-bbab-028d42549ee3 (1).webp](/assets/leetcode_daily_images/656c6d19.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -4549,7 +4549,7 @@ $$O(1)$$, or O(n^2) to store prefix sums
 [youtube](https://youtu.be/8EK9UqcqPDo)
 
 
-![977a91cb-099f-459f-a51a-e709a9e03c5e (1).webp](assets/leetcode_daily_images/f38a5f13.webp)
+![977a91cb-099f-459f-a51a-e709a9e03c5e (1).webp](/assets/leetcode_daily_images/f38a5f13.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -4607,7 +4607,7 @@ $$O(1)$$
 [youtube](https://youtu.be/wIicj0TOIEw)
 
 
-![85f3cd69-628c-42a4-9194-065e536e30a8 (1).webp](assets/leetcode_daily_images/29836401.webp)
+![85f3cd69-628c-42a4-9194-065e536e30a8 (1).webp](/assets/leetcode_daily_images/29836401.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -4675,7 +4675,7 @@ $$O(n^2)$$
 [youtube](https://youtu.be/FdEqql8wE5o)
 
 
-![fa08aa27-6ff7-4712-a51a-bf99478a31fe (1).webp](assets/leetcode_daily_images/d4223d1e.webp)
+![fa08aa27-6ff7-4712-a51a-bf99478a31fe (1).webp](/assets/leetcode_daily_images/d4223d1e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -4734,7 +4734,7 @@ $$O(1)$$ or O(n)
 [youtube](https://youtu.be/TraQ0upCaZE)
 
 
-![69c10bcc-e8c8-4421-a110-cd3120604cb5 (1).webp](assets/leetcode_daily_images/966b06b3.webp)
+![69c10bcc-e8c8-4421-a110-cd3120604cb5 (1).webp](/assets/leetcode_daily_images/966b06b3.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -4831,7 +4831,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12012026-3453-separate-squares-i?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2YzSUpeFXu4)
 
-![ff3c746d-2626-425a-bc74-3098fa8a7666 (1).webp](assets/leetcode_daily_images/67ebe4e7.webp)
+![ff3c746d-2626-425a-bc74-3098fa8a7666 (1).webp](/assets/leetcode_daily_images/67ebe4e7.webp)
 
 
 
@@ -4908,7 +4908,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12012026-1266-minimum-time-visiting?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZojOi34kLHY)
 
-![cf961b43-5360-4846-bd81-549443325d86 (1).webp](assets/leetcode_daily_images/6162a478.webp)
+![cf961b43-5360-4846-bd81-549443325d86 (1).webp](/assets/leetcode_daily_images/6162a478.webp)
 
 
 
@@ -4960,7 +4960,7 @@ $$O(1)$$
 [youtube](https://youtu.be/Ct21KpLMtA4)
 
 
-![c5a04d2d-e0ec-4ee9-8db9-4eed14f73561 (1).webp](assets/leetcode_daily_images/89e3ace2.webp)
+![c5a04d2d-e0ec-4ee9-8db9-4eed14f73561 (1).webp](/assets/leetcode_daily_images/89e3ace2.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5025,7 +5025,7 @@ $$O(m)$$
 [youtube](https://youtu.be/Goqrb3lwg5o)
 
 
-![2beff096-6071-468f-934f-c4137d076ed3 (1).webp](assets/leetcode_daily_images/833ae522.webp)
+![2beff096-6071-468f-934f-c4137d076ed3 (1).webp](/assets/leetcode_daily_images/833ae522.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5091,7 +5091,7 @@ $$O(m)$$
 [youtube](https://youtu.be/tWByRVZUQd4)
 
 
-![70318a61-7859-48b4-9d91-94eef697bd89 (1).webp](assets/leetcode_daily_images/6ebbc250.webp)
+![70318a61-7859-48b4-9d91-94eef697bd89 (1).webp](/assets/leetcode_daily_images/6ebbc250.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -5152,7 +5152,7 @@ $$O(logn)$$
 [youtube](https://youtu.be/2J8y-Uc-Ubc)
 
 
-![f5ec9834-1013-4da3-bdd2-385fe23dd48d (1).webp](assets/leetcode_daily_images/4f65276e.webp)
+![f5ec9834-1013-4da3-bdd2-385fe23dd48d (1).webp](/assets/leetcode_daily_images/4f65276e.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -5211,7 +5211,7 @@ $$O(m)$$
 [youtube](https://youtu.be/v5xmJIcPlbs)
 
 
-![cc4ddd10-55f6-4511-819b-97e43c288f51 (1).webp](assets/leetcode_daily_images/29623bf2.webp)
+![cc4ddd10-55f6-4511-819b-97e43c288f51 (1).webp](/assets/leetcode_daily_images/29623bf2.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5272,7 +5272,7 @@ $$O(logn)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06012026-1161-maximum-level-sum-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/qN-zWqqJuJ4)
 
-![142eb616-0647-486f-ae28-ff010de3fe01 (1).webp](assets/leetcode_daily_images/59e9c2fe.webp)
+![142eb616-0647-486f-ae28-ff010de3fe01 (1).webp](/assets/leetcode_daily_images/59e9c2fe.webp)
 
 
 
@@ -5333,7 +5333,7 @@ $$O(n)$$
 [youtube](https://youtu.be/xHi997OssVg)
 
 
-![6f7a2399-202e-420c-a2f8-a9ea9b74892d (1).webp](assets/leetcode_daily_images/d8d6ffca.webp)
+![6f7a2399-202e-420c-a2f8-a9ea9b74892d (1).webp](/assets/leetcode_daily_images/d8d6ffca.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5399,7 +5399,7 @@ $$O(1)$$
 
 
 
-![55965326-ca03-4961-b37a-c13ca29fecc8 (1).webp](assets/leetcode_daily_images/6716cedb.webp)
+![55965326-ca03-4961-b37a-c13ca29fecc8 (1).webp](/assets/leetcode_daily_images/6716cedb.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -5472,7 +5472,7 @@ $$O(1)$$
 [youtube](https://youtu.be/Zn-xUbW4Z_E)
 
 
-![9d53a2e8-6017-47e7-aa21-83a85dfd80e1 (1).webp](assets/leetcode_daily_images/150a0549.webp)
+![9d53a2e8-6017-47e7-aa21-83a85dfd80e1 (1).webp](/assets/leetcode_daily_images/150a0549.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5533,7 +5533,7 @@ $$O(n)$$
 [youtube](https://youtu.be/3mUp18Z9T98)
 
 
-![050f42ea-ddaf-4223-be5b-5384a627223e (1).webp](assets/leetcode_daily_images/05d7889c.webp)
+![050f42ea-ddaf-4223-be5b-5384a627223e (1).webp](/assets/leetcode_daily_images/05d7889c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5588,7 +5588,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01012026-66-plus-one?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/iO4zoGMmmec)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![c9513975-0f11-4aac-af43-cf8d3f5dbf95 (1).webp](assets/leetcode_daily_images/ab6ba375.webp)
+![c9513975-0f11-4aac-af43-cf8d3f5dbf95 (1).webp](/assets/leetcode_daily_images/ab6ba375.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/1222
@@ -5628,7 +5628,7 @@ $$O(n)$$
 [youtube](https://youtu.be/UBTHKxshf2M)
 
 
-![8e112f71-96d8-43bf-bc42-2dc7f46a2be2 (1).webp](assets/leetcode_daily_images/ae814ad5.webp)
+![8e112f71-96d8-43bf-bc42-2dc7f46a2be2 (1).webp](/assets/leetcode_daily_images/ae814ad5.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -5690,7 +5690,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30122025-840-magic-squares-in-grid?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Tql4KSUZEnI)
 
-![5252578a-5336-4593-b996-35ed7a689f29 (1).webp](assets/leetcode_daily_images/15058c46.webp)
+![5252578a-5336-4593-b996-35ed7a689f29 (1).webp](/assets/leetcode_daily_images/15058c46.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5747,7 +5747,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29122025-756-pyramid-transition-matrix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/82UTGBKUFGA)
 
-![a2c53c7b-0476-42f6-8094-e3142145e06c (1).webp](assets/leetcode_daily_images/7921098c.webp)
+![a2c53c7b-0476-42f6-8094-e3142145e06c (1).webp](/assets/leetcode_daily_images/7921098c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -5841,7 +5841,7 @@ $$O(b^2)$$
 [youtube](https://youtu.be/YTLqeFL620U)
 
 
-![6740ea68-029c-43e8-a7e2-f5ebb31cbb30 (1).webp](assets/leetcode_daily_images/473a6bc2.webp)
+![6740ea68-029c-43e8-a7e2-f5ebb31cbb30 (1).webp](/assets/leetcode_daily_images/473a6bc2.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -5892,7 +5892,7 @@ $$O(nm)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27122025-2402-meeting-rooms-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/OKv9PxfkAXo)
 
-![cc702986-a82b-4991-85ce-33ea0204d7ae (1).webp](assets/leetcode_daily_images/e5f685e8.webp)
+![cc702986-a82b-4991-85ce-33ea0204d7ae (1).webp](/assets/leetcode_daily_images/e5f685e8.webp)
 
 
 
@@ -5973,7 +5973,7 @@ $$O(n)$$
 [youtube](https://youtu.be/iDEQQnc6tMk)
 
 
-![cc090fff-c7c3-4399-aa61-414eaa4ba39f (1).webp](assets/leetcode_daily_images/22925f1c.webp)
+![cc090fff-c7c3-4399-aa61-414eaa4ba39f (1).webp](/assets/leetcode_daily_images/22925f1c.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -6027,7 +6027,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25122025-3075-maximize-happiness?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pVXiXEODprI)
 
-![75aecedd-9c48-4d4c-8be0-6480c83821ea (1).webp](assets/leetcode_daily_images/6c4af9af.webp)
+![75aecedd-9c48-4d4c-8be0-6480c83821ea (1).webp](/assets/leetcode_daily_images/6c4af9af.webp)
 
 
 
@@ -6087,7 +6087,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24122025-3074-apple-redistribution?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xaP4i6FooFM)
 
-![b4baba22-df27-4293-96e0-a74d93d0bb8d (1).webp](assets/leetcode_daily_images/0a8df32d.webp)
+![b4baba22-df27-4293-96e0-a74d93d0bb8d (1).webp](/assets/leetcode_daily_images/0a8df32d.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -6140,7 +6140,7 @@ $$O(sort)$$, Kotlin's IntArray.sort is O(1) space complexity
 [youtube](https://youtu.be/INZVk7nnfc4)
 
 
-![f7189f0f-5937-475d-86fd-2483ce267166 (1).webp](assets/leetcode_daily_images/f98f0426.webp)
+![f7189f0f-5937-475d-86fd-2483ce267166 (1).webp](/assets/leetcode_daily_images/f98f0426.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -6214,7 +6214,7 @@ $$O(n)$$
 [youtube](https://youtu.be/6wFRYLWGGgU)
 
 
-![d2dae9ed-5e4f-4520-87e5-b73d466bacf1 (1).webp](assets/leetcode_daily_images/719db376.webp)
+![d2dae9ed-5e4f-4520-87e5-b73d466bacf1 (1).webp](/assets/leetcode_daily_images/719db376.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -6294,7 +6294,7 @@ $$O(n^2)$$ or n^2 optimized
 [youtube](https://youtu.be/ZIaR7OLp83Q)
 
 
-![189f24be-def7-4a1c-9ebe-7cdf61e00950 (1).webp](assets/leetcode_daily_images/10d94eaa.webp)
+![189f24be-def7-4a1c-9ebe-7cdf61e00950 (1).webp](/assets/leetcode_daily_images/10d94eaa.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -6354,7 +6354,7 @@ $$O(n^2)$$ or n oprimized
 [youtube](https://youtu.be/vYRmx1MBQHk)
 
 
-![67d1f3d5-cce9-4f1d-8679-a72de527fec3 (1).webp](assets/leetcode_daily_images/681669b5.webp)
+![67d1f3d5-cce9-4f1d-8679-a72de527fec3 (1).webp](/assets/leetcode_daily_images/681669b5.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -6401,7 +6401,7 @@ $$O(n)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19122025-2092-find-all-people-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/nZ85DjcrEHM)
 
-![5285f48e-521e-486a-a8cb-3436dfe7a340 (1).webp](assets/leetcode_daily_images/c28b740c.webp)
+![5285f48e-521e-486a-a8cb-3436dfe7a340 (1).webp](/assets/leetcode_daily_images/c28b740c.webp)
 
 
 
@@ -6469,7 +6469,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18122025-3652-best-time-to-buy-and?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uXZii7PyY8g)
 
-![ab32cad1-a3a3-4a93-9514-929e96c0fb18 (1).webp](assets/leetcode_daily_images/fc7fc335.webp)
+![ab32cad1-a3a3-4a93-9514-929e96c0fb18 (1).webp](/assets/leetcode_daily_images/fc7fc335.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -6544,7 +6544,7 @@ $$O(1)$$
 [youtube](https://youtu.be/rfHEQbAUo5A)
 
 
-![81ebf892-5407-48cf-b3ef-044f06651049 (1).webp](assets/leetcode_daily_images/9e73411c.webp)
+![81ebf892-5407-48cf-b3ef-044f06651049 (1).webp](/assets/leetcode_daily_images/9e73411c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -6617,7 +6617,7 @@ $$O(n^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16122025-3562-maximum-profit-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UVSDgwE7IgQ)
 
-![13ac0576-627a-49fc-a4f0-8b7776c87171 (1).webp](assets/leetcode_daily_images/10e33abd.webp)
+![13ac0576-627a-49fc-a4f0-8b7776c87171 (1).webp](/assets/leetcode_daily_images/10e33abd.webp)
 
 
 
@@ -6705,7 +6705,7 @@ $$O(n^2b^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15122025-2110-number-of-smooth-descent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pICkmctr-WM)
 
-![d210a905-4fd3-482d-a2a6-97376705d4cb (1).webp](assets/leetcode_daily_images/fa9a1603.webp)
+![d210a905-4fd3-482d-a2a6-97376705d4cb (1).webp](/assets/leetcode_daily_images/fa9a1603.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -6761,7 +6761,7 @@ $$O(1)$$
 [youtube](https://youtu.be/ArVh89OjsY4)
 
 
-![895a38fb-0bef-4120-80b5-a786aa620ac5 (1).webp](assets/leetcode_daily_images/1831610a.webp)
+![895a38fb-0bef-4120-80b5-a786aa620ac5 (1).webp](/assets/leetcode_daily_images/1831610a.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -6825,7 +6825,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13122025-3606-coupon-code-validator?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-HSIbCyUbAU)
 
-![fd4f17a4-698f-410e-9dd9-1d3d56a1caf3 (1).webp](assets/leetcode_daily_images/445165cb.webp)
+![fd4f17a4-698f-410e-9dd9-1d3d56a1caf3 (1).webp](/assets/leetcode_daily_images/445165cb.webp)
 
 
 
@@ -6880,7 +6880,7 @@ $$O(n)$$
 [youtube](https://youtu.be/xctbYDDg_uA)
 
 
-![2e36944c-7c92-45bc-8c37-d8b28e165d51 (1).webp](assets/leetcode_daily_images/8fa2b674.webp)
+![2e36944c-7c92-45bc-8c37-d8b28e165d51 (1).webp](/assets/leetcode_daily_images/8fa2b674.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -6944,7 +6944,7 @@ $$O(n)$$
 [youtube](https://youtu.be/eO-naf6KpeY)
 
 
-![9328c4f5-787e-4249-9694-cf67f91a8579 (1).webp](assets/leetcode_daily_images/82d6d0ff.webp)
+![9328c4f5-787e-4249-9694-cf67f91a8579 (1).webp](/assets/leetcode_daily_images/82d6d0ff.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7007,7 +7007,7 @@ $$O(n)$$
 [youtube](https://youtu.be/5GZxigPGKtk)
 
 
-![cd2d2aa9-4cd2-401c-832d-247fbec96810 (1).webp](assets/leetcode_daily_images/e1b9cfb2.webp)
+![cd2d2aa9-4cd2-401c-832d-247fbec96810 (1).webp](/assets/leetcode_daily_images/e1b9cfb2.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -7077,7 +7077,7 @@ $$O(1)$$
 
 
 
-![e1399961-8558-4ab5-aa10-3dc1d63323b9 (1).webp](assets/leetcode_daily_images/1536798f.webp)
+![e1399961-8558-4ab5-aa10-3dc1d63323b9 (1).webp](/assets/leetcode_daily_images/1536798f.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -7141,7 +7141,7 @@ $$O(n)$$
 [youtube](https://youtu.be/EFxlZn9oLvM)
 
 
-![1a7fcc8f-43cd-4f69-94d4-012239f197d7 (1).webp](assets/leetcode_daily_images/c33b91d8.webp)
+![1a7fcc8f-43cd-4f69-94d4-012239f197d7 (1).webp](/assets/leetcode_daily_images/c33b91d8.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7196,7 +7196,7 @@ $$O(n)$$
 [youtube](https://youtu.be/qjWcxt3lY18)
 
 
-![ff0763dc-acf5-46ba-a96b-cd897810f634 (1).webp](assets/leetcode_daily_images/338b4751.webp)
+![ff0763dc-acf5-46ba-a96b-cd897810f634 (1).webp](/assets/leetcode_daily_images/338b4751.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -7257,7 +7257,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06122025-3578-count-partitions-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1BlCD2lICno)
 
-![bc2b490c-f8ed-4c2c-b10b-7605dcde8233 (1).webp](assets/leetcode_daily_images/5ccc0bcf.webp)
+![bc2b490c-f8ed-4c2c-b10b-7605dcde8233 (1).webp](/assets/leetcode_daily_images/5ccc0bcf.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7366,7 +7366,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05112025-3432-count-partitions-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7KtVrBXb4DA)
 
-![9d93b705-13db-48c9-9709-31ab503779dd (1).webp](assets/leetcode_daily_images/3a644f2e.webp)
+![9d93b705-13db-48c9-9709-31ab503779dd (1).webp](/assets/leetcode_daily_images/3a644f2e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7421,7 +7421,7 @@ $$O(1)$$
 [youtube](https://youtu.be/pdIdPSHuL8c)
 
 
-![95c23113-c2d5-4f60-8fd7-6d1c65dc353a (1).webp](assets/leetcode_daily_images/c231a0e2.webp)
+![95c23113-c2d5-4f60-8fd7-6d1c65dc353a (1).webp](/assets/leetcode_daily_images/c231a0e2.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -7472,7 +7472,7 @@ $$O(n)$$, can be O(1)
 [youtube](https://youtu.be/Ka-m6HHekxg)
 
 
-![4936712f-8071-4c9b-aa99-2728efa40b4e (1).webp](assets/leetcode_daily_images/5454fc60.webp)
+![4936712f-8071-4c9b-aa99-2728efa40b4e (1).webp](/assets/leetcode_daily_images/5454fc60.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7559,7 +7559,7 @@ $$O(n^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02112025-3623-count-number-of-trapezoids?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RVblRQ8lyJk)
 
-![321670b3-31c5-41bb-bee4-2f630f5c5a78 (1).webp](assets/leetcode_daily_images/7ce55cb4.webp)
+![321670b3-31c5-41bb-bee4-2f630f5c5a78 (1).webp](/assets/leetcode_daily_images/7ce55cb4.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7629,7 +7629,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01122025-2141-maximum-running-time?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/VKBlvh1hzHI)
 
-![98398bb6-add2-4ff1-92a0-4c90aa42af56 (1).webp](assets/leetcode_daily_images/deb0a0ac.webp)
+![98398bb6-add2-4ff1-92a0-4c90aa42af56 (1).webp](/assets/leetcode_daily_images/deb0a0ac.webp)
 
 
 
@@ -7752,7 +7752,7 @@ $$O(1)$$
 [youtube](https://youtu.be/7AMTdK1wFnk)
 
 
-![8fd0e802-9119-468e-a321-dda00fc6be1e (1).webp](assets/leetcode_daily_images/92941cdc.webp)
+![8fd0e802-9119-468e-a321-dda00fc6be1e (1).webp](/assets/leetcode_daily_images/92941cdc.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7877,7 +7877,7 @@ $$O(n)$$
 [youtube](https://youtu.be/0lz_HyqO77A)
 
 
-![1e4c53de-2b51-4294-b404-135d7f781973 (1).webp](assets/leetcode_daily_images/8143f054.webp)
+![1e4c53de-2b51-4294-b404-135d7f781973 (1).webp](/assets/leetcode_daily_images/8143f054.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7927,7 +7927,7 @@ $$O(1)$$
 [youtube](https://youtu.be/VI4osIc9PQo)
 
 
-![beaee647-7205-4da8-b1a9-718568cec3f4 (1).webp](assets/leetcode_daily_images/d65f73ea.webp)
+![beaee647-7205-4da8-b1a9-718568cec3f4 (1).webp](/assets/leetcode_daily_images/d65f73ea.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -7989,7 +7989,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27112025-3381-maximum-subarray-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xNh7cuCHvxg)
 
-![83052778-c9b7-4dde-adc0-eed850cd8a2b (1).webp](assets/leetcode_daily_images/d1e3108f.webp)
+![83052778-c9b7-4dde-adc0-eed850cd8a2b (1).webp](/assets/leetcode_daily_images/d1e3108f.webp)
 
 
 
@@ -8071,7 +8071,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26112025-2435-paths-in-matrix-whose?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xUM0vYox4e4)
 
-![92e260af-fc15-4c08-97d6-25914946ca75 (1).webp](assets/leetcode_daily_images/1101c2d1.webp)
+![92e260af-fc15-4c08-97d6-25914946ca75 (1).webp](/assets/leetcode_daily_images/1101c2d1.webp)
 
 
 
@@ -8136,7 +8136,7 @@ $$O(nk)$$
 [youtube](https://youtu.be/Pnk2_PSD05k)
 
 
-![72671a01-2ac7-463c-bbb2-e06c9dbcfc74 (1).webp](assets/leetcode_daily_images/a10e7033.webp)
+![72671a01-2ac7-463c-bbb2-e06c9dbcfc74 (1).webp](/assets/leetcode_daily_images/a10e7033.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -8205,7 +8205,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24112025-1018-binary-prefix-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8UwLYNOOoK8)
 
-![b21bafa5-e591-49e3-8c72-f8752080b3a0 (1).webp](assets/leetcode_daily_images/5375a2c3.webp)
+![b21bafa5-e591-49e3-8c72-f8752080b3a0 (1).webp](/assets/leetcode_daily_images/5375a2c3.webp)
 
 
 
@@ -8263,7 +8263,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23102025-1262-greatest-sum-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/nayKlr2PK6c)
 
-![d77898d7-d631-4c04-801f-267c931476bf (1).webp](assets/leetcode_daily_images/e202e0a9.webp)
+![d77898d7-d631-4c04-801f-267c931476bf (1).webp](/assets/leetcode_daily_images/e202e0a9.webp)
 
 
 
@@ -8357,7 +8357,7 @@ $$O(1)$$
 [youtube](https://youtu.be/fFrsEbcMsek)
 
 
-![9e398533-0b61-4a05-b20f-168a4d7d0dcc (1).webp](assets/leetcode_daily_images/e5cfe688.webp)
+![9e398533-0b61-4a05-b20f-168a4d7d0dcc (1).webp](/assets/leetcode_daily_images/e5cfe688.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -8406,7 +8406,7 @@ $$O(1)$$
 [youtube](https://youtu.be/pFZatmL5wyY)
 
 
-![d3163fea-afa0-4a08-9973-cf6a15c7b5d3 (1).webp](assets/leetcode_daily_images/188d0fa4.webp)
+![d3163fea-afa0-4a08-9973-cf6a15c7b5d3 (1).webp](/assets/leetcode_daily_images/188d0fa4.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -8464,7 +8464,7 @@ $$O(1)$$
 [youtube](https://youtu.be/6FtDLPwWVaQ)
 
 
-![36766e29-5633-49f2-9695-b0105097bb24 (1).webp](assets/leetcode_daily_images/70b89b6c.webp)
+![36766e29-5633-49f2-9695-b0105097bb24 (1).webp](/assets/leetcode_daily_images/70b89b6c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -8558,7 +8558,7 @@ $$O(1)$$
 [youtube](https://youtu.be/Mke82HIi3uY)
 
 
-![c4be91d4-0c0e-4b50-bbd4-237ec2f1d49d (1).webp](assets/leetcode_daily_images/d101e27f.webp)
+![c4be91d4-0c0e-4b50-bbd4-237ec2f1d49d (1).webp](/assets/leetcode_daily_images/d101e27f.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -8608,7 +8608,7 @@ $$O(n)$$
 [youtube](https://youtu.be/VAqP6LWAzhs)
 
 
-![16aa5b10-bbe8-4c9a-b673-39462c191a4e (1).webp](assets/leetcode_daily_images/7cef2cc8.webp)
+![16aa5b10-bbe8-4c9a-b673-39462c191a4e (1).webp](/assets/leetcode_daily_images/7cef2cc8.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -8662,7 +8662,7 @@ $$O(1)$$
 [youtube](https://youtu.be/8DrG_10KmYQ)
 
 
-![dc32b130-129d-412c-b438-b0e73b728df3 (1).webp](assets/leetcode_daily_images/3978a9bf.webp)
+![dc32b130-129d-412c-b438-b0e73b728df3 (1).webp](/assets/leetcode_daily_images/3978a9bf.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -8714,7 +8714,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16112025-1513-number-of-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/egWge3s-qBU)
 
-![5e173ed0-6bd3-4f9b-99fa-250efe0725c7 (1).webp](assets/leetcode_daily_images/96d2c063.webp)
+![5e173ed0-6bd3-4f9b-99fa-250efe0725c7 (1).webp](/assets/leetcode_daily_images/96d2c063.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -8770,7 +8770,7 @@ $$O(1)$$
 
 
 
-![3102b2ec-4a3a-4fe0-8739-27fe9096ee7d (2).webp](assets/leetcode_daily_images/9eb4ca46.webp)
+![3102b2ec-4a3a-4fe0-8739-27fe9096ee7d (2).webp](/assets/leetcode_daily_images/9eb4ca46.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -8863,7 +8863,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14112025-2536-increment-submatrices?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/k_crTRCXw94)
 
-![156a70ab-a694-45e7-9288-a04af0d4500f (1).webp](assets/leetcode_daily_images/a180d6df.webp)
+![156a70ab-a694-45e7-9288-a04af0d4500f (1).webp](/assets/leetcode_daily_images/a180d6df.webp)
 
 
 
@@ -8923,7 +8923,7 @@ $$O(n^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13112025-3228-maximum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Ds7Fgm2Wppo)
 
-![52a8d213-8db3-4706-bf6f-5d9e450d8007 (1).webp](assets/leetcode_daily_images/37572253.webp)
+![52a8d213-8db3-4706-bf6f-5d9e450d8007 (1).webp](/assets/leetcode_daily_images/37572253.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9000,7 +9000,7 @@ fun maxOperations(s: String) = s.indices.fold(0 to 0) {(o,r),i->
 [youtube](https://youtu.be/wTJKGmyNui4)
 
 
-![f34ff64b-2d89-4f2c-bb07-691e536e4644 (1).webp](assets/leetcode_daily_images/7a71e2fd.webp)
+![f34ff64b-2d89-4f2c-bb07-691e536e4644 (1).webp](/assets/leetcode_daily_images/7a71e2fd.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9063,7 +9063,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11112025-474-ones-and-zeroes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/NADW0Fr6mI4)
 
-![1f7cb25c-39cc-4cf6-ae33-8e0345abf2f4 (1).webp](assets/leetcode_daily_images/9d1aa252.webp)
+![1f7cb25c-39cc-4cf6-ae33-8e0345abf2f4 (1).webp](/assets/leetcode_daily_images/9d1aa252.webp)
 
 
 
@@ -9124,7 +9124,7 @@ $$O(nl^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10112025-3542-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Xz3zCI04SM0)
 
-![1827673c-dd69-45f1-b40c-66834545a841 (1).webp](assets/leetcode_daily_images/017b326b.webp)
+![1827673c-dd69-45f1-b40c-66834545a841 (1).webp](/assets/leetcode_daily_images/017b326b.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9220,7 +9220,7 @@ $$O(n)$$
 [youtube](https://youtu.be/EQUm48CGOs0)
 
 
-![ed52662d-317d-4c76-9e3f-e3fcd2ee7132 (1).webp](assets/leetcode_daily_images/6e1c030b.webp)
+![ed52662d-317d-4c76-9e3f-e3fcd2ee7132 (1).webp](/assets/leetcode_daily_images/6e1c030b.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9274,7 +9274,7 @@ $$O(log(n))$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08112025-1611-minimum-one-bit-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8fU_ZJzmS6Q)
 
-![649c14d6-6dcd-4881-ab28-3aa8be3f5f31 (1).webp](assets/leetcode_daily_images/38dad101.webp)
+![649c14d6-6dcd-4881-ab28-3aa8be3f5f31 (1).webp](/assets/leetcode_daily_images/38dad101.webp)
 
 
 
@@ -9425,7 +9425,7 @@ $$O(1)$$
 [youtube](https://youtu.be/hschfrTcxKg)
 
 
-![625a3497-7986-4f81-9162-7dedabcaa33c (1).webp](assets/leetcode_daily_images/6e68e810.webp)
+![625a3497-7986-4f81-9162-7dedabcaa33c (1).webp](/assets/leetcode_daily_images/6e68e810.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -9518,7 +9518,7 @@ $$O(n)$$
 [youtube](https://youtu.be/LcWB-VLkcDI)
 
 
-![4273c241-4875-4ebd-ac94-b83dfcb1f7fb (1).webp](assets/leetcode_daily_images/f8f9e107.webp)
+![4273c241-4875-4ebd-ac94-b83dfcb1f7fb (1).webp](/assets/leetcode_daily_images/f8f9e107.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9585,7 +9585,7 @@ $$O(n)$$
 [youtube](https://youtu.be/i8wup3zXawU)
 
 
-![169218bf-5867-48db-b3f0-d59fbfeaebe6 (1).webp](assets/leetcode_daily_images/45d21649.webp)
+![169218bf-5867-48db-b3f0-d59fbfeaebe6 (1).webp](/assets/leetcode_daily_images/45d21649.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9678,7 +9678,7 @@ $$O(n)$$
 [youtube](https://youtu.be/ZTmOvDEsTcs)
 
 
-![d9c7334b-fc8a-482e-8ae9-8c6184d92591 (1).webp](assets/leetcode_daily_images/14f935b8.webp)
+![d9c7334b-fc8a-482e-8ae9-8c6184d92591 (1).webp](/assets/leetcode_daily_images/14f935b8.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -9736,7 +9736,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03112025-1578-minimum-time-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mc767eo0eGc)
 
-![b366cc18-6d83-467d-985e-e33344442746 (1).webp](assets/leetcode_daily_images/d50b815d.webp)
+![b366cc18-6d83-467d-985e-e33344442746 (1).webp](/assets/leetcode_daily_images/d50b815d.webp)
 
 
 
@@ -9796,7 +9796,7 @@ $$O(1)$$
 [youtube](https://youtu.be/2KY_8wP-Zu4)
 
 
-![21d59441-3b73-4ce0-b535-36863983f07d (1).webp](assets/leetcode_daily_images/f470d593.webp)
+![21d59441-3b73-4ce0-b535-36863983f07d (1).webp](/assets/leetcode_daily_images/f470d593.webp)
 
 
 
@@ -9858,7 +9858,7 @@ $$O(n)$$
 [youtube](https://youtu.be/-pjCBDs8gX4)
 
 
-![44f34127-6606-4b69-bcaf-e5ac536eace9 (1).webp](assets/leetcode_daily_images/b14218ca.webp)
+![44f34127-6606-4b69-bcaf-e5ac536eace9 (1).webp](/assets/leetcode_daily_images/b14218ca.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9925,7 +9925,7 @@ $$O(n)$$
 [youtube](https://youtu.be/axzoIKlXIT4)
 
 
-![5cd75984-aef3-440e-932d-e589bbaac92e (1).webp](assets/leetcode_daily_images/4111ef31.webp)
+![5cd75984-aef3-440e-932d-e589bbaac92e (1).webp](/assets/leetcode_daily_images/4111ef31.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -9998,7 +9998,7 @@ $$O()$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30102025-1526-minimum-number-of-increments?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RPzKFFB1HmA)
 
-![b16d3eb3-4cea-4656-acb3-37d6e6d4dbc8 (1).webp](assets/leetcode_daily_images/c0468ce7.webp)
+![b16d3eb3-4cea-4656-acb3-37d6e6d4dbc8 (1).webp](/assets/leetcode_daily_images/c0468ce7.webp)
 
 
 
@@ -10075,7 +10075,7 @@ $$O(1)$$
 [youtube](https://youtu.be/S3WRk2iWJXM)
 
 
-![56938ebc-e4f5-4d0c-b54a-5848bbd610b3 (1).webp](assets/leetcode_daily_images/d5afaf13.webp)
+![56938ebc-e4f5-4d0c-b54a-5848bbd610b3 (1).webp](/assets/leetcode_daily_images/d5afaf13.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -10134,7 +10134,7 @@ $$O(1)$$
 [youtube](https://youtu.be/nwIJdXMazz8)
 
 
-![20e665bd-064a-4623-bf91-44617549c8b7 (1).webp](assets/leetcode_daily_images/14f61bdb.webp)
+![20e665bd-064a-4623-bf91-44617549c8b7 (1).webp](/assets/leetcode_daily_images/14f61bdb.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -10197,7 +10197,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27102025-2125-number-of-laser-beams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/WESY-QrWFLU)
 
-![5a71695d-3b4c-4c0b-bbf8-0c85a67b717f (1).webp](assets/leetcode_daily_images/205aec1e.webp)
+![5a71695d-3b4c-4c0b-bbf8-0c85a67b717f (1).webp](/assets/leetcode_daily_images/205aec1e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -10315,7 +10315,7 @@ struct Bank(Vec<i64>); impl Bank {
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25102025-1716-calculate-money-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/n30r1NZOE4w)
 
-![4ae592a1-851f-4053-b5e8-d1d641ed2a4b (1).webp](assets/leetcode_daily_images/65d952b2.webp)
+![4ae592a1-851f-4053-b5e8-d1d641ed2a4b (1).webp](/assets/leetcode_daily_images/65d952b2.webp)
 
 
 
@@ -10383,7 +10383,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24102025-2048-next-greater-numerically?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ym9PeBjBVRc)
 
-![18ff3401-d0bb-4fd6-9898-57577a733eec (1).webp](assets/leetcode_daily_images/18ca2032.webp)
+![18ff3401-d0bb-4fd6-9898-57577a733eec (1).webp](/assets/leetcode_daily_images/18ca2032.webp)
 
 
 
@@ -10443,7 +10443,7 @@ $$O(1)$$
 [youtube](https://youtu.be/igKy5PgHV14)
 
 
-![3706fdee-bab0-4c11-8a4b-bc83632f6439 (1).webp](assets/leetcode_daily_images/f06995f5.webp)
+![3706fdee-bab0-4c11-8a4b-bc83632f6439 (1).webp](/assets/leetcode_daily_images/f06995f5.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -10553,7 +10553,7 @@ $$O(n)$$
 [youtube](https://youtu.be/O9r2hrtvE5Y)
 
 
-![3caeb30d-45b6-49e7-8473-6c3f0bc032ab (1).webp](assets/leetcode_daily_images/b49f1fec.webp)
+![3caeb30d-45b6-49e7-8473-6c3f0bc032ab (1).webp](/assets/leetcode_daily_images/b49f1fec.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -10631,7 +10631,7 @@ $$O(n)$$
 [youtube](https://youtu.be/tykaR8cF-SM)
 
 
-![00ba3e93-d803-4aee-b4c2-be4f275895f9 (1).webp](assets/leetcode_daily_images/bc2bc8d8.webp)
+![00ba3e93-d803-4aee-b4c2-be4f275895f9 (1).webp](/assets/leetcode_daily_images/bc2bc8d8.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -10716,7 +10716,7 @@ $$O(n)$$
 [youtube](https://youtu.be/FBnBfpq2wnc)
 
 
-![1476e184-c73b-4b5f-a496-0feaf1535283 (1).webp](assets/leetcode_daily_images/27105282.webp)
+![1476e184-c73b-4b5f-a496-0feaf1535283 (1).webp](/assets/leetcode_daily_images/27105282.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -10768,7 +10768,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05102025-1625-lexicographically-smallest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/c4fZDlGP-Gs)
 
-![29a9832f-f303-48a8-af19-682d15e0734e (1).webp](assets/leetcode_daily_images/67ca6154.webp)
+![29a9832f-f303-48a8-af19-682d15e0734e (1).webp](/assets/leetcode_daily_images/67ca6154.webp)
 
 
 
@@ -10867,7 +10867,7 @@ $$O(n)$$
 [youtube](https://youtu.be/kZ6aPX5ICKo)
 
 
-![2d4101ab-32f3-466d-ab2f-475bd5d27b01 (1).webp](assets/leetcode_daily_images/29a2646f.webp)
+![2d4101ab-32f3-466d-ab2f-475bd5d27b01 (1).webp](/assets/leetcode_daily_images/29a2646f.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -10927,7 +10927,7 @@ $$O(1)$$
 [youtube](https://youtu.be/GedkAHLlp5M)
 
 
-![fb9e2b9c-0ec1-40cf-995a-41ec74832ea0 (1).webp](assets/leetcode_daily_images/e789805e.webp)
+![fb9e2b9c-0ec1-40cf-995a-41ec74832ea0 (1).webp](/assets/leetcode_daily_images/e789805e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11011,7 +11011,7 @@ $$O(n)$$
 [youtube](https://youtu.be/NxasuZ06jZ8)
 
 
-![cb628084-0ca6-4203-becb-a78cbcd2ab7b (1).webp](assets/leetcode_daily_images/dd720f30.webp)
+![cb628084-0ca6-4203-becb-a78cbcd2ab7b (1).webp](/assets/leetcode_daily_images/dd720f30.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11068,7 +11068,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15102025-3350-adjacent-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DhwwuGBKqyg)
 
-![8344491e-361e-498a-a277-dc8168c5c52a (1).webp](assets/leetcode_daily_images/550bbb24.webp)
+![8344491e-361e-498a-a277-dc8168c5c52a (1).webp](/assets/leetcode_daily_images/550bbb24.webp)
 
 
 
@@ -11129,7 +11129,7 @@ $$O(1)$$, or O(n)
 [youtube](https://youtu.be/gNzcOKsRCPQ)
 
 
-![6a711a37-86e3-4929-b20f-737b09eb2b2f (1) (1).webp](assets/leetcode_daily_images/0ae9a7b0.webp)
+![6a711a37-86e3-4929-b20f-737b09eb2b2f (1) (1).webp](/assets/leetcode_daily_images/0ae9a7b0.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -11186,7 +11186,7 @@ $$O(n)$$, can be O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13102025-2273-find-resultant-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tAvFWsJgASQ)
 
-![ef5404c8-652d-4e6c-ac76-4e95cfe41880 (1).webp](assets/leetcode_daily_images/1cadd69b.webp)
+![ef5404c8-652d-4e6c-ac76-4e95cfe41880 (1).webp](/assets/leetcode_daily_images/1cadd69b.webp)
 
 
 
@@ -11243,7 +11243,7 @@ $$O(n)$$
 [youtube](https://youtu.be/U2ZaPwTYtJM)
 
 
-![4aab11ea-339f-4961-8990-f511ccadbe08 (1).webp](assets/leetcode_daily_images/9a343764.webp)
+![4aab11ea-339f-4961-8990-f511ccadbe08 (1).webp](/assets/leetcode_daily_images/9a343764.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -11344,7 +11344,7 @@ $$O(n)$$
 [youtube](https://youtu.be/6Gkh0w0Tvvc)
 
 
-![baf56442-2656-48e6-a7b6-9e1d24b736a1 (1).webp](assets/leetcode_daily_images/ce09808d.webp)
+![baf56442-2656-48e6-a7b6-9e1d24b736a1 (1).webp](/assets/leetcode_daily_images/ce09808d.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11429,7 +11429,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10102025-3147-taking-maximum-energy?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RAU7BBuYb98)
 
-![6c72b184-248f-4f18-8f48-de7d078824ff (1).webp](assets/leetcode_daily_images/6afe50d0.webp)
+![6c72b184-248f-4f18-8f48-de7d078824ff (1).webp](/assets/leetcode_daily_images/6afe50d0.webp)
 
 
 
@@ -11486,7 +11486,7 @@ $$O(n)$$ or O(1) with input mutation
 [youtube](https://youtu.be/-pyLcrCIC7k)
 
 
-![ba3a9efc-683f-418d-852e-1d2799bf5e36 (1).webp](assets/leetcode_daily_images/dd1a5284.webp)
+![ba3a9efc-683f-418d-852e-1d2799bf5e36 (1).webp](/assets/leetcode_daily_images/dd1a5284.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11560,7 +11560,7 @@ $$O(n)$$
 [youtube](https://youtu.be/thUncq1nBzQ)
 
 
-![52c5b1de-7775-444b-971c-02899fbf9a0f (2).webp](assets/leetcode_daily_images/35379f55.webp)
+![52c5b1de-7775-444b-971c-02899fbf9a0f (2).webp](/assets/leetcode_daily_images/35379f55.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11616,7 +11616,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07102025-1488-avoid-flood-in-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tNa72g_appw)
 
-![1 (5).webp](assets/leetcode_daily_images/33f7b554.webp)
+![1 (5).webp](/assets/leetcode_daily_images/33f7b554.webp)
 
 
 
@@ -11735,7 +11735,7 @@ $$O(n)$$
 [youtube](https://youtu.be/LZ5U90g4VkE)
 
 
-![2b53bb4d-e70e-4e33-9ffa-ab8b910dab88 (1).webp](assets/leetcode_daily_images/a64f9e22.webp)
+![2b53bb4d-e70e-4e33-9ffa-ab8b910dab88 (1).webp](/assets/leetcode_daily_images/a64f9e22.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11807,7 +11807,7 @@ $$O(n)$$
 [youtube](https://youtu.be/LUF__exWhd0)
 
 
-![1 (4).webp](assets/leetcode_daily_images/8c338f53.webp)
+![1 (4).webp](/assets/leetcode_daily_images/8c338f53.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11882,7 +11882,7 @@ $$O()$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04102025-11-container-with-most-water?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7NLGgg6lg_U)
 
-![1.webp](assets/leetcode_daily_images/b7b9e67c.webp)
+![1.webp](/assets/leetcode_daily_images/b7b9e67c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -11942,7 +11942,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03102025-407-trapping-rain-water?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/x6NSzMUL--Q)
 
-![1.webp](assets/leetcode_daily_images/6f236dc2.webp)
+![1.webp](/assets/leetcode_daily_images/6f236dc2.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12030,7 +12030,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02102025-3100-water-bottles-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/fe7dj6FkfYM)
 
-![1.webp](assets/leetcode_daily_images/73968e0a.webp)
+![1.webp](/assets/leetcode_daily_images/73968e0a.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12091,7 +12091,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01102025-1518-water-bottles?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/W1vpRvv9goc)
 
-![1.jpg](assets/leetcode_daily_images/e96b58a8.webp)
+![1.jpg](/assets/leetcode_daily_images/e96b58a8.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12151,7 +12151,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30092025-2221-find-triangular-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/jFJZ6cJOcWU)
 
-![1.webp](assets/leetcode_daily_images/b9c48220.webp)
+![1.webp](/assets/leetcode_daily_images/b9c48220.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12234,7 +12234,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29092025-1039-minimum-score-triangulation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BSaCQ8pGFtA)
 
-![1.webp](assets/leetcode_daily_images/6a1b99a7.webp)
+![1.webp](/assets/leetcode_daily_images/6a1b99a7.webp)
 
 
 
@@ -12345,7 +12345,7 @@ $$O(n^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28092025-976-largest-perimeter-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/JLBa2i5asi0)
 
-![1.webp](assets/leetcode_daily_images/df9d602b.webp)
+![1.webp](/assets/leetcode_daily_images/df9d602b.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12405,7 +12405,7 @@ $$O(n)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27092025-812-largest-triangle-area?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/G6-rCzqV0GY)
 
-![1.webp](assets/leetcode_daily_images/e7e8f19c.webp)
+![1.webp](/assets/leetcode_daily_images/e7e8f19c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12467,7 +12467,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26092025-611-valid-triangle-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cYGMNH0eYUQ)
 
-![1.webp](assets/leetcode_daily_images/56a46be5.webp)
+![1.webp](/assets/leetcode_daily_images/56a46be5.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12556,7 +12556,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25092025-120-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7XhH0MzLSR0)
 
-![1.webp](assets/leetcode_daily_images/8248faeb.webp)
+![1.webp](/assets/leetcode_daily_images/8248faeb.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12617,7 +12617,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24092025-166-fraction-to-recurring?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/inwxxh-viLE)
 
-![1.webp](assets/leetcode_daily_images/f983dbba.webp)
+![1.webp](/assets/leetcode_daily_images/f983dbba.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12705,7 +12705,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23092025-165-compare-version-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-qstZnKVbNs)
 
-![1.webp](assets/leetcode_daily_images/8c29e723.webp)
+![1.webp](/assets/leetcode_daily_images/8c29e723.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12766,7 +12766,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22092025-3005-count-elements-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/bnI54WtsBgs)
 
-![1.webp](assets/leetcode_daily_images/ff28f409.webp)
+![1.webp](/assets/leetcode_daily_images/ff28f409.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12836,7 +12836,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21092025-1912-design-movie-rental?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3tXT9XTqlRg)
 
-![1.webp](assets/leetcode_daily_images/06a2b784.webp)
+![1.webp](/assets/leetcode_daily_images/06a2b784.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12908,7 +12908,7 @@ impl MovieRentingSystem {
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20092025-3508-implement-router?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6tf7Rb_v9uc)
 
-![1.webp](assets/leetcode_daily_images/6577d623.webp)
+![1.webp](/assets/leetcode_daily_images/6577d623.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -12994,7 +12994,7 @@ impl Router {
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19092025-3484-design-spreadsheet?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/GcF4FwNYORw)
 
-![1.webp](assets/leetcode_daily_images/5ac7fd9d.webp)
+![1.webp](/assets/leetcode_daily_images/5ac7fd9d.webp)
 
 
 
@@ -13062,7 +13062,7 @@ struct Spreadsheet([i32;26001]); impl Spreadsheet {
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18092025-3408-design-task-manager?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HdtbT_rT1v0)
 
-![1.webp](assets/leetcode_daily_images/b33d4f9a.webp)
+![1.webp](/assets/leetcode_daily_images/b33d4f9a.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -13138,7 +13138,7 @@ impl TaskManager {
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17092025-2353-design-a-food-rating?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/nsZf1ZSXKB8)
 
-![1.webp](assets/leetcode_daily_images/5d9f7aa6.webp)
+![1.webp](/assets/leetcode_daily_images/5d9f7aa6.webp)
 
 
 
@@ -13216,7 +13216,7 @@ impl FoodRatings {
 [youtube](https://youtu.be/eTH2hFqhVKY)
 
 
-![1.webp](assets/leetcode_daily_images/089de5cd.webp)
+![1.webp](/assets/leetcode_daily_images/089de5cd.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -13290,7 +13290,7 @@ $$O(n)$$
 [youtube](https://youtu.be/K-fzBO3LVxY)
 
 
-![1.webp](assets/leetcode_daily_images/f6c9189b.webp)
+![1.webp](/assets/leetcode_daily_images/f6c9189b.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -13345,7 +13345,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14092025-966-vowel-spellchecker?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HL2vb7coFHc)
 
-![1.webp](assets/leetcode_daily_images/2be9ef00.webp)
+![1.webp](/assets/leetcode_daily_images/2be9ef00.webp)
 
 
 
@@ -13420,7 +13420,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13092025-3541-find-most-frequent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/B5eDJXNtIhY)
 
-![1.webp](assets/leetcode_daily_images/1e57e18d.webp)
+![1.webp](/assets/leetcode_daily_images/1e57e18d.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -13466,7 +13466,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12092025-3227-vowels-game-in-a-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/IX_QFkqmewk)
 
-![1.webp](assets/leetcode_daily_images/082eeffa.webp)
+![1.webp](/assets/leetcode_daily_images/082eeffa.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -13541,7 +13541,7 @@ $$O(n)$$, or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11092025-2785-sort-vowels-in-a-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1zQ0Ee-Lk8w)
 
-![1.webp](assets/leetcode_daily_images/99ffd029.webp)
+![1.webp](/assets/leetcode_daily_images/99ffd029.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -13612,7 +13612,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10092025-1733-minimum-number-of-people?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BWxJDjXCuZ0)
 
-![1.webp](assets/leetcode_daily_images/fcad35dd.webp)
+![1.webp](/assets/leetcode_daily_images/fcad35dd.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -13698,7 +13698,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09092025-2327-number-of-people-aware?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/35yCdQG4Tg0)
 
-![1.webp](assets/leetcode_daily_images/d7523177.webp)
+![1.webp](/assets/leetcode_daily_images/d7523177.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -13774,7 +13774,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08092025-1317-convert-integer-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/256AzPk4hvU)
 
-![1.webp](assets/leetcode_daily_images/9bd816a2.webp)
+![1.webp](/assets/leetcode_daily_images/9bd816a2.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -13845,7 +13845,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07092025-1304-find-n-unique-integers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Rg4LSvUK90Y)
 
-![1.webp](assets/leetcode_daily_images/a4b15489.webp)
+![1.webp](/assets/leetcode_daily_images/a4b15489.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -13923,7 +13923,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06092025-3495-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Fg-lZfEfG0Q)
 
-![1.webp](assets/leetcode_daily_images/7409046c.webp)
+![1.webp](/assets/leetcode_daily_images/7409046c.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -14027,10 +14027,10 @@ Didn't solve.
 `1 + 4 + 4² + … + 4^{p-1}`. Why? `0x15555555` is the bit pattern `0101...` (1s in even positions). Shifting by 30-2p moves exactly p of those 1s into the low end, giving the geometric series above.
 
 Logic behind `(x+1)*p-(4^p-1)/3`:
-![image.png](assets/leetcode_daily_images/99e49177.webp)
+![image.png](/assets/leetcode_daily_images/99e49177.webp)
 
 For `[a,b]=[20,70]`:
-![1.webp](assets/leetcode_daily_images/c552469c.webp)
+![1.webp](/assets/leetcode_daily_images/c552469c.webp)
 
 
 #### Complexity
@@ -14098,7 +14098,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05092025-2749-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uUFaN-Ak-00)
 
-![1.webp](assets/leetcode_daily_images/826ffdc4.webp)
+![1.webp](/assets/leetcode_daily_images/826ffdc4.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -14221,7 +14221,7 @@ $$O(1)$$
 [youtube](https://youtu.be/ed9Bm7Q0YxM)
 
 
-![1.webp](assets/leetcode_daily_images/536f2410.webp)
+![1.webp](/assets/leetcode_daily_images/536f2410.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -14292,7 +14292,7 @@ $$O(1)$$
 [youtube](https://youtu.be/th1GCmMw56A)
 
 
-![1.webp](assets/leetcode_daily_images/601f7633.webp)
+![1.webp](/assets/leetcode_daily_images/601f7633.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -14341,7 +14341,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02092025-3025-find-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pMiePyA3pbs)
 
-![1.webp](assets/leetcode_daily_images/a60afc18.webp)
+![1.webp](/assets/leetcode_daily_images/a60afc18.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -14408,7 +14408,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01092025-1792-maximum-average-pass?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/STUaNN6HzxA)
 
-![1.webp](assets/leetcode_daily_images/84db8d16.webp)
+![1.webp](/assets/leetcode_daily_images/84db8d16.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -14468,7 +14468,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31082025-37-sudoku-solver?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7nrj41U5HTg)
 
-![1.webp](assets/leetcode_daily_images/8e1d3e7e.webp)
+![1.webp](/assets/leetcode_daily_images/8e1d3e7e.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -14558,7 +14558,7 @@ $$O(1)$$
 [youtube](https://youtu.be/XSLc3mXzOuQ)
 
 
-![1.webp](assets/leetcode_daily_images/98833e5d.webp)
+![1.webp](/assets/leetcode_daily_images/98833e5d.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -14646,7 +14646,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29082025-3021-alice-and-bob-playing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7gwxMDE-HWA)
 
-![1.webp](assets/leetcode_daily_images/8a10a2a3.webp)
+![1.webp](/assets/leetcode_daily_images/8a10a2a3.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -14731,7 +14731,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/sort-matrix-by-diagonals/solutions/7130785/kotlin-rust-by-samoylenkodmitry-cqln/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28082025-3446-sort-matrix-by-diagonals?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/LTqpki6XuQU)
-![1.webp](assets/leetcode_daily_images/c860e553.webp)
+![1.webp](/assets/leetcode_daily_images/c860e553.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -14838,7 +14838,7 @@ $$O(1)$$
 [youtube](https://youtu.be/65p4eQxap-w)
 
 
-![1.webp](assets/leetcode_daily_images/8e58ca1d.webp)
+![1.webp](/assets/leetcode_daily_images/8e58ca1d.webp)
 
 
 
@@ -14915,7 +14915,7 @@ $$O(n)$$
 [youtube](https://youtu.be/w7tNJWpFVLA)
 
 
-![1.webp](assets/leetcode_daily_images/a76e0271.webp)
+![1.webp](/assets/leetcode_daily_images/a76e0271.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -14990,7 +14990,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25082025-498-diagonal-traverse?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EzDVtfp31EU)
 
-![1.webp](assets/leetcode_daily_images/183a36c4.webp)
+![1.webp](/assets/leetcode_daily_images/183a36c4.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -15077,7 +15077,7 @@ $$O(nm)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24082025-1493-longest-subarray-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/y6G5mYEEofQ)
 
-![1.webp](assets/leetcode_daily_images/e50002dc.webp)
+![1.webp](/assets/leetcode_daily_images/e50002dc.webp)
 
 
 
@@ -15183,7 +15183,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23082025-3197-find-the-minimum-area?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XpPIkVrLWUE)
 
-![1.webp](assets/leetcode_daily_images/48b3c8eb.webp)
+![1.webp](/assets/leetcode_daily_images/48b3c8eb.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -15249,7 +15249,7 @@ $$O(1)$$
 [youtube](https://youtu.be/CbUfPIs2Z18)
 
 
-![1.webp](assets/leetcode_daily_images/3b8e9c14.webp)
+![1.webp](/assets/leetcode_daily_images/3b8e9c14.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -15357,7 +15357,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21082025-1504-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UjUyxBqRjgU)
 
-![1.webp](assets/leetcode_daily_images/2afa9b96.webp)
+![1.webp](/assets/leetcode_daily_images/2afa9b96.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -15512,7 +15512,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20082025-1277-count-square-submatrices?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_GKdBiHobIE)
 
-![1.webp](assets/leetcode_daily_images/0dff86b6.webp)
+![1.webp](/assets/leetcode_daily_images/0dff86b6.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -15599,7 +15599,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19082025-2348-number-of-zero-filled?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cm29MlKQnQs)
 
-![1.webp](assets/leetcode_daily_images/7c391bbf.webp)
+![1.webp](/assets/leetcode_daily_images/7c391bbf.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -15689,7 +15689,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18082025-679-24-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MpQP04t4YmM)
 
-![1.webp](assets/leetcode_daily_images/96750d17.webp)
+![1.webp](/assets/leetcode_daily_images/96750d17.webp)
 
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
@@ -15784,7 +15784,7 @@ $$O(n^n)$$, n levels, n size at each level
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17082025-837-new-21-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/di8TDfXdbtY)
 
-![1.webp](assets/leetcode_daily_images/a18cadd5.webp)
+![1.webp](/assets/leetcode_daily_images/a18cadd5.webp)
 
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
@@ -15888,7 +15888,7 @@ $$O(k + m)$$
 [blog post](https://leetcode.com/problems/maximum-69-number/solutions/7087812/kotlin-rust-by-samoylenkodmitry-msnj/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16082025-1323-maximum-69-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/slqHZkvybTk)
-![1.webp](assets/leetcode_daily_images/d9e931a5.webp)
+![1.webp](/assets/leetcode_daily_images/d9e931a5.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -15966,7 +15966,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/power-of-four/solutions/7083288/kotlin-rust-by-samoylenkodmitry-wtsv/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15082025-342-power-of-four?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-eFQOY4x1KQ)
-![1.webp](assets/leetcode_daily_images/2cf35e44.webp)
+![1.webp](/assets/leetcode_daily_images/2cf35e44.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -16061,7 +16061,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14082025-2264-largest-3-same-digit?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/GFkElrtuSB0)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/e93b4397.webp)
+![1.webp](/assets/leetcode_daily_images/e93b4397.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1080
@@ -16143,7 +16143,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13082025-326-power-of-three?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/lkY0FNrzSLg)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/71dbadf0.webp)
+![1.webp](/assets/leetcode_daily_images/71dbadf0.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1079
@@ -16384,7 +16384,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11082025-2438-range-product-queries?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/q8JvzYWRmpE)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/c8a99d3b.webp)
+![1.webp](/assets/leetcode_daily_images/c8a99d3b.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1077
@@ -16508,7 +16508,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10082025-869-reordered-power-of-2?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uPz9eLlQv2s)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/095a98ef.webp)
+![1.webp](/assets/leetcode_daily_images/095a98ef.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1076
@@ -16605,7 +16605,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/power-of-two/solutions/7060229/kotlin-rust-by-samoylenkodmitry-ap99/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/9082025-231-power-of-two?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/dpCsHFQK4pE)
-![1.webp](assets/leetcode_daily_images/cef8cf7c.webp)
+![1.webp](/assets/leetcode_daily_images/cef8cf7c.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -16699,7 +16699,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/soup-servings/solutions/7057068/kotlin-rust-by-samoylenkodmitry-8a2i/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/8082025-808-soup-servings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/teBK2YRCO3M)
-![1.webp](assets/leetcode_daily_images/15f5cc29.webp)
+![1.webp](/assets/leetcode_daily_images/15f5cc29.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -16844,7 +16844,7 @@ $$O(min(5000, n))$$
 [blog post](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/solutions/7054079/kotlin-by-samoylenkodmitry-xgta/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/7082025-3363-find-the-maximum-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ogqlVLt0qxA)
-![1.webp](assets/leetcode_daily_images/91496675.webp)
+![1.webp](/assets/leetcode_daily_images/91496675.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -16915,7 +16915,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/fruits-into-baskets-iii/solutions/7050464/kotlin-rust-by-samoylenkodmitry-shkj/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/6082025-3479-fruits-into-baskets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/n0MeL66o6NI)
-![1.webp](assets/leetcode_daily_images/ef2eda6e.webp)
+![1.webp](/assets/leetcode_daily_images/ef2eda6e.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -17068,7 +17068,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/5082025-3477-fruits-into-baskets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/WpxdBVT88Zw)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/a46aff59.webp)
+![1.webp](/assets/leetcode_daily_images/a46aff59.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1071
@@ -17180,7 +17180,7 @@ $$O(1)$$ or O(n) if not modyfying the inputs
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/4082025-904-fruit-into-baskets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/TrGPw_NpnjU)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/ae7b8978.webp)
+![1.webp](/assets/leetcode_daily_images/ae7b8978.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1070
@@ -17279,7 +17279,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/3082025-2106-maximum-fruits-harvested?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/m5BB3noDmO0)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/327ecfef.webp)
+![1.webp](/assets/leetcode_daily_images/327ecfef.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1069
@@ -17394,7 +17394,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/2082025-2561-rearranging-fruits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/f5ehPg4kNio)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/77a9592e.webp)
+![1.webp](/assets/leetcode_daily_images/77a9592e.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1068
@@ -17550,7 +17550,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/1082025-118-pascals-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/TPNlXnW3aM8)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/fcea5ea0.webp)
+![1.webp](/assets/leetcode_daily_images/fcea5ea0.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1067
@@ -17627,7 +17627,7 @@ $$O(2^n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31072025-898-bitwise-ors-of-subarrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/jNg4yiXboEE)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/f04f9f72.webp)
+![1.webp](/assets/leetcode_daily_images/f04f9f72.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1066
@@ -17778,7 +17778,7 @@ $$O(r)$$
 [blog post](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/solutions/7023340/kotlin-rust-by-samoylenkodmitry-s9za/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30072025-2419-longest-subarray-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RwyDoaDPDNQ)
-![1.webp](assets/leetcode_daily_images/55be5618.webp)
+![1.webp](/assets/leetcode_daily_images/55be5618.webp)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
 
 #### Join me on Telegram
@@ -17873,7 +17873,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29072025-2411-smallest-subarrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/iyZBADt0P_U)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/3b2f68a7.webp)
+![1.webp](/assets/leetcode_daily_images/3b2f68a7.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1064
@@ -18002,7 +18002,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28072025-2044-count-number-of-maximum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RRJ5xnh0FSc)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/5a6230ce.webp)
+![1.webp](/assets/leetcode_daily_images/5a6230ce.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1063
@@ -18100,7 +18100,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27072025-2210-count-hills-and-valleys?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/LxREDojIcMc)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/4130f6fd.webp)
+![1.webp](/assets/leetcode_daily_images/4130f6fd.webp)
 
 #### Join me on Telegram
 
@@ -18219,7 +18219,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26072025-3480-maximize-subarrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2l1T5xRRJxQ)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/8737f504.webp)
+![1.webp](/assets/leetcode_daily_images/8737f504.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1061
@@ -18349,7 +18349,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25072025-3487-maximum-unique-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/D2BL5NkhD40)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/c0b7203c.webp)
+![1.webp](/assets/leetcode_daily_images/c0b7203c.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1060
@@ -18425,7 +18425,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24072025-2322-minimum-score-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xhHGnqQa34w)
 https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-![1.webp](assets/leetcode_daily_images/b34effce.webp)
+![1.webp](/assets/leetcode_daily_images/b34effce.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1059
@@ -18544,7 +18544,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/6993749/kotlin-rust-by-samoylenkodmitry-1byr/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23072025-1717-maximum-score-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tH1yV7oJcYo)
-![1.webp](assets/leetcode_daily_images/aad99b47.webp)
+![1.webp](/assets/leetcode_daily_images/aad99b47.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1058
@@ -18653,7 +18653,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-erasure-value/solutions/6988920/kotlin-rust-by-samoylenkodmitry-f80h/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22072025-1695-maximum-erasure-value?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/takSLm2JNZA)
-![1.webp](assets/leetcode_daily_images/11469a3b.webp)
+![1.webp](/assets/leetcode_daily_images/11469a3b.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1057
@@ -18745,7 +18745,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/delete-characters-to-make-fancy-string/solutions/6984557/kotlin-rust-by-samoylenkodmitry-lwcf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21072025-1957-delete-characters-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/QMxd7BdQkew)
-![1.webp](assets/leetcode_daily_images/df2bd9e2.webp)
+![1.webp](/assets/leetcode_daily_images/df2bd9e2.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1056
@@ -18853,7 +18853,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/delete-duplicate-folders-in-system/solutions/6981453/kotlin-by-samoylenkodmitry-jgq4/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20072025-1948-delete-duplicate-folders?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MeraNuFL7oo)
-![1.webp](assets/leetcode_daily_images/390887af.webp)
+![1.webp](/assets/leetcode_daily_images/390887af.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1055
@@ -18919,7 +18919,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/solutions/6977130/kotlin-rust-by-samoylenkodmitry-f106/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19072025-1233-remove-sub-folders?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MKiDuUcbb5M)
-![1.webp](assets/leetcode_daily_images/044687cc.webp)
+![1.webp](/assets/leetcode_daily_images/044687cc.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1054
@@ -19021,7 +19021,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/solutions/6973297/kotlin-rust-by-samoylenkodmitry-b8oo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18072025-2163-minimum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XqGjzlfXcXU)
-![1.webp](assets/leetcode_daily_images/f40caa78.webp)
+![1.webp](/assets/leetcode_daily_images/f40caa78.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1053
@@ -19143,7 +19143,7 @@ $$O(n)$$, or O(n / 3)
 [blog post](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/solutions/6969808/kotlin-rust-by-samoylenkodmitry-yful/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17072025-3202-find-the-maximum-length?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/FFoPyXxObBs)
-![1.webp](assets/leetcode_daily_images/d3ff2f53.webp)
+![1.webp](/assets/leetcode_daily_images/d3ff2f53.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1052
@@ -19258,7 +19258,7 @@ $$O(k)$$
 [blog post](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/solutions/6965373/kotlin-rust-by-samoylenkodmitry-4u79/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16072025-3201-find-the-maximum-length?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xDn-X9CWQwk)
-![1.webp](assets/leetcode_daily_images/2c3aff0e.webp)
+![1.webp](/assets/leetcode_daily_images/2c3aff0e.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1051
@@ -19370,7 +19370,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14072025-1290-convert-binary-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3rOo8GcsOcM)
 
-![1.webp](assets/leetcode_daily_images/9addd802.webp)
+![1.webp](/assets/leetcode_daily_images/9addd802.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1049
@@ -19493,7 +19493,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/solutions/6952394/kotlin-rust-by-samoylenkodmitry-syx0/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13072025-2410-maximum-matching-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/C6E7o7iRoI8)
-![1.webp](assets/leetcode_daily_images/b3a08fcb.webp)
+![1.webp](/assets/leetcode_daily_images/b3a08fcb.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1048
@@ -19597,7 +19597,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/solutions/6949047/kotlin-by-samoylenkodmitry-mihd/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12072025-1900-the-earliest-and-latest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/S9JrZQjncdU)
-![1.webp](assets/leetcode_daily_images/9951652d.webp)
+![1.webp](/assets/leetcode_daily_images/9951652d.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1047
@@ -19698,7 +19698,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/meeting-rooms-iii/solutions/6945785/kotlin-rust-by-samoylenkodmitry-o3i3/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11072025-2402-meeting-rooms-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/f1zl4gPFCzI)
-![1.webp](assets/leetcode_daily_images/23dab087.webp)
+![1.webp](/assets/leetcode_daily_images/23dab087.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1046
@@ -19888,7 +19888,7 @@ int mostBooked(int n, std::vector<std::vector<int>>& ms) {
 [blog post](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/solutions/6941810/kotlin-rust-by-samoylenkodmitry-bpfl/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10072025-3440-reschedule-meetings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/hY2uEOdgCIM)
-![1.webp](assets/leetcode_daily_images/4ac7188f.webp)
+![1.webp](/assets/leetcode_daily_images/4ac7188f.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1045
@@ -20029,7 +20029,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/solutions/6938033/kotlin-rust-by-samoylenkodmitry-brv2/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/9072025-3439-reschedule-meetings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/miMjCJJEO70)
-![1.webp](assets/leetcode_daily_images/6401ea4a.webp)
+![1.webp](/assets/leetcode_daily_images/6401ea4a.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1044
@@ -20131,7 +20131,7 @@ $$O(k)$$ or O(1)
 [blog post](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/solutions/6934270/kotlin-rust-by-samoylenkodmitry-05rn/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/8072025-1751-maximum-number-of-events?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/SUfTahhnV8s)
-![1.webp](assets/leetcode_daily_images/5f74466a.webp)
+![1.webp](/assets/leetcode_daily_images/5f74466a.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1043
@@ -20255,7 +20255,7 @@ $$O(nk)$$
 [blog post](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/solutions/6930245/kotlin-rust-by-samoylenkodmitry-zgjl/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/7072025-1353-maximum-number-of-events?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6nPapN6xo2s)
-![1.webp](assets/leetcode_daily_images/1b24a096.webp)
+![1.webp](/assets/leetcode_daily_images/1b24a096.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1042
@@ -20416,7 +20416,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/solutions/6926886/kotlin-rust-by-samoylenkodmitry-mmxf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/6072025-1865-finding-pairs-with-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kXWn1y2zNsQ)
-![1.webp](assets/leetcode_daily_images/69940d24.webp)
+![1.webp](/assets/leetcode_daily_images/69940d24.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1041
@@ -20588,7 +20588,7 @@ public:
 [blog post](https://leetcode.com/problems/find-lucky-integer-in-an-array/solutions/6922267/kotlin-rust-by-samoylenkodmitry-0tjw/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/5072025-1394-find-lucky-integer-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-2pzlHKEU4M)
-![1.webp](assets/leetcode_daily_images/6e42c76f.webp)
+![1.webp](/assets/leetcode_daily_images/6e42c76f.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1040
@@ -20695,7 +20695,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/solutions/6918431/kotlin-rust-by-samoylenkodmitry-tye0/)
 [substack](https://dmitriisamoilenko.substack.com/p/4072025-3307-find-the-k-th-character?r=2bam17)
 [youtube](https://youtu.be/V22PF_PM5Gw)
-![1.webp](assets/leetcode_daily_images/58f82c56.webp)
+![1.webp](/assets/leetcode_daily_images/58f82c56.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1039
@@ -20813,7 +20813,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/6914362/kotlin-rust-by-samoylenkodmitry-os9r/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/3072025-3304-find-the-k-th-character?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/b6L5AosRrHY)
-![1.webp](assets/leetcode_daily_images/fcb37309.webp)
+![1.webp](/assets/leetcode_daily_images/fcb37309.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1038
@@ -20928,7 +20928,7 @@ $$O(k)$$
 [blog post](https://leetcode.com/problems/find-the-original-typed-string-ii/solutions/6910352/kotlin-rust-by-samoylenkodmitry-mkvq/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/2072025-3333-find-the-original-typed?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Fsd9yYRBgxU)
-![1.webp](assets/leetcode_daily_images/facf5102.webp)
+![1.webp](/assets/leetcode_daily_images/facf5102.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1037
@@ -21067,7 +21067,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-original-typed-string-i/solutions/6905864/kotlin-rust-by-samoylenkodmitry-2tvw/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30062025-594-longest-harmonious-subsequence-65d?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/N7cO7hOoK3w)
-![1.webp](assets/leetcode_daily_images/085214b8.webp)
+![1.webp](/assets/leetcode_daily_images/085214b8.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1036
@@ -21164,7 +21164,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/longest-harmonious-subsequence/solutions/6901687/kotlin-rust-by-samoylenkodmitry-d31j/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30062025-594-longest-harmonious-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kPVCbgimEJg)
-![1.webp](assets/leetcode_daily_images/196cef06.webp)
+![1.webp](/assets/leetcode_daily_images/196cef06.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1035
@@ -21237,7 +21237,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/solutions/6898516/kotlin-rust-by-samoylenkodmitry-ba5s/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29062025-1498-number-of-subsequences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RZfJbcSmn6c)
-![1.webp](assets/leetcode_daily_images/16eacd4a.webp)
+![1.webp](/assets/leetcode_daily_images/16eacd4a.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1034
@@ -21422,7 +21422,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/solutions/6894315/kotlin-rust-by-samoylenkodmitry-qegu/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28062025-2099-find-subsequence-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/J_RbgxzZRA8)
-![1.webp](assets/leetcode_daily_images/33930fd2.webp)
+![1.webp](/assets/leetcode_daily_images/33930fd2.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1033
@@ -21539,7 +21539,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/longest-subsequence-repeated-k-times/solutions/6890919/kotlin-rust-by-samoylenkodmitry-t5aq/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27062025-2014-longest-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cqLEjrAWcIQ)
-![1.webp](assets/leetcode_daily_images/752b0ed5.webp)
+![1.webp](/assets/leetcode_daily_images/752b0ed5.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1032
@@ -21649,7 +21649,7 @@ $$O(r)$$ recursion depth
 [blog post](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/solutions/6887206/kotlin-rust-by-samoylenkodmitry-2v9g/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26062025-2311-longest-binary-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2-NEgzxWb5o)
-![1.webp](assets/leetcode_daily_images/bfa9b528.webp)
+![1.webp](/assets/leetcode_daily_images/bfa9b528.webp)
 
 #### Join me on Telegram
 
@@ -21763,7 +21763,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25062025-2040-kth-smallest-product?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cyg9nwt56Sc)
 
-![1.webp](assets/leetcode_daily_images/44453d5c.webp)
+![1.webp](/assets/leetcode_daily_images/44453d5c.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1030
@@ -21854,7 +21854,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/solutions/6879457/kotlin-rust-by-samoylenkodmitry-fedk/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24062025-2200-find-all-k-distant?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/W_9D18JkvPc)
-![1.webp](assets/leetcode_daily_images/e0e6f2ed.webp)
+![1.webp](/assets/leetcode_daily_images/e0e6f2ed.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1029
@@ -21923,7 +21923,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sum-of-k-mirror-numbers/solutions/6875610/kotlin-rust-by-samoylenkodmitry-81cg/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23062025-2081-sum-of-k-mirror-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yW_A4NHIUYk)
-![1.webp](assets/leetcode_daily_images/fed0a4f7.webp)
+![1.webp](/assets/leetcode_daily_images/fed0a4f7.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1028
@@ -22069,7 +22069,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/solutions/6871846/kotlin-rust-by-samoylenkodmitry-ajm8/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22062025-2138-divide-a-string-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/TUiVCSC3H_I)
-![1.webp](assets/leetcode_daily_images/19932874.webp)
+![1.webp](/assets/leetcode_daily_images/19932874.webp)
 
 #### Join me on Telegram
 
@@ -22175,7 +22175,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/solutions/6868044/kotlin-rust-by-samoylenkodmitry-44od/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21062025-3085-minimum-deletions-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/me6Ij1p8qEc)
-![1.webp](assets/leetcode_daily_images/fb58da10.webp)
+![1.webp](/assets/leetcode_daily_images/fb58da10.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1026
@@ -22286,7 +22286,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/solutions/6864641/kotlin-rust-by-samoylenkodmitry-l5v9/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20062025-3443-maximum-manhattan-distance?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DwSEXjLTJJ4)
-![1.webp](assets/leetcode_daily_images/34a10025.webp)
+![1.webp](/assets/leetcode_daily_images/34a10025.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1025
@@ -22445,7 +22445,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/solutions/6860555/kotlin-rust-by-samoylenkodmitry-gciy/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19062025-2294-partition-array-such?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cB2lX8VwU1I)
-![1.webp](assets/leetcode_daily_images/e00b237f.webp)
+![1.webp](/assets/leetcode_daily_images/e00b237f.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1024
@@ -22540,7 +22540,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/solutions/6856702/kotlin-rust-by-samoylenkodmitry-y596/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18062025-2966-divide-array-into-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/o99VuGqZAmw)
-![1.webp](assets/leetcode_daily_images/34470c27.webp)
+![1.webp](/assets/leetcode_daily_images/34470c27.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1023
@@ -22624,7 +22624,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/solutions/6853008/kotlin-rust-by-samoylenkodmitry-ssue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17062025-3405-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/oelVEDn2chQ)
-![1.webp](assets/leetcode_daily_images/76eb20a3.webp)
+![1.webp](/assets/leetcode_daily_images/76eb20a3.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1022
@@ -22734,7 +22734,7 @@ int countGoodArrays(int n, int m, int k) {
 [blog post](https://leetcode.com/problems/maximum-difference-between-increasing-elements/solutions/6848831/kotlin-rust-by-samoylenkodmitry-gptu/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16062025-2016-maximum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wLHjEigMmtI)
-![1.webp](assets/leetcode_daily_images/6623a064.webp)
+![1.webp](/assets/leetcode_daily_images/6623a064.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1021
@@ -22833,7 +22833,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/solutions/6845130/kotlin-rust-by-samoylenkodmitry-7kre/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15062025-1432-max-difference-you?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/eLw0XB49cJA)
-![1.webp](assets/leetcode_daily_images/78d4845d.webp)
+![1.webp](/assets/leetcode_daily_images/78d4845d.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1020
@@ -22932,7 +22932,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/solutions/6841863/kotlin-rust-by-samoylenkodmitry-7ham/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14062025-2566-maximum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZdiQygc0i7s)
-![1.webp](assets/leetcode_daily_images/eed20591.webp)
+![1.webp](/assets/leetcode_daily_images/eed20591.webp)
 
 #### Join me on Telegram
 
@@ -23039,7 +23039,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/solutions/6838635/kotlin-rust-by-samoylenkodmitry-emqy/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13062025-2616-minimize-the-maximum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aaeAn4mgl3M)
-![1.webp](assets/leetcode_daily_images/055890fb.webp)
+![1.webp](/assets/leetcode_daily_images/055890fb.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1018
@@ -23149,7 +23149,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/solutions/6835259/kotlin-rust-by-samoylenkodmitry-d4ou/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12062025-3423-maximum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/WjkNPyza0w8)
-![1.webp](assets/leetcode_daily_images/8afbfec3.webp)
+![1.webp](/assets/leetcode_daily_images/8afbfec3.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/1017
@@ -23271,7 +23271,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/solutions/6832054/kotlin-rust-by-samoylenkodmitry-pjp0/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11062025-3445-maximum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/x7qrLe9wAYo)
-![1.webp](assets/leetcode_daily_images/e3ad3677.webp)
+![1.webp](/assets/leetcode_daily_images/e3ad3677.webp)
 
 #### Join me on Telegram
 
@@ -23436,7 +23436,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/solutions/6828740/kotlin-rust-by-samoylenkodmitry-i31k/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10062025-3442-maximum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Vb8kN0sU21c)
-![1.webp](assets/leetcode_daily_images/77de57d4.webp)
+![1.webp](/assets/leetcode_daily_images/77de57d4.webp)
 
 #### Join me on Telegram
 
@@ -23569,7 +23569,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/solutions/6825462/kotlin-rust-by-samoylenkodmitry-4fb7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09062025-440-k-th-smallest-in-lexicographical?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vkukdbjhLNk)
-![1.webp](assets/leetcode_daily_images/3e428fe0.webp)
+![1.webp](/assets/leetcode_daily_images/3e428fe0.webp)
 
 #### Join me on Telegram
 
@@ -23719,7 +23719,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/lexicographical-numbers/solutions/6822484/kotlin-rust-by-samoylenkodmitry-n149/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08062025-386-lexicographical-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Uq3A3tyoJKk)
-![1.webp](assets/leetcode_daily_images/d6740b6d.webp)
+![1.webp](/assets/leetcode_daily_images/d6740b6d.webp)
 
 #### Join me on Telegram
 
@@ -23859,7 +23859,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/solutions/6819367/kotlin-rust-by-samoylenkodmitry-64zr/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07062025-3170-lexicographically-minimum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9DpHn1XL-hs)
-![1.webp](assets/leetcode_daily_images/e8b61fb0.webp)
+![1.webp](/assets/leetcode_daily_images/e8b61fb0.webp)
 
 #### Join me on Telegram
 
@@ -23961,7 +23961,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/solutions/6816531/kotlin-rust-by-samoylenkodmitry-ymge/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06062025-2434-using-a-robot-to-print?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/M21ti_jTLbA)
-![1.webp](assets/leetcode_daily_images/96440917.webp)
+![1.webp](/assets/leetcode_daily_images/96440917.webp)
 
 #### Join me on Telegram
 
@@ -24179,7 +24179,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/solutions/6812801/kotlin-rust-by-samoylenkodmitry-hinl/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05062025-1061-lexicographically-smallest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/NdpQusEXyjc)
-![1.webp](assets/leetcode_daily_images/b1053864.webp)
+![1.webp](/assets/leetcode_daily_images/b1053864.webp)
 
 #### Join me on Telegram
 
@@ -24273,7 +24273,7 @@ $$O(n)$$, for the result
 [blog post](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/solutions/6809834/kotlin-rust-by-samoylenkodmitry-jba6/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04062025-3403-find-the-lexicographically?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/13d3yZcYsz8)
-![1.webp](assets/leetcode_daily_images/54b1591a.webp)
+![1.webp](/assets/leetcode_daily_images/54b1591a.webp)
 
 
 #### Join me on Telegram
@@ -24399,7 +24399,7 @@ $$O(n)$$, O(result) c++
 [blog post](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/solutions/6806764/kotlin-rust-by-samoylenkodmitry-1ltr/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03062025-1298-maximum-candies-you?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/S_UU1ZmxbDg)
-![1.webp](assets/leetcode_daily_images/10d7b0d8.webp)
+![1.webp](/assets/leetcode_daily_images/10d7b0d8.webp)
 
 
 #### Join me on Telegram
@@ -24480,7 +24480,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/candy/solutions/6803838/kotlin-rust-by-samoylenkodmitry-g4gf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02062025-135-candy?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YdbXCOOJHq0)
-![1.webp](assets/leetcode_daily_images/64fb1008.webp)
+![1.webp](/assets/leetcode_daily_images/64fb1008.webp)
 
 
 #### Join me on Telegram
@@ -24653,7 +24653,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/distribute-candies-among-children-ii/solutions/6801343/kotlin-rust-by-samoylenkodmitry-c29k/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01062025-2929-distribute-candies?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XuIjEQX5uXo)
-![1.webp](assets/leetcode_daily_images/6735afdb.webp)
+![1.webp](/assets/leetcode_daily_images/6735afdb.webp)
 
 #### Join me on Telegram
 
@@ -24798,7 +24798,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/snakes-and-ladders/solutions/6798315/kotlin-rust-by-samoylenkodmitry-oe2h/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31052025-909-snakes-and-ladders?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/t30eV_c9kw0)
-![1.webp](assets/leetcode_daily_images/3ce1ad50.webp)
+![1.webp](/assets/leetcode_daily_images/3ce1ad50.webp)
 
 
 #### Join me on Telegram
@@ -24900,7 +24900,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/solutions/6794920/kotlin-rust-by-samoylenkodmitry-uulj/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30052025-2359-find-closest-node-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/s7Z0xPqq3Po)
-![1.webp](assets/leetcode_daily_images/6f60aa4a.webp)
+![1.webp](/assets/leetcode_daily_images/6f60aa4a.webp)
 
 
 #### Join me on Telegram
@@ -25026,7 +25026,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/solutions/6792086/kotlin-rust-by-samoylenkodmitry-l1y8/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29052025-3373-maximize-the-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/PblcK9Ah8J0)
-![1.webp](assets/leetcode_daily_images/b0e7d550.webp)
+![1.webp](/assets/leetcode_daily_images/b0e7d550.webp)
 
 
 
@@ -25040,7 +25040,7 @@ Max even-edged siblings after merging trees #hard #graph
 
 #### Intuition
 
-![2.png](assets/leetcode_daily_images/5cfa0fe6.webp)
+![2.png](/assets/leetcode_daily_images/5cfa0fe6.webp)
 
     1. node either in the odd or even set
     2. mark nodes, calculate count_odd, count_even
@@ -25126,7 +25126,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/solutions/6788847/kotlin-rust-by-samoylenkodmitry-bl4z/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28052025-3372-maximize-the-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_USSRr0B6SU)
-![1.webp](assets/leetcode_daily_images/b4518794.webp)
+![1.webp](/assets/leetcode_daily_images/b4518794.webp)
 
 #### Join me on Telegram
 
@@ -25225,7 +25225,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/solutions/6785229/kotlin-rust-by-samoylenkodmitry-gurb/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27052025-2894-divisible-and-non-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_kw_Q0JEyTo)
-![1.webp](assets/leetcode_daily_images/9705d2c8.webp)
+![1.webp](/assets/leetcode_daily_images/9705d2c8.webp)
 
 
 
@@ -25324,7 +25324,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/solutions/6782066/kotlin-rust-by-samoylenkodmitry-ould/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26052025-1857-largest-color-value?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YS4FROIOzsQ)
-![1.webp](assets/leetcode_daily_images/7ca8e076.webp)
+![1.webp](/assets/leetcode_daily_images/7ca8e076.webp)
 
 #### Join me on Telegram
 
@@ -25446,7 +25446,7 @@ $$O(V + E)$$
 [blog post](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/solutions/6779350/kotlin-rust-by-samoylenkodmitry-hbeg/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25052025-2131-longest-palindrome?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/W42dOrwNXG8)
-![1.webp](assets/leetcode_daily_images/78bbe9d6.webp)
+![1.webp](/assets/leetcode_daily_images/78bbe9d6.webp)
 
 
 
@@ -25575,7 +25575,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-words-containing-character/solutions/6775555/kotlin-rust-by-samoylenkodmitry-p4db/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24052025-2942-find-words-containing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9DTaFrwQoxE)
-![1.webp](assets/leetcode_daily_images/c4c7a869.webp)
+![1.webp](/assets/leetcode_daily_images/c4c7a869.webp)
 
 
 
@@ -25662,7 +25662,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/solutions/6772330/kotlin-rust-by-samoylenkodmitry-c2fw/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23052025-3068-find-the-maximum-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XrMRF6DmDrc)
-![1.webp](assets/leetcode_daily_images/2da10f8f.webp)
+![1.webp](/assets/leetcode_daily_images/2da10f8f.webp)
 
 
 #### Join me on Telegram
@@ -25834,7 +25834,7 @@ $$O(1)$$, O(n) for dp
 [blog post](https://leetcode.com/problems/zero-array-transformation-iii/solutions/6769290/kotlin-rust-by-samoylenkodmitry-bkte/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22052025-3362-zero-array-transformation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/t3khX-ZiZfI)
-![1.webp](assets/leetcode_daily_images/8be00294.webp)
+![1.webp](/assets/leetcode_daily_images/8be00294.webp)
 
 #### Join me on Telegram
 
@@ -25958,7 +25958,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/set-matrix-zeroes/solutions/6766228/kotlin-rust-by-samoylenkodmitry-9jpa/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21052025-73-set-matrix-zeroes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/bjNHxDU95sQ)
-![1.webp](assets/leetcode_daily_images/c83948db.webp)
+![1.webp](/assets/leetcode_daily_images/c83948db.webp)
 
 #### Join me on Telegram
 
@@ -26050,7 +26050,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/zero-array-transformation-i/solutions/6761874/kotlin-rust-by-samoylenkodmitry-u0uv/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20052025-3355-zero-array-transformation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7KNbIUk7PwI)
-![1.webp](assets/leetcode_daily_images/4b5b7c93.webp)
+![1.webp](/assets/leetcode_daily_images/4b5b7c93.webp)
 
 
 #### Join me on Telegram
@@ -26133,7 +26133,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/type-of-triangle/solutions/6758249/kotlin-rust-by-samoylenkodmitry-r1yj/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19052025-3024-type-of-triangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tolXlmCf2rY)
-![1.webp](assets/leetcode_daily_images/4d8c7c9f.webp)
+![1.webp](/assets/leetcode_daily_images/4d8c7c9f.webp)
 
 #### Join me on Telegram
 
@@ -26198,7 +26198,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/solutions/6755765/kotlin-rust-by-samoylenkodmitry-pgvg/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18052025-1931-painting-a-grid-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Q_gz_j8sAY8)
-![1.webp](assets/leetcode_daily_images/ffebf79f.webp)
+![1.webp](/assets/leetcode_daily_images/ffebf79f.webp)
 
 #### Join me on Telegram
 
@@ -26378,7 +26378,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/sort-colors/solutions/6752338/kotlin-rust-by-samoylenkodmitry-u0c7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17052025-75-sort-colors?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/TT0Gaadx7OM)
-![1.webp](assets/leetcode_daily_images/45e6a909.webp)
+![1.webp](/assets/leetcode_daily_images/45e6a909.webp)
 
 
 
@@ -26487,7 +26487,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/solutions/6749642/kotlin-rust-by-samoylenkodmitry-zwok/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16052025-2901-longest-unequal-adjacent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BR9_MW6AycI)
-![1.webp](assets/leetcode_daily_images/6c332dff.webp)
+![1.webp](/assets/leetcode_daily_images/6c332dff.webp)
 
 #### Join me on Telegram
 
@@ -26639,7 +26639,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/solutions/6746113/kotlin-rust-by-samoylenkodmitry-zse0/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15052025-2900-longest-unequal-adjacent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Ufns428OJeA)
-![1.webp](assets/leetcode_daily_images/5f01df27.webp)
+![1.webp](/assets/leetcode_daily_images/5f01df27.webp)
 
 
 #### Join me on Telegram
@@ -26742,7 +26742,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/solutions/6743063/kotlin-rust-by-samoylenkodmitry-dikn/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14052025-3337-total-characters-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KnhsmmGHN4c)
-![1.webp](assets/leetcode_daily_images/6056754c.webp)
+![1.webp](/assets/leetcode_daily_images/6056754c.webp)
 
 #### Join me on Telegram
 
@@ -26884,7 +26884,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/solutions/6739800/kotlin-rust-by-samoylenkodmitry-poq9/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13052025-3335-total-characters-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aZQd7flJlAE)
-![1.webp](assets/leetcode_daily_images/95c6cd43.webp)
+![1.webp](/assets/leetcode_daily_images/95c6cd43.webp)
 
 
 #### Join me on Telegram
@@ -27037,7 +27037,7 @@ $$O(t)$$ for dp, O(1) for the simulation
 [blog post](https://leetcode.com/problems/finding-3-digit-even-numbers/solutions/6736561/kotlin-rust-by-samoylenkodmitry-8ayk/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12052025-2094-finding-3-digit-even?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Y7g9T3TzluI)
-![1.webp](assets/leetcode_daily_images/e82bfd82.webp)
+![1.webp](/assets/leetcode_daily_images/e82bfd82.webp)
 
 #### Join me on Telegram
 
@@ -27151,7 +27151,7 @@ $$O(answer)$$
 [blog post](https://leetcode.com/problems/three-consecutive-odds/solutions/6733247/kotlin-rust-by-samoylenkodmitry-becf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11052025-1550-three-consecutive-odds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zlC_SDO8Jus)
-![1.webp](assets/leetcode_daily_images/ca8178b4.webp)
+![1.webp](/assets/leetcode_daily_images/ca8178b4.webp)
 
 
 
@@ -27259,7 +27259,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/solutions/6730634/kotlin-rust-by-samoylenkodmitry-udm7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10052025-2918-minimum-equal-sum-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tTCD1ZB3FLU)
-![1.webp](assets/leetcode_daily_images/9352c668.webp)
+![1.webp](/assets/leetcode_daily_images/9352c668.webp)
 
 #### Join me on Telegram
 
@@ -27289,7 +27289,7 @@ $$O(1)$$
 
 |Kotlin|Rust|C++|
 |------|----|---|
-|![image.png](assets/leetcode_daily_images/21c3e7ea.webp){:style="width:100px"}|![image.png](assets/leetcode_daily_images/07a3c43d.webp){:style="width:100px"}|![image.png](assets/leetcode_daily_images/88e8a85b.webp){:style="width:100px"}|
+|![image.png](/assets/leetcode_daily_images/21c3e7ea.webp){:style="width:100px"}|![image.png](/assets/leetcode_daily_images/07a3c43d.webp){:style="width:100px"}|![image.png](/assets/leetcode_daily_images/88e8a85b.webp){:style="width:100px"}|
 
 
 
@@ -27344,7 +27344,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-number-of-balanced-permutations/solutions/6727609/kotlin-rust-by-samoylenkodmitry-870e/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09052025-3343-count-number-of-balanced?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rVRN5D3dRsM)
-![1.webp](assets/leetcode_daily_images/259daa1e.webp)
+![1.webp](/assets/leetcode_daily_images/259daa1e.webp)
 
 #### Join me on Telegram
 
@@ -27486,7 +27486,7 @@ $$O(n^3)$$
 [blog post](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/solutions/6724762/kotlin-rust-by-samoylenkodmitry-af6d/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08052025-3342-find-minimum-time-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5WmAP7tNiJ0)
-![1.webp](assets/leetcode_daily_images/63a15c10.webp)
+![1.webp](/assets/leetcode_daily_images/63a15c10.webp)
 
 #### Join me on Telegram
 
@@ -27581,7 +27581,7 @@ $$O(V)$$
 [blog post](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/solutions/6722422/kotlin-rust-by-samoylenkodmitry-fx4w/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07052025-3341-find-minimum-time-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/e_F70F5-iFQ)
-![1.webp](assets/leetcode_daily_images/c62f41a3.webp)
+![1.webp](/assets/leetcode_daily_images/c62f41a3.webp)
 
 #### Join me on Telegram
 
@@ -27701,7 +27701,7 @@ $$O(V)$$
 [blog post](https://leetcode.com/problems/build-array-from-permutation/solutions/6719273/kotlin-rust-by-samoylenkodmitry-uyq5/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06052025-1920-build-array-from-permutation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BD3EfOChLAc)
-![1.webp](assets/leetcode_daily_images/670dd37e.webp)
+![1.webp](/assets/leetcode_daily_images/670dd37e.webp)
 
 
 #### Join me on Telegram
@@ -27792,7 +27792,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/domino-and-tromino-tiling/solutions/6715961/kotlin-rust-by-samoylenkodmitry-tzbu/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05052025-790-domino-and-tromino-tiling?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/A85WqarKfQw)
-![1.webp](assets/leetcode_daily_images/fc3a3a00.webp)
+![1.webp](/assets/leetcode_daily_images/fc3a3a00.webp)
 
 #### Join me on Telegram
 
@@ -27903,7 +27903,7 @@ $$O(n)$$, or O(1) for the arithmetic solution
 [blog post](https://leetcode.com/problems/number-of-equivalent-domino-pairs/solutions/6713083/kotlin-rust-by-samoylenkodmitry-v67f/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04052025-1128-number-of-equivalent?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2z3xSB9UmrM)
-![1.webp](assets/leetcode_daily_images/e85c55cf.webp)
+![1.webp](/assets/leetcode_daily_images/e85c55cf.webp)
 
 #### Join me on Telegram
 
@@ -27984,7 +27984,7 @@ fun numEquivDominoPairs(ds: Array<IntArray>): Int {
 [blog post](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/solutions/6710134/kotlin-rust-by-samoylenkodmitry-akgg/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03052025-1007-minimum-domino-rotations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BQZUEjwbHJ8)
-![1.webp](assets/leetcode_daily_images/7d817b10.webp)
+![1.webp](/assets/leetcode_daily_images/7d817b10.webp)
 
 #### Join me on Telegram
 
@@ -28105,7 +28105,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/push-dominoes/solutions/6707005/kotlin-rust-by-samoylenkodmitry-svrs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02052025-838-push-dominoes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yq8GhGFsvYM)
-![1.webp](assets/leetcode_daily_images/b9223286.webp)
+![1.webp](/assets/leetcode_daily_images/b9223286.webp)
 
 #### Join me on Telegram
 
@@ -28210,7 +28210,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/solutions/6704221/kotlin-rust-by-samoylenkodmitry-avey/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01052025-2071-maximum-number-of-tasks?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-nHm8N4a38M)
-![1.webp](assets/leetcode_daily_images/2e8d7d1b.webp)
+![1.webp](/assets/leetcode_daily_images/2e8d7d1b.webp)
 
 #### Join me on Telegram
 
@@ -28351,7 +28351,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/solutions/6701042/kotlin-rust-by-samoylenkodmitry-ucch/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30042025-1295-find-numbers-with-even?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZvBKPB7VZAs)
-![1.webp](assets/leetcode_daily_images/88847816.webp)
+![1.webp](/assets/leetcode_daily_images/88847816.webp)
 
 #### Join me on Telegram
 
@@ -28425,7 +28425,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/solutions/6697812/kotlin-rust-by-samoylenkodmitry-xa55/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29042025-2962-count-subarrays-where?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZJr4KICz5c4)
-![1.webp](assets/leetcode_daily_images/3c5ee217.webp)
+![1.webp](/assets/leetcode_daily_images/3c5ee217.webp)
 
 #### Join me on Telegram
 
@@ -28568,7 +28568,7 @@ $$O(1)$$, or O(n) or O(k) for the queue solution
 [blog post](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/solutions/6694527/kotlin-rust-by-samoylenkodmitry-774z/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28042025-2302-count-subarrays-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/IeLBs5oPwf0)
-![1.webp](assets/leetcode_daily_images/e7e24605.webp)
+![1.webp](/assets/leetcode_daily_images/e7e24605.webp)
 
 #### Join me on Telegram
 
@@ -28659,7 +28659,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/solutions/6691621/kotlin-rust-by-samoylenkodmitry-ft2i/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27042025-3392-count-subarrays-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yxyvTHb9mRA)
-![1.webp](assets/leetcode_daily_images/88a2f5ca.webp)
+![1.webp](/assets/leetcode_daily_images/88a2f5ca.webp)
 
 #### Join me on Telegram
 
@@ -28736,7 +28736,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/solutions/6688049/kotlin-rust-by-samoylenkodmitry-qyws/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26042025-2444-count-subarrays-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aENfuOjh1bg)
-![1.webp](assets/leetcode_daily_images/464f5969.webp)
+![1.webp](/assets/leetcode_daily_images/464f5969.webp)
 
 #### Join me on Telegram
 
@@ -28845,7 +28845,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-of-interesting-subarrays/solutions/6685452/kotlin-rust-by-samoylenkodmitry-5517/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25042025-2845-count-of-interesting?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/faStErxWK04)
-![1.webp](assets/leetcode_daily_images/8e036fc2.webp)
+![1.webp](/assets/leetcode_daily_images/8e036fc2.webp)
 
 
 #### Join me on Telegram
@@ -28965,7 +28965,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-complete-subarrays-in-an-array/solutions/6682469/kotlin-rust-by-samoylenkodmitry-mnqn/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24042025-2799-count-complete-subarrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_gn_JSLwAxc)
-![1.webp](assets/leetcode_daily_images/e28cb242.webp)
+![1.webp](/assets/leetcode_daily_images/e28cb242.webp)
 
 #### Join me on Telegram
 
@@ -29079,7 +29079,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-largest-group/solutions/6679439/kotlin-rust-by-samoylenkodmitry-siae/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23042025-1399-count-largest-group?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/i3TsO3ruPm4)
-![1.webp](assets/leetcode_daily_images/07c8a9a6.webp)
+![1.webp](/assets/leetcode_daily_images/07c8a9a6.webp)
 
 #### Join me on Telegram
 
@@ -29167,7 +29167,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-the-number-of-ideal-arrays/solutions/6676406/kotlin-by-samoylenkodmitry-nd7e/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22042025-2338-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zAXhbfWrc6c)
-![1.webp](assets/leetcode_daily_images/c41078bb.webp)
+![1.webp](/assets/leetcode_daily_images/c41078bb.webp)
 
 #### Join me on Telegram
 
@@ -29229,7 +29229,7 @@ $$O(nlog(n))$$
 [blog post](https://leetcode.com/problems/count-the-hidden-sequences/solutions/6673194/kotlin-rust-by-samoylenkodmitry-y7uh/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21042025-2145-count-the-hidden-sequences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/h0wJGlvONCU)
-![1.webp](assets/leetcode_daily_images/9d42e090.webp)
+![1.webp](/assets/leetcode_daily_images/9d42e090.webp)
 
 #### Join me on Telegram
 
@@ -29351,7 +29351,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/rabbits-in-forest/solutions/6669530/kotlin-rust-by-samoylenkodmitry-epo4/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20042025-781-rabbits-in-forest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/a2Bwo9E0RDo)
-![1.webp](assets/leetcode_daily_images/d26a1610.webp)
+![1.webp](/assets/leetcode_daily_images/d26a1610.webp)
 
 #### Join me on Telegram
 
@@ -29495,7 +29495,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-the-number-of-fair-pairs/solutions/6666181/kotlin-rust-by-samoylenkodmitry-6hwl/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19042025-2563-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/0Oj_u8-rEJ8)
-![1.webp](assets/leetcode_daily_images/14be8d7e.webp)
+![1.webp](/assets/leetcode_daily_images/14be8d7e.webp)
 
 #### Join me on Telegram
 
@@ -29714,7 +29714,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-and-say/solutions/6662777/kotlin-rust-by-samoylenkodmitry-jzzy/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18042025-38-count-and-say?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/O15knYC6nq4)
-![1.webp](assets/leetcode_daily_images/142bc549.webp)
+![1.webp](/assets/leetcode_daily_images/142bc549.webp)
 
 #### Join me on Telegram
 
@@ -29833,7 +29833,7 @@ class Solution { fun countAndSay(n: Int) = answers[n] }
 [blog post](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/solutions/6659001/kotlin-rust-by-samoylenkodmitry-mdmk/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11042025-2176-count-equal-and-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ajWJk4FH_Xs)
-![1.webp](assets/leetcode_daily_images/1372f5bf.webp)
+![1.webp](/assets/leetcode_daily_images/1372f5bf.webp)
 
 #### Join me on Telegram
 
@@ -29897,7 +29897,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-the-number-of-good-subarrays/solutions/6655720/kotlin-rust-by-samoylenkodmitry-hpt7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16042025-2537-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cLzE2hFBPiE)
-![1.webp](assets/leetcode_daily_images/746658db.webp)
+![1.webp](/assets/leetcode_daily_images/746658db.webp)
 
 #### Join me on Telegram
 
@@ -30003,7 +30003,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-good-triplets-in-an-array/solutions/6652698/kotlin-rust-by-samoylenkodmitry-c8wk/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15042025-2179-count-good-triplets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cLhuOMkIAoA)
-![1.webp](assets/leetcode_daily_images/2f50b727.webp)
+![1.webp](/assets/leetcode_daily_images/2f50b727.webp)
 
 #### Join me on Telegram
 
@@ -30168,7 +30168,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-good-triplets/solutions/6649234/kotlin-rust-by-samoylenkodmitry-lppy/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14042025-1534-count-good-triplets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yJCbqHy4XjI)
-![1.webp](assets/leetcode_daily_images/cbad14bd.webp)
+![1.webp](/assets/leetcode_daily_images/cbad14bd.webp)
 
 #### Join me on Telegram
 
@@ -30237,7 +30237,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-good-numbers/solutions/6645719/kotlin-rust-by-samoylenkodmitry-7yfc/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13042025-1922-count-good-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3KOGEU37_9g)
-![1.webp](assets/leetcode_daily_images/6b09b8bc.webp)
+![1.webp](/assets/leetcode_daily_images/6b09b8bc.webp)
 
 #### Join me on Telegram
 
@@ -30346,7 +30346,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-count-of-good-integers/solutions/6642761/kotlin-rust-by-samoylenkodmitry-ah9f/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12042025-3272-find-the-count-of-good?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/VAQFiJoxLeA)
-![1.webp](assets/leetcode_daily_images/c7a539a5.webp)
+![1.webp](/assets/leetcode_daily_images/c7a539a5.webp)
 
 #### Join me on Telegram
 
@@ -30486,7 +30486,7 @@ $$O(n!)$$, unique permutations of size `n` are stored in a set
 [blog post](https://leetcode.com/problems/count-symmetric-integers/solutions/6639045/kotlin-rust-by-samoylenkodmitry-zi6s/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11042025-2843-count-symmetric-integers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/r63yRhtbxJw)
-![1.webp](assets/leetcode_daily_images/9ee74331.webp)
+![1.webp](/assets/leetcode_daily_images/9ee74331.webp)
 
 #### Join me on Telegram
 
@@ -30557,7 +30557,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-the-number-of-powerful-integers/solutions/6635848/kotlin-rust-by-samoylenkodmitry-lbgo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10042025-2999-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/CUYhG1pO0Dg)
-![1.webp](assets/leetcode_daily_images/1516238d.webp)
+![1.webp](/assets/leetcode_daily_images/1516238d.webp)
 
 #### Join me on Telegram
 
@@ -30709,7 +30709,7 @@ $$O(log(finish))$$
 [blog post](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/solutions/6631941/kotlin-rust-by-samoylenkodmitry-ytzz/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09042025-3375-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zr1UHp2d9R8)
-![1.webp](assets/leetcode_daily_images/545bc7ae.webp)
+![1.webp](/assets/leetcode_daily_images/545bc7ae.webp)
 
 #### Join me on Telegram
 
@@ -30772,7 +30772,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/solutions/6628052/kotlin-rust-by-samoylenkodmitry-zvvz/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08042025-3396-minimum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rjDPkSjQekA)
-![1.webp](assets/leetcode_daily_images/e280a586.webp)
+![1.webp](/assets/leetcode_daily_images/e280a586.webp)
 
 
 #### Join me on Telegram
@@ -30862,7 +30862,7 @@ $$O(max)$$
 [blog post](https://leetcode.com/problems/partition-equal-subset-sum/solutions/6624628/kotlin-rust-by-samoylenkodmitry-qud0/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07042025-416-partition-equal-subset?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6L6CMWMEsXM)
-![1.webp](assets/leetcode_daily_images/ae31c14c.webp)
+![1.webp](/assets/leetcode_daily_images/ae31c14c.webp)
 
 
 #### Join me on Telegram
@@ -30977,7 +30977,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/largest-divisible-subset/solutions/6621195/kotlin-rust-by-samoylenkodmitry-io7v/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06042025-368-largest-divisible-subset?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/u0rALMsbjsc)
-![1.webp](assets/leetcode_daily_images/4a965cdb.webp)
+![1.webp](/assets/leetcode_daily_images/4a965cdb.webp)
 
 #### Join me on Telegram
 
@@ -31112,7 +31112,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sum-of-all-subset-xor-totals/solutions/6617371/kotlin-rust-by-samoylenkodmitry-go7s/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05042025-1863-sum-of-all-subset-xor?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7YJAoVjff5M)
-![1.webp](assets/leetcode_daily_images/93d8a012.webp)
+![1.webp](/assets/leetcode_daily_images/93d8a012.webp)
 
 #### Join me on Telegram
 
@@ -31198,7 +31198,7 @@ $$O(n)$$, or O(1) for iterative mask solution
 [blog post](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/solutions/6613757/kotlin-rust-by-samoylenkodmitry-glkw/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04042025-1123-lowest-common-ancestor?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DorteDNZJEs)
-![1.webp](assets/leetcode_daily_images/d5906f3a.webp)
+![1.webp](/assets/leetcode_daily_images/d5906f3a.webp)
 
 #### Join me on Telegram
 
@@ -31281,7 +31281,7 @@ $$O(log(n))$$ recursion depth
 [blog post](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/solutions/6610133/kotlin-rust-by-samoylenkodmitry-mx5g/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03042025-2874-maximum-value-of-an?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Emy7efWwTQo)
-![1.webp](assets/leetcode_daily_images/6ed301f2.webp)
+![1.webp](/assets/leetcode_daily_images/6ed301f2.webp)
 
 #### Join me on Telegram
 
@@ -31352,7 +31352,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/solutions/6606186/kotlin-rust-by-samoylenkodmitry-hsx8/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02042025-2873-maximum-value-of-an?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/b5Xbg4k-q1s)
-![1.webp](assets/leetcode_daily_images/9e4aa2a8.webp)
+![1.webp](/assets/leetcode_daily_images/9e4aa2a8.webp)
 
 #### Join me on Telegram
 
@@ -31441,7 +31441,7 @@ $$O(1)$$, or O(n) for heap
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01042025-2140-solving-questions-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zW2tQpPD-lA)
 
-![1.webp](assets/leetcode_daily_images/4a7e0f5a.webp)
+![1.webp](/assets/leetcode_daily_images/4a7e0f5a.webp)
 
 #### Join me on Telegram
 
@@ -31512,7 +31512,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/put-marbles-in-bags/solutions/6599042/kotlin-rust-by-samoylenkodmitry-ac4x/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31032025-2551-put-marbles-in-bags?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/B-OnwniknU0)
-![1.webp](assets/leetcode_daily_images/7c18f8c0.webp)
+![1.webp](/assets/leetcode_daily_images/7c18f8c0.webp)
 
 #### Join me on Telegram
 
@@ -31630,7 +31630,7 @@ $$O(n)$$, can do in-place, O(1) with quickselect, or custom sort algorithm. O(lo
 [blog post](https://leetcode.com/problems/partition-labels/solutions/6595272/kotlin-rust-by-samoylenkodmitry-9n5l/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30032025-763-partition-labels?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5GXk_BnBIsc)
-![1.webp](assets/leetcode_daily_images/d51d6175.webp)
+![1.webp](/assets/leetcode_daily_images/d51d6175.webp)
 
 #### Join me on Telegram
 
@@ -31711,7 +31711,7 @@ $$O(n)$$ or O(result)
 [blog post](https://leetcode.com/problems/apply-operations-to-maximize-score/solutions/6592302/kotlin-rust-by-samoylenkodmitry-kms3/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29032025-2818-apply-operations-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Mt4Ge_AWoz8)
-![1.webp](assets/leetcode_daily_images/7f8db226.webp)
+![1.webp](/assets/leetcode_daily_images/7f8db226.webp)
 
 #### Join me on Telegram
 
@@ -31826,7 +31826,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/solutions/6588933/kotlin-rust-by-samoylenkodmitry-bx5m/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28032025-2503-maximum-number-of-points?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/LqjyXlL10Go)
-![1.webp](assets/leetcode_daily_images/46e56f0f.webp)
+![1.webp](/assets/leetcode_daily_images/46e56f0f.webp)
 
 #### Join me on Telegram
 
@@ -31915,7 +31915,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-index-of-a-valid-split/solutions/6585144/kotlin-rust-by-samoylenkodmitry-j4aa/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27032025-2780-minimum-index-of-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/qByXQ_HgU-U)
-![1.webp](assets/leetcode_daily_images/c2d20249.webp)
+![1.webp](/assets/leetcode_daily_images/c2d20249.webp)
 
 #### Join me on Telegram
 
@@ -31998,7 +31998,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/solutions/6581014/kotlin-rust-by-samoylenkodmitry-7mlh/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26032025-2033-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/VnhOMBP9Hak)
-![1.webp](assets/leetcode_daily_images/847bef93.webp)
+![1.webp](/assets/leetcode_daily_images/847bef93.webp)
 
 #### Join me on Telegram
 
@@ -32103,7 +32103,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/solutions/6576937/kotlin-rust-by-samoylenkodmitry-g9o6/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25032025-3394-check-if-grid-can-be?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_2BO5y2dn5k)
-![1.webp](assets/leetcode_daily_images/c09993ad.webp)
+![1.webp](/assets/leetcode_daily_images/c09993ad.webp)
 
 #### Join me on Telegram
 
@@ -32172,7 +32172,7 @@ $$O(log(n))$$ or O(1) if we implement O(1) sorting algorithm ourselves
 [blog post](https://leetcode.com/problems/count-days-without-meetings/solutions/6572822/kotlin-rust-by-samoylenkodmitry-z8fg/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24032025-3169-count-days-without?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/c0U-49VvWlE)
-![1.webp](assets/leetcode_daily_images/6f8a6f1f.webp)
+![1.webp](/assets/leetcode_daily_images/6f8a6f1f.webp)
 
 #### Join me on Telegram
 
@@ -32261,7 +32261,7 @@ int countDays(int days, vector<vector<int>> m) {
 [blog post](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/solutions/6570131/kotlin-rust-by-samoylenkodmitry-lbs2/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23032025-1976-number-of-ways-to-arrive?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9jf_tckNgiY)
-![1.webp](assets/leetcode_daily_images/42f88a14.webp)
+![1.webp](/assets/leetcode_daily_images/42f88a14.webp)
 
 #### Join me on Telegram
 
@@ -32368,7 +32368,7 @@ int countPaths(int n, vector<vector<int>>& r) {
 [blog post](https://leetcode.com/problems/count-the-number-of-complete-components/solutions/6566250/kotlin-rust-by-samoylenkodmitry-2pur/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22032025-2685-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7yDe-7IlgAk)
-![1.webp](assets/leetcode_daily_images/a24f4ea4.webp)
+![1.webp](/assets/leetcode_daily_images/a24f4ea4.webp)
 
 #### Join me on Telegram
 
@@ -32385,7 +32385,7 @@ Check for conditions:
 * number of edges is `v * (v - 1) / 2` to vertices
 * or, each vertice has `e - 1` outgoing edges
 
-![x.png](assets/leetcode_daily_images/7be86e65.webp)
+![x.png](/assets/leetcode_daily_images/7be86e65.webp)
 
 
 #### Approach
@@ -32454,7 +32454,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/solutions/6562294/kotlin-rust-by-samoylenkodmitry-gu5g/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21032025-2115-find-all-possible-recipes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6yeIg3JOVF8)
-![1.webp](assets/leetcode_daily_images/04127d66.webp)
+![1.webp](/assets/leetcode_daily_images/04127d66.webp)
 
 #### Join me on Telegram
 
@@ -32525,7 +32525,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/solutions/6558271/kotlin-rust-by-samoylenkodmitry-xfwx/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20032025-3108-minimum-cost-walk-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EOePNX9rJ90)
-![1.webp](assets/leetcode_daily_images/253a6b4c.webp)
+![1.webp](/assets/leetcode_daily_images/253a6b4c.webp)
 
 #### Join me on Telegram
 
@@ -32596,7 +32596,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/solutions/6554321/kotlin-rust-by-samoylenkodmitry-vvo7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19032025-3191-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/QdUq8hMeTzU)
-![1.webp](assets/leetcode_daily_images/e76adaf3.webp)
+![1.webp](/assets/leetcode_daily_images/e76adaf3.webp)
 
 #### Join me on Telegram
 
@@ -32664,7 +32664,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/longest-nice-subarray/solutions/6550425/kotlin-rust-by-samoylenkodmitry-w3nu/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18032025-2401-longest-nice-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/r1FzWE06ZyM)
-![1.webp](assets/leetcode_daily_images/4d9d5965.webp)
+![1.webp](/assets/leetcode_daily_images/4d9d5965.webp)
 
 #### Join me on Telegram
 
@@ -32740,7 +32740,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/divide-array-into-equal-pairs/solutions/6546102/kotlin-rust-by-samoylenkodmitry-oaw2/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17032025-2206-divide-array-into-equal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_vIbeZRnzjY)
-![1.webp](assets/leetcode_daily_images/6a70484f.webp)
+![1.webp](/assets/leetcode_daily_images/6a70484f.webp)
 
 
 #### Join me on Telegram
@@ -32838,7 +32838,7 @@ $$O(n)$$, or O(1) for sort
 [blog post](https://leetcode.com/problems/minimum-time-to-repair-cars/solutions/6542375/kotlin-rust-by-samoylenkodmitry-fqg7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16032025-2594-minimum-time-to-repair?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cKEt0VBHL4k)
-![1.webp](assets/leetcode_daily_images/ac1cbd55.webp)
+![1.webp](/assets/leetcode_daily_images/ac1cbd55.webp)
 
 #### Join me on Telegram
 
@@ -32967,7 +32967,7 @@ $$O(1)$$, or O(100) for heap and frequency-optimized binary search
 [blog post](https://leetcode.com/problems/house-robber-iv/solutions/6538164/kotlin-rust-by-samoylenkodmitry-5m3o/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15032025-2560-house-robber-iv?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/sFg-DGlQZi8)
-![1.webp](assets/leetcode_daily_images/0fa47f99.webp)
+![1.webp](/assets/leetcode_daily_images/0fa47f99.webp)
 
 #### Join me on Telegram
 
@@ -33055,7 +33055,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/solutions/6534985/kotlin-rust-by-samoylenkodmitry-qtoe/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14032025-2226-maximum-candies-allocated?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DbrKzeIlU0U)
-![1.webp](assets/leetcode_daily_images/1b1d9899.webp)
+![1.webp](/assets/leetcode_daily_images/1b1d9899.webp)
 
 #### Join me on Telegram
 
@@ -33128,7 +33128,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/zero-array-transformation-ii/solutions/6531748/kotlin-rust-by-samoylenkodmitry-0wek/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13032025-3356-zero-array-transformation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aT23SQWOqXA)
-![1.webp](assets/leetcode_daily_images/48ef5797.webp)
+![1.webp](/assets/leetcode_daily_images/48ef5797.webp)
 
 #### Join me on Telegram
 
@@ -33242,7 +33242,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/solutions/6527587/kotlin-rust-by-samoylenkodmitry-l7lj/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12032025-2529-maximum-count-of-positive?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2K9WG_0c5o8)
-![1.webp](assets/leetcode_daily_images/4e2436fb.webp)
+![1.webp](/assets/leetcode_daily_images/4e2436fb.webp)
 
 #### Join me on Telegram
 
@@ -33317,7 +33317,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/solutions/6523186/kotlin-rust-by-samoylenkodmitry-j4bf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11032025-1358-number-of-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/U61TmhZDhro)
-![1.webp](assets/leetcode_daily_images/cbe41ce5.webp)
+![1.webp](/assets/leetcode_daily_images/cbe41ce5.webp)
 
 #### Join me on Telegram
 
@@ -33395,7 +33395,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/solutions/6519609/kotlin-rust-by-samoylenkodmitry-arzf/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10032025-3306-count-of-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aecs4eghif4)
-![1.webp](assets/leetcode_daily_images/ca3db59d.webp)
+![1.webp](/assets/leetcode_daily_images/ca3db59d.webp)
 
 #### Join me on Telegram
 
@@ -33499,7 +33499,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/alternating-groups-ii/solutions/6516544/kotlin-rust-by-samoylenkodmitry-7q9h/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09032025-3208-alternating-groups?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/k58d6C0reqI)
-![1.webp](assets/leetcode_daily_images/61920904.webp)
+![1.webp](/assets/leetcode_daily_images/61920904.webp)
 
 #### Join me on Telegram
 
@@ -33569,7 +33569,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/solutions/6512098/kotlin-rust-by-samoylenkodmitry-1ntp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08032025-2379-minimum-recolors-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/JQVEn1qfrs4)
-![1.webp](assets/leetcode_daily_images/3c02af60.webp)
+![1.webp](/assets/leetcode_daily_images/3c02af60.webp)
 
 #### Join me on Telegram
 
@@ -33632,7 +33632,7 @@ $$O(n)$$, or O(1)
 [blog post](https://leetcode.com/problems/closest-prime-numbers-in-range/solutions/6508386/kotlin-rust-by-samoylenkodmitry-ykh2/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07032025-2523-closest-prime-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/j0i8X9eZfcQ)
-![1.webp](assets/leetcode_daily_images/161e185d.webp)
+![1.webp](/assets/leetcode_daily_images/161e185d.webp)
 
 #### Join me on Telegram
 
@@ -33719,7 +33719,7 @@ $$O(n)$$ or O(1)
 [blog post](https://leetcode.com/problems/find-missing-and-repeated-values/solutions/6503950/kotlin-rust-by-samoylenkodmitry-g9ks/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06032025-2965-find-missing-and-repeated?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/d4ibinjalCk)
-![1.webp](assets/leetcode_daily_images/004b677d.webp)
+![1.webp](/assets/leetcode_daily_images/004b677d.webp)
 
 #### Join me on Telegram
 
@@ -33812,7 +33812,7 @@ $$O(n)$$, or O(1) for math and mark solutions
 [blog post](https://leetcode.com/problems/count-total-number-of-colored-cells/solutions/6498715/kotlin-rust-by-samoylenkodmitry-93u4/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05032025-2579-count-total-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kAoXb1fq4-w)
-![1.webp](assets/leetcode_daily_images/ea50551c.webp)
+![1.webp](/assets/leetcode_daily_images/ea50551c.webp)
 
 #### Join me on Telegram
 
@@ -33823,7 +33823,7 @@ https://t.me/leetcode_daily_unstoppable/915
 Arithmetic sum #medium #math
 
 #### Intuition
-![x.webp](assets/leetcode_daily_images/5fc80b8e.webp)
+![x.webp](/assets/leetcode_daily_images/5fc80b8e.webp)
 The diagonal wall grows one item at a time.
 
 ```j
@@ -33887,7 +33887,7 @@ $$O(n)$$ for the recursion
 [blog post](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/solutions/6494085/kotlin-rust-by-samoylenkodmitry-fjjv/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04032025-1780-check-if-number-is?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/918j9CJpwKg)
-![1.webp](assets/leetcode_daily_images/08053708.webp)
+![1.webp](/assets/leetcode_daily_images/08053708.webp)
 
 #### Join me on Telegram
 
@@ -33998,7 +33998,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/partition-array-according-to-given-pivot/solutions/6489093/kotlin-rust-by-samoylenkodmitry-356j/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03032025-2161-partition-array-according?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3n4yOm1hwHI)
-![1.webp](assets/leetcode_daily_images/2a2e3a6c.webp)
+![1.webp](/assets/leetcode_daily_images/2a2e3a6c.webp)
 
 #### Join me on Telegram
 
@@ -34059,7 +34059,7 @@ $$O(n)$$, or O(1) for in-place sorting
 [blog post](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/solutions/6484913/kotlin-rust-by-samoylenkodmitry-nv0o/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02032025-2570-merge-two-2d-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/jnA1rA0lpdk)
-![1.webp](assets/leetcode_daily_images/e4adec8d.webp)
+![1.webp](/assets/leetcode_daily_images/e4adec8d.webp)
 
 #### Join me on Telegram
 
@@ -34135,7 +34135,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/apply-operations-to-an-array/solutions/6480393/kotlin-rust-by-samoylenkodmitry-7gbx/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01032025-2460-apply-operations-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DWsuHRQBX3Y)
-![1.webp](assets/leetcode_daily_images/5ae4264b.webp)
+![1.webp](/assets/leetcode_daily_images/5ae4264b.webp)
 
 #### Join me on Telegram
 
@@ -34199,7 +34199,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/shortest-common-supersequence/solutions/6476850/kotlin-rust-by-samoylenkodmitry-grvc/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28022025-1092-shortest-common-supersequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rhKF0HtCQgQ)
-![1.webp](assets/leetcode_daily_images/da10c2b0.webp)
+![1.webp](/assets/leetcode_daily_images/da10c2b0.webp)
 
 #### Join me on Telegram
 
@@ -34306,7 +34306,7 @@ string shortestCommonSupersequence(string a, string b) {
 [blog post](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/solutions/6473444/kotlin-rust-by-samoylenkodmitry-toq5/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27022025-873-length-of-longest-fibonacci?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/jxMF7xflM5c)
-![1.webp](assets/leetcode_daily_images/94773a26.webp)
+![1.webp](/assets/leetcode_daily_images/94773a26.webp)
 
 #### Join me on Telegram
 
@@ -34390,7 +34390,7 @@ $$O(n)$$, O(1) for BinarySearch
 [blog post](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/solutions/6469370/kotlin-rust-by-samoylenkodmitry-ga1v/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26022025-1749-maximum-absolute-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ArX_Thtx1Ms)
-![1.webp](assets/leetcode_daily_images/2b1a94e3.webp)
+![1.webp](/assets/leetcode_daily_images/2b1a94e3.webp)
 
 #### Join me on Telegram
 
@@ -34469,7 +34469,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/6465510/kotlin-rust-by-samoylenkodmitry-owh1/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25022025-1524-number-of-sub-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/NxxN50DS0h0)
-![1.webp](assets/leetcode_daily_images/e4092772.webp)
+![1.webp](/assets/leetcode_daily_images/e4092772.webp)
 
 #### Join me on Telegram
 
@@ -34595,7 +34595,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/most-profitable-path-in-a-tree/solutions/6461874/kotlin-rust-by-samoylenkodmitry-xfcd/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24022025-2467-most-profitable-path?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/p8ysMxon3NI)
-![1.webp](assets/leetcode_daily_images/f8585860.webp)
+![1.webp](/assets/leetcode_daily_images/f8585860.webp)
 
 #### Join me on Telegram
 
@@ -34671,7 +34671,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/solutions/6458423/kotlin-rust-by-samoylenkodmitry-lgki/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23022025-889-construct-binary-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/E1zh0lo7pLo)
-![1.webp](assets/leetcode_daily_images/e5c3d3f9.webp)
+![1.webp](/assets/leetcode_daily_images/e5c3d3f9.webp)
 
 #### Join me on Telegram
 
@@ -34743,7 +34743,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/solutions/6454584/kotlin-rust-by-samoylenkodmitry-2gte/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22022025-1028-recover-a-tree-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/i7VubC_B8ds)
-![1.webp](assets/leetcode_daily_images/9f29da81.webp)
+![1.webp](/assets/leetcode_daily_images/9f29da81.webp)
 
 #### Join me on Telegram
 
@@ -34816,7 +34816,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/solutions/6450115/kotlin-rust-by-samoylenkodmitry-0k70/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21022025-1261-find-elements-in-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/gkbQqSvehJg)
-![1.webp](assets/leetcode_daily_images/9bc60121.webp)
+![1.webp](/assets/leetcode_daily_images/9bc60121.webp)
 
 
 #### Join me on Telegram
@@ -34906,7 +34906,7 @@ public: vector<int> s;
 [blog post](https://leetcode.com/problems/find-unique-binary-string/solutions/6445841/kotlin-rust-by-samoylenkodmitry-k733/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20022025-1980-find-unique-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DQkbAHYP3ZY)
-![1.webp](assets/leetcode_daily_images/1c7a4909.webp)
+![1.webp](/assets/leetcode_daily_images/1c7a4909.webp)
 
 #### Join me on Telegram
 
@@ -34969,7 +34969,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/solutions/6441193/kotlin-rust-by-samoylenkodmitry-hhxx/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19022025-1415-the-k-th-lexicographical?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Anl601V2eQQ)
-![1.webp](assets/leetcode_daily_images/ba24ba08.webp)
+![1.webp](/assets/leetcode_daily_images/ba24ba08.webp)
 
 #### Join me on Telegram
 
@@ -35060,7 +35060,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/construct-smallest-number-from-di-string/solutions/6436756/kotlin-rust-by-samoylenkodmitry-gpos/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18022025-2375-construct-smallest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/sxUflu52fDk)
-![1.webp](assets/leetcode_daily_images/aa267e61.webp)
+![1.webp](/assets/leetcode_daily_images/aa267e61.webp)
 
 #### Join me on Telegram
 
@@ -35147,7 +35147,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/letter-tile-possibilities/solutions/6432441/kotlin-rust-by-samoylenkodmitry-a1m7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17022025-1079-letter-tile-possibilities?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yHcaXpV6N_A)
-![1.webp](assets/leetcode_daily_images/d1d1347e.webp)
+![1.webp](/assets/leetcode_daily_images/d1d1347e.webp)
 
 #### Join me on Telegram
 
@@ -35216,7 +35216,7 @@ $$O(n)$$ the recursion depth
 [blog post](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/solutions/6428873/kotlin-rust-by-samoylenkodmitry-4g00/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16022025-1718-construct-the-lexicographically?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/a4NTwqLH5W4)
-![1.webp](assets/leetcode_daily_images/f1039673.webp)
+![1.webp](/assets/leetcode_daily_images/f1039673.webp)
 
 #### Join me on Telegram
 
@@ -35331,7 +35331,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/solutions/6424756/kotlin-rust-by-samoylenkodmitry-noqr/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15022025-2698-find-the-punishment?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XHxubsKDhEU)
-![1.webp](assets/leetcode_daily_images/4790f413.webp)
+![1.webp](/assets/leetcode_daily_images/4790f413.webp)
 
 #### Join me on Telegram
 
@@ -35396,7 +35396,7 @@ $$O(lg(n))$$
 [blog post](https://leetcode.com/problems/product-of-the-last-k-numbers/solutions/6421014/kotlin-rust-by-samoylenkodmitry-eknq/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14022025-1352-product-of-the-last?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tRJ5jmTCAL0)
-![1.webp](assets/leetcode_daily_images/ccb54926.webp)
+![1.webp](/assets/leetcode_daily_images/ccb54926.webp)
 
 #### Join me on Telegram
 
@@ -35464,7 +35464,7 @@ public:
 [blog post](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/solutions/6416545/kotlin-rust-by-samoylenkodmitry-obbv/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13022025-3066-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/4PF_WjsqiCg)
-![1.webp](assets/leetcode_daily_images/39c1e3bc.webp)
+![1.webp](/assets/leetcode_daily_images/39c1e3bc.webp)
 
 #### Join me on Telegram
 
@@ -35530,7 +35530,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/solutions/6411856/kotlin-rust-by-samoylenkodmitry-nyox/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12022025-2342-max-sum-of-a-pair-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Z1BSOG9Ld3w)
-![1.webp](assets/leetcode_daily_images/337e0ece.webp)
+![1.webp](/assets/leetcode_daily_images/337e0ece.webp)
 
 
 #### Join me on Telegram
@@ -35597,7 +35597,7 @@ $$O(1)$$, O(n) for golf
 [blog post](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/solutions/6406645/kotlin-rust-by-samoylenkodmitry-ql6u/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11022025-1910-remove-all-occurrences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/honEq9BhOoQ)
-![1.webp](assets/leetcode_daily_images/45a2ccb8.webp)
+![1.webp](/assets/leetcode_daily_images/45a2ccb8.webp)
 
 #### Join me on Telegram
 
@@ -35654,7 +35654,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/clear-digits/solutions/6401516/kotlin-rust-by-samoylenkodmitry-7u9z/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10022025-3174-clear-digits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6BNUmhbnuY0)
-![1.webp](assets/leetcode_daily_images/427460ac.webp)
+![1.webp](/assets/leetcode_daily_images/427460ac.webp)
 
 #### Join me on Telegram
 
@@ -35714,7 +35714,7 @@ $$O(n)$$, O(1) for in-place
 [blog post](https://leetcode.com/problems/count-number-of-bad-pairs/solutions/6397416/kotlin-rust-by-samoylenkodmitry-4j0k/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09022025-2364-count-number-of-bad?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yw-CX03h0IQ)
-![1.webp](assets/leetcode_daily_images/73beb107.webp)
+![1.webp](/assets/leetcode_daily_images/73beb107.webp)
 
 #### Join me on Telegram
 
@@ -35819,7 +35819,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/design-a-number-container-system/solutions/6392764/kotlin-rust-by-samoylenkodmitry-4raz/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08022025-2349-design-a-number-container?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/JtUkMNCdhBE)
-![1.webp](assets/leetcode_daily_images/55c1e002.webp)
+![1.webp](/assets/leetcode_daily_images/55c1e002.webp)
 
 #### Join me on Telegram
 
@@ -35893,7 +35893,7 @@ public:
 [blog post](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/solutions/6388528/kotlin-rust-by-samoylenkodmitry-7gav/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07022025-3160-find-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5rmQVVnIuhU)
-![1.webp](assets/leetcode_daily_images/2b353163.webp)
+![1.webp](/assets/leetcode_daily_images/2b353163.webp)
 
 #### Join me on Telegram
 
@@ -36047,7 +36047,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/solutions/6378602/kotlin-rust-by-samoylenkodmitry-mjav/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05022025-1790-check-if-one-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/F6M84pzAVMg)
-![1.webp](assets/leetcode_daily_images/82ef120e.webp)
+![1.webp](/assets/leetcode_daily_images/82ef120e.webp)
 
 #### Join me on Telegram
 
@@ -36106,7 +36106,7 @@ $$O(1)$$ or O(n) for Kotlin/Rust worst
 [blog post](https://leetcode.com/problems/maximum-ascending-subarray-sum/solutions/6372426/kotlin-rust-by-samoylenkodmitry-zdpp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04022025-1800-maximum-ascending-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/AQyTzVAzSWY)
-![1.webp](assets/leetcode_daily_images/cc3683a4.webp)
+![1.webp](/assets/leetcode_daily_images/cc3683a4.webp)
 
 #### Join me on Telegram
 
@@ -36166,7 +36166,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/6366396/kotlin-rust-by-samoylenkodmitry-yuyb/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03022025-3105-longest-strictly-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XfoPWcZhqKQ)
-![1.webp](assets/leetcode_daily_images/9d9cca08.webp)
+![1.webp](/assets/leetcode_daily_images/9d9cca08.webp)
 
 
 #### Join me on Telegram
@@ -36230,7 +36230,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/solutions/6361204/kotlin-rust-by-samoylenkodmitry-ik0h/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02022025-1752-check-if-array-is-sorted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/JinUO8zVByY)
-![1.webp](assets/leetcode_daily_images/038baca9.webp)
+![1.webp](/assets/leetcode_daily_images/038baca9.webp)
 
 #### Join me on Telegram
 
@@ -36287,7 +36287,7 @@ $$O(1)$$, O(n^2) for Kotlin
 [blog post](https://leetcode.com/problems/special-array-i/solutions/6356313/kotlin-rust-by-samoylenkodmitry-ognc/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01022025-3151-special-array-i?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/F4Q1sUavzzg)
-![1.webp](assets/leetcode_daily_images/fff2b551.webp)
+![1.webp](/assets/leetcode_daily_images/fff2b551.webp)
 
 #### Join me on Telegram
 
@@ -36342,7 +36342,7 @@ $$O(1)$$ O(n) for Kotlin golf
 [blog post](https://leetcode.com/problems/making-a-large-island/solutions/6351552/kotlin-rust-by-samoylenkodmitry-cqr5/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31012025-827-making-a-large-island?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UGR9lhmy4wM)
-![1.webp](assets/leetcode_daily_images/d79eda0a.webp)
+![1.webp](/assets/leetcode_daily_images/d79eda0a.webp)
 
 #### Join me on Telegram
 
@@ -36447,7 +36447,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/solutions/6347637/kotlin-rust-by-samoylenkodmitry-r9j8/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30012025-2493-divide-nodes-into-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2w-oQUz4w6E)
-![1.webp](assets/leetcode_daily_images/8064c763.webp)
+![1.webp](/assets/leetcode_daily_images/8064c763.webp)
 
 #### Join me on Telegram
 
@@ -36547,7 +36547,7 @@ $$O(V)$$
 [blog post](https://leetcode.com/problems/redundant-connection/solutions/6343420/kotlin-rust-by-samoylenkodmitry-amvd/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29012025-684-redundant-connection?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/NFlQvw7JVF4)
-![1.webp](assets/leetcode_daily_images/e308a422.webp)
+![1.webp](/assets/leetcode_daily_images/e308a422.webp)
 
 #### Join me on Telegram
 
@@ -36614,7 +36614,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/solutions/6338968/kotlin-rust-by-samoylenkodmitry-eptu/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28012025-2658-maximum-number-of-fish?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/sHWNP68Sk5E)
-![1.webp](assets/leetcode_daily_images/b448ef19.webp)
+![1.webp](/assets/leetcode_daily_images/b448ef19.webp)
 
 #### Join me on Telegram
 
@@ -36689,7 +36689,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/course-schedule-iv/solutions/6334635/kotlin-rust-by-samoylenkodmitry-by2j/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27012025-1462-course-schedule-iv?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Vzksn6304Fw)
-![1.webp](assets/leetcode_daily_images/8b08113d.webp)
+![1.webp](/assets/leetcode_daily_images/8b08113d.webp)
 
 #### Join me on Telegram
 
@@ -36763,7 +36763,7 @@ $$O(n^2 + q)$$
 [blog post](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/solutions/6331395/kotlin-rust-by-samoylenkodmitry-s4cs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26012025-2127-maximum-employees-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/GiZialiwbuE)
-![1.webp](assets/leetcode_daily_images/11dddb2e.webp)
+![1.webp](/assets/leetcode_daily_images/11dddb2e.webp)
 
 #### Join me on Telegram
 
@@ -36866,7 +36866,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/solutions/6327211/kotlin-rust-by-samoylenkodmitry-7avo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25012025-2948-make-lexicographically?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/lFQyQTgf3bg)
-![1.webp](assets/leetcode_daily_images/7662fda2.webp)
+![1.webp](/assets/leetcode_daily_images/7662fda2.webp)
 
 #### Join me on Telegram
 
@@ -36960,7 +36960,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-eventual-safe-states/solutions/6323313/kotlin-rust-by-samoylenkodmitry-b0k7/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24012025-802-find-eventual-safe-states?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EIMorpk32wc)
-![1.webp](assets/leetcode_daily_images/3577d67c.webp)
+![1.webp](/assets/leetcode_daily_images/3577d67c.webp)
 
 #### Join me on Telegram
 
@@ -37059,7 +37059,7 @@ $$O(E + V)$$
 [blog post](https://leetcode.com/problems/count-servers-that-communicate/solutions/6319064/kotlin-rust-by-samoylenkodmitry-ttza/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23012025-1267-count-servers-that?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UH2zMpxL424)
-![1.webp](assets/leetcode_daily_images/dc1cb6cf.webp)
+![1.webp](/assets/leetcode_daily_images/dc1cb6cf.webp)
 
 #### Join me on Telegram
 
@@ -37131,7 +37131,7 @@ $$O(n + m)$$
 [blog post](https://leetcode.com/problems/map-of-highest-peak/solutions/6314422/kotlin-rust-by-samoylenkodmitry-s0tr/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22012025-1765-map-of-highest-peak?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XuWNOSmVgU0)
-![1.webp](assets/leetcode_daily_images/200a59f2.webp)
+![1.webp](/assets/leetcode_daily_images/200a59f2.webp)
 
 #### Join me on Telegram
 
@@ -37224,7 +37224,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/grid-game/solutions/6309994/kotlin-rust-by-samoylenkodmitry-rr0l/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21012025-2017-grid-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wApKvjtYm-o)
-![1.webp](assets/leetcode_daily_images/9e654e11.webp)
+![1.webp](/assets/leetcode_daily_images/9e654e11.webp)
 
 
 #### Join me on Telegram
@@ -37315,7 +37315,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/first-completely-painted-row-or-column/solutions/6305619/kotlin-rust-by-samoylenkodmitry-w33a/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20012025-2661-first-completely-painted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DjX05QcIXy8)
-![1.webp](assets/leetcode_daily_images/bd877ae3.webp)
+![1.webp](/assets/leetcode_daily_images/bd877ae3.webp)
 
 
 #### Join me on Telegram
@@ -37383,7 +37383,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/trapping-rain-water-ii/solutions/6302411/kotlin-rust-by-samoylenkodmitry-o2pd/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19012025-407-trapping-rain-water?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_hGmmCb8EOk)
-![1.webp](assets/leetcode_daily_images/9b7985a3.webp)
+![1.webp](/assets/leetcode_daily_images/9b7985a3.webp)
 
 #### Join me on Telegram
 
@@ -37474,7 +37474,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/solutions/6297925/kotlin-rust-by-samoylenkodmitry-tkv0/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18012025-1368-minimum-cost-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/g9MJ7RaEuGE)
-![1.webp](assets/leetcode_daily_images/b48ca51f.webp)
+![1.webp](/assets/leetcode_daily_images/b48ca51f.webp)
 
 #### Join me on Telegram
 
@@ -37570,7 +37570,7 @@ $$O(nm)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17012025-2683-neighboring-bitwise?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MW183bsRh48)
 [deep-dive](https://notebooklm.google.com/notebook/612dfb9a-ae14-4bc4-a40e-2e6b6a3e6c75/audio)
-![1.webp](assets/leetcode_daily_images/5035c656.webp)
+![1.webp](/assets/leetcode_daily_images/5035c656.webp)
 
 #### Join me on Telegram
 
@@ -37638,7 +37638,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16012025-2425-bitwise-xor-of-all?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/4jtajUTdAaU)
 [deep-dive](https://notebooklm.google.com/notebook/22533cbe-d611-41df-a7a5-539e71901972/audio)
-![1.webp](assets/leetcode_daily_images/7cef709a.webp)
+![1.webp](/assets/leetcode_daily_images/7cef709a.webp)
 
 #### Join me on Telegram
 
@@ -37711,7 +37711,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15012025-2429-minimize-xor?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/bjDK_HtJcic)
 [deep-dive](https://notebooklm.google.com/notebook/b281817d-e83e-43c4-bfc4-e437b2f2e881/audio)
-![1.webp](assets/leetcode_daily_images/33b1dc44.webp)
+![1.webp](/assets/leetcode_daily_images/33b1dc44.webp)
 
 #### Join me on Telegram
 
@@ -37802,7 +37802,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14012025-2657-find-the-prefix-common?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BXx2ubU_I4w)
 [deep-dive](https://notebooklm.google.com/notebook/48e9802f-498b-4136-8afe-3483855b2dca/audio)
-![1.webp](assets/leetcode_daily_images/6d9797e5.webp)
+![1.webp](/assets/leetcode_daily_images/6d9797e5.webp)
 
 #### Join me on Telegram
 
@@ -37868,7 +37868,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13012025-3223-minimum-length-of-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2wGjJb-DyMI)
 [deep-dive](https://notebooklm.google.com/notebook/a16db30f-3778-418e-8734-6700f4eb66ac/audio)
-![1.webp](assets/leetcode_daily_images/a4811766.webp)
+![1.webp](/assets/leetcode_daily_images/a4811766.webp)
 
 #### Join me on Telegram
 
@@ -37946,7 +37946,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12012025-2116-check-if-a-parentheses?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Tbxc8rJM7gA)
 [deep-dive](https://notebooklm.google.com/notebook/692d1788-b774-4066-aedb-f198ae597c8a/audio)
-![1.webp](assets/leetcode_daily_images/20ebd235.webp)
+![1.webp](/assets/leetcode_daily_images/20ebd235.webp)
 
 #### Join me on Telegram
 
@@ -38042,7 +38042,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11012025-1400-construct-k-palindrome?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/62kjsnc9uZc)
 [deep-dive](https://notebooklm.google.com/notebook/620e2a5f-0f4f-4ea5-af26-e90fc88d6c8e/audio)
-![1.webp](assets/leetcode_daily_images/6c5ed528.webp)
+![1.webp](/assets/leetcode_daily_images/6c5ed528.webp)
 
 #### Join me on Telegram
 
@@ -38106,7 +38106,7 @@ $$O(1)$$, O(n) for Kotlin golf
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10012025-916-word-subsets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/z5O2cvLYTpI)
 [deep-dive](https://notebooklm.google.com/notebook/c7a944bf-c59c-477a-8d27-78f1e08b19e2/audio)
-![1.webp](assets/leetcode_daily_images/250db45a.webp)
+![1.webp](/assets/leetcode_daily_images/250db45a.webp)
 
 #### Join me on Telegram
 
@@ -38181,7 +38181,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09012025-2185-counting-words-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vou1HeSppHc)
 [deep-dive](https://notebooklm.google.com/notebook/f178b954-9a22-4606-91d6-0905671c671f/audio)
-![1.webp](assets/leetcode_daily_images/b4797e16.webp)
+![1.webp](/assets/leetcode_daily_images/b4797e16.webp)
 
 #### Join me on Telegram
 
@@ -38238,7 +38238,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08012025-3042-count-prefix-and-suffix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HPEIOgQBvsE)
 [deep-dive](https://notebooklm.google.com/notebook/a0905d0e-44a6-4197-adfa-8dd3d8b4b7b8/audio)
-![1.webp](assets/leetcode_daily_images/05f9701e.webp)
+![1.webp](/assets/leetcode_daily_images/05f9701e.webp)
 
 #### Join me on Telegram
 
@@ -38317,7 +38317,7 @@ $$O(1)$$ or O(n)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07012025-1408-string-matching-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UHgFY3seZCo)
 [deep-dive](https://notebooklm.google.com/notebook/ad5d34b7-a8d1-4f14-a324-8e099d2d7408/audio)
-![1.webp](assets/leetcode_daily_images/bfd761e8.webp)
+![1.webp](/assets/leetcode_daily_images/bfd761e8.webp)
 
 #### Join me on Telegram
 
@@ -38380,7 +38380,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06012025-1769-minimum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mwjyJqmryZI)
 [deep-dive](https://notebooklm.google.com/notebook/b319b6a1-894f-477f-bd21-f1a18a28b354/audio)
-![1.webp](assets/leetcode_daily_images/0e07017a.webp)
+![1.webp](/assets/leetcode_daily_images/0e07017a.webp)
 
 #### Join me on Telegram
 
@@ -38471,7 +38471,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05012025-2381-shifting-letters-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/i35fgm4-epw)
 [deep-dive](https://notebooklm.google.com/notebook/ec031256-a0ee-454c-8514-b1051e6ed029/audio)
-![1.webp](assets/leetcode_daily_images/083f325e.webp)
+![1.webp](/assets/leetcode_daily_images/083f325e.webp)
 
 #### Join me on Telegram
 
@@ -38552,7 +38552,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04012025-1930-unique-length-3-palindromic?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/I3QXiWEylZk)
 [deep-dive](https://notebooklm.google.com/notebook/5d386e3a-3633-46a5-b9b1-87175fb47cb1/audio)
-![1.webp](assets/leetcode_daily_images/a80028e9.webp)
+![1.webp](/assets/leetcode_daily_images/a80028e9.webp)
 
 #### Join me on Telegram
 
@@ -38620,7 +38620,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03012025-2270-number-of-ways-to-split?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MjsYNhMxHnM)
 [deep-dive](https://notebooklm.google.com/notebook/5eed8070-7e6d-4ca7-9616-9e1f9c30dd63/audio)
-![1.webp](assets/leetcode_daily_images/65a48ca8.webp)
+![1.webp](/assets/leetcode_daily_images/65a48ca8.webp)
 
 #### Join me on Telegram
 
@@ -38688,7 +38688,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02012025-2559-count-vowel-strings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rWpq_owJcO0)
 [deep-dive](https://notebooklm.google.com/notebook/ea707d2a-7e43-4cdb-94e6-f20276ee82f2/audio)
-![1.webp](assets/leetcode_daily_images/f3c06d75.webp)
+![1.webp](/assets/leetcode_daily_images/f3c06d75.webp)
 
 #### Join me on Telegram
 
@@ -38755,7 +38755,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01012025-1422-maximum-score-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9fh_XRfyaso)
 [deep-dive](https://notebooklm.google.com/notebook/d9ca7671-229d-4947-b72b-4c93854dd3d5/audio)
-![1.webp](assets/leetcode_daily_images/c9694ebb.webp)
+![1.webp](/assets/leetcode_daily_images/c9694ebb.webp)
 
 #### Join me on Telegram
 
@@ -38828,7 +38828,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31122024-983-minimum-cost-for-tickets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/gKUzRxyO-1Q)
 [deep-dive](https://notebooklm.google.com/notebook/c2d9fd33-b10b-40d0-a501-531fd5c0731b/audio)
-![1.webp](assets/leetcode_daily_images/7776111f.webp)
+![1.webp](/assets/leetcode_daily_images/7776111f.webp)
 
 #### Join me on Telegram
 
@@ -38923,7 +38923,7 @@ $$O(n)$$, O(1) for queues, as only the last 30 days are considered
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30122024-2466-count-ways-to-build?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6kOm_LN8iFM)
 [deep-dive](https://notebooklm.google.com/notebook/be75821b-01b8-4a64-8530-23d182e5c604/audio)
-![1.webp](assets/leetcode_daily_images/63196ac2.webp)
+![1.webp](/assets/leetcode_daily_images/63196ac2.webp)
 
 #### Join me on Telegram
 
@@ -39011,7 +39011,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29122024-1639-number-of-ways-to-form?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1708IKl5qm4)
 [deep-dive](https://notebooklm.google.com/notebook/2e187a30-340a-4a8c-97dd-c03deea8383c/audio)
-![1.webp](assets/leetcode_daily_images/6da92d41.webp)
+![1.webp](/assets/leetcode_daily_images/6da92d41.webp)
 
 #### Join me on Telegram
 
@@ -39125,7 +39125,7 @@ $$O(t)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28122024-689-maximum-sum-of-3-non?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9sp46IOXUK8)
 [deep-dive](https://notebooklm.google.com/notebook/b9226ee0-005a-43aa-86ec-5861944d0175/audio)
-![1.webp](assets/leetcode_daily_images/463aff6f.webp)
+![1.webp](/assets/leetcode_daily_images/463aff6f.webp)
 
 #### Join me on Telegram
 
@@ -39234,7 +39234,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27122024-1014-best-sightseeing-pair?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/hHhpqPY6DZU)
 [deep-dive](https://notebooklm.google.com/notebook/42c0baee-e59d-40af-aba8-421349b5397d/audio)
-![1.webp](assets/leetcode_daily_images/8c898f3b.webp)
+![1.webp](/assets/leetcode_daily_images/8c898f3b.webp)
 
 #### Join me on Telegram
 
@@ -39314,7 +39314,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26122024-494-target-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8__oX8KSRPU)
 [deep-dive](https://notebooklm.google.com/notebook/b6213920-2531-4c4a-8a07-d19c04dfe813/audio)
-![1.webp](assets/leetcode_daily_images/bc50739d.webp)
+![1.webp](/assets/leetcode_daily_images/bc50739d.webp)
 
 #### Join me on Telegram
 
@@ -39401,7 +39401,7 @@ $$O(n^2)$$ to O(n)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24122024-515-find-largest-value-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/v49GRhgdxgI)
 [deep-dive](https://notebooklm.google.com/notebook/f539d825-6b74-4bb5-9b29-75cf70f5dbbf/audio)
-![1.webp](assets/leetcode_daily_images/d90f1123.webp)
+![1.webp](/assets/leetcode_daily_images/d90f1123.webp)
 
 #### Join me on Telegram
 
@@ -39476,7 +39476,7 @@ $$O(log(n))$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23122024-3203-find-minimum-diameter?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/oaM78yNs1BY)
 [deep-dive](https://notebooklm.google.com/notebook/06ca0e0a-e5c5-43f3-b729-4386f3c2124c/audio)
-![1.webp](assets/leetcode_daily_images/add17f4d.webp)
+![1.webp](/assets/leetcode_daily_images/add17f4d.webp)
 
 #### Join me on Telegram
 
@@ -39585,7 +39585,7 @@ $$O(EV)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23122024-2471-minimum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/I_UvQOt73Kw)
 [deep-dive](https://notebooklm.google.com/notebook/9e4ea372-b535-416d-a981-7d1222df6bdb/audio)
-![1.webp](assets/leetcode_daily_images/25356315.webp)
+![1.webp](/assets/leetcode_daily_images/25356315.webp)
 
 #### Join me on Telegram
 
@@ -39700,7 +39700,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22122024-2940-find-building-where?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/nLRmWDSzYsI)
 [deep-dive](https://notebooklm.google.com/notebook/0bce7872-6216-4610-99d9-190532fa9ab2/audio)
-![1.webp](assets/leetcode_daily_images/a9a25d9f.webp)
+![1.webp](/assets/leetcode_daily_images/a9a25d9f.webp)
 
 #### Join me on Telegram
 
@@ -39826,7 +39826,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21122024-2872-maximum-number-of-k?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7Dz_YsHUtaI)
 [deep-dive](https://notebooklm.google.com/notebook/006a7ebe-578c-4121-a202-88e83dccbdb3/audio)
-![1.webp](assets/leetcode_daily_images/923a42ed.webp)
+![1.webp](/assets/leetcode_daily_images/923a42ed.webp)
 
 #### Join me on Telegram
 
@@ -39913,7 +39913,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20122024-2415-reverse-odd-levels?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5bS6Z43R5v0)
 [deep-dive](https://notebooklm.google.com/notebook/19d69569-582b-4b01-987d-86c4c1fd6705/audio)
-![1.webp](assets/leetcode_daily_images/36a0f567.webp)
+![1.webp](/assets/leetcode_daily_images/36a0f567.webp)
 
 #### Join me on Telegram
 
@@ -39999,7 +39999,7 @@ $$O(n)$$ or O(log(n)) for recursion
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19122024-769-max-chunks-to-make-sorted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/eVGez7NRzA4)
 [deep-dive](https://notebooklm.google.com/notebook/903899db-702f-4583-b779-b7af9d069781/audio)
-![1.webp](assets/leetcode_daily_images/1fdc8ae6.webp)
+![1.webp](/assets/leetcode_daily_images/1fdc8ae6.webp)
 
 #### Join me on Telegram
 
@@ -40082,7 +40082,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18122024-1475-final-prices-with-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ERsVQvwFzKw)
 [deep-dive](https://notebooklm.google.com/notebook/3d259d3c-1a1f-4651-a707-3946882a0232/audio)
-![1.webp](assets/leetcode_daily_images/666a691f.webp)
+![1.webp](/assets/leetcode_daily_images/666a691f.webp)
 
 #### Join me on Telegram
 
@@ -40154,7 +40154,7 @@ $$O(n)$$ or O(1) for brute-force in-place
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17122024-2182-construct-string-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tGaNBtqpNec)
 [deep-dive](https://notebooklm.google.com/notebook/a42da74e-c8c3-4d22-942b-93765837ccee/audio)
-![1.webp](assets/leetcode_daily_images/5d21bf37.webp)
+![1.webp](/assets/leetcode_daily_images/5d21bf37.webp)
 
 #### Join me on Telegram
 
@@ -40240,7 +40240,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16122024-3264-final-array-state-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/g3oQ_y-icNo)
 [deep-dive](https://notebooklm.google.com/notebook/a1a2ede1-8cc5-4c8b-b017-9f28aaefb553/audio)
-![1.webp](assets/leetcode_daily_images/cf68dd5e.webp)
+![1.webp](/assets/leetcode_daily_images/cf68dd5e.webp)
 
 #### Join me on Telegram 
 
@@ -40307,7 +40307,7 @@ $$O(1)$$ or O(n)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15122024-1792-maximum-average-pass?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Y3GsodbgXK8)
 [deep-dive](https://notebooklm.google.com/notebook/8838b02a-d70f-4057-a8bd-90e92a6d7cb1/audio)
-![1.webp](assets/leetcode_daily_images/36e1b756.webp)
+![1.webp](/assets/leetcode_daily_images/36e1b756.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/833
@@ -40384,7 +40384,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14122024-2762-continuous-subarrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ksBDeTXMi7g)
 [deep-dive](https://notebooklm.google.com/notebook/f1cbf33e-71e0-426d-8cb2-8d7719a457b1/audio)
-![1.webp](assets/leetcode_daily_images/e5e2da85.webp)
+![1.webp](/assets/leetcode_daily_images/e5e2da85.webp)
 
 #### Join me on Telegram
 
@@ -40476,7 +40476,7 @@ $$O(1)$$ or O(n)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13122024-2593-find-score-of-an-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XIy6EnsikDs)
 [deep-dive](https://notebooklm.google.com/notebook/d8e1fb77-6cfb-461a-b8e6-d7d0899ac58b/audio)
-![1.webp](assets/leetcode_daily_images/a00aaebc.webp)
+![1.webp](/assets/leetcode_daily_images/a00aaebc.webp)
 
 #### Join me on Telegram
 
@@ -40561,7 +40561,7 @@ $$O(n)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12122024-2558-take-gifts-from-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/z7TkbUA51jU)
 [deep-dive](https://notebooklm.google.com/notebook/639f9ca2-6b9f-49e8-a7c3-524d4d3e5d1e/audio)
-![1.webp](assets/leetcode_daily_images/5713b33e.webp)
+![1.webp](/assets/leetcode_daily_images/5713b33e.webp)
 
 #### Join me on Telegram
 
@@ -40634,7 +40634,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11122024-2779-maximum-beauty-of-an?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Va3W1jk4caQ)
 [deep-dive](https://notebooklm.google.com/notebook/487335ba-82b3-4090-81ea-2246d47b9dc5/audio)
-![1.webp](assets/leetcode_daily_images/2c423e2d.webp)
+![1.webp](/assets/leetcode_daily_images/2c423e2d.webp)
 
 #### Join me on Telegram
 
@@ -40740,7 +40740,7 @@ $$O(n)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10122024-2981-find-longest-special?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/duSxeDfaF2w)
 [deep-dive](https://notebooklm.google.com/notebook/5405ba0d-ea5b-4fb5-b4ff-c3809d90503b/audio)
-![1.jpg](assets/leetcode_daily_images/76520683.webp)
+![1.jpg](/assets/leetcode_daily_images/76520683.webp)
 
 #### Join me on Telegram
 
@@ -40825,7 +40825,7 @@ $$O(n)$$ -> O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09122024-3152-special-array-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/PDLfGII2I5Q)
 [deep-dive](https://notebooklm.google.com/notebook/438184b2-0566-4054-a47f-eaa68def1c9b/audio)
-![1.webp](assets/leetcode_daily_images/5200fa9e.webp)
+![1.webp](/assets/leetcode_daily_images/5200fa9e.webp)
 
 #### Join me on Telegram
 
@@ -40936,7 +40936,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08122024-2054-two-best-non-overlapping?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uBoGo4P9t9E)
 [deep-dive](https://notebooklm.google.com/notebook/a8982576-4151-42ec-8693-42faa48bf158/audio)
-![1.webp](assets/leetcode_daily_images/6f988dcf.webp)
+![1.webp](/assets/leetcode_daily_images/6f988dcf.webp)
 
 #### Join me on Telegram
 
@@ -41049,7 +41049,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122024-1760-minimum-limit-of-balls?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/PPJbq_8MliE)
 [deep-dive](https://notebooklm.google.com/notebook/9c676e52-2415-4f5e-b52e-fa1513c6b85a/audio)
-![1.webp](assets/leetcode_daily_images/3699bd39.webp)
+![1.webp](/assets/leetcode_daily_images/3699bd39.webp)
 
 #### Join me on Telegram
 
@@ -41149,7 +41149,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06122024-2554-maximum-number-of-integers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XOkn48mkCSc)
 [deep-dive](https://notebooklm.google.com/notebook/03c5d8b8-ac16-4a40-9d5f-a4f42fca82b8/audio)
-![1.webp](assets/leetcode_daily_images/ac08696a.webp)
+![1.webp](/assets/leetcode_daily_images/ac08696a.webp)
 
 #### Join me on Telegram
 
@@ -41220,7 +41220,7 @@ $$O(n)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05122024-2337-move-pieces-to-obtain?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UijiTqgpfOo)
 [deep-dive](https://notebooklm.google.com/notebook/cb694c34-19bb-4a2b-ab72-0054c83fc9e4/audio)
-![1.webp](assets/leetcode_daily_images/16442bf8.webp)
+![1.webp](/assets/leetcode_daily_images/16442bf8.webp)
 
 #### Join me on Telegram
 
@@ -41326,7 +41326,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04122024-2825-make-string-a-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/IWi-SSbskMM)
 [deep-dive](https://notebooklm.google.com/notebook/da901144-a315-4bdf-bbd0-95b83fb535f3/audio)
-![1.webp](assets/leetcode_daily_images/a4c06afc.webp)
+![1.webp](/assets/leetcode_daily_images/a4c06afc.webp)
 
 #### Join me on Telegram
 
@@ -41397,7 +41397,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03122024-2109-adding-spaces-to-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Y65Sl49UrMg)
 [deep-dive](https://notebooklm.google.com/notebook/f59650ec-6c8e-4f60-8740-5ab5408c974c/audio)
-![1.webp](assets/leetcode_daily_images/dc3e3436.webp)
+![1.webp](/assets/leetcode_daily_images/dc3e3436.webp)
 
 #### Join me on Telegram
 
@@ -41463,7 +41463,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02122024-1455-check-if-a-word-occurs?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/P_77P7z4ew4)
 [deep-dive](https://notebooklm.google.com/notebook/d201f718-1e5c-4d7c-946d-f60632a42142/audio)
-![1.webp](assets/leetcode_daily_images/5b7fae70.webp)
+![1.webp](/assets/leetcode_daily_images/5b7fae70.webp)
 
 #### Join me on Telegram
 
@@ -41525,7 +41525,7 @@ $$O(n)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01122024-1346-check-if-n-and-its?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/o8OYYtC9vHk)
 [deep-dive](https://notebooklm.google.com/notebook/90f29a3d-8434-4fbf-b052-7c2c0ab07f7c/audio)
-![1.webp](assets/leetcode_daily_images/de8d65b5.webp)
+![1.webp](/assets/leetcode_daily_images/de8d65b5.webp)
 
 #### Join me on Telegram
 
@@ -41601,7 +41601,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30112024-2097-valid-arrangement-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Z1HXrMxz8a4)
 [deep-dive](https://notebooklm.google.com/notebook/124383a0-6167-47ef-be12-478cfadefb33/audio)
-![1.webp](assets/leetcode_daily_images/67e7dea3.webp)
+![1.webp](/assets/leetcode_daily_images/67e7dea3.webp)
 
 #### Join me on Telegram
 
@@ -41620,9 +41620,9 @@ Next, greedily traverse all siblings in a DFS manner, removing the explored edge
 When all the reached nodes have no more siblings, we reached the end, so `pop` it from the `path`.
 While doing the `pop` operation we can discover some previously undiscovered loops in the same manner.
 
-![algo1.jpg](assets/leetcode_daily_images/26ac644c.webp)
+![algo1.jpg](/assets/leetcode_daily_images/26ac644c.webp)
 
-![output.gif](assets/leetcode_daily_images/4a5696e4.webp)
+![output.gif](/assets/leetcode_daily_images/4a5696e4.webp)
 
 
 #### Approach
@@ -41713,7 +41713,7 @@ $$O(E + V)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29112024-2577-minimum-time-to-visit?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KItOmpgESTA)
 [deep-dive](https://notebooklm.google.com/notebook/84e7df30-11be-470e-9442-38dd6e7a1410/audio)
-![1.webp](assets/leetcode_daily_images/1471bd83.webp)
+![1.webp](/assets/leetcode_daily_images/1471bd83.webp)
 
 #### Join me on Telegram
 
@@ -41802,7 +41802,7 @@ $$mn$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28112024-2290-minimum-obstacle-removal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wDnaQD5j6YM)
 [deep-dive](https://notebooklm.google.com/notebook/86cfab05-137b-4191-9d3c-a4b80e82f49f/audio)
-![1.webp](assets/leetcode_daily_images/6351bfc7.webp)
+![1.webp](/assets/leetcode_daily_images/6351bfc7.webp)
 
 #### Join me on Telegram
 
@@ -41898,7 +41898,7 @@ $$O(nm)$$
 [substack](https://notebooklm.google.com/notebook/c40394e3-f653-4676-b10e-9c6843090ef1/audio)
 [youtube](https://youtu.be/7dTgKkTZO_4)
 [deep-dive](https://open.substack.com/pub/dmitriisamoilenko/p/27112024-3243-shortest-distance-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-![1.webp](assets/leetcode_daily_images/e433296e.webp)
+![1.webp](/assets/leetcode_daily_images/e433296e.webp)
 
 #### Join me on Telegram
 
@@ -41997,7 +41997,7 @@ $$O(q + n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26112024-2924-find-champion-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/f4Lm2z665rw)
 [deep-dive](https://notebooklm.google.com/notebook/c777fdce-5016-4db7-9a37-90b4dbeea5cd/audio)
-![1.webp](assets/leetcode_daily_images/e8a9e310.webp)
+![1.webp](/assets/leetcode_daily_images/e8a9e310.webp)
 
 
 #### Join me on Telegram
@@ -42059,7 +42059,7 @@ $$O(n + e)$$, or O(n) or O(e)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25112024-773-sliding-puzzle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Ghs0MwncH74)
 [deep-dive](https://notebooklm.google.com/notebook/18de0638-0d54-4d95-8098-62c1dcea94fb/audio)
-![1.webp](assets/leetcode_daily_images/ac0323e7.webp)
+![1.webp](/assets/leetcode_daily_images/ac0323e7.webp)
 
 #### Join me on Telegram
 
@@ -42156,7 +42156,7 @@ $$O(n!)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24112024-1975-maximum-matrix-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/91zS-ylJXMs)
 [deep-dive](https://notebooklm.google.com/notebook/46446d6a-bc87-4b94-9be6-9be7d582169c/audio)
-![1.webp](assets/leetcode_daily_images/f65a1205.webp)
+![1.webp](/assets/leetcode_daily_images/f65a1205.webp)
 
 #### Join me on Telegram
 
@@ -42236,7 +42236,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23112024-1861-rotating-the-box?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ICOKxq-rEUM)
 [deep-dive](https://notebooklm.google.com/notebook/dea65fbe-2131-47e5-860f-d75a05009db2/audio)
-![1.webp](assets/leetcode_daily_images/f7e48783.webp)
+![1.webp](/assets/leetcode_daily_images/f7e48783.webp)
 
 
 #### Join me on Telegram
@@ -42326,7 +42326,7 @@ $$O(nm)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22112024-1072-flip-columns-for-maximum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UA_eFpj1mHk)
 [deep-dive](https://notebooklm.google.com/notebook/77eccce0-0d43-418d-8308-16a6cbfa8bac/audio)
-![1.webp](assets/leetcode_daily_images/9009ec6a.webp)
+![1.webp](/assets/leetcode_daily_images/9009ec6a.webp)
 
 #### Join me on Telegram
 
@@ -42431,7 +42431,7 @@ $$O(nm)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21112024-2257-count-unguarded-cells?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/bR2zLEM0Giw)
 [deep-dive](https://notebooklm.google.com/notebook/6861d24c-642a-4369-a07b-562ff166fa9e/audio)
-![1.webp](assets/leetcode_daily_images/b09e8b96.webp)
+![1.webp](/assets/leetcode_daily_images/b09e8b96.webp)
 
 #### Join me on Telegram
 
@@ -42516,7 +42516,7 @@ $$O(nm)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20112024-2516-take-k-of-each-character?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/A_EirfT5MP4)
 [deep-dive](https://notebooklm.google.com/notebook/98d71679-47fb-44b0-8959-dec3f8f730e2/audio)
-![1.webp](assets/leetcode_daily_images/ac1ee988.webp)
+![1.webp](/assets/leetcode_daily_images/ac1ee988.webp)
 
 #### Join me on Telegram
 
@@ -42630,7 +42630,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19112024-2461-maximum-sum-of-distinct?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6ZmznDt13tI)
 [deep-dive](https://notebooklm.google.com/notebook/fda21b86-8896-487f-a5dc-91e61bac5c5c/audio)
-![1.webp](assets/leetcode_daily_images/ce166ee4.webp)
+![1.webp](/assets/leetcode_daily_images/ce166ee4.webp)
 
 #### Join me on Telegram
 
@@ -42706,7 +42706,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18112024-1652-defuse-the-bomb?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/idQWsjWvjls)
 [deep-dive](https://notebooklm.google.com/notebook/3fe9ec7a-6e5b-440a-8903-395c9ffa9277/audio)
-![1.webp](assets/leetcode_daily_images/fcc329c5.webp)
+![1.webp](/assets/leetcode_daily_images/fcc329c5.webp)
 
 #### Join me on Telegram
 
@@ -42771,7 +42771,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17112024-862-shortest-subarray-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Yd9bBmurVqI)
 [deep-dive](https://notebooklm.google.com/notebook/cee005a0-07e8-4ebb-9d5c-006d78cc995a/audio)
-![1.webp](assets/leetcode_daily_images/e386f217.webp)
+![1.webp](/assets/leetcode_daily_images/e386f217.webp)
 
 #### Join me on Telegram
 
@@ -42872,7 +42872,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16112024-3254-find-the-power-of-k?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uY_uQ3pcylM)
 [deep-dive](https://notebooklm.google.com/notebook/a030195d-fc29-4894-88cf-0e5e9a623b57/audio)
-![1.webp](assets/leetcode_daily_images/ae42db74.webp)
+![1.webp](/assets/leetcode_daily_images/ae42db74.webp)
 
 #### Join me on Telegram
 
@@ -42956,7 +42956,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15112024-1574-shortest-subarray-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ShoQTGvRqiY)
 [deep-dive](https://notebooklm.google.com/notebook/aea72038-d81e-4e98-ba84-6176811f715d/audio)
-![1.webp](assets/leetcode_daily_images/4c237922.webp)
+![1.webp](/assets/leetcode_daily_images/4c237922.webp)
 
 #### Join me on Telegram
 
@@ -43066,7 +43066,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14112024-2064-minimized-maximum-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/CFvh7vrvPU8)
 [deep-dive](https://notebooklm.google.com/notebook/1d1e496d-c3fa-40be-a27d-e8eb28fb6da4/audio)
-![1.webp](assets/leetcode_daily_images/21fb34c3.webp)
+![1.webp](/assets/leetcode_daily_images/21fb34c3.webp)
 
 #### Join me on Telegram
 
@@ -43148,7 +43148,7 @@ $$O(1)$$ for Binary Search, O(n) for Heap
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13112024-2563-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BFBDfbwV5ws)
 [deep-dive](https://notebooklm.google.com/notebook/0243e1e2-00c8-45aa-acdf-bc8a78b0a468/audio)
-![1.webp](assets/leetcode_daily_images/67dde262.webp)
+![1.webp](/assets/leetcode_daily_images/67dde262.webp)
 
 #### Join me on Telegram
 
@@ -43232,7 +43232,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12112024-2070-most-beautiful-item?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BnRaBTepoqI)
 [deep-dive](https://notebooklm.google.com/notebook/0c4ed67b-0c04-45cf-a66b-6f119fb889be/audio)
-![1.webp](assets/leetcode_daily_images/ac97a6c7.webp)
+![1.webp](/assets/leetcode_daily_images/ac97a6c7.webp)
 
 
 #### Join me on Telegram
@@ -43310,7 +43310,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11112024-2601-prime-subtraction-operation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zflptogb9Lc)
 [deep-dive](https://notebooklm.google.com/notebook/961ea1bd-c6c3-4439-8ce9-f821c746eec6/audio)
-![1.webp](assets/leetcode_daily_images/1840ac0e.webp)
+![1.webp](/assets/leetcode_daily_images/1840ac0e.webp)
 
 #### Join me on Telegram
 
@@ -43411,7 +43411,7 @@ $$O(n)$$ for sieve, $$O(1)$$ if precomputed
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10112024-3097-shortest-subarray-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8B3Zmw0GOrA)
 [deep-dive](https://notebooklm.google.com/notebook/9470a533-a1ff-42d7-a510-c8d62bcf1957/audio)
-![1.webp](assets/leetcode_daily_images/89eb8439.webp)
+![1.webp](/assets/leetcode_daily_images/89eb8439.webp)
 
 #### Join me on Telegram
 
@@ -43562,7 +43562,7 @@ Bonus solution without bits array:
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09112024-3133-minimum-array-end?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3HmHUjFnAaQ)
 [deep-dive](https://notebooklm.google.com/notebook/dce0d628-9057-4387-94e2-3ca94ac72db3/audio)
-![1.webp](assets/leetcode_daily_images/52113858.webp)
+![1.webp](/assets/leetcode_daily_images/52113858.webp)
 
 #### Join me on Telegram
 
@@ -43669,7 +43669,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08112024-1829-maximum-xor-for-each?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yoKp2xrbnk4)
 [deep-dive](https://notebooklm.google.com/notebook/430f6625-3c93-4df6-bd22-c150ce1ffa7e/audio)
-![1.webp](assets/leetcode_daily_images/a0c9429f.webp)
+![1.webp](/assets/leetcode_daily_images/a0c9429f.webp)
 
 #### Join me on Telegram
 
@@ -43744,7 +43744,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07112024-2275-largest-combination?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3UJslwuLjUQ)
 [deep-dive](https://notebooklm.google.com/notebook/c5dbea89-c1f6-4087-92e1-2062598087e6/audio)
-![1.webp](assets/leetcode_daily_images/91f2faf4.webp)
+![1.webp](/assets/leetcode_daily_images/91f2faf4.webp)
 
 #### Join me on Telegram
 
@@ -43834,7 +43834,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06112024-3011-find-if-array-can-be?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/jrefxBfNohY)
 [deep-dive](https://notebooklm.google.com/notebook/affe4998-8f56-4145-bb8b-c6381fc37b1a/audio)
-![1.webp](assets/leetcode_daily_images/5a098ede.webp)
+![1.webp](/assets/leetcode_daily_images/5a098ede.webp)
 
 #### Join me on Telegram
 
@@ -43942,7 +43942,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05112024-2914-minimum-number-of-changes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/itMLi9ZgkGo)
 [deep-dive](https://notebooklm.google.com/notebook/c7bb9b89-571e-4295-8a55-ff43b50b4e1d/audio)
-![1.webp](assets/leetcode_daily_images/e6d5624d.webp)
+![1.webp](/assets/leetcode_daily_images/e6d5624d.webp)
 
 #### Join me on Telegram
 
@@ -44019,7 +44019,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04112024-3163-string-compression?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/P2H4ZyAixYM)
 [deep-dive](https://notebooklm.google.com/notebook/ff73d536-c831-44ed-a245-e255307f5329/audio)
-![1.webp](assets/leetcode_daily_images/d4204c8a.webp)
+![1.webp](/assets/leetcode_daily_images/d4204c8a.webp)
 
 #### Join me on Telegram
 
@@ -44092,7 +44092,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03112024-796-rotate-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/gzfqK93qHsU)
 [deep-dive](https://notebooklm.google.com/notebook/0855ee84-03bf-4750-8cd4-33f9f3aa629b/audio)
-![1.webp](assets/leetcode_daily_images/bb0a5580.webp)
+![1.webp](/assets/leetcode_daily_images/bb0a5580.webp)
 
 #### Join me on Telegram
 
@@ -44197,7 +44197,7 @@ $$O(g)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02112024-2490-circular-sentence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_HnG4GtXQiM)
 [deep-dive](https://notebooklm.google.com/notebook/9969bc2e-289d-4344-82a6-89e0b6c9195e/audio)
-![1.webp](assets/leetcode_daily_images/73b3ec13.webp)
+![1.webp](/assets/leetcode_daily_images/73b3ec13.webp)
 
 #### Join me on Telegram
 
@@ -44258,7 +44258,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01112024-1957-delete-characters-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HiPJSO-zXi4)
 [deep-dive](https://notebooklm.google.com/notebook/bdc40caa-e083-4b86-b5e3-6425eef89cf6/audio)
-![1.webp](assets/leetcode_daily_images/222d5f7d.webp)
+![1.webp](/assets/leetcode_daily_images/222d5f7d.webp)
 
 #### Join me on Telegram
 
@@ -44320,7 +44320,7 @@ $$O(n)$$, or O(1) for in-place where language permits
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31102024-2463-minimum-total-distance?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/LEgNQMGFoA0)
 [deep-dive](https://notebooklm.google.com/notebook/0e4499eb-50d6-413e-838e-938deb7bc08b/audio)
-![1.webp](assets/leetcode_daily_images/c8eba8b2.webp)
+![1.webp](/assets/leetcode_daily_images/c8eba8b2.webp)
 
 #### Join me on Telegram
 
@@ -44413,7 +44413,7 @@ $$O(n^2)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30102024-1671-minimum-number-of-removals?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/O3m4k8IfX-Q)
 [deep-dive](https://notebooklm.google.com/notebook/7e40bd31-ba57-433b-a504-68ff09b0e26c/audio)
-![1.webp](assets/leetcode_daily_images/4df6d7da.webp)
+![1.webp](/assets/leetcode_daily_images/4df6d7da.webp)
 
 #### Join me on Telegram
 
@@ -44528,7 +44528,7 @@ $$O(n^2)$$ for `dp`, O(n) for the `lis`
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29102024-2684-maximum-number-of-moves?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/L8JW6qCp604)
 [deep-dive](https://notebooklm.google.com/notebook/5df8bab2-e6b8-4d6e-afd5-42299f1fee20/audio)
-![1.webp](assets/leetcode_daily_images/47783397.webp)
+![1.webp](/assets/leetcode_daily_images/47783397.webp)
 
 #### Join me on Telegram
 
@@ -44615,7 +44615,7 @@ $$O(nm)$$, can be optimized to just two columns O(n)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28102024-2501-longest-square-streak?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DwMk5yxD_hs)
 [deep-dive](https://notebooklm.google.com/notebook/d4e4dbca-8d04-400d-ba26-25de91bc2a86/audio)
-![1.webp](assets/leetcode_daily_images/f3ecfa04.webp)
+![1.webp](/assets/leetcode_daily_images/f3ecfa04.webp)
 
 #### Join me on Telegram
 
@@ -44706,7 +44706,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27102024-1277-count-square-submatrices?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Gj8Up_J5b9Q)
 [deep-dive](https://notebooklm.google.com/notebook/38118315-ea9f-40e9-9280-7db675a7287d/audio)
-![1.webp](assets/leetcode_daily_images/b0404eea.webp)
+![1.webp](/assets/leetcode_daily_images/b0404eea.webp)
 
 #### Problem TLDR
 
@@ -44780,7 +44780,7 @@ $$O(nm)$$ or O(1)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26102024-2458-height-of-binary-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Y4Uurs3uKVE)
 [deep-dive](https://notebooklm.google.com/notebook/e92984a2-e54f-40da-8815-9f04e9e40147/audio)
-![1.webp](assets/leetcode_daily_images/66e3f542.webp)
+![1.webp](/assets/leetcode_daily_images/66e3f542.webp)
 
 #### Join me on Telegram
 
@@ -44875,7 +44875,7 @@ $$O(n + q)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25102024-1233-remove-sub-folders?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-kPhrQHOPB8)
 [deep-dive](https://notebooklm.google.com/notebook/20a5fc9f-38f6-4c68-a0df-22d0f94445d8/audio)
-![1.webp](assets/leetcode_daily_images/981365dc.webp)
+![1.webp](/assets/leetcode_daily_images/981365dc.webp)
 
 #### Join me on Telegram
 
@@ -44949,7 +44949,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24102024-951-flip-equivalent-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EMLccalWwoM)
 [deep-dive](https://notebooklm.google.com/notebook/5ec499a5-88e0-414a-ac51-0966e590ca7b/audio)
-![1.webp](assets/leetcode_daily_images/4aaee878.webp)
+![1.webp](/assets/leetcode_daily_images/4aaee878.webp)
 
 #### Join me on Telegram
 
@@ -45022,7 +45022,7 @@ $$O(log(n))$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23102024-2641-cousins-in-binary-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ufs76WuWkfc)
 [deep-dive](https://notebooklm.google.com/notebook/88b46d2e-be13-47db-a2e6-f3a8a6dc7def/audio)
-![1.webp](assets/leetcode_daily_images/a99797be.webp)
+![1.webp](/assets/leetcode_daily_images/a99797be.webp)
 
 #### Join me on Telegram
 
@@ -45035,7 +45035,7 @@ Replace Tree's values with cousines sum #medium #bfs
 #### Intuition
 
 First, understand the problem, we only care about the current level's row:
-![img.jpg](assets/leetcode_daily_images/568a2c63.webp)
+![img.jpg](/assets/leetcode_daily_images/568a2c63.webp)
 
 Now, the task is to traverse Tree level by level and precompute the total `next level` sum and the `current parent's` sum.
 
@@ -45119,7 +45119,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22102024-2583-kth-largest-sum-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BT8DmUUSt68)
 [deep-dive](https://notebooklm.google.com/notebook/f1998c38-e84d-4ab3-b881-27b4982047a6/audio)
-![1.webp](assets/leetcode_daily_images/cd62d518.webp)
+![1.webp](/assets/leetcode_daily_images/cd62d518.webp)
 
 #### Join me on Telegram
 
@@ -45207,7 +45207,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21102024-1593-split-a-string-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6jBGCch6c9Q)
 [deep-dive](https://notebooklm.google.com/notebook/84e0bcbc-4940-43d1-bf49-a655f9cc4e20/audio)
-![1.webp](assets/leetcode_daily_images/8a7f0a17.webp)
+![1.webp](/assets/leetcode_daily_images/8a7f0a17.webp)
 
 #### Join me on Telegram
 
@@ -45284,7 +45284,7 @@ $$O(n)$$, for the recursion depth and a HashSet
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20102024-1106-parsing-a-boolean-expression?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RhgOr38_45w)
 [deep-dive](https://notebooklm.google.com/notebook/48f86377-7576-41c8-8280-06d8f824caf7/audio)
-![1.webp](assets/leetcode_daily_images/63264bec.webp)
+![1.webp](/assets/leetcode_daily_images/63264bec.webp)
 
 #### Join me on Telegram
 
@@ -45376,7 +45376,7 @@ $$O(n)$$ for the recursion depth or stack
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19102024-1545-find-kth-bit-in-nth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MoikypABASM)
 [deep-dive](https://notebooklm.google.com/notebook/bc35b197-c442-4a43-aeb6-53b386b8629f/audio)
-![1.webp](assets/leetcode_daily_images/e00d98b1.webp)
+![1.webp](/assets/leetcode_daily_images/e00d98b1.webp)
 
 #### Join me on Telegram
 
@@ -45523,7 +45523,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18102024-2044-count-number-of-maximum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5s8UMzStzZk)
 [deep-dive](https://notebooklm.google.com/notebook/af67e6ef-04a2-477a-aecb-c38c6bbd7134/audio)
-![1.webp](assets/leetcode_daily_images/f229c56a.webp)
+![1.webp](/assets/leetcode_daily_images/f229c56a.webp)
 
 #### Join me on Telegram
 
@@ -45594,7 +45594,7 @@ $$O(n)$$ for the recursion depth
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17102024-670-maximum-swap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/qq2cmVPrm7k)
 [deep-dive](https://notebooklm.google.com/notebook/251aab6e-edf5-4e41-92ba-71676711a55a/audio)
-![1.webp](assets/leetcode_daily_images/6f89f205.webp)
+![1.webp](/assets/leetcode_daily_images/6f89f205.webp)
 
 #### Join me on Telegram
 
@@ -45678,7 +45678,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16102024-1405-longest-happy-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5eLQ2sZAqmU)
 [deep-dive](https://notebooklm.google.com/notebook/58a17cf9-bde0-4656-9b12-6ebe0a26d62d/audio)
-![1.webp](assets/leetcode_daily_images/115c5315.webp)
+![1.webp](/assets/leetcode_daily_images/115c5315.webp)
 
 #### Join me on Telegram
 
@@ -45759,7 +45759,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/separate-black-and-white-balls/solutions/5914908/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15102024-2938-separate-black-and?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ptl7zYHaPx0)
-![1.webp](assets/leetcode_daily_images/4472c228.webp)
+![1.webp](/assets/leetcode_daily_images/4472c228.webp)
 
 #### Join me on Telegram
 
@@ -45832,7 +45832,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximal-score-after-applying-k-operations/solutions/5910552/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14102024-2530-maximal-score-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/tOYUyFQBJz8)
-![1.webp](assets/leetcode_daily_images/b4aa73f9.webp)
+![1.webp](/assets/leetcode_daily_images/b4aa73f9.webp)
 
 #### Join me on Telegram
 
@@ -45899,7 +45899,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/solutions/5906470/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13102024-632-smallest-range-covering?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rk_oN5WT9hc)
-![1.webp](assets/leetcode_daily_images/eacfe0b6.webp)
+![1.webp](/assets/leetcode_daily_images/eacfe0b6.webp)
 
 #### Join me on Telegram
 
@@ -45999,7 +45999,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/solutions/5902666/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12102024-2406-divide-intervals-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/A_Aq8b5uGj0)
-![1.webp](assets/leetcode_daily_images/6bdd537e.webp)
+![1.webp](/assets/leetcode_daily_images/6bdd537e.webp)
 
 #### Join me on Telegram
 
@@ -46084,7 +46084,7 @@ $$O(m)$$ or O(n)
 [blog post](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/solutions/5898579/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11102024-1942-the-number-of-the-smallest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MucA5ws2d6s)
-![1.webp](assets/leetcode_daily_images/73b0de50.webp)
+![1.webp](/assets/leetcode_daily_images/73b0de50.webp)
 
 #### Join me on Telegram
 
@@ -46179,7 +46179,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-width-ramp/solutions/5894777/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10102024-962-maximum-width-ramp?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/sGNhRD894sM)
-![1.webp](assets/leetcode_daily_images/aabe7b7a.webp)
+![1.webp](/assets/leetcode_daily_images/aabe7b7a.webp)
 
 #### Join me on Telegram
 
@@ -46270,7 +46270,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/5890400/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09102024-921-minimum-add-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vesQpdacg44)
-![1.webp](assets/leetcode_daily_images/f1b0223d.webp)
+![1.webp](/assets/leetcode_daily_images/f1b0223d.webp)
 
 #### Join me on Telegram
 
@@ -46337,7 +46337,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/solutions/5885284/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08102024-1963-minimum-number-of-swaps?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8HKy3tumvk0)
-![1.webp](assets/leetcode_daily_images/9fe3fe41.webp)
+![1.webp](/assets/leetcode_daily_images/9fe3fe41.webp)
 
 #### Join me on Telegram
 
@@ -46421,7 +46421,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/solutions/5880917/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07102024-2696-minimum-string-length?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Qwo3puWGmt0)
-![1.webp](assets/leetcode_daily_images/cfd5edcd.webp)
+![1.webp](/assets/leetcode_daily_images/cfd5edcd.webp)
 
 #### Join me on Telegram
 
@@ -46490,7 +46490,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sentence-similarity-iii/solutions/5877348/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06102024-1813-sentence-similarity?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mVnxpNPdCjk)
-![1.webp](assets/leetcode_daily_images/126e7c5e.webp)
+![1.webp](/assets/leetcode_daily_images/126e7c5e.webp)
 
 #### Join me on Telegram
 
@@ -46588,7 +46588,7 @@ $$O(1)$$ or O(n) for word split
 [blog post](https://leetcode.com/problems/permutation-in-string/solutions/5872376/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05102024-567-permutation-in-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Tw-qYBBot3M)
-![1.webp](assets/leetcode_daily_images/52addce6.webp)
+![1.webp](/assets/leetcode_daily_images/52addce6.webp)
 
 
 #### Join me on Telegram
@@ -46672,7 +46672,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/solutions/5867645/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04102024-2491-divide-players-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/IMtBoyesDc0)
-![1.webp](assets/leetcode_daily_images/f43437a5.webp)
+![1.webp](/assets/leetcode_daily_images/f43437a5.webp)
 
 #### Join me on Telegram
 
@@ -46767,7 +46767,7 @@ $$O(max)$$, max is 1000 in our case, or 2000 for the pair sum
 [blog post](https://leetcode.com/problems/make-sum-divisible-by-p/solutions/5863816/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03102024-1590-make-sum-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6MylEibVd_w)
-![1.webp](assets/leetcode_daily_images/e83a303e.webp)
+![1.webp](/assets/leetcode_daily_images/e83a303e.webp)
 
 #### Join me on Telegram 
 
@@ -46871,7 +46871,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/rank-transform-of-an-array/solutions/5859606/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02102024-1331-rank-transform-of-an?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3Ofm_5xSukc)
-![1.webp](assets/leetcode_daily_images/2dce6829.webp)
+![1.webp](/assets/leetcode_daily_images/2dce6829.webp)
 
 #### Join me on Telegram
 
@@ -46937,7 +46937,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/solutions/5855064/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01102024-1497-check-if-array-pairs?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/V416V8R_bKg)
-![1.webp](assets/leetcode_daily_images/8b5ce40b.webp)
+![1.webp](/assets/leetcode_daily_images/8b5ce40b.webp)
 
 #### Join me on Telegram
 
@@ -47026,7 +47026,7 @@ $$O(k)$$
 [blog post](https://leetcode.com/problems/design-a-stack-with-increment-operation/solutions/5850904/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30092024-1381-design-a-stack-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Y5hBYwmX8UU)
-![1.webp](assets/leetcode_daily_images/8e2db1f1.webp)
+![1.webp](/assets/leetcode_daily_images/8e2db1f1.webp)
 
 #### Join me on Telegram
 
@@ -47122,7 +47122,7 @@ public:
 [blog post](https://leetcode.com/problems/all-oone-data-structure/solutions/5848184/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29092024-432-all-oone-data-structure?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MCiKcc6NHn4)
-![1.webp](assets/leetcode_daily_images/354748c7.webp)
+![1.webp](/assets/leetcode_daily_images/354748c7.webp)
 
 #### Join me on Telegram
 
@@ -47264,7 +47264,7 @@ public:
 [blog post](https://leetcode.com/problems/design-circular-deque/solutions/5843028/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28092024-641-design-circular-deque?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/JfjotYX4hBw)
-![1.webp](assets/leetcode_daily_images/7e3b563e.webp)
+![1.webp](/assets/leetcode_daily_images/7e3b563e.webp)
 
 #### Join me on Telegram
 
@@ -47359,7 +47359,7 @@ public:
 [blog post](https://leetcode.com/problems/my-calendar-ii/solutions/5839078/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27092024-731-my-calendar-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2m1yNSj55-s)
-![1.webp](assets/leetcode_daily_images/156e9d88.webp)
+![1.webp](/assets/leetcode_daily_images/156e9d88.webp)
 
 #### Join me on Telegram
 
@@ -47448,7 +47448,7 @@ public:
 [blog post](https://leetcode.com/problems/my-calendar-i/solutions/5835486/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26092024-729-my-calendar-i?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YxGh9K-mt3A)
-![1.webp](assets/leetcode_daily_images/8a633779.webp)
+![1.webp](/assets/leetcode_daily_images/8a633779.webp)
 
 #### Join me on Telegram
 
@@ -47523,7 +47523,7 @@ public:
 [blog post](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/solutions/5831195/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25092024-2416-sum-of-prefix-scores?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/OnVfpPBdvTg)
-![1.webp](assets/leetcode_daily_images/8e00013a.webp)
+![1.webp](/assets/leetcode_daily_images/8e00013a.webp)
 
 #### Join me on Telegram
 
@@ -47619,7 +47619,7 @@ $$O(w)$$
 [blog post](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/solutions/5827088/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24092024-3043-find-the-length-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/FzLnzxGHP8U)
-![1.webp](assets/leetcode_daily_images/f52b0415.webp)
+![1.webp](/assets/leetcode_daily_images/f52b0415.webp)
 
 #### Join me on Telegram
 
@@ -47711,7 +47711,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/extra-characters-in-a-string/solutions/5823037/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23092024-2707-extra-characters-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ELGGNT4sQgE)
-![1.webp](assets/leetcode_daily_images/3c332312.webp)
+![1.webp](/assets/leetcode_daily_images/3c332312.webp)
 
 #### Join me on Telegram
 
@@ -47790,7 +47790,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/solutions/5819960/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22092024-440-k-th-smallest-in-lexicographical?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9k_BMYam9tU)
-![1.webp](assets/leetcode_daily_images/dd98f36f.webp)
+![1.webp](/assets/leetcode_daily_images/dd98f36f.webp)
 
 #### Join me on Telegram 
 
@@ -47886,7 +47886,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/lexicographical-numbers/solutions/5815677/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21092024-386-lexicographical-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2uTm__TVyP8)
-![1.webp](assets/leetcode_daily_images/e7bc3c04.webp)
+![1.webp](/assets/leetcode_daily_images/e7bc3c04.webp)
 
 #### Join me on Telegram
 
@@ -48003,7 +48003,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/shortest-palindrome/solutions/5811452/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20092024-214-shortest-palindrome?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rorbCSPcMPA)
-![1.webp](assets/leetcode_daily_images/1ffc62ee.webp)
+![1.webp](/assets/leetcode_daily_images/1ffc62ee.webp)
 
 #### Join me on Telegram
 
@@ -48149,7 +48149,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/different-ways-to-add-parentheses/solutions/5807534/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19092024-241-different-ways-to-add?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/bsa7yz36XTI)
-![1.webp](assets/leetcode_daily_images/f65bb9a4.webp)
+![1.webp](/assets/leetcode_daily_images/f65bb9a4.webp)
 
 #### Join me on Telegram
 
@@ -48237,7 +48237,7 @@ $$O(2^n)$$
 [blog post](https://leetcode.com/problems/largest-number/solutions/5803278/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18092024-179-largest-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aes3e4Az3To)
-![1.webp](assets/leetcode_daily_images/b8580999.webp)
+![1.webp](/assets/leetcode_daily_images/b8580999.webp)
 
 #### Join me on Telegram
 
@@ -48329,7 +48329,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/uncommon-words-from-two-sentences/solutions/5798216/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17092024-884-uncommon-words-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9u4npHO16fA)
-![1.webp](assets/leetcode_daily_images/d9de55d5.webp)
+![1.webp](/assets/leetcode_daily_images/d9de55d5.webp)
 
 #### Join me on Telegram
 
@@ -48393,7 +48393,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-time-difference/solutions/5793485/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16092024-539-minimum-time-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/NcooyRfl2xU)
-![1.webp](assets/leetcode_daily_images/4965e91a.webp)
+![1.webp](/assets/leetcode_daily_images/4965e91a.webp)
 
 #### Join me on Telegram
 
@@ -48476,7 +48476,7 @@ $$O(n)$$ or $$O(m)$$
 [blog post](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solutions/5789593/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15092024-1371-find-the-longest-substring?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ngmRfRO2vuo)
-![1.webp](assets/leetcode_daily_images/e5dd61c6.webp)
+![1.webp](/assets/leetcode_daily_images/e5dd61c6.webp)
 
 #### Join me on Telegram
 
@@ -48564,7 +48564,7 @@ $$O(1)$$, `2^(vowels.size)` for `indices`, `vowels.size` for `bits`
 [blog post](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/solutions/5784642/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14092024-2419-longest-subarray-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_jzxy9V-q5o)
-![1.webp](assets/leetcode_daily_images/5f4362a6.webp)
+![1.webp](/assets/leetcode_daily_images/5f4362a6.webp)
 
 #### Join me on Telegram
 
@@ -48647,7 +48647,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/xor-queries-of-a-subarray/solutions/5779644/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13092024-1310-xor-queries-of-a-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/OCZCdN6uSaU)
-![1.webp](assets/leetcode_daily_images/6a1079cc.webp)
+![1.webp](/assets/leetcode_daily_images/6a1079cc.webp)
 
 #### Join me on Telegram
 
@@ -48711,7 +48711,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-the-number-of-consistent-strings/solutions/5774693/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12092024-1684-count-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/in268wIDmeg)
-![1.webp](assets/leetcode_daily_images/62e9e1e4.webp)
+![1.webp](/assets/leetcode_daily_images/62e9e1e4.webp)
 
 #### Join me on Telegram
 
@@ -48774,7 +48774,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/solutions/5769518/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11092024-2220-minimum-bit-flips-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BfaJBZ9Hjeo)
-![1.webp](assets/leetcode_daily_images/ee1ecdb0.webp)
+![1.webp](/assets/leetcode_daily_images/ee1ecdb0.webp)
 
 #### Join me on Telegram
 
@@ -48856,7 +48856,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/solutions/5764441/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10092024-2807-insert-greatest-common?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MWSGV_ia5bg)
-![1.webp](assets/leetcode_daily_images/5dbd71c1.webp)
+![1.webp](/assets/leetcode_daily_images/5dbd71c1.webp)
 
 #### Join me on Telegram
 
@@ -48928,7 +48928,7 @@ $$O(n)$$ for recursive, $$O(1)$$ for the iterative implementation
 [blog post](https://leetcode.com/problems/spiral-matrix-iv/solutions/5758866/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09092024-2326-spiral-matrix-iv?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2sQQiX8fmd0)
-![1.webp](assets/leetcode_daily_images/5fda5c2d.webp)
+![1.webp](/assets/leetcode_daily_images/5fda5c2d.webp)
 
 #### Join me on Telegram
 
@@ -49011,7 +49011,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/split-linked-list-in-parts/solutions/5754533/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08092024-725-split-linked-list-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/epTmqqcpg3o)
-![1.webp](assets/leetcode_daily_images/a3833108.webp)
+![1.webp](/assets/leetcode_daily_images/a3833108.webp)
 
 #### Join me on Telegram
 
@@ -49095,7 +49095,7 @@ $$O(k)$$
 [blog post](https://leetcode.com/problems/linked-list-in-binary-tree/solutions/5749980/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07092024-1367-linked-list-in-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/NIIx34wsYMQ)
-![1.webp](assets/leetcode_daily_images/2ca10651.webp)
+![1.webp](/assets/leetcode_daily_images/2ca10651.webp)
 
 #### Join me on Telegram
 
@@ -49159,7 +49159,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/solutions/5745013/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06092024-3217-delete-nodes-from-linked?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/GJgnE6XAtYc)
-![1.webp](assets/leetcode_daily_images/7e4159ff.webp)
+![1.webp](/assets/leetcode_daily_images/7e4159ff.webp)
 
 #### Join me on Telegram
 
@@ -49236,7 +49236,7 @@ $$O(n)$$ for set
 [blog post](https://leetcode.com/problems/find-missing-observations/solutions/5739995/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05092024-2028-find-missing-observations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/0-9QMzPHc04)
-![1.webp](assets/leetcode_daily_images/a9b9dd7c.webp)
+![1.webp](/assets/leetcode_daily_images/a9b9dd7c.webp)
 
 #### Join me on Telegram
 
@@ -49319,7 +49319,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/walking-robot-simulation/solutions/5734958/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04092024-874-walking-robot-simulation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HX22acuqLXw)
-![1.webp](assets/leetcode_daily_images/fc9f72cc.webp)
+![1.webp](/assets/leetcode_daily_images/fc9f72cc.webp)
 
 #### Join me on Telegram
 
@@ -49401,7 +49401,7 @@ $$O(o)$$, `o` for obstacles
 [blog post](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/solutions/5729684/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03092024-1945-sum-of-digits-of-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/NVh63AsZek8)
-![1.webp](assets/leetcode_daily_images/cd4b51cb.webp)
+![1.webp](/assets/leetcode_daily_images/cd4b51cb.webp)
 
 #### Join me on Telegram
 
@@ -49468,7 +49468,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/solutions/5724001/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02092024-1894-find-the-student-that?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_8MT4fyjo-w)
-![1.webp](assets/leetcode_daily_images/325df625.webp)
+![1.webp](/assets/leetcode_daily_images/325df625.webp)
 
 #### Join me on Telegram
 
@@ -49534,7 +49534,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/convert-1d-array-into-2d-array/solutions/5719190/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01092024-2022-convert-1d-array-into?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2t8cOCmN1JU)
-![1.webp](assets/leetcode_daily_images/1224165e.webp)
+![1.webp](/assets/leetcode_daily_images/1224165e.webp)
 
 #### Join me on Telegram
 
@@ -49600,7 +49600,7 @@ $$O(n x m)$$
 [blog post](https://leetcode.com/problems/path-with-maximum-probability/solutions/5713978/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31082024-1514-path-with-maximum-probability?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yrc4aAnOp-g)
-![1.webp](assets/leetcode_daily_images/707c66d5.webp)
+![1.webp](/assets/leetcode_daily_images/707c66d5.webp)
 
 #### Join me on Telegram
 
@@ -49665,7 +49665,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/modify-graph-edge-weights/solutions/5709968/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30082024-2699-modify-graph-edge-weights?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uX2Y_5P5b0s)
-![1.webp](assets/leetcode_daily_images/372d25c5.webp)
+![1.webp](/assets/leetcode_daily_images/372d25c5.webp)
 
 #### Join me on Telegram
 
@@ -49680,13 +49680,13 @@ Assign vacant `-1` weight in graph to make shorted path equal `target` #hard #gr
 This is a kind of hard-hard problem. (and I failed it and have a hard time to understand the solution).
 
 Some thoughts: 
-![b.png](assets/leetcode_daily_images/7c01a8c7.webp)
+![b.png](/assets/leetcode_daily_images/7c01a8c7.webp)
 
 * we should consider only the shortest paths
 * shortest means we considering the weights (not just distances)
 
 One corner case:
-![a.png](assets/leetcode_daily_images/98f0c9c7.webp)
+![a.png](/assets/leetcode_daily_images/98f0c9c7.webp)
 * we can't just choose `any` paths that equal to `target`, our path should be the shortest one
 
 (At this point a gave up and checked @voturbac's solution)
@@ -49780,7 +49780,7 @@ $$O(EV)$$
 [blog post](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/solutions/5705615/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29082024-947-most-stones-removed?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/r787T_UaceQ)
-![1.webp](assets/leetcode_daily_images/74951895.webp)
+![1.webp](/assets/leetcode_daily_images/74951895.webp)
 
 #### Join me on Telegram
 
@@ -49794,7 +49794,7 @@ Count islands of intersecting x and y #medium #union-find
 
 The first intuition is to build a graph of connected dots and try to explore them.
 
-![2.png](assets/leetcode_daily_images/dc958a82.webp)
+![2.png](/assets/leetcode_daily_images/dc958a82.webp)
 
 After some meditation (or using a hint), one can see that all the connected dots are removed. Union-Find helps to find the connected islands.
 
@@ -49845,7 +49845,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-sub-islands/solutions/5701082/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28082024-1905-count-sub-islands?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kOc13waUpaE)
-![1.webp](assets/leetcode_daily_images/f980e264.webp)
+![1.webp](/assets/leetcode_daily_images/f980e264.webp)
 
 #### Join me on Telegram
 
@@ -49914,7 +49914,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/path-with-maximum-probability/solutions/5696750/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27082024-1514-path-with-maximum-probability?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HmtraQZOI80)
-![1.webp](assets/leetcode_daily_images/e998cf6b.webp)
+![1.webp](/assets/leetcode_daily_images/e998cf6b.webp)
 
 #### Join me on Telegram
 
@@ -49986,7 +49986,7 @@ $$O(EV)$$
 [blog post](https://leetcode.com/problems/n-ary-tree-postorder-traversal/solutions/5691953/kotlin-c/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26082024-590-n-ary-tree-postorder?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5bYjDsxhduU)
-![1.webp](assets/leetcode_daily_images/2bdd1dae.webp)
+![1.webp](/assets/leetcode_daily_images/2bdd1dae.webp)
 
 #### Join me on Telegram
 
@@ -50042,7 +50042,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/binary-tree-postorder-traversal/solutions/5687518/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25082024-145-binary-tree-postorder?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wpQtOupMIrU)
-![1.webp](assets/leetcode_daily_images/1c6339c0.webp)
+![1.webp](/assets/leetcode_daily_images/1c6339c0.webp)
 
 #### Problem TLDR
 
@@ -50144,7 +50144,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-the-closest-palindrome/solutions/5683025/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24082024-564-find-the-closest-palindrome?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KEopNyW4e_U)
-![1.webp](assets/leetcode_daily_images/c77e4f0c.webp)
+![1.webp](/assets/leetcode_daily_images/c77e4f0c.webp)
 
 #### Join me on Telegram
 
@@ -50248,7 +50248,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/fraction-addition-and-subtraction/solutions/5678060/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23082024-592-fraction-addition-and?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pycLsCkzhAQ)
-![1.webp](assets/leetcode_daily_images/9462af36.webp)
+![1.webp](/assets/leetcode_daily_images/9462af36.webp)
 
 #### Join me on Telegram
 
@@ -50324,7 +50324,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-complement/solutions/5672424/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22082024-476-number-complement?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Q4Xoe2zkJGo)
-![1.webp](assets/leetcode_daily_images/0eb0ffdf.webp)
+![1.webp](/assets/leetcode_daily_images/0eb0ffdf.webp)
 
 #### Join me on Telegram
 
@@ -50382,7 +50382,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/strange-printer/solutions/5667966/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21082024-664-strange-printer?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/g9BtEFTis3Q)
-![1.webp](assets/leetcode_daily_images/556cb29f.webp)
+![1.webp](/assets/leetcode_daily_images/556cb29f.webp)
 
 #### Join me on Telegram
 
@@ -50471,7 +50471,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/stone-game-ii/solutions/5663455/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20082024-1140-stone-game-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/0Tq1PVcx26I)
-![1.webp](assets/leetcode_daily_images/a5f076bb.webp)
+![1.webp](/assets/leetcode_daily_images/a5f076bb.webp)
 
 #### Join me on Telegram
 
@@ -50537,7 +50537,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/2-keys-keyboard/solutions/5658803/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19082024-650-2-keys-keyboard?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ifG3rihFVjo)
-![1.webp](assets/leetcode_daily_images/0c2bc192.webp)
+![1.webp](/assets/leetcode_daily_images/0c2bc192.webp)
 
 #### Join me on Telegram
 
@@ -50595,7 +50595,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/ugly-number-ii/solutions/5653905/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18082024-264-ugly-number-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Xd5bzjQlp1U)
-![1.webp](assets/leetcode_daily_images/ee071348.webp)
+![1.webp](/assets/leetcode_daily_images/ee071348.webp)
 
 #### Join me on Telegram
 
@@ -50662,7 +50662,7 @@ $$O(n)$$ for the TreeSet, $$O(1)$$ for the clever
 [blog post](https://leetcode.com/problems/maximum-number-of-points-with-cost/solutions/5648932/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17082024-1937-maximum-number-of-points?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9CVwO4CdxD0)
-![1.webp](assets/leetcode_daily_images/33bb9868.webp)
+![1.webp](/assets/leetcode_daily_images/33bb9868.webp)
 
 #### Join me on Telegram
 
@@ -50675,12 +50675,12 @@ Max top-down path sum with column diff in 2D matrix #medium #dynamic_programming
 #### Intuition
 
 Let's observer all possible paths:
-![2.webp](assets/leetcode_daily_images/b08c144c.webp)
+![2.webp](/assets/leetcode_daily_images/b08c144c.webp)
 
 We only need the previous row, where each cell must be just a maximum of all incoming paths. For each cell we must check all the cells from the previous row. This will take O(row * col * row)
 
 Let's observe how the maximum behaves when we walking on the `x` coordinate:
-![3.webp](assets/leetcode_daily_images/b386c6a6.webp)
+![3.webp](/assets/leetcode_daily_images/b386c6a6.webp)
 As we see, the maximum is decreased each time by `one`, until it meets a bigger number. We can use this, but we lose all the right-to-left maximums, so let's walk both ways.
 
 #### Approach
@@ -50740,7 +50740,7 @@ $$O(r)$$
 [blog post](https://leetcode.com/problems/maximum-distance-in-arrays/solutions/5643627/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16082024-624-maximum-distance-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/F4VCW4tqreM)
-![1.webp](assets/leetcode_daily_images/9de66bce.webp)
+![1.webp](/assets/leetcode_daily_images/9de66bce.webp)
 
 #### Join me on Telegram
 
@@ -50800,7 +50800,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15082024-860-lemonade-change?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Aq1G1oqHrV0)
 
-![1.webp](assets/leetcode_daily_images/94260180.webp)
+![1.webp](/assets/leetcode_daily_images/94260180.webp)
 
 #### Join me on Telegram
 
@@ -50863,7 +50863,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-k-th-smallest-pair-distance/solutions/5634024/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14082024-719-find-k-th-smallest-pair?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UKTevw63isw)
-![1.webp](assets/leetcode_daily_images/ef68df90.webp)
+![1.webp](/assets/leetcode_daily_images/ef68df90.webp)
 
 #### Join me on Telegram
 
@@ -50958,7 +50958,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/combination-sum-ii/solutions/5629297/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13082024-40-combination-sum-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ikn6xyVEQAQ)
-![1.webp](assets/leetcode_daily_images/67a2e282.webp)
+![1.webp](/assets/leetcode_daily_images/67a2e282.webp)
 
 #### Join me on Telegram
 
@@ -51032,7 +51032,7 @@ $$O(n^n)$$
 [blog post](https://leetcode.com/problems/kth-largest-element-in-a-stream/solutions/5624559/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12082024-703-kth-largest-element?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Mw92X1fITu8)
-![1.webp](assets/leetcode_daily_images/df5b5152.webp)
+![1.webp](/assets/leetcode_daily_images/df5b5152.webp)
 
 #### Problem TLDR
 
@@ -51089,7 +51089,7 @@ impl KthLargest {
 [blog post](https://open.substack.com/pub/dmitriisamoilenko/p/11082024-1568-minimum-number-of-days?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11082024-1568-minimum-number-of-days?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/zx9Hi0rY_Qg)
-![1.webp](assets/leetcode_daily_images/58756713.webp)
+![1.webp](/assets/leetcode_daily_images/58756713.webp)
 
 #### Join me on Telegram
 
@@ -51167,7 +51167,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/regions-cut-by-slashes/solutions/5615947/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10082024-959-regions-cut-by-slashes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UHEK2hSWhpg)
-![1.webp](assets/leetcode_daily_images/2eb066ac.webp)
+![1.webp](/assets/leetcode_daily_images/2eb066ac.webp)
 
 #### Join me on Telegram
 
@@ -51180,9 +51180,9 @@ Count islands divided by '\' and '/' in 2D matrix #medium #union-find
 #### Intuition
 
 Let's divide each cell into four parts: top, right, bottom and left.
-![2024-08-10_10-05.png](assets/leetcode_daily_images/10794669.webp)
+![2024-08-10_10-05.png](/assets/leetcode_daily_images/10794669.webp)
 Assign a number for each subcell: 0, 1, 2 and 3.
-![2024-08-10_10-25.png](assets/leetcode_daily_images/a959f1f3.webp)
+![2024-08-10_10-25.png](/assets/leetcode_daily_images/a959f1f3.webp)
 Now, connect cells that are not divided by symbols `/` or `\` and count how many connected components there are. Union-Find is a perfect helper for this task.
 
 #### Approach
@@ -51242,7 +51242,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/magic-squares-in-grid/solutions/5610738/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09082024-840-magic-squares-in-grid?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/QS6YaYDPBxE)
-![1.webp](assets/leetcode_daily_images/7b923636.webp)
+![1.webp](/assets/leetcode_daily_images/7b923636.webp)
 
 #### Join me on Telegram
 
@@ -51319,7 +51319,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/spiral-matrix-iii/solutions/5605695/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08082024-885-spiral-matrix-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/OF5c4Scj3FI)
-![1.webp](assets/leetcode_daily_images/67ea622a.webp)
+![1.webp](/assets/leetcode_daily_images/67ea622a.webp)
 
 #### Join me on Telegram
 
@@ -51334,7 +51334,7 @@ https://t.me/leetcode_daily_unstoppable/696
 One way to write this simulation is to walk over an imaginary path and add the items only when the paths are within the matrix.
 
 We can use a `direction` variable and decide on when to rotate and what to do with an `x` and `y`. Or we can manually iterate in a loop over each side. We should keep the side length `d` and increase it on each cycle of the spiral.
-![1.webp](assets/leetcode_daily_images/5bfb4fb9.webp)
+![1.webp](/assets/leetcode_daily_images/5bfb4fb9.webp)
 
 
 #### Approach
@@ -51389,7 +51389,7 @@ $$O(rc)$$
 [blog post](https://leetcode.com/problems/integer-to-english-words/solutions/5600868/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07082024-273-integer-to-english-words?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/bBIhV0dGIJM)
-![1.webp](assets/leetcode_daily_images/9ece81de.webp)
+![1.webp](/assets/leetcode_daily_images/9ece81de.webp)
 
 #### Join me on Telegram
 
@@ -51469,7 +51469,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/solutions/5594921/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06082024-3016-minimum-number-of-pushes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5U4Q0dnSlrA)
-![1.webp](assets/leetcode_daily_images/6195bdbd.webp)
+![1.webp](/assets/leetcode_daily_images/6195bdbd.webp)
 
 #### Join me on Telegram
 
@@ -51522,7 +51522,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/kth-distinct-string-in-an-array/solutions/5588979/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05082024-2053-kth-distinct-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/FAn8jqZw2B8)
-![1.webp](assets/leetcode_daily_images/81046b43.webp)
+![1.webp](/assets/leetcode_daily_images/81046b43.webp)
 
 #### Join me on Telegram
 
@@ -51575,7 +51575,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/solutions/5584473/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04082024-1508-range-sum-of-sorted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-nliAu95NmI)
-![1.webp](assets/leetcode_daily_images/50d5d4bb.webp)
+![1.webp](/assets/leetcode_daily_images/50d5d4bb.webp)
 
 #### Join me on Telegram
 
@@ -51690,7 +51690,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/solutions/5577994/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03082024-1460-make-two-arrays-equal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/sEkfoM-0bAE)
-![2024-08-03_09-07_1.webp](assets/leetcode_daily_images/829e7eac.webp)
+![2024-08-03_09-07_1.webp](/assets/leetcode_daily_images/829e7eac.webp)
 
 #### Join me on Telegram
 
@@ -51737,7 +51737,7 @@ $$O(n)$$ and $$O(1)$$ for sorting
 [blog post](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/solutions/5572682/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02082024-2134-minimum-swaps-to-group?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ahatWzvgMKw)
-![2024-08-02_08-58_1.webp](assets/leetcode_daily_images/cee9bb8d.webp)
+![2024-08-02_08-58_1.webp](/assets/leetcode_daily_images/cee9bb8d.webp)
 
 #### Join me on Telegram
 
@@ -51819,7 +51819,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-of-senior-citizens/solutions/5566623/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01082024-2678-number-of-senior-citizens?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/sIosDHiKyKE)
-![2024-08-01_08-08_1.webp](assets/leetcode_daily_images/9318997b.webp)
+![2024-08-01_08-08_1.webp](/assets/leetcode_daily_images/9318997b.webp)
 
 #### Join me on Telegram
 
@@ -51872,7 +51872,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/filling-bookcase-shelves/solutions/5561897/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31072024-1105-filling-bookcase-shelves?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/09bHi01l9GY)
-![2024-07-31_08-48_1.webp](assets/leetcode_daily_images/d9b28e67.webp)
+![2024-07-31_08-48_1.webp](/assets/leetcode_daily_images/d9b28e67.webp)
 
 #### Join me on Telegram
 
@@ -51939,7 +51939,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/solutions/5556762/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30072024-1653-minimum-deletions-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/7yJlzVZqSG0)
-![2024-07-30_08-26_1.webp](assets/leetcode_daily_images/cf4a9533.webp)
+![2024-07-30_08-26_1.webp](/assets/leetcode_daily_images/cf4a9533.webp)
 
 #### Join me on Telegram
 
@@ -51998,7 +51998,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-number-of-teams/solutions/5551372/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29072024-1395-count-number-of-teams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/CCdEKYJvQAc)
-![2024-07-29_07-57_1.webp](assets/leetcode_daily_images/92b32b10.webp)
+![2024-07-29_07-57_1.webp](/assets/leetcode_daily_images/92b32b10.webp)
 
 #### Join me on Telegram
 
@@ -52056,7 +52056,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/second-minimum-time-to-reach-destination/solutions/5547657/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28072024-2045-second-minimum-time?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/CcAep5fdevc)
-![2024-07-28_11-29_1.webp](assets/leetcode_daily_images/e6ec6132.webp)
+![2024-07-28_11-29_1.webp](/assets/leetcode_daily_images/e6ec6132.webp)
 
 #### Join me on Telegram
 
@@ -52135,7 +52135,7 @@ $$O(E + V)$$
 [blog post](https://leetcode.com/problems/minimum-cost-to-convert-string-i/solutions/5542204/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27072024-2976-minimum-cost-to-convert?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kXYfIcfvkQc)
-![2024-07-27_09-25_1.webp](assets/leetcode_daily_images/b20cd598.webp)
+![2024-07-27_09-25_1.webp](/assets/leetcode_daily_images/b20cd598.webp)
 
 #### Join me on Telegram
 
@@ -52208,7 +52208,7 @@ $$O(a^2)$$
 [blog post](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/solutions/5537457/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26072024-1334-find-the-city-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mihonSEPLbg)
-![2024-07-26_08-59_1.webp](assets/leetcode_daily_images/1e46d79f.webp)
+![2024-07-26_08-59_1.webp](/assets/leetcode_daily_images/1e46d79f.webp)
 
 #### Join me on Telegram
 
@@ -52221,7 +52221,7 @@ Node with minimum neighbors by `distanceThreshold` #medium #bfs #FloydWarshall
 #### Intuition
 
 There are only 100 nodes maximum, so we can try to find all neighbors for each node independently. Depth-First Search will not work: some nodes can be revisited with better shorter paths. So, let's use the Breadth-First Search.
-![2024-07-26_08-08.webp](assets/leetcode_daily_images/a0b42402.webp)
+![2024-07-26_08-08.webp](/assets/leetcode_daily_images/a0b42402.webp)
 
 Another way is to use Floyd-Warshall algorithm. 
 https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
@@ -52289,7 +52289,7 @@ $$O(V + E)$$ for BFS, $$O(V^2)$$ for Floyd-Warshall
 [blog post](https://leetcode.com/problems/sort-an-array/solutions/5532420/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25072024-912-sort-an-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6xFxZ6ybaN0)
-![2024-07-25_09-51.webp](assets/leetcode_daily_images/a73e09be.webp)
+![2024-07-25_09-51.webp](/assets/leetcode_daily_images/a73e09be.webp)
 
 #### Join me on Telegram
 
@@ -52363,7 +52363,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/sort-the-jumbled-numbers/solutions/5526254/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24072024-2191-sort-the-jumbled-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xW8ZM1CQpg8)
-![2024-07-24_08-29_1.webp](assets/leetcode_daily_images/8013c887.webp)
+![2024-07-24_08-29_1.webp](/assets/leetcode_daily_images/8013c887.webp)
 
 #### Join me on Telegram
 
@@ -52429,7 +52429,7 @@ $$O(1)$$, O(n) for Kotlin, as it didn't have a proper sorting method for IntArra
 [blog post](https://leetcode.com/problems/sort-array-by-increasing-frequency/solutions/5520670/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23072024-1636-sort-array-by-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZVR0kndyTnY)
-![2024-07-23_08-14.webp](assets/leetcode_daily_images/ce9bd5be.webp)
+![2024-07-23_08-14.webp](/assets/leetcode_daily_images/ce9bd5be.webp)
 
 #### Join me on Telegram
 
@@ -52486,7 +52486,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sort-the-people/solutions/5514920/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22072024-2418-sort-the-people?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pw5pyrufU-8)
-![2024-07-22_08-22_1.webp](assets/leetcode_daily_images/f07b367e.webp)
+![2024-07-22_08-22_1.webp](/assets/leetcode_daily_images/f07b367e.webp)
 
 #### Join me on Telegram
 
@@ -52539,7 +52539,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/build-a-matrix-with-conditions/solutions/5510359/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21072024-2392-build-a-matrix-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EPeWoa0srZ8)
-![2024-07-21_10-34_1.webp](assets/leetcode_daily_images/e85427c6.webp)
+![2024-07-21_10-34_1.webp](/assets/leetcode_daily_images/e85427c6.webp)
 
 #### Join me on Telegram
 
@@ -52643,7 +52643,7 @@ $$O(E + k^2)$$
 [blog post](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/solutions/5504663/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20072024-1605-find-valid-matrix-given?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2kBUwnSGvsg)
-![2024-07-20_10-03_1.webp](assets/leetcode_daily_images/035a70ee.webp)
+![2024-07-20_10-03_1.webp](/assets/leetcode_daily_images/035a70ee.webp)
 
 #### Join me on Telegram
 
@@ -52657,7 +52657,7 @@ Matrix from rows and cols sums #medium
 
 Let's try to build such a matrix with our bare hands, pen and paper:
 
-![2024-07-20_09-53.webp](assets/leetcode_daily_images/7ad77366.webp)
+![2024-07-20_09-53.webp](/assets/leetcode_daily_images/7ad77366.webp)
 
 I have noticed some interesting facts about this problem:
 * there are several valid matrices, all depend on the numbers you choose first
@@ -52705,7 +52705,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/lucky-numbers-in-a-matrix/solutions/5499164/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19072024-1380-lucky-numbers-in-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YeTq-68Fo30)
-![2024-07-19_08-22_1.webp](assets/leetcode_daily_images/1f1510c4.webp)
+![2024-07-19_08-22_1.webp](/assets/leetcode_daily_images/1f1510c4.webp)
 
 #### Join me on Telegram
 
@@ -52757,7 +52757,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/solutions/5494382/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18072024-1530-number-of-good-leaf?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KhACBS_RW78)
-![2024-07-18_08-49_1.webp](assets/leetcode_daily_images/a3cc3b94.webp)
+![2024-07-18_08-49_1.webp](/assets/leetcode_daily_images/a3cc3b94.webp)
 
 #### Join me on Telegram
 
@@ -52770,7 +52770,7 @@ Count at most `distance` paths between leaves #medium #tree
 #### Intuition
 
 Let's move up from leaves and see what information we should preserve:
-![2024-07-18_08-01.webp](assets/leetcode_daily_images/a583def2.webp)
+![2024-07-18_08-01.webp](/assets/leetcode_daily_images/a583def2.webp)
 * there are at most 10 levels for the given problem set
 * we should compare the `left` node levels counts with the `right` node
 * we should check all levels combinations 1..10 for the left, and 1..10 for the right
@@ -52830,7 +52830,7 @@ $$O(log^2(n))$$, log(n) for the call stack, and at each level we hold log(n) arr
 [blog post](https://leetcode.com/problems/delete-nodes-and-return-forest/solutions/5489110/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17072024-1110-delete-nodes-and-return?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/C9CDLWLa3mo)
-![2024-07-17_08-51.webp](assets/leetcode_daily_images/99f49ec3.webp)
+![2024-07-17_08-51.webp](/assets/leetcode_daily_images/99f49ec3.webp)
 
 #### Join me on Telegram
 
@@ -52895,7 +52895,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/solutions/5484259/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16072024-2096-step-by-step-directions?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wjZfcaBbt4Y)
-![2024-07-16_09-53_1.webp](assets/leetcode_daily_images/c0981e22.webp)
+![2024-07-16_09-53_1.webp](/assets/leetcode_daily_images/c0981e22.webp)
 
 #### Join me on Telegram
 
@@ -52973,7 +52973,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15072024-2196-create-binary-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EsKyk_LN9Wk)
-![2024-07-15_08-14.webp](assets/leetcode_daily_images/6f42026c.webp)
+![2024-07-15_08-14.webp](/assets/leetcode_daily_images/6f42026c.webp)
 
 #### Join me on Telegram
 
@@ -53038,7 +53038,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/number-of-atoms/solutions/5474231/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14072024-726-number-of-atoms?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pDwo87O30g0)
-![2024-07-14_09-58_1.webp](assets/leetcode_daily_images/921e81a5.webp)
+![2024-07-14_09-58_1.webp](/assets/leetcode_daily_images/921e81a5.webp)
 
 #### Join me on Telegram
 
@@ -53120,7 +53120,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/robot-collisions/solutions/5469066/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13072024-2751-robot-collisions?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wsHxfYzGJPg)
-![2024-07-13_09-40_1.webp](assets/leetcode_daily_images/d68c6515.webp)
+![2024-07-13_09-40_1.webp](/assets/leetcode_daily_images/d68c6515.webp)
 
 #### Join me on Telegram
 
@@ -53201,7 +53201,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-score-from-removing-substrings/solutions/5464003/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12072024-1717-maximum-score-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EPDGeeTfNeY)
-![2024-07-12_08-17_1.webp](assets/leetcode_daily_images/44cac0c1.webp)
+![2024-07-12_08-17_1.webp](/assets/leetcode_daily_images/44cac0c1.webp)
 
 
 #### Join me on Telegram
@@ -53296,7 +53296,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/5458461/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11072024-1190-reverse-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/WyrfNvZXLHc)
-![2024-07-11_08-54_1.webp](assets/leetcode_daily_images/ae90d3dd.webp)
+![2024-07-11_08-54_1.webp](/assets/leetcode_daily_images/ae90d3dd.webp)
 
 #### Join me on Telegram
 
@@ -53367,7 +53367,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/crawler-log-folder/solutions/5451533/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10072024-1598-crawler-log-folder?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/RUzb5ZbMcPw)
-![2024-07-10_07-40_1.webp](assets/leetcode_daily_images/c707f359.webp)
+![2024-07-10_07-40_1.webp](/assets/leetcode_daily_images/c707f359.webp)
 
 #### Join me on Telegram
 
@@ -53418,7 +53418,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/average-waiting-time/solutions/5444506/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/9072024-1701-average-waiting-time?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/s5KyVW1BZXI)
-![2024-07-09_07-43_1.webp](assets/leetcode_daily_images/df5d5324.webp)
+![2024-07-09_07-43_1.webp](/assets/leetcode_daily_images/df5d5324.webp)
 
 #### Join me on Telegram
 
@@ -53474,7 +53474,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-winner-of-the-circular-game/solutions/5438770/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/8072024-1823-find-the-winner-of-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3otcyprlQEc)
-![2024-07-08_08-27.webp](assets/leetcode_daily_images/fb07c58b.webp)
+![2024-07-08_08-27.webp](/assets/leetcode_daily_images/fb07c58b.webp)
 
 #### Join me on Telegram
 
@@ -53555,7 +53555,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/water-bottles/solutions/5433062/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/7072024-1518-water-bottles?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uRBtuUsbw0s)
-![2024-07-07_09-25_1.webp](assets/leetcode_daily_images/921ab4f1.webp)
+![2024-07-07_09-25_1.webp](/assets/leetcode_daily_images/921ab4f1.webp)
 
 #### Join me on Telegram
 
@@ -53625,7 +53625,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/pass-the-pillow/solutions/5425379/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/6072024-2582-pass-the-pillow?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/CGu-DEBRZEA)
-![2024-07-06_08-32_1.webp](assets/leetcode_daily_images/982bee2f.webp)
+![2024-07-06_08-32_1.webp](/assets/leetcode_daily_images/982bee2f.webp)
 
 #### Join me on Telegram
 
@@ -53708,7 +53708,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/solutions/5419507/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/5072024-2058-find-the-minimum-and?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Q3X4ECBK9JQ)
-![2024-07-05_09-00_1.webp](assets/leetcode_daily_images/9b9d260e.webp)
+![2024-07-05_09-00_1.webp](/assets/leetcode_daily_images/9b9d260e.webp)
 
 #### Join me on Telegram
 
@@ -53779,7 +53779,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/merge-nodes-in-between-zeros/solutions/5413576/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/4072024-2181-merge-nodes-in-between?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/hWnzasAUV08)
-![2024-07-04_09-23.webp](assets/leetcode_daily_images/e665a041.webp)
+![2024-07-04_09-23.webp](/assets/leetcode_daily_images/e665a041.webp)
 
 https://t.me/leetcode_daily_unstoppable/659
 
@@ -53847,7 +53847,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/solutions/5406773/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/3072024-1509-minimum-difference-between?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/A3v-txSOmuQ)
-![2024-07-03_07-33_1.webp](assets/leetcode_daily_images/f425a138.webp)
+![2024-07-03_07-33_1.webp](/assets/leetcode_daily_images/f425a138.webp)
 
 
 #### Join me on Telegram 
@@ -53924,7 +53924,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/intersection-of-two-arrays-ii/solutions/5400615/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/2072024-350-intersection-of-two-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/qya4KzC40OQ)
-![2024-07-02_07-44_1.webp](assets/leetcode_daily_images/c8c75c2e.webp)
+![2024-07-02_07-44_1.webp](/assets/leetcode_daily_images/c8c75c2e.webp)
 
 #### Join me on Telegram
 
@@ -53978,7 +53978,7 @@ $$O(n)$$ for counting sort (n = 1000), O(1) for sort & two pointers
 [blog post](https://leetcode.com/problems/three-consecutive-odds/solutions/5394159/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/1072024-1550-three-consecutive-odds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/jnoO7yObgvE)
-![2024-07-01_07-12_1.webp](assets/leetcode_daily_images/f182a5d1.webp)
+![2024-07-01_07-12_1.webp](/assets/leetcode_daily_images/f182a5d1.webp)
 
 #### Join me on Telegram
 
@@ -54025,7 +54025,7 @@ $$O(1)$$ for Rust, O(n) for Kotlin, can be O(1) with `asSequence`.
 [blog post](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/solutions/5390506/kotiln-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30062024-1579-remove-max-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/jTf58qCm1-U)
-![2024-06-30_11-27.webp](assets/leetcode_daily_images/9ab1f681.webp)
+![2024-06-30_11-27.webp](/assets/leetcode_daily_images/9ab1f681.webp)
 
 #### Join me on Telegram
 
@@ -54097,7 +54097,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/solutions/5385624/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29062024-2192-all-ancestors-of-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/OwYS_oe6DWQ)
-![2024-06-29_08-11_1.webp](assets/leetcode_daily_images/d5177c89.webp)
+![2024-06-29_08-11_1.webp](/assets/leetcode_daily_images/d5177c89.webp)
 
 #### Join me on Telegram
 
@@ -54109,7 +54109,7 @@ List of ancestors in a DAG #medium #dfs #toposort
 
 #### Intuition
 
-![2024-06-29_08-14.webp](assets/leetcode_daily_images/a6750a0e.webp)
+![2024-06-29_08-14.webp](/assets/leetcode_daily_images/a6750a0e.webp)
 We can use Depth-First Search for each node, caching the result to not execute twice, but we should walk backwards from child to parent.
 
 Another solution is to walk from parents in a Topological Sort order and appending the results.
@@ -54166,7 +54166,7 @@ $$O(V^2 + E)$$ result takes the biggest space
 [blog post](https://leetcode.com/problems/maximum-total-importance-of-roads/solutions/5380529/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28062024-2285-maximum-total-importance?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/bsOXQ3vwlMg)
-![2024-06-28_06-37.webp](assets/leetcode_daily_images/d650482d.webp)
+![2024-06-28_06-37.webp](/assets/leetcode_daily_images/d650482d.webp)
 
 #### Join me on Telegram
 
@@ -54220,7 +54220,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-center-of-star-graph/solutions/5375299/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27062024-1791-find-center-of-star?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/oBFqZCzcyd8)
-![2024-06-27_06-48_1.webp](assets/leetcode_daily_images/5aae0615.webp)
+![2024-06-27_06-48_1.webp](/assets/leetcode_daily_images/5aae0615.webp)
 
 #### Join me on Telegram
 
@@ -54267,7 +54267,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/balance-a-binary-search-tree/solutions/5370166/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26062024-1382-balance-a-binary-search?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mg8PhviL2_k)
-![2024-06-26_06-42_1.webp](assets/leetcode_daily_images/bd9d9525.webp)
+![2024-06-26_06-42_1.webp](/assets/leetcode_daily_images/bd9d9525.webp)
 
 #### Join me on Telegram
 
@@ -54335,7 +54335,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/solutions/5364892/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25062024-1038-binary-search-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1z9Yicjf5bM)
-![2024-06-25_07-02_1.webp](assets/leetcode_daily_images/43e81aa0.webp)
+![2024-06-25_07-02_1.webp](/assets/leetcode_daily_images/43e81aa0.webp)
 
 #### Join me on Telegram
 
@@ -54349,7 +54349,7 @@ Aggregate Binary Search Tree from the right #medium #tree
 
 Just iterate from the tail in an inorder DFS traversal.
 
-![2024-06-25_06-24.webp](assets/leetcode_daily_images/b66e7615.webp)
+![2024-06-25_06-24.webp](/assets/leetcode_daily_images/b66e7615.webp)
 
 
 #### Approach
@@ -54392,7 +54392,7 @@ $$O(log(n))$$ for the call stack, however, it can be O(1) for the Morris Travers
 [blog post](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/solutions/5359962/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24062024-995-minimum-number-of-k?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Mxt2xfKHDTg)
-![2024-06-24_07-04_1.webp](assets/leetcode_daily_images/d4e07fcd.webp)
+![2024-06-24_07-04_1.webp](/assets/leetcode_daily_images/d4e07fcd.webp)
 
 #### Join me on Telegram
 
@@ -54473,7 +54473,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/solutions/5355419/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23062024-1438-longest-continuous?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/E9Z-SU8H0fU)
-![2024-06-23_07-19_1.webp](assets/leetcode_daily_images/0d3037bf.webp)
+![2024-06-23_07-19_1.webp](/assets/leetcode_daily_images/0d3037bf.webp)
 
 #### Join me on Telegram
 
@@ -54565,7 +54565,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-number-of-nice-subarrays/solutions/5349876/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22062024-1248-count-number-of-nice?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/oMp7BfPNCkg)
-![2024-06-22_07-18_1.webp](assets/leetcode_daily_images/9050df6f.webp)
+![2024-06-22_07-18_1.webp](/assets/leetcode_daily_images/9050df6f.webp)
 
 #### Join me on Telegram
 
@@ -54652,7 +54652,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/grumpy-bookstore-owner/solutions/5344521/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21062024-1052-grumpy-bookstore-owner?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/VOgbvWK3myc)
-![2024-06-21_07-07_1.webp](assets/leetcode_daily_images/8f7ff95a.webp)
+![2024-06-21_07-07_1.webp](/assets/leetcode_daily_images/8f7ff95a.webp)
 
 #### Join me on Telegram
 
@@ -54730,7 +54730,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/magnetic-force-between-two-balls/solutions/5339552/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20062024-1552-magnetic-force-between?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6UmtL0q_-Yw)
-![2024-06-20_06-26_1.webp](assets/leetcode_daily_images/235708cb.webp)
+![2024-06-20_06-26_1.webp](/assets/leetcode_daily_images/235708cb.webp)
 
 #### Join me no Telegram
 
@@ -54804,7 +54804,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/solutions/5334796/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19062024-1482-minimum-number-of-days?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MGRlPAJmtc4)
-![2024-06-19_06-00_1.webp](assets/leetcode_daily_images/72eac202.webp)
+![2024-06-19_06-00_1.webp](/assets/leetcode_daily_images/72eac202.webp)
 
 #### Join me on Telegram
 
@@ -54887,7 +54887,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/most-profit-assigning-work/solutions/5330161/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18062024-826-most-profit-assigning?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aYsi3nakmNk)
-![2024-06-18_07-15_1.webp](assets/leetcode_daily_images/274d7d04.webp)
+![2024-06-18_07-15_1.webp](/assets/leetcode_daily_images/274d7d04.webp)
 
 #### Join me on Telegram
 
@@ -54975,7 +54975,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sum-of-square-numbers/solutions/5324625/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17062024-633-sum-of-square-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8lKbxRUWyyQ)
-![2024-06-17_05-53.webp](assets/leetcode_daily_images/da7cca5d.webp)
+![2024-06-17_05-53.webp](/assets/leetcode_daily_images/da7cca5d.webp)
 
 #### Join me on Telegram
 
@@ -55042,7 +55042,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/patching-array/solutions/5319943/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16062024-330-patching-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/6j95rse_WRI)
-![2024-06-16_06-59_1.webp](assets/leetcode_daily_images/965c04a7.webp)
+![2024-06-16_06-59_1.webp](/assets/leetcode_daily_images/965c04a7.webp)
 
 #### Join me on Telegram
 
@@ -55129,7 +55129,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/ipo/solutions/5315389/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15062024-502-ipo?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/w1YDfTyy7vU)
-![2024-06-15_06-36_1.webp](assets/leetcode_daily_images/7c9a071f.webp)
+![2024-06-15_06-36_1.webp](/assets/leetcode_daily_images/7c9a071f.webp)
 
 #### Join me on Telegram
 
@@ -55198,7 +55198,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-increment-to-make-array-unique/solutions/5310347/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14062024-945-minimum-increment-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3hosp15Hy_8)
-![2024-06-14_06-25_1.webp](assets/leetcode_daily_images/6f693415.webp)
+![2024-06-14_06-25_1.webp](/assets/leetcode_daily_images/6f693415.webp)
 
 #### Join me on Telegram
 
@@ -55270,7 +55270,7 @@ $$O(1)$$, but O(n) for `sorted` in Kotlin
 [blog post](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/solutions/5304834/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13062024-2037-minimum-number-of-moves?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Fo-myk0njiU)
-![2024-06-13_06-42_1.webp](assets/leetcode_daily_images/3295fa23.webp)
+![2024-06-13_06-42_1.webp](/assets/leetcode_daily_images/3295fa23.webp)
 
 #### Join me on Telegram
 
@@ -55321,7 +55321,7 @@ $$O(n)$$ for Kotlin, O(1) for Rust solution
 [blog post](https://leetcode.com/problems/sort-colors/solutions/5299392/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12062024-75-sort-colors?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ybIEv9AYScU)
-![2024-06-12_08-17_1.webp](assets/leetcode_daily_images/ae1d10e5.webp)
+![2024-06-12_08-17_1.webp](/assets/leetcode_daily_images/ae1d10e5.webp)
 
 #### Join me on Telegram
 
@@ -55397,7 +55397,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/relative-sort-array/solutions/5292985/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11062024-1122-relative-sort-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/hBpNvGP8YYg)
-![2024-06-11_07-08.webp](assets/leetcode_daily_images/33f76331.webp)
+![2024-06-11_07-08.webp](/assets/leetcode_daily_images/33f76331.webp)
 
 #### Join me on Telegram
 
@@ -55451,7 +55451,7 @@ $$O(m)$$
 [blog post](https://leetcode.com/problems/height-checker/solutions/5287009/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10062024-1051-height-checker?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9HWfTXU-o4c)
-![2024-06-10_06-29_1.webp](assets/leetcode_daily_images/42842172.webp)
+![2024-06-10_06-29_1.webp](/assets/leetcode_daily_images/42842172.webp)
 
 #### Join me on Telegram
 
@@ -55500,7 +55500,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/subarray-sums-divisible-by-k/solutions/5281959/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09062024-974-subarray-sums-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/STAWZH_FmLc)
-![2024-06-09_06-36_1.webp](assets/leetcode_daily_images/3e01838e.webp)
+![2024-06-09_06-36_1.webp](/assets/leetcode_daily_images/3e01838e.webp)
 
 #### Join me on Telegram
 
@@ -55577,7 +55577,7 @@ $$O(k)$$
 [blog post](https://leetcode.com/problems/continuous-subarray-sum/solutions/5277558/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08062024-523-continuous-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/TLT-JYx7e0A)
-![2024-06-08_07-51_1.webp](assets/leetcode_daily_images/ee4e1491.webp)
+![2024-06-08_07-51_1.webp](/assets/leetcode_daily_images/ee4e1491.webp)
 
 #### Join me on Telegram
 
@@ -55660,7 +55660,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/replace-words/solutions/5272240/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07062024-648-replace-words?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/FAnZD16Ltw4)
-![2024-06-07_07-09_1.webp](assets/leetcode_daily_images/85ed0fcd.webp)
+![2024-06-07_07-09_1.webp](/assets/leetcode_daily_images/85ed0fcd.webp)
 
 #### Join me on Telegram
 
@@ -55729,7 +55729,7 @@ $$O(d + w)$$
 [blog post](https://leetcode.com/problems/hand-of-straights/solutions/5266860/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06062024-846-hand-of-straights?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ds03wmXeDd0)
-![2024-06-06_07-37_1.webp](assets/leetcode_daily_images/c998db04.webp)
+![2024-06-06_07-37_1.webp](/assets/leetcode_daily_images/c998db04.webp)
 
 #### Join me on Telegram
 
@@ -55812,7 +55812,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-common-characters/solutions/5261457/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05062024-1002-find-common-characters?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/DHo74a78GCU)
-![2024-06-05_07-42.webp](assets/leetcode_daily_images/7972e9c9.webp)
+![2024-06-05_07-42.webp](/assets/leetcode_daily_images/7972e9c9.webp)
 
 #### Join me on Telegram
 
@@ -55865,7 +55865,7 @@ $$O(1)$$, but can be O(n) to hold the result
 [blog post](https://leetcode.com/problems/longest-palindrome/solutions/5255875/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04062024-409-longest-palindrome?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rFm-0gOSYXc)
-![2024-06-04_07-01_1.webp](assets/leetcode_daily_images/231a47f8.webp)
+![2024-06-04_07-01_1.webp](/assets/leetcode_daily_images/231a47f8.webp)
 
 #### Join me on Telegram
 
@@ -55921,7 +55921,7 @@ $$O(1)$$, but O(n) for the `groupBy` solution, which can be optimized
 [blog post](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/solutions/5250254/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03062024-2486-append-characters-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UznTsb9zosc)
-![2024-06-03_09-03_1.webp](assets/leetcode_daily_images/a01fe294.webp)
+![2024-06-03_09-03_1.webp](/assets/leetcode_daily_images/a01fe294.webp)
 
 #### Join me on Telegram
 
@@ -55989,7 +55989,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/reverse-string/solutions/5244079/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02062024-344-reverse-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rV_lL6Ywi6Y)
-![2024-06-02_08-19.webp](assets/leetcode_daily_images/c3373b43.webp)
+![2024-06-02_08-19.webp](/assets/leetcode_daily_images/c3373b43.webp)
 
 #### Join me on Telegram
 
@@ -56036,7 +56036,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/score-of-a-string/solutions/5238663/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01062024-3110-score-of-a-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/lLVA9OcHKvw)
-![2024-06-01_08-37.webp](assets/leetcode_daily_images/eed71ea0.webp)
+![2024-06-01_08-37.webp](/assets/leetcode_daily_images/eed71ea0.webp)
 
 #### Join me on Telegram
 
@@ -56087,7 +56087,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/single-number-iii/solutions/5233996/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31052024-260-single-number-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/A5rVOkz0If8)
-![2024-05-31_08-32.webp](assets/leetcode_daily_images/abf852c1.webp)
+![2024-05-31_08-32.webp](/assets/leetcode_daily_images/abf852c1.webp)
 
 #### Join me on Telegram
 
@@ -56166,7 +56166,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/solutions/5229164/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30052024-1442-count-triplets-that?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UfCX9AnqxUM)
-![2024-05-30_07-53.webp](assets/leetcode_daily_images/488cdddd.webp)
+![2024-05-30_07-53.webp](/assets/leetcode_daily_images/488cdddd.webp)
 
 #### Join me on Telegram
 
@@ -56242,7 +56242,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/solutions/5224598/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29052024-1404-number-of-steps-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kGeMgXTgP8M)
-![2024-05-29_09-04.webp](assets/leetcode_daily_images/c03768cb.webp)
+![2024-05-29_09-04.webp](/assets/leetcode_daily_images/c03768cb.webp)
 
 #### Join me on Telegram
 
@@ -56303,7 +56303,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/get-equal-substrings-within-budget/solutions/5219126/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28052024-1208-get-equal-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Qy0xh319YHA)
-![2024-05-28_07-23.webp](assets/leetcode_daily_images/ab7467c7.webp)
+![2024-05-28_07-23.webp](/assets/leetcode_daily_images/ab7467c7.webp)
 
 #### Join me on Telegram
 
@@ -56361,7 +56361,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/solutions/5213994/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27052024-1608-special-array-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/slW3XCHt4Ys)
-![2024-05-27_07-27.webp](assets/leetcode_daily_images/62c71c23.webp)
+![2024-05-27_07-27.webp](/assets/leetcode_daily_images/62c71c23.webp)
 
 #### Join me on Telegram
 
@@ -56417,7 +56417,7 @@ $$O(1)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26052024-552-student-attendance-record?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ucmlvX780wc)
 
-![2024-05-26_10-18.webp](assets/leetcode_daily_images/846b5a38.webp)
+![2024-05-26_10-18.webp](/assets/leetcode_daily_images/846b5a38.webp)
 
 #### Join me on Telegram
 
@@ -56527,7 +56527,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/word-break-ii/solutions/5205033/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25052024-140-word-break-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vdedW8CTvUE)
-![2024-05-25_10-17.webp](assets/leetcode_daily_images/622cc3ea.webp)
+![2024-05-25_10-17.webp](/assets/leetcode_daily_images/622cc3ea.webp)
 
 #### Join me on Telegram
 
@@ -56585,7 +56585,7 @@ $$O(ws + 2^s)$$, recursion depth is `s`, each level holds `w` copy and `2^s` res
 [blog post](https://leetcode.com/problems/maximum-score-words-formed-by-letters/solutions/5200230/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24052024-1255-maximum-score-words?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/V96s_V9OXLM)
-![2024-05-24_08-45.webp](assets/leetcode_daily_images/55d86d2a.webp)
+![2024-05-24_08-45.webp](/assets/leetcode_daily_images/55d86d2a.webp)
 
 #### Join me on Telegram
 
@@ -56657,7 +56657,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/the-number-of-beautiful-subsets/solutions/5196024/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23052024-2597-the-number-of-beautiful?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/H_q7_szlo4g)
-![2024-05-23_09-05.webp](assets/leetcode_daily_images/10b229f5.webp)
+![2024-05-23_09-05.webp](/assets/leetcode_daily_images/10b229f5.webp)
 
 #### Join me on Telegram
 
@@ -56731,7 +56731,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/palindrome-partitioning/solutions/5191965/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22052024-131-palindrome-partitioning?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ia5Z2-eu7rY)
-![2024-05-22_09-02.webp](assets/leetcode_daily_images/8ded6af4.webp)
+![2024-05-22_09-02.webp](/assets/leetcode_daily_images/8ded6af4.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/610
@@ -56795,7 +56795,7 @@ $$O(2^n)$$
 [blog post](https://leetcode.com/problems/subsets/solutions/5187316/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21052024-78-subsets?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xRtcs1VgxXg)
-![2024-05-21_08-23.webp](assets/leetcode_daily_images/ab26ec05.webp)
+![2024-05-21_08-23.webp](/assets/leetcode_daily_images/ab26ec05.webp)
 https://youtu.be/xRtcs1VgxXg
 #### Join me on Telegram
 
@@ -56851,7 +56851,7 @@ $$O(n^n)$$
 [blog post](https://leetcode.com/problems/sum-of-all-subset-xor-totals/solutions/5182581/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20052024-1863-sum-of-all-subset-xor?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/lg23cKE6Jg4)
-![2024-05-20_08-11.webp](assets/leetcode_daily_images/a87425ff.webp)
+![2024-05-20_08-11.webp](/assets/leetcode_daily_images/a87425ff.webp)
 
 #### Join me on Telegram
 
@@ -56906,7 +56906,7 @@ $$O(n)$$ for the recursion depth
 [blog post](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/solutions/5178257/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19052024-3068-find-the-maximum-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3vk2zlIMUww)
-![2024-05-19_11-13.webp](assets/leetcode_daily_images/fdccbed0.webp)
+![2024-05-19_11-13.webp](/assets/leetcode_daily_images/fdccbed0.webp)
 
 #### Join me on Telegram
 
@@ -56919,8 +56919,8 @@ Max sum after `xor k` any edges in a tree #hard #math
 #### Intuition
 
 Let's just draw and try to build an intuition.
-![2024-05-19_09-10.webp](assets/leetcode_daily_images/f1b35be2.webp)
-![2024-05-19_09-21.webp](assets/leetcode_daily_images/e51a0baf.webp)
+![2024-05-19_09-10.webp](/assets/leetcode_daily_images/f1b35be2.webp)
+![2024-05-19_09-21.webp](/assets/leetcode_daily_images/e51a0baf.webp)
 We can cancel out `xor` if we apply an even number of times.
 
 This is where I was stuck and gave up after trying to build the DP solution.
@@ -56974,7 +56974,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/distribute-coins-in-binary-tree/solutions/5173456/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18052024-979-distribute-coins-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-bec2qToKoM)
-![2024-05-18_09-23.webp](assets/leetcode_daily_images/3305f4dc.webp)
+![2024-05-18_09-23.webp](/assets/leetcode_daily_images/3305f4dc.webp)
 https://youtu.be/-bec2qToKoM
 #### Join me on Telegram
 
@@ -56987,7 +56987,7 @@ Min moves to spread the coins across the tree #medium #dfs #tree
 #### Intuition
 
 Let's observe some examples:
-![2024-05-18_08-32.webp](assets/leetcode_daily_images/982dc687.webp)
+![2024-05-18_08-32.webp](/assets/leetcode_daily_images/982dc687.webp)
 Some observations:
 * each coin moves individually, even if we move `2` coins at once, it makes no difference to the total moves
 * eventually, every node will have exactly `1` coin
@@ -57039,7 +57039,7 @@ $$O(log(n))$$, for the recursion depth
 [blog post](https://leetcode.com/problems/delete-leaves-with-a-given-value/solutions/5168887/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17052024-1325-delete-leaves-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/fsVxCGv-UW0)
-![2024-05-17_08-57.webp](assets/leetcode_daily_images/719094ee.webp)
+![2024-05-17_08-57.webp](/assets/leetcode_daily_images/719094ee.webp)
 
 #### Join me on Telegram
 
@@ -57092,7 +57092,7 @@ $$O(log(n))$$ for the recursion depth
 [blog post](https://leetcode.com/problems/evaluate-boolean-binary-tree/solutions/5163912/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16052024-2331-evaluate-boolean-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/dyQ47TG5fpc)
-![2024-05-16_08-48.webp](assets/leetcode_daily_images/5544f403.webp)
+![2024-05-16_08-48.webp](/assets/leetcode_daily_images/5544f403.webp)
 
 #### Join me on Telegram
 
@@ -57146,7 +57146,7 @@ $$O(log(n))$$ for the recursion depth
 [blog post](https://leetcode.com/problems/find-the-safest-path-in-a-grid/solutions/5159755/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15052024-2812-find-the-safest-path?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/imflEAHTcRo)
-![2024-05-15_09-43.webp](assets/leetcode_daily_images/624d6a7a.webp)
+![2024-05-15_09-43.webp](/assets/leetcode_daily_images/624d6a7a.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/603
@@ -57158,7 +57158,7 @@ Safest path in a grid with thieves #medium #bfs #heap
 #### Intuition
 
 Let's firs build a map, marking each cell with its safety number, this can be done with Breadth-First Search from all thieves:
-![2024-05-15_07-58.webp](assets/leetcode_daily_images/cf3b1c45.webp)
+![2024-05-15_07-58.webp](/assets/leetcode_daily_images/cf3b1c45.webp)
 The path finding part is straightforward Dijkstra: choose the most optimal path from the heap, stop on the first arrival.
 
 #### Approach
@@ -57237,7 +57237,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/path-with-maximum-gold/solutions/5155448/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14052024-1219-path-with-maximum-gold?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3Py41bk8Xyc)
-![2024-05-14_08-57.webp](assets/leetcode_daily_images/a36b8b34.webp)
+![2024-05-14_08-57.webp](/assets/leetcode_daily_images/a36b8b34.webp)
 
 #### Join me on Telegram
 
@@ -57303,7 +57303,7 @@ $$O(p)$$, for the recursion depth
 [blog post](https://leetcode.com/problems/score-after-flipping-matrix/solutions/5150832/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13052024-861-score-after-flipping?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/yKgQQujHu7M)
-![2024-05-13_08-42.webp](assets/leetcode_daily_images/7fe2d83c.webp)
+![2024-05-13_08-42.webp](/assets/leetcode_daily_images/7fe2d83c.webp)
 
 #### Join me on Telegram
 
@@ -57316,7 +57316,7 @@ Max binary-row sum after toggling rows and columns #medium
 #### Intuition
 
 Let's consider example:
-![2024-05-13_08-10.webp](assets/leetcode_daily_images/0e909f4d.webp)
+![2024-05-13_08-10.webp](/assets/leetcode_daily_images/0e909f4d.webp)
 Our intuition:
 * we can toggle rows only if the `first` bit is `0` otherwise it will make the number smaller
 * we can toggle the column only if the number of `0` bits is bigger that `1` bits, otherwise sum will be smaller
@@ -57364,7 +57364,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/largest-local-values-in-a-matrix/solutions/5146347/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12052024-2373-largest-local-values?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_zMW6w9aUoQ)
-![2024-05-12_08-45.webp](assets/leetcode_daily_images/4b627a15.webp)
+![2024-05-12_08-45.webp](/assets/leetcode_daily_images/4b627a15.webp)
 
 #### Join me on Telegram
 
@@ -57416,7 +57416,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/solutions/5142221/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11052024-857-minimum-cost-to-hire?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3uFRD2BGM0w)
-![2024-05-11_10-06.webp](assets/leetcode_daily_images/12f31c8f.webp)
+![2024-05-11_10-06.webp](/assets/leetcode_daily_images/12f31c8f.webp)
 
 #### Join me on Telegram
 
@@ -57526,7 +57526,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/k-th-smallest-prime-fraction/solutions/5138575/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10052024-786-k-th-smallest-prime?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KXXRbKjVgec)
-![2024-05-10_10-07.webp](assets/leetcode_daily_images/44bc39be.webp)
+![2024-05-10_10-07.webp](/assets/leetcode_daily_images/44bc39be.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/598
@@ -57616,7 +57616,7 @@ $$O(k)$$ for the heap, $$O(1)$$ for the binary search
 [blog post](https://leetcode.com/problems/maximize-happiness-of-selected-children/solutions/5134240/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09052024-3075-maximize-happiness?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/c5Vv4uRUrYU)
-![2024-05-09_11-24.webp](assets/leetcode_daily_images/47902ed4.webp)
+![2024-05-09_11-24.webp](/assets/leetcode_daily_images/47902ed4.webp)
 
 #### Join me on Telegram
 
@@ -57674,7 +57674,7 @@ $$O(n)$$ for the Heap, $$O(1)$$ for the QuickSelect
 [blog post](https://leetcode.com/problems/relative-ranks/solutions/5128403/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08052024-506-relative-ranks?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/J2MVn8NVTHo)
-![2024-05-08_08-04.webp](assets/leetcode_daily_images/88aea9ee.webp)
+![2024-05-08_08-04.webp](/assets/leetcode_daily_images/88aea9ee.webp)
 
 #### Join me on Telegram
 
@@ -57736,7 +57736,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/solutions/5123665/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07052024-2816-double-a-number-represented?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vI0nTJNt5hU)
-![2024-05-07_07-58.webp](assets/leetcode_daily_images/2f1587a2.webp)
+![2024-05-07_07-58.webp](/assets/leetcode_daily_images/2f1587a2.webp)
 
 #### Join me on Telegram
 
@@ -57812,7 +57812,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/remove-nodes-from-linked-list/solutions/5119271/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06052024-2487-remove-nodes-from-linked?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mvPLXEbscGs)
-![2024-05-06_09-06.webp](assets/leetcode_daily_images/2a054ceb.webp)
+![2024-05-06_09-06.webp](/assets/leetcode_daily_images/2a054ceb.webp)
 
 #### Join me on Telegram
 
@@ -57892,7 +57892,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/delete-node-in-a-linked-list/solutions/5114307/kotlin-c/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05052024-237-delete-node-in-a-linked?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/GZNHEMZEt3o)
-![2024-05-05_08-14.webp](assets/leetcode_daily_images/b8af3519.webp)
+![2024-05-05_08-14.webp](/assets/leetcode_daily_images/b8af3519.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/593
@@ -57941,7 +57941,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/boats-to-save-people/solutions/5109541/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04052024-881-boats-to-save-people?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZJSjkMMBSkA)
-![2024-05-04_08-54.webp](assets/leetcode_daily_images/5c15d202.webp)
+![2024-05-04_08-54.webp](/assets/leetcode_daily_images/5c15d202.webp)
 
 #### Join me on Telegram
 
@@ -58008,7 +58008,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/compare-version-numbers/solutions/5104929/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03052024-165-compare-version-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cnCdE13wUZo)
-![2024-05-03_09-21.webp](assets/leetcode_daily_images/bd912e31.webp)
+![2024-05-03_09-21.webp](/assets/leetcode_daily_images/bd912e31.webp)
 
 #### Join me on Telegram
 
@@ -58067,7 +58067,7 @@ $$O(n)$$, or can be O(1)
 [blog post](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/solutions/5099630/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02052024-2441-largest-positive-integer?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/qbhha9HEXxU)
-![2024-05-02_08-34.webp](assets/leetcode_daily_images/0bec9eb6.webp)
+![2024-05-02_08-34.webp](/assets/leetcode_daily_images/0bec9eb6.webp)
 
 #### Join me on Telegram
 
@@ -58125,7 +58125,7 @@ $$O(1)$$ and $$O(n)$$
 [blog post](https://leetcode.com/problems/reverse-prefix-of-word/solutions/5094699/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01052024-2000-reverse-prefix-of-word?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3HaIy6XeluA)
-![2024-05-01_09-09.webp](assets/leetcode_daily_images/728f271e.webp)
+![2024-05-01_09-09.webp](/assets/leetcode_daily_images/728f271e.webp)
 
 #### Join me on Telegram
 
@@ -58174,7 +58174,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/number-of-wonderful-substrings/solutions/5090753/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30042024-1915-number-of-wonderful?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/o0RD8uGFhQA)
-![2024-04-30_09-16.webp](assets/leetcode_daily_images/1f7e89d3.webp)
+![2024-04-30_09-16.webp](/assets/leetcode_daily_images/1f7e89d3.webp)
 
 #### Join me on Telegram
 
@@ -58306,7 +58306,7 @@ $$O(2^k)$$, k - is an alphabet, at most 2^10 masks total
 [blog post](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/solutions/5086260/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29042024-2997-minimum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kTTy66sDiIU)
-![2024-04-29_07-41.webp](assets/leetcode_daily_images/9b99ae4f.webp)
+![2024-04-29_07-41.webp](/assets/leetcode_daily_images/9b99ae4f.webp)
 
 #### Join me on Telegram
 
@@ -58362,7 +58362,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/sum-of-distances-in-tree/solutions/5082926/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28042024-834-sum-of-distances-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1ZcnM5l3V5E)
-![2024-04-28_10-54.webp](assets/leetcode_daily_images/d7bfaab3.webp)
+![2024-04-28_10-54.webp](/assets/leetcode_daily_images/d7bfaab3.webp)
 
 #### Join me on Telegram
 
@@ -58375,14 +58375,14 @@ Sums of paths to each leafs in a tree #hard #dfs
 #### Intuition
 
 Let's observe how the result is calculated for each of the node:
-![2024-04-28_08-48.webp](assets/leetcode_daily_images/762671aa.webp)
+![2024-04-28_08-48.webp](/assets/leetcode_daily_images/762671aa.webp)
 
 As we see, there are some relationships between sibling nodes: they differ by some law.
 Our goal is to reuse the first iteration result.
 When we change the root, we are decreasing all the paths that are forwards and increasing all the paths that are backwards. The number of forward and backward paths can be calculated like this:
-![2024-04-28_09-01.webp](assets/leetcode_daily_images/15a97280.webp)
+![2024-04-28_09-01.webp](/assets/leetcode_daily_images/15a97280.webp)
 Given that, we can derive the formula to change the root:
-![2024-04-28_11-08.webp](assets/leetcode_daily_images/95a98a6c.webp)
+![2024-04-28_11-08.webp](/assets/leetcode_daily_images/95a98a6c.webp)
 
 `new root == previous root - forward + backward`, or
 `R2 = R1 - count1 + (n - count1)`
@@ -58450,7 +58450,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/freedom-trail/solutions/5078209/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27042024-514-freedom-trail?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/JevbY-ivBac)
-![2024-04-27_09-19.webp](assets/leetcode_daily_images/2db90530.webp)
+![2024-04-27_09-19.webp](/assets/leetcode_daily_images/2db90530.webp)
 
 #### Join me on Telegram
 
@@ -58465,7 +58465,7 @@ Min steps to produce `key` by rotating `ring` #hard #dynamic_programming #recurs
 Let's from the current position do the full search by trying each position with give letter. The minimum path is only depending on the current position of the `ring` and position in the `key` so it can be memoized.
 
 However, don't forget to rotate optimally, sometimes it's a left rotation:
-![2024-04-27_08-36.webp](assets/leetcode_daily_images/8be05a5a.webp)
+![2024-04-27_08-36.webp](/assets/leetcode_daily_images/8be05a5a.webp)
 
 We can store the `ring` positions ahead of time.
 
@@ -58524,7 +58524,7 @@ $$O(rk)$$
 [blog post](https://leetcode.com/problems/minimum-falling-path-sum-ii/solutions/5073998/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26042024-1289-minimum-falling-path?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/N-zT-RrkSb8)
-![2024-04-26_08-15.webp](assets/leetcode_daily_images/58827ada.webp)
+![2024-04-26_08-15.webp](/assets/leetcode_daily_images/58827ada.webp)
 
 #### Join me on Telegram
 
@@ -58537,7 +58537,7 @@ Min non-direct path top down in a 2D matrix #hard #dynamic_programming
 #### Intuition
 
 Let's try an example:
-![2024-04-26_07-43.webp](assets/leetcode_daily_images/bac54078.webp)
+![2024-04-26_07-43.webp](/assets/leetcode_daily_images/bac54078.webp)
 On each row we need to know the `min` value from the previous row, or the `second min`, if first is directly up. Then adding this min to the current cell would give us the min-sum.
 
 
@@ -58597,7 +58597,7 @@ $$O(1)$$, or O(m) if the separate array used
 [blog post](https://leetcode.com/problems/longest-ideal-subsequence/solutions/5070085/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25042024-2370-longest-ideal-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/40N5oBxrGF4)
-![2024-04-25_08-26.webp](assets/leetcode_daily_images/60d5e3b9.webp)
+![2024-04-25_08-26.webp](/assets/leetcode_daily_images/60d5e3b9.webp)
 
 #### Join me on Telegram
 
@@ -58671,7 +58671,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/n-th-tribonacci-number/solutions/5065642/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24042024-1137-n-th-tribonacci-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZrwbZORpDro)
-![2024-04-24_08-41.webp](assets/leetcode_daily_images/4618915f.webp)
+![2024-04-24_08-41.webp](/assets/leetcode_daily_images/4618915f.webp)
 
 #### Join me on Telegram
 
@@ -58730,7 +58730,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-height-trees/solutions/5061843/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23042024-310-minimum-height-trees?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UvkjYhS74_o)
-![2024-04-23_10-25.webp](assets/leetcode_daily_images/6915790c.webp)
+![2024-04-23_10-25.webp](/assets/leetcode_daily_images/6915790c.webp)
 
 #### Join me on Telegram
 
@@ -58745,7 +58745,7 @@ Center of an acyclic graph #medium #graph #toposort
 Didn't solve it myself again.
 
 The naive intuition that didn't work for me was to move from the edges in BFS manner until a single or just two nodes left. This however doesn't work for some cases:
-![2024-04-23_09-07.webp](assets/leetcode_daily_images/66bc3978.webp)
+![2024-04-23_09-07.webp](/assets/leetcode_daily_images/66bc3978.webp)
 
 After I gave up, in the solution section I saw a Topological Sort: always go from nodes with `indegree == 1` and decrease it as you go.
 
@@ -58829,7 +58829,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/open-the-lock/solutions/5057788/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22042024-752-open-the-lock?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/o6UfQa5LlsE)
-![2024-04-22_09-28.webp](assets/leetcode_daily_images/e132c855.webp)
+![2024-04-22_09-28.webp](/assets/leetcode_daily_images/e132c855.webp)
 
 #### Join me on Telegram
 
@@ -58909,7 +58909,7 @@ $$O(N)$$, N is size of deadends
 [blog post](https://leetcode.com/problems/find-if-path-exists-in-graph/solutions/5053142/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21042024-1971-find-if-path-exists?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZJ1P4GxHBEA)
-![2024-04-21_08-22.webp](assets/leetcode_daily_images/486f9147.webp)
+![2024-04-21_08-22.webp](/assets/leetcode_daily_images/486f9147.webp)
 
 #### Join me on Telegram
 
@@ -58965,7 +58965,7 @@ $$O(V)$$
 [blog post](https://leetcode.com/problems/find-all-groups-of-farmland/solutions/5048640/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20042024-1992-find-all-groups-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/cYm87NiqL2A)
-![2024-04-20_09-05.webp](assets/leetcode_daily_images/b78c2807.webp)
+![2024-04-20_09-05.webp](/assets/leetcode_daily_images/b78c2807.webp)
 
 #### Join me on Telegram
 
@@ -59027,7 +59027,7 @@ $$O(r)$$, where `r` is a resulting count of islands, can be up to `nm/2`
 [blog post](https://leetcode.com/problems/number-of-islands/solutions/5044098/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19042024-200-number-of-islands?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Z-nJMndRFJ4)
-![2024-04-19_07-38.webp](assets/leetcode_daily_images/0375b75d.webp)
+![2024-04-19_07-38.webp](/assets/leetcode_daily_images/0375b75d.webp)
 
 #### Join me on Telegram
 
@@ -59100,7 +59100,7 @@ $$O(1)$$, or O(nm) if we forbidden to modify the grid
 [blog post](https://leetcode.com/problems/island-perimeter/solutions/5039886/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18042024-463-island-perimeter?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/d91pFLXHb5k)
-![2024-04-18_08-48.webp](assets/leetcode_daily_images/94a4ad97.webp)
+![2024-04-18_08-48.webp](/assets/leetcode_daily_images/94a4ad97.webp)
 
 #### Join me on Telegram
 
@@ -59113,7 +59113,7 @@ Perimeter of `1`'s islands in `01`-matrix #easy
 #### Intuition
 
 Let's observe the problem example:
-![2024-04-18_08-05.webp](assets/leetcode_daily_images/35595899.webp)
+![2024-04-18_08-05.webp](/assets/leetcode_daily_images/35595899.webp)
 As we see, the perimeter increases on the `0`-`1` transitions, we can just count them.
 Another neat approach I steal from someone: every `1` increases by 4 and then decreases by `1-1` borders.
 
@@ -59164,7 +59164,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/smallest-string-starting-from-leaf/solutions/5035072/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17042024-988-smallest-string-starting?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/rDcok_WRbQo)
-![2024-04-17_08-17.webp](assets/leetcode_daily_images/a75c3efe.webp)
+![2024-04-17_08-17.webp](/assets/leetcode_daily_images/a75c3efe.webp)
 
 #### Join me on Telegram
 
@@ -59177,7 +59177,7 @@ Smallest string from `leaf` to `root` in a Binary Tree #medium
 #### Intuition
 
 After trying some examples with bottom-up approach, we find out one that would not work:
-![2024-04-17_08-02.webp](assets/leetcode_daily_images/98d75c46.webp)
+![2024-04-17_08-02.webp](/assets/leetcode_daily_images/98d75c46.webp)
 That means, we should use top down.
 
 
@@ -59225,7 +59225,7 @@ $$O(log(n))$$, recursion depth
 [blog post](https://leetcode.com/problems/add-one-row-to-tree/solutions/5030293/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16042024-623-add-one-row-to-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/S9jxRF_mtHY)
-![2024-04-16_08-54.webp](assets/leetcode_daily_images/63b312ed.webp)
+![2024-04-16_08-54.webp](/assets/leetcode_daily_images/63b312ed.webp)
 
 #### Join me on Telegram
 
@@ -59292,7 +59292,7 @@ $$O(log(n))$$ for DFS, but O(n) for BFS as the last row can contain as much as `
 [blog post](https://leetcode.com/problems/sum-root-to-leaf-numbers/solutions/5025136/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15042024-129-sum-root-to-leaf-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/eEc3nRhGk5A)
-![2024-04-15_07-58.webp](assets/leetcode_daily_images/e6c0f812.webp)
+![2024-04-15_07-58.webp](/assets/leetcode_daily_images/e6c0f812.webp)
 
 #### Join me on Telegram
 
@@ -59348,7 +59348,7 @@ $$O(log(n))$$, for the recursion, however Morris Traversal will make it O(1)
 [blog post](https://leetcode.com/problems/sum-of-left-leaves/solutions/5020111/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14042024-404-sum-of-left-leaves?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/TMh6FK8QmZc)
-![2024-04-14_08-17.webp](assets/leetcode_daily_images/13858a7a.webp)
+![2024-04-14_08-17.webp](/assets/leetcode_daily_images/13858a7a.webp)
 
 #### Join me on Telegram
 
@@ -59404,7 +59404,7 @@ $$O(log(n))$$, for the recursion stack space
 [blog post](https://leetcode.com/problems/maximal-rectangle/solutions/5015123/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13042024-85-maximal-rectangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2ltM9lpAomQ)
-![2024-04-13_09-13.webp](assets/leetcode_daily_images/a1555081.webp)
+![2024-04-13_09-13.webp](/assets/leetcode_daily_images/a1555081.webp)
 
 #### Join me on Telegram
 
@@ -59417,10 +59417,10 @@ Max `1`-only area in a `0-1` matrix #hard
 #### Intuition
 
 The n^4 solution is kind of trivial, just precompute the prefix sums, then do some geometry:
-![2024-04-13_09-101.webp](assets/leetcode_daily_images/61ad09cf.webp)
+![2024-04-13_09-101.webp](/assets/leetcode_daily_images/61ad09cf.webp)
 
 The trick here is to observe a subproblem (https://leetcode.com/problems/largest-rectangle-in-histogram/):
-![2024-04-13_09-102.webp](assets/leetcode_daily_images/3a97d3fe.webp)
+![2024-04-13_09-102.webp](/assets/leetcode_daily_images/3a97d3fe.webp)
 This can be solved using a `Monotonic Increasing Stack` technique:
 
 ```j
@@ -59490,7 +59490,7 @@ $$O(m)$$
 [blog post](https://leetcode.com/problems/trapping-rain-water/solutions/5010867/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12042024-42-trapping-rain-water?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uYfidIUHm94)
-![2024-04-12_08-45.webp](assets/leetcode_daily_images/b74c5ccb.webp)
+![2024-04-12_08-45.webp](/assets/leetcode_daily_images/b74c5ccb.webp)
 
 #### Problem TLDR
 
@@ -59607,7 +59607,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/remove-k-digits/solutions/5006557/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11042024-402-remove-k-digits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1uNiFjUan0c)
-![2024-04-11_09-09.webp](assets/leetcode_daily_images/b8f5d1ec.webp)
+![2024-04-11_09-09.webp](/assets/leetcode_daily_images/b8f5d1ec.webp)
 
 #### Join me on Telegram
 
@@ -59688,7 +59688,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/reveal-cards-in-increasing-order/solutions/5002042/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10042024-950-reveal-cards-in-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/g1AtbyjjmhU)
-![2024-04-10_09-01.webp](assets/leetcode_daily_images/dc55b3fa.webp)
+![2024-04-10_09-01.webp](/assets/leetcode_daily_images/dc55b3fa.webp)
 
 #### Join me on Telegram
 
@@ -59747,7 +59747,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/time-needed-to-buy-tickets/solutions/4996548/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09042024-2073-time-needed-to-buy?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9IQCe-YO2I0)
-![2024-04-09_08-27.webp](assets/leetcode_daily_images/39fc08c1.webp)
+![2024-04-09_08-27.webp](/assets/leetcode_daily_images/39fc08c1.webp)
 
 #### Join me on Telegram
 
@@ -59800,7 +59800,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/solutions/4991239/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08042024-1700-number-of-students?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/WzOrYzC3UbM)
-![2024-04-08_08-24.webp](assets/leetcode_daily_images/c1fe52be.webp)
+![2024-04-08_08-24.webp](/assets/leetcode_daily_images/c1fe52be.webp)
 
 #### Join me on Telegram
 
@@ -59859,7 +59859,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/valid-parenthesis-string/solutions/4986115/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07042024-678-valid-parenthesis-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Ke96Lyie90k)
-![2024-04-07_08-18.webp](assets/leetcode_daily_images/877682af.webp)
+![2024-04-07_08-18.webp](/assets/leetcode_daily_images/877682af.webp)
 
 #### Join me on Telegram
 
@@ -59941,7 +59941,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/solutions/4981206/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06042024-1249-minimum-remove-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/eaHQMJ9Ol1Y)
-![2024-04-06_08-43.webp](assets/leetcode_daily_images/7aba75e9.webp)
+![2024-04-06_08-43.webp](/assets/leetcode_daily_images/7aba75e9.webp)
 
 #### Join me on Telegram
 
@@ -60024,7 +60024,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05042024-1544-make-the-string-great?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/M3FXgXuF1CQ)
 
-![2024-04-05_08-24.webp](assets/leetcode_daily_images/fa839135.webp)
+![2024-04-05_08-24.webp](/assets/leetcode_daily_images/fa839135.webp)
 
 #### Join me on Telegram
 
@@ -60092,7 +60092,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/solutions/4970963/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04042024-1614-maximum-nesting-depth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/FdSCBUjarkA)
-![2024-04-04_09-03.webp](assets/leetcode_daily_images/30d2ca7a.webp)
+![2024-04-04_09-03.webp](/assets/leetcode_daily_images/30d2ca7a.webp)
 
 #### Join me on Telegram
 
@@ -60151,7 +60151,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/word-search/solutions/4965734/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03042024-79-word-search?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/QoqCx12KIYQ)
-![2024-04-03_08-01.webp](assets/leetcode_daily_images/8f9f22e3.webp)
+![2024-04-03_08-01.webp](/assets/leetcode_daily_images/8f9f22e3.webp)
 
 #### Join me on Telegram
 
@@ -60229,7 +60229,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/isomorphic-strings/solutions/4961313/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02042024-205-isomorphic-strings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/q08kO3ex0l8)
-![2024-04-02_08-59.webp](assets/leetcode_daily_images/dc16b6ee.webp)
+![2024-04-02_08-59.webp](/assets/leetcode_daily_images/dc16b6ee.webp)
 
 
 #### Join me on Telegram
@@ -60294,7 +60294,7 @@ $$O(w)$$, `w` is an alphabet or O(1)
 [blog post](https://leetcode.com/problems/length-of-last-word/solutions/4955206/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01042024-58-length-of-last-word?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YaRWWIW6Krw)
-![2024-04-01_08-06.webp](assets/leetcode_daily_images/f2fd0935.webp)
+![2024-04-01_08-06.webp](/assets/leetcode_daily_images/f2fd0935.webp)
 
 #### Join me on Telegram
 
@@ -60348,7 +60348,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/solutions/4951301/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31032024-2444-count-subarrays-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YS7-vEXa6u4)
-![2024-03-31_12-25.webp](assets/leetcode_daily_images/1c7fd863.webp)
+![2024-03-31_12-25.webp](/assets/leetcode_daily_images/1c7fd863.webp)
 
 #### Join me on Telegram
 
@@ -60460,7 +60460,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/subarrays-with-k-different-integers/solutions/4945526/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30032024-992-subarrays-with-k-different?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/H1AQoy2hg38)
-![2024-03-30_10-33.webp](assets/leetcode_daily_images/04c0c154.webp)
+![2024-03-30_10-33.webp](/assets/leetcode_daily_images/04c0c154.webp)
 
 #### Join me on Telegram
 
@@ -60538,7 +60538,7 @@ $$O(n)$$, we have a frequencies stored in a map, can be up to `n`
 [blog post](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/solutions/4940899/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29032024-2962-count-subarrays-where?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/d0Je22SXmlE)
-![2024-03-29_09-26.webp](assets/leetcode_daily_images/50472f78.webp)
+![2024-03-29_09-26.webp](/assets/leetcode_daily_images/50472f78.webp)
 
 #### Join me on Telegram
 
@@ -60613,7 +60613,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/solutions/4936162/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28032024-2958-length-of-longest-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UzGYOywIPIE)
-![2024-03-28_09-04.webp](assets/leetcode_daily_images/a516cbd7.webp)
+![2024-03-28_09-04.webp](/assets/leetcode_daily_images/a516cbd7.webp)
 
 #### Join me on Telegram
 
@@ -60675,7 +60675,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/subarray-product-less-than-k/solutions/4931440/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27032024-713-subarray-product-less?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HTLfyj_ghYs)
-![2024-03-27_09-18.webp](assets/leetcode_daily_images/c03d7ba4.webp)
+![2024-03-27_09-18.webp](/assets/leetcode_daily_images/c03d7ba4.webp)
 
 
 #### Join me on Telegram
@@ -60761,7 +60761,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/first-missing-positive/solutions/4926741/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26032024-41-first-missing-positive?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/X6syV_fNCo0)
-![2024-03-26_09-20.webp](assets/leetcode_daily_images/a75ad7b4.webp)
+![2024-03-26_09-20.webp](/assets/leetcode_daily_images/a75ad7b4.webp)
 
 #### Join me on Telegram
 
@@ -60844,7 +60844,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-all-duplicates-in-an-array/solutions/4922208/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25032024-442-find-all-duplicates?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/iYARBTm85fg)
-![2024-03-25_09-19.webp](assets/leetcode_daily_images/e7c75cbb.webp)
+![2024-03-25_09-19.webp](/assets/leetcode_daily_images/e7c75cbb.webp)
 
 #### Join me on Telegram
 
@@ -60919,7 +60919,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-duplicate-number/solutions/4918291/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24032024-287-find-the-duplicate-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XFLC-YG7N14)
-![2024-03-24_11-13_1.webp](assets/leetcode_daily_images/dd2976c8.webp)
+![2024-03-24_11-13_1.webp](/assets/leetcode_daily_images/dd2976c8.webp)
 
 #### Join me on Telegram
 
@@ -60932,9 +60932,9 @@ Duplicate single number in `1..n` array, no extra memory #medium
 # Intuition
 
 The idea of existing cycle would come to mind after some hitting your head against the wall. The interesting fact is we must find the node that is not a port of the cycle: so the meeting point will be our answer:
-![2024-03-24_10-35.jpg](assets/leetcode_daily_images/55567c07.webp)
+![2024-03-24_10-35.jpg](/assets/leetcode_daily_images/55567c07.webp)
 Now the clever trick is we can treat `node 0` as this external node:
-![2024-03-24_10-55.jpg](assets/leetcode_daily_images/4262a17f.webp)
+![2024-03-24_10-55.jpg](/assets/leetcode_daily_images/4262a17f.webp)
 This will coincidentally make our code much cleaner, I think this was the intention of the question authors.
 
 
@@ -60995,7 +60995,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/reorder-list/solutions/4913477/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23032024-143-reorder-list?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8CaS-LRiszw)
-![2024-03-23_11-24.jpg](assets/leetcode_daily_images/7089dfed.webp)
+![2024-03-23_11-24.jpg](/assets/leetcode_daily_images/7089dfed.webp)
 
 #### Join me on Telegram
 
@@ -61089,7 +61089,7 @@ $$O(1)$$, O(n) for my Rust solution. There are O(1) solutions exists on the leet
 [blog post](https://leetcode.com/problems/palindrome-linked-list/solutions/4909180/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22032024-234-palindrome-linked-list?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zj9qov2HWfE)
-![2024-03-22_10-03.jpg](assets/leetcode_daily_images/fd60cfbd.webp)
+![2024-03-22_10-03.jpg](/assets/leetcode_daily_images/fd60cfbd.webp)
 
 #### Problem TLDR
 
@@ -61160,7 +61160,7 @@ $$O(1)$$, O(n) in Rust
 [blog post](https://leetcode.com/problems/reverse-linked-list/solutions/4904985/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21032024-206-reverse-linked-list?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/d0DrIgmWtGQ)
-![2024-03-21_09-47.jpg](assets/leetcode_daily_images/fe344d9b.webp)
+![2024-03-21_09-47.jpg](/assets/leetcode_daily_images/fe344d9b.webp)
 
 #### Join me on Telegram
 
@@ -61232,14 +61232,14 @@ Bonus: just a single pointer solution
 
 ```
 
-![2024-03-21_13-02.jpg](assets/leetcode_daily_images/1ecdfc52.webp)
+![2024-03-21_13-02.jpg](/assets/leetcode_daily_images/1ecdfc52.webp)
 
 # 20.03.2024
 [1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/description/) medium
 [blog post](https://leetcode.com/problems/merge-in-between-linked-lists/solutions/4900331/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20032024-1669-merge-in-between-linked?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/0NU6p7K7INY)
-![2024-03-20_09-48.jpg](assets/leetcode_daily_images/07b8bbd1.webp)
+![2024-03-20_09-48.jpg](/assets/leetcode_daily_images/07b8bbd1.webp)
 
 #### Join me on Telegram
 
@@ -61308,7 +61308,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/task-scheduler/solutions/4895943/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19032024-621-task-scheduler?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8t1KNa9iZjA)
-![2024-03-19_10-10.jpg](assets/leetcode_daily_images/115cd81a.webp)
+![2024-03-19_10-10.jpg](/assets/leetcode_daily_images/115cd81a.webp)
 https://youtu.be/8t1KNa9iZjA
 #### Join me on Telegram
 
@@ -61377,7 +61377,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/4891442/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18032024-452-minimum-number-of-arrows?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/SjkSJIF6Z_g)
-![2024-03-18_09-23.jpg](assets/leetcode_daily_images/0360decf.webp)
+![2024-03-18_09-23.jpg](/assets/leetcode_daily_images/0360decf.webp)
 
 #### Join me on Telegram
 
@@ -61440,7 +61440,7 @@ $$O(1)$$, or O(n) with `sortedBy`
 [blog post](https://leetcode.com/problems/insert-interval/solutions/4887370/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17032024-57-insert-interval?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MgX42eP2g0w)
-![2024-03-17_10-49.jpg](assets/leetcode_daily_images/d4af738a.webp)
+![2024-03-17_10-49.jpg](/assets/leetcode_daily_images/d4af738a.webp)
 
 #### Join me on Telegram
 
@@ -61509,7 +61509,7 @@ $$O(n)$$ for the result
 [blog post](https://leetcode.com/problems/contiguous-array/solutions/4882308/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16032024-525-contiguous-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ldc2A819Pp8)
-![2024-03-16_09-46.jpg](assets/leetcode_daily_images/0873ecd6.webp)
+![2024-03-16_09-46.jpg](/assets/leetcode_daily_images/0873ecd6.webp)
 
 
 #### Join me on Telegram
@@ -61595,7 +61595,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/product-of-array-except-self/solutions/4877801/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15032024-238-product-of-array-except?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/P5ztPV_8dj8)
-![2024-03-15_08-47.jpg](assets/leetcode_daily_images/950ae61a.webp)
+![2024-03-15_08-47.jpg](/assets/leetcode_daily_images/950ae61a.webp)
 
 #### Join me on Telegram
 
@@ -61660,7 +61660,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/binary-subarrays-with-sum/solutions/4873512/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14032024-930-binary-subarrays-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/C-y7qYgqqxM)
-![2024-03-14_09-06.jpg](assets/leetcode_daily_images/8879d999.webp)
+![2024-03-14_09-06.jpg](/assets/leetcode_daily_images/8879d999.webp)
 https://youtu.be/C-y7qYgqqxM
 #### Join me on Telegram
 
@@ -61757,7 +61757,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-the-pivot-integer/solutions/4867964/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13032024-2485-find-the-pivot-integer?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vhuJTxNMASg)
-![2024-03-13_08-33.jpg](assets/leetcode_daily_images/57595b31.webp)
+![2024-03-13_08-33.jpg](/assets/leetcode_daily_images/57595b31.webp)
 
 #### Join me on Telegram
 
@@ -61835,7 +61835,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solutions/4863090/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12032024-1171-remove-zero-sum-consecutive?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/P4GnJouHViM)
-![2024-03-12_10-03.jpg](assets/leetcode_daily_images/ef2638da.webp)
+![2024-03-12_10-03.jpg](/assets/leetcode_daily_images/ef2638da.webp)
 
 #### Join me on Telegram
 
@@ -61923,7 +61923,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/custom-sort-string/solutions/4857722/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11032024-791-custom-sort-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9aFn8ccDZuI)
-![2024-03-11_09-08.jpg](assets/leetcode_daily_images/026f2a07.webp)
+![2024-03-11_09-08.jpg](/assets/leetcode_daily_images/026f2a07.webp)
 
 #### Join me on Telegram
 
@@ -61981,7 +61981,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/intersection-of-two-arrays/solutions/4852330/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10032024-349-intersection-of-two?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9_0lZiioirw)
-![image.png](assets/leetcode_daily_images/edc2fc98.webp)
+![image.png](/assets/leetcode_daily_images/edc2fc98.webp)
 
 #### Join me on Telegram
 
@@ -62042,7 +62042,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-common-value/solutions/4846251/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09032024-2540-minimum-common-value?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vZHLrXTNNpw)
-![image.png](assets/leetcode_daily_images/26394475.webp)
+![image.png](/assets/leetcode_daily_images/26394475.webp)
 
 #### Join me on Telegram
 
@@ -62093,7 +62093,7 @@ $$O(1)$$, or O(n) for `Set` solution
 [blog post](https://leetcode.com/problems/count-elements-with-maximum-frequency/solutions/4841086/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08032024-3005-count-elements-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/teYJDw4W-pE)
-![image.png](assets/leetcode_daily_images/652ef615.webp)
+![image.png](/assets/leetcode_daily_images/652ef615.webp)
 
 #### Join me on Telegram
 
@@ -62146,7 +62146,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/middle-of-the-linked-list/solutions/4836061/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07032024-876-middle-of-the-linked?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/oynybfr75wU)
-![image.png](assets/leetcode_daily_images/4fc3c5b0.webp)
+![image.png](/assets/leetcode_daily_images/4fc3c5b0.webp)
 
 #### Join me on Telegram
 
@@ -62203,7 +62203,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/linked-list-cycle/solutions/4830993/kotlin-c/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06032024-141-linked-list-cycle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pMt1JySmI-I)
-![image.png](assets/leetcode_daily_images/f17cdc3a.webp)
+![image.png](/assets/leetcode_daily_images/f17cdc3a.webp)
 
 #### Join me on Telegram
 
@@ -62255,7 +62255,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/solutions/4825399/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05032024-1750-minimum-length-of-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/xuqYQW-zyMo)
-![image.png](assets/leetcode_daily_images/c50bc1e8.webp)
+![image.png](/assets/leetcode_daily_images/c50bc1e8.webp)
 
 #### Join me on Telegram
 
@@ -62315,7 +62315,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/bag-of-tokens/solutions/4819971/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04032024-948-bag-of-tokens?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/MtGQimyUUJk)
-![image.png](assets/leetcode_daily_images/dc83993e.webp)
+![image.png](/assets/leetcode_daily_images/dc83993e.webp)
 
 #### Join me on Telegram
 
@@ -62390,7 +62390,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/4814951/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03032024-19-remove-nth-node-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Iz7KFMO0-RU)
-![image.png](assets/leetcode_daily_images/97a158a4.webp)
+![image.png](/assets/leetcode_daily_images/97a158a4.webp)
 
 #### Join me on Telegram
 
@@ -62403,7 +62403,7 @@ Remove `n`th node from the tail of linked list.
 #### Intuition
 
 There is a two-pointer technique: fast pointer moves `n` nodes from the slow, then they go together until the end. 
-![image.png](assets/leetcode_daily_images/335947ac.webp)
+![image.png](/assets/leetcode_daily_images/335947ac.webp)
 
 #### Approach
 
@@ -62452,7 +62452,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/squares-of-a-sorted-array/solutions/4808833/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02032024-977-squares-of-a-sorted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ytGHSEDwtgs)
-![image.png](assets/leetcode_daily_images/2a47234d.webp)
+![image.png](/assets/leetcode_daily_images/2a47234d.webp)
 
 #### Join me on Telegram
 
@@ -62509,7 +62509,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-odd-binary-number/solutions/4803325/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01032024-2864-maximum-odd-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/dCrtKV1U35U)
-![image.png](assets/leetcode_daily_images/73ca4456.webp)
+![image.png](/assets/leetcode_daily_images/73ca4456.webp)
 
 #### Join me on Telegram
 
@@ -62559,7 +62559,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/even-odd-tree/solutions/4798182/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29022024-1609-even-odd-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XKn1GucBfzU)
-![image.png](assets/leetcode_daily_images/4436e6cb.webp)
+![image.png](/assets/leetcode_daily_images/4436e6cb.webp)
 
 #### Join me on Telegram
 
@@ -62632,7 +62632,7 @@ $$O(n)$$, the last level of the Binary Tree is almost `n/2` nodes.
 [blog post](https://leetcode.com/problems/find-bottom-left-tree-value/solutions/4793004/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28022024-513-find-bottom-left-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KIQiT0p1PYE)
-![image.png](assets/leetcode_daily_images/cc3a068c.webp)
+![image.png](/assets/leetcode_daily_images/cc3a068c.webp)
 
 #### Join me on Telegram
 
@@ -62693,7 +62693,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/diameter-of-binary-tree/solutions/4788208/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27022024-543-diameter-of-binary-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zRd-9S34LrY)
-![2024-02-27_08-18.png](assets/leetcode_daily_images/9b62c79e.webp)
+![2024-02-27_08-18.png](/assets/leetcode_daily_images/9b62c79e.webp)
 
 #### Join me on Telegram
 
@@ -62754,7 +62754,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/same-tree/solutions/4783401/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26022024-100-same-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/zCo9Z70UeJY)
-![image.png](assets/leetcode_daily_images/34659bb5.webp)
+![image.png](/assets/leetcode_daily_images/34659bb5.webp)
 
 #### Join me on Telegram
 
@@ -62804,7 +62804,7 @@ $$O(log(n))$$ for the recursion depth
 [blog post](https://leetcode.com/problems/greatest-common-divisor-traversal/solutions/4779877/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25022024-2709-greatest-common-divisor?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/peJkiq2EzDM)
-![image.png](assets/leetcode_daily_images/c6001b83.webp)
+![image.png](/assets/leetcode_daily_images/c6001b83.webp)
 
 #### Join me on Telegram
 
@@ -62832,7 +62832,7 @@ Let's build all the primes and assign our numbers to each. To build the primes, 
 In this example, we assign `4, 12 and 8` to prime `2`, `3 and 12` to prime 3. The two islands of primes `2` and `3` are connected through the number `12`.
 
 Another example with the corner case of `1`:
-![image.png](assets/leetcode_daily_images/02b3ccc1.webp)
+![image.png](/assets/leetcode_daily_images/02b3ccc1.webp)
 
 The different solution is to compute all the factors of each number and connect the numbers instead of the primes.
 
@@ -62913,7 +62913,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24022024-2092-find-all-people-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3a91b826JmI)
 
-![image.png](assets/leetcode_daily_images/b11cd1ad.webp)
+![image.png](/assets/leetcode_daily_images/b11cd1ad.webp)
 
 #### Join me on Telegram
 
@@ -62989,7 +62989,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23022024-787-cheapest-flights-within?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/vzlJMoFQ3Pc)
 
-![image.png](assets/leetcode_daily_images/53a7bea5.webp)
+![image.png](/assets/leetcode_daily_images/53a7bea5.webp)
 
 #### Join me on Telegram
 
@@ -63050,7 +63050,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-the-town-judge/solutions/4765796/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22022024-997-find-the-town-judge?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/X0ei_8ygmUk)
-![image.png](assets/leetcode_daily_images/63ab84d5.webp)
+![image.png](/assets/leetcode_daily_images/63ab84d5.webp)
 
 #### Join me on Telegram
 
@@ -63113,7 +63113,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/bitwise-and-of-numbers-range/solutions/4760909/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21022024-201-bitwise-and-of-numbers?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/VXQznHHZnNE)
-![image.png](assets/leetcode_daily_images/36b83a27.webp)
+![image.png](/assets/leetcode_daily_images/36b83a27.webp)
 
 #### Join me on Telegram
 
@@ -63183,7 +63183,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/missing-number/solutions/4755419/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20022024-268-missing-number?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UBDYS1bz7yY)
-![image.png](assets/leetcode_daily_images/fd66aa9f.webp)
+![image.png](/assets/leetcode_daily_images/fd66aa9f.webp)
 
 #### Join me on Telegram
 
@@ -63233,7 +63233,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/power-of-two/solutions/4749689/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19022024-231-power-of-two?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/qn7lUSK8UUI)
-![image.png](assets/leetcode_daily_images/fb0c3aff.webp)
+![image.png](/assets/leetcode_daily_images/fb0c3aff.webp)
 
 #### Join me on Telegram
 
@@ -63281,7 +63281,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/meeting-rooms-iii/solutions/4745785/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18022024-2402-meeting-rooms-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/q3nIjTzhYHw)
-![image.png](assets/leetcode_daily_images/66ee08c5.webp)
+![image.png](/assets/leetcode_daily_images/66ee08c5.webp)
 
 #### Join me on Telegram
 
@@ -63390,7 +63390,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/furthest-building-you-can-reach/solutions/4740195/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17022024-1642-furthest-building-you?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/8BFQk0vFB78)
-![image.png](assets/leetcode_daily_images/397799a6.webp)
+![image.png](/assets/leetcode_daily_images/397799a6.webp)
 
 #### Join me on Telegram
 
@@ -63478,7 +63478,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/solutions/4735342/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16022024-1481-least-number-of-unique?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2wTeTM1rKdY)
-![image.png](assets/leetcode_daily_images/6ddb8663.webp)
+![image.png](/assets/leetcode_daily_images/6ddb8663.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/507
@@ -63537,7 +63537,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/solutions/4729989/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15022024-2971-find-polygon-with-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/2R628HpYbIg)
-![image.png](assets/leetcode_daily_images/becb03e0.webp)
+![image.png](/assets/leetcode_daily_images/becb03e0.webp)
 
 #### Join me on Telegram
 
@@ -63592,7 +63592,7 @@ $$O(1)$$, `sorted` takes O(n) but can be avoided
 [blog post](https://leetcode.com/problems/rearrange-array-elements-by-sign/solutions/4724868/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14022024-2149-rearrange-array-elements?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Wv3Rw7Jit34)
-![image.png](assets/leetcode_daily_images/3dbdc826.webp)
+![image.png](/assets/leetcode_daily_images/3dbdc826.webp)
 
 #### Join me on Telegram
 
@@ -63659,7 +63659,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/solutions/4718669/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13022024-2108-find-first-palindromic?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/O6IEjBQftE8)
-![image.png](assets/leetcode_daily_images/37e43af7.webp)
+![image.png](/assets/leetcode_daily_images/37e43af7.webp)
 
 #### Join me on Telegram
 
@@ -63712,7 +63712,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/majority-element/solutions/4714171/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12022024-169-majority-element?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EBRvIXGUgKA)
-![image.png](assets/leetcode_daily_images/a5028363.webp)
+![image.png](/assets/leetcode_daily_images/a5028363.webp)
 
 #### Join me on Telegram
 
@@ -63726,7 +63726,7 @@ Element with frequency > nums.len / 2.
 
 First thing is to understand the problem, as we need to find not only the most frequent element, but frequency is given > nums.len / 2 by the input constraints.
 Next, let's observe examples:
-![image.png](assets/leetcode_daily_images/e2b98606.webp)
+![image.png](/assets/leetcode_daily_images/e2b98606.webp)
 There are properties derived from the observation:
 * sequence can spread other elements between the common
 * common can exist in several islands
@@ -63823,7 +63823,7 @@ $$O(1)$$
 [youtube](https://youtu.be/jbiDBf5oHXs)
 
 
-![image.png](assets/leetcode_daily_images/9103cc00.webp)
+![image.png](/assets/leetcode_daily_images/9103cc00.webp)
 
 #### Join me on Telegram
 
@@ -63836,7 +63836,7 @@ Maximum paths sum of two robots top-down in XY grid.
 #### Intuition
 One way is to try all possible paths, but that will give TLE.
 However, we can notice, that only start position of two robots matters, so result can be cached:
-![image.png](assets/leetcode_daily_images/50fb2196.webp)
+![image.png](/assets/leetcode_daily_images/50fb2196.webp)
 
 Another neat optimization is to forbid to intersect the paths.
 
@@ -63909,7 +63909,7 @@ $$(mn^2)$$
 [blog post](https://leetcode.com/problems/palindromic-substrings/solutions/4704692/kotiln-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10022024-647-palindromic-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/G3yH91q9UQw)
-![image.png](assets/leetcode_daily_images/2cb0afc7.webp)
+![image.png](/assets/leetcode_daily_images/2cb0afc7.webp)
 
 #### Join me on Telegram
 
@@ -63981,7 +63981,7 @@ $$O(n^2)$$ or O(1) for the second.
 [blog post](https://leetcode.com/problems/largest-divisible-subset/solutions/4700794/kotlin-rust-it-s-a-hard-problem/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09022024-368-largest-divisible-subset?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/YlXDUoA-XnU)
-![image.png](assets/leetcode_daily_images/3c4f6322.webp)
+![image.png](/assets/leetcode_daily_images/3c4f6322.webp)
 
 #### Join me on Telegram
 
@@ -64072,7 +64072,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/perfect-squares/solutions/4695798/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08022024-279-perfect-squares?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/3niMLL5clIo)
-![image.png](assets/leetcode_daily_images/06819090.webp)
+![image.png](/assets/leetcode_daily_images/06819090.webp)
 
 #### Join me on Telegram
 
@@ -64132,7 +64132,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sort-characters-by-frequency/solutions/4690399/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07022024-451-sort-characters-by-frequency?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/LoTEmZ1Vl7M)
-![image.png](assets/leetcode_daily_images/30601b25.webp)
+![image.png](/assets/leetcode_daily_images/30601b25.webp)
 
 #### Join me on Telegram
 
@@ -64188,7 +64188,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/group-anagrams/solutions/4685010/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06022024-49-group-anagrams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/kJG2XizPubY)
-![image.png](assets/leetcode_daily_images/dad8801b.webp)
+![image.png](/assets/leetcode_daily_images/dad8801b.webp)
 
 #### Join me on Telegram
 
@@ -64244,7 +64244,7 @@ $$O(mn)$$
 [blog post](https://leetcode.com/problems/first-unique-character-in-a-string/solutions/4679671/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05022024-387-first-unique-character?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/q04HvyhZj8o)
-![image.png](assets/leetcode_daily_images/7fe7e9ef.webp)
+![image.png](/assets/leetcode_daily_images/7fe7e9ef.webp)
 
 #### Join me on Telegram
 
@@ -64301,7 +64301,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-window-substring/solutions/4675063/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04022024-76-minimum-window-substring?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/dy5yAUf2SvQ)
-![image.png](assets/leetcode_daily_images/47785304.webp)
+![image.png](/assets/leetcode_daily_images/47785304.webp)
 
 #### Join me on Telegram
 
@@ -64379,7 +64379,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/partition-array-for-maximum-sum/solutions/4669799/kotlin-rust/)
 [substack](https://dmitriisamoilenko.substack.com/publish/posts/detail/141333259/share-center)
 [youtube](https://youtu.be/A4LDXHos0Ho)
-![image.png](assets/leetcode_daily_images/4021e441.webp)
+![image.png](/assets/leetcode_daily_images/4021e441.webp)
 
 #### Join me on Telegram
 
@@ -64446,7 +64446,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sequential-digits/solutions/4664230/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02022024-1291-sequential-digits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EOGPuwygv7w)
-![image.png](assets/leetcode_daily_images/c758b811.webp)
+![image.png](/assets/leetcode_daily_images/c758b811.webp)
 
 #### Join me on Telegram
 
@@ -64513,7 +64513,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/solutions/4657723/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01022024-2966-divide-array-into-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mdtrtQGBqp0)
-![image.png](assets/leetcode_daily_images/34d9eaf3.webp)
+![image.png](/assets/leetcode_daily_images/34d9eaf3.webp)
 
 #### Join me on Telegram
 
@@ -64568,7 +64568,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/daily-temperatures/solutions/4652689/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31012024-739-daily-temperatures?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/9cqFbMabE2k)
-![image.png](assets/leetcode_daily_images/f6f9f7df.webp)
+![image.png](/assets/leetcode_daily_images/f6f9f7df.webp)
 
 #### Join me on Telegram
 
@@ -64639,7 +64639,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/4646986/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30012024-150-evaluate-reverse-polish?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ue5KCzQcGTc)
-![image.png](assets/leetcode_daily_images/21270d9c.webp)
+![image.png](/assets/leetcode_daily_images/21270d9c.webp)
 
 #### Join me on Telegram
 
@@ -64699,7 +64699,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/implement-queue-using-stacks/solutions/4641938/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29012024-232-implement-queue-using?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/ZJnPxa6nRtw)
-![image.png](assets/leetcode_daily_images/12a86d02.webp)
+![image.png](/assets/leetcode_daily_images/12a86d02.webp)
 
 #### Join me on Telegram
 
@@ -64774,7 +64774,7 @@ impl MyQueue {
 [blog post](https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/solutions/4637569/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28012024-1074-number-of-submatrices?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/UBxxgETl1v0)
-![image.png](assets/leetcode_daily_images/ff286c47.webp)
+![image.png](/assets/leetcode_daily_images/ff286c47.webp)
 
 #### Join me on Telegram
 
@@ -64835,7 +64835,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/k-inverse-pairs-array/solutions/4633251/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27012024-629-k-inverse-pairs-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/M1umaleU75w)
-![image.png](assets/leetcode_daily_images/5c816488.webp)
+![image.png](/assets/leetcode_daily_images/5c816488.webp)
 
 #### Join me on Telegram
 
@@ -65024,7 +65024,7 @@ $$O(k)$$
 [blog post](https://leetcode.com/problems/out-of-boundary-paths/solutions/4627952/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26012024-576-out-of-boundary-paths?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/SBux3Ye0DDI)
-![image.png](assets/leetcode_daily_images/d170fe61.webp)
+![image.png](/assets/leetcode_daily_images/d170fe61.webp)
 
 
 #### Join me on Telegram
@@ -65094,7 +65094,7 @@ $$O(nmv)$$
 [blog post](https://leetcode.com/problems/longest-common-subsequence/solutions/4622895/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24012024-1143-longest-common-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/UrAPRj1TY_w)
-![image.png](assets/leetcode_daily_images/579e3313.webp)
+![image.png](/assets/leetcode_daily_images/579e3313.webp)
 
 #### Join me on Telegram
 
@@ -65157,7 +65157,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/solutions/4617468/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24012024-1457-pseudo-palindromic?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/opD0sb6rsQ4)
-![image.png](assets/leetcode_daily_images/61c15614.webp)
+![image.png](/assets/leetcode_daily_images/61c15614.webp)
 
 #### Join me on Telegram
 
@@ -65219,7 +65219,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solutions/4612267/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23012024-1239-maximum-length-of-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/tnX2d8zkPJ0)
-![image.png](assets/leetcode_daily_images/f2199895.webp)
+![image.png](/assets/leetcode_daily_images/f2199895.webp)
 #### Join me on Telegram
 
 https://t.me/leetcode_daily_unstoppable/481
@@ -65285,7 +65285,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/set-mismatch/solutions/4607363/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22012024-645-set-mismatch?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/BdRqoNZ3Hi8)
-![image.png](assets/leetcode_daily_images/d04b2c65.webp)
+![image.png](/assets/leetcode_daily_images/d04b2c65.webp)
 
 
 #### Join me on Telegram
@@ -65340,7 +65340,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/house-robber/solutions/4601559/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21012024-198-house-robber?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/UeejjxR-skM)
-![image.png](assets/leetcode_daily_images/135bb8e3.webp)
+![image.png](/assets/leetcode_daily_images/135bb8e3.webp)
 
 https://youtu.be/UeejjxR-skM
 #### Join me on Telegram
@@ -65400,7 +65400,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/4596749/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20012024-907-sum-of-subarray-minimums?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/tAjTbHurlUM)
-![image.png](assets/leetcode_daily_images/eab4431b.webp)
+![image.png](/assets/leetcode_daily_images/eab4431b.webp)
 
 #### Join me on Telegram
 
@@ -65486,7 +65486,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-falling-path-sum/solutions/4590963/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19012024-931-minimum-falling-path?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/aYjobt4BIns)
-![image.png](assets/leetcode_daily_images/a52962f7.webp)
+![image.png](/assets/leetcode_daily_images/a52962f7.webp)
 
 #### Join me on Telegram
 
@@ -65542,8 +65542,8 @@ $$O(1)$$, or O(m) to not corrupt the inputs
 [blog post](https://leetcode.com/problems/climbing-stairs/solutions/4585271/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18012024-70-climbing-stairs?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/knbSaxXScFY)
-![image.png](assets/leetcode_daily_images/89198102.webp)
-![image.png](assets/leetcode_daily_images/820f936e.webp)
+![image.png](/assets/leetcode_daily_images/89198102.webp)
+![image.png](/assets/leetcode_daily_images/820f936e.webp)
 
 
 #### Join me on Telegram
@@ -65597,7 +65597,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/unique-number-of-occurrences/solutions/4579328/kotlin-rust/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17012024-1207-unique-number-of-occurrences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/qMvrHh2kJ9U)
-![image.png](assets/leetcode_daily_images/4d496d8c.webp)
+![image.png](/assets/leetcode_daily_images/4d496d8c.webp)
 
 
 
@@ -65658,7 +65658,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/insert-delete-getrandom-o1/solutions/4573497/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16012024-380-insert-delete-getrandom?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/MTxB74kat0k)
-![image.png](assets/leetcode_daily_images/c74a3e60.webp)
+![image.png](/assets/leetcode_daily_images/c74a3e60.webp)
 
 #### Join me on Telegram
 
@@ -65757,7 +65757,7 @@ impl RandomizedSet {
 [blog post](https://leetcode.com/problems/find-players-with-zero-or-one-losses/solutions/4567940/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15012024-2225-find-players-with-zero?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/SjZnYy5X244)
-![image.png](assets/leetcode_daily_images/1c07267f.webp)
+![image.png](/assets/leetcode_daily_images/1c07267f.webp)
 
 #### Join me on Telegram
 
@@ -65807,7 +65807,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/determine-if-two-strings-are-close/solutions/4562444/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14012024-1657-determine-if-two-strings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/enAXGzsmVB8)
-![image.png](assets/leetcode_daily_images/15d3527d.webp)
+![image.png](/assets/leetcode_daily_images/15d3527d.webp)
 
 
 
@@ -65855,7 +65855,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/solutions/4556656/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13012024-1347-minimum-number-of-steps?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/7yGUxNR6cVI)
-![image.png](assets/leetcode_daily_images/20edd9c0.webp)
+![image.png](/assets/leetcode_daily_images/20edd9c0.webp)
 
 #### Join me on Telegram
 
@@ -65899,7 +65899,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/determine-if-string-halves-are-alike/solutions/4550111/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12012024-1704-determine-if-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/TSdjY4YTRkc)
-![image.png](assets/leetcode_daily_images/31f7d396.webp)
+![image.png](/assets/leetcode_daily_images/31f7d396.webp)
 
 #### Join me on Telegram
 
@@ -65941,7 +65941,7 @@ $$O(n)$$, can be O(1) with `asSequence`
 [blog post](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/solutions/4544360/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11012024-1026-maximum-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/0ZbZ7yV4gY8)
-![image.png](assets/leetcode_daily_images/6f1a01d0.webp)
+![image.png](/assets/leetcode_daily_images/6f1a01d0.webp)
 
 #### Join me on Telegram
 
@@ -65991,7 +65991,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/solutions/4539119/kotlin-bfs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10012024-2385-amount-of-time-for?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/5Ha9J4svCKc)
-![image.png](assets/leetcode_daily_images/d8ab3e28.webp)
+![image.png](/assets/leetcode_daily_images/d8ab3e28.webp)
 
 #### Join me on Telegram
 
@@ -66062,7 +66062,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/leaf-similar-trees/solutions/4532654/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/9012024-872-leaf-similar-trees?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/cjhu8RUxUuo)
-![image.png](assets/leetcode_daily_images/1332ae27.webp)
+![image.png](/assets/leetcode_daily_images/1332ae27.webp)
 
 #### Join me on Telegram
 
@@ -66106,7 +66106,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/range-sum-of-bst/solutions/4526585/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/8012024-938-range-sum-of-bst?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/WQWp1jxNiP8)
-![image.png](assets/leetcode_daily_images/b94bb75c.webp)
+![image.png](/assets/leetcode_daily_images/b94bb75c.webp)
 
 #### Join me on Telegram
 
@@ -66151,7 +66151,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/4521808/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/7012024-446-arithmetic-slices-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/3kFB0lC8oxM)
-![image.png](assets/leetcode_daily_images/94c7275a.webp)
+![image.png](/assets/leetcode_daily_images/94c7275a.webp)
 
 #### Join me on Telegram
 
@@ -66205,7 +66205,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/maximum-profit-in-job-scheduling/solutions/4516146/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/6012024-1235-maximum-profit-in-job?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/V0pMlKRWRQU)
-![image.png](assets/leetcode_daily_images/17e1b78f.webp)
+![image.png](/assets/leetcode_daily_images/17e1b78f.webp)
 
 #### Join me on Telegram
 
@@ -66260,7 +66260,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/longest-increasing-subsequence/solutions/4510388/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/5012024-300-longest-increasing-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/uDZ9_YyWdH4)
-![image.png](assets/leetcode_daily_images/f84b42c7.webp)
+![image.png](/assets/leetcode_daily_images/f84b42c7.webp)
 
 #### Join me on Telegram
 
@@ -66326,7 +66326,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/solutions/4504248/kotlin-from-dp-to-math/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/4012024-2870-minimum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/EdERXCDnyF8)
-![image.png](assets/leetcode_daily_images/cb61adbd.webp)
+![image.png](/assets/leetcode_daily_images/cb61adbd.webp)
 
 #### Join me on Telegram
 
@@ -66385,7 +66385,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/solutions/4496627/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/3012024-2125-number-of-laser-beams?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/h-SRyUsiCZc)
-![image.png](assets/leetcode_daily_images/a7e02a99.webp)
+![image.png](/assets/leetcode_daily_images/a7e02a99.webp)
 
 #### Join me on Telegram
 
@@ -66486,7 +66486,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/assign-cookies/solutions/4486297/kotlin-sort/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/1012024-455-assign-cookies?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/Y5ARRSdTOEY)
-![image.png](assets/leetcode_daily_images/a18e8779.webp)
+![image.png](/assets/leetcode_daily_images/a18e8779.webp)
 
 #### Join me on Telegram
 
@@ -66534,7 +66534,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/largest-substring-between-two-equal-characters/solutions/4482196/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31122023-1624-largest-substring-between?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/BF4M70PncfE)
-![image.png](assets/leetcode_daily_images/fa0ffef7.webp)
+![image.png](/assets/leetcode_daily_images/fa0ffef7.webp)
 https://youtu.be/BF4M70PncfE
 
 #### Join me on Telegram
@@ -66573,7 +66573,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/solutions/4477383/kotlin-frequency/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30122023-1897-redistribute-characters?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/ltXmpMv4wHo)
-![image.png](assets/leetcode_daily_images/843a92cf.webp)
+![image.png](/assets/leetcode_daily_images/843a92cf.webp)
 
 
 #### Join me on Telegram
@@ -66617,7 +66617,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/solutions/4473265/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29122023-1335-minimum-difficulty?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/WvIIpPh9UZo)
-![image.png](assets/leetcode_daily_images/dfafa235.webp)
+![image.png](/assets/leetcode_daily_images/dfafa235.webp)
 
 #### Join me on Telegram
 
@@ -66669,7 +66669,7 @@ $$O(dn)$$
 [blog post](https://leetcode.com/problems/string-compression-ii/solutions/4469888/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28122023-1531-string-compression?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/ajfT7vaAJGY)
-![image.png](assets/leetcode_daily_images/cd5a8f73.webp)
+![image.png](/assets/leetcode_daily_images/cd5a8f73.webp)
 
 #### Join me on Telegram
 
@@ -66732,7 +66732,7 @@ $$O(kn)$$
 [blog post](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/solutions/4464920/kotlin-greedy-scan/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27122023-1578-minimum-time-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/JBitP1oM2Ac)
-![image.png](assets/leetcode_daily_images/213d2bcc.webp)
+![image.png](/assets/leetcode_daily_images/213d2bcc.webp)
 
 #### Join me on Telegram
 
@@ -66785,7 +66785,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/solutions/4459886/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26122023-1155-number-of-dice-rolls?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/k2xos_3iM7E)
-![image.png](assets/leetcode_daily_images/89eae29d.webp)
+![image.png](/assets/leetcode_daily_images/89eae29d.webp)
 
 #### Join me on Telegram
 
@@ -66836,7 +66836,7 @@ $$O(nt)$$
 [blog post](https://leetcode.com/problems/decode-ways/solutions/4455343/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25122023-91-decode-ways?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/7F_rqD4daDU)
-![image.png](assets/leetcode_daily_images/98c79f0d.webp)
+![image.png](/assets/leetcode_daily_images/98c79f0d.webp)
 
 #### Join me on Telegram
 
@@ -66881,7 +66881,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/4450527/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24122023-1758-minimum-changes-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/LycsaL5IeTk)
-![image.png](assets/leetcode_daily_images/3f12a28b.webp)
+![image.png](/assets/leetcode_daily_images/3f12a28b.webp)
 
 #### Join me on Telegram
 
@@ -66929,7 +66929,7 @@ $$O(1)$$
 [1496. Path Crossing](https://leetcode.com/problems/path-crossing/description/) easy
 [blog post](https://leetcode.com/problems/path-crossing/solutions/4445205/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23122023-1496-path-crossing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/0eb1d334.webp)
+![image.png](/assets/leetcode_daily_images/0eb1d334.webp)
 
 #### Join me on Telegram
 
@@ -66974,7 +66974,7 @@ $$O(n)$$
 [1422. Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/) easy
 [blog post](https://leetcode.com/problems/maximum-score-after-splitting-a-string/solutions/4440027/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22122023-1422-maximum-score-after?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/401fe726.webp)
+![image.png](/assets/leetcode_daily_images/401fe726.webp)
 
 #### Join me on Telegram
 
@@ -67013,7 +67013,7 @@ $$O(1)$$, dropLast(1) creates the second list, but we can just use pointers or `
 [1637. Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/) easy
 [blog post](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/solutions/4434526/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21122023-1637-widest-vertical-area?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/dee9917b.webp)
+![image.png](/assets/leetcode_daily_images/dee9917b.webp)
 
 #### Join me on Telegram
 
@@ -67051,7 +67051,7 @@ $$O(n)$$
 [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/) easy
 [blog post](https://leetcode.com/problems/buy-two-chocolates/solutions/4428790/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20122023-2706-buy-two-chocolates?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/a726735a.webp)
+![image.png](/assets/leetcode_daily_images/a726735a.webp)
 
 #### Join me on Telegram
 
@@ -67087,7 +67087,7 @@ $$O(1)$$
 [661. Image Smoother](https://leetcode.com/problems/image-smoother/description/) easy
 [blog post](https://leetcode.com/problems/image-smoother/solutions/4424198/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19122023-661-image-smoother?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/374c7469.webp)
+![image.png](/assets/leetcode_daily_images/374c7469.webp)
 
 #### Join me on Telegram
 
@@ -67125,7 +67125,7 @@ $$O(nm)$$
 [blog post](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/solutions/4419716/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18122023-1913-maximum-product-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
 [youtube](https://youtu.be/dqZXeeme8fE)
-![image.png](assets/leetcode_daily_images/b8ae372b.webp)
+![image.png](/assets/leetcode_daily_images/b8ae372b.webp)
 
 #### Join me on Telegram
 
@@ -67166,7 +67166,7 @@ $$O(1)$$
 [2353. Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/description/) medium
 [blog post](https://leetcode.com/problems/design-a-food-rating-system/solutions/4415744/kotlin-treeset/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17122023-2353-design-a-food-rating?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/b5d8c549.webp)
+![image.png](/assets/leetcode_daily_images/b5d8c549.webp)
 
 #### Join me on Telegram
 
@@ -67226,7 +67226,7 @@ class FoodRatings(val foods: Array<String>, val cuisines: Array<String>, val rat
 [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) easy
 [blog post](https://leetcode.com/problems/valid-anagram/solutions/4411609/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16122023-242-valid-anagram?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/405fd7d1.webp)
+![image.png](/assets/leetcode_daily_images/405fd7d1.webp)
 
 #### Join me on Telegram
 
@@ -67254,7 +67254,7 @@ $$O(n)$$, can also be solved in O(1) by computing the `hash`
 [1436. Destination City](https://leetcode.com/problems/destination-city/description/) easy
 [blog post](https://leetcode.com/problems/destination-city/solutions/4406829/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15122023-1436-destination-city?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/e93723c9.webp)
+![image.png](/assets/leetcode_daily_images/e93723c9.webp)
 
 #### Join me on Telegram
 
@@ -67282,7 +67282,7 @@ $$O(n)$$, with `toSet`
 [2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/description/) easy
 [blog post](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/solutions/4402623/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14122023-2482-difference-between?r=2bam17&utm_campaign=post&utm_medium=web&showWelcome=true)
-![image.png](assets/leetcode_daily_images/67147a68.webp)
+![image.png](/assets/leetcode_daily_images/67147a68.webp)
 
 #### Join me on Telegram
 
@@ -67320,7 +67320,7 @@ $$O(nm)$$
 [1582. Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/) easy
 [blog post](https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/4398174/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13122023-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/075c9679.webp)
+![image.png](/assets/leetcode_daily_images/075c9679.webp)
 
 #### Join me on Telegram
 
@@ -67356,7 +67356,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/4393721/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12122023-1464-maximum-product-of?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/nyXU1WVpcuo)
-![image.png](assets/leetcode_daily_images/39792771.webp)
+![image.png](/assets/leetcode_daily_images/39792771.webp)
 
 #### Join me on Telegram
 
@@ -67389,7 +67389,7 @@ $$O(1)$$
 [1287. Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description/) easy
 [blog post](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/solutions/4389153/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11122023-1287-element-appearing-more?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/2856bc33.webp)
+![image.png](/assets/leetcode_daily_images/2856bc33.webp)
 
 #### Join me on Telegram
 
@@ -67423,7 +67423,7 @@ $$O(n)$$, can be O(1)
 [blog post](https://leetcode.com/problems/transpose-matrix/solutions/4385162/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10122023-867-transpose-matrix?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/nyXU1WVpcuo)
-![image.png](assets/leetcode_daily_images/bfd88747.webp)
+![image.png](/assets/leetcode_daily_images/bfd88747.webp)
 
 
 #### Join me on Telegram
@@ -67461,7 +67461,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/binary-tree-inorder-traversal/solutions/4381000/kotlin-recursion/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09122023-94-binary-tree-inorder-traversal?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/O2NK3P6h3QE)
-![image.png](assets/leetcode_daily_images/e58aef7c.webp)
+![image.png](/assets/leetcode_daily_images/e58aef7c.webp)
 
 #### Join me on Telegram
 
@@ -67498,7 +67498,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/construct-string-from-binary-tree/solutions/4377687/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08122023-606-construct-string-from?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/S0UF6M72Xyc)
-![image.png](assets/leetcode_daily_images/9a1225f8.webp)
+![image.png](/assets/leetcode_daily_images/9a1225f8.webp)
 
 #### Join me on Telegram
 
@@ -67539,7 +67539,7 @@ $$O(n)$$
 [1903. Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/description/) easy
 [blog post](https://leetcode.com/problems/largest-odd-number-in-string/solutions/4374041/kotlin-one-liner/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122023-1903-largest-odd-number?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d767053b.webp)
+![image.png](/assets/leetcode_daily_images/d767053b.webp)
 
 
 #### Join me on Telegram
@@ -67580,7 +67580,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/count-of-matches-in-tournament/solutions/4364363/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07122023-1688-count-of-matches-in?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/K_fMbBNu8N0)
-![image.png](assets/leetcode_daily_images/345869cb.webp)
+![image.png](/assets/leetcode_daily_images/345869cb.webp)
 
 #### Join me on Telegram
 
@@ -67632,7 +67632,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/largest-3-same-digit-number-in-string/solutions/4360039/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04122023-2264-largest-3-same-digit?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/EWZZKljZf_s)
-![image.png](assets/leetcode_daily_images/edeb3a58.webp)
+![image.png](/assets/leetcode_daily_images/edeb3a58.webp)
 
 #### Join me on Telegram
 
@@ -67676,7 +67676,7 @@ $$O(n)$$, can be O(1) with `asSequence()`
 [blog post](https://leetcode.com/problems/minimum-time-visiting-all-points/solutions/4356193/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03122023-1266-minimum-time-visiting?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/VjqIpuHXCF4)
-![image.png](assets/leetcode_daily_images/fe5e6e4b.webp)
+![image.png](/assets/leetcode_daily_images/fe5e6e4b.webp)
 
 #### Join me on Telegram
 
@@ -67721,7 +67721,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/solutions/4352470/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02122023-1160-find-words-that-can?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/EIwFek_6qNM)
-![image.png](assets/leetcode_daily_images/2e69b4a0.webp)
+![image.png](/assets/leetcode_daily_images/2e69b4a0.webp)
 
 #### Join me on Telegram
 
@@ -67772,7 +67772,7 @@ $$O(n)$$, can be O(1)
 [blog post](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/solutions/4348780/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01122023-1662-check-if-two-string?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/ewmNv3766OQ)
-![image.png](assets/leetcode_daily_images/e46de001.webp)
+![image.png](/assets/leetcode_daily_images/e46de001.webp)
 
 #### Join me on Telegram
 
@@ -67825,7 +67825,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/solutions/4345560/kotlin-eli-5-two-tricks/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30112023-1611-minimum-one-bit-operations?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/0M5p5KgVGkw)
-![image.png](assets/leetcode_daily_images/f7c44ab7.webp)
+![image.png](/assets/leetcode_daily_images/f7c44ab7.webp)
 
 #### Join me on Telegram
 
@@ -67913,7 +67913,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/number-of-1-bits/solutions/4341552/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29112023-191-number-of-1-bits?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/yQ8lwrNYKFw)
-![image.png](assets/leetcode_daily_images/b77f747a.webp)
+![image.png](/assets/leetcode_daily_images/b77f747a.webp)
 
 #### Join me on Telegram
 
@@ -67962,7 +67962,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/solutions/4337973/kotlin-cumulative-sum/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28112023-2147-number-of-ways-to-divide?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/cbmDt5_-TSY)
-![image.png](assets/leetcode_daily_images/25df92ef.webp)
+![image.png](/assets/leetcode_daily_images/25df92ef.webp)
 
 #### Join me on Telegram
 
@@ -68029,7 +68029,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/knight-dialer/solutions/4334170/kotlin-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27112023-935-knight-dialer?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/cr2WnuMLRsQ)
-![image.png](assets/leetcode_daily_images/dc7374dc.webp)
+![image.png](/assets/leetcode_daily_images/dc7374dc.webp)
 
 #### Join me on Telegram
 
@@ -68085,7 +68085,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/largest-submatrix-with-rearrangements/solutions/4330761/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26112023-1727-largest-submatrix-with?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/K-EQs20YOF0)
-![image.png](assets/leetcode_daily_images/01290387.webp)
+![image.png](/assets/leetcode_daily_images/01290387.webp)
 
 #### Join me on Telegram
 
@@ -68099,9 +68099,9 @@ Max area of `1` submatrix after sorting columns optimally
 
 Use hint :(
 Ok, if we store the heights of the columns we can analyze each row independently, by choosing the largest heights first. The area will be `height * width`, where width will be the current position:
-![image.png](assets/leetcode_daily_images/6503c8f0.webp)
+![image.png](/assets/leetcode_daily_images/6503c8f0.webp)
 
-![image.png](assets/leetcode_daily_images/0caba092.webp)
+![image.png](/assets/leetcode_daily_images/0caba092.webp)
 
 #### Approach
 
@@ -68140,7 +68140,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/solutions/4326893/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25112023-1685-sum-of-absolute-differences?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/7bgwjpdKCD0)
-![image.png](assets/leetcode_daily_images/b3099ab9.webp)
+![image.png](/assets/leetcode_daily_images/b3099ab9.webp)
 
 #### Join me on Telegram
 
@@ -68211,7 +68211,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/solutions/4323147/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24112023-1561-maximum-number-of-coins?r=2bam17&utm_campaign=post&utm_medium=web)
 [youtube](https://youtu.be/wsx94MZvALk)
-![image.png](assets/leetcode_daily_images/b808afae.webp)
+![image.png](/assets/leetcode_daily_images/b808afae.webp)
 
 #### Join me on Telegram
 
@@ -68266,7 +68266,7 @@ $$O(n)$$, can be O(1) when sorted in-place
 [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/) medium
 [blog post](https://leetcode.com/problems/arithmetic-subarrays/solutions/4319276/kotlin-priorityqueue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23112023-1630-arithmetic-subarrays?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d0d3394f.webp)
+![image.png](/assets/leetcode_daily_images/d0d3394f.webp)
 
 #### Join me on Telegram
 
@@ -68316,7 +68316,7 @@ $$O(n)$$
 [1424. Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/description/) medium
 [blog post](https://leetcode.com/problems/diagonal-traverse-ii/solutions/4315814/kotlin-priorityqueue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22112023-1424-diagonal-traverse-ii?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/70a4f186.webp)
+![image.png](/assets/leetcode_daily_images/70a4f186.webp)
 
 #### Join me on Telegram
 
@@ -68367,7 +68367,7 @@ $$O(n)$$
 [1814. Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/description/) medium
 [blog post](https://leetcode.com/problems/count-nice-pairs-in-an-array/solutions/4312107/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21112023-1814-count-nice-pairs-in?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/42102f4c.webp)
+![image.png](/assets/leetcode_daily_images/42102f4c.webp)
 
 #### Join me on Telegram
 
@@ -68420,7 +68420,7 @@ $$O(n)$$
 [2391. Minimum Amount of Time to Collect Garbage](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/description/) medium
 [blog post](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/solutions/4308211/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20112023-2391-minimum-amount-of-time?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/be32f621.webp)
+![image.png](/assets/leetcode_daily_images/be32f621.webp)
 
 #### Join me on Telegram
 
@@ -68464,7 +68464,7 @@ $$O(1)$$
 [1887. Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/description/) medium
 [blog post](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/solutions/4304937/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19112023-1887-reduction-operations?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d8f6b0dc.webp)
+![image.png](/assets/leetcode_daily_images/d8f6b0dc.webp)
 
 #### Join me on Telegram
 
@@ -68507,7 +68507,7 @@ $$O(n)$$
 [1838. Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/) medium
 [blog post](https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/4301306/kotlin-two-pointers/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18112023-1838-frequency-of-the-most?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/18e76712.webp)
+![image.png](/assets/leetcode_daily_images/18e76712.webp)
 
 #### Join me on Telegram
 
@@ -68570,7 +68570,7 @@ $$O(1)$$
 [1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/) medium
 [blog post](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/solutions/4297218/kotlin-two-pointers/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17112023-1877-minimize-maximum-pair?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/fdf6d16a.webp)
+![image.png](/assets/leetcode_daily_images/fdf6d16a.webp)
 
 #### Join me on Telegram
 
@@ -68611,7 +68611,7 @@ $$O(1)$$, this solution takes O(n), but can be rewritten
 [1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/) medium
 [blog post](https://leetcode.com/problems/find-unique-binary-string/solutions/4293360/kotlin-sort/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16112023-1980-find-unique-binary?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/6b065f8f.webp)
+![image.png](/assets/leetcode_daily_images/6b065f8f.webp)
 
 
 #### Join me on Telegram
@@ -68657,7 +68657,7 @@ $$O(n)$$
 [1846. Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/description/) medium
 [blog post](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/solutions/4289555/kotlin-priority-queue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15112023-1846-maximum-element-after?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/a50d3b31.webp)
+![image.png](/assets/leetcode_daily_images/a50d3b31.webp)
 
 #### Join me on Telegram
 
@@ -68705,13 +68705,13 @@ $$O(n)$$
 
 ```
 Shorter version:
-![image.png](assets/leetcode_daily_images/903da174.webp)
+![image.png](/assets/leetcode_daily_images/903da174.webp)
 
 # 14.11.2023
 [1930. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/) medium
 [blog post](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/solutions/4285632/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14112023-1930-unique-length-3-palindromic?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/61f46b0c.webp)
+![image.png](/assets/leetcode_daily_images/61f46b0c.webp)
 
 #### Join me on Telegram
 
@@ -68764,7 +68764,7 @@ $$O(1)$$, if we store frequencies in an `IntArray`
 [2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/) medium
 [blog post](https://leetcode.com/problems/sort-vowels-in-a-string/solutions/4281721/kotlin-count-sort/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13112023-2785-sort-vowels-in-a-string?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/df6a61cf.webp)
+![image.png](/assets/leetcode_daily_images/df6a61cf.webp)
 
 #### Join me on Telegram
 
@@ -68817,7 +68817,7 @@ $$O(n)$$
 [815. Bus Routes](https://leetcode.com/problems/bus-routes/description/) hard
 [blog post](https://leetcode.com/problems/bus-routes/solutions/4278516/kotlin-bfs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12112023-815-bus-routes?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/eae59beb.webp)
+![image.png](/assets/leetcode_daily_images/eae59beb.webp)
 
 #### Join me on Telegram
 
@@ -68878,7 +68878,7 @@ $$O(RS)$$
 [2642. Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/description/) hard
 [blog post](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/solutions/4274939/kotlin-dijkstra/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11112023-2642-design-graph-with-shortest?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/265000b4.webp)
+![image.png](/assets/leetcode_daily_images/265000b4.webp)
 
 #### Problem TLDR
 
@@ -68932,7 +68932,7 @@ class Graph(n: Int, edges: Array<IntArray>) :
 [1743. Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/description/) medium
 [blog post](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/solutions/4271483/kotlin-graph/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10112023-1743-restore-the-array-from?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/86d2a48f.webp)
+![image.png](/assets/leetcode_daily_images/86d2a48f.webp)
 
 #### Join me on Telegram
 
@@ -68983,7 +68983,7 @@ $$O(n)$$
 [1759. Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/description/) medium
 [blog post](https://leetcode.com/problems/count-number-of-homogenous-substrings/solutions/4267188/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09112023-1759-count-number-of-homogenous?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/f2fd93f8.webp)
+![image.png](/assets/leetcode_daily_images/f2fd93f8.webp)
 
 #### Join me on Telegram
 
@@ -69044,7 +69044,7 @@ $$O(1)$$
 [2849. Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description/) medium
 [blog post](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/solutions/4262992/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08112023-2849-determine-if-a-cell?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/25c36adc.webp)
+![image.png](/assets/leetcode_daily_images/25c36adc.webp)
 
 #### Join me on Telegram
 
@@ -69089,7 +69089,7 @@ $$O(1)$$
 [1921. Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/description/) medium
 [blog post](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/solutions/4259171/kotlin-sort-by-arrival-time/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07112023-1921-eliminate-maximum-number?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/c064c6f3.webp)
+![image.png](/assets/leetcode_daily_images/c064c6f3.webp)
 
 #### Join me on Telegram
 
@@ -69137,7 +69137,7 @@ $$O(n)$$
 [1845. Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/description/) medium
 [blog post](https://leetcode.com/problems/seat-reservation-manager/solutions/4255246/kotlin-priorityqueue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06112023-1845-seat-reservation-manager?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/f1e44ac2.webp)
+![image.png](/assets/leetcode_daily_images/f1e44ac2.webp)
 
 #### Join me on Telegram
 
@@ -69192,7 +69192,7 @@ class SeatManager(n: Int): PriorityQueue<Int>() {
 [1535. Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/description/) medium
 [blog post](https://leetcode.com/problems/find-the-winner-of-an-array-game/solutions/4250991/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05112023-1535-find-the-winner-of?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/82ed5e8d.webp)
+![image.png](/assets/leetcode_daily_images/82ed5e8d.webp)
 
 #### Join me on Telegram
 
@@ -69253,7 +69253,7 @@ $$O(1)$$
 [1503. Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/description/) medium
 [blog post](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/solutions/4246680/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04112023-1503-last-moment-before?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/39ad85a7.webp)
+![image.png](/assets/leetcode_daily_images/39ad85a7.webp)
 
 #### Join me on Telegram
 
@@ -69292,7 +69292,7 @@ $$O(1)$$
 [767. Reorganize String](https://leetcode.com/problems/reorganize-string/description/) medium
 [blog post](https://leetcode.com/problems/reorganize-string/solutions/4242006/kotlin-priorityqueue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03112023-767-reorganize-string?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/ca092643.webp)
+![image.png](/assets/leetcode_daily_images/ca092643.webp)
 
 #### Join me on Telegram
 
@@ -69351,7 +69351,7 @@ $$O(n)$$
 [2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/) medium
 [blog post](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/solutions/4237610/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02112023-2265-count-nodes-equal-to?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/34cf7f49.webp)
+![image.png](/assets/leetcode_daily_images/34cf7f49.webp)
 
 #### Join me on Telegram
 
@@ -69401,7 +69401,7 @@ $$O(log(n))$$ for the recursion depth
 [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/) easy
 [blog post](https://leetcode.com/problems/find-mode-in-binary-search-tree/solutions/4233545/kotlin-in-order-traversal/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01112023-501-find-mode-in-binary?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/5e09a4b1.webp)
+![image.png](/assets/leetcode_daily_images/5e09a4b1.webp)
 
 #### Join me on Telegram
 
@@ -69463,7 +69463,7 @@ $$O(n)$$, result can be `n` if numbers are unique
 [2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/) medium
 [blog post](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/solutions/4229075/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31102023-2433-find-the-original-array?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/12e7f0b4.webp)
+![image.png](/assets/leetcode_daily_images/12e7f0b4.webp)
 
 #### Join me on Telegram
 
@@ -69519,7 +69519,7 @@ $$O(n)$$
 [1356. Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description/) easy
 [blog post](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/solutions/4224952/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30102023-1356-sort-integers-by-the?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/daceb382.webp)
+![image.png](/assets/leetcode_daily_images/daceb382.webp)
 
 #### Join me on Telegram
 
@@ -69562,8 +69562,8 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/poor-pigs/solutions/4221582/kotlin-understand-encoding/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29102023-458-poor-pigs?r=2bam17&utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/70e46cfb.webp)
-![image.png](assets/leetcode_daily_images/798d51bb.webp)
+![image.png](/assets/leetcode_daily_images/70e46cfb.webp)
+![image.png](/assets/leetcode_daily_images/798d51bb.webp)
 
 #### Join me on Telegram
 
@@ -69750,7 +69750,7 @@ The more clever version:
 [1220. Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/description/) hard
 [blog post](https://leetcode.com/problems/count-vowels-permutation/solutions/4216643/kotlin-dfs-memo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28102023-1220-count-vowels-permutation?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/414f430b.webp)
+![image.png](/assets/leetcode_daily_images/414f430b.webp)
 
 #### Join me on Telegram
 
@@ -69797,17 +69797,17 @@ $$O(n)$$
 
 ```
 Iterative version
-![image.png](assets/leetcode_daily_images/db81b9bb.webp)
+![image.png](/assets/leetcode_daily_images/db81b9bb.webp)
 Another one-liner
-![image.png](assets/leetcode_daily_images/85fca810.webp)
+![image.png](/assets/leetcode_daily_images/85fca810.webp)
 
 # 27.10.2023
 [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) medium
 [blog post](https://leetcode.com/problems/longest-palindromic-substring/solutions/4212765/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27102023-5-longest-palindromic-substring?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/966dc183.webp)
+![image.png](/assets/leetcode_daily_images/966dc183.webp)
 Golf version
-![image.png](assets/leetcode_daily_images/6e7f4b69.webp)
+![image.png](/assets/leetcode_daily_images/6e7f4b69.webp)
 
 #### Join me on Telegram
 
@@ -69855,7 +69855,7 @@ $$O(n^2)$$
 [823. Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/description/) medium
 [blog post](https://leetcode.com/problems/binary-trees-with-factors/solutions/4209575/kotlin-dfs-memo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26102023-823-binary-trees-with-factors?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/2f6a0848.webp)
+![image.png](/assets/leetcode_daily_images/2f6a0848.webp)
 
 #### Join me on Telegram
 
@@ -69923,7 +69923,7 @@ $$O(n^2)$$
 [779. K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/description/) medium
 [blog post](https://leetcode.com/problems/k-th-symbol-in-grammar/solutions/4205798/kotlin-subproblem/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25102023-779-k-th-symbol-in-grammar?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/8ff9a12f.webp)
+![image.png](/assets/leetcode_daily_images/8ff9a12f.webp)
 
 #### Join me on Telegram
 
@@ -69980,7 +69980,7 @@ $$O(n)$$
 [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/) medium
 [blog post](https://leetcode.com/problems/find-largest-value-in-each-tree-row/solutions/4201719/kotlin-bfs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24102023-515-find-largest-value-in?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/b2b7c70b.webp)
+![image.png](/assets/leetcode_daily_images/b2b7c70b.webp)
 
 #### Join me on Telegram
 
@@ -70032,7 +70032,7 @@ $$O(n)$$
 [342. Power of Four](https://leetcode.com/problems/power-of-four/description/) easy
 [blog post](https://leetcode.com/problems/power-of-four/solutions/4197944/kotlin-trailing-zero-bits/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23102023-342-power-of-four?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/c47bfa0f.webp)
+![image.png](/assets/leetcode_daily_images/c47bfa0f.webp)
 
 #### Join me on Telegram
 
@@ -70111,7 +70111,7 @@ $$O(1)$$
 [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/description/) hard
 [blog post](https://leetcode.com/problems/maximum-score-of-a-good-subarray/solutions/4194715/kotlin-must-include-nums-k/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23102023-1793-maximum-score-of-a?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/3afa1f41.webp)
+![image.png](/assets/leetcode_daily_images/3afa1f41.webp)
 
 #### Join me on Telegram
 
@@ -70169,7 +70169,7 @@ $$O(1)$$
 [1425. Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/description/) hard
 [blog post](https://leetcode.com/problems/constrained-subsequence-sum/solutions/4191510/kotlin-decreasing-queue-evolve/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22102023-1425-constrained-subsequence?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d3aa6326.webp)
+![image.png](/assets/leetcode_daily_images/d3aa6326.webp)
 
 #### Join me on Telegram
 
@@ -70262,7 +70262,7 @@ $$O(k)$$
 [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) medium
 [blog post](https://leetcode.com/problems/flatten-nested-list-iterator/solutions/4188488/kotlin-stack/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20102023-341-flatten-nested-list?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/4055aa73.webp)
+![image.png](/assets/leetcode_daily_images/4055aa73.webp)
 
 #### Join me on Telegram
 
@@ -70314,7 +70314,7 @@ class NestedIterator(nestedList: List<NestedInteger>) : Stack<NestedInteger>() {
 [844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/) medium
 [blog post](https://leetcode.com/problems/backspace-string-compare/solutions/4184552/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19102023-844-backspace-string-compare?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/19a77684.webp)
+![image.png](/assets/leetcode_daily_images/19a77684.webp)
 
 #### Join me on Telegram
 
@@ -70366,7 +70366,7 @@ $$O(1)$$
 [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/) hard
 [blog post](https://leetcode.com/problems/parallel-courses-iii/solutions/4180807/kotlin-dfs-memo-from-leafs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18102023-2050-parallel-courses-iii?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/2c345d6d.webp)
+![image.png](/assets/leetcode_daily_images/2c345d6d.webp)
 
 #### Join me on Telegram
 
@@ -70429,7 +70429,7 @@ P.S.: we can also just choose the maximum, as it will be the longest path:
 [1361. Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/description/) medium
 [blog post](https://leetcode.com/problems/validate-binary-tree-nodes/solutions/4177318/kotlin-union-find/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17102023-1361-validate-binary-tree?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/6609acfb.webp)
+![image.png](/assets/leetcode_daily_images/6609acfb.webp)
 
 #### Join me on Telegram
 
@@ -70442,7 +70442,7 @@ Is Binary Tree of `leftChild[]` & `rightChild[]` valid
 #### Intuition
 
 There are some examples:
-![image.png](assets/leetcode_daily_images/8ddd7dc9.webp)
+![image.png](/assets/leetcode_daily_images/8ddd7dc9.webp)
 
 Tree is valid if:
 * all the leafs are connected
@@ -70489,7 +70489,7 @@ $$O(n)$$
 [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) easy
 [blog post](https://leetcode.com/problems/pascals-triangle-ii/solutions/4173651/kotlin-fold/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16102023-119-pascals-triangle-ii?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/a1301c77.webp)
+![image.png](/assets/leetcode_daily_images/a1301c77.webp)
 
 #### Join me on Telegram
 
@@ -70540,7 +70540,7 @@ $$O(n)$$
 [1269. Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/description/) hard
 [blog post](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/solutions/4170099/kotlin-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15102023-1269-number-of-ways-to-stay?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/1f43ce82.webp)
+![image.png](/assets/leetcode_daily_images/1f43ce82.webp)
 
 #### Join me on Telegram
 
@@ -70598,7 +70598,7 @@ $$O(s^2)$$
 [2742. Painting the Walls](https://leetcode.com/problems/painting-the-walls/description/) hard
 [blog post](https://leetcode.com/problems/painting-the-walls/solutions/4166620/kotlin-dfs-memo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14102023-2742-painting-the-walls?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/0e6af63d.webp)
+![image.png](/assets/leetcode_daily_images/0e6af63d.webp)
 
 #### Join me on Telegram
 
@@ -70666,7 +70666,7 @@ $$O(n^2)$$
 [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/) easy
 [blog post](https://leetcode.com/problems/min-cost-climbing-stairs/solutions/4163218/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13102023-746-min-cost-climbing-stairs?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/980347fd.webp)
+![image.png](/assets/leetcode_daily_images/980347fd.webp)
 
 #### Join me on Telegram
 
@@ -70725,7 +70725,7 @@ $$O(1)$$
 [1095. Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/description/) hard
 [blog post](https://leetcode.com/problems/find-in-mountain-array/solutions/4159347/kotlin-3-binary-searches/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12102023-1095-find-in-mountain-array?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/1ef87b8b.webp)
+![image.png](/assets/leetcode_daily_images/1ef87b8b.webp)
 
 #### Join me on Telegram
 
@@ -70798,7 +70798,7 @@ $$O(1)$$
 [2251. Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/) hard
 [blog post](https://leetcode.com/problems/number-of-flowers-in-full-bloom/solutions/4155880/kotlin-treemap-binary-search/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11102023-2251-number-of-flowers-in?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/cbc93f5c.webp)
+![image.png](/assets/leetcode_daily_images/cbc93f5c.webp)
 
 #### Join me on Telegram
 
@@ -70873,7 +70873,7 @@ $$O(n)$$
 [2009. Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/description/) hard
 [blog post](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/solutions/4152344/kotlin-binary-search/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10102023-2009-minimum-number-of-operations?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/92c8fe98.webp)
+![image.png](/assets/leetcode_daily_images/92c8fe98.webp)
 
 #### Join me on Telegram
 
@@ -70947,7 +70947,7 @@ $$O(n)$$
 [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) medium
 [blog post](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/solutions/4148104/kotlin-bs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/9102023-34-find-first-and-last-position?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/970b7ba3.webp)
+![image.png](/assets/leetcode_daily_images/970b7ba3.webp)
 
 #### Join me on Telegram
 
@@ -71010,7 +71010,7 @@ $$O(1)$$
 [1458. Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/description/) hard
 [blog post](https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/4144292/kotlin-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/8102023-1458-max-dot-product-of-two?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/e6fbe6a8.webp)
+![image.png](/assets/leetcode_daily_images/e6fbe6a8.webp)
 
 #### Join me on Telegram
 
@@ -71059,7 +71059,7 @@ $$O(n^2)$$
 [1420. Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/description/) hard
 [blog post](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/solutions/4140362/kotlin-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/7102023-1420-build-array-where-you?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/a9c26816.webp)
+![image.png](/assets/leetcode_daily_images/a9c26816.webp)
 
 #### Join me on Telegram
 
@@ -71114,7 +71114,7 @@ $$O(nkm)$$
 [343. Integer Break](https://leetcode.com/problems/integer-break/description/) medium
 [blog post](https://leetcode.com/problems/integer-break/solutions/4136139/kotlin-dfs-memo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/6102023-343-integer-break?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/e910057a.webp)
+![image.png](/assets/leetcode_daily_images/e910057a.webp)
 
 #### Join me on Telegram
 
@@ -71158,7 +71158,7 @@ $$O(n)$$
 [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/) medium
 [blog post](https://leetcode.com/problems/majority-element-ii/solutions/4131903/kotlin-moore-algo/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/5102023-229-majority-element-ii?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/7358655b.webp)
+![image.png](/assets/leetcode_daily_images/7358655b.webp)
 
 #### Join me on Telegram
 
@@ -71232,7 +71232,7 @@ $$O(1)$$
 [706. Design HashMap](https://leetcode.com/problems/design-hashmap/description/) easy
 [blog post](https://leetcode.com/problems/design-hashmap/solutions/4127340/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/4102023-706-design-hashmap?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/f2c844a4.webp)
+![image.png](/assets/leetcode_daily_images/f2c844a4.webp)
 
 #### Join me on Telegram
 
@@ -71295,7 +71295,7 @@ class MyHashMap() {
 [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/) easy
 [blog post](https://leetcode.com/problems/number-of-good-pairs/solutions/4122513/kotlin-fold/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/3102023-1512-number-of-good-pairs?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/023ccf47.webp)
+![image.png](/assets/leetcode_daily_images/023ccf47.webp)
 
 #### Join me on Telegram
 
@@ -71338,7 +71338,7 @@ $$O(n)$$
 [2038. Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/) medium
 [blog post](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/solutions/4117386/kotlin-sliding-window/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/2102023-2038-remove-colored-pieces?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/0b855093.webp)
+![image.png](/assets/leetcode_daily_images/0b855093.webp)
 
 #### Join me on Telegram
 
@@ -71378,7 +71378,7 @@ $$O(n)$$, can be O(1) if `asSequence` used
 [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) easy
 [blog post](https://leetcode.com/problems/reverse-words-in-a-string-iii/solutions/4112200/kotlin-one-liner/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/1102023-557-reverse-words-in-a-string?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/61ee9014.webp)
+![image.png](/assets/leetcode_daily_images/61ee9014.webp)
 
 #### Join me on Telegram
 
@@ -71418,7 +71418,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/132-pattern/solutions/4107967/kotlin-monotonic-stack/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30092023-456-132-pattern?r=2bam17&utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/56af4f50.webp)
+![image.png](/assets/leetcode_daily_images/56af4f50.webp)
 
 #### Join me on Telegram
 
@@ -71465,7 +71465,7 @@ $$O(1)$$
 [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/) easy
 [blog post](https://leetcode.com/problems/monotonic-array/solutions/4103588/kotlin-single-pass/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29092023-896-monotonic-array?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/faf96491.webp)
+![image.png](/assets/leetcode_daily_images/faf96491.webp)
 
 
 #### Join me on Telegram
@@ -71513,7 +71513,7 @@ $$O(1)$$
 [905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/description/) easy
 [blog post](https://leetcode.com/problems/sort-array-by-parity/solutions/4098759/kotlin-3-one-liners/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28092023-905-sort-array-by-parity?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/66be2d11.webp)
+![image.png](/assets/leetcode_daily_images/66be2d11.webp)
 
 #### Join me on Telegram
 
@@ -71560,7 +71560,7 @@ $$O(1)$$
 [880. Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/description/) medium
 [blog post](https://leetcode.com/problems/decoded-string-at-index/solutions/4095272/kotlin-you-know-the-length/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27092023-880-decoded-string-at-index?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d53f4c7d.webp)
+![image.png](/assets/leetcode_daily_images/d53f4c7d.webp)
 
 #### Join me on Telegram
 
@@ -71631,7 +71631,7 @@ $$O(n)$$
 [316. Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/description/) medium
 [blog post](https://leetcode.com/problems/remove-duplicate-letters/solutions/4091357/kotlin-greedy-stack/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26092023-316-remove-duplicate-letters?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/9c29040d.webp)
+![image.png](/assets/leetcode_daily_images/9c29040d.webp)
 
 #### Join me on Telegram
 
@@ -71692,7 +71692,7 @@ $$O(1)$$
 [389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/) easy
 [blog post](https://leetcode.com/problems/find-the-difference/solutions/4087272/kotlin-one-liner/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25092023-389-find-the-difference?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/f5cab064.webp)
+![image.png](/assets/leetcode_daily_images/f5cab064.webp)
 
 #### Join me on Telegram
 
@@ -71731,7 +71731,7 @@ $$O(1)$$
 [799. Champagne Tower](https://leetcode.com/problems/champagne-tower/description/) medium
 [blog post](https://leetcode.com/problems/champagne-tower/solutions/4083285/kotlin-pascal-s-triangle/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24092023-799-champagne-tower?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/c18f0ba8.webp)
+![image.png](/assets/leetcode_daily_images/c18f0ba8.webp)
 
 #### Join me on Telegram
 
@@ -71780,7 +71780,7 @@ $$O(n)$$
 [1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/description/) medium
 [blog post](https://leetcode.com/problems/longest-string-chain/solutions/4079003/kotlin-graph/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23092023-1048-longest-string-chain?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/c592e2cd.webp)
+![image.png](/assets/leetcode_daily_images/c592e2cd.webp)
 
 #### Join me on Telegram
 
@@ -71838,7 +71838,7 @@ $$O(n^2)$$, for graph
 [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) easy
 [blog post](https://leetcode.com/problems/is-subsequence/solutions/4074957/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22092023-392-is-subsequence?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/8b4a8878.webp)
+![image.png](/assets/leetcode_daily_images/8b4a8878.webp)
 
 #### Join me on Telegram
 
@@ -71883,7 +71883,7 @@ $$O(1)$$
 [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) hard
 [blog post](https://leetcode.com/problems/median-of-two-sorted-arrays/solutions/4071065/kotlin-o-n-two-pointer/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21092023-4-median-of-two-sorted-arrays?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/be2b0257.webp)
+![image.png](/assets/leetcode_daily_images/be2b0257.webp)
 
 #### Join me on Telegram
 
@@ -71942,7 +71942,7 @@ $$O(1)$$
 [1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description/) medium
 [blog post](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/4067002/kotlin-slide/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20092023-1658-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/00045a69.webp)
+![image.png](/assets/leetcode_daily_images/00045a69.webp)
 
 #### Join me on Telegram
 
@@ -71997,7 +71997,7 @@ $$O(1)$$
 [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium
 [blog post](https://leetcode.com/problems/find-the-duplicate-number/solutions/4062911/kotlin-modify-then-revert-42222-also-the-case/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19092023-287-find-the-duplicate-number?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/010d4c9f.webp)
+![image.png](/assets/leetcode_daily_images/010d4c9f.webp)
 
 #### Join me on Telegram
 
@@ -72052,7 +72052,7 @@ $$O(1)$$
 [1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/description/) easy
 [blog post](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/solutions/4058213/kotlin-use-api/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18092023-1337-the-k-weakest-rows?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/e14ac843.webp)
+![image.png](/assets/leetcode_daily_images/e14ac843.webp)
 
 #### Join me on Telegram
 
@@ -72102,7 +72102,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/path-with-minimum-effort/solutions/4049798/kotln-a/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16092023-1631-path-with-minimum-effort?r=2bam17&utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/8e484fa1.webp)
+![image.png](/assets/leetcode_daily_images/8e484fa1.webp)
 
 #### Join me on Telegram
 
@@ -72158,7 +72158,7 @@ $$O(nm)$$
 [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/) medium
 [blog post](https://leetcode.com/problems/min-cost-to-connect-all-points/solutions/4046178/kotlin-priority-queue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15092023-1584-min-cost-to-connect?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/65a0f07a.webp)
+![image.png](/assets/leetcode_daily_images/65a0f07a.webp)
 
 #### Join me on Telegram
 
@@ -72211,7 +72211,7 @@ $$O(n^2)$$
 [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) hard
 [blog post](https://leetcode.com/problems/reconstruct-itinerary/solutions/4042335/kotlin-dfs-backtrack/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14092023-332-reconstruct-itinerary?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/7cb18c6d.webp)
+![image.png](/assets/leetcode_daily_images/7cb18c6d.webp)
 
 #### Join me on Telegram
 
@@ -72271,7 +72271,7 @@ $$O(n)$$
 [135. Candy](https://leetcode.com/problems/candy/description/) hard
 [blog post](https://leetcode.com/problems/candy/solutions/4038064/kotlin-graph-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13092023-135-candy?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d370c6cf.webp)
+![image.png](/assets/leetcode_daily_images/d370c6cf.webp)
 
 #### Join me on Telegram
 
@@ -72345,7 +72345,7 @@ $$O(n)$$
 [1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/description/) medium
 [blog post](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/solutions/4033633/kotlin-collections-api/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12092023-1647-minimum-deletions-to?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/8a8441c4.webp)
+![image.png](/assets/leetcode_daily_images/8a8441c4.webp)
 
 #### Join me on Telegram
 
@@ -72400,7 +72400,7 @@ $$O(n)$$
 [1282. Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description/) medium
 [blog post](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/solutions/4029302/kotlin-collections-api/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11092023-1282-group-the-people-given?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/4298f641.webp)
+![image.png](/assets/leetcode_daily_images/4298f641.webp)
 
 #### Join me on Telegram
 
@@ -72448,7 +72448,7 @@ $$O(n)$$
 [1359. Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/description/) hard
 [blog post](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/solutions/4024574/kotlin-the-pattern/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10092023-1359-count-all-valid-pickup?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/48517602.webp)
+![image.png](/assets/leetcode_daily_images/48517602.webp)
 
 #### Join me on Telegram
 
@@ -72532,7 +72532,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/combination-sum-iv/solutions/4020533/kotlin-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/9092023-377-combination-sum-iv?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/368432b4.webp)
+![image.png](/assets/leetcode_daily_images/368432b4.webp)
 
 #### Join me on Telegram
 
@@ -72578,7 +72578,7 @@ $$O(n^2)$$
 [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) easy
 [blog post](https://leetcode.com/problems/pascals-triangle/solutions/4016541/kotlin-running-fold/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/8092023-118-pascals-triangle?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/7891eba4.webp)
+![image.png](/assets/leetcode_daily_images/7891eba4.webp)
 
 #### Join me on Telegram
 
@@ -72620,7 +72620,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/reverse-linked-list-ii/solutions/4012217/kotlin-dummy/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/7092023-92-reverse-linked-list-ii?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/890f683b.webp)
+![image.png](/assets/leetcode_daily_images/890f683b.webp)
 
 #### Join me on Telegram
 
@@ -72681,7 +72681,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/split-linked-list-in-parts/solutions/4007931/kotlin-precompute-sizes/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/6092023-725-split-linked-list-in?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/4902419e.webp)
+![image.png](/assets/leetcode_daily_images/4902419e.webp)
 
 #### Join me on Telegram
 
@@ -72735,7 +72735,7 @@ $$O(n)$$ for the sizes array and for the result
 [blog post](https://leetcode.com/problems/copy-list-with-random-pointer/solutions/4003603/kotlin/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/5092023-138-copy-list-with-random?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/a9a44ef4.webp)
+![image.png](/assets/leetcode_daily_images/a9a44ef4.webp)
 
 #### Problem TLDR
 
@@ -72794,7 +72794,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/linked-list-cycle/solutions/3999368/kotlin-one-liner/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/4092023-141-linked-list-cycle?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/d5a0e81c.webp)
+![image.png](/assets/leetcode_daily_images/d5a0e81c.webp)
 
 #### Problem TLDR
 
@@ -72831,7 +72831,7 @@ $$O(log(n))$$ for recursion (iterative version is O(1))
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/3092023-62-unique-paths?utm_campaign=post&utm_medium=web)
 
 
-![image.png](assets/leetcode_daily_images/9ade40cc.webp)
+![image.png](/assets/leetcode_daily_images/9ade40cc.webp)
 
 #### Join me on Telegram
 
@@ -72876,7 +72876,7 @@ $$O(m)$$
 [blog post](https://leetcode.com/problems/extra-characters-in-a-string/solutions/3990697/kotlin-trie-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/2092023-2707-extra-characters-in?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/e2ce6773.webp)
+![image.png](/assets/leetcode_daily_images/e2ce6773.webp)
 
 #### Join me on Telegram
 
@@ -72935,7 +72935,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/counting-bits/solutions/3986528/kotlin-tabulation/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/1092023-338-counting-bits?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/e3a834c6.webp)
+![image.png](/assets/leetcode_daily_images/e3a834c6.webp)
 
 
 #### Join me on Telegram
@@ -72978,7 +72978,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/solutions/3983030/kotlin-greedily-fill-intervals/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/31082023-1326-minimum-number-of-taps?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/d435077c.webp)
+![image.png](/assets/leetcode_daily_images/d435077c.webp)
 
 #### Join me on Telegram
 
@@ -73054,7 +73054,7 @@ $$O(n)$$, to store the intervals
 [blog post](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/solutions/3979280/kotlin-greedy/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/30082023-2366-minimum-replacements?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/aac351ba.webp)
+![image.png](/assets/leetcode_daily_images/aac351ba.webp)
 
 #### Join me on Telegram
 
@@ -73124,7 +73124,7 @@ $$O(1)$$
 [2483. Minimum Penalty for a Shop](https://leetcode.com/problems/minimum-penalty-for-a-shop/description/) medium
 [blog post](https://leetcode.com/problems/minimum-penalty-for-a-shop/solutions/3974919/kotlin-closed-opened/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29082023-2483-minimum-penalty-for?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/c28024ed.webp)
+![image.png](/assets/leetcode_daily_images/c28024ed.webp)
 
 #### Join me on Telegram
 
@@ -73172,7 +73172,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/implement-stack-using-queues/solutions/3969874/kotlin-rotate/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/28082023-225-implement-stack-using?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/d907dddb.webp)
+![image.png](/assets/leetcode_daily_images/d907dddb.webp)
 
 #### Join me on Telegram
 
@@ -73223,7 +73223,7 @@ class MyStack: Queue<Int> by LinkedList() {
 [blog post](https://leetcode.com/problems/frog-jump/solutions/3965349/kotlin-dfs-cache-binarysearch/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27082023-403-frog-jump?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/f1d9c9c0.webp)
+![image.png](/assets/leetcode_daily_images/f1d9c9c0.webp)
 
 #### Join me on Telegram
 
@@ -73280,7 +73280,7 @@ $$O(n^2)$$
 [646. Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/description/) medium
 [blog post](https://leetcode.com/problems/maximum-length-of-pair-chain/solutions/3960859/kotlin-line-sweep/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26082023-646-maximum-length-of-pair?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/38e17490.webp)
+![image.png](/assets/leetcode_daily_images/38e17490.webp)
 
 #### Join me on Telegram
 
@@ -73327,7 +73327,7 @@ $$O(n)$$, for the sorted array
 [blog post](https://leetcode.com/problems/interleaving-string/solutions/3956738/kotlin-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25082023-97-interleaving-string?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/48810b28.webp)
+![image.png](/assets/leetcode_daily_images/48810b28.webp)
 
 #### Join me on Telegram
 
@@ -73378,7 +73378,7 @@ $$O(n^2)$$
 [blog post](https://leetcode.com/problems/text-justification/solutions/3952534/kotlin-not-hard-just-corner-cases/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24082023-68-text-justification?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/a2960305.webp)
+![image.png](/assets/leetcode_daily_images/a2960305.webp)
 
 #### Join me on Telegram
 
@@ -73447,7 +73447,7 @@ $$O(wn)$$
 [blog post](https://leetcode.com/problems/reorganize-string/solutions/3948276/kotlin-not-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23082023-767-reorganize-string?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/585ed076.webp)
+![image.png](/assets/leetcode_daily_images/585ed076.webp)
 
 #### Join me on Telegram
 
@@ -73506,7 +73506,7 @@ $$O(n)$$, for the result
 [blog post](https://leetcode.com/problems/excel-sheet-column-title/solutions/3943534/kotlin-math/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22082023-168-excel-sheet-column-title?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/3839bd9d.webp)
+![image.png](/assets/leetcode_daily_images/3839bd9d.webp)
 
 #### Join me on Telegram
 
@@ -73551,7 +73551,7 @@ $$O(log(n))$$
 [blog post](https://leetcode.com/problems/repeated-substring-pattern/solutions/3939069/kotlin-rolling-hash/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21082023-459-repeated-substring-pattern?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/e9c1e380.webp)
+![image.png](/assets/leetcode_daily_images/e9c1e380.webp)
 
 #### Join me on Telegram
 
@@ -73618,7 +73618,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/solutions/3935139/kotlin-idea-tricks/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20082023-1203-sort-items-by-groups?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/95f9efbc.webp)
+![image.png](/assets/leetcode_daily_images/95f9efbc.webp)
 
 #### Join me on Telegram
 
@@ -73686,7 +73686,7 @@ $$O(n + n + E)$$
 [blog post](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/solutions/3929582/kotlin-union-find/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19082023-1489-find-critical-and-pseudo?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/9aa73d6b.webp)
+![image.png](/assets/leetcode_daily_images/9aa73d6b.webp)
 
 #### Join me on Telegram
 
@@ -73750,7 +73750,7 @@ $$O(E + V)$$, `E` for sorted edges, `V` for Union-Find array
 [1615. Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/description/) medium
 [blog post](https://leetcode.com/problems/maximal-network-rank/solutions/3924953/kotlin-n-2/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18082023-1615-maximal-network-rank?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/418638b6.webp)
+![image.png](/assets/leetcode_daily_images/418638b6.webp)
 
 #### Join me on Telegram
 
@@ -73804,7 +73804,7 @@ $$O(n^2)$$, there are up to n^2 edges
 [542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) medium
 [blog post](https://leetcode.com/problems/01-matrix/solutions/3920548/kotlin-bfs/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17082023-542-01-matrix?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d8248b69.webp)
+![image.png](/assets/leetcode_daily_images/d8248b69.webp)
 
 #### Join me on Telegram
 
@@ -73872,7 +73872,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/sliding-window-maximum/solutions/3915981/kotlin-monotonic-queue/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16082023-239-sliding-window-maximum?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/fd8095c0.webp)
+![image.png](/assets/leetcode_daily_images/fd8095c0.webp)
 
 #### Join me on Telegram
 
@@ -73935,7 +73935,7 @@ $$O(n)$$
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15082023-86-partition-list?utm_campaign=post&utm_medium=web)
 
 
-![image.png](assets/leetcode_daily_images/1ded31f5.webp)
+![image.png](/assets/leetcode_daily_images/1ded31f5.webp)
 
 #### Join me on Telegram
 
@@ -73995,7 +73995,7 @@ $$O(1)$$
 [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) medium
 [blog post](https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/3906841/kotlin-quickselect/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14082023-215-kth-largest-element?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/6750a6f2.webp)
+![image.png](/assets/leetcode_daily_images/6750a6f2.webp)
 
 #### Join me on Telegram
 
@@ -74062,7 +74062,7 @@ $$(O(1))$$, but array is modified
 [blog post](https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/solutions/3902038/kotlin-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13082023-2369-check-if-there-is-a?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/7eabd6aa.webp)
+![image.png](/assets/leetcode_daily_images/7eabd6aa.webp)
 
 #### Join me on Telegram
 
@@ -74119,7 +74119,7 @@ $$O(n)$$
 [blog post](https://leetcode.com/problems/unique-paths-ii/solutions/3897324/kotlin-one-row-dp/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12082023-63-unique-paths-ii?utm_campaign=post&utm_medium=web)
 
-![image.png](assets/leetcode_daily_images/4b6ddef0.webp)
+![image.png](/assets/leetcode_daily_images/4b6ddef0.webp)
 
 #### Join me on Telegram
 
@@ -74255,7 +74255,7 @@ waltz?
 [518. Coin Change II](https://leetcode.com/problems/coin-change-ii/description/) medium
 [blog post](https://leetcode.com/problems/coin-change-ii/solutions/3893011/kotlin-dfs-cache/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11082023-518-coin-change-ii?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/2ce10fa4.webp)
+![image.png](/assets/leetcode_daily_images/2ce10fa4.webp)
 
 #### Join me on Telegram
 
@@ -74303,7 +74303,7 @@ $$O(nm)$$
 [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) medium
 [blog post](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/solutions/3888620/kotlin-binary-seach/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10082023-81-search-in-rotated-sorted?utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/be533803.webp)
+![image.png](/assets/leetcode_daily_images/be533803.webp)
 
 #### Join me on Telegram
 
@@ -74373,7 +74373,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/submissions/1016264480/)
 [substack](https://dmitriisamoilenko.substack.com/p/09082023-2616-minimize-the-maximum?sd=pf)
 
-![image.png](assets/leetcode_daily_images/04dcd0eb.webp)
+![image.png](/assets/leetcode_daily_images/04dcd0eb.webp)
 
 #### Join me on Telegram
 
@@ -74440,7 +74440,7 @@ $$O(1)$$
 [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) medium
 [blog post](https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/3879746/kotlin-binary-search/)
 [substack](https://dmitriisamoilenko.substack.com/p/08082023-33-search-in-rotated-sorted?sd=pf)
-![image.png](assets/leetcode_daily_images/30dc6684.webp)
+![image.png](/assets/leetcode_daily_images/30dc6684.webp)
 
 #### Join me on Telegram
 
@@ -74503,7 +74503,7 @@ $$O(log(n))$$
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) medium
 [blog post](https://leetcode.com/problems/search-a-2d-matrix/solutions/3874453/kotlin-binary-search/)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07082023-74-search-a-2d-matrix?r=2bam17&utm_campaign=post&utm_medium=web)
-![image.png](assets/leetcode_daily_images/d86ca5b3.webp)
+![image.png](/assets/leetcode_daily_images/d86ca5b3.webp)
 
 #### Join me on Telegram
 
@@ -74558,7 +74558,7 @@ $$O(1)$$
 [920. Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/description/) hard
 [blog post](https://leetcode.com/problems/number-of-music-playlists/solutions/3870246/kotlin-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/06082023-920-number-of-music-playlists?sd=pf)
-![image.png](assets/leetcode_daily_images/15955245.webp)
+![image.png](/assets/leetcode_daily_images/15955245.webp)
 
 #### Join me on Telegram
 
@@ -74612,7 +74612,7 @@ $$O(n^2)$$
 [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/description/) medium
 [blog post](https://leetcode.com/problems/unique-binary-search-trees-ii/solutions/3865256/kotlin-backtrack-bitmask-hash/)
 [substack](https://dmitriisamoilenko.substack.com/p/05082023-95-unique-binary-search?sd=pf)
-![image.png](assets/leetcode_daily_images/860f5cc9.webp)
+![image.png](/assets/leetcode_daily_images/860f5cc9.webp)
 
 #### Join me on Telegram
 
@@ -74667,14 +74667,14 @@ $$O(n!)$$, is a number of permutations
 ```
 
 Another divide-and-conquer solution, that I didn't think of
-![image.png](assets/leetcode_daily_images/cc6e8579.webp)Another divide-and-conquer solution, that I didn't think of ![image.png](assets/leetcode_daily_images/05c03daf.webp)
+![image.png](/assets/leetcode_daily_images/cc6e8579.webp)Another divide-and-conquer solution, that I didn't think of ![image.png](/assets/leetcode_daily_images/05c03daf.webp)
 
 
 # 04.08.2023
 [139. Word Break](https://leetcode.com/problems/word-break/description/) medium
 [blog post](https://leetcode.com/problems/word-break/solutions/3860861/kotlin-trie-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/04082023-139-word-break?sd=pf)
-![image.png](assets/leetcode_daily_images/b7c3f6e7.webp)
+![image.png](/assets/leetcode_daily_images/b7c3f6e7.webp)
 
 #### Join me on Telegram
 
@@ -74729,7 +74729,7 @@ $$O(w + 26^l)$$, l—is the longest word in a dict
 [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) medium
 [blog post](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solutions/3855945/kotlin-dfs-backtracking/)
 [substack](https://dmitriisamoilenko.substack.com/p/03082023-17-letter-combinations-of?sd=pf)
-![image.png](assets/leetcode_daily_images/5507fd7c.webp)
+![image.png](/assets/leetcode_daily_images/5507fd7c.webp)
 
 #### Join me on Telegram
 
@@ -74795,7 +74795,7 @@ $$O(4^n)$$
 [46. Permutations](https://leetcode.com/problems/permutations/description/) medium
 [blog post](https://leetcode.com/problems/permutations/solutions/3850880/kotlin-dfs-backtrack-bitmask/)
 [substack](https://dmitriisamoilenko.substack.com/p/02082023-46-permutations?sd=pf)
-![image.png](assets/leetcode_daily_images/0bc84ba5.webp)
+![image.png](/assets/leetcode_daily_images/0bc84ba5.webp)
 
 #### Join me on Telegram
 
@@ -74844,7 +74844,7 @@ $$(n!)$$
 [77. Combinations](https://leetcode.com/problems/combinations/description/) medium
 [blog post](https://leetcode.com/problems/combinations/solutions/3845775/kotlin-bitmask/)
 [substack](https://dmitriisamoilenko.substack.com/p/01082023-77-combinations?sd=pf)
-![image.png](assets/leetcode_daily_images/3de28ba9.webp)
+![image.png](/assets/leetcode_daily_images/3de28ba9.webp)
 
 #### Join me on Telegram
 
@@ -74885,7 +74885,7 @@ $$O(n2^n)$$
 [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/) medium
 [blog post](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/solutions/3840916/kotlin-dfs-memo/)
 [substack](https://dmitriisamoilenko.substack.com/p/31072023-712-minimum-ascii-delete?sd=pf)
-![image.png](assets/leetcode_daily_images/d06babde.webp)
+![image.png](/assets/leetcode_daily_images/d06babde.webp)
 
 #### Join me on Telegram
 
@@ -74934,7 +74934,7 @@ $$O(n^2)$$
 [664. Strange Printer](https://leetcode.com/problems/strange-printer/description/) hard
 [blog post](https://leetcode.com/problems/strange-printer/solutions/3836489/kotlin-dp-n-3-find-the-best-split/)
 [substack](https://dmitriisamoilenko.substack.com/p/30072023-664-strange-printer?sd=pf)
-![image.png](assets/leetcode_daily_images/caaedf39.webp)
+![image.png](/assets/leetcode_daily_images/caaedf39.webp)
 
 #### Join me on Telegram
 
@@ -74996,7 +74996,7 @@ $$O(n^2)$$
 [808. Soup Servings](https://leetcode.com/problems/soup-servings/description/) medium
 [blog post](https://leetcode.com/problems/soup-servings/solutions/3831785/kotlin-generate-all-the-answers/)
 [substack](https://dmitriisamoilenko.substack.com/p/29072023-808-soup-servings?sd=pf)
-![image.png](assets/leetcode_daily_images/14a364ec.webp)
+![image.png](/assets/leetcode_daily_images/14a364ec.webp)
 
 #### Join me on Telegram
 
@@ -75102,7 +75102,7 @@ $$O(1)$$
 [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/description/) medium
 [blog post](https://leetcode.com/problems/predict-the-winner/solutions/3826663/kotlin-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/28072023-486-predict-the-winner?sd=pf)
-![image.png](assets/leetcode_daily_images/5feb00cc.webp)
+![image.png](/assets/leetcode_daily_images/5feb00cc.webp)
 
 #### Join me on Telegram
 
@@ -75153,7 +75153,7 @@ $$O(n^2)$$
 [2141. Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/description/) hard
 [blog post](https://leetcode.com/problems/maximum-running-time-of-n-computers/solutions/3822065/kotlin-how-to-use-time/)
 [substack](https://dmitriisamoilenko.substack.com/p/27072023-2141-maximum-running-time?sd=pf)
-![image.png](assets/leetcode_daily_images/0546d6e6.webp)
+![image.png](/assets/leetcode_daily_images/0546d6e6.webp)
 
 #### Join me on Telegram
 
@@ -75291,7 +75291,7 @@ $$O(1)$$
 [1870. Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/description/) medium
 [blog post](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/solutions/3817165/kotlin-binary-search/)
 [substack](https://dmitriisamoilenko.substack.com/p/26072023-1870-minimum-speed-to-arrive?sd=pf)
-![image.png](assets/leetcode_daily_images/afb8f6b9.webp)
+![image.png](/assets/leetcode_daily_images/afb8f6b9.webp)
 
 #### Join me on Telegram
 
@@ -75349,7 +75349,7 @@ $$O(1)$$
 [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) medium
 [blog post](https://leetcode.com/problems/peak-index-in-a-mountain-array/solutions/3812258/kotlin-binary-search/)
 [substack](https://dmitriisamoilenko.substack.com/p/25072023-852-peak-index-in-a-mountain?sd=pf)
-![image.png](assets/leetcode_daily_images/c77699f0.webp)
+![image.png](/assets/leetcode_daily_images/c77699f0.webp)
 
 #### Join me on Telegram
 
@@ -75465,7 +75465,7 @@ defines their adventure. 🌠
 [50. Pow(x, n)](https://leetcode.com/problems/powx-n/description/) medium
 [blog post](https://leetcode.com/problems/powx-n/solutions/3808015/kotlin-corner-cases/)
 [substack](https://dmitriisamoilenko.substack.com/p/24072023-50-powx-n?sd=pf)
-![image.png](assets/leetcode_daily_images/6d53705f.webp)
+![image.png](/assets/leetcode_daily_images/6d53705f.webp)
 
 #### Join me on Telegram
 
@@ -75545,7 +75545,7 @@ $$O(1)$$
 [894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/) medium
 [blog post](https://leetcode.com/problems/all-possible-full-binary-trees/solutions/3804245/kotlin-brute-force/)
 [substack](https://dmitriisamoilenko.substack.com/p/23072023-894-all-possible-full-binary?sd=pf)
-![image.png](assets/leetcode_daily_images/a0bb6a71.webp)
+![image.png](/assets/leetcode_daily_images/a0bb6a71.webp)
 
 #### Join me on Telegram
 
@@ -75562,7 +75562,7 @@ First, if count of nodes is `even`, BFT is not possible.
 
 Let's observe how the Trees are growing:
 
-![image.png](assets/leetcode_daily_images/1df95249.webp)
+![image.png](/assets/leetcode_daily_images/1df95249.webp)
 
 There are `n / 2` rounds of adding a new pair of nodes to each leaf of each Tree in the latest generation.
 
@@ -75614,7 +75614,7 @@ $$O(n^3 2^n)$$
 
 ```
 
-![image.png](assets/leetcode_daily_images/45ffad76.webp)
+![image.png](/assets/leetcode_daily_images/45ffad76.webp)
 
 effective solution. It can be described as "for every N generate every possible split of [0..i] [i+1..N]". Subtrees are also made of all possible combinations.
 
@@ -75622,7 +75622,7 @@ effective solution. It can be described as "for every N generate every possible 
 [688. Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/description/) medium
 [blog post](https://leetcode.com/problems/knight-probability-in-chessboard/solutions/3799262/kotlin-example-how-to-count-probabilities/)
 [substack](https://dmitriisamoilenko.substack.com/p/22072023-688-knight-probability-in?sd=pf)
-![image.png](assets/leetcode_daily_images/12de8f6e.webp)
+![image.png](/assets/leetcode_daily_images/12de8f6e.webp)
 
 #### Join me on Telegram
 
@@ -75635,7 +75635,7 @@ Probability of making `k` steps on a chessboard without stepping outside
 #### Intuition
 The description example doesn't give a clear picture of how the probability works.
 
-![image.png](assets/leetcode_daily_images/c56a94f7.webp)
+![image.png](/assets/leetcode_daily_images/c56a94f7.webp)
 
 * individual probability is `1/8` each time we make a step. 
 * * One step is `1/8`, two steps are `1/8 * 1/8` and so on. 
@@ -75785,7 +75785,7 @@ unpredictable, but one thing's certain: this wild chess duel is far from over! �
 [673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium
 [blog post](https://leetcode.com/problems/number-of-longest-increasing-subsequence/solutions/3795250/kotlin-dfs-cache/)
 [substack](https://dmitriisamoilenko.substack.com/p/21072023-673-number-of-longest-increasing?sd=pf)
-![image.png](assets/leetcode_daily_images/e8b678c1.webp)
+![image.png](/assets/leetcode_daily_images/e8b678c1.webp)
 
 #### Join me on Telegram
 
@@ -75912,7 +75912,7 @@ but the 🌟 Cosmic Guardian of Timeless Wisdom. 🗝️✨🌠
 [735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/description/) medium
 [blog post](https://leetcode.com/problems/asteroid-collision/solutions/3790443/kotlin-stack/)
 [substack](https://dmitriisamoilenko.substack.com/p/20072023-735-asteroid-collision?sd=pf)
-![image.png](assets/leetcode_daily_images/c2c3e174.webp)
+![image.png](/assets/leetcode_daily_images/c2c3e174.webp)
 
 #### Join me on Telegram
 
@@ -75960,7 +75960,7 @@ $$O(n)$$
 [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) medium
 [blog post](https://leetcode.com/problems/non-overlapping-intervals/solutions/3785669/kotlin-line-sweep/)
 [substack](https://dmitriisamoilenko.substack.com/p/19072023-435-non-overlapping-intervals?sd=pf)
-![image.png](assets/leetcode_daily_images/0816cd0c.webp)
+![image.png](/assets/leetcode_daily_images/0816cd0c.webp)
 
 #### Join me on Telegram
 
@@ -76009,7 +76009,7 @@ $$O(1)$$
 [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/) medium
 [blog post](https://leetcode.com/problems/lru-cache/solutions/3781121/kotlin-linked-list/)
 [substack](https://dmitriisamoilenko.substack.com/p/18072023-146-lru-cache?sd=pf)
-![image.png](assets/leetcode_daily_images/e9174b76.webp)
+![image.png](/assets/leetcode_daily_images/e9174b76.webp)
 
 #### Join me on Telegram
 
@@ -76087,7 +76087,7 @@ class LRUCache(val capacity: Int) {
 [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) medium
 [blog post](https://leetcode.com/problems/add-two-numbers-ii/solutions/3776193/kotlin/)
 [substack](https://dmitriisamoilenko.substack.com/p/17072023-445-add-two-numbers-ii)
-![image.png](assets/leetcode_daily_images/7573faf4.webp)
+![image.png](/assets/leetcode_daily_images/7573faf4.webp)
 
 #### Join me on Telegram
 
@@ -76153,7 +76153,7 @@ $$O(1)$$
 [blog post](https://leetcode.com/problems/smallest-sufficient-team/solutions/3771197/kotlin-dfs-memo/)
 [substack](https://dmitriisamoilenko.substack.com/p/16072023-1125-smallest-sufficient?sd=pf)
 
-![image.png](assets/leetcode_daily_images/c2381bcc.webp)
+![image.png](/assets/leetcode_daily_images/c2381bcc.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/277
@@ -76203,7 +76203,7 @@ $$O(p2^s)$$
 [1751. Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/description/) hard
 [blog post](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/solutions/3766779/kotln-dp/)
 [substack](https://dmitriisamoilenko.substack.com/p/15072023-1751-maximum-number-of-events?sd=pf)
-![image.png](assets/leetcode_daily_images/56170b8d.webp)
+![image.png](/assets/leetcode_daily_images/56170b8d.webp)
 
 #### Join me on Telegram
 
@@ -76304,7 +76304,7 @@ $$O(nk)$$
 [1218. Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/description/) medium
 [blog post](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/solutions/3761793/kotlin-map/)
 [substack](https://dmitriisamoilenko.substack.com/p/14072023-1218-longest-arithmetic?sd=pf)
-![image.png](assets/leetcode_daily_images/11f80563.webp)
+![image.png](/assets/leetcode_daily_images/11f80563.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/275
@@ -76339,7 +76339,7 @@ with(mutableMapOf<Int, Int>()) {
 [207. Course Schedule](https://leetcode.com/problems/course-schedule/description/) medium
 [blog post](https://leetcode.com/problems/course-schedule/solutions/3757355/kotlin-toposort-bfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/13072023-207-course-schedule?sd=pf)
-![image.png](assets/leetcode_daily_images/ab496b3d.webp)
+![image.png](/assets/leetcode_daily_images/ab496b3d.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/274
@@ -76388,7 +76388,7 @@ fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {
 [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/) medium
 [blog post](https://leetcode.com/problems/find-eventual-safe-states/solutions/3752760/kotlin-dfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/13072023-802-find-eventual-safe-states?sd=pf)
-![image.png](assets/leetcode_daily_images/de2e4e8f.webp)
+![image.png](/assets/leetcode_daily_images/de2e4e8f.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/273
@@ -76433,7 +76433,7 @@ fun eventualSafeNodes(graph: Array<IntArray>): List<Int> {
 [863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/) medium
 [blog post](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/solutions/3748155/kotlin-dfs-bfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/12072023-863-all-nodes-distance-k?sd=pf)
-![image.png](assets/leetcode_daily_images/540ccb28.webp)
+![image.png](/assets/leetcode_daily_images/540ccb28.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/272
@@ -76492,7 +76492,7 @@ fun distanceK(root: TreeNode?, target: TreeNode?, k: Int): List<Int> {
 [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/) easy
 [blog post](https://leetcode.com/problems/minimum-depth-of-binary-tree/solutions/3743369/kotlin-bfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/11072023-111-minimum-depth-of-binary?sd=pf)
-![image.png](assets/leetcode_daily_images/1d163b53.webp)
+![image.png](/assets/leetcode_daily_images/1d163b53.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/271
@@ -76538,7 +76538,7 @@ fun minDepth(root: TreeNode?): Int = with(ArrayDeque<TreeNode>()) {
 [2272. Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/description/) hard
 [blog post](https://leetcode.com/problems/substring-with-largest-variance/solutions/3739542/kotlin-try-all-pairs/)
 [substack](https://dmitriisamoilenko.substack.com/p/10072023-2272-substring-with-largest?sd=pf)
-![image.png](assets/leetcode_daily_images/78b32191.webp)
+![image.png](/assets/leetcode_daily_images/78b32191.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/270
@@ -76590,7 +76590,7 @@ fun largestVariance(s: String): Int = s.toSet()
 [2551. Put Marbles in Bags](https://leetcode.com/problems/put-marbles-in-bags/description/) hard
 [blog post](https://leetcode.com/problems/put-marbles-in-bags/solutions/3734482/kotlin-priorityqueue/)
 [substack](https://dmitriisamoilenko.substack.com/p/9072023-2551-put-marbles-in-bags?sd=pf)
-![image.png](assets/leetcode_daily_images/b90799ad.webp)
+![image.png](/assets/leetcode_daily_images/b90799ad.webp)
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/269
 #### Problem TLDR
@@ -76659,7 +76659,7 @@ fun putMarbles(weights: IntArray, k: Int): Long {
 [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/) medium
 [blog post](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/solutions/3730076/kotlin-sliding-window/)
 [substack](https://dmitriisamoilenko.substack.com/p/7072023-2024-maximize-the-confusion?sd=pf)
-![image.png](assets/leetcode_daily_images/67bb9113.webp)
+![image.png](/assets/leetcode_daily_images/67bb9113.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/268
@@ -76701,7 +76701,7 @@ fun maxConsecutiveAnswers(answerKey: String, k: Int): Int {
 [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/) medium
 [blog post](https://leetcode.com/problems/minimum-size-subarray-sum/solutions/3724899/kotlin-two-pointers/)
 [substack](https://dmitriisamoilenko.substack.com/p/6072023-209-minimum-size-subarray?sd=pf)
-![image.png](assets/leetcode_daily_images/5a813ef1.webp)
+![image.png](/assets/leetcode_daily_images/5a813ef1.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/267
@@ -76743,7 +76743,7 @@ fun minSubArrayLen(target: Int, nums: IntArray): Int {
 [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/) medium
 [blog post](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/solutions/3720190/kotlin-3-pointers/)
 [substack](https://dmitriisamoilenko.substack.com/p/5072023-1493-longest-subarray-of?sd=pf)
-![image.png](assets/leetcode_daily_images/42e3f0f0.webp)
+![image.png](/assets/leetcode_daily_images/42e3f0f0.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/266
@@ -76793,7 +76793,7 @@ fun longestSubarray(nums: IntArray): Int {
 [137. Single Number II](https://leetcode.com/problems/single-number-ii/solutions/) medium
 [blog post](https://leetcode.com/problems/single-number-ii/solutions/3715279/kotlin-o-32n/)
 [substack](https://dmitriisamoilenko.substack.com/p/4072023-137-single-number-ii?sd=pf)
-![image.png](assets/leetcode_daily_images/1a9d34fb.webp)
+![image.png](/assets/leetcode_daily_images/1a9d34fb.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/265
@@ -76840,7 +76840,7 @@ fun singleNumber(nums: IntArray): Int =
 [859. Buddy Strings](https://leetcode.com/problems/buddy-strings/description/) easy
 [blog post](https://leetcode.com/problems/buddy-strings/solutions/3710751/kotlin/)
 [substack](https://dmitriisamoilenko.substack.com/p/3072023-859-buddy-strings?sd=pf)
-![image.png](assets/leetcode_daily_images/961756e2.webp)
+![image.png](/assets/leetcode_daily_images/961756e2.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/264
@@ -76879,7 +76879,7 @@ s.zip(goal)
 [1601. Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/description/) hard
 [blog post](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/solutions/3706324/kotlin-bitmask/)
 [substack](https://dmitriisamoilenko.substack.com/p/2072023-1601-maximum-number-of-achievable?sd=pf)
-![image.png](assets/leetcode_daily_images/d865b09a.webp)
+![image.png](/assets/leetcode_daily_images/d865b09a.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/263
@@ -76887,7 +76887,7 @@ https://t.me/leetcode_daily_unstoppable/263
 Max edges to make all counts `in == out` edges in graph
 #### Intuition
 Let's observe some examples:
-![image.png](assets/leetcode_daily_images/f438b1f4.webp)
+![image.png](/assets/leetcode_daily_images/f438b1f4.webp)
 
 All requests are valid if count of incoming edges are equal to outcoming.
 One possible solution is to just check each combination of edges.
@@ -76923,7 +76923,7 @@ fun maximumRequests(n: Int, requests: Array<IntArray>): Int =
 [2305. Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/description/) medium
 [blog post](https://leetcode.com/problems/fair-distribution-of-cookies/solutions/3702635/kotln-backtrack/)
 [substack](https://dmitriisamoilenko.substack.com/p/1072023-2305-fair-distribution-of?sd=pf)
-![image.png](assets/leetcode_daily_images/8e3128ec.webp)
+![image.png](/assets/leetcode_daily_images/8e3128ec.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/262
@@ -76969,7 +76969,7 @@ fun distributeCookies(cookies: IntArray, k: Int): Int {
 [1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/description/) hard
 [blog post](https://leetcode.com/problems/last-day-where-you-can-still-cross/solutions/3698920/kotlin-union-find/)
 [substack](https://dmitriisamoilenko.substack.com/p/30062023-1970-last-day-where-you?sd=pf)
-![image.png](assets/leetcode_daily_images/77cb954b.webp)
+![image.png](/assets/leetcode_daily_images/77cb954b.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/261
@@ -76978,7 +76978,7 @@ Last `day` matrix connected top-bottom when flooded each day at `cells[day]`
 #### Intuition
 One possible solution is to do a Binary Search in a days space, however it gives TLE.
 Let's invert the problem: find the first day from the end where there is a connection top-bottom.
-![image.png](assets/leetcode_daily_images/c29b45f6.webp)
+![image.png](/assets/leetcode_daily_images/c29b45f6.webp)
 Now, `cells[day]` is a new ground. We can use Union-Find to connect ground cells.
 
 #### Approach
@@ -77016,7 +77016,7 @@ fun latestDayToCross(row: Int, col: Int, cells: Array<IntArray>) =
 [864. Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/description/) hard
 [blog post](https://leetcode.com/problems/shortest-path-to-get-all-keys/solutions/3695847/kotlin-bfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/29062023-864-shortest-path-to-get?sd=pf)
-![image.png](assets/leetcode_daily_images/05c4c9d8.webp)
+![image.png](/assets/leetcode_daily_images/05c4c9d8.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/260
@@ -77081,7 +77081,7 @@ fun shortestPathAllKeys(grid: Array<String>): Int {
 [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/description/) medium
 [blog post](https://leetcode.com/problems/path-with-maximum-probability/solutions/3691288/kotlin-dijkstra/)
 [substack](https://dmitriisamoilenko.substack.com/p/28062023-1514-path-with-maximum-probability?sd=pf)
-![image.png](assets/leetcode_daily_images/f27379f4.webp)
+![image.png](/assets/leetcode_daily_images/f27379f4.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/259
@@ -77134,7 +77134,7 @@ fun maxProbability(n: Int, edges: Array<IntArray>, succProb: DoubleArray, start:
 [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/) medium
 [blog post](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/solutions/3687668/kotlin-hard-dijkstra/)
 [substack](https://dmitriisamoilenko.substack.com/p/27062023-373-find-k-pairs-with-smallest?sd=pf)
-![image.png](assets/leetcode_daily_images/a8605c0d.webp)
+![image.png](/assets/leetcode_daily_images/a8605c0d.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/258
@@ -77153,7 +77153,7 @@ Naive solution with two pointers didn't work, as we must backtrack to the previo
 ```
 
 The trick is to think of the pairs `i,j` as graph nodes, where the adjacent list is `i+1,j` and `i, j+1`. Each next node sum is strictly greater than the previous:
-![image.png](assets/leetcode_daily_images/15931bc4.webp)
+![image.png](/assets/leetcode_daily_images/15931bc4.webp)
 Now we can walk this graph in exactly `k` steps with Dijkstra algorithm using `PriorityQueue` to find the next smallest node.
 
 #### Approach
@@ -77195,7 +77195,7 @@ fun kSmallestPairs(nums1: IntArray, nums2: IntArray, k: Int): List<List<Int>> =
 [2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/description/) medium
 [blog post](https://leetcode.com/problems/total-cost-to-hire-k-workers/solutions/3683531/kotlin-two-pointer-priority-queue/)
 [substack](https://dmitriisamoilenko.substack.com/p/26062023-2462-total-cost-to-hire?sd=pf)
-![image.png](assets/leetcode_daily_images/85ddb762.webp)
+![image.png](/assets/leetcode_daily_images/85ddb762.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/257
@@ -77251,7 +77251,7 @@ $$O(n)$$
 [1575. Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/description/) hard
 [blog post](https://leetcode.com/problems/count-all-possible-routes/solutions/3679289/kotlin-dfs-memo/)
 [substack](https://dmitriisamoilenko.substack.com/p/25062023-1575-count-all-possible?sd=pf)
-![image.png](assets/leetcode_daily_images/b2b7437e.webp)
+![image.png](/assets/leetcode_daily_images/b2b7437e.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/256
@@ -77329,7 +77329,7 @@ fun countRoutes(locations: IntArray, start: Int, finish: Int, fuel: Int): Int {
 [956. Tallest Billboard](https://leetcode.com/problems/tallest-billboard/description/) hard
 [blog post](https://leetcode.com/problems/tallest-billboard/solutions/3675652/kotlin-dfs-memo-hard-trick/)
 [substack](https://dmitriisamoilenko.substack.com/p/24062023-956-tallest-billboard?sd=pf)
-![image.png](assets/leetcode_daily_images/f5338aa0.webp)
+![image.png](/assets/leetcode_daily_images/f5338aa0.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/255
@@ -77382,7 +77382,7 @@ fun tallestBillboard(rods: IntArray): Int {
 [1027. Longest Arithmetic Subsequence](https://leetcode.com/problems/longest-arithmetic-subsequence/description/) medium
 [blog post](https://leetcode.com/problems/longest-arithmetic-subsequence/solutions/3673731/kotlin-hard-problem-n-3/)
 [substack](https://dmitriisamoilenko.substack.com/p/23062023-1027-longest-arithmetic?sd=pf)
-![image.png](assets/leetcode_daily_images/c171e832.webp)
+![image.png](/assets/leetcode_daily_images/c171e832.webp)
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/254
 
@@ -77482,7 +77482,7 @@ fun longestArithSeqLength(nums: IntArray): Int {
 [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) medium
 [blog post](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/3668167/kotlin-track-money-balance/)
 [substack](https://dmitriisamoilenko.substack.com/p/22062023-714-best-time-to-buy-and?sd=pf)
-![image.png](assets/leetcode_daily_images/4524f9b6.webp)
+![image.png](/assets/leetcode_daily_images/4524f9b6.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/253
@@ -77519,7 +77519,7 @@ fun maxProfit(prices: IntArray, fee: Int) = prices
 [2448. Minimum Cost to Make Array Equal](https://leetcode.com/problems/minimum-cost-to-make-array-equal/description/) hard
 [blog post](https://leetcode.com/problems/minimum-cost-to-make-array-equal/solutions/3663809/kotlin-binary-search/)
 [substack](https://dmitriisamoilenko.substack.com/p/21062023-2448-minimum-cost-to-make?sd=pf)
-![image.png](assets/leetcode_daily_images/0255c2f9.webp)
+![image.png](/assets/leetcode_daily_images/0255c2f9.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/252
@@ -77598,7 +77598,7 @@ fun minCost(nums: IntArray, cost: IntArray): Long {
 [2090. K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/description/) medium
 [blog post](https://leetcode.com/problems/k-radius-subarray-averages/solutions/3659377/kotlin-sliding-window/)
 [substack](https://dmitriisamoilenko.substack.com/p/20062023-2090-k-radius-subarray-averages?sd=pf)
-![image.png](assets/leetcode_daily_images/9c84b246.webp)
+![image.png](/assets/leetcode_daily_images/9c84b246.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/251
@@ -77637,7 +77637,7 @@ fun getAverages(nums: IntArray, k: Int): IntArray {
 [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/description/) easy
 [blog post](https://leetcode.com/problems/find-the-highest-altitude/solutions/3654634/kotlin-one-liner/)
 [substack](https://dmitriisamoilenko.substack.com/p/18062023-1732-find-the-highest-altitude?sd=pf)
-![image.png](assets/leetcode_daily_images/73acb931.webp)
+![image.png](/assets/leetcode_daily_images/73acb931.webp)
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/250
 #### Problem TLDR
@@ -77667,7 +77667,7 @@ fun largestAltitude(gain: IntArray): Int = gain
 [2328. Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/description/) hard
 [blog post](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/solutions/3651039/kotlin-dfs-memo/)
 [substack](https://dmitriisamoilenko.substack.com/p/18062023-2328-number-of-increasing?sd=pf)
-![image.png](assets/leetcode_daily_images/48940540.webp)
+![image.png](/assets/leetcode_daily_images/48940540.webp)
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/249
 #### Problem TLDR
@@ -77714,7 +77714,7 @@ fun countPaths(grid: Array<IntArray>): Int {
 [blog post](https://leetcode.com/problems/make-array-strictly-increasing/solutions/3647345/kotlin-dfs-memo/)
 [substack](https://dmitriisamoilenko.substack.com/p/17062023-1187-make-array-strictly?sd=pf)
 
-![image.png](assets/leetcode_daily_images/a5076f19.webp)
+![image.png](/assets/leetcode_daily_images/a5076f19.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/248
@@ -77765,7 +77765,7 @@ fun makeArrayIncreasing(arr1: IntArray, arr2: IntArray): Int {
 [1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/description/) hard
 [blog post](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/3643907/kotlin-build-tree-count-permuts/)
 [substack](https://dmitriisamoilenko.substack.com/p/16062023-1569-number-of-ways-to-reorder?sd=pf)
-![image.png](assets/leetcode_daily_images/6d3cd293.webp)
+![image.png](/assets/leetcode_daily_images/6d3cd293.webp)
 
 #### Join me on Telegram Leetcode_daily
 https://t.me/leetcode_daily_unstoppable/247
@@ -77775,12 +77775,12 @@ Count permutations of an array with identical Binary Search Tree
 #### Intuition
 First step is to build a Binary Search Tree by adding the elements one by one.
 Let's observe what enables the permutations in `[34512]`:
-![image.png](assets/leetcode_daily_images/f6d568a4.webp)
+![image.png](/assets/leetcode_daily_images/f6d568a4.webp)
 Left child `[12]` don't have permutations, as `1` must be followed by `2`. Same for the right `[45]`. However, when we're merging left and right, they can be merged in different positions.
 Let's observe the pattern for merging `ab` x `cde`, `ab` x `cd`, `ab` x `c`, `a` x `b`:
-![image.png](assets/leetcode_daily_images/53428cc4.webp)
+![image.png](/assets/leetcode_daily_images/53428cc4.webp)
 And another, `abc` x `def`:
-![image.png](assets/leetcode_daily_images/86f9a7ea.webp)
+![image.png](/assets/leetcode_daily_images/86f9a7ea.webp)
 For each `length` of a left `len1` and right `len2` subtree, we can derive the equation for permutations `p`:
 $$
 p(len1, len2) = p(len1 - 1, len2) + p(len1, len2 - 1)
@@ -77837,7 +77837,7 @@ fun numOfWays(nums: IntArray): Int {
 [1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/) medium
 [blog post](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/3639491/kotlin-bfs/)
 [substack](https://dmitriisamoilenko.substack.com/p/15062023-1161-maximum-level-sum-of?sd=pf)
-![image.png](assets/leetcode_daily_images/f726fe17.webp)
+![image.png](/assets/leetcode_daily_images/f726fe17.webp)
 
 #### Join me on Telegram Leetcode_daily
 https://t.me/leetcode_daily_unstoppable/246
@@ -77879,7 +77879,7 @@ fun maxLevelSum(root: TreeNode?) = with(ArrayDeque<TreeNode>()) {
 [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) easy
 [blog post](https://leetcode.com/problems/minimum-absolute-difference-in-bst/solutions/3635561/kotlin-morris-traversal/)
 [substack](https://dmitriisamoilenko.substack.com/p/14062023-530-minimum-absolute-difference?sd=pf)
-![image.png](assets/leetcode_daily_images/52ba0d0f.webp)
+![image.png](/assets/leetcode_daily_images/52ba0d0f.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/245
@@ -77928,7 +77928,7 @@ fun getMinimumDifference(root: TreeNode?): Int {
 [2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/description/) medium
 [blog post](https://leetcode.com/problems/equal-row-and-column-pairs/solutions/3631323/kotlin-hash/)
 [substack](https://dmitriisamoilenko.substack.com/p/12062023-2352-equal-row-and-column?sd=pf)
-![image.png](assets/leetcode_daily_images/ad7e8efa.webp)
+![image.png](/assets/leetcode_daily_images/ad7e8efa.webp)
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/244
 #### Problem TLDR
@@ -77963,7 +77963,7 @@ fun equalPairs(grid: Array<IntArray>): Int {
 ```
 
 # 12.06.2023
-![image.png](assets/leetcode_daily_images/0edb7543.webp)
+![image.png](/assets/leetcode_daily_images/0edb7543.webp)
 [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/description/) easy
 [blog post](https://leetcode.com/problems/summary-ranges/solutions/3627478/kotlin-fold/)
 [substack](https://dmitriisamoilenko.substack.com/p/12062023-228-summary-ranges?sd=pf)
@@ -78002,7 +78002,7 @@ fun summaryRanges(nums: IntArray): List<String> = nums
 [1146. Snapshot Array](https://leetcode.com/problems/snapshot-array/description/) medium
 [blog post](https://leetcode.com/problems/snapshot-array/solutions/3623764/kotlin-binary-search/)
 [substack](https://dmitriisamoilenko.substack.com/p/11062023-1146-snapshot-array?sd=pf)
-![image.png](assets/leetcode_daily_images/bb748f77.webp)
+![image.png](/assets/leetcode_daily_images/bb748f77.webp)
 
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/242
@@ -78445,7 +78445,7 @@ https://t.me/leetcode_daily_unstoppable/233
 Count detonated bombs by chain within each radius.
 #### Intuition
 A bomb will only detonate if its center within the radius of another.
-![image.png](assets/leetcode_daily_images/3be78169.webp)
+![image.png](/assets/leetcode_daily_images/3be78169.webp)
 For example, `A` can detonate `B`, but not otherwise.
 
 Let's build a graph, who's who can detonate.
@@ -79214,7 +79214,7 @@ https://t.me/leetcode_daily_unstoppable/217
 #### Problem TLDR
 Find if graph is [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
 #### Intuition
-![image.png](assets/leetcode_daily_images/21d97c3d.webp)
+![image.png](/assets/leetcode_daily_images/21d97c3d.webp)
 Mark edge `Red` or `Blue` and it's nodes in the opposite.
 
 #### Approach
@@ -79603,7 +79603,7 @@ Consider the case:
 
 ```
 
-![image.png](assets/leetcode_daily_images/c7ac81cd.webp)
+![image.png](/assets/leetcode_daily_images/c7ac81cd.webp)
 
 When we draw all the possible lines, we see that there is a choice to draw line `2-2` or four lines `1-1` or three `5-5` in the middle. Suffix lines `5-5` and prefix lines `2-2` are optimal already and can be cached as a result.
 To find an optimal choice we can use DFS.
@@ -79790,7 +79790,7 @@ The optimal `LIS` solution is to keep the largest increasing subsequence so far 
 1. for a new element, search for the `smallest` element that is `larger` than it
 2. if found, replace
 3. if not, append
-![lis.gif](assets/leetcode_daily_images/314d1821.webp)
+![lis.gif](/assets/leetcode_daily_images/314d1821.webp)
 
 #### Approach
 * google what is the solution of `LIS`
@@ -79840,10 +79840,10 @@ https://t.me/leetcode_daily_unstoppable/204
 #### Intuition
 1. We can safely sort an array, because order doesn't matter for finding `max` or `min` in a subsequence.
 2. Having increasing order gives us the pattern:
-![image.png](assets/leetcode_daily_images/245fd7f7.webp)
+![image.png](/assets/leetcode_daily_images/245fd7f7.webp)
 Ignoring the `target`, each new number adds previous value to the sum: $$sum_2 = sum_1 + (1 + sum_1)$$, or just $$2^i$$.
 3. Let's observe the pattern of the removed items:
-![image.png](assets/leetcode_daily_images/c4568866.webp)
+![image.png](/assets/leetcode_daily_images/c4568866.webp)
 For example, `target = 12`, for number `8`, count of excluded values is `4` = [568, 58, 68, 8]; for number `9`, it is `8` = [5689, 589, 569, 59, 689, 69, 89, 9]. We can observe, it is determined by the sequence `5 6 8 9`, where all the numbers are bigger, than `target - 9`. That is, the law for excluding the elements is the same: $$r_2 = r_1 + (1 + r_1)$$, or just $$2^x$$, where x - is the count of the bigger numbers.
 
 #### Approach
@@ -80649,7 +80649,7 @@ with(ArrayDeque<Pair<Int, TreeNode>>()) {
 https://t.me/leetcode_daily_unstoppable/186
 #### Intuition
 For every node, positions of it's left child is $$2x +1$$ and right is $$2x + 2$$
-![leetcode_tree.gif](assets/leetcode_daily_images/c5230258.webp)
+![leetcode_tree.gif](/assets/leetcode_daily_images/c5230258.webp)
 
 #### Approach
 We can do BFS and track node positions.
@@ -80867,7 +80867,7 @@ fun maxValueOfCoins(piles: List<List<Int>>, k: Int): Int {
 https://t.me/leetcode_daily_unstoppable/181
 #### Intuition
 Given the current pile, we can assume there is an optimal maximum value of the piles to the right of the current for every given number of `k`.
-![leetcode_daily_backtrack.gif](assets/leetcode_daily_images/6e541f99.webp)
+![leetcode_daily_backtrack.gif](/assets/leetcode_daily_images/6e541f99.webp)
 
 #### Approach
 We can cache the result by the keys of every `pile to taken`
@@ -81092,8 +81092,8 @@ fun largestPathValue(colors: String, edges: Array<IntArray>): Int {
 #### Join me on Telegram
 https://t.me/leetcode_daily_unstoppable/175
 #### Intuition
-![image.png](assets/leetcode_daily_images/0666f73f.webp)
-![leetcode_daily_small.gif](assets/leetcode_daily_images/5c8c31ed.webp)
+![image.png](/assets/leetcode_daily_images/0666f73f.webp)
+![leetcode_daily_small.gif](/assets/leetcode_daily_images/5c8c31ed.webp)
 
 For each node, there is only one answer of the maximum count of the same color. For each parent, $$c_p = max(freq_{child})+colors[curr]$$. We can cache the result and compute it using DFS and selecting maximum count from all the children.
 #### Approach
@@ -82192,7 +82192,7 @@ fun isCompleteTree(root: TreeNode?): Boolean {
 https://t.me/leetcode_daily_unstoppable/149
 #### Intuition
 
-![image.png](assets/leetcode_daily_images/4bc571e7.webp)
+![image.png](/assets/leetcode_daily_images/4bc571e7.webp)
 
 For each node, we can compute it's left and right child `min` and `max` depth, then compare them.
 #### Approach
@@ -82482,7 +82482,7 @@ fun detectCycle(head: ListNode?): ListNode? {
 #### Join me on telegram
 https://t.me/leetcode_daily_unstoppable/143
 #### Intuition
-![image.png](assets/leetcode_daily_images/01c1c6d1.webp)
+![image.png](/assets/leetcode_daily_images/01c1c6d1.webp)
 There is a known algorithm to detect a cycle in a linked list. Move `slow` pointer one node at a time, and move `fast` pointer two nodes at a time. Eventually, if they meet, there is a cycle.
 To know the connection point of the cycle, you can also use two pointers: one from where pointers were met, another from the start, and move both of them one node at a time until they meet.
 How to derive this yourself?
@@ -83739,7 +83739,7 @@ Count how many numbers in between, subtract even on the start and the end, then 
 https://t.me/leetcode_daily_unstoppable/116
 #### Intuition
 
-![image.png](assets/leetcode_daily_images/a7237be7.webp)
+![image.png](/assets/leetcode_daily_images/a7237be7.webp)
 
 Let's start from each leaf (node without children). We give `one` car, `seats-1` capacity and `zero` fuel. When children cars arrive, each of them consume `cars` capacity of the fuel. On the hub (node with children), we sat another one passenger, so `capacity--` and we can optimize number of cars arrived, if total `capacity` is more than one car `seats` number.
 #### Approach
@@ -84610,7 +84610,7 @@ Space: O(kE), Time: O(k)
 
 ```
 
-![image.png](assets/leetcode_daily_images/f97dcadd.webp)
+![image.png](/assets/leetcode_daily_images/f97dcadd.webp)
 
 We can walk with DFS and remember all distances, then compare them and choose those with minimum of maximums.
 * we can use `visited` set, or modify an input
@@ -85351,7 +85351,7 @@ Space: O(n^2), Time: O(n^2)
 ```
 
 We can start after the station with the minimum `decrease` in gasoline.
-![image.png](assets/leetcode_daily_images/a9f4e048.webp)
+![image.png](/assets/leetcode_daily_images/a9f4e048.webp)
 Calculate running gasoline volume and find the minimum of it. If the total net gasoline is negative, there is no answer.
 
 Space: O(1), Time: O(N)
@@ -85893,9 +85893,9 @@ Space: O(N), Time: O(N)
 We can do the job for item #0, then we need to invent a formula to reuse some data when we change the node.
 
 How to mathematically prove formula for a new sum:
-![image](assets/leetcode_daily_images/202464c8.webp)
+![image](/assets/leetcode_daily_images/202464c8.webp)
 
-![image.png](assets/leetcode_daily_images/89f3217e.webp)
+![image.png](/assets/leetcode_daily_images/89f3217e.webp)
 Store count of children in a `counts` array, and sum of the distances to children in a `dist` array. In a first DFS traverse from a node 0 and fill the arrays. In a second DFS only modify `dist` based on previous computed `dist` value, using formula: `sum[curr] = sum[prev] - count[curr] + (N - count[curr])`
 
 Space: O(N), Time: O(N)
