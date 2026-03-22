@@ -16,7 +16,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 
 
 # 22.03.2026
-[1886. Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/solutions/7680192/kotlin-rust-by-samoylenkodmitry-bnas/) easy
+[1886. Determine Whether Matrix Can Be Obtained By Rotation](https://open.substack.com/pub/dmitriisamoilenko/p/22032026-1886-determine-whether-matrix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22032026-1886-determine-whether-matrix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/EVJ4x0Ji2NQ)
 
@@ -69,8 +69,8 @@ $$O(n^2)$$
 ```
 
 # 21.03.2026
-[3643. Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/descriptio) medium
-[blog post](https://leetcode.com/problems/flip-square-submatrix-vertically/solutions/7676661/kotlin-rust-by-samoylenkodmitry-qclo/)
+[3643. Flip Square Submatrix Vertically](https://open.substack.com/pub/dmitriisamoilenko/p/21032026-3643-flip-square-submatrix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/21032026-3643-flip-square-submatrix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21032026-3643-flip-square-submatrix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/XbIS6u_HRVQ)
 
@@ -125,8 +125,8 @@ $$O(1)$$
 ```
 
 # 20.03.2026
-[3567. Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/description) medium
-[blog post](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/solutions/7673595/kotlin-rust-by-samoylenkodmitry-q192/)
+[3567. Minimum Absolute Difference in Sliding Submatrix](https://open.substack.com/pub/dmitriisamoilenko/p/20032026-3567-minimum-absolute-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/20032026-3567-minimum-absolute-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20032026-3567-minimum-absolute-difference?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/i7A7OTiQO_8)
 
@@ -181,8 +181,8 @@ $$O(nmk^2)$$
 ```
 
 # 19.03.2026
-[3212. Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/description/) medium
-[blog post](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/solutions/7664531/kotlin-rust-by-samoylenkodmitry-99c5/)
+[3212. Count Submatrices With Equal Frequency of X and Y](https://open.substack.com/pub/dmitriisamoilenko/p/19032026-3212-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/19032026-3212-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19032026-3212-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/M7-_BA5VpMQ)
 
@@ -250,8 +250,8 @@ $$O(m)$$
 ```
 
 # 18.03.2026
-[3070. Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/description/) medium
-[blog post](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/solutions/7656364/kotlin-rust-by-samoylenkodmitry-smle/)
+[3070. Count Submatrices with Top-Left Element and Sum Less Than k](https://open.substack.com/pub/dmitriisamoilenko/p/18032026-3070-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/18032026-3070-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18032026-3070-count-submatrices-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/e8W7RyJi0io)
 
@@ -310,8 +310,8 @@ $$O(1)$$
 ```
 
 # 17.03.2026
-[1727. Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/description/) medium
-[blog post](https://leetcode.com/problems/largest-submatrix-with-rearrangements/solutions/7653786/kotlin-rust-by-samoylenkodmitry-p4yy/)
+[1727. Largest Submatrix With Rearrangements](https://open.substack.com/pub/dmitriisamoilenko/p/17032026-1727-largest-submatrix-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/17032026-1727-largest-submatrix-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17032026-1727-largest-submatrix-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5CJSufeR7ts)
 
@@ -388,8 +388,8 @@ $$O(m)$$
 ```
 
 # 16.03.2026
-[1878. Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/description) medium
-[blog post](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/solutions/7651526/kotlin-rust-by-samoylenkodmitry-ol0f/)
+[1878. Get Biggest Three Rhombus Sums in a Grid](https://open.substack.com/pub/dmitriisamoilenko/p/16032026-1878-get-biggest-three-rhombus?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/16032026-1878-get-biggest-three-rhombus?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16032026-1878-get-biggest-three-rhombus?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/1wTfpCtE428)
 
@@ -455,8 +455,8 @@ $$O((mn)^2)$$, can be O(1)
 ```
 
 # 15.03.2026
-[1622. Fancy Sequence](https://leetcode.com/problems/fancy-sequence/description) hard
-[blog post](https://leetcode.com/problems/fancy-sequence/solutions/7649961/kotlin-rust-by-samoylenkodmitry-hhpu/)
+[1622. Fancy Sequence](https://open.substack.com/pub/dmitriisamoilenko/p/15032026-1622-fancy-sequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) hard
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/15032026-1622-fancy-sequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/15032026-1622-fancy-sequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/_X6u1bG4wlY)
 
@@ -549,8 +549,8 @@ impl Fancy {
 ```
 
 # 14.03.2026
-[1415. The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/) medium
-[blog post](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/solutions/7647436/kotlin-rust-by-samoylenkodmitry-8wps/)
+[1415. The k-th Lexicographical String of All Happy Strings of Length n](https://open.substack.com/pub/dmitriisamoilenko/p/14032026-1415-the-k-th-lexicographical?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/14032026-1415-the-k-th-lexicographical?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14032026-1415-the-k-th-lexicographical?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5V0OO4TmabM)
 
@@ -618,8 +618,8 @@ $$O(2^n)$$, or O(1)
 ```
 
 # 13.03.2026
-[3296. Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/description/) medium
-[blog post](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/7645168/kotlin-rust-by-samoylenkodmitry-18q5/)
+[3296. Minimum Number of Seconds to Make Mountain Height Zero](https://open.substack.com/pub/dmitriisamoilenko/p/13032026-3296-minimum-number-of-seconds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/13032026-3296-minimum-number-of-seconds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/13032026-3296-minimum-number-of-seconds?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ulyJXpETKLc)
 
@@ -696,8 +696,8 @@ $$O(w)$$ can be O(1)
 ```
 
 # 12.03.2026
-[3600. Maximize Spanning Tree Stability with Upgrades](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/description/) hard
-[blog post](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/solutions/7643283/kotlin-rust-by-samoylenkodmitry-qzsw/)
+[3600. Maximize Spanning Tree Stability with Upgrades](https://open.substack.com/pub/dmitriisamoilenko/p/12032026-3600-maximize-spanning-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) hard
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/12032026-3600-maximize-spanning-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/12032026-3600-maximize-spanning-tree?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/uDg48-HtW5A)
 
@@ -802,8 +802,8 @@ $$O(e+n)$$
 ```
 
 # 11.03.2026
-[1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/) easy
-[blog post](https://leetcode.com/problems/complement-of-base-10-integer/solutions/7640624/kotlin-rust-by-samoylenkodmitry-oene/)
+[1009. Complement of Base 10 Integer](https://open.substack.com/pub/dmitriisamoilenko/p/11032026-1009-complement-of-base?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/11032026-1009-complement-of-base?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/11032026-1009-complement-of-base?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/lAA3Q_j5X2M)
 
@@ -854,8 +854,8 @@ $$O(1)$$
 ```
 
 # 10.03.2026
-[3130. Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/description/) hard
-[blog post](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/solutions/7638572/kotlin-rust-by-samoylenkodmitry-63e9/)
+[3130. Find All Possible Stable Binary Arrays II](https://open.substack.com/pub/dmitriisamoilenko/p/10032026-3130-find-all-possible-stable?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) hard
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/10032026-3130-find-all-possible-stable?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/10032026-3130-find-all-possible-stable?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Ccn-2zM23lc)
 
@@ -950,8 +950,8 @@ $$O(zo)$$
 ```
 
 # 09.03.2026
-[3129. Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/description/) medium
-[blog post](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/solutions/7636580/kotlin-by-samoylenkodmitry-xs83/)
+[3129. Find All Possible Stable Binary Arrays I](https://open.substack.com/pub/dmitriisamoilenko/p/09032026-3129-find-all-possible-stable?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/09032026-3129-find-all-possible-stable?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/09032026-3129-find-all-possible-stable?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/femYUYMT-gU)
 
@@ -1011,8 +1011,8 @@ $$O(zo)$$
 ```
 
 # 08.03.2026
-[1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description) medium
-[blog post](https://leetcode.com/problems/find-unique-binary-string/solutions/7634500/kotlin-rust-by-samoylenkodmitry-zwmz/)
+[1980. Find Unique Binary String](https://open.substack.com/pub/dmitriisamoilenko/p/08032026-1980-find-unique-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/08032026-1980-find-unique-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08032026-1980-find-unique-binary?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UHbsuAGRb1w)
 
@@ -1064,8 +1064,8 @@ $$O(n)$$
 ```
 
 # 07.03.2026
-[1888. Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/description) medium
-[blog post](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/solutions/7632124/kotlin-rust-by-samoylenkodmitry-dp4v/)
+[1888. Minimum Number of Flips to Make the Binary String Alternating](https://open.substack.com/pub/dmitriisamoilenko/p/07032026-1888-minimum-number-of-flips?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/07032026-1888-minimum-number-of-flips?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07032026-1888-minimum-number-of-flips?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/w98s1AmrC9Y)
 
@@ -1192,8 +1192,8 @@ $$O(1)$$, or O(n) for prefix sum
 ```
 
 # 06.03.2026
-[1784. Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description) easy
-[blog post](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/solutions/7629247/kotlin-rust-by-samoylenkodmitry-y2hr/)
+[1784. Check if Binary String Has at Most One Segment of Ones](https://open.substack.com/pub/dmitriisamoilenko/p/06032026-1784-check-if-binary-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/06032026-1784-check-if-binary-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06032026-1784-check-if-binary-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/wI2Z8EUBRIQ)
 
@@ -1242,8 +1242,8 @@ $$O(1)$$
 ```
 
 # 05.03.2026
-[1758. Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/description/) easy
-[blog post](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/solutions/7626832/kotlin-rust-by-samoylenkodmitry-a1lq/)
+[1758. Minimum Changes To Make Alternating Binary String](https://open.substack.com/pub/dmitriisamoilenko/p/05032026-1758-minimum-changes-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/05032026-1758-minimum-changes-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/05032026-1758-minimum-changes-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/UKM1YmZMmEQ)
 
@@ -1292,8 +1292,8 @@ $$O(1)$$
 ```
 
 # 04.08.2026
-[1582. Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/) easy
-[blog post](https://leetcode.com/problems/special-positions-in-a-binary-matrix/solutions/7624305/kotlin-rust-by-samoylenkodmitry-qgmy/)
+[1582. Special Positions in a Binary Matrix](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/W8c8wr4GaWw)
 
@@ -1346,8 +1346,8 @@ $$O(1)$$
 ```
 
 # 03.03.2026
-[1545. Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/description/) medium
-[blog post](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/solutions/7622193/kotlin-rust-by-samoylenkodmitry-ptjb/)
+[1545. Find Kth Bit in Nth Binary String](https://open.substack.com/pub/dmitriisamoilenko/p/03032026-1545-find-kth-bit-in-nth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/03032026-1545-find-kth-bit-in-nth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/03032026-1545-find-kth-bit-in-nth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/KxoF88DW9jE)
 
@@ -1438,8 +1438,8 @@ $$O(log(k))$$ or O(1)
 ```
 
 # 02.03.2026
-[1536. Minimum Swaps to Arrange a Binary Grid](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/description/) medium
-[blog post](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/solutions/7619631/kotlin-rust-by-samoylenkodmitry-n5ns/)
+[1536. Minimum Swaps to Arrange a Binary Grid](https://open.substack.com/pub/dmitriisamoilenko/p/02082026-1536-minimum-swaps-to-arrange?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/02082026-1536-minimum-swaps-to-arrange?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02082026-1536-minimum-swaps-to-arrange?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5PDig8FsghM)
 
@@ -1523,8 +1523,8 @@ $$O(n)$$
 ```
 
 # 01.03.2026
-[1689. Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/description/) medium
-[blog post](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/solutions/7617027/kotlin-rust-by-samoylenkodmitry-bwhe/)
+[1689. Partitioning Into Minimum Number Of Deci-Binary Numbers](https://open.substack.com/pub/dmitriisamoilenko/p/01022026-1689-partitioning-into-minimum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/01022026-1689-partitioning-into-minimum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01022026-1689-partitioning-into-minimum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/5kz6Fk-eQVA)
 
@@ -1604,8 +1604,8 @@ $$O(1)$$
 ```
 
 # 28.02.2026
-[1680. Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/description/) medium
-[blog post](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/solutions/7614530/kotlin-rust-by-samoylenkodmitry-no1j/)
+[1680. Concatenation of Consecutive Binary Numbers](https://dmitriisamoilenko.substack.com/publish/posts/detail/189443191/share-center) medium
+[blog post](https://dmitriisamoilenko.substack.com/publish/posts/detail/189443191/share-center)
 [substack](https://dmitriisamoilenko.substack.com/publish/posts/detail/189443191/share-center)
 [youtube](https://youtu.be/A8od0NdRN2o)
 
@@ -1682,8 +1682,8 @@ $$O(1)$$
 ```
 
 # 27.02.2026
-[3666. Minimum Operations to Equalize Binary String](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/description) hard
-[blog post](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/solutions/7612723/kotlin-by-samoylenkodmitry-f7y5/)
+[3666. Minimum Operations to Equalize Binary String](https://open.substack.com/pub/dmitriisamoilenko/p/27022026-3666-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) hard
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/27022026-3666-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/27022026-3666-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/PBxyeNXKqag)
 
@@ -1806,8 +1806,8 @@ $$O(1)$$
 ```
 
 # 26.02.2026
-[1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/) medium
-[blog post](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/solutions/7610354/kotlin-rust-by-samoylenkodmitry-2kr0/)
+[1404. Number of Steps to Reduce a Number in Binary Representation to One](https://open.substack.com/pub/dmitriisamoilenko/p/26022026-1404-number-of-steps-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/26022026-1404-number-of-steps-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/26022026-1404-number-of-steps-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/BHQNA5xMXKk)
 
@@ -1859,8 +1859,8 @@ $$O(1)$$
 ```
 
 # 25.02.2026
-[1356. Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description) easy
-[blog post](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/solutions/7607662/kotlin-rust-by-samoylenkodmitry-x2hn/)
+[1356. Sort Integers by The Number of 1 Bits](https://open.substack.com/pub/dmitriisamoilenko/p/25022026-1356-sort-integers-by-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/25022026-1356-sort-integers-by-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/25022026-1356-sort-integers-by-the?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/aQ89OpjetAU)
 
@@ -1909,8 +1909,8 @@ $$O(n)$$
 ```
 
 # 24.02.2026
-[1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) easy
-[blog post](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/solutions/7604837/kotlin-rust-by-samoylenkodmitry-e39h/)
+[1022. Sum of Root To Leaf Binary Numbers](https://open.substack.com/pub/dmitriisamoilenko/p/24022026-1022-sum-of-root-to-leaf?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/24022026-1022-sum-of-root-to-leaf?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24022026-1022-sum-of-root-to-leaf?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/s0FsciC8tGY)
 
@@ -1964,8 +1964,8 @@ $$O(log(n))$$
 ```
 
 # 23.02.2026
-[1461. Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/description) medium
-[blog post](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/solutions/7602035/kotlin-rust-by-samoylenkodmitry-qxtj/)
+[1461. Check If a String Contains All Binary Codes of Size K](https://open.substack.com/pub/dmitriisamoilenko/p/23022026-1461-check-if-a-string-contains?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) medium
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/23022026-1461-check-if-a-string-contains?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23022026-1461-check-if-a-string-contains?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/-JMK3yYBk2A)
 
@@ -2016,8 +2016,8 @@ $$O(n)$$
 ```
 
 # 22.02.2026
-[868. Binary Gap](https://leetcode.com/problems/binary-gap/description/) easy
-[blog post](https://leetcode.com/problems/binary-gap/solutions/7599379/kotlin-rust-by-samoylenkodmitry-859q/)
+[868. Binary Gap](https://open.substack.com/pub/dmitriisamoilenko/p/22022026-868-binary-gap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/22022026-868-binary-gap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22022026-868-binary-gap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Z_zuTpqWoFE)
 
@@ -2072,8 +2072,8 @@ $$O(log(n))$$ or less
 ```
 
 # 21.02.2026
-[762. Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/description) easy
-[blog post](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/solutions/7596334/kotlin-rust-by-samoylenkodmitry-d11h/)
+[762. Prime Number of Set Bits in Binary Representation](https://open.substack.com/pub/dmitriisamoilenko/p/21022026-762-prime-number-of-set?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/21022026-762-prime-number-of-set?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/21022026-762-prime-number-of-set?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/X63Rkrgew6A)
 
@@ -2156,8 +2156,8 @@ $$O(1)$$
 ```
 
 # 20.02.2026
-[761. Special Binary String](https://leetcode.com/problems/special-binary-string/description) hard
-[blog post](https://leetcode.com/problems/special-binary-string/solutions/7594025/kotlin-by-samoylenkodmitry-7es4/)
+[761. Special Binary String](https://open.substack.com/pub/dmitriisamoilenko/p/20022026-761-special-binary-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) hard
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/20022026-761-special-binary-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/20022026-761-special-binary-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/ZNdaIujUycI)
 
@@ -2277,8 +2277,8 @@ $$O(n)$$
 
 
 # 19.02.2026
-[696. Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/description) easy
-[blog post](https://leetcode.com/problems/count-binary-substrings/solutions/7591391/kotlin-rust-by-samoylenkodmitry-iqj8/)
+[696. Count Binary Substrings](https://open.substack.com/pub/dmitriisamoilenko/p/19022026-696-count-binary-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/19022026-696-count-binary-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19022026-696-count-binary-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/mm8w6ijHkeA)
 
@@ -2331,8 +2331,8 @@ $$O(1)$$
 ```
 
 # 18.02.2026
-[693. Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/description) easy
-[blog post](https://leetcode.com/problems/binary-number-with-alternating-bits/solutions/7588528/kotlin-rust-by-samoylenkodmitry-okh0/)
+[693. Binary Number with Alternating Bits](https://open.substack.com/pub/dmitriisamoilenko/p/18022026-693-binary-number-with-alternating?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/18022026-693-binary-number-with-alternating?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18022026-693-binary-number-with-alternating?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/pot5OUHEMfc)
 
@@ -2389,8 +2389,8 @@ $$O(1)$$
 ```
 
 # 17.02.2026
-[401. Binary Watch](https://leetcode.com/problems/binary-watch/description) easy
-[blog post](https://leetcode.com/problems/binary-watch/solutions/7586098/kotlin-rust-by-samoylenkodmitry-u7n0/)
+[401. Binary Watch](https://open.substack.com/pub/dmitriisamoilenko/p/17022026-401-binary-watch?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/17022026-401-binary-watch?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/17022026-401-binary-watch?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/HrlYUmX08Dw)
 
@@ -2476,8 +2476,8 @@ $$O(h*m)$$
 ```
 
 # 16.02.2026
-[190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description) easy
-[blog post](https://leetcode.com/problems/reverse-bits/solutions/7583223/kotlin-rust-by-samoylenkodmitry-nnpm/)
+[190. Reverse Bits](https://open.substack.com/pub/dmitriisamoilenko/p/16022026-190-reverse-bits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/16022026-190-reverse-bits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16022026-190-reverse-bits?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 [youtube](https://youtu.be/Y566LGnPPpU)
 
