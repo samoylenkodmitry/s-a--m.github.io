@@ -15,6 +15,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 29.03.2026
+[2839. Check if Strings Can be Made Equal With Operations I](https://open.substack.com/pub/dmitriisamoilenko/p/29032026-2839-check-if-strings-can?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+[youtube](https://youtu.be/KyFAcXDvewg)
+
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1312
+
+#### Problem TLDR
+
+Match a and b at (0|2,1|3) positions #easy
+
+#### Intuition
+
+How short can the code be?
+
+#### Approach
+
+* Kotlin: setOf, (0..1)
+* Rust: bitmask
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin 
+// 24ms
+    fun canBeEqual(a: String, b: String) = 
+    (0..1).all { setOf(a[it],a[it+2]) == setOf(b[it],b[it+2]) }
+```
+```rust 
+// 0ms
+    pub fn can_be_equal(a: String, b: String) -> bool {
+        let f = |s: &[u8]| 1<<s[0] | 1<<s[2] | 1<<s[1]+16 | 1<<s[3]+16;
+        f(a.as_bytes()) == f(b.as_bytes())
+    }
+```
+
 # 28.03.2026
 [2573. Find the String with LCP](https://open.substack.com/pub/dmitriisamoilenko/p/28032026-2573-find-the-string-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) hard
 
