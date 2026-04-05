@@ -15,6 +15,56 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
 
+# 05.04.2026
+[657. Robot Return to Origin](https://open.substack.com/pub/dmitriisamoilenko/p/05042026-657-robot-return-to-origin?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
+
+[youtube](https://youtu.be/LVBqcxYqViI)
+
+
+
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1319
+
+#### Problem TLDR
+
+R,L,U,D return to 0 in XY plane #easy
+
+#### Intuition
+
+Compare counts separately for vertical and horizontal directions.
+Both directions can fit into a single variable h*2^16+v.
+
+#### Approach
+
+* hash collisions of 8 make the solution extra spicy
+* do you know how %5 works?
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+// 38ms
+    fun judgeCircle(m: String) = 
+        0==m.sumOf {listOf(8,-1,1,-8)[it.code%5]}
+```
+```rust
+// 0ms
+    pub fn judge_circle(m: String) -> bool {
+        0==m.bytes().fold(0,|a,b|a+[8,-1,1,-8][(b%5)as usize])
+    }
+```
+
 # 04.04.2026
 [2075. Decode the Slanted Ciphertext](https://leetcode.com/problems/decode-the-slanted-ciphertext/solutions/7772277/kotlin-rust-by-samoylenkodmitry-pj7p/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04042026-2075-decode-the-slanted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
