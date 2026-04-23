@@ -1,3 +1,9 @@
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1679141361049901"
      crossorigin="anonymous"></script>
+{% if page.leetcode_ui %}
+<link rel="stylesheet" href="{{ '/assets/leetcode/library.css' | relative_url }}">
+{% endif %}
+{% if page.leetcode_search %}
+<script defer src="{{ '/assets/leetcode/library.js' | relative_url }}"></script>
+{% endif %}

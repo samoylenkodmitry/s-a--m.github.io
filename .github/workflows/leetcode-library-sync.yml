@@ -1,0 +1,47 @@
+name: Sync LeetCode Library
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "_leetcode_source/2023-07-14-leetcode_daily.md"
+      - "scripts/generate_leetcode_library.py"
+      - "_layouts/leetcode-*.html"
+      - "_includes/leetcode-card.html"
+      - "assets/leetcode/**"
+      - "leetcode/index.md"
+      - "leetcode/language/**"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate library
+        run: python3 scripts/generate_leetcode_library.py
+
+      - name: Commit generated files
+        run: |
+          if git diff --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/leetcode_library.json leetcode/pattern leetcode/problem leetcode/year
+          git commit -m "Sync LeetCode library"
+          git push

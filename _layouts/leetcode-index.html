@@ -1,0 +1,143 @@
+---
+layout: default
+---
+{% assign library = site.data.leetcode_library %}
+{% assign entries = library.entries %}
+<section class="leetcode-shell">
+  <div class="leetcode-hero">
+    <p class="leetcode-eyebrow">LeetCode Library</p>
+    <h1 class="leetcode-title">Catalog the drills. Don&rsquo;t blog them.</h1>
+    <p class="leetcode-copy">
+      This section turns the daily LeetCode archive into a searchable library.
+      The main homepage stays essay-oriented; this surface is built for navigation.
+    </p>
+    <div class="leetcode-stat-grid">
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ library.stats.entry_count }}</span>
+        <span class="leetcode-stat__label">entries</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ library.stats.year_count }}</span>
+        <span class="leetcode-stat__label">years</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ library.stats.pattern_count }}</span>
+        <span class="leetcode-stat__label">patterns</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ library.stats.rust_count }}</span>
+        <span class="leetcode-stat__label">with Rust</span>
+      </article>
+    </div>
+    <div class="leetcode-hero__links">
+      <a class="leetcode-link-chip" href="{{ '/leetcode/feed.xml' | relative_url }}">Library RSS</a>
+      <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
+      <a class="leetcode-link-chip" href="{{ '/about/' | relative_url }}">About</a>
+    </div>
+  </div>
+
+  <section class="leetcode-filter-panel">
+    <div class="leetcode-field">
+      <label for="leetcode-search">Search</label>
+      <input id="leetcode-search" type="search" placeholder="Title, id, takeaway, pattern" autocomplete="off">
+    </div>
+    <div class="leetcode-filter-grid">
+      <div class="leetcode-field">
+        <label for="leetcode-difficulty">Difficulty</label>
+        <select id="leetcode-difficulty">
+          <option value="">All</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="leetcode-field">
+        <label for="leetcode-year">Year</label>
+        <select id="leetcode-year">
+          <option value="">All</option>
+          {% for year in library.years %}
+          <option value="{{ year.value }}">{{ year.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="leetcode-field">
+        <label for="leetcode-language">Language</label>
+        <select id="leetcode-language">
+          <option value="">All</option>
+          {% for language in library.languages %}
+          <option value="{{ language.value }}">{{ language.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="leetcode-field">
+        <label for="leetcode-pattern">Pattern</label>
+        <select id="leetcode-pattern">
+          <option value="">All</option>
+          {% for pattern in library.patterns %}
+          {% unless pattern.slug == 'implementation' %}
+          <option value="{{ pattern.slug }}">{{ pattern.label }}</option>
+          {% endunless %}
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <p id="leetcode-results-meta" class="leetcode-results-meta">
+      Showing the latest {{ entries | size }} entries.
+    </p>
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>Browse the map</h2>
+      <p>Start with a year, a language, or one of the recurring patterns.</p>
+    </div>
+    <div class="leetcode-browse-grid">
+      <article class="leetcode-browse-card">
+        <h3>Years</h3>
+        <ul class="leetcode-link-list">
+          {% for year in library.years %}
+          <li><a href="{{ year.url | relative_url }}">{{ year.label }}</a><span>{{ year.count }}</span></li>
+          {% endfor %}
+        </ul>
+      </article>
+      <article class="leetcode-browse-card">
+        <h3>Languages</h3>
+        <ul class="leetcode-link-list">
+          {% for language in library.languages %}
+          <li><a href="{{ language.url | relative_url }}">{{ language.label }}</a><span>{{ language.count }}</span></li>
+          {% endfor %}
+        </ul>
+      </article>
+      <article class="leetcode-browse-card">
+        <h3>Patterns</h3>
+        <ul class="leetcode-link-list leetcode-link-list--dense">
+          {% for pattern in library.patterns limit: 16 %}
+          {% unless pattern.slug == 'implementation' %}
+          <li><a href="{{ pattern.url | relative_url }}">{{ pattern.label }}</a><span>{{ pattern.count }}</span></li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>Archive</h2>
+      <p>Compact rows with links out to LeetCode, Telegram, YouTube, and the raw archive when available.</p>
+    </div>
+    <div id="leetcode-results" class="leetcode-results" data-baseurl="{{ site.baseurl | default: '' }}">
+      {% for entry in entries limit: 36 %}
+      {% include leetcode-card.html entry=entry %}
+      {% endfor %}
+    </div>
+    <noscript>
+      <p class="leetcode-noscript">
+        JavaScript is disabled, so this page shows the latest 36 entries.
+        Use the year, language, and pattern pages above for the full archive.
+      </p>
+    </noscript>
+  </section>
+</section>
+
+<script id="leetcode-library-data" type="application/json">{{ entries | jsonify }}</script>

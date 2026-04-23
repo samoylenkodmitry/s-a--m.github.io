@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /leetcode/feed.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }} - LeetCode Library</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ '/leetcode/' | relative_url }}</link>
+    <atom:link href="{{ site.url }}{{ '/leetcode/feed.xml' | relative_url }}" rel="self" type="application/rss+xml" />
+    {% for entry in site.data.leetcode_library.entries limit: 100 %}
+    <item>
+      <title>{{ entry.display_title | xml_escape }}</title>
+      <description>{{ entry.takeaway | default: entry.display_title | xml_escape }}</description>
+      <link>{{ site.url }}{{ entry.page_url | relative_url }}</link>
+      <guid>{{ site.url }}{{ entry.page_url | relative_url }}</guid>
+      <pubDate>{{ entry.date | date_to_rfc822 }}</pubDate>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -1,0 +1,7 @@
+---
+layout: leetcode-entry
+title: "938. Range Sum of BST"
+permalink: "/leetcode/problem/2022-12-07-938-range-sum-of-bst/"
+leetcode_ui: true
+entry_slug: "2022-12-07-938-range-sum-of-bst"
+---

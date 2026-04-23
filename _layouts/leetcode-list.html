@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% assign entries = site.data.leetcode_library.entries %}
+{% if page.library_kind == 'pattern' %}
+  {% assign entries = entries | where_exp: 'entry', 'entry.pattern_slugs contains page.pattern_slug' %}
+{% elsif page.library_kind == 'language' %}
+  {% assign entries = entries | where_exp: 'entry', 'entry.languages contains page.language_value' %}
+{% elsif page.library_kind == 'year' %}
+  {% assign entries = entries | where: 'year', page.year_value %}
+{% endif %}
+<section class="leetcode-shell">
+  <div class="leetcode-hero leetcode-hero--compact">
+    <p class="leetcode-eyebrow">{{ page.library_label }}</p>
+    <h1 class="leetcode-title">{{ page.library_heading | default: page.title }}</h1>
+    <p class="leetcode-copy">{{ page.library_intro }}</p>
+    <div class="leetcode-hero__links">
+      <a class="leetcode-link-chip" href="{{ '/leetcode/' | relative_url }}">Back to library</a>
+      <a class="leetcode-link-chip" href="{{ '/leetcode/feed.xml' | relative_url }}">Library RSS</a>
+    </div>
+  </div>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>{{ entries | size }} entries</h2>
+      <p>{{ page.library_summary }}</p>
+    </div>
+    <div class="leetcode-results">
+      {% for entry in entries %}
+      {% include leetcode-card.html entry=entry %}
+      {% endfor %}
+    </div>
+  </section>
+</section>

@@ -18,3 +18,11 @@
 .idea/sonarlint/securityhotspotstore/index.pb
 .idea/sonarlint/securityhotspotstore/a/e/ae719a9d8667b25c6549b3d13395f198041d513f
 .idea/sonarlint/securityhotspotstore/b/a/ba402d44c2f3e2e708db81087dbc2e983304fd6c
+.bundle/
+.codex
+.jekyll-cache/
+.sass-cache/
+_site/
+__pycache__/
+vendor/bundle/
+Gemfile.lock

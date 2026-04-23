@@ -1,0 +1,41 @@
+name: Site Check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Regenerate LeetCode library
+        run: python3 scripts/generate_leetcode_library.py
+
+      - name: Ensure generated files are committed
+        if: github.event_name == 'pull_request'
+        run: git diff --exit-code
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
+
+      - name: Assert critical routes
+        run: |
+          test -f _site/2023/07/14/leetcode_daily.html
+          test -f _site/leetcode/index.html

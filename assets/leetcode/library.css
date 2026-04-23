@@ -1,0 +1,305 @@
+.leetcode-shell {
+  --leetcode-bg: #f7f2e8;
+  --leetcode-paper: rgba(255, 252, 246, 0.92);
+  --leetcode-ink: #1e2a28;
+  --leetcode-muted: #5d6864;
+  --leetcode-border: rgba(40, 62, 55, 0.16);
+  --leetcode-accent: #0d7c66;
+  --leetcode-accent-soft: rgba(13, 124, 102, 0.12);
+  --leetcode-alert: #b2582b;
+  color: var(--leetcode-ink);
+}
+
+.leetcode-shell a {
+  color: var(--leetcode-accent);
+}
+
+.leetcode-hero,
+.leetcode-section,
+.leetcode-detail,
+.leetcode-note,
+.leetcode-filter-panel {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 249, 241, 0.95)),
+    var(--leetcode-bg);
+  border: 1px solid var(--leetcode-border);
+  border-radius: 24px;
+  box-shadow: 0 22px 48px rgba(24, 37, 33, 0.08);
+  padding: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.leetcode-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.leetcode-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(13, 124, 102, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 124, 102, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 70%);
+  pointer-events: none;
+}
+
+.leetcode-hero > *,
+.leetcode-section > *,
+.leetcode-detail > * {
+  position: relative;
+  z-index: 1;
+}
+
+.leetcode-eyebrow {
+  margin: 0 0 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  color: var(--leetcode-muted);
+}
+
+.leetcode-title {
+  margin: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.leetcode-title--detail {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.leetcode-copy,
+.leetcode-results-meta,
+.leetcode-section__head p,
+.leetcode-note p,
+.leetcode-card__takeaway,
+.leetcode-detail__takeaway,
+.leetcode-link-list span {
+  color: var(--leetcode-muted);
+}
+
+.leetcode-copy {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+}
+
+.leetcode-stat-grid,
+.leetcode-browse-grid,
+.leetcode-filter-grid,
+.leetcode-detail__meta,
+.leetcode-card__top,
+.leetcode-card__links,
+.leetcode-hero__links,
+.leetcode-card__patterns,
+.leetcode-detail__patterns,
+.leetcode-detail__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.leetcode-stat-grid {
+  margin-top: 1.25rem;
+}
+
+.leetcode-stat {
+  min-width: 8rem;
+  padding: 0.9rem 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(13, 124, 102, 0.14);
+}
+
+.leetcode-stat__value {
+  display: block;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.leetcode-stat__label {
+  display: block;
+  color: var(--leetcode-muted);
+  font-size: 0.92rem;
+}
+
+.leetcode-link-chip,
+.leetcode-pattern-chip,
+.leetcode-pill,
+.leetcode-card__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2rem;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(13, 124, 102, 0.2);
+  background: var(--leetcode-paper);
+  color: var(--leetcode-accent);
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.leetcode-pill {
+  color: var(--leetcode-ink);
+  border-color: var(--leetcode-border);
+}
+
+.leetcode-pill--easy {
+  background: rgba(33, 145, 104, 0.12);
+}
+
+.leetcode-pill--medium {
+  background: rgba(219, 156, 46, 0.14);
+}
+
+.leetcode-pill--hard {
+  background: rgba(178, 88, 43, 0.14);
+}
+
+.leetcode-filter-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(252, 247, 239, 0.95)),
+    var(--leetcode-bg);
+}
+
+.leetcode-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  flex: 1 1 11rem;
+}
+
+.leetcode-field label {
+  font-size: 0.92rem;
+  color: var(--leetcode-muted);
+}
+
+.leetcode-field input,
+.leetcode-field select {
+  min-height: 2.8rem;
+  border-radius: 14px;
+  border: 1px solid var(--leetcode-border);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 0.9rem;
+  font: inherit;
+  color: var(--leetcode-ink);
+}
+
+.leetcode-browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.leetcode-browse-card {
+  padding: 1.1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(13, 124, 102, 0.14);
+}
+
+.leetcode-browse-card h3,
+.leetcode-section__head h2 {
+  margin-top: 0;
+}
+
+.leetcode-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leetcode-link-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.32rem 0;
+}
+
+.leetcode-link-list--dense li {
+  padding: 0.22rem 0;
+}
+
+.leetcode-results {
+  display: grid;
+  gap: 1rem;
+}
+
+.leetcode-card {
+  padding: 1.1rem 1.15rem;
+  border: 1px solid var(--leetcode-border);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.leetcode-card__top,
+.leetcode-card__links {
+  justify-content: space-between;
+}
+
+.leetcode-card__date {
+  margin: 0;
+  color: var(--leetcode-muted);
+  font-size: 0.92rem;
+}
+
+.leetcode-card__title {
+  margin: 0.55rem 0 0;
+  font-size: 1.2rem;
+}
+
+.leetcode-card__title a {
+  color: var(--leetcode-ink);
+  text-decoration: none;
+}
+
+.leetcode-card__title a:hover,
+.leetcode-link-list a:hover,
+.leetcode-shell a:hover {
+  text-decoration: underline;
+}
+
+.leetcode-card__takeaway,
+.leetcode-detail__takeaway {
+  margin: 0.65rem 0 0;
+}
+
+.leetcode-card__patterns,
+.leetcode-card__links {
+  margin-top: 0.85rem;
+}
+
+.leetcode-detail__meta,
+.leetcode-detail__patterns,
+.leetcode-detail__links {
+  margin-top: 1rem;
+}
+
+.leetcode-detail__takeaway {
+  font-size: 1.08rem;
+  max-width: 44rem;
+}
+
+.leetcode-noscript {
+  margin-top: 0.8rem;
+  color: var(--leetcode-alert);
+}
+
+@media (max-width: 640px) {
+  .leetcode-hero,
+  .leetcode-section,
+  .leetcode-detail,
+  .leetcode-note,
+  .leetcode-filter-panel {
+    padding: 1.15rem;
+  }
+
+  .leetcode-card__links,
+  .leetcode-card__top {
+    justify-content: flex-start;
+  }
+}

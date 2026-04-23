@@ -1,13 +1,21 @@
 # basic options
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 title: Android Developer Blog
 author: Dmitry Samoylenko
 email: site@dmitrysamoylenko.in
+url: https://dmitrysamoylenko.com
 description: This is a personal blog. Mail me if you want to use materials from it.
 twitter_username: DmitrySamoylenk
 github_username:  samoylenkodmitry
 linkedin: dmitrysamoylenko
+header_pages:
+  - about.md
+  - leetcode/index.md
+collections:
+  leetcode_source:
+    output: true
 defaults:
   # _posts
   - scope:
@@ -15,6 +23,12 @@ defaults:
       type: posts
     values:
       comments: true
+  - scope:
+      path: ""
+      type: leetcode_source
+    values:
+      layout: post
+      comments: false
 
 disqus: 
   shortname: http-dmitrysamoylenko-com
