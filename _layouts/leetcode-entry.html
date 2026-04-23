@@ -1,66 +1,77 @@
 ---
-layout: default
+layout: leetcode-base
 ---
 {% assign entry = site.data.leetcode_library.entries | where: 'slug', page.entry_slug | first %}
+{% capture detail_pattern_links %}
+  {% for slug in entry.pattern_slugs %}
+    {% unless slug == 'implementation' %}
+    <a class="leetcode-pattern-chip" href="{{ '/leetcode/pattern/' | append: slug | append: '/' | relative_url }}">
+      {{ entry.pattern_labels[forloop.index0] }}
+    </a>
+    {% endunless %}
+  {% endfor %}
+{% endcapture %}
+{% assign detail_pattern_links = detail_pattern_links | strip %}
 <section class="leetcode-shell">
   {% if entry %}
-  <article class="leetcode-detail">
-    <p class="leetcode-eyebrow">LeetCode Entry</p>
-    <h1 class="leetcode-title leetcode-title--detail">{{ entry.display_title }}</h1>
-    <div class="leetcode-detail__meta">
-      <span class="leetcode-pill">{{ entry.display_date }}</span>
-      <span class="leetcode-pill leetcode-pill--{{ entry.difficulty }}">{{ entry.difficulty }}</span>
-      <a class="leetcode-pill" href="{{ '/leetcode/year/' | append: entry.year | append: '/' | relative_url }}">{{ entry.year }}</a>
-      {% for language in entry.languages %}
-      <a class="leetcode-pill" href="{{ '/leetcode/language/' | append: language | append: '/' | relative_url }}">{{ language }}</a>
-      {% endfor %}
-    </div>
+  <div class="leetcode-entry-grid">
+    <article class="leetcode-detail">
+      <p class="leetcode-eyebrow">LeetCode Entry</p>
+      <h1 class="leetcode-title leetcode-title--detail">{{ entry.display_title }}</h1>
+      <div class="leetcode-detail__meta">
+        <span class="leetcode-pill">{{ entry.display_date }}</span>
+        <span class="leetcode-pill leetcode-pill--{{ entry.difficulty }}">{{ entry.difficulty }}</span>
+        <a class="leetcode-pill" href="{{ '/leetcode/year/' | append: entry.year | append: '/' | relative_url }}">{{ entry.year }}</a>
+        {% for language in entry.languages %}
+        <a class="leetcode-pill" href="{{ '/leetcode/language/' | append: language | append: '/' | relative_url }}">{{ language }}</a>
+        {% endfor %}
+      </div>
 
-    {% if entry.takeaway %}
-    <p class="leetcode-detail__takeaway">{{ entry.takeaway }}</p>
-    {% endif %}
+      {% if entry.takeaway %}
+      <p class="leetcode-detail__takeaway">{{ entry.takeaway }}</p>
+      {% endif %}
 
-    {% if entry.pattern_slugs and entry.pattern_slugs != empty %}
-    <div class="leetcode-detail__patterns">
-      {% for slug in entry.pattern_slugs %}
-      {% unless slug == 'implementation' %}
-      <a class="leetcode-pattern-chip" href="{{ '/leetcode/pattern/' | append: slug | append: '/' | relative_url }}">
-        {{ entry.pattern_labels[forloop.index0] }}
-      </a>
-      {% endunless %}
-      {% endfor %}
-    </div>
-    {% endif %}
+      <div class="leetcode-entry__content">
+        {{ content }}
+      </div>
+    </article>
 
-    <div class="leetcode-detail__links">
-      {% if entry.page_url %}
-      <a class="leetcode-link-chip" href="{{ entry.page_url | relative_url }}">Permalink</a>
+    <aside class="leetcode-sidecard">
+      {% if detail_pattern_links != '' %}
+      <div class="leetcode-sidecard__section">
+        <p class="leetcode-sidecard__label">Patterns</p>
+        <div class="leetcode-detail__patterns">
+          {{ detail_pattern_links }}
+        </div>
+      </div>
       {% endif %}
-      {% if entry.problem_url %}
-      <a class="leetcode-link-chip" href="{{ entry.problem_url }}">LeetCode</a>
-      {% endif %}
-      {% if entry.kotlin_url %}
-      <a class="leetcode-link-chip" href="{{ entry.kotlin_url }}">Kotlin</a>
-      {% endif %}
-      {% if entry.rust_url %}
-      <a class="leetcode-link-chip" href="{{ entry.rust_url }}">Rust</a>
-      {% endif %}
-      {% if entry.youtube_url %}
-      <a class="leetcode-link-chip" href="{{ entry.youtube_url }}">YouTube</a>
-      {% endif %}
-      {% if entry.telegram_url %}
-      <a class="leetcode-link-chip" href="{{ entry.telegram_url }}">Telegram</a>
-      {% endif %}
-      {% if entry.substack_url %}
-      <a class="leetcode-link-chip" href="{{ entry.substack_url }}">Substack</a>
-      {% endif %}
-      <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
-    </div>
 
-    <div class="leetcode-note">
-      <p>This page is the library view. The long-form running notes remain in the original archive and external posts.</p>
-    </div>
-  </article>
+      <div class="leetcode-sidecard__section">
+        <p class="leetcode-sidecard__label">Links</p>
+        <div class="leetcode-detail__links">
+          {% if entry.problem_url %}
+          <a class="leetcode-link-chip" href="{{ entry.problem_url }}">LeetCode</a>
+          {% endif %}
+          {% if entry.kotlin_url %}
+          <a class="leetcode-link-chip" href="{{ entry.kotlin_url }}">Kotlin</a>
+          {% endif %}
+          {% if entry.rust_url %}
+          <a class="leetcode-link-chip" href="{{ entry.rust_url }}">Rust</a>
+          {% endif %}
+          {% if entry.youtube_url %}
+          <a class="leetcode-link-chip" href="{{ entry.youtube_url }}">YouTube</a>
+          {% endif %}
+          {% if entry.telegram_url %}
+          <a class="leetcode-link-chip" href="{{ entry.telegram_url }}">Telegram</a>
+          {% endif %}
+          {% if entry.substack_url %}
+          <a class="leetcode-link-chip" href="{{ entry.substack_url }}">Substack</a>
+          {% endif %}
+          <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
+        </div>
+      </div>
+    </aside>
+  </div>
   {% else %}
   <div class="leetcode-note">
     <p>This entry could not be resolved from the generated library data. Re-run the LeetCode generator.</p>

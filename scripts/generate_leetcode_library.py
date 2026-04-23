@@ -346,6 +346,20 @@ def infer_languages(lines: list[str], problem_url: str, blog_post_url: str | Non
     return languages
 
 
+def normalize_problem_page_lines(lines: list[str]) -> list[str]:
+    filtered: list[str] = []
+    previous_blank = False
+    for line in lines:
+        if line.strip() == "https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html":
+            continue
+        is_blank = not line.strip()
+        if is_blank and previous_blank and filtered and not filtered[-1].strip():
+            continue
+        filtered.append(line.rstrip())
+        previous_blank = is_blank
+    return filtered
+
+
 def build_entry(date_display: str, lines: list[str]) -> dict[str, object]:
     day, month, year = (int(part) for part in date_display.split("."))
     date_iso = f"{year:04d}-{month:02d}-{day:02d}"
@@ -487,24 +501,25 @@ def render_pattern_page(pattern: dict[str, object]) -> str:
     )
 
 
-def render_problem_page(entry: dict[str, object]) -> str:
-    return "\n".join(
-        [
-            "---",
-            "layout: leetcode-entry",
-            f"title: {yaml_quote(entry['display_title'])}",
-            f"permalink: {yaml_quote(entry['page_url'])}",
-            "leetcode_ui: true",
-            f"entry_slug: {yaml_quote(entry['slug'])}",
-            "---",
-            "",
-        ]
-    )
+def render_problem_page(entry: dict[str, object], lines: list[str]) -> str:
+    normalized_lines = normalize_problem_page_lines(lines)
+    front_matter = [
+        "---",
+        "layout: leetcode-entry",
+        f"title: {yaml_quote(entry['display_title'])}",
+        f"permalink: {yaml_quote(entry['page_url'])}",
+        "leetcode_ui: true",
+        f"entry_slug: {yaml_quote(entry['slug'])}",
+        "---",
+        "",
+    ]
+    return "\n".join(front_matter + normalized_lines + [""])
 
 
 def main() -> None:
     lines = SOURCE_PATH.read_text(encoding="utf-8").splitlines()
-    entries = [build_entry(date_display, block) for date_display, block in parse_source_blocks(lines)]
+    source_blocks = parse_source_blocks(lines)
+    entries = [build_entry(date_display, block) for date_display, block in source_blocks]
     library = build_library(entries)
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -518,8 +533,8 @@ def main() -> None:
         write_text(YEAR_DIR / f"{year['value']}.md", render_year_page(year))
     for pattern in library["patterns"]:
         write_text(PATTERN_DIR / f"{pattern['slug']}.md", render_pattern_page(pattern))
-    for entry in library["entries"]:
-        write_text(PROBLEM_DIR / f"{entry['slug']}.md", render_problem_page(entry))
+    for entry, (_, block_lines) in zip(library["entries"], source_blocks):
+        write_text(PROBLEM_DIR / f"{entry['slug']}.md", render_problem_page(entry, block_lines))
 
     print(
         f"Generated {len(entries)} entries, "

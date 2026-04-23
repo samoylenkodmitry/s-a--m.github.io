@@ -1,4 +1,14 @@
 {% assign entry = include.entry %}
+{% capture pattern_links %}
+  {% for slug in entry.pattern_slugs %}
+    {% unless slug == 'implementation' %}
+    <a class="leetcode-pattern-chip" href="{{ '/leetcode/pattern/' | append: slug | append: '/' | relative_url }}">
+      {{ entry.pattern_labels[forloop.index0] }}
+    </a>
+    {% endunless %}
+  {% endfor %}
+{% endcapture %}
+{% assign pattern_links = pattern_links | strip %}
 <article class="leetcode-card">
   <div class="leetcode-card__top">
     <p class="leetcode-card__date">{{ entry.display_date }}</p>
@@ -10,19 +20,13 @@
   {% if entry.takeaway %}
   <p class="leetcode-card__takeaway">{{ entry.takeaway }}</p>
   {% endif %}
-  {% if entry.pattern_slugs and entry.pattern_slugs != empty %}
+  {% if pattern_links != '' %}
   <div class="leetcode-card__patterns">
-    {% for slug in entry.pattern_slugs %}
-    {% unless slug == 'implementation' %}
-    <a class="leetcode-pattern-chip" href="{{ '/leetcode/pattern/' | append: slug | append: '/' | relative_url }}">
-      {{ entry.pattern_labels[forloop.index0] }}
-    </a>
-    {% endunless %}
-    {% endfor %}
+    {{ pattern_links }}
   </div>
   {% endif %}
   <div class="leetcode-card__links">
-    <a href="{{ entry.page_url | relative_url }}">Entry</a>
+    <a href="{{ entry.page_url | relative_url }}">Full post</a>
     {% if entry.problem_url %}
     <a href="{{ entry.problem_url }}">LeetCode</a>
     {% endif %}

@@ -3,6 +3,9 @@
   const resultsNode = document.getElementById("leetcode-results");
   if (!dataNode || !resultsNode) return;
 
+  const DEFAULT_VISIBLE = 120;
+  const VISIBLE_INCREMENT = 120;
+
   const entries = JSON.parse(dataNode.textContent);
   const baseurl = resultsNode.dataset.baseurl || "";
   const searchInput = document.getElementById("leetcode-search");
@@ -11,6 +14,11 @@
   const languageSelect = document.getElementById("leetcode-language");
   const patternSelect = document.getElementById("leetcode-pattern");
   const metaNode = document.getElementById("leetcode-results-meta");
+  const loadMoreButton = document.getElementById("leetcode-load-more");
+  const showAllButton = document.getElementById("leetcode-show-all");
+  const randomLink = document.getElementById("leetcode-random-link");
+  let visibleCount = DEFAULT_VISIBLE;
+  let showAll = false;
 
   function withBase(path) {
     return `${baseurl}${path}`;
@@ -39,7 +47,7 @@
       .join("");
 
     const links = [
-      chip(withBase(entry.page_url), "Entry"),
+      chip(withBase(entry.page_url), "Full post"),
       entry.problem_url ? chip(entry.problem_url, "LeetCode") : "",
       entry.kotlin_url ? chip(entry.kotlin_url, "Kotlin") : "",
       entry.rust_url ? chip(entry.rust_url, "Rust") : "",
@@ -95,19 +103,73 @@
     };
   }
 
+  function hasActiveFilters(filters) {
+    return Object.values(filters).some(Boolean);
+  }
+
+  function updateButtons(filteredCount, shownCount, activeFilters) {
+    if (!loadMoreButton || !showAllButton) return;
+
+    if (activeFilters || showAll || filteredCount <= shownCount) {
+      loadMoreButton.hidden = true;
+      showAllButton.hidden = true;
+      return;
+    }
+
+    loadMoreButton.hidden = false;
+    showAllButton.hidden = false;
+    loadMoreButton.textContent = `Load ${Math.min(VISIBLE_INCREMENT, filteredCount - shownCount)} older entries`;
+    showAllButton.textContent = `Show all ${filteredCount}`;
+  }
+
   function render() {
     const filters = currentFilters();
     const filtered = entries.filter((entry) => matches(entry, filters));
-    resultsNode.innerHTML = filtered.map(renderEntry).join("");
-    metaNode.textContent = `${filtered.length} matching entries.`;
+    const activeFilters = hasActiveFilters(filters);
+    const visibleEntries = !activeFilters && !showAll ? filtered.slice(0, visibleCount) : filtered;
+
+    resultsNode.innerHTML = visibleEntries.map(renderEntry).join("");
+
+    if (activeFilters) {
+      metaNode.textContent = `${filtered.length} matching entries.`;
+    } else if (visibleEntries.length < filtered.length) {
+      metaNode.textContent = `Showing ${visibleEntries.length} of ${filtered.length} entries.`;
+    } else {
+      metaNode.textContent = `Showing the full archive: ${filtered.length} entries.`;
+    }
+
+    updateButtons(filtered.length, visibleEntries.length, activeFilters);
   }
 
   [searchInput, difficultySelect, yearSelect, languageSelect, patternSelect]
     .filter(Boolean)
     .forEach((node) => {
       const eventName = node === searchInput ? "input" : "change";
-      node.addEventListener(eventName, render);
+      node.addEventListener(eventName, () => {
+        visibleCount = DEFAULT_VISIBLE;
+        showAll = false;
+        render();
+      });
     });
+
+  if (loadMoreButton) {
+    loadMoreButton.addEventListener("click", () => {
+      visibleCount += VISIBLE_INCREMENT;
+      render();
+    });
+  }
+
+  if (showAllButton) {
+    showAllButton.addEventListener("click", () => {
+      showAll = true;
+      render();
+    });
+  }
+
+  if (randomLink && entries.length > 0) {
+    const randomEntry = entries[Math.floor(Math.random() * entries.length)];
+    randomLink.href = withBase(randomEntry.page_url);
+  }
 
   render();
 })();

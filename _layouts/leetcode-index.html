@@ -1,38 +1,83 @@
 ---
-layout: default
+layout: leetcode-base
 ---
 {% assign library = site.data.leetcode_library %}
 {% assign entries = library.entries %}
+{% assign latest = entries | first %}
+{% capture latest_pattern_links %}
+  {% for slug in latest.pattern_slugs %}
+    {% unless slug == 'implementation' %}
+    <a class="leetcode-pattern-chip" href="{{ '/leetcode/pattern/' | append: slug | append: '/' | relative_url }}">
+      {{ latest.pattern_labels[forloop.index0] }}
+    </a>
+    {% endunless %}
+  {% endfor %}
+{% endcapture %}
+{% assign latest_pattern_links = latest_pattern_links | strip %}
 <section class="leetcode-shell">
   <div class="leetcode-hero">
-    <p class="leetcode-eyebrow">LeetCode Library</p>
-    <h1 class="leetcode-title">Catalog the drills. Don&rsquo;t blog them.</h1>
-    <p class="leetcode-copy">
-      This section turns the daily LeetCode archive into a searchable library.
-      The main homepage stays essay-oriented; this surface is built for navigation.
-    </p>
-    <div class="leetcode-stat-grid">
-      <article class="leetcode-stat">
-        <span class="leetcode-stat__value">{{ library.stats.entry_count }}</span>
-        <span class="leetcode-stat__label">entries</span>
-      </article>
-      <article class="leetcode-stat">
-        <span class="leetcode-stat__value">{{ library.stats.year_count }}</span>
-        <span class="leetcode-stat__label">years</span>
-      </article>
-      <article class="leetcode-stat">
-        <span class="leetcode-stat__value">{{ library.stats.pattern_count }}</span>
-        <span class="leetcode-stat__label">patterns</span>
-      </article>
-      <article class="leetcode-stat">
-        <span class="leetcode-stat__value">{{ library.stats.rust_count }}</span>
-        <span class="leetcode-stat__label">with Rust</span>
-      </article>
-    </div>
-    <div class="leetcode-hero__links">
-      <a class="leetcode-link-chip" href="{{ '/leetcode/feed.xml' | relative_url }}">Library RSS</a>
-      <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
-      <a class="leetcode-link-chip" href="{{ '/about/' | relative_url }}">About</a>
+    <div class="leetcode-hero__grid">
+      <div class="leetcode-hero__copy">
+        <p class="leetcode-eyebrow">LeetCode Library</p>
+        <h1 class="leetcode-title">Catalog the drills. Don&rsquo;t blog them.</h1>
+        <p class="leetcode-copy">
+          The main blog stays essay-oriented. This section is the working archive:
+          searchable, filterable, and built directly from the same daily source file.
+        </p>
+        <div class="leetcode-stat-grid">
+          <article class="leetcode-stat">
+            <span class="leetcode-stat__value">{{ library.stats.entry_count }}</span>
+            <span class="leetcode-stat__label">entries</span>
+          </article>
+          <article class="leetcode-stat">
+            <span class="leetcode-stat__value">{{ library.stats.year_count }}</span>
+            <span class="leetcode-stat__label">years</span>
+          </article>
+          <article class="leetcode-stat">
+            <span class="leetcode-stat__value">{{ library.stats.pattern_count }}</span>
+            <span class="leetcode-stat__label">patterns</span>
+          </article>
+          <article class="leetcode-stat">
+            <span class="leetcode-stat__value">{{ library.stats.rust_count }}</span>
+            <span class="leetcode-stat__label">with Rust</span>
+          </article>
+        </div>
+        <div class="leetcode-hero__links">
+          <a class="leetcode-link-chip" href="{{ '/leetcode/feed.xml' | relative_url }}">Library RSS</a>
+          <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
+          <a class="leetcode-link-chip" id="leetcode-random-link" href="{{ latest.page_url | relative_url }}">Random entry</a>
+        </div>
+      </div>
+
+      {% if latest %}
+      <aside class="leetcode-feature">
+        <p class="leetcode-feature__label">Latest drop</p>
+        <h2 class="leetcode-feature__title">
+          <a href="{{ latest.page_url | relative_url }}">{{ latest.display_title }}</a>
+        </h2>
+        <div class="leetcode-feature__meta">
+          <span class="leetcode-pill">{{ latest.display_date }}</span>
+          <span class="leetcode-pill leetcode-pill--{{ latest.difficulty }}">{{ latest.difficulty }}</span>
+        </div>
+        {% if latest.takeaway %}
+        <p class="leetcode-feature__copy">{{ latest.takeaway }}</p>
+        {% endif %}
+        {% if latest_pattern_links != '' %}
+        <div class="leetcode-detail__patterns">
+          {{ latest_pattern_links }}
+        </div>
+        {% endif %}
+        <div class="leetcode-feature__links">
+          <a class="leetcode-link-chip" href="{{ latest.page_url | relative_url }}">Open full entry</a>
+          {% if latest.youtube_url %}
+          <a class="leetcode-link-chip" href="{{ latest.youtube_url }}">YouTube</a>
+          {% endif %}
+          {% if latest.telegram_url %}
+          <a class="leetcode-link-chip" href="{{ latest.telegram_url }}">Telegram</a>
+          {% endif %}
+        </div>
+      </aside>
+      {% endif %}
     </div>
   </div>
 
@@ -82,7 +127,7 @@ layout: default
       </div>
     </div>
     <p id="leetcode-results-meta" class="leetcode-results-meta">
-      Showing the latest {{ entries | size }} entries.
+      Newest first across {{ library.stats.entry_count }} entries.
     </p>
   </section>
 
@@ -124,16 +169,20 @@ layout: default
   <section class="leetcode-section">
     <div class="leetcode-section__head">
       <h2>Archive</h2>
-      <p>Compact rows with links out to LeetCode, Telegram, YouTube, and the raw archive when available.</p>
+      <p>Newest first. Start broad, then filter down. Each entry opens the full post for that day.</p>
     </div>
     <div id="leetcode-results" class="leetcode-results" data-baseurl="{{ site.baseurl | default: '' }}">
-      {% for entry in entries limit: 36 %}
+      {% for entry in entries limit: 120 %}
       {% include leetcode-card.html entry=entry %}
       {% endfor %}
     </div>
+    <div class="leetcode-results__actions">
+      <button id="leetcode-load-more" class="leetcode-button" type="button">Load Older Entries</button>
+      <button id="leetcode-show-all" class="leetcode-button leetcode-button--ghost" type="button">Show Full Archive</button>
+    </div>
     <noscript>
       <p class="leetcode-noscript">
-        JavaScript is disabled, so this page shows the latest 36 entries.
+        JavaScript is disabled, so this page shows the latest 120 entries.
         Use the year, language, and pattern pages above for the full archive.
       </p>
     </noscript>
