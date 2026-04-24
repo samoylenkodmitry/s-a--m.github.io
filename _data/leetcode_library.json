@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-04-24T06:31:07Z",
+  "generated_at": "2026-04-24T07:02:25Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1266,
+    "entry_count": 1267,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 791
+    "rust_count": 792
   },
   "years": [
     {
       "value": "2026",
       "label": "2026",
-      "count": 110,
+      "count": 111,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -43,13 +43,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1260,
+      "count": 1261,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 791,
+      "count": 792,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -103,16 +103,16 @@
       "url": "/leetcode/pattern/binary-search/"
     },
     {
+      "slug": "math",
+      "label": "Math",
+      "count": 75,
+      "url": "/leetcode/pattern/math/"
+    },
+    {
       "slug": "bit-manipulation",
       "label": "Bit Manipulation",
       "count": 74,
       "url": "/leetcode/pattern/bit-manipulation/"
-    },
-    {
-      "slug": "math",
-      "label": "Math",
-      "count": 74,
-      "url": "/leetcode/pattern/math/"
     },
     {
       "slug": "hash-map",
@@ -206,6 +206,37 @@
     }
   ],
   "entries": [
+    {
+      "slug": "2026-04-24-2833-furthest-point-from-origin",
+      "date": "2026-04-24",
+      "display_date": "24.04.2026",
+      "year": "2026",
+      "problem_id": 2833,
+      "title": "Furthest Point From Origin",
+      "display_title": "2833. Furthest Point From Origin",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "math"
+      ],
+      "pattern_labels": [
+        "Math"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/furthest-point-from-origin/solutions/8089767/kotlin-rust-by-samoylenkodmitry-aiic/",
+      "kotlin_url": "https://leetcode.com/problems/furthest-point-from-origin/solutions/8089767/kotlin-rust-by-samoylenkodmitry-aiic/",
+      "rust_url": "https://leetcode.com/problems/furthest-point-from-origin/solutions/8089767/kotlin-rust-by-samoylenkodmitry-aiic/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/24042026-2833-furthest-point-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/MYVCEwtWLkE",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1338",
+      "image_url": "/assets/leetcode_daily_images/24.04.2026.webp",
+      "takeaway": "Max dist when replace with L or R",
+      "page_url": "/leetcode/problem/2026-04-24-2833-furthest-point-from-origin/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-04-23-2615-sum-of-distances",
       "date": "2026-04-23",
