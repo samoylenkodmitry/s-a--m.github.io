@@ -1,6 +1,8 @@
 .leetcode-body .site-header .wrapper,
 .leetcode-body .site-footer .wrapper,
 .leetcode-page-content .leetcode-wrapper {
+  box-sizing: border-box;
+  width: min(1480px, calc(100vw - 2.5rem));
   max-width: min(1480px, calc(100vw - 2.5rem));
 }
 
@@ -12,6 +14,7 @@
 }
 
 .leetcode-page-content {
+  overflow-x: clip;
   padding-top: 2rem;
 }
 
@@ -28,6 +31,11 @@
   --leetcode-alert: #aa5b2c;
   --leetcode-shadow: rgba(24, 37, 33, 0.12);
   color: var(--leetcode-ink);
+}
+
+.leetcode-shell,
+.leetcode-shell * {
+  box-sizing: border-box;
 }
 
 .leetcode-shell a {
@@ -105,6 +113,16 @@
   align-items: start;
 }
 
+.leetcode-hero__copy,
+.leetcode-feature,
+.leetcode-overview-card,
+.leetcode-browse-card,
+.leetcode-route,
+.leetcode-card,
+.leetcode-field {
+  min-width: 0;
+}
+
 .leetcode-hero__grid {
   grid-template-columns: minmax(0, 1.7fr) minmax(19rem, 0.95fr);
 }
@@ -128,6 +146,7 @@
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   font-size: clamp(2.25rem, 5vw, 4.2rem);
   line-height: 1.02;
+  text-wrap: balance;
 }
 
 .leetcode-title--detail {
@@ -182,6 +201,7 @@
   margin: 0;
   font-size: 1.45rem;
   line-height: 1.15;
+  text-wrap: balance;
 }
 
 .leetcode-feature__title a {
@@ -591,8 +611,9 @@
 
 .leetcode-results {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  align-items: start;
+  gap: 1.15rem;
 }
 
 .leetcode-results--list {
@@ -608,11 +629,14 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  padding: 1.2rem;
+  min-width: 0;
+  min-height: 0;
+  padding: 1.18rem 1.18rem 1.05rem;
   border: 1px solid var(--leetcode-border);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.8);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 252, 247, 0.78)),
+    rgba(255, 255, 255, 0.8);
   box-shadow: 0 12px 30px rgba(24, 37, 33, 0.06);
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
@@ -623,6 +647,7 @@
   inset: 0 auto 0 0;
   width: 0.28rem;
   background: rgba(15, 124, 103, 0.28);
+  transition: width 160ms ease;
 }
 
 .leetcode-card--easy::before {
@@ -643,9 +668,14 @@
   transform: translateY(-2px);
 }
 
+.leetcode-card:hover::before {
+  width: 0.42rem;
+}
+
 .leetcode-results--list .leetcode-card {
   display: grid;
-  grid-template-columns: minmax(12rem, 0.8fr) minmax(0, 1.45fr) minmax(12rem, 0.85fr);
+  grid-template-columns: minmax(9rem, 0.55fr) minmax(0, 1.4fr) minmax(12rem, 0.8fr);
+  align-items: start;
   gap: 0.35rem 1rem;
   min-height: 0;
 }
@@ -657,17 +687,28 @@
 }
 
 .leetcode-results--list .leetcode-card__title {
+  grid-column: 2;
   margin-top: 0;
 }
 
+.leetcode-results--list .leetcode-card__languages,
+.leetcode-results--list .leetcode-card__takeaway,
+.leetcode-results--list .leetcode-card__patterns {
+  grid-column: 2;
+}
+
 .leetcode-results--list .leetcode-card__links {
+  grid-column: 3;
+  grid-row: 1 / span 4;
   align-content: start;
   margin-top: 0;
   padding-top: 0;
+  border-top: 0;
 }
 
 .leetcode-card__top,
 .leetcode-card__links {
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -681,6 +722,14 @@
   margin: 0.65rem 0 0;
   font-size: 1.24rem;
   line-height: 1.18;
+  text-wrap: balance;
+}
+
+.leetcode-card__title,
+.leetcode-card__takeaway,
+.leetcode-route__label,
+.leetcode-link-list a {
+  overflow-wrap: break-word;
 }
 
 .leetcode-card__title a {
@@ -727,7 +776,7 @@
 }
 
 .leetcode-card__links {
-  margin-top: auto;
+  border-top: 1px solid rgba(15, 124, 103, 0.12);
   padding-top: 0.9rem;
 }
 
@@ -836,7 +885,12 @@
   .leetcode-body .site-header .wrapper,
   .leetcode-body .site-footer .wrapper,
   .leetcode-page-content .leetcode-wrapper {
+    width: calc(100vw - 1.2rem);
     max-width: calc(100vw - 1.2rem);
+  }
+
+  .leetcode-page-content {
+    padding-top: 1rem;
   }
 
   .leetcode-hero,
@@ -846,6 +900,23 @@
   .leetcode-filter-panel,
   .leetcode-sidecard {
     padding: 1.15rem;
+  }
+
+  .leetcode-title {
+    font-size: clamp(2.05rem, 11vw, 3rem);
+  }
+
+  .leetcode-copy {
+    font-size: 0.98rem;
+  }
+
+  .leetcode-stat {
+    flex: 1 1 calc(50% - 0.75rem);
+    min-width: 0;
+  }
+
+  .leetcode-feature__media img {
+    aspect-ratio: 4 / 3;
   }
 
   .leetcode-results {
