@@ -22,7 +22,10 @@
   const loadMoreButton = document.getElementById("leetcode-load-more");
   const showAllButton = document.getElementById("leetcode-show-all");
   const randomLink = document.getElementById("leetcode-random-link");
+  const cardViewButton = document.getElementById("leetcode-card-view");
+  const listViewButton = document.getElementById("leetcode-list-view");
   const quickFilterButtons = Array.from(document.querySelectorAll("[data-leetcode-filter]"));
+  const viewStorageKey = "leetcode-results-view";
   let visibleCount = DEFAULT_VISIBLE;
   let showAll = false;
 
@@ -72,7 +75,7 @@
     ].join("");
 
     return `
-      <article class="leetcode-card">
+      <article class="leetcode-card leetcode-card--${escapeHtml(entry.difficulty)}">
         <div class="leetcode-card__top">
           <p class="leetcode-card__date">${escapeHtml(entry.display_date)}</p>
           <span class="leetcode-pill leetcode-pill--${escapeHtml(entry.difficulty)}">${escapeHtml(entry.difficulty)}</span>
@@ -223,6 +226,39 @@
     showAllButton.textContent = `Show all ${filteredCount}`;
   }
 
+  function savedView() {
+    try {
+      return window.localStorage ? window.localStorage.getItem(viewStorageKey) : "";
+    } catch (error) {
+      return "";
+    }
+  }
+
+  function setSavedView(view) {
+    try {
+      if (window.localStorage) window.localStorage.setItem(viewStorageKey, view);
+    } catch (error) {
+      // Ignore storage failures; the visible state still updates.
+    }
+  }
+
+  function setResultsView(view, options) {
+    const normalizedView = view === "list" ? "list" : "cards";
+    resultsNode.classList.toggle("leetcode-results--list", normalizedView === "list");
+
+    if (cardViewButton) {
+      cardViewButton.setAttribute("aria-pressed", String(normalizedView === "cards"));
+      cardViewButton.classList.toggle("leetcode-button--ghost", normalizedView !== "cards");
+    }
+
+    if (listViewButton) {
+      listViewButton.setAttribute("aria-pressed", String(normalizedView === "list"));
+      listViewButton.classList.toggle("leetcode-button--ghost", normalizedView !== "list");
+    }
+
+    if (!options || options.persist !== false) setSavedView(normalizedView);
+  }
+
   function render(options) {
     const shouldSyncUrl = options && options.syncUrl;
     const filters = currentFilters();
@@ -310,6 +346,14 @@
     });
   }
 
+  if (cardViewButton) {
+    cardViewButton.addEventListener("click", () => setResultsView("cards"));
+  }
+
+  if (listViewButton) {
+    listViewButton.addEventListener("click", () => setResultsView("list"));
+  }
+
   if (randomLink && entries.length > 0) {
     const randomEntry = entries[Math.floor(Math.random() * entries.length)];
     randomLink.href = withBase(randomEntry.page_url);
@@ -323,5 +367,6 @@
   });
 
   applyFilters(readUrlFilters());
+  setResultsView(savedView(), { persist: false });
   render();
 })();
