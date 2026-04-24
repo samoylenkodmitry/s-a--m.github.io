@@ -9,7 +9,7 @@
   {% endfor %}
 {% endcapture %}
 {% assign pattern_links = pattern_links | strip %}
-<article class="leetcode-card">
+<article class="leetcode-card leetcode-card--{{ entry.difficulty }}">
   <div class="leetcode-card__top">
     <p class="leetcode-card__date">{{ entry.display_date }}</p>
     <span class="leetcode-pill leetcode-pill--{{ entry.difficulty }}">{{ entry.difficulty }}</span>
