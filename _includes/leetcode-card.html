@@ -17,6 +17,13 @@
   <h3 class="leetcode-card__title">
     <a href="{{ entry.page_url | relative_url }}">{{ entry.display_title }}</a>
   </h3>
+  {% if entry.languages.size > 0 %}
+  <div class="leetcode-card__languages" aria-label="Languages">
+    {% for language in entry.languages %}
+    <a class="leetcode-language-chip" href="{{ '/leetcode/language/' | append: language | append: '/' | relative_url }}">{{ language | capitalize }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
   {% if entry.takeaway %}
   <p class="leetcode-card__takeaway">{{ entry.takeaway }}</p>
   {% endif %}
