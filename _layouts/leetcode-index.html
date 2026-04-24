@@ -4,6 +4,13 @@ layout: leetcode-base
 {% assign library = site.data.leetcode_library %}
 {% assign entries = library.entries %}
 {% assign latest = entries | first %}
+{% assign easy_count = entries | where: 'difficulty', 'easy' | size %}
+{% assign medium_count = entries | where: 'difficulty', 'medium' | size %}
+{% assign hard_count = entries | where: 'difficulty', 'hard' | size %}
+{% assign easy_percent = easy_count | times: 100 | divided_by: library.stats.entry_count %}
+{% assign medium_percent = medium_count | times: 100 | divided_by: library.stats.entry_count %}
+{% assign hard_percent = hard_count | times: 100 | divided_by: library.stats.entry_count %}
+{% assign latest_year = library.years | first %}
 {% capture latest_pattern_links %}
   {% for slug in latest.pattern_slugs %}
     {% unless slug == 'implementation' %}
@@ -41,8 +48,13 @@ layout: leetcode-base
             <span class="leetcode-stat__value">{{ library.stats.rust_count }}</span>
             <span class="leetcode-stat__label">with Rust</span>
           </article>
+          <article class="leetcode-stat">
+            <span class="leetcode-stat__value">{{ hard_count }}</span>
+            <span class="leetcode-stat__label">hard drills</span>
+          </article>
         </div>
         <div class="leetcode-hero__links">
+          <a class="leetcode-link-chip" href="#leetcode-finder">Search archive</a>
           <a class="leetcode-link-chip" href="{{ '/leetcode/feed.xml' | relative_url }}">Library RSS</a>
           <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
           <a class="leetcode-link-chip" id="leetcode-random-link" href="{{ latest.page_url | relative_url }}">Random entry</a>
@@ -81,7 +93,14 @@ layout: leetcode-base
     </div>
   </div>
 
-  <section class="leetcode-filter-panel">
+  <section id="leetcode-finder" class="leetcode-filter-panel" aria-labelledby="leetcode-filter-heading">
+    <div class="leetcode-filter-panel__head">
+      <div>
+        <p class="leetcode-eyebrow">Finder</p>
+        <h2 id="leetcode-filter-heading">Find the right drill fast</h2>
+      </div>
+      <button id="leetcode-reset" class="leetcode-button leetcode-button--ghost" type="button" disabled>Reset filters</button>
+    </div>
     <div class="leetcode-field">
       <label for="leetcode-search">Search</label>
       <input id="leetcode-search" type="search" placeholder="Title, id, takeaway, pattern" autocomplete="off">
@@ -126,9 +145,69 @@ layout: leetcode-base
         </select>
       </div>
     </div>
-    <p id="leetcode-results-meta" class="leetcode-results-meta">
+    <div class="leetcode-quick-filters" aria-label="Quick filters">
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-difficulty="hard">Hard only</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-difficulty="medium">Medium only</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-pattern="dynamic-programming">Dynamic programming</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-pattern="graph">Graph</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-language="rust">Rust</button>
+      {% if latest_year %}
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-year="{{ latest_year.value }}">{{ latest_year.label }}</button>
+      {% endif %}
+    </div>
+    <div id="leetcode-active-filters" class="leetcode-active-filters" aria-live="polite" hidden></div>
+    <p id="leetcode-results-meta" class="leetcode-results-meta" aria-live="polite">
       Newest first across {{ library.stats.entry_count }} entries.
     </p>
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>Study dashboard</h2>
+      <p>Use the mix to pick difficulty, then jump into the strongest recurring routes.</p>
+    </div>
+    <div class="leetcode-overview-grid">
+      <article class="leetcode-overview-card">
+        <h3>Difficulty mix</h3>
+        <div class="leetcode-mix">
+          <div class="leetcode-mix__row">
+            <span>Easy</span>
+            <strong>{{ easy_count }}</strong>
+            <div class="leetcode-mix__track" aria-hidden="true">
+              <span class="leetcode-mix__bar leetcode-mix__bar--easy" style="width: {{ easy_percent }}%"></span>
+            </div>
+          </div>
+          <div class="leetcode-mix__row">
+            <span>Medium</span>
+            <strong>{{ medium_count }}</strong>
+            <div class="leetcode-mix__track" aria-hidden="true">
+              <span class="leetcode-mix__bar leetcode-mix__bar--medium" style="width: {{ medium_percent }}%"></span>
+            </div>
+          </div>
+          <div class="leetcode-mix__row">
+            <span>Hard</span>
+            <strong>{{ hard_count }}</strong>
+            <div class="leetcode-mix__track" aria-hidden="true">
+              <span class="leetcode-mix__bar leetcode-mix__bar--hard" style="width: {{ hard_percent }}%"></span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="leetcode-overview-card leetcode-overview-card--wide">
+        <h3>Top pattern routes</h3>
+        <div class="leetcode-route-grid">
+          {% for pattern in library.patterns limit: 8 %}
+          {% unless pattern.slug == 'implementation' %}
+          <a class="leetcode-route" href="{{ pattern.url | relative_url }}">
+            <span>{{ pattern.label }}</span>
+            <strong>{{ pattern.count }}</strong>
+          </a>
+          {% endunless %}
+          {% endfor %}
+        </div>
+      </article>
+    </div>
   </section>
 
   <section class="leetcode-section">
@@ -156,7 +235,7 @@ layout: leetcode-base
       <article class="leetcode-browse-card">
         <h3>Patterns</h3>
         <ul class="leetcode-link-list leetcode-link-list--dense">
-          {% for pattern in library.patterns limit: 16 %}
+          {% for pattern in library.patterns %}
           {% unless pattern.slug == 'implementation' %}
           <li><a href="{{ pattern.url | relative_url }}">{{ pattern.label }}</a><span>{{ pattern.count }}</span></li>
           {% endunless %}
@@ -166,7 +245,7 @@ layout: leetcode-base
     </div>
   </section>
 
-  <section class="leetcode-section">
+  <section id="leetcode-archive" class="leetcode-section">
     <div class="leetcode-section__head">
       <h2>Archive</h2>
       <p>Newest first. Start broad, then filter down. Each entry opens the full post for that day.</p>
@@ -175,6 +254,11 @@ layout: leetcode-base
       {% for entry in entries limit: 120 %}
       {% include leetcode-card.html entry=entry %}
       {% endfor %}
+    </div>
+    <div id="leetcode-empty-state" class="leetcode-empty-state" hidden>
+      <h3>No matching entries</h3>
+      <p>Try fewer terms, remove one filter, or reset the archive.</p>
+      <button id="leetcode-empty-reset" class="leetcode-button" type="button">Clear filters</button>
     </div>
     <div class="leetcode-results__actions">
       <button id="leetcode-load-more" class="leetcode-button" type="button">Load Older Entries</button>
