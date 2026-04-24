@@ -21,6 +21,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 24.04.2026
+[2833. Furthest Point From Origin](https://leetcode.com/problems/furthest-point-from-origin/solutions/8089767/kotlin-rust-by-samoylenkodmitry-aiic/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/24042026-2833-furthest-point-from?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/MYVCEwtWLkE)
+
+https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
+
+![24.04.2026.webp](/assets/leetcode_daily_images/24.04.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1338
+
+#### Problem TLDR
+
+Max dist when replace _ with L or R
+
+#### Intuition
+
+The brute-force: replace all _ to R and check balance, then to L and check again.
+Some geometry transformation:_ + abs(R-L) = length-2*min(L,R) (see video explanation)
+
+#### Approach
+
+* asci %5 gives perfect 0,1,2 for _,L,R, do with that what you want
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun furthestDistanceFromOrigin(m: String) =
+    2*"LR".maxOf{c->m.count{it!=c}}-m.length
+```
+```rust
+    pub fn furthest_distance_from_origin(m: String) -> i32 {
+        (m.len()-2*m.matches('L').count().min(m.matches('R').count())) as _
+    }
+```
+
 # 23.04.2026
 [2615. Sum of Distances](https://leetcode.com/problems/sum-of-distances/solutions/8069058/kotlin-rust-by-samoylenkodmitry-9mqf/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/23042026-2615-sum-of-distances?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
