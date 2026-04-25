@@ -32,6 +32,13 @@
     {{ pattern_links }}
   </div>
   {% endif %}
+  {% if entry.ai_tag_labels.size > 0 %}
+  <div class="leetcode-card__ai-tags" aria-label="AI technique tags">
+    {% for label in entry.ai_tag_labels limit: 6 %}
+    <span class="leetcode-ai-chip">{{ label }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="leetcode-card__links">
     <a href="{{ entry.page_url | relative_url }}">Full post</a>
     {% if entry.problem_url %}

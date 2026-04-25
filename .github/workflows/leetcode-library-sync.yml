@@ -7,6 +7,8 @@ on:
     paths:
       - "_leetcode_source/2023-07-14-leetcode_daily.md"
       - "scripts/generate_leetcode_library.py"
+      - "scripts/analyze_leetcode_ai.py"
+      - "_data/leetcode_ai_analysis.json"
       - "_layouts/leetcode-*.html"
       - "_includes/leetcode-card.html"
       - "assets/leetcode/**"
@@ -15,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 jobs:
   sync:
@@ -32,6 +35,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Analyze new LeetCode blocks
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LEETCODE_AI_MODEL: openai/gpt-4.1-mini
+          LEETCODE_AI_LIMIT: "4"
+        run: python3 scripts/analyze_leetcode_ai.py --provider github --model "$LEETCODE_AI_MODEL" --limit "$LEETCODE_AI_LIMIT" --soft-fail
+
       - name: Regenerate library
         run: python3 scripts/generate_leetcode_library.py
 
@@ -42,6 +52,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _data/leetcode_library.json leetcode/pattern leetcode/problem leetcode/year
+          git add _data/leetcode_ai_analysis.json _data/leetcode_library.json leetcode/pattern leetcode/problem leetcode/year leetcode/collection leetcode/evolution
           git commit -m "Sync LeetCode library"
           git push

@@ -229,8 +229,10 @@
 .leetcode-card__links,
 .leetcode-hero__links,
 .leetcode-card__patterns,
+.leetcode-card__ai-tags,
 .leetcode-detail__patterns,
 .leetcode-detail__links,
+.leetcode-ai-tags,
 .leetcode-quick-filters,
 .leetcode-active-filters,
 .leetcode-view-toggle,
@@ -273,6 +275,7 @@
 .leetcode-link-chip,
 .leetcode-pattern-chip,
 .leetcode-language-chip,
+.leetcode-ai-chip,
 .leetcode-filter-chip,
 .leetcode-active-filter,
 .leetcode-pill,
@@ -290,6 +293,15 @@
   color: var(--leetcode-accent);
   font-size: 0.94rem;
   text-decoration: none;
+}
+
+.leetcode-ai-chip {
+  min-height: 1.75rem;
+  padding: 0.16rem 0.62rem;
+  border-color: rgba(104, 85, 39, 0.2);
+  background: rgba(189, 123, 33, 0.1);
+  color: #6f4b1d;
+  font-size: 0.82rem;
 }
 
 .leetcode-link-chip:hover,
@@ -1161,7 +1173,7 @@
 .leetcode-results--list .leetcode-card__top {
   align-content: start;
   align-items: flex-start;
-  grid-row: span 4;
+  grid-row: span 5;
 }
 
 .leetcode-results--list .leetcode-card__title {
@@ -1171,13 +1183,14 @@
 
 .leetcode-results--list .leetcode-card__languages,
 .leetcode-results--list .leetcode-card__takeaway,
-.leetcode-results--list .leetcode-card__patterns {
+.leetcode-results--list .leetcode-card__patterns,
+.leetcode-results--list .leetcode-card__ai-tags {
   grid-column: 2;
 }
 
 .leetcode-results--list .leetcode-card__links {
   grid-column: 3;
-  grid-row: 1 / span 4;
+  grid-row: 1 / span 5;
   align-content: start;
   margin-top: 0;
   padding-top: 0;
@@ -1249,6 +1262,7 @@
 }
 
 .leetcode-card__patterns,
+.leetcode-card__ai-tags,
 .leetcode-card__links {
   margin-top: 0.9rem;
 }
@@ -1262,6 +1276,10 @@
 .leetcode-detail__patterns,
 .leetcode-detail__links {
   margin-top: 1rem;
+}
+
+.leetcode-card__ai-tags {
+  gap: 0.45rem;
 }
 
 .leetcode-detail__takeaway {
@@ -1506,6 +1524,29 @@
   color: var(--leetcode-accent);
   font-size: 0.82rem;
   text-decoration: none;
+}
+
+.leetcode-ai-panel {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.leetcode-ai-panel__group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.leetcode-ai-panel__group > span {
+  color: var(--leetcode-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.leetcode-ai-panel__summary {
+  margin: 0;
+  color: var(--leetcode-muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .leetcode-noscript {

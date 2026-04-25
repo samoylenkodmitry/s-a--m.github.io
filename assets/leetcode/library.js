@@ -65,6 +65,11 @@
       })
       .join("");
 
+    const aiTagChips = (entry.ai_tag_labels || [])
+      .slice(0, 6)
+      .map((label) => `<span class="leetcode-ai-chip">${escapeHtml(label)}</span>`)
+      .join("");
+
     const links = [
       chip(withBase(entry.page_url), "Full post"),
       entry.problem_url ? chip(entry.problem_url, "LeetCode") : "",
@@ -86,6 +91,7 @@
         ${languageChips ? `<div class="leetcode-card__languages" aria-label="Languages">${languageChips}</div>` : ""}
         ${entry.takeaway ? `<p class="leetcode-card__takeaway">${escapeHtml(entry.takeaway)}</p>` : ""}
         ${patternChips ? `<div class="leetcode-card__patterns">${patternChips}</div>` : ""}
+        ${aiTagChips ? `<div class="leetcode-card__ai-tags" aria-label="AI technique tags">${aiTagChips}</div>` : ""}
         <div class="leetcode-card__links">${links}</div>
       </article>
     `;
@@ -105,6 +111,9 @@
       (entry.pattern_slugs || []).join(" "),
       (entry.languages || []).join(" "),
       (entry.catalog_tags || []).join(" "),
+      (entry.ai_tag_labels || []).join(" "),
+      (entry.ai_tag_slugs || []).join(" "),
+      entry.ai ? entry.ai.summary : "",
       entry.metrics ? entry.metrics.solution_line_bucket : "",
     ]
       .join(" ")

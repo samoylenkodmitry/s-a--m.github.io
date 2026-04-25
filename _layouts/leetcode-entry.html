@@ -46,6 +46,47 @@ layout: leetcode-base
       </div>
       {% endif %}
 
+      {% if entry.ai %}
+      <div class="leetcode-sidecard__section">
+        <p class="leetcode-sidecard__label">AI Tags</p>
+        <div class="leetcode-ai-panel">
+          {% if entry.ai.data_structures.size > 0 %}
+          <div class="leetcode-ai-panel__group">
+            <span>Data</span>
+            <div class="leetcode-ai-tags">
+              {% for tag in entry.ai.data_structures %}
+              <span class="leetcode-ai-chip">{{ tag.label }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+          {% if entry.ai.algorithms.size > 0 %}
+          <div class="leetcode-ai-panel__group">
+            <span>Algo</span>
+            <div class="leetcode-ai-tags">
+              {% for tag in entry.ai.algorithms %}
+              <span class="leetcode-ai-chip">{{ tag.label }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+          {% if entry.ai.techniques.size > 0 %}
+          <div class="leetcode-ai-panel__group">
+            <span>Technique</span>
+            <div class="leetcode-ai-tags">
+              {% for tag in entry.ai.techniques %}
+              <span class="leetcode-ai-chip">{{ tag.label }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+          {% if entry.ai.summary %}
+          <p class="leetcode-ai-panel__summary">{{ entry.ai.summary }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
       {% if entry.collection_links.size > 0 %}
       <div class="leetcode-sidecard__section">
         <p class="leetcode-sidecard__label">Collections</p>

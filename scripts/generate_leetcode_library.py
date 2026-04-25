@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 from collections import Counter
 from dataclasses import dataclass
@@ -14,12 +15,14 @@ from typing import Iterable
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_PATH = ROOT / "_leetcode_source" / "2023-07-14-leetcode_daily.md"
 DATA_PATH = ROOT / "_data" / "leetcode_library.json"
+AI_ANALYSIS_PATH = ROOT / "_data" / "leetcode_ai_analysis.json"
 PATTERN_DIR = ROOT / "leetcode" / "pattern"
 YEAR_DIR = ROOT / "leetcode" / "year"
 PROBLEM_DIR = ROOT / "leetcode" / "problem"
 COLLECTION_DIR = ROOT / "leetcode" / "collection"
 EVOLUTION_DIR = ROOT / "leetcode" / "evolution"
 RAW_ARCHIVE_URL = "/2023/07/14/leetcode_daily.html"
+AI_PROMPT_VERSION = "leetcode-ai-tags-v1"
 
 TITLE_LINK_RE = re.compile(r"^\[([^\]]+)\]\(([^)]*)\)\s*(.*)$")
 DATE_RE = re.compile(r"^# (\d{1,2})\.(\d{1,2})\.(\d{4})$")
@@ -174,6 +177,19 @@ def parse_source_blocks(lines: list[str]) -> list[tuple[str, list[str]]]:
     if current_date is not None:
         blocks.append((current_date, current_lines))
     return blocks
+
+
+def date_display_to_iso(date_display: str) -> str:
+    day, month, year = (int(part) for part in date_display.split("."))
+    return f"{year:04d}-{month:02d}-{day:02d}"
+
+
+def source_block_text(date_display: str, lines: list[str]) -> str:
+    return "\n".join([f"# {date_display}", *[line.rstrip() for line in lines]]).strip() + "\n"
+
+
+def source_block_hash(date_display: str, lines: list[str]) -> str:
+    return hashlib.sha256(source_block_text(date_display, lines).encode("utf-8")).hexdigest()
 
 
 def first_non_aux_link(lines: Iterable[str]) -> tuple[str, str, str]:
@@ -536,7 +552,7 @@ def normalize_problem_page_lines(lines: list[str]) -> list[str]:
 
 def build_entry(date_display: str, lines: list[str]) -> dict[str, object]:
     day, month, year = (int(part) for part in date_display.split("."))
-    date_iso = f"{year:04d}-{month:02d}-{day:02d}"
+    date_iso = date_display_to_iso(date_display)
     label, problem_url, difficulty_tail = first_non_aux_link(lines)
     aux_links = extract_aux_links(lines)
     problem_id, title = infer_title(label, problem_url)
@@ -824,6 +840,108 @@ def build_entry_collection_links(entry: dict[str, object], evolution_url: str | 
     return links
 
 
+def load_ai_analysis_cache() -> dict[str, object]:
+    if not AI_ANALYSIS_PATH.exists():
+        return {}
+    try:
+        data = json.loads(AI_ANALYSIS_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def normalize_ai_tag_items(value: object) -> list[dict[str, object]]:
+    if not isinstance(value, list):
+        return []
+    tags: list[dict[str, object]] = []
+    seen: set[str] = set()
+    for item in value:
+        if isinstance(item, str):
+            label = item.strip()
+            slug = slugify(label)
+            confidence = None
+        elif isinstance(item, dict):
+            label = str(item.get("label") or item.get("name") or item.get("slug") or "").strip()
+            slug = str(item.get("slug") or slugify(label)).strip()
+            confidence = item.get("confidence")
+        else:
+            continue
+        if not label or not slug or slug in seen:
+            continue
+        tag: dict[str, object] = {"slug": slug, "label": label}
+        if isinstance(confidence, (int, float)):
+            tag["confidence"] = max(0, min(1, float(confidence)))
+        tags.append(tag)
+        seen.add(slug)
+    return tags
+
+
+def normalize_ai_analysis(value: object) -> dict[str, object] | None:
+    if not isinstance(value, dict):
+        return None
+    data_structures = normalize_ai_tag_items(value.get("data_structures"))
+    algorithms = normalize_ai_tag_items(value.get("algorithms"))
+    techniques = normalize_ai_tag_items(value.get("techniques"))
+    domains = normalize_ai_tag_items(value.get("domains"))
+    summary = str(value.get("summary") or "").strip()
+    confidence = value.get("confidence")
+    if not (data_structures or algorithms or techniques or domains or summary):
+        return None
+    analysis: dict[str, object] = {
+        "data_structures": data_structures,
+        "algorithms": algorithms,
+        "techniques": techniques,
+        "domains": domains,
+        "summary": summary,
+        "manual_review": bool(value.get("manual_review", False)),
+    }
+    if isinstance(confidence, (int, float)):
+        analysis["confidence"] = max(0, min(1, float(confidence)))
+    return analysis
+
+
+def attach_ai_analysis(entries: list[dict[str, object]], source_blocks: list[tuple[str, list[str]]]) -> None:
+    cache = load_ai_analysis_cache()
+    blocks = cache.get("blocks", {})
+    if not isinstance(blocks, dict):
+        return
+
+    for entry, (date_display, block_lines) in zip(entries, source_blocks):
+        record = blocks.get(str(entry["date"]))
+        if not isinstance(record, dict):
+            continue
+        if record.get("status") != "analyzed":
+            continue
+        if record.get("source_hash") != source_block_hash(date_display, block_lines):
+            continue
+        analysis = normalize_ai_analysis(record.get("analysis"))
+        if analysis is None:
+            continue
+
+        ai_tags: list[dict[str, object]] = []
+        seen: set[str] = set()
+        for group_name in ("data_structures", "algorithms", "techniques", "domains"):
+            for tag in analysis.get(group_name, []):
+                if not isinstance(tag, dict):
+                    continue
+                slug = str(tag.get("slug") or "")
+                if not slug or slug in seen:
+                    continue
+                ai_tags.append({"slug": slug, "label": str(tag.get("label") or slug), "group": group_name})
+                seen.add(slug)
+
+        entry["ai"] = {
+            "provider": record.get("provider"),
+            "model": record.get("model"),
+            "prompt_version": record.get("prompt_version"),
+            "analyzed_at": record.get("analyzed_at"),
+            **analysis,
+        }
+        entry["ai_tags"] = ai_tags
+        entry["ai_tag_slugs"] = [tag["slug"] for tag in ai_tags]
+        entry["ai_tag_labels"] = [tag["label"] for tag in ai_tags]
+
+
 def build_insights(entries: list[dict[str, object]]) -> dict[str, object]:
     grouped: dict[str, list[dict[str, object]]] = {}
     for entry in entries:
@@ -974,6 +1092,7 @@ def build_library(entries: list[dict[str, object]]) -> dict[str, object]:
             "one_liner_count": len(insights["one_liners"]),
             "almost_gave_up_count": len(insights["almost_gave_up"]),
             "comeback_count": len(insights["comebacks"]),
+            "ai_analyzed_count": sum(1 for entry in entries if entry.get("ai")),
         },
         "years": years,
         "languages": languages,
@@ -1077,6 +1196,7 @@ def main() -> None:
     lines = SOURCE_PATH.read_text(encoding="utf-8").splitlines()
     source_blocks = parse_source_blocks(lines)
     entries = [build_entry(date_display, block) for date_display, block in source_blocks]
+    attach_ai_analysis(entries, source_blocks)
     library = build_library(entries)
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
