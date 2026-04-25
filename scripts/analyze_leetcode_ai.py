@@ -193,15 +193,21 @@ def response_format_payload(kind: str) -> dict[str, object] | None:
     }
 
 
-def build_messages(item: WorkItem) -> list[dict[str, str]]:
+def env_truthy(name: str) -> bool:
+    return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def build_messages(item: WorkItem, *, no_think: bool = False) -> list[dict[str, str]]:
     entry = item.entry
     system = (
         "You classify one LeetCode daily-note block into concise technique metadata. "
         "Use only the provided note and code. Prefer canonical lowercase slugs. "
         "Return JSON only. Do not include markdown."
     )
+    if no_think:
+        system += " Do not think step by step. Do not include reasoning. Put only final JSON in assistant content."
     user = f"""
-Analyze exactly this one date block.
+{"/no_think " if no_think else ""}Analyze exactly this one date block.
 
 Return these fields:
 - data_structures: concrete structures used, for example union-find, hash-map, heap, queue, graph, tree, trie, stack, matrix, linked-list.
@@ -233,6 +239,7 @@ def call_chat_completion(
     messages: list[dict[str, str]],
     response_format: dict[str, object] | None,
     timeout: int,
+    max_tokens: int,
 ) -> str:
     if provider == "github" and not api_key:
         raise RuntimeError("GITHUB_TOKEN or GH_TOKEN is required for the GitHub provider")
@@ -241,7 +248,7 @@ def call_chat_completion(
         "model": model,
         "messages": messages,
         "temperature": 0,
-        "max_tokens": 800,
+        "max_tokens": max_tokens,
         "stream": False,
     }
     if response_format is not None:
@@ -346,9 +353,10 @@ def analyze_item(args: argparse.Namespace, item: WorkItem) -> dict[str, object]:
         provider=args.provider,
         api_key=api_key_for_provider(args.provider, args.api_key_env),
         model=args.model,
-        messages=build_messages(item),
+        messages=build_messages(item, no_think=args.no_think),
         response_format=response_format_payload(args.response_format),
         timeout=args.timeout,
+        max_tokens=args.max_tokens,
     )
     return validate_analysis(parse_json_content(content))
 
@@ -369,6 +377,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--soft-fail", action="store_true", help="Print AI errors and keep the workflow green")
     parser.add_argument("--timeout", type=int, default=120)
+    parser.add_argument("--max-tokens", type=int, default=int(os.environ.get("LEETCODE_AI_MAX_TOKENS", "800")))
+    parser.add_argument("--no-think", action="store_true", default=env_truthy("LEETCODE_AI_NO_THINK"))
     parser.add_argument("--request-delay", type=float, default=float(os.environ.get("LEETCODE_AI_REQUEST_DELAY", "0")))
     parser.add_argument("--retry-delay", type=float, default=float(os.environ.get("LEETCODE_AI_RETRY_DELAY", "120")))
     parser.add_argument("--max-retries", type=int, default=int(os.environ.get("LEETCODE_AI_MAX_RETRIES", "3")))
