@@ -51,7 +51,216 @@
         "manual_review": false,
         "confidence": 0.9
       }
+    },
+    "2026-04-24": {
+      "status": "analyzed",
+      "date": "2026-04-24",
+      "display_date": "24.04.2026",
+      "slug": "2026-04-24-2833-furthest-point-from-origin",
+      "display_title": "2833. Furthest Point From Origin",
+      "source_hash": "7d5900d4c94981379a150f7bbf53c1312fba4fbc24f4554dbf343dde2ab9beb9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-04-25T13:51:01Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "counting",
+            "label": "counting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "mathematical-formula-simplification",
+            "label": "mathematical formula simplification",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Calculate maximum distance by counting occurrences of 'L' and 'R' and using a simple formula without explicit simulation.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
+    "2026-04-23": {
+      "status": "analyzed",
+      "date": "2026-04-23",
+      "display_date": "23.04.2026",
+      "slug": "2026-04-23-2615-sum-of-distances",
+      "display_title": "2615. Sum of Distances",
+      "source_hash": "d6b10e0ca5f120c73ce3d5f1e2cb0208ddcc93e9ae44e43dec0b2e8244de5c18",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-04-25T13:51:03Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "prefix-sum",
+            "label": "prefix-sum",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-pointer-iteration",
+            "label": "two-pointer iteration",
+            "confidence": 0.85
+          },
+          {
+            "slug": "prefix-sums-with-frequency-tracking",
+            "label": "prefix sums with frequency tracking",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Compute sum of distances to each occurrence using prefix sums and hash maps to track frequencies and indices in a single pass.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
+    "2026-04-22": {
+      "status": "analyzed",
+      "date": "2026-04-22",
+      "display_date": "22.04.2026",
+      "slug": "2026-04-22-2452-words-within-two-edits-of-dictionary",
+      "display_title": "2452. Words Within Two Edits of Dictionary",
+      "source_hash": "0c6b02c70ce446a20fd4e25039b671af2e78bc48924a8f996c1f0ff0045a00eb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-04-25T13:51:05Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-set",
+            "label": "hash set",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "brute-force",
+            "label": "brute force",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "character-difference-counting",
+            "label": "character difference counting",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Check if words differ by at most two characters by comparing character differences directly using brute force and hash set for single edits.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
+    "2026-04-21": {
+      "status": "analyzed",
+      "date": "2026-04-21",
+      "display_date": "21.04.2026",
+      "slug": "2026-04-21-1722-minimize-hamming-distance-after-swap-operations",
+      "display_title": "1722. Minimize Hamming Distance After Swap Operations",
+      "source_hash": "636cdbbea0dfbb0c4f15b49e2339282ee391ebf6f9e2ce7d2a73be9e3f1da64c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-04-25T13:51:07Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 0.95
+          },
+          {
+            "slug": "hash-map",
+            "label": "hash map",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.85
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 0.95
+          },
+          {
+            "slug": "counting-sort",
+            "label": "counting sort",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "path-compression",
+            "label": "path compression",
+            "confidence": 0.9
+          },
+          {
+            "slug": "frequency-counting",
+            "label": "frequency counting",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          },
+          {
+            "slug": "disjoint-set",
+            "label": "disjoint set",
+            "confidence": 0.85
+          }
+        ],
+        "summary": "Use union-find to group indices into connected components and then count frequencies within each component to minimize Hamming distance after allowed swaps.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
     }
   },
-  "updated_at": "2026-04-25T13:45:51Z"
+  "updated_at": "2026-04-25T13:51:07Z"
 }
