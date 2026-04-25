@@ -1,5 +1,57 @@
 {
   "version": 1,
   "prompt_version": "leetcode-ai-tags-v1",
-  "blocks": {}
+  "blocks": {
+    "2026-04-25": {
+      "status": "analyzed",
+      "date": "2026-04-25",
+      "display_date": "25.04.2026",
+      "slug": "2026-04-25-3464-maximize-the-distance-between-points-on-a-square",
+      "display_title": "3464. Maximize the Distance Between Points on a Square",
+      "source_hash": "bbc7fc3fa54b68c5e686f9a312e70775dbb25e020a099cf4927cf2f0d4549cdb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-04-25T13:45:45Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "perimeter-flattening",
+            "label": "perimeter flattening",
+            "confidence": 0.85
+          },
+          {
+            "slug": "wrap-around-handling",
+            "label": "wrap-around handling",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "geometry",
+            "label": "geometry",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Use binary search on the minimum distance between points on a square perimeter, leveraging perimeter flattening and binary search to select k points with maximum minimum distance.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    }
+  },
+  "updated_at": "2026-04-25T13:45:51Z"
 }
