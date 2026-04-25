@@ -1,0 +1,154 @@
+---
+layout: leetcode-base
+---
+{% assign library = site.data.leetcode_library %}
+{% assign insights = library.insights %}
+{% assign collection = insights.collections | where: 'slug', page.collection_slug | first %}
+{% assign groups = nil %}
+{% assign items = nil %}
+{% case page.collection_slug %}
+{% when 'repeats' %}
+  {% assign groups = insights.repeats %}
+{% when 'comebacks' %}
+  {% assign groups = insights.comebacks %}
+{% when 'deep-thinking' %}
+  {% assign items = insights.deep_thinking %}
+{% when 'unsolved' %}
+  {% assign items = insights.unsolved %}
+{% when 'almost-gave-up' %}
+  {% assign items = insights.almost_gave_up %}
+{% when 'one-liners' %}
+  {% assign items = insights.one_liners %}
+{% endcase %}
+<section class="leetcode-shell">
+  {% if collection %}
+  <div class="leetcode-hero leetcode-hero--compact">
+    <p class="leetcode-eyebrow">LeetCode Collection</p>
+    <h1 class="leetcode-title">{{ collection.title }}</h1>
+    <p class="leetcode-copy">{{ collection.summary }}</p>
+    <div class="leetcode-stat-grid">
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ collection.count }}</span>
+        <span class="leetcode-stat__label">{{ collection.metric_label }}</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ library.stats.unique_problem_count }}</span>
+        <span class="leetcode-stat__label">unique problems</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ library.stats.entry_count }}</span>
+        <span class="leetcode-stat__label">entries</span>
+      </article>
+    </div>
+    <div class="leetcode-hero__links">
+      <a class="leetcode-link-chip" href="{{ '/leetcode/' | relative_url }}">Back to library</a>
+      <a class="leetcode-link-chip" href="{{ '/leetcode/collection/repeats/' | relative_url }}">Repeat lab</a>
+      <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
+    </div>
+  </div>
+
+  {% if groups %}
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>{{ groups | size }} timelines</h2>
+      <p>Each card opens a problem-specific evolution view with per-attempt deltas and post gallery.</p>
+    </div>
+    <div class="leetcode-collection-repeat-grid">
+      {% for group in groups %}
+      {% assign latest_attempt = group.entries | last %}
+      <article class="leetcode-collection-repeat-card">
+        <div class="leetcode-collection-gallery" aria-label="{{ group.display_title }} attempts">
+          {% for attempt in group.entries limit: 4 %}
+          <a href="{{ attempt.page_url | relative_url }}" title="{{ attempt.display_date }}">
+            {% if attempt.image_url %}
+            <img src="{{ attempt.image_url | relative_url }}" alt="" loading="lazy">
+            {% else %}
+            <span>{{ attempt.display_date | slice: 0, 5 }}</span>
+            {% endif %}
+          </a>
+          {% endfor %}
+        </div>
+        <div class="leetcode-collection-repeat-card__body">
+          <div class="leetcode-repeat-card__top">
+            <h3><a href="{{ group.evolution_url | relative_url }}">{{ group.display_title }}</a></h3>
+            <span class="leetcode-pill">{{ group.count }}x</span>
+          </div>
+          <p class="leetcode-repeat-card__dates">{{ group.first_date }} to {{ group.last_date }} · {{ group.span_days }} days</p>
+          <div class="leetcode-repeat-metrics">
+            <span>Lines <strong>{% if group.solution_line_delta %}{% if group.solution_line_delta > 0 %}+{% endif %}{{ group.solution_line_delta }}{% else %}n/a{% endif %}</strong></span>
+            <span>Best <strong>{% if group.best_solution %}{{ group.best_solution.solution_lines }} lines{% else %}n/a{% endif %}</strong></span>
+            <span>Thoughts <strong>{% if group.thought_line_delta %}{% if group.thought_line_delta > 0 %}+{% endif %}{{ group.thought_line_delta }}{% else %}n/a{% endif %}</strong></span>
+          </div>
+          <div class="leetcode-collection-flags">
+            <span>{{ group.solution_line_trend }}</span>
+            {% if group.solved_after_stuck %}<span>comeback</span>{% endif %}
+            {% if group.stuck_count > 0 %}<span>{{ group.stuck_count }} stuck</span>{% endif %}
+            {% if group.one_liner_count > 0 %}<span>{{ group.one_liner_count }} one-liner</span>{% endif %}
+          </div>
+          {% if latest_attempt.takeaway %}
+          <p class="leetcode-card__takeaway">{{ latest_attempt.takeaway }}</p>
+          {% endif %}
+          <div class="leetcode-card__links">
+            <a href="{{ group.evolution_url | relative_url }}">Open evolution</a>
+            <a href="{{ group.latest_page_url | relative_url }}">Latest post</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if items %}
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>{{ items | size }} entries</h2>
+      <p>Focused gallery for this signal, ordered by the strongest matching metric.</p>
+    </div>
+    <div class="leetcode-collection-entry-grid">
+      {% for entry in items %}
+      <article class="leetcode-collection-entry-card leetcode-card--{{ entry.difficulty }}">
+        {% if entry.image_url %}
+        <a class="leetcode-collection-entry-card__media" href="{{ entry.page_url | relative_url }}">
+          <img src="{{ entry.image_url | relative_url }}" alt="" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="leetcode-card__top">
+          <p class="leetcode-card__date">{{ entry.display_date }}</p>
+          <span class="leetcode-pill leetcode-pill--{{ entry.difficulty }}">{{ entry.difficulty }}</span>
+        </div>
+        <h3 class="leetcode-card__title"><a href="{{ entry.page_url | relative_url }}">{{ entry.display_title }}</a></h3>
+        <div class="leetcode-collection-entry-card__metrics">
+          {% case page.collection_slug %}
+          {% when 'deep-thinking' %}
+          <span><strong>{{ entry.thought_lines }}</strong> thought lines</span>
+          {% if entry.max_minute_marker %}<span><strong>{{ entry.max_minute_marker }}</strong> min marker</span>{% endif %}
+          {% when 'unsolved' %}
+          <span><strong>stuck</strong> marked honestly</span>
+          {% if entry.max_minute_marker %}<span><strong>{{ entry.max_minute_marker }}</strong> min marker</span>{% endif %}
+          {% when 'almost-gave-up' %}
+          <span><strong>{{ entry.max_minute_marker }}</strong> min marker</span>
+          <span><strong>{{ entry.thought_lines }}</strong> thought lines</span>
+          {% when 'one-liners' %}
+          <span><strong>{{ entry.solution_lines }}</strong> lines</span>
+          <span><strong>{{ entry.solution_chars }}</strong> chars{% if entry.solution_language %} · {{ entry.solution_language }}{% endif %}</span>
+          {% endcase %}
+        </div>
+        {% if entry.takeaway %}
+        <p class="leetcode-card__takeaway">{{ entry.takeaway }}</p>
+        {% endif %}
+        <div class="leetcode-card__links">
+          <a href="{{ entry.page_url | relative_url }}">Full post</a>
+          {% if entry.problem_url %}<a href="{{ entry.problem_url }}">LeetCode</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  {% else %}
+  <div class="leetcode-note">
+    <p>This collection could not be resolved from generated LeetCode data. Re-run the generator.</p>
+  </div>
+  {% endif %}
+</section>

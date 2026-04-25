@@ -104,6 +104,8 @@
       (entry.pattern_labels || []).join(" "),
       (entry.pattern_slugs || []).join(" "),
       (entry.languages || []).join(" "),
+      (entry.catalog_tags || []).join(" "),
+      entry.metrics ? entry.metrics.solution_line_bucket : "",
     ]
       .join(" ")
       .toLowerCase();

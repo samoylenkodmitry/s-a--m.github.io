@@ -46,6 +46,22 @@ layout: leetcode-base
       </div>
       {% endif %}
 
+      {% if entry.collection_links.size > 0 %}
+      <div class="leetcode-sidecard__section">
+        <p class="leetcode-sidecard__label">Collections</p>
+        <div class="leetcode-entry-collections">
+          {% for collection in entry.collection_links %}
+          <div class="leetcode-entry-collection">
+            <a href="{{ collection.url | relative_url }}">{{ collection.label }}</a>
+            {% if collection.detail_url %}
+            <a class="leetcode-entry-collection__detail" href="{{ collection.detail_url | relative_url }}">{{ collection.detail_label }}</a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
       <div class="leetcode-sidecard__section">
         <p class="leetcode-sidecard__label">Links</p>
         <div class="leetcode-detail__links">

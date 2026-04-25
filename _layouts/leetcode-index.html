@@ -2,6 +2,7 @@
 layout: leetcode-base
 ---
 {% assign library = site.data.leetcode_library %}
+{% assign insights = library.insights %}
 {% assign entries = library.entries %}
 {% assign latest = entries | first %}
 {% assign easy_count = entries | where: 'difficulty', 'easy' | size %}
@@ -39,6 +40,10 @@ layout: leetcode-base
             <span class="leetcode-stat__label">entries</span>
           </article>
           <article class="leetcode-stat">
+            <span class="leetcode-stat__value">{{ library.stats.unique_problem_count }}</span>
+            <span class="leetcode-stat__label">unique problems</span>
+          </article>
+          <article class="leetcode-stat">
             <span class="leetcode-stat__value">{{ library.stats.year_count }}</span>
             <span class="leetcode-stat__label">years</span>
           </article>
@@ -57,6 +62,7 @@ layout: leetcode-base
         </div>
         <div class="leetcode-hero__links">
           <a class="leetcode-link-chip" href="#leetcode-finder">Search archive</a>
+          <a class="leetcode-link-chip" href="{{ '/leetcode/collection/repeats/' | relative_url }}">Repeat lab</a>
           <a class="leetcode-link-chip" href="{{ '/leetcode/feed.xml' | relative_url }}">Library RSS</a>
           <a class="leetcode-link-chip" href="{{ '/2023/07/14/leetcode_daily.html' | relative_url }}">Raw archive</a>
           <a class="leetcode-link-chip" id="leetcode-random-link" href="{{ latest.page_url | relative_url }}">Random entry</a>
@@ -158,6 +164,10 @@ layout: leetcode-base
       <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-pattern="dynamic-programming">Dynamic programming</button>
       <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-pattern="graph">Graph</button>
       <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-language="rust">Rust</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-query="repeat">Repeated</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-query="one-liner">One-liners</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-query="unsolved">Couldn&rsquo;t solve</button>
+      <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-query="deep-thinking">Long thoughts</button>
       {% if latest_year %}
       <button class="leetcode-filter-chip" type="button" data-leetcode-filter data-year="{{ latest_year.value }}">{{ latest_year.label }}</button>
       {% endif %}
@@ -231,6 +241,160 @@ layout: leetcode-base
 
   <section class="leetcode-section">
     <div class="leetcode-section__head">
+      <h2>Practice signals</h2>
+      <p>Repeated drills, long thinking traces, misses, and tiny solutions extracted from the daily notes.</p>
+    </div>
+    <div class="leetcode-signal-grid">
+      <a class="leetcode-signal-card" href="{{ '/leetcode/collection/repeats/' | relative_url }}">
+        <span class="leetcode-signal-card__label">Repeated drills</span>
+        <strong>{{ library.stats.repeat_problem_count }}</strong>
+        <span>{{ library.stats.repeated_entry_count }} entries revisit the same problem id.</span>
+      </a>
+      <a class="leetcode-signal-card" href="{{ '/leetcode/collection/deep-thinking/' | relative_url }}">
+        <span class="leetcode-signal-card__label">Long thoughts</span>
+        <strong>{{ library.stats.deep_thinking_count }}</strong>
+        <span>Entries with a long <code>j</code> thinking trace.</span>
+      </a>
+      <a class="leetcode-signal-card" href="{{ '/leetcode/collection/unsolved/' | relative_url }}">
+        <span class="leetcode-signal-card__label">Couldn&rsquo;t solve cleanly</span>
+        <strong>{{ library.stats.unsolved_count }}</strong>
+        <span>Marked with did not solve, could not solve, or give up language.</span>
+      </a>
+      <a class="leetcode-signal-card" href="{{ '/leetcode/collection/almost-gave-up/' | relative_url }}">
+        <span class="leetcode-signal-card__label">Almost gave up</span>
+        <strong>{{ library.stats.almost_gave_up_count }}</strong>
+        <span>Minute markers plus hints, wrong answers, or explicit stopping points.</span>
+      </a>
+      <a class="leetcode-signal-card" href="{{ '/leetcode/collection/one-liners/' | relative_url }}">
+        <span class="leetcode-signal-card__label">One-liners</span>
+        <strong>{{ library.stats.one_liner_count }}</strong>
+        <span>Shortest Kotlin or Rust solution is two nonblank lines or less.</span>
+      </a>
+      <a class="leetcode-signal-card" href="{{ '/leetcode/collection/comebacks/' | relative_url }}">
+        <span class="leetcode-signal-card__label">Comebacks</span>
+        <strong>{{ library.stats.comeback_count }}</strong>
+        <span>Repeated problems first marked stuck, then later solved cleaner.</span>
+      </a>
+    </div>
+
+    <div class="leetcode-line-buckets" aria-label="Solution line count buckets">
+      {% for bucket in insights.line_buckets %}
+      <a class="leetcode-line-bucket" href="{{ '/leetcode/?q=' | append: bucket.slug | append: '#leetcode-archive' | relative_url }}">
+        <span>{{ bucket.label }}</span>
+        <strong>{{ bucket.count }}</strong>
+        <span class="leetcode-line-bucket__bar" style="--line-fill: {{ bucket.count | times: 100 | divided_by: library.stats.entry_count }}%"></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>Repeat ledger</h2>
+      <p>Same problem, different date. The timeline compares solution length and thinking trace changes.</p>
+    </div>
+    <div class="leetcode-repeat-grid">
+      {% for group in insights.repeats limit: 6 %}
+      <article class="leetcode-repeat-card">
+        <div class="leetcode-repeat-card__top">
+          <h3><a href="{{ group.evolution_url | relative_url }}">{{ group.display_title }}</a></h3>
+          <span class="leetcode-pill">{{ group.count }}x</span>
+        </div>
+        <p class="leetcode-repeat-card__dates">{{ group.first_date }} to {{ group.last_date }}</p>
+        <div class="leetcode-repeat-metrics">
+          <span>Lines <strong>{% if group.solution_line_delta %}{% if group.solution_line_delta > 0 %}+{% endif %}{{ group.solution_line_delta }}{% else %}n/a{% endif %}</strong></span>
+          <span>Chars <strong>{% if group.solution_char_delta %}{% if group.solution_char_delta > 0 %}+{% endif %}{{ group.solution_char_delta }}{% else %}n/a{% endif %}</strong></span>
+          <span>Thoughts <strong>{% if group.thought_line_delta %}{% if group.thought_line_delta > 0 %}+{% endif %}{{ group.thought_line_delta }}{% else %}n/a{% endif %}</strong></span>
+        </div>
+        <ol class="leetcode-timeline">
+          {% for attempt in group.entries %}
+          <li>
+            <a href="{{ attempt.page_url | relative_url }}">{{ attempt.display_date }}</a>
+            <span>
+              {% if attempt.solution_lines %}{{ attempt.solution_lines }} lines{% else %}no code metric{% endif %}
+              {% if attempt.thought_lines > 0 %}, {{ attempt.thought_lines }} thoughts{% endif %}
+              {% if attempt.unsolved %}, stuck{% endif %}
+            </span>
+          </li>
+          {% endfor %}
+        </ol>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if insights.comebacks.size > 0 %}
+    <div class="leetcode-comeback-block">
+      <h3>Couldn&rsquo;t first, solved later</h3>
+      <div class="leetcode-comeback-list">
+        {% for group in insights.comebacks limit: 6 %}
+        <a href="{{ group.evolution_url | relative_url }}">
+          <span>{{ group.display_title }}</span>
+          <strong>{{ group.first_date }} to {{ group.last_date }}</strong>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>Honest slices</h2>
+      <p>Useful edge categories for choosing what to revisit next.</p>
+    </div>
+    <div class="leetcode-insight-grid">
+      <article class="leetcode-insight-panel">
+        <h3>Long <code>j</code> sections</h3>
+        <ul class="leetcode-insight-list">
+          {% for entry in insights.deep_thinking limit: 6 %}
+          <li>
+            <a href="{{ entry.page_url | relative_url }}">{{ entry.display_title }}</a>
+            <span>{{ entry.thought_lines }} thought lines{% if entry.max_minute_marker %}, {{ entry.max_minute_marker }} min{% endif %}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <article class="leetcode-insight-panel">
+        <h3>Couldn&rsquo;t solve</h3>
+        <ul class="leetcode-insight-list">
+          {% for entry in insights.unsolved limit: 6 %}
+          <li>
+            <a href="{{ entry.page_url | relative_url }}">{{ entry.display_title }}</a>
+            <span>{{ entry.display_date }}{% if entry.max_minute_marker %}, {{ entry.max_minute_marker }} min{% endif %}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <article class="leetcode-insight-panel">
+        <h3>Almost gave up</h3>
+        <ul class="leetcode-insight-list">
+          {% for entry in insights.almost_gave_up limit: 6 %}
+          <li>
+            <a href="{{ entry.page_url | relative_url }}">{{ entry.display_title }}</a>
+            <span>{{ entry.max_minute_marker }} min, {{ entry.thought_lines }} thought lines</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <article class="leetcode-insight-panel">
+        <h3>Smallest solutions</h3>
+        <ul class="leetcode-insight-list">
+          {% for entry in insights.one_liners limit: 6 %}
+          <li>
+            <a href="{{ entry.page_url | relative_url }}">{{ entry.display_title }}</a>
+            <span>{{ entry.solution_lines }} lines, {{ entry.solution_chars }} chars{% if entry.solution_language %}, {{ entry.solution_language }}{% endif %}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
       <h2>Browse the map</h2>
       <p>Start with a year, a language, or one of the recurring patterns.</p>
     </div>
@@ -248,6 +412,14 @@ layout: leetcode-base
         <ul class="leetcode-link-list">
           {% for language in library.languages %}
           <li><a href="{{ language.url | relative_url }}">{{ language.label }}</a><span>{{ language.count }}</span></li>
+          {% endfor %}
+        </ul>
+      </article>
+      <article class="leetcode-browse-card">
+        <h3>Collections</h3>
+        <ul class="leetcode-link-list">
+          {% for collection in insights.collections %}
+          <li><a href="{{ collection.url | relative_url }}">{{ collection.label }}</a><span>{{ collection.count }}</span></li>
           {% endfor %}
         </ul>
       </article>

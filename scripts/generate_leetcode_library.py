@@ -6,7 +6,7 @@ import json
 import re
 from collections import Counter
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
@@ -17,6 +17,8 @@ DATA_PATH = ROOT / "_data" / "leetcode_library.json"
 PATTERN_DIR = ROOT / "leetcode" / "pattern"
 YEAR_DIR = ROOT / "leetcode" / "year"
 PROBLEM_DIR = ROOT / "leetcode" / "problem"
+COLLECTION_DIR = ROOT / "leetcode" / "collection"
+EVOLUTION_DIR = ROOT / "leetcode" / "evolution"
 RAW_ARCHIVE_URL = "/2023/07/14/leetcode_daily.html"
 
 TITLE_LINK_RE = re.compile(r"^\[([^\]]+)\]\(([^)]*)\)\s*(.*)$")
@@ -26,8 +28,26 @@ URL_TITLE_RE = re.compile(r"^https?://leetcode\.com/problems/([^/]+)/?")
 TELEGRAM_RE = re.compile(r"https://t\.me/leetcode_daily_unstoppable/\d+")
 IMAGE_RE = re.compile(r"/assets/leetcode_daily_images/[^)\s]+")
 HASHTAG_RE = re.compile(r"(?<!\w)#([a-z0-9-]+)", re.IGNORECASE)
+UNSOLVED_RE = re.compile(
+    r"\b(?:didn'?t|did\s+not|couldn'?t|could\s+not|can'?t|cannot|failed\s+to)\s+solv(?:e|ed|ing)?\b"
+    r"|\bnot\s+able\s+to\s+solv(?:e|ed|ing)?\b"
+    r"|\bdidn'?t\s+know\s+how\b"
+    r"|\bno\s+ideas\b",
+    re.IGNORECASE,
+)
+GIVE_UP_RE = re.compile(r"\b(?:give\s*up|gave\s+up|giveup)\b", re.IGNORECASE)
+HINT_RE = re.compile(r"\b(?:hint|hints|look\s+for\s+solution|others?'?\s+solution|editorial|discussion)\b", re.IGNORECASE)
+STUCK_RE = re.compile(
+    r"\b(?:wrong\s+answer|tle|mle|stuck|dead\s+end|corner\s+case|debugging|don'?t\s+see|can'?t\s+find)\b",
+    re.IGNORECASE,
+)
+CLOCK_MINUTE_RE = re.compile(r"(?<![\w:.-])(\d+):(\d+)\s*(?:minute|minutes|min)?\b", re.IGNORECASE)
+MINUTE_RE = re.compile(r"(?<![\w:.-])(\d+)\s*(?:minute|minutes|min)\b", re.IGNORECASE)
+DECIMAL_HOUR_RE = re.compile(r"(?<![\w:.-])(\d+(?:\.\d+)?)\s*(?:hr|hrs|hour|hours)\b", re.IGNORECASE)
 
 AUX_LINK_LABELS = {"substack", "youtube", "blog post"}
+SOLUTION_LANGUAGES = {"kotlin", "rust"}
+DEEP_THINKING_LINE_THRESHOLD = 30
 
 
 @dataclass(frozen=True)
@@ -215,6 +235,160 @@ def strip_markdown(text: str) -> str:
     return text.strip()
 
 
+def normalize_fence_language(value: str) -> str:
+    raw = value.strip().split(maxsplit=1)[0].lower() if value.strip() else ""
+    raw = raw.strip("{}[]()")
+    if raw.startswith("kotlin"):
+        return "kotlin"
+    if raw.startswith("rust"):
+        return "rust"
+    if raw == "j":
+        return "j"
+    return raw
+
+
+def iter_code_blocks(lines: list[str]) -> list[tuple[str, list[str]]]:
+    blocks: list[tuple[str, list[str]]] = []
+    language = ""
+    block_lines: list[str] = []
+    fence_open = False
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            if fence_open:
+                blocks.append((language, block_lines))
+                block_lines = []
+                language = ""
+                fence_open = False
+            else:
+                language = normalize_fence_language(stripped[3:])
+                block_lines = []
+                fence_open = True
+            continue
+        if fence_open:
+            block_lines.append(line.rstrip())
+
+    return blocks
+
+
+def nonblank_line_count(lines: Iterable[str]) -> int:
+    return sum(1 for line in lines if line.strip())
+
+
+def solution_line_bucket(line_count: int | None) -> str:
+    if line_count is None:
+        return "unknown"
+    if line_count <= 2:
+        return "one-liner"
+    if line_count <= 6:
+        return "tiny"
+    if line_count <= 12:
+        return "compact"
+    if line_count <= 25:
+        return "standard"
+    return "long"
+
+
+def text_without_solution_code(lines: list[str]) -> str:
+    visible_lines: list[str] = []
+    language = ""
+    fence_open = False
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            if fence_open:
+                fence_open = False
+                language = ""
+            else:
+                language = normalize_fence_language(stripped[3:])
+                fence_open = True
+            continue
+        if fence_open and language in SOLUTION_LANGUAGES:
+            continue
+        visible_lines.append(line)
+
+    return "\n".join(visible_lines)
+
+
+def extract_minute_markers(text: str) -> list[int]:
+    markers: set[int] = set()
+    for hours, minutes in CLOCK_MINUTE_RE.findall(text):
+        hour_value = int(hours)
+        minute_value = int(minutes)
+        if hour_value <= 3 and minute_value < 60:
+            markers.add(hour_value * 60 + minute_value)
+    for minutes in MINUTE_RE.findall(text):
+        markers.add(int(minutes))
+    for hours in DECIMAL_HOUR_RE.findall(text):
+        markers.add(round(float(hours) * 60))
+    return sorted(value for value in markers if 0 < value <= 24 * 60)
+
+
+def extract_entry_metrics(lines: list[str]) -> dict[str, object]:
+    blocks = iter_code_blocks(lines)
+    solution_blocks: list[dict[str, object]] = []
+    language_line_counts: dict[str, int] = {}
+    language_char_counts: dict[str, int] = {}
+    thought_lines = 0
+    thought_chars = 0
+
+    for language, block in blocks:
+        nonblank = [line for line in block if line.strip()]
+        char_count = len("\n".join(line.strip() for line in nonblank))
+        if language == "j":
+            thought_lines += len(nonblank)
+            thought_chars += char_count
+            continue
+        if language not in SOLUTION_LANGUAGES or not nonblank:
+            continue
+        solution_blocks.append(
+            {
+                "language": language,
+                "line_count": len(nonblank),
+                "char_count": char_count,
+            }
+        )
+        previous_lines = language_line_counts.get(language)
+        previous_chars = language_char_counts.get(language)
+        if previous_lines is None or (len(nonblank), char_count) < (previous_lines, previous_chars or 0):
+            language_line_counts[language] = len(nonblank)
+            language_char_counts[language] = char_count
+
+    shortest_solution = min(
+        solution_blocks,
+        key=lambda block: (int(block["line_count"]), int(block["char_count"])),
+        default=None,
+    )
+    reflective_text = text_without_solution_code(lines)
+    minute_markers = extract_minute_markers(reflective_text)
+    max_minute_marker = max(minute_markers) if minute_markers else None
+    unsolved = bool(UNSOLVED_RE.search(reflective_text) or GIVE_UP_RE.search(reflective_text))
+    hint_or_stuck = bool(HINT_RE.search(reflective_text) or GIVE_UP_RE.search(reflective_text) or STUCK_RE.search(reflective_text))
+    almost_gave_up = bool(minute_markers and hint_or_stuck and ((max_minute_marker or 0) >= 25 or GIVE_UP_RE.search(reflective_text)))
+    solution_lines = int(shortest_solution["line_count"]) if shortest_solution else None
+    solution_chars = int(shortest_solution["char_count"]) if shortest_solution else None
+    bucket = solution_line_bucket(solution_lines)
+
+    return {
+        "solution_lines": solution_lines,
+        "solution_chars": solution_chars,
+        "solution_language": shortest_solution["language"] if shortest_solution else None,
+        "solution_line_bucket": bucket,
+        "language_line_counts": language_line_counts,
+        "language_char_counts": language_char_counts,
+        "thought_lines": thought_lines,
+        "thought_chars": thought_chars,
+        "minute_markers": minute_markers,
+        "max_minute_marker": max_minute_marker,
+        "deep_thinking": thought_lines >= DEEP_THINKING_LINE_THRESHOLD,
+        "unsolved": unsolved,
+        "almost_gave_up": almost_gave_up,
+        "one_liner": bucket == "one-liner",
+    }
+
+
 def clean_line_for_summary(line: str) -> str:
     text = re.sub(r"^[*\-\d. )]+", "", line.strip())
     text = strip_markdown(text)
@@ -374,6 +548,7 @@ def build_entry(date_display: str, lines: list[str]) -> dict[str, object]:
     solution_url = blog_post_url or (problem_url if "/solutions/" in problem_url else None)
     image_match = IMAGE_RE.search("\n".join(lines))
     telegram_match = TELEGRAM_RE.search("\n".join(lines))
+    metrics = extract_entry_metrics(lines)
     slug_base = f"{problem_id}-{title}" if problem_id is not None else title
     slug = f"{date_iso}-{slugify(slug_base)}"
     display_title = f"{problem_id}. {title}" if problem_id is not None else title
@@ -402,9 +577,350 @@ def build_entry(date_display: str, lines: list[str]) -> dict[str, object]:
         "telegram_url": telegram_match.group(0) if telegram_match else None,
         "image_url": image_match.group(0) if image_match else None,
         "takeaway": takeaway,
+        "metrics": metrics,
+        "catalog_tags": [],
+        "collection_links": [],
         "page_url": f"/leetcode/problem/{slug}/",
         "raw_archive_url": RAW_ARCHIVE_URL,
     }
+
+
+def problem_group_key(entry: dict[str, object]) -> str:
+    problem_id = entry.get("problem_id")
+    if problem_id is not None:
+        return str(problem_id)
+    return slugify(str(entry["title"]))
+
+
+def add_catalog_tag(entry: dict[str, object], tag: str) -> None:
+    tags = entry.setdefault("catalog_tags", [])
+    if isinstance(tags, list) and tag not in tags:
+        tags.append(tag)
+
+
+def insight_entry(entry: dict[str, object]) -> dict[str, object]:
+    metrics = entry["metrics"]
+    return {
+        "slug": entry["slug"],
+        "date": entry["date"],
+        "display_date": entry["display_date"],
+        "year": entry["year"],
+        "display_title": entry["display_title"],
+        "difficulty": entry["difficulty"],
+        "page_url": entry["page_url"],
+        "problem_url": entry["problem_url"],
+        "image_url": entry["image_url"],
+        "takeaway": entry["takeaway"],
+        "pattern_slugs": entry["pattern_slugs"],
+        "pattern_labels": entry["pattern_labels"],
+        "languages": entry["languages"],
+        "catalog_tags": entry["catalog_tags"],
+        "solution_lines": metrics["solution_lines"],
+        "solution_chars": metrics["solution_chars"],
+        "solution_language": metrics["solution_language"],
+        "solution_line_bucket": metrics["solution_line_bucket"],
+        "thought_lines": metrics["thought_lines"],
+        "thought_chars": metrics["thought_chars"],
+        "max_minute_marker": metrics["max_minute_marker"],
+        "unsolved": metrics["unsolved"],
+        "almost_gave_up": metrics["almost_gave_up"],
+    }
+
+
+def metric_delta(first: object, last: object) -> int | None:
+    if first is None or last is None:
+        return None
+    return int(last) - int(first)
+
+
+def days_between(start_iso: str, end_iso: str) -> int:
+    return (date.fromisoformat(end_iso) - date.fromisoformat(start_iso)).days
+
+
+def percent_of(value: object, maximum: int) -> int:
+    if not value or maximum <= 0:
+        return 0
+    return max(2, round(int(value) * 100 / maximum))
+
+
+def repeat_trend(delta: int | None) -> str:
+    if delta is None:
+        return "unmeasured"
+    if delta < 0:
+        return "compressed"
+    if delta > 0:
+        return "expanded"
+    return "steady"
+
+
+def evolution_slug(entry: dict[str, object]) -> str:
+    slug_base = f"{entry['problem_id']}-{entry['title']}" if entry.get("problem_id") is not None else str(entry["title"])
+    return slugify(slug_base)
+
+
+def build_repeat_group(key: str, group_entries: list[dict[str, object]]) -> dict[str, object]:
+    timeline = sorted(group_entries, key=lambda entry: str(entry["date"]))
+    first = timeline[0]
+    last = timeline[-1]
+    attempts = [insight_entry(entry) for entry in timeline]
+    max_solution_lines = max((int(attempt["solution_lines"] or 0) for attempt in attempts), default=0)
+    max_thought_lines = max((int(attempt["thought_lines"] or 0) for attempt in attempts), default=0)
+    previous: dict[str, object] | None = None
+    for index, attempt in enumerate(attempts):
+        attempt["attempt_number"] = index + 1
+        attempt["solution_line_percent"] = percent_of(attempt["solution_lines"], max_solution_lines)
+        attempt["thought_line_percent"] = percent_of(attempt["thought_lines"], max_thought_lines)
+        if previous:
+            attempt["days_since_previous"] = days_between(str(previous["date"]), str(attempt["date"]))
+            attempt["solution_line_delta_from_previous"] = metric_delta(previous["solution_lines"], attempt["solution_lines"])
+            attempt["solution_char_delta_from_previous"] = metric_delta(previous["solution_chars"], attempt["solution_chars"])
+            attempt["thought_line_delta_from_previous"] = metric_delta(previous["thought_lines"], attempt["thought_lines"])
+        else:
+            attempt["days_since_previous"] = None
+            attempt["solution_line_delta_from_previous"] = None
+            attempt["solution_char_delta_from_previous"] = None
+            attempt["thought_line_delta_from_previous"] = None
+        previous = attempt
+
+    measured_solutions = [attempt for attempt in attempts if attempt["solution_lines"] is not None]
+    best_solution = min(
+        measured_solutions,
+        key=lambda attempt: (int(attempt["solution_lines"]), int(attempt["solution_chars"] or 999999)),
+        default=None,
+    )
+    largest_solution = max(
+        measured_solutions,
+        key=lambda attempt: (int(attempt["solution_lines"]), int(attempt["solution_chars"] or 0)),
+        default=None,
+    )
+    line_delta = metric_delta(first["metrics"]["solution_lines"], last["metrics"]["solution_lines"])
+    char_delta = metric_delta(first["metrics"]["solution_chars"], last["metrics"]["solution_chars"])
+    thought_delta = metric_delta(first["metrics"]["thought_lines"], last["metrics"]["thought_lines"])
+    return {
+        "key": key,
+        "problem_id": first["problem_id"],
+        "title": first["title"],
+        "display_title": first["display_title"],
+        "evolution_slug": evolution_slug(first),
+        "evolution_url": f"/leetcode/evolution/{evolution_slug(first)}/",
+        "count": len(timeline),
+        "first_date": first["display_date"],
+        "last_date": last["display_date"],
+        "first_sort_date": first["date"],
+        "last_sort_date": last["date"],
+        "span_days": days_between(str(first["date"]), str(last["date"])),
+        "latest_page_url": last["page_url"],
+        "solution_line_delta": line_delta,
+        "solution_char_delta": char_delta,
+        "thought_line_delta": thought_delta,
+        "solution_line_trend": repeat_trend(line_delta),
+        "solution_char_trend": repeat_trend(char_delta),
+        "thought_line_trend": repeat_trend(thought_delta),
+        "best_solution": best_solution,
+        "largest_solution": largest_solution,
+        "max_solution_lines": max_solution_lines,
+        "max_thought_lines": max_thought_lines,
+        "total_thought_lines": sum(int(attempt["thought_lines"] or 0) for attempt in attempts),
+        "stuck_count": sum(1 for attempt in attempts if attempt["unsolved"]),
+        "one_liner_count": sum(1 for attempt in attempts if attempt["solution_line_bucket"] == "one-liner"),
+        "solved_after_stuck": any(
+            bool(earlier["unsolved"]) and any(not bool(later["unsolved"]) for later in attempts[index + 1 :])
+            for index, earlier in enumerate(attempts[:-1])
+        ),
+        "entries": attempts,
+    }
+
+
+def build_collections(insights: dict[str, object]) -> list[dict[str, object]]:
+    return [
+        {
+            "slug": "repeats",
+            "kind": "repeat",
+            "label": "Repeat Lab",
+            "title": "Repeat Lab",
+            "url": "/leetcode/collection/repeats/",
+            "count": insights["repeat_problem_count"],
+            "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
+            "metric_label": "problem timelines",
+        },
+        {
+            "slug": "comebacks",
+            "kind": "repeat",
+            "label": "Comebacks",
+            "title": "Could Not First, Solved Later",
+            "url": "/leetcode/collection/comebacks/",
+            "count": len(insights["comebacks"]),
+            "summary": "Repeat problems where an earlier attempt was marked stuck or unsolved and a later attempt was not.",
+            "metric_label": "recoveries",
+        },
+        {
+            "slug": "deep-thinking",
+            "kind": "entry",
+            "label": "Long Thoughts",
+            "title": "Long Thinking Traces",
+            "url": "/leetcode/collection/deep-thinking/",
+            "count": len(insights["deep_thinking"]),
+            "summary": "Entries with long j-code thought sections, usually where the interesting part is the search path.",
+            "metric_label": "thought-heavy entries",
+        },
+        {
+            "slug": "unsolved",
+            "kind": "entry",
+            "label": "Could Not Solve",
+            "title": "Could Not Solve Cleanly",
+            "url": "/leetcode/collection/unsolved/",
+            "count": len(insights["unsolved"]),
+            "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
+            "metric_label": "honest misses",
+        },
+        {
+            "slug": "almost-gave-up",
+            "kind": "entry",
+            "label": "Pressure Log",
+            "title": "Almost Gave Up",
+            "url": "/leetcode/collection/almost-gave-up/",
+            "count": len(insights["almost_gave_up"]),
+            "summary": "Entries with minute markers near the stopping point, hints, wrong answers, or explicit timeboxing.",
+            "metric_label": "timeboxed struggles",
+        },
+        {
+            "slug": "one-liners",
+            "kind": "entry",
+            "label": "Small Code",
+            "title": "One-Liner Gallery",
+            "url": "/leetcode/collection/one-liners/",
+            "count": len(insights["one_liners"]),
+            "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
+            "metric_label": "tiny solutions",
+        },
+    ]
+
+
+COLLECTION_LINK_RULES = (
+    ("repeat", "Repeat Lab", "/leetcode/collection/repeats/", "Evolution"),
+    ("comeback", "Comebacks", "/leetcode/collection/comebacks/", "Evolution"),
+    ("deep-thinking", "Long Thoughts", "/leetcode/collection/deep-thinking/", None),
+    ("unsolved", "Could Not Solve", "/leetcode/collection/unsolved/", None),
+    ("almost-gave-up", "Almost Gave Up", "/leetcode/collection/almost-gave-up/", None),
+    ("one-liner", "One-Liners", "/leetcode/collection/one-liners/", None),
+)
+
+
+def build_entry_collection_links(entry: dict[str, object], evolution_url: str | None) -> list[dict[str, object]]:
+    tags = set(str(tag) for tag in entry.get("catalog_tags", []))
+    links: list[dict[str, object]] = []
+    for tag, label, url, detail_label in COLLECTION_LINK_RULES:
+        if tag not in tags:
+            continue
+        link = {
+            "slug": tag,
+            "label": label,
+            "url": url,
+        }
+        if detail_label and evolution_url:
+            link["detail_label"] = detail_label
+            link["detail_url"] = evolution_url
+        links.append(link)
+    return links
+
+
+def build_insights(entries: list[dict[str, object]]) -> dict[str, object]:
+    grouped: dict[str, list[dict[str, object]]] = {}
+    for entry in entries:
+        metrics = entry["metrics"]
+        add_catalog_tag(entry, str(metrics["solution_line_bucket"]))
+        if metrics["one_liner"]:
+            add_catalog_tag(entry, "one-liner")
+        if metrics["deep_thinking"]:
+            add_catalog_tag(entry, "deep-thinking")
+        if metrics["unsolved"]:
+            add_catalog_tag(entry, "unsolved")
+        if metrics["almost_gave_up"]:
+            add_catalog_tag(entry, "almost-gave-up")
+        grouped.setdefault(problem_group_key(entry), []).append(entry)
+
+    repeat_groups = []
+    comeback_groups = []
+    for key, group_entries in grouped.items():
+        if len(group_entries) <= 1:
+            continue
+        for entry in group_entries:
+            add_catalog_tag(entry, "repeat")
+        repeat_group = build_repeat_group(key, group_entries)
+        repeat_groups.append(repeat_group)
+
+        timeline = sorted(group_entries, key=lambda entry: str(entry["date"]))
+        has_comeback = any(
+            bool(earlier["metrics"]["unsolved"]) and any(not bool(later["metrics"]["unsolved"]) for later in timeline[index + 1 :])
+            for index, earlier in enumerate(timeline[:-1])
+        )
+        if has_comeback:
+            for entry in group_entries:
+                add_catalog_tag(entry, "comeback")
+            comeback_groups.append(repeat_group)
+
+    line_bucket_order = [
+        ("one-liner", "One-liners"),
+        ("tiny", "Tiny"),
+        ("compact", "Compact"),
+        ("standard", "Standard"),
+        ("long", "Long"),
+        ("unknown", "Unknown"),
+    ]
+    line_bucket_counts = Counter(str(entry["metrics"]["solution_line_bucket"]) for entry in entries)
+    line_buckets = [
+        {"slug": slug, "label": label, "count": line_bucket_counts[slug]}
+        for slug, label in line_bucket_order
+        if line_bucket_counts[slug]
+    ]
+
+    repeat_groups.sort(key=lambda group: (int(group["count"]), str(group["last_sort_date"])), reverse=True)
+    comeback_groups.sort(key=lambda group: str(group["last_sort_date"]), reverse=True)
+    evolution_url_by_key = {str(group["key"]): str(group["evolution_url"]) for group in repeat_groups}
+    for entry in entries:
+        entry["collection_links"] = build_entry_collection_links(entry, evolution_url_by_key.get(problem_group_key(entry)))
+
+    insights = {
+        "unique_problem_count": len(grouped),
+        "repeat_problem_count": len(repeat_groups),
+        "repeated_entry_count": sum(len(group) for group in grouped.values() if len(group) > 1),
+        "line_buckets": line_buckets,
+        "repeats": repeat_groups,
+        "comebacks": comeback_groups,
+        "deep_thinking": [
+            insight_entry(entry)
+            for entry in sorted(entries, key=lambda entry: (int(entry["metrics"]["thought_lines"]), str(entry["date"])), reverse=True)
+            if entry["metrics"]["deep_thinking"]
+        ],
+        "unsolved": [
+            insight_entry(entry)
+            for entry in sorted(entries, key=lambda entry: str(entry["date"]), reverse=True)
+            if entry["metrics"]["unsolved"]
+        ],
+        "one_liners": [
+            insight_entry(entry)
+            for entry in sorted(
+                entries,
+                key=lambda entry: (
+                    int(entry["metrics"]["solution_lines"] or 9999),
+                    int(entry["metrics"]["solution_chars"] or 999999),
+                    str(entry["date"]),
+                ),
+            )
+            if entry["metrics"]["one_liner"]
+        ],
+        "almost_gave_up": [
+            insight_entry(entry)
+            for entry in sorted(
+                entries,
+                key=lambda entry: (int(entry["metrics"]["max_minute_marker"] or 0), int(entry["metrics"]["thought_lines"]), str(entry["date"])),
+                reverse=True,
+            )
+            if entry["metrics"]["almost_gave_up"]
+        ],
+    }
+    insights["collections"] = build_collections(insights)
+    return insights
 
 
 def build_library(entries: list[dict[str, object]]) -> dict[str, object]:
@@ -413,6 +929,7 @@ def build_library(entries: list[dict[str, object]]) -> dict[str, object]:
     year_counts: Counter[str] = Counter()
     language_counts: Counter[str] = Counter()
     rust_count = 0
+    insights = build_insights(entries)
 
     for entry in entries:
         year_counts[entry["year"]] += 1
@@ -446,13 +963,22 @@ def build_library(entries: list[dict[str, object]]) -> dict[str, object]:
         "source_url": RAW_ARCHIVE_URL,
         "stats": {
             "entry_count": len(entries),
+            "unique_problem_count": insights["unique_problem_count"],
             "year_count": len(years),
             "pattern_count": len(patterns),
             "rust_count": rust_count,
+            "repeat_problem_count": insights["repeat_problem_count"],
+            "repeated_entry_count": insights["repeated_entry_count"],
+            "deep_thinking_count": len(insights["deep_thinking"]),
+            "unsolved_count": len(insights["unsolved"]),
+            "one_liner_count": len(insights["one_liners"]),
+            "almost_gave_up_count": len(insights["almost_gave_up"]),
+            "comeback_count": len(insights["comebacks"]),
         },
         "years": years,
         "languages": languages,
         "patterns": patterns,
+        "insights": insights,
         "entries": entries,
     }
 
@@ -516,6 +1042,37 @@ def render_problem_page(entry: dict[str, object], lines: list[str]) -> str:
     return "\n".join(front_matter + normalized_lines + [""])
 
 
+def render_collection_page(collection: dict[str, object]) -> str:
+    return "\n".join(
+        [
+            "---",
+            "layout: leetcode-collection",
+            f"title: {yaml_quote(str(collection['title']))}",
+            f"permalink: {yaml_quote(str(collection['url']))}",
+            "leetcode_ui: true",
+            f"collection_slug: {yaml_quote(str(collection['slug']))}",
+            "---",
+            "",
+        ]
+    )
+
+
+def render_evolution_page(group: dict[str, object]) -> str:
+    page_title = f"{group['display_title']} evolution"
+    return "\n".join(
+        [
+            "---",
+            "layout: leetcode-evolution",
+            f"title: {yaml_quote(page_title)}",
+            f"permalink: {yaml_quote(str(group['evolution_url']))}",
+            "leetcode_ui: true",
+            f"evolution_slug: {yaml_quote(str(group['evolution_slug']))}",
+            "---",
+            "",
+        ]
+    )
+
+
 def main() -> None:
     lines = SOURCE_PATH.read_text(encoding="utf-8").splitlines()
     source_blocks = parse_source_blocks(lines)
@@ -528,6 +1085,8 @@ def main() -> None:
     clean_generated_dir(PATTERN_DIR)
     clean_generated_dir(YEAR_DIR)
     clean_generated_dir(PROBLEM_DIR)
+    clean_generated_dir(COLLECTION_DIR)
+    clean_generated_dir(EVOLUTION_DIR)
 
     for year in library["years"]:
         write_text(YEAR_DIR / f"{year['value']}.md", render_year_page(year))
@@ -535,11 +1094,17 @@ def main() -> None:
         write_text(PATTERN_DIR / f"{pattern['slug']}.md", render_pattern_page(pattern))
     for entry, (_, block_lines) in zip(library["entries"], source_blocks):
         write_text(PROBLEM_DIR / f"{entry['slug']}.md", render_problem_page(entry, block_lines))
+    for collection in library["insights"]["collections"]:
+        write_text(COLLECTION_DIR / f"{collection['slug']}.md", render_collection_page(collection))
+    for group in library["insights"]["repeats"]:
+        write_text(EVOLUTION_DIR / f"{group['evolution_slug']}.md", render_evolution_page(group))
 
     print(
         f"Generated {len(entries)} entries, "
         f"{len(library['patterns'])} pattern pages, "
-        f"{len(library['years'])} year pages."
+        f"{len(library['years'])} year pages, "
+        f"{len(library['insights']['collections'])} collection pages, "
+        f"{len(library['insights']['repeats'])} evolution pages."
     )
 
 

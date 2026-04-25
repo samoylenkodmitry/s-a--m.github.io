@@ -1,0 +1,169 @@
+---
+layout: leetcode-base
+---
+{% assign library = site.data.leetcode_library %}
+{% assign group = library.insights.repeats | where: 'evolution_slug', page.evolution_slug | first %}
+<section class="leetcode-shell">
+  {% if group %}
+  {% assign latest_attempt = group.entries | last %}
+  <div class="leetcode-hero leetcode-hero--compact">
+    <p class="leetcode-eyebrow">Repeat Evolution</p>
+    <h1 class="leetcode-title">{{ group.display_title }}</h1>
+    <p class="leetcode-copy">
+      {{ group.count }} attempts over {{ group.span_days }} days. This page compares how the solution size,
+      thinking trace, and stuck markers changed between posts.
+    </p>
+    <div class="leetcode-stat-grid">
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ group.count }}</span>
+        <span class="leetcode-stat__label">attempts</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ group.span_days }}</span>
+        <span class="leetcode-stat__label">days apart</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{% if group.solution_line_delta %}{% if group.solution_line_delta > 0 %}+{% endif %}{{ group.solution_line_delta }}{% else %}n/a{% endif %}</span>
+        <span class="leetcode-stat__label">line delta</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{% if group.best_solution %}{{ group.best_solution.solution_lines }}{% else %}n/a{% endif %}</span>
+        <span class="leetcode-stat__label">best lines</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ group.total_thought_lines }}</span>
+        <span class="leetcode-stat__label">thought lines</span>
+      </article>
+      <article class="leetcode-stat">
+        <span class="leetcode-stat__value">{{ group.stuck_count }}</span>
+        <span class="leetcode-stat__label">stuck attempts</span>
+      </article>
+    </div>
+    <div class="leetcode-hero__links">
+      <a class="leetcode-link-chip" href="{{ '/leetcode/collection/repeats/' | relative_url }}">Repeat lab</a>
+      <a class="leetcode-link-chip" href="{{ latest_attempt.page_url | relative_url }}">Latest post</a>
+      <a class="leetcode-link-chip" href="{{ '/leetcode/' | relative_url }}">Back to library</a>
+      {% if latest_attempt.problem_url %}
+      <a class="leetcode-link-chip" href="{{ latest_attempt.problem_url }}">LeetCode</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>Timeline Shape</h2>
+      <p>Bars are normalized inside this problem, so the widest bar is the largest attempt in that metric.</p>
+    </div>
+    <div class="leetcode-evolution-rail">
+      {% for attempt in group.entries %}
+      <a class="leetcode-evolution-rail__item" href="#attempt-{{ attempt.attempt_number }}">
+        <span class="leetcode-evolution-rail__date">{{ attempt.display_date }}</span>
+        <span class="leetcode-evolution-rail__bar">
+          <span style="width: {{ attempt.solution_line_percent }}%"></span>
+        </span>
+        <span class="leetcode-evolution-rail__bar leetcode-evolution-rail__bar--thoughts">
+          <span style="width: {{ attempt.thought_line_percent }}%"></span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>Attempt Gallery</h2>
+      <p>Each card is a daily post, with local deltas from the previous attempt.</p>
+    </div>
+    <div class="leetcode-evolution-gallery">
+      {% for attempt in group.entries %}
+      <article id="attempt-{{ attempt.attempt_number }}" class="leetcode-evolution-attempt leetcode-card--{{ attempt.difficulty }}">
+        {% if attempt.image_url %}
+        <a class="leetcode-evolution-attempt__media" href="{{ attempt.page_url | relative_url }}">
+          <img src="{{ attempt.image_url | relative_url }}" alt="" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="leetcode-card__top">
+          <p class="leetcode-card__date">Attempt {{ attempt.attempt_number }} · {{ attempt.display_date }}</p>
+          <span class="leetcode-pill leetcode-pill--{{ attempt.difficulty }}">{{ attempt.difficulty }}</span>
+        </div>
+        <h3 class="leetcode-card__title"><a href="{{ attempt.page_url | relative_url }}">{{ attempt.display_title }}</a></h3>
+        <div class="leetcode-evolution-bars">
+          <div>
+            <span>Solution</span>
+            <strong>{% if attempt.solution_lines %}{{ attempt.solution_lines }} lines{% else %}n/a{% endif %}</strong>
+            <div><span style="width: {{ attempt.solution_line_percent }}%"></span></div>
+          </div>
+          <div>
+            <span>Thoughts</span>
+            <strong>{{ attempt.thought_lines }} lines</strong>
+            <div><span style="width: {{ attempt.thought_line_percent }}%"></span></div>
+          </div>
+        </div>
+        <div class="leetcode-collection-flags">
+          {% if attempt.solution_line_bucket %}<span>{{ attempt.solution_line_bucket }}</span>{% endif %}
+          {% if attempt.solution_language %}<span>{{ attempt.solution_language }}</span>{% endif %}
+          {% if attempt.max_minute_marker %}<span>{{ attempt.max_minute_marker }} min</span>{% endif %}
+          {% if attempt.unsolved %}<span>stuck</span>{% endif %}
+          {% if attempt.almost_gave_up %}<span>almost gave up</span>{% endif %}
+        </div>
+        {% if attempt.attempt_number > 1 %}
+        <div class="leetcode-evolution-deltas">
+          <span>{{ attempt.days_since_previous }} days later</span>
+          <span>lines {% if attempt.solution_line_delta_from_previous %}{% if attempt.solution_line_delta_from_previous > 0 %}+{% endif %}{{ attempt.solution_line_delta_from_previous }}{% else %}n/a{% endif %}</span>
+          <span>chars {% if attempt.solution_char_delta_from_previous %}{% if attempt.solution_char_delta_from_previous > 0 %}+{% endif %}{{ attempt.solution_char_delta_from_previous }}{% else %}n/a{% endif %}</span>
+          <span>thoughts {% if attempt.thought_line_delta_from_previous %}{% if attempt.thought_line_delta_from_previous > 0 %}+{% endif %}{{ attempt.thought_line_delta_from_previous }}{% else %}n/a{% endif %}</span>
+        </div>
+        {% endif %}
+        {% if attempt.takeaway %}
+        <p class="leetcode-card__takeaway">{{ attempt.takeaway }}</p>
+        {% endif %}
+        <div class="leetcode-card__links">
+          <a href="{{ attempt.page_url | relative_url }}">Full post</a>
+          {% if attempt.problem_url %}<a href="{{ attempt.problem_url }}">LeetCode</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="leetcode-section">
+    <div class="leetcode-section__head">
+      <h2>What Changed</h2>
+      <p>Compact generated readout from the first and latest attempts.</p>
+    </div>
+    <div class="leetcode-evolution-readout">
+      <article>
+        <span>Solution size</span>
+        <strong>{{ group.solution_line_trend }}</strong>
+        <p>
+          {% if group.solution_line_delta %}
+          {% if group.solution_line_delta > 0 %}+{% endif %}{{ group.solution_line_delta }} lines,
+          {% if group.solution_char_delta > 0 %}+{% endif %}{{ group.solution_char_delta }} chars.
+          {% else %}
+          No complete first-to-latest code metric.
+          {% endif %}
+        </p>
+      </article>
+      <article>
+        <span>Thinking trace</span>
+        <strong>{{ group.thought_line_trend }}</strong>
+        <p>{% if group.thought_line_delta %}{% if group.thought_line_delta > 0 %}+{% endif %}{{ group.thought_line_delta }} lines between first and latest attempt.{% else %}No complete first-to-latest thought metric.{% endif %}</p>
+      </article>
+      <article>
+        <span>Best snapshot</span>
+        <strong>{% if group.best_solution %}{{ group.best_solution.display_date }}{% else %}n/a{% endif %}</strong>
+        <p>{% if group.best_solution %}{{ group.best_solution.solution_lines }} lines, {{ group.best_solution.solution_chars }} chars.{% else %}No measured solution block found.{% endif %}</p>
+      </article>
+      <article>
+        <span>Honesty markers</span>
+        <strong>{% if group.solved_after_stuck %}comeback{% else %}{{ group.stuck_count }} stuck{% endif %}</strong>
+        <p>{{ group.stuck_count }} stuck attempts, {{ group.one_liner_count }} one-liner attempts.</p>
+      </article>
+    </div>
+  </section>
+  {% else %}
+  <div class="leetcode-note">
+    <p>This evolution page could not be resolved from generated LeetCode data. Re-run the generator.</p>
+  </div>
+  {% endif %}
+</section>
