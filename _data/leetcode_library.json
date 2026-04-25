@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-04-24T07:56:16Z",
+  "generated_at": "2026-04-25T11:15:19Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1267,
+    "entry_count": 1268,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 792
+    "rust_count": 793
   },
   "years": [
     {
       "value": "2026",
       "label": "2026",
-      "count": 111,
+      "count": 112,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -43,13 +43,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1261,
+      "count": 1262,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 792,
+      "count": 793,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -75,7 +75,7 @@
     {
       "slug": "sorting",
       "label": "Sorting",
-      "count": 153,
+      "count": 154,
       "url": "/leetcode/pattern/sorting/"
     },
     {
@@ -99,7 +99,7 @@
     {
       "slug": "binary-search",
       "label": "Binary Search",
-      "count": 80,
+      "count": 81,
       "url": "/leetcode/pattern/binary-search/"
     },
     {
@@ -206,6 +206,39 @@
     }
   ],
   "entries": [
+    {
+      "slug": "2026-04-25-3464-maximize-the-distance-between-points-on-a-square",
+      "date": "2026-04-25",
+      "display_date": "25.04.2026",
+      "year": "2026",
+      "problem_id": 3464,
+      "title": "Maximize the Distance Between Points on a Square",
+      "display_title": "3464. Maximize the Distance Between Points on a Square",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "binary-search",
+        "sorting"
+      ],
+      "pattern_labels": [
+        "Binary Search",
+        "Sorting"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/solutions/8096752/kotlin-rust-by-samoylenkodmitry-po6k/",
+      "kotlin_url": "https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/solutions/8096752/kotlin-rust-by-samoylenkodmitry-po6k/",
+      "rust_url": "https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/solutions/8096752/kotlin-rust-by-samoylenkodmitry-po6k/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/25042026-3464-maximize-the-distance?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/OkqspE2lZDA",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1339",
+      "image_url": "/assets/leetcode_daily_images/25.04.2026.webp",
+      "takeaway": "Max of minimum distnace between selected k points on square perimeter",
+      "page_url": "/leetcode/problem/2026-04-25-3464-maximize-the-distance-between-points-on-a-square/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-04-24-2833-furthest-point-from-origin",
       "date": "2026-04-24",
