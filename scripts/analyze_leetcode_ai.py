@@ -384,7 +384,6 @@ def main() -> int:
         print("No LeetCode AI analysis is pending.")
         return 0
 
-    blocks = cache["blocks"]
     for index, item in enumerate(items, start=1):
         entry = item.entry
         print(f"Analyzing {index}/{len(items)}: {entry['date']} {entry['display_title']} ({item.reason})")
@@ -396,7 +395,7 @@ def main() -> int:
             print(f"AI analysis stopped: {error}", file=sys.stderr)
             break
 
-        blocks[str(entry["date"])] = {
+        cache["blocks"][str(entry["date"])] = {
             "status": "analyzed",
             "date": entry["date"],
             "display_date": entry["display_date"],
