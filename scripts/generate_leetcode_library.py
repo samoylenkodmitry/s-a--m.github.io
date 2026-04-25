@@ -900,6 +900,18 @@ def normalize_ai_analysis(value: object) -> dict[str, object] | None:
     return analysis
 
 
+def ai_cache_record_for_entry(blocks: dict[str, object], entry: dict[str, object]) -> dict[str, object] | None:
+    slug_key = str(entry["slug"])
+    record = blocks.get(slug_key)
+    if isinstance(record, dict):
+        return record
+
+    date_record = blocks.get(str(entry["date"]))
+    if isinstance(date_record, dict) and date_record.get("slug") == slug_key:
+        return date_record
+    return None
+
+
 def attach_ai_analysis(entries: list[dict[str, object]], source_blocks: list[tuple[str, list[str]]]) -> None:
     cache = load_ai_analysis_cache()
     blocks = cache.get("blocks", {})
@@ -907,8 +919,8 @@ def attach_ai_analysis(entries: list[dict[str, object]], source_blocks: list[tup
         return
 
     for entry, (date_display, block_lines) in zip(entries, source_blocks):
-        record = blocks.get(str(entry["date"]))
-        if not isinstance(record, dict):
+        record = ai_cache_record_for_entry(blocks, entry)
+        if record is None:
             continue
         if record.get("status") != "analyzed":
             continue

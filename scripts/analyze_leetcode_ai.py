@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -104,6 +105,18 @@ def normalize_date_arg(value: str) -> str:
     return date_display_to_iso(value)
 
 
+def cache_record_for_entry(blocks: dict[str, Any], entry: dict[str, object]) -> dict[str, Any] | None:
+    slug_key = str(entry["slug"])
+    record = blocks.get(slug_key)
+    if isinstance(record, dict):
+        return record
+
+    date_record = blocks.get(str(entry["date"]))
+    if isinstance(date_record, dict) and date_record.get("slug") == slug_key:
+        return date_record
+    return None
+
+
 def select_work_items(
     source_path: Path,
     cache: dict[str, Any],
@@ -124,7 +137,7 @@ def select_work_items(
             continue
 
         digest = source_block_hash(date_display, block_lines)
-        record = blocks.get(date_iso)
+        record = cache_record_for_entry(blocks, entry)
         reason = ""
         if force:
             reason = "forced"
@@ -356,6 +369,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--soft-fail", action="store_true", help="Print AI errors and keep the workflow green")
     parser.add_argument("--timeout", type=int, default=120)
+    parser.add_argument("--request-delay", type=float, default=float(os.environ.get("LEETCODE_AI_REQUEST_DELAY", "0")))
+    parser.add_argument("--retry-delay", type=float, default=float(os.environ.get("LEETCODE_AI_RETRY_DELAY", "120")))
+    parser.add_argument("--max-retries", type=int, default=int(os.environ.get("LEETCODE_AI_MAX_RETRIES", "3")))
     return parser.parse_args()
 
 
@@ -387,15 +403,25 @@ def main() -> int:
     for index, item in enumerate(items, start=1):
         entry = item.entry
         print(f"Analyzing {index}/{len(items)}: {entry['date']} {entry['display_title']} ({item.reason})")
-        try:
-            analysis = analyze_item(args, item)
-        except Exception as error:
-            if not args.soft_fail:
-                raise
-            print(f"AI analysis stopped: {error}", file=sys.stderr)
-            break
+        retry_count = 0
+        while True:
+            try:
+                analysis = analyze_item(args, item)
+                break
+            except Exception as error:
+                retryable = "HTTP 429" in str(error) or "Too Many Requests" in str(error)
+                if retryable and retry_count < args.max_retries:
+                    retry_count += 1
+                    delay = args.retry_delay * retry_count
+                    print(f"Rate limited; retrying in {delay:g}s ({retry_count}/{args.max_retries})", file=sys.stderr)
+                    time.sleep(delay)
+                    continue
+                if not args.soft_fail:
+                    raise
+                print(f"AI analysis stopped: {error}", file=sys.stderr)
+                return 0
 
-        cache["blocks"][str(entry["date"])] = {
+        cache["blocks"][str(entry["slug"])] = {
             "status": "analyzed",
             "date": entry["date"],
             "display_date": entry["display_date"],
@@ -409,6 +435,8 @@ def main() -> int:
             "analysis": analysis,
         }
         save_cache(args.cache, cache)
+        if args.request_delay > 0 and index < len(items):
+            time.sleep(args.request_delay)
 
     return 0
 
