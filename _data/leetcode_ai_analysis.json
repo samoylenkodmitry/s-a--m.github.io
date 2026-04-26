@@ -39866,7 +39866,88 @@
         "manual_review": true,
         "confidence": 0.9
       }
+    },
+    "2024-01-27-629-k-inverse-pairs-array": {
+      "status": "analyzed",
+      "date": "2024-01-27",
+      "display_date": "27.01.2024",
+      "slug": "2024-01-27-629-k-inverse-pairs-array",
+      "display_title": "629. K Inverse Pairs Array",
+      "source_hash": "566ce90e3d5f3157d4853f1cfb362864ce4e4bad5257667c12c5c9d70625aedc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:45:53Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "AI analysis failed; manual review needed: Unterminated string starting at: line 13 column 15 (char 640)",
+        "manual_review": true,
+        "confidence": 0.0
+      }
+    },
+    "2024-01-26-576-out-of-boundary-paths": {
+      "status": "analyzed",
+      "date": "2024-01-26",
+      "display_date": "26.01.2024",
+      "slug": "2024-01-26-576-out-of-boundary-paths",
+      "display_title": "576. Out of Boundary Paths",
+      "source_hash": "e71cec4fbf6396a58d940bc4bca16855e2d8bcaa015689d0db41e2e05aa3ff31",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:46:09Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          },
+          {
+            "slug": "map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "Depth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "Memoization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "brute-force",
+            "label": "Brute-Force",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "grid",
+            "label": "Grid",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pathfinding",
+            "label": "Pathfinding",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using Depth-First Search with memoization to count paths from a starting cell to the boundary within a maximum number of moves.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T10:27:13Z"
+  "updated_at": "2026-04-26T10:46:09Z"
 }
