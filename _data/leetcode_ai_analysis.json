@@ -54622,7 +54622,1655 @@
         "manual_review": false,
         "confidence": 0.9
       }
+    },
+    "2023-03-21-2348-number-of-zero-filled-subarrays": {
+      "status": "analyzed",
+      "date": "2023-03-21",
+      "display_date": "21.03.2023",
+      "slug": "2023-03-21-2348-number-of-zero-filled-subarrays",
+      "display_title": "2348. Number of Zero-Filled Subarrays",
+      "source_hash": "84c149ee2023db266e5d8936f1940b2b4ee62d52e460750109f76c3ffa540900",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:39:23Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iteratively counting consecutive zero-filled subarrays based on the length of the current sequence of zeros.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-20-605-can-place-flowers": {
+      "status": "analyzed",
+      "date": "2023-03-20",
+      "display_date": "20.03.2023",
+      "slug": "2023-03-20-605-can-place-flowers",
+      "display_title": "605. Can Place Flowers",
+      "source_hash": "90177af4a8815797644e248bbedd9d3494cf647b7b2b415c72e285159cc2d7af",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:39:28Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by a greedy approach to maximize the number of flowers placed.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-19-211-design-add-and-search-words-data-structure": {
+      "status": "analyzed",
+      "date": "2023-03-19",
+      "display_date": "19.03.2023",
+      "slug": "2023-03-19-211-design-add-and-search-words-data-structure",
+      "display_title": "211. Design Add and Search Words Data Structure",
+      "source_hash": "00911b967c1e770e8237767188393d68f3abc7fd24598449bba80cd7216c0a93",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:39:54Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "trie",
+            "label": "trie",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "deque",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "wildcard_handling",
+            "label": "wildcard_handling",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "A Trie is used to store words, extended with a search mechanism to handle wildcard characters ('.').",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-18-1472-design-browser-history": {
+      "status": "analyzed",
+      "date": "2023-03-18",
+      "display_date": "18.03.2023",
+      "slug": "2023-03-18-1472-design-browser-history",
+      "display_title": "1472. Design Browser History",
+      "source_hash": "19b4057a47ddcacb0030ee3315e4aa85c708cbea73789df1a4116d32a5f784f3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:40:03Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "list",
+            "label": "mutable list",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "implicit array storage",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "list indexing",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution uses a mutable list to store the history and pointers to manage forward and backward navigation.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-17-208-implement-trie-prefix-tree": {
+      "status": "analyzed",
+      "date": "2023-03-17",
+      "display_date": "17.03.2023",
+      "slug": "2023-03-17-208-implement-trie-prefix-tree",
+      "display_title": "208. Implement Trie (Prefix Tree)",
+      "source_hash": "20c852c57ec570f3fed270d692407cd25f744d80ab564cb2132774a4f8ea72cf",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:40:22Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "trie",
+            "label": "Trie",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "Array",
+            "confidence": 0.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Implements a Trie (Prefix Tree) for efficient string prefix searching.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-16-106-construct-binary-tree-from-inorder-and-postorder-traversal": {
+      "status": "analyzed",
+      "date": "2023-03-16",
+      "display_date": "16.03.2023",
+      "slug": "2023-03-16-106-construct-binary-tree-from-inorder-and-postorder-traversal",
+      "display_title": "106. Construct Binary Tree from Inorder and Postorder Traversal",
+      "source_hash": "8ac050b5dccb53a800a1dcc86e3fa3421aaffa203574b579988165938f15f73c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:40:34Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "index-mapping",
+            "label": "index-mapping",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by recursively constructing the binary tree using inorder and postorder traversals and a hash map to quickly locate elements.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-15-958-check-completeness-of-a-binary-tree": {
+      "status": "analyzed",
+      "date": "2023-03-15",
+      "display_date": "15.03.2023",
+      "slug": "2023-03-15-958-check-completeness-of-a-binary-tree",
+      "display_title": "958. Check Completeness of a Binary Tree",
+      "source_hash": "d67d701655fdb42b3a73cee572f9bed0e4bfd4f6bc9a48575bb5c0ceb33d7850",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:40:56Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "binary tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "depth-first search",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recursion",
+            "label": "recursive traversal",
+            "confidence": 1.0
+          },
+          {
+            "slug": "min_max_tracking",
+            "label": "tracking min and max depth",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "binary tree",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by recursively checking the completeness property of the left and right subtrees by tracking their minimum and maximum depths.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-14-129-sum-root-to-leaf-numbers": {
+      "status": "analyzed",
+      "date": "2023-03-14",
+      "display_date": "14.03.2023",
+      "slug": "2023-03-14-129-sum-root-to-leaf-numbers",
+      "display_title": "129. Sum Root to Leaf Numbers",
+      "source_hash": "a4fbb76689f75263ff1996e2c991751c554ebeb50a214745f7c5a0f5a0bbf623",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:41:12Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "TreeNode",
+            "confidence": 1.0
+          },
+          {
+            "slug": "stack",
+            "label": "implicit_recursion",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recursion",
+            "label": "recursive_traversal",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree_traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a depth-first search to traverse the tree and sum the values of the leaf nodes.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-13-101-symmetric-tree": {
+      "status": "analyzed",
+      "date": "2023-03-13",
+      "display_date": "13.03.2023",
+      "slug": "2023-03-13-101-symmetric-tree",
+      "display_title": "101. Symmetric Tree",
+      "source_hash": "653834978fdcca95620fbbdc4229a8c22459ba5a27bdfa74cdb0a471f4e1734a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:41:42Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "ArrayDeque",
+            "confidence": 0.9
+          },
+          {
+            "slug": "stack",
+            "label": "Stack",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "Recursion",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bfs",
+            "label": "Breadth-First Search",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "stack_usage",
+            "label": "Stack usage for level-order traversal simulation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "recursive_comparison",
+            "label": "Recursive comparison of mirrored subtrees",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "Tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 0.0
+          }
+        ],
+        "summary": "Symmetric tree checking can be solved recursively by comparing mirrored subtrees or iteratively using a stack to simulate level-order traversal.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-12-23-merge-k-sorted-lists": {
+      "status": "analyzed",
+      "date": "2023-03-12",
+      "display_date": "12.03.2023",
+      "slug": "2023-03-12-23-merge-k-sorted-lists",
+      "display_title": "23. Merge k Sorted Lists",
+      "source_hash": "9fa680c3ee7eddda6b2666c748e4d777f9a8a71b0387eb8536500e38e6c06066",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:41:59Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "priority-queue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "merge",
+            "label": "merge",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dummy-head",
+            "label": "dummy-head",
+            "confidence": 1.0
+          },
+          {
+            "slug": "priority-queue",
+            "label": "priority-queue",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "lists",
+            "label": "lists",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by merging k sorted lists, either by using a min-heap (priority queue) or iteratively merging pairs of lists.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-11-109-convert-sorted-list-to-binary-search-tree": {
+      "status": "analyzed",
+      "date": "2023-03-11",
+      "display_date": "11.03.2023",
+      "slug": "2023-03-11-109-convert-sorted-list-to-binary-search-tree",
+      "display_title": "109. Convert Sorted List to Binary Search Tree",
+      "source_hash": "fef3fdb86d23466b46563b959795ac609f31318fd8e6d6943d2efa209b6927c8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:42:26Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "ListNode",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary-search-tree",
+            "label": "TreeNode",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "recursive_divide_and_conquer",
+            "confidence": 0.9
+          },
+          {
+            "slug": "divide-and-conquer",
+            "label": "divide_and_conquer",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "divide-and-conquer",
+            "label": "middle_finding",
+            "confidence": 0.8
+          },
+          {
+            "slug": "recursion",
+            "label": "recursive_construction",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "trees",
+            "label": "binary_search_tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "lists",
+            "label": "linked_list",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The sorted list is recursively divided to construct a balanced Binary Search Tree.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-03-10-382-linked-list-random-node": {
+      "status": "analyzed",
+      "date": "2023-03-10",
+      "display_date": "10.03.2023",
+      "slug": "2023-03-10-382-linked-list-random-node",
+      "display_title": "382. Linked List Random Node",
+      "source_hash": "5a78940cd33dc669d6184f213d9c18654f9e72344fd7c9ede5e526ecfe2a498c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:42:44Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "ListNode",
+            "confidence": 1.0
+          },
+          {
+            "slug": "random",
+            "label": "Random",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "reservoir-sampling",
+            "label": "Reservoir Sampling",
+            "confidence": 0.9
+          },
+          {
+            "slug": "linear-scan",
+            "label": "Linear Scan",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "reservoir-sampling",
+            "label": "Reservoir Sampling",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bucket-selection",
+            "label": "Bucket Selection",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "Linked List",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution uses a variation of reservoir sampling to randomly select an element from a linked list in linear time and constant space.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-03-09-142-linked-list-cycle-ii": {
+      "status": "analyzed",
+      "date": "2023-03-09",
+      "display_date": "09.03.2023",
+      "slug": "2023-03-09-142-linked-list-cycle-ii",
+      "display_title": "142. Linked List Cycle II",
+      "source_hash": "dbe31f31b30bc36559bd82cd0160d8618b9b040b32dc6c56a5472172f927273e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:43:07Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pointer",
+            "label": "two-pointer",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "slow-fast",
+            "label": "slow-fast",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "cycle-detection",
+            "label": "cycle-detection",
+            "confidence": 1.0
+          },
+          {
+            "slug": "meeting-point-finding",
+            "label": "meeting-point-finding",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The algorithm uses the slow and fast pointer technique to detect a cycle in a linked list and then finds the starting node of that cycle.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-08-875-koko-eating-bananas": {
+      "status": "analyzed",
+      "date": "2023-03-08",
+      "display_date": "08.03.2023",
+      "slug": "2023-03-08-875-koko-eating-bananas",
+      "display_title": "875. Koko Eating Bananas",
+      "source_hash": "3ad9bd328fe122f2a20bf3e822560cb7973b445cd56c951307317079405fdcd8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:43:23Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "piles",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "search",
+            "label": "search",
+            "confidence": 1.0
+          },
+          {
+            "slug": "optimization",
+            "label": "optimization",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by binary searching for the minimum eating speed that allows Koko to eat all bananas within the allowed hours.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-07-2187-minimum-time-to-complete-trips": {
+      "status": "analyzed",
+      "date": "2023-03-07",
+      "display_date": "07.03.2023",
+      "slug": "2023-03-07-2187-minimum-time-to-complete-trips",
+      "display_title": "2187. Minimum Time to Complete Trips",
+      "source_hash": "c658211d3f875f8ac7bb4bd365f3c682b0e60c588cf29789ce59c7793fc86c99",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:43:36Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by performing a binary search on the possible time range to find the minimum time required to complete a total number of trips.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-06-1539-kth-missing-positive-number": {
+      "status": "analyzed",
+      "date": "2023-03-06",
+      "display_date": "06.03.2023",
+      "slug": "2023-03-06-1539-kth-missing-positive-number",
+      "display_title": "1539. Kth Missing Positive Number",
+      "source_hash": "9680513fcc6190a6e4c02aaba1c40049ac00602899db705a2ca31b894c23c32e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:43:50Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "binary-search",
+            "label": "binary-search",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "arithmetic-manipulation",
+            "label": "arithmetic-manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved efficiently using binary search to find the Kth missing positive number by leveraging the relationship between array elements and their indices.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-05-1345-jump-game-iv": {
+      "status": "analyzed",
+      "date": "2023-03-05",
+      "display_date": "05.03.2023",
+      "slug": "2023-03-05-1345-jump-game-iv",
+      "display_title": "1345. Jump Game IV",
+      "source_hash": "1015bc337b1b9e7702ea8d1cbf465785d35969212339c89a5f8be939dcb683b5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:44:17Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "numToPos",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "ArrayDeque",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "visited",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breath-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "graph-traversal",
+            "label": "bfs_with_pruning",
+            "confidence": 1.0
+          },
+          {
+            "slug": "visited-set",
+            "label": "cycle-handling",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "jump_game",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "array_traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by treating the array as a graph and finding the shortest path using Breadth-First Search with pruning of visited nodes.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-04-2444-count-subarrays-with-fixed-bounds": {
+      "status": "analyzed",
+      "date": "2023-03-04",
+      "display_date": "04.03.2023",
+      "slug": "2023-03-04-2444-count-subarrays-with-fixed-bounds",
+      "display_title": "2444. Count Subarrays With Fixed Bounds",
+      "source_hash": "2c9731733ffe92713720676aecccac2bc286055cba5a4706b2517329ef9c9946",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:44:34Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "treeSet",
+            "label": "TreeSet",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two-pointers",
+            "label": "Two Pointers",
+            "confidence": 0.8
+          },
+          {
+            "slug": "sorting",
+            "label": "Sorting",
+            "confidence": 0.7
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix-sum",
+            "label": "Prefix Sum",
+            "confidence": 0.5
+          },
+          {
+            "slug": "combinatorics",
+            "label": "Combinatorics",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 0.5
+          }
+        ],
+        "summary": "The problem involves counting subarrays where all elements fall within a fixed range [minK, maxK], utilizing positional tracking of min and max elements.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-03-03-28-find-the-index-of-the-first-occurrence-in-a-string": {
+      "status": "analyzed",
+      "date": "2023-03-03",
+      "display_date": "03.03.2023",
+      "slug": "2023-03-03-28-find-the-index-of-the-first-occurrence-in-a-string",
+      "display_title": "28. Find the Index of the First Occurrence in a String",
+      "source_hash": "a939021bbe205c5e2479c61a6bcebfbaae36c7804be8e5c2d5bf3ee11aa53037",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:44:56Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "rolling-hash",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "rolling-hash",
+            "label": "string-matching",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "rolling-hash",
+            "label": "polynomial-rolling-hash",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string-matching",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using a rolling hash technique to efficiently find the first occurrence of a pattern in a string.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-03-02-443-string-compression": {
+      "status": "analyzed",
+      "date": "2023-03-02",
+      "display_date": "02.03.2023",
+      "slug": "2023-03-02-443-string-compression",
+      "display_title": "443. String Compression",
+      "source_hash": "fade0aa5872ae0a6f960709e0a01f9f29fd1c4a3137a2e82ead9c7065b1aa5e5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:45:02Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating through the string and performing in-place compression of consecutive repeating characters.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-03-01-912-sort-an-array": {
+      "status": "analyzed",
+      "date": "2023-03-01",
+      "display_date": "01.03.2023",
+      "slug": "2023-03-01-912-sort-an-array",
+      "display_title": "912. Sort an Array",
+      "source_hash": "9303782076610f0ff13fb5d542498565b32deb90434cfecaf6ae3452cd3a88ee",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:45:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "quicksort",
+            "label": "quicksort",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "in-place-quicksort",
+            "label": "in-place-quicksort",
+            "confidence": 0.9
+          },
+          {
+            "slug": "tail_recursion",
+            "label": "tail_recursion",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution implements the in-place quicksort algorithm to sort an array.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-28-652-find-duplicate-subtrees": {
+      "status": "analyzed",
+      "date": "2023-02-28",
+      "display_date": "28.02.2023",
+      "slug": "2023-02-28-652-find-duplicate-subtrees",
+      "display_title": "652. Find Duplicate Subtrees",
+      "source_hash": "e8623ce95b037b67acd219cd510a980cf9034d238bcebf3a3f084105fa3592ba",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:45:40Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-set",
+            "label": "HashSet",
+            "confidence": 1.0
+          },
+          {
+            "slug": "string",
+            "label": "String",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "DFS",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "preorder-traversal",
+            "label": "Preorder Traversal",
+            "confidence": 1.0
+          },
+          {
+            "slug": "serialization",
+            "label": "Serialization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "Tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a preorder traversal and serializing each subtree into a string to detect duplicate subtrees.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-27-427-construct-quad-tree": {
+      "status": "analyzed",
+      "date": "2023-02-27",
+      "display_date": "27.02.2023",
+      "slug": "2023-02-27-427-construct-quad-tree",
+      "display_title": "427. Construct Quad Tree",
+      "source_hash": "572b1e073d1bd5bc22d303e15d1be129005562e442c0d7d527dc00fa49011a87",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:46:04Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "Node",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "grid",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "Depth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "divide_and_conquer",
+            "label": "Divide and Conquer",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "Quad Tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "geometry",
+            "label": "Grid traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The quad tree is constructed recursively by dividing the grid into four quadrants and recursively building subtrees.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-26-72-edit-distance": {
+      "status": "analyzed",
+      "date": "2023-02-26",
+      "display_date": "26.02.2023",
+      "slug": "2023-02-26-72-edit-distance",
+      "display_title": "72. Edit Distance",
+      "source_hash": "894ac0a2ae02fd078f1bb814ff44efc10b6f0a96eb77ef841a8b304ecfde8b67",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:46:16Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "dp_table",
+            "confidence": 1.0
+          },
+          {
+            "slug": "memoization",
+            "label": "dp_table",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "top-down_dp",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "edit_distance",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming with memoization to find the minimum number of operations (insert, delete, replace) required to change one string into the other.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-25-121-best-time-to-buy-and-sell-stock": {
+      "status": "analyzed",
+      "date": "2023-02-25",
+      "display_date": "25.02.2023",
+      "slug": "2023-02-25-121-best-time-to-buy-and-sell-stock",
+      "display_title": "121. Best Time to Buy and Sell Stock",
+      "source_hash": "0235fe7e6be8e2a379219ce144a853855d14c3945ad758603d5cccd5582cd5ce",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:46:32Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "prices",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The maximum profit is found by tracking the minimum price seen so far and calculating the difference with the current price.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-24-1675-minimize-deviation-in-array": {
+      "status": "analyzed",
+      "date": "2023-02-24",
+      "display_date": "24.02.2023",
+      "slug": "2023-02-24-1675-minimize-deviation-in-array",
+      "display_title": "1675. Minimize Deviation in Array",
+      "source_hash": "a29d097354f4ed7012bc2bbdf0ee717b19adc9bdd97e4459d6ae5788e427191b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:46:45Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "treiset",
+            "label": "tree_set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "binary_search",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "range_transformation",
+            "label": "multiplication_and_division_by_two",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by transforming the array elements and iteratively minimizing the difference between the maximum and minimum elements using a TreeSet.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-02-23-502-ipo": {
+      "status": "analyzed",
+      "date": "2023-02-23",
+      "display_date": "23.02.2023",
+      "slug": "2023-02-23-502-ipo",
+      "display_title": "502. IPO",
+      "source_hash": "d0070222246b169564d874a781773087e385e8dcebe1bc29ddd41b35c824f756",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:47:08Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority_queue",
+            "label": "heap",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "optimization",
+            "label": "optimization",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting items based on their capital requirements and using a max-profit priority queue to greedily select the most profitable items within the current budget.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-22-1011-capacity-to-ship-packages-within-d-days": {
+      "status": "analyzed",
+      "date": "2023-02-22",
+      "display_date": "22.02.2023",
+      "slug": "2023-02-22-1011-capacity-to-ship-packages-within-d-days",
+      "display_title": "1011. Capacity To Ship Packages Within D Days",
+      "source_hash": "4abe26b0ee8e3d1625bb1905a8c5dd5f446999ff414ed65d90edace1b9a6e547",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:47:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "weights",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary-search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "optimization",
+            "label": "optimization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "search",
+            "label": "search",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a binary search over the possible range of ship capacities to find the minimum capacity that allows all packages to be shipped within the given number of days.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-21-540-single-element-in-a-sorted-array": {
+      "status": "analyzed",
+      "date": "2023-02-21",
+      "display_date": "21.02.2023",
+      "slug": "2023-02-21-540-single-element-in-a-sorted-array",
+      "display_title": "540. Single Element in a Sorted Array",
+      "source_hash": "25756b328088cf311ce72c34d4a64ce15b49418758fc2d65e56a515b232350b6",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:47:45Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "parity-checking",
+            "label": "parity-checking",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using binary search by exploiting the property that elements before the single element are at even indices and after it are at odd indices.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-20-35-search-insert-position": {
+      "status": "analyzed",
+      "date": "2023-02-20",
+      "display_date": "20.02.2023",
+      "slug": "2023-02-20-35-search-insert-position",
+      "display_title": "35. Search Insert Position",
+      "source_hash": "53005b1e00788dc05da7ac702cc5ce30dbcf1db5353787b31571d86472d5328e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:48:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "nums",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "inclusive-boundaries",
+            "label": "use inclusive boundaries lo and hi",
+            "confidence": 1.0
+          },
+          {
+            "slug": "insertion-point-logic",
+            "label": "return lo position as insertion point",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "search",
+            "label": "search",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a binary search to find the correct insertion position for a target value in a sorted array.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-19-103-binary-tree-zigzag-level-order-traversal": {
+      "status": "analyzed",
+      "date": "2023-02-19",
+      "display_date": "19.02.2023",
+      "slug": "2023-02-19-103-binary-tree-zigzag-level-order-traversal",
+      "display_title": "103. Binary Tree Zigzag Level Order Traversal",
+      "source_hash": "b65a9445765a794885b641ac17b7938e9c26f36d89eea93cfd8bc3b136259214",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:48:26Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "LinkedList",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "ArrayDeque",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "Breadth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "level-order-traversal",
+            "label": "Level Order Traversal",
+            "confidence": 1.0
+          },
+          {
+            "slug": "zigzag-ordering",
+            "label": "Zigzag Ordering",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "Binary Tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "List",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem uses a modified Breadth-First Search to traverse the binary tree level by level and alternate the order of elements in each level.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-18-226-invert-binary-tree": {
+      "status": "analyzed",
+      "date": "2023-02-18",
+      "display_date": "18.02.2023",
+      "slug": "2023-02-18-226-invert-binary-tree",
+      "display_title": "226. Invert Binary Tree",
+      "source_hash": "928eda84cc78ca346fa1daee71475123358ba379e4a22d16f5fcc480ab8df5d1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:48:41Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "binary tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "implicit recursion",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recursion",
+            "label": "recursive function application",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by recursively traversing the tree and swapping the left and right children of each node.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-17-783-minimum-distance-between-bst-nodes": {
+      "status": "analyzed",
+      "date": "2023-02-17",
+      "display_date": "17.02.2023",
+      "slug": "2023-02-17-783-minimum-distance-between-bst-nodes",
+      "display_title": "783. Minimum Distance Between BST Nodes",
+      "source_hash": "4db37fde0ecce45859c381d33c0295c97ee179cc733966d56a1d0086a9f60342",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:49:08Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "bst",
+            "label": "Binary Search Tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linked-list",
+            "label": "Linked List",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "morris-traversal",
+            "label": "Morris Traversal",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "inorder-sequence",
+            "label": "Inorder Traversal for Sequence",
+            "confidence": 1.0
+          },
+          {
+            "slug": "rightmost-left",
+            "label": "Rightmost Left Pointer Setup",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "trees",
+            "label": "Trees",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The minimum distance between BST nodes is found by traversing the in-order sequence and calculating the minimum difference between adjacent elements using Morris Traversal.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-16-104-maximum-depth-of-binary-tree": {
+      "status": "analyzed",
+      "date": "2023-02-16",
+      "display_date": "16.02.2023",
+      "slug": "2023-02-16-104-maximum-depth-of-binary-tree",
+      "display_title": "104. Maximum Depth of Binary Tree",
+      "source_hash": "63460ad70f086f2ad25785fb6e042be4cf8e7c2719251fd101944ef6f7d94721",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:49:20Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "binary tree",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recursion",
+            "label": "recursive depth calculation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "binary tree",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The maximum depth of a binary tree is found by recursively calculating the maximum depth of its left and right subtrees and taking one plus the maximum of those two values.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T12:39:04Z"
+  "updated_at": "2026-04-26T12:49:20Z"
 }
