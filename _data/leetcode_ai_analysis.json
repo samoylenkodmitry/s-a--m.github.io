@@ -50066,7 +50066,1267 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2023-06-18-2328-number-of-increasing-paths-in-a-grid": {
+      "status": "analyzed",
+      "date": "2023-06-18",
+      "display_date": "18.06.2023",
+      "slug": "2023-06-18-2328-number-of-increasing-paths-in-a-grid",
+      "display_title": "2328. Number of Increasing Paths in a Grid",
+      "source_hash": "b6e8b942d3f6e00cfc155bf9d4356a9007cd8bf894754d0ff3e94f3568fd6a79",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:09:04Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "memoization",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "top-down dynamic programming",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "grid",
+            "label": "matrix",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using depth-first search with memoization to count increasing paths in a grid.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-17-1187-make-array-strictly-increasing": {
+      "status": "analyzed",
+      "date": "2023-06-17",
+      "display_date": "17.06.2023",
+      "slug": "2023-06-17-1187-make-array-strictly-increasing",
+      "display_title": "1187. Make Array Strictly Increasing",
+      "source_hash": "27bfa9d3c2149a5bfd143c5584efad739f562d7e1c64b02b8b70a20a72319c88",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:09:22Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          },
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 0.9
+          },
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 0.9
+          },
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using a depth-first search with memoization to find the minimum replacements to make an array strictly increasing.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-06-16-1569-number-of-ways-to-reorder-array-to-get-same-bst": {
+      "status": "analyzed",
+      "date": "2023-06-16",
+      "display_date": "16.06.2023",
+      "slug": "2023-06-16-1569-number-of-ways-to-reorder-array-to-get-same-bst",
+      "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+      "source_hash": "42c7094d2d61d5ce7fae80f101c38fa1ef67ed4676504fe4202e542a5d390554",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:09:50Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "binary search tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "map",
+            "label": "hash map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth first search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "recursive relation with memoization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "combinatorics",
+            "label": "counting permutations based on subtree sizes",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "trees",
+            "label": "binary search tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "permutations",
+            "label": "permutation counting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by recursively calculating the number of ways to form BST permutations based on the sizes of the left and right subtrees using dynamic programming.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-15-1161-maximum-level-sum-of-a-binary-tree": {
+      "status": "analyzed",
+      "date": "2023-06-15",
+      "display_date": "15.06.2023",
+      "slug": "2023-06-15-1161-maximum-level-sum-of-a-binary-tree",
+      "display_title": "1161. Maximum Level Sum of a Binary Tree",
+      "source_hash": "b447c40bbbd947352b92045c320d06ef5b631a3e41108cfa587436401ee20637",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:10:09Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "arraydeque",
+            "label": "queue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "tree",
+            "label": "binary_tree",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth_first_search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "level_order_traversal",
+            "label": "level_order_traversal",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using Breadth-First Search to traverse the binary tree level by level and calculate the sum of each level.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-14-530-minimum-absolute-difference-in-bst": {
+      "status": "analyzed",
+      "date": "2023-06-14",
+      "display_date": "14.06.2023",
+      "slug": "2023-06-14-530-minimum-absolute-difference-in-bst",
+      "display_title": "530. Minimum Absolute Difference in BST",
+      "source_hash": "feea978a391d2249d52dd739f53d4f2c1cc8761db87d7fc18ef140aed7201964",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:10:35Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "bst",
+            "label": "binary-search-tree",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "morris-traversal",
+            "label": "Morris traversal",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "in-order-traversal-difference",
+            "label": "in-order traversal difference",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "trees",
+            "label": "tree",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The minimum absolute difference between adjacent elements in a BST can be found by performing an in-order traversal using an O(1) space Morris traversal.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-13-2352-equal-row-and-column-pairs": {
+      "status": "analyzed",
+      "date": "2023-06-13",
+      "display_date": "13.06.2023",
+      "slug": "2023-06-13-2352-equal-row-and-column-pairs",
+      "display_title": "2352. Equal Row and Column Pairs",
+      "source_hash": "f8d05e80b9d79bd3e92e20204efacbe0f132e0d4951e1ffe03097d606c397aa0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:12:52Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "matrix",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 0.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "hashing",
+            "label": "hashing",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.0
+          }
+        ],
+        "summary": "The problem is solved by hashing rows and columns using a trigonometric function and counting matching hash pairs.",
+        "manual_review": true,
+        "confidence": 0.8
+      }
+    },
+    "2023-06-12-228-summary-ranges": {
+      "status": "analyzed",
+      "date": "2023-06-12",
+      "display_date": "12.06.2023",
+      "slug": "2023-06-12-228-summary-ranges",
+      "display_title": "228. Summary Ranges",
+      "source_hash": "f0c0a1e1870f41df5801813974ff73e328338796420a7aa215174d32d0141b14",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:13:00Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "string",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating through a sorted array and merging adjacent ranges to find the minimum and maximum of each continuous range.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-11-1146-snapshot-array": {
+      "status": "analyzed",
+      "date": "2023-06-11",
+      "display_date": "11.06.2023",
+      "slug": "2023-06-11-1146-snapshot-array",
+      "display_title": "1146. Snapshot Array",
+      "source_hash": "0ce44ed46d6ab0f74563685e0c1a095756469bd3e6f697d46c868481406f4e3a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:13:23Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "list",
+            "label": "list",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pair",
+            "label": "pair",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary-search",
+            "label": "binary-search",
+            "confidence": 1.0
+          },
+          {
+            "slug": "inclusive-range-search",
+            "label": "inclusive-range-search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem requires maintaining historical versions of array elements and using binary search on stored snapshot IDs to retrieve the correct value.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-10-1802-maximum-value-at-a-given-index-in-a-bounded-array": {
+      "status": "analyzed",
+      "date": "2023-06-10",
+      "display_date": "10.06.2023",
+      "slug": "2023-06-10-1802-maximum-value-at-a-given-index-in-a-bounded-array",
+      "display_title": "1802. Maximum Value at a Given Index in a Bounded Array",
+      "source_hash": "9adae63407d965b44d893e9990d9ecb8e2aa01dd9c30fef2787522a374cc1eb9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:13:45Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "none",
+            "label": "mathematical_formula",
+            "confidence": 0.9
+          },
+          {
+            "slug": "binary_search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary_search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "arithmetic_series_sum",
+            "label": "arithmetic_series_sum",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sum_minimization",
+            "label": "sum_minimization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search_on_answer",
+            "label": "binary_search_on_answer",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "mathematics",
+            "label": "mathematics",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using binary search on the possible maximum value, leveraging the arithmetic series sum formula to efficiently check feasibility.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-09-744-find-smallest-letter-greater-than-target": {
+      "status": "analyzed",
+      "date": "2023-06-09",
+      "display_date": "09.06.2023",
+      "slug": "2023-06-09-744-find-smallest-letter-greater-than-target",
+      "display_title": "744. Find Smallest Letter Greater Than Target",
+      "source_hash": "7f4fc53d3f396109d600cddf6c21c496d7eae21a422ac6711de782252080bdde",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:14:09Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "char_array",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary_search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary_search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using binary search on the sorted array of letters to find the smallest character strictly greater than the target.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-08-1351-count-negative-numbers-in-a-sorted-matrix": {
+      "status": "analyzed",
+      "date": "2023-06-08",
+      "display_date": "08.06.2023",
+      "slug": "2023-06-08-1351-count-negative-numbers-in-a-sorted-matrix",
+      "display_title": "1351. Count Negative Numbers in a Sorted Matrix",
+      "source_hash": "184c20e76a80d9d6cda23405ee8a361e862cec40704cd6531ce69bd6e8db1967",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:14:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "grid",
+            "confidence": 1.0
+          },
+          {
+            "slug": "fold",
+            "label": "fold",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "linear_scan",
+            "label": "linear scan",
+            "confidence": 0.9
+          },
+          {
+            "slug": "two_pointers",
+            "label": "two pointers",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "row_wise_optimization",
+            "label": "row wise optimization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "fold_for_sum",
+            "label": "fold for sum",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by leveraging the sorted property of the matrix to efficiently count negative numbers using a row-wise optimization approach.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-06-07-1318-minimum-flips-to-make-a-or-b-equal-to-c": {
+      "status": "analyzed",
+      "date": "2023-06-07",
+      "display_date": "07.06.2023",
+      "slug": "2023-06-07-1318-minimum-flips-to-make-a-or-b-equal-to-c",
+      "display_title": "1318. Minimum Flips to Make a OR b Equal to c",
+      "source_hash": "585699cc15e824dd21634182c264136fcd0c1db2bf79700de0128b5b4089d21d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:14:48Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "bitwise-manipulation",
+            "label": "bitwise-manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bit-counting",
+            "label": "bit-counting",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.0
+          }
+        ],
+        "summary": "The minimum flips required to make (a or b) equal to c is calculated by summing the bit differences between (a or b) and c, and (a and b) and the inverse of c.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-06-1502-can-make-arithmetic-progression-from-sequence": {
+      "status": "analyzed",
+      "date": "2023-06-06",
+      "display_date": "06.06.2023",
+      "slug": "2023-06-06-1502-can-make-arithmetic-progression-from-sequence",
+      "display_title": "1502. Can Make Arithmetic Progression From Sequence",
+      "source_hash": "90d34ffbbfd094e2294f2f68633b123f017554f41930d446e5f4bb85d7dbec51",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:15:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "IntArray",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "Map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sliding-window",
+            "label": "sliding window",
+            "confidence": 0.9
+          },
+          {
+            "slug": "grouping",
+            "label": "grouping",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Sort the array and check if all adjacent differences are the same, which is equivalent to checking if all pairwise differences form a single arithmetic progression.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-05-1232-check-if-it-is-a-straight-line": {
+      "status": "analyzed",
+      "date": "2023-06-05",
+      "display_date": "05.06.2023",
+      "slug": "2023-06-05-1232-check-if-it-is-a-straight-line",
+      "display_title": "1232. Check If It Is a Straight Line",
+      "source_hash": "ad5a2fe4441790ec4d82f0b550269ae1fb6eca5f9936ccb8a172cc79d95ab034",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:15:20Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "slope-comparison",
+            "label": "slope comparison using division and floating point numbers",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "geometry",
+            "label": "coordinate geometry",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by checking if the slope between consecutive points is constant across all points.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-06-04-547-number-of-provinces": {
+      "status": "analyzed",
+      "date": "2023-06-04",
+      "display_date": "04.06.2023",
+      "slug": "2023-06-04-547-number-of-provinces",
+      "display_title": "547. Number of Provinces",
+      "source_hash": "2eee0b646d887d1ae0737a0f641d17873a008e503370930207ce0fcfe709ddad",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:15:37Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "path-compression",
+            "label": "path-compression",
+            "confidence": 1.0
+          },
+          {
+            "slug": "union-by-size",
+            "label": "union-by-size",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the number of connected components in a graph using the Union-Find data structure.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-03-1376-time-needed-to-inform-all-employees": {
+      "status": "analyzed",
+      "date": "2023-06-03",
+      "display_date": "03.06.2023",
+      "slug": "2023-06-03-1376-time-needed-to-inform-all-employees",
+      "display_title": "1376. Time Needed to Inform All Employees",
+      "source_hash": "1197adaf4fdc7b73b69938d8c75147c47b2ef42ab51094a1e2ef8f755e6b69ed",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:15:56Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "Map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "Depth First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "Graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the maximum time required to inform all employees starting from a specific headID using Depth First Search on the employee hierarchy graph.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-02-2101-detonate-the-maximum-bombs": {
+      "status": "analyzed",
+      "date": "2023-06-02",
+      "display_date": "02.06.2023",
+      "slug": "2023-06-02-2101-detonate-the-maximum-bombs",
+      "display_title": "2101. Detonate the Maximum Bombs",
+      "source_hash": "f917e024e3b4261b22e5e578cbfa3234c637962a8aca6775fb1795699cd29001",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:16:10Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "fromTo",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "visited",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "bomb-detonation-graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "geometry",
+            "label": "distance-calculation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by modeling bomb detonations as a graph and using Depth First Search (DFS) to find the maximum chain of detonations.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-06-01-1091-shortest-path-in-binary-matrix": {
+      "status": "analyzed",
+      "date": "2023-06-01",
+      "display_date": "01.06.2023",
+      "slug": "2023-06-01-1091-shortest-path-in-binary-matrix",
+      "display_title": "1091. Shortest Path in Binary Matrix",
+      "source_hash": "e1bd67887eef5eb196356d048e2e68e87048a9bcc141d07f66efa44c3a27828f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:16:31Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "deque",
+            "label": "queue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "grid-traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The shortest path in a binary matrix is found by performing a Breadth-First Search starting from (0,0) to find the minimum number of steps to reach the bottom-right corner.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-31-1396-design-underground-system": {
+      "status": "analyzed",
+      "date": "2023-05-31",
+      "display_date": "31.05.2023",
+      "slug": "2023-05-31-1396-design-underground-system",
+      "display_title": "1396. Design Underground System",
+      "source_hash": "1afca15eee2c6b88ee622072c343014be3dec4e560c984720379e87457ae2209",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:16:41Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pair",
+            "label": "Pair",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "String",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The system uses HashMaps to store cumulative time and count for station transitions to calculate the average travel time.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-30-705-design-hashset": {
+      "status": "analyzed",
+      "date": "2023-05-30",
+      "display_date": "30.05.2023",
+      "slug": "2023-05-30-705-design-hashset",
+      "display_title": "705. Design HashSet",
+      "source_hash": "ef23d3223de00242257a83990d2e2cd719282eec69ac817329ef79d1ad0be8e2",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:17:04Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "open-addressing",
+            "label": "open-addressing",
+            "confidence": 0.0
+          },
+          {
+            "slug": "rehashing",
+            "label": "rehashing",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "A HashSet is implemented using an array of linked lists to handle collisions and dynamic resizing via rehashing.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-29-1603-design-parking-system": {
+      "status": "analyzed",
+      "date": "2023-05-29",
+      "display_date": "29.05.2023",
+      "slug": "2023-05-29-1603-design-parking-system",
+      "display_title": "1603. Design Parking System",
+      "source_hash": "816047d385f4abe25055a3bfdef5efa0614819e0804d0a3f5d0fd7249eb68249",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:17:14Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using an array to store the available spots for each car type and decrementing the count when a car is added.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-28-1547-minimum-cost-to-cut-a-stick": {
+      "status": "analyzed",
+      "date": "2023-05-28",
+      "display_date": "28.05.2023",
+      "slug": "2023-05-28-1547-minimum-cost-to-cut-a-stick",
+      "display_title": "1547. Minimum Cost to Cut a Stick",
+      "source_hash": "3979ac6db8a80cbe616da1f03eff84af6308eb04b8b41da2c265382403a16cca",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:17:38Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "cache",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "caching results of subproblems",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "optimal-partitioning",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The problem is solved using depth-first search with memoization to find the minimum cost of cutting a stick.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-27-1406-stone-game-iii": {
+      "status": "analyzed",
+      "date": "2023-05-27",
+      "display_date": "27.05.2023",
+      "slug": "2023-05-27-1406-stone-game-iii",
+      "display_title": "1406. Stone Game III",
+      "source_hash": "e58fdd8846508e633d325753f22f8e5e2e14c8b41055a344b0a8e48f83e4c26e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:17:53Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "suffix",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "bottom-up dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix-sum",
+            "label": "suffix sum calculation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "memoization/caching",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "stone game",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming by calculating suffix sums and caching the optimal outcome for Alice.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-26-1140-stone-game-ii": {
+      "status": "analyzed",
+      "date": "2023-05-26",
+      "display_date": "26.05.2023",
+      "slug": "2023-05-26-1140-stone-game-ii",
+      "display_title": "1140. Stone Game II",
+      "source_hash": "ae2d59585b079b194609c3e612ef3f26a69834a9e5871d49d1d2d130174abe1a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:18:19Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "IntArray",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "Dynamic Programming",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "Recursion",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix-sum",
+            "label": "Prefix Sum",
+            "confidence": 1.0
+          },
+          {
+            "slug": "memoization",
+            "label": "Memoization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "game",
+            "label": "Game",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using a recursive approach with memoization and prefix sums to determine the optimal outcome for Alice in the Stone Game II.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-25-837-new-21-game": {
+      "status": "analyzed",
+      "date": "2023-05-25",
+      "display_date": "25.05.2023",
+      "slug": "2023-05-25-837-new-21-game",
+      "display_title": "837. New 21 Game",
+      "source_hash": "55ba5eee345f2af9b9d66bed9c96a55827f8b62811b8abca2a52528e05166519",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:18:42Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "cache",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "memoization_with_recurrence",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recurrent-equation-simplification",
+            "label": "algebraic_manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "corner-case-handling",
+            "label": "boundary_condition_analysis",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "mathematics",
+            "label": "probability",
+            "confidence": 1.0
+          },
+          {
+            "slug": "computer_science",
+            "label": "algorithm",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming based on a recursive relationship derived from probability calculations, optimized with memoization.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T12:08:41Z"
+  "updated_at": "2026-04-26T12:18:42Z"
 }
