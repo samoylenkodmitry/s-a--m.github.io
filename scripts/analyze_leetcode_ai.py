@@ -370,6 +370,19 @@ def analyze_item(args: argparse.Namespace, item: WorkItem) -> dict[str, object]:
     return validate_analysis(parse_json_content(content))
 
 
+def fallback_analysis(error: Exception) -> dict[str, object]:
+    message = str(error).splitlines()[0][:160]
+    return {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": f"AI analysis failed; manual review needed: {message}",
+        "manual_review": True,
+        "confidence": 0.0,
+    }
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Analyze uncached LeetCode date blocks with a JSON-output LLM.")
     parser.add_argument("--provider", choices=("github", "lmstudio", "openai-compatible"), default="lmstudio")
@@ -386,6 +399,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ignore-prompt-version", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--soft-fail", action="store_true", help="Print AI errors and keep the workflow green")
+    parser.add_argument("--fallback-on-error", action="store_true", help="Cache a manual-review placeholder instead of blocking on one bad AI response")
     parser.add_argument("--timeout", type=int, default=120)
     parser.add_argument("--max-tokens", type=int, default=int(os.environ.get("LEETCODE_AI_MAX_TOKENS", "800")))
     parser.add_argument("--no-think", action="store_true", default=env_truthy("LEETCODE_AI_NO_THINK"))
@@ -437,6 +451,10 @@ def main() -> int:
                     print(f"Rate limited; retrying in {delay:g}s ({retry_count}/{args.max_retries})", file=sys.stderr)
                     time.sleep(delay)
                     continue
+                if args.fallback_on_error:
+                    print(f"AI analysis fallback for {entry['date']} {entry['display_title']}: {error}", file=sys.stderr)
+                    analysis = fallback_analysis(error)
+                    break
                 if not args.soft_fail:
                     raise
                 print(f"AI analysis stopped: {error}", file=sys.stderr)

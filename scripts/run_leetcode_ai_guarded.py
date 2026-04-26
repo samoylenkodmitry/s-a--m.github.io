@@ -90,6 +90,8 @@ def run_batch(args: argparse.Namespace) -> int:
         command.extend(["--response-format", args.response_format])
     if args.no_think:
         command.append("--no-think")
+    if args.fallback_on_error:
+        command.append("--fallback-on-error")
     if args.max_tokens:
         command.extend(["--max-tokens", str(args.max_tokens)])
 
@@ -129,6 +131,7 @@ def main() -> int:
     parser.add_argument("--request-delay", type=float, default=0)
     parser.add_argument("--response-format", choices=("json_schema", "json_object", "none"), default="json_schema")
     parser.add_argument("--no-think", action="store_true")
+    parser.add_argument("--fallback-on-error", action="store_true")
     parser.add_argument("--max-tokens", type=int, default=0)
     parser.add_argument("--max-temp", type=float, default=94.0)
     parser.add_argument("--warm-temp", type=float, default=88.0)
