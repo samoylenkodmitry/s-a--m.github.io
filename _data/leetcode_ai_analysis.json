@@ -51326,7 +51326,1660 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2023-05-24-2542-maximum-subsequence-score": {
+      "status": "analyzed",
+      "date": "2023-05-24",
+      "display_date": "24.05.2023",
+      "slug": "2023-05-24-2542-maximum-subsequence-score",
+      "display_title": "2542. Maximum Subsequence Score",
+      "source_hash": "c4b11504d60f87730c7f2b34426b526b13d4a0f0e0fd8ef95f79c2b50be82454",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:19:12Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priorityqueue",
+            "label": "priorityqueue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "priorityqueue_for_selection",
+            "label": "priorityqueue_for_selection",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting based on a combined criteria and using a priority queue to maintain the k largest elements for dynamic score calculation.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-23-703-kth-largest-element-in-a-stream": {
+      "status": "analyzed",
+      "date": "2023-05-23",
+      "display_date": "23.05.2023",
+      "slug": "2023-05-23-703-kth-largest-element-in-a-stream",
+      "display_title": "703. Kth Largest Element in a Stream",
+      "source_hash": "e7dc65ea51ede235f59639201e2f6aeb1defe6ce58d2f810ebdf829314f62d79",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:19:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "priority-queue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "stream-maintenance",
+            "label": "stream-maintenance",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "A min-heap (implemented via a priority queue) is used to efficiently track the k-th largest element in a stream of numbers.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-22-347-top-k-frequent-elements": {
+      "status": "analyzed",
+      "date": "2023-05-22",
+      "display_date": "22.05.2023",
+      "slug": "2023-05-22-347-top-k-frequent-elements",
+      "display_title": "347. Top K Frequent Elements",
+      "source_hash": "884a0d246938e646095a5b161d0d4222ec5bdb33c5ad44ad38a34e8fb4c818a5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:19:48Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "frequency mapping",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "bucket storage",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "implicit bucket sort",
+            "confidence": 0.0
+          },
+          {
+            "slug": "hashing",
+            "label": "frequency counting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bucket-sort",
+            "label": "frequency bucketing",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "integer arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hashing",
+            "label": "frequency counting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by first counting element frequencies and then using these frequencies to bucket sort the elements.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-21-934-shortest-bridge": {
+      "status": "analyzed",
+      "date": "2023-05-21",
+      "display_date": "21.05.2023",
+      "slug": "2023-05-21-934-shortest-bridge",
+      "display_title": "934. Shortest Bridge",
+      "source_hash": "526c7963546a4932e42e252bc10247b032ae66a51f3950639b50f3e99fa88643",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:20:06Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "queue",
+            "label": "queue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "bfs",
+            "confidence": 1.0
+          },
+          {
+            "slug": "search",
+            "label": "search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bfs_on_border",
+            "label": "bfs_on_border",
+            "confidence": 1.0
+          },
+          {
+            "slug": "multi_source_bfs",
+            "label": "multi_source_bfs",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "grid",
+            "label": "grid",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The shortest bridge is found by performing a multi-source Breadth-First Search starting from all boundary cells of one island to find the shortest distance to the other.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-20-399-evaluate-division": {
+      "status": "analyzed",
+      "date": "2023-05-20",
+      "display_date": "20.05.2023",
+      "slug": "2023-05-20-399-evaluate-division",
+      "display_title": "399. Evaluate Division",
+      "source_hash": "5e428c0d3cd3e8af0f3c96f3e6165ca95a01303c78c2a8b0a9b51856755d3b22",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:20:32Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "fromTo",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "visited",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "ArrayDeque",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "Breadth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "graph-construction",
+            "label": "building a graph from equations",
+            "confidence": 0.9
+          },
+          {
+            "slug": "path-finding",
+            "label": "using bfs to find path products",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "relationship modeling",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "string-based nodes",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by modeling division as a pathfinding problem on a graph where edge weights represent division values, utilizing Breadth-First Search to find the resulting ratio.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-19-785-is-graph-bipartite": {
+      "status": "analyzed",
+      "date": "2023-05-19",
+      "display_date": "19.05.2023",
+      "slug": "2023-05-19-785-is-graph-bipartite",
+      "display_title": "785. Is Graph Bipartite?",
+      "source_hash": "07a6735d8cecc242c9426712cf0cec7d8eda3352b319bff28f4aa48b75246343",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:20:45Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "graph_representation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "visited_nodes",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "graph_traversal",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-coloring",
+            "label": "bipartite_check",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "bipartite_graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "traversal",
+            "label": "dfs_traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The graph is bipartite if and only if it can be two-colored using Depth First Search (DFS), ensuring no adjacent nodes share the same color.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-18-1557-minimum-number-of-vertices-to-reach-all-nodes": {
+      "status": "analyzed",
+      "date": "2023-05-18",
+      "display_date": "18.05.2023",
+      "slug": "2023-05-18-1557-minimum-number-of-vertices-to-reach-all-nodes",
+      "display_title": "1557. Minimum Number of Vertices to Reach All Nodes",
+      "source_hash": "8d85ac6e2cf405a708b47ac424f1864ce89cdb2a9946fc6799a3cc8b4bfb2e64",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:21:01Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by identifying nodes with no incoming edges to determine the minimum set of vertices required to reach all nodes.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-17-2130-maximum-twin-sum-of-a-linked-list": {
+      "status": "analyzed",
+      "date": "2023-05-17",
+      "display_date": "17.05.2023",
+      "slug": "2023-05-17-2130-maximum-twin-sum-of-a-linked-list",
+      "display_title": "2130. Maximum Twin Sum of a Linked List",
+      "source_hash": "b056dea7a98f87c28af3cea861b4a080743f24b3c0b46f698de76f92837533dc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:21:15Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "Stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linked-list",
+            "label": "Linked List",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two-pointers",
+            "label": "Two Pointers",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "stack-usage",
+            "label": "Stack Usage",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "Linked List",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using two pointers to find the center of the linked list and a stack to store the values of the first half for pairing with the second half.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-16-24-swap-nodes-in-pairs": {
+      "status": "analyzed",
+      "date": "2023-05-16",
+      "display_date": "16.05.2023",
+      "slug": "2023-05-16-24-swap-nodes-in-pairs",
+      "display_title": "24. Swap Nodes in Pairs",
+      "source_hash": "c56a9a39093c8d85573bd4cb70eb90b646aec83bebb4349d47e5894348ec5980",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:21:40Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "ListNode",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dummy",
+            "label": "ListNode",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "iterative",
+            "label": "iteration",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dummy-head",
+            "label": "dummy head",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pointer-manipulation",
+            "label": "pointer manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "linked list",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iteratively swapping adjacent pairs of nodes in a linked list using pointer manipulation.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-15-1721-swapping-nodes-in-a-linked-list": {
+      "status": "analyzed",
+      "date": "2023-05-15",
+      "display_date": "15.05.2023",
+      "slug": "2023-05-15-1721-swapping-nodes-in-a-linked-list",
+      "display_title": "1721. Swapping Nodes in a Linked List",
+      "source_hash": "6a82edbc2d11a251268fc21e6729303c2b433cb6aaa80fe01c336d7763313579",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:21:52Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "ListNode",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two-pointers",
+            "label": "fast and slow pointers",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "fast-slow-pointer-traversal",
+            "label": "finding k-th node",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "list manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using two pointers to identify the nodes at positions k and k+1, and then swapping their values.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-14-1799-maximize-score-after-n-operations": {
+      "status": "analyzed",
+      "date": "2023-05-14",
+      "display_date": "14.05.2023",
+      "slug": "2023-05-14-1799-maximize-score-after-n-operations",
+      "display_title": "1799. Maximize Score After N Operations",
+      "source_hash": "cf91cb553b696ea4e90c4679183ab468024e8ff5a3efccf462da178dee71d33a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:22:15Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bitmask",
+            "label": "bitmask",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bitmask",
+            "label": "bitmask",
+            "confidence": 1.0
+          },
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "combinatorics",
+            "confidence": 1.0
+          },
+          {
+            "slug": "number_theory",
+            "label": "number_theory",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using depth-first search with bitmasking and memoization to explore all possible pairs of GCD sums.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-13-2466-count-ways-to-build-good-strings": {
+      "status": "analyzed",
+      "date": "2023-05-13",
+      "display_date": "13.05.2023",
+      "slug": "2023-05-13-2466-count-ways-to-build-good-strings",
+      "display_title": "2466. Count Ways To Build Good Strings",
+      "source_hash": "6e51090a831d0e95c3f659b2da1321e74263777ef2d626a1b7b75f46632afa16",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:22:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "cache",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "bottom-up",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "memoization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string_counting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "mathematics",
+            "label": "combinatorics",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by counting the number of valid strings using dynamic programming or recursion with memoization based on string length.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-12-2140-solving-questions-with-brainpower": {
+      "status": "analyzed",
+      "date": "2023-05-12",
+      "display_date": "12.05.2023",
+      "slug": "2023-05-12-2140-solving-questions-with-brainpower",
+      "display_title": "2140. Solving Questions With Brainpower",
+      "source_hash": "fe90f726851d34a371c07d318485079c43d261c28a79a50622881b545804c123",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:23:00Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "questions",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hashmap",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bottom-up",
+            "label": "dp_transition",
+            "confidence": 1.0
+          },
+          {
+            "slug": "suffix-optimization",
+            "label": "tail_lookup",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "dynamic-programming",
+            "label": "optimization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "sequence",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming by iterating backward to find the maximum points achievable from a given starting index.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-11-1035-uncrossed-lines": {
+      "status": "analyzed",
+      "date": "2023-05-11",
+      "display_date": "11.05.2023",
+      "slug": "2023-05-11-1035-uncrossed-lines",
+      "display_title": "1035. Uncrossed Lines",
+      "source_hash": "e937594eb70e569b62b331d641656e98f4e86a6109ad5e842e1e745cf51a2514",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:23:15Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash_set",
+            "label": "hash_set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pruning",
+            "label": "pruning",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using a recursive depth-first search with memoization to find the maximum number of non-intersecting lines.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-10-59-spiral-matrix-ii": {
+      "status": "analyzed",
+      "date": "2023-05-10",
+      "display_date": "10.05.2023",
+      "slug": "2023-05-10-59-spiral-matrix-ii",
+      "display_title": "59. Spiral Matrix II",
+      "source_hash": "2341e7d8287e023e2a6e19b5f38adb475b0097fa5d46a4086d1107bf4d05983b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:23:44Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "Array<IntArray> is used to represent the matrix and store results.",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "iteration",
+            "label": "Iterative traversal of the matrix is used to fill the spiral pattern.",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "simulation",
+            "label": "Simulating a robot moving in a spiral pattern to fill the matrix.",
+            "confidence": 1.0
+          },
+          {
+            "slug": "boundary_checking",
+            "label": "Checking boundaries and visited status before moving to the next cell.",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "matrix",
+            "label": "The problem involves generating a spiral matrix.",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "Using 2D arrays to represent the matrix.",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The spiral matrix is generated by simulating a robot moving in a clockwise spiral pattern and filling the matrix sequentially.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-09-54-spiral-matrix": {
+      "status": "analyzed",
+      "date": "2023-05-09",
+      "display_date": "9.05.2023",
+      "slug": "2023-05-09-54-spiral-matrix",
+      "display_title": "54. Spiral Matrix",
+      "source_hash": "f2e60a53f872d7522231baf0ac9d59b01ff98c884237ea5ce7e1ab8655b04d14",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:23:57Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "matrix",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "traversal",
+            "label": "spiral",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "boundary_tracking",
+            "label": "tracking borders and moving them",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "matrix",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The spiral matrix problem is solved by tracking the boundaries of the matrix and iteratively traversing them in a spiral pattern.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-08-1572-matrix-diagonal-sum": {
+      "status": "analyzed",
+      "date": "2023-05-08",
+      "display_date": "8.05.2023",
+      "slug": "2023-05-08-1572-matrix-diagonal-sum",
+      "display_title": "1572. Matrix Diagonal Sum",
+      "source_hash": "53d737855010fd5752539da2f3ff8616f5a1df69c621db719dcf8c20363e0776",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:24:16Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "summation_optimization",
+            "label": "optimized_diagonal_sum_calculation",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "matrix",
+            "label": "matrix_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The diagonal sum is calculated by summing the main diagonal and anti-diagonal while carefully handling the center element to avoid double counting.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-07-1964-find-the-longest-valid-obstacle-course-at-each-position": {
+      "status": "analyzed",
+      "date": "2023-05-07",
+      "display_date": "7.05.2023",
+      "slug": "2023-05-07-1964-find-the-longest-valid-obstacle-course-at-each-position",
+      "display_title": "1964. Find the Longest Valid Obstacle Course at Each Position",
+      "source_hash": "ce1ab5d999f05d74c2b0c848eea816a93c96bdd17f2736b5e6846f6b0bc0c4cd",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:24:34Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "lis_array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search",
+            "label": "binary_search_logic",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic_programming",
+            "label": "longest_increasing_subsequence",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search",
+            "label": "binary_search_optimization",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "lis_optimization",
+            "label": "patience_set_replacement",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "sequences",
+            "label": "subsequence_finding",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "array_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the length of the Longest Increasing Subsequence (LIS) for each position, optimized using a dynamic programming approach combined with binary search.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-06-1498-number-of-subsequences-that-satisfy-the-given-sum-condition": {
+      "status": "analyzed",
+      "date": "2023-05-06",
+      "display_date": "6.05.2023",
+      "slug": "2023-05-06-1498-number-of-subsequences-that-satisfy-the-given-sum-condition",
+      "display_title": "1498. Number of Subsequences That Satisfy the Given Sum Condition",
+      "source_hash": "340da8dbee63bc38e6b87ed291e6ebc05336c6d927628862c254004f67fa4ea1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:25:03Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "nums",
+            "confidence": 1.0
+          },
+          {
+            "slug": "int_array",
+            "label": "nums",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix_sum",
+            "label": "precompute_powers_of_two",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search",
+            "label": "count_excluded_elements",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "subsequences",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "nums",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting the array and using prefix sums of powers of two combined with binary search to count valid subsequences.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-05-1456-maximum-number-of-vowels-in-a-substring-of-given-length": {
+      "status": "analyzed",
+      "date": "2023-05-05",
+      "display_date": "5.05.2023",
+      "slug": "2023-05-05-1456-maximum-number-of-vowels-in-a-substring-of-given-length",
+      "display_title": "1456. Maximum Number of Vowels in a Substring of Given Length",
+      "source_hash": "4bcddc768d8bd235dc303c3707b6c00d36e929b96adf7edd93668693f48b0e75",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:25:16Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sliding-window",
+            "label": "sliding-window",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sliding-window-optimization",
+            "label": "sliding-window-optimization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved efficiently by using a sliding window of size k and updating the vowel count in O(1) time as the window slides across the string.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-04-649-dota2-senate": {
+      "status": "analyzed",
+      "date": "2023-05-04",
+      "display_date": "4.05.2023",
+      "slug": "2023-05-04-649-dota2-senate",
+      "display_title": "649. Dota2 Senate",
+      "source_hash": "c88695c2618f5679d930cc27509cbd01723d1d25847c2ffdfcf9255d6fb303e1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:25:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "deque",
+            "label": "queue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "simulation",
+            "label": "simulation",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "queue_simulation",
+            "label": "queue_simulation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "simulation",
+            "label": "simulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by simulating the banning process using queues to manage the order of players.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-03-2215-find-the-difference-of-two-arrays": {
+      "status": "analyzed",
+      "date": "2023-05-03",
+      "display_date": "3.05.2023",
+      "slug": "2023-05-03-2215-find-the-difference-of-two-arrays",
+      "display_title": "2215. Find the Difference of Two Arrays",
+      "source_hash": "0e5e5081b7da7c29927044d8755b2de8f0b36a1dc8a8b20c026a0d9d961cdc27",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:25:52Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "set_difference",
+            "label": "set_difference",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sort",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "set_operation",
+            "label": "set_operation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "intersection",
+            "label": "intersection",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sets",
+            "label": "sets",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the set difference between the two input arrays.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-02-1822-sign-of-the-product-of-an-array": {
+      "status": "analyzed",
+      "date": "2023-05-02",
+      "display_date": "2.05.2023",
+      "slug": "2023-05-02-1822-sign-of-the-product-of-an-array",
+      "display_title": "1822. Sign of the Product of an Array",
+      "source_hash": "6afc50aff390ec4a7b31f143e8425ad351d46ce9aa46c5b6b1b07631d356a789",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:26:15Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "intarray",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "fold",
+            "label": "fold",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "fold",
+            "label": "fold",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "avoid_overflow",
+            "label": "avoid overflow",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The product of an array is determined by the number of negative elements and zeros in the array.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-05-01-1491-average-salary-excluding-the-minimum-and-maximum-salary": {
+      "status": "analyzed",
+      "date": "2023-05-01",
+      "display_date": "1.05.2023",
+      "slug": "2023-05-01-1491-average-salary-excluding-the-minimum-and-maximum-salary",
+      "display_title": "1491. Average Salary Excluding the Minimum and Maximum Salary",
+      "source_hash": "84116dad7663cc47f50aee0114479802050214d72e5f560611eb4485597a66bb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:26:28Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "IntArray",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting_and_selection",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The average salary excluding the minimum and maximum is calculated by sorting the array and then taking the average of the remaining elements.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-30-1579-remove-max-number-of-edges-to-keep-graph-fully-traversable": {
+      "status": "analyzed",
+      "date": "2023-04-30",
+      "display_date": "30.04.2023",
+      "slug": "2023-04-30-1579-remove-max-number-of-edges-to-keep-graph-fully-traversable",
+      "display_title": "1579. Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "source_hash": "174ba01e09200fb0b3990bb3744601d657eab7a77839d96c6d4564a114a5abe3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:26:52Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "two-pass-union-find",
+            "label": "two-pass-union-find",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "connectivity",
+            "label": "connectivity",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using two separate Union-Find data structures to track connectivity for Alice and Bob independently, maximizing the number of removed edges while ensuring full traversability.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-29-1697-checking-existence-of-edge-length-limited-paths": {
+      "status": "analyzed",
+      "date": "2023-04-29",
+      "display_date": "29.04.2023",
+      "slug": "2023-04-29-1697-checking-existence-of-edge-length-limited-paths",
+      "display_title": "1697. Checking Existence of Edge Length Limited Paths",
+      "source_hash": "632eb20793871056e9f7aff7c557020553c5123e0432aa280a19c0677563e5b2",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:27:10Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting edges and queries and using a Union-Find data structure to efficiently determine connectivity based on edge length limits.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-28-839-similar-string-groups": {
+      "status": "analyzed",
+      "date": "2023-04-28",
+      "display_date": "28.04.2023",
+      "slug": "2023-04-28-839-similar-string-groups",
+      "display_title": "839. Similar String Groups",
+      "source_hash": "5fe0b559616ab7356626475f352e94dae51df655808dd8595bbf91dadc4cb751",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:27:41Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "int-array",
+            "label": "int-array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "grouping",
+            "label": "grouping",
+            "confidence": 1.0
+          },
+          {
+            "slug": "prefix-suffix-body-comparison",
+            "label": "prefix-suffix-body-comparison",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by grouping similar strings using the Union-Find data structure after defining a custom similarity check.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-27-319-bulb-switcher": {
+      "status": "analyzed",
+      "date": "2023-04-27",
+      "display_date": "27.04.2023",
+      "slug": "2023-04-27-319-bulb-switcher",
+      "display_title": "319. Bulb Switcher",
+      "source_hash": "a3734c98ad7d8b3f50a2cd5732353bef275b8cf0bf4f8622d6953b171f8be357",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:27:46Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by iteratively finding the largest possible switch interval that fits within n, based on an arithmetic progression of intervals.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-26-258-add-digits": {
+      "status": "analyzed",
+      "date": "2023-04-26",
+      "display_date": "26.04.2023",
+      "slug": "2023-04-26-258-add-digits",
+      "display_title": "258. Add Digits",
+      "source_hash": "05a82a6758d497731273cf309baf7b588c6444376f165e261881c7eb4f25c803",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:28:05Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "digit_sum_formula",
+            "label": "mathematical_pattern",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "mathematics",
+            "label": "mathematics",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The sum of digits of any positive integer can be found in O(1) time using a mathematical property based on modulo arithmetic.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-25-2336-smallest-number-in-infinite-set": {
+      "status": "analyzed",
+      "date": "2023-04-25",
+      "display_date": "25.04.2023",
+      "slug": "2023-04-25-2336-smallest-number-in-infinite-set",
+      "display_title": "2336. Smallest Number in Infinite Set",
+      "source_hash": "ced4474e0cbf419ec1b6758facd1104298ac048eff13a4936c9930ed8c9827ec",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:28:18Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "links",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sparse_array",
+            "label": "links",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "sparse_array",
+            "label": "linking_elements",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "links",
+            "confidence": 1.0
+          },
+          {
+            "slug": "data_structures",
+            "label": "sparse_array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by implementing a sparse array using an array of links to manage the infinite set efficiently.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-24-1046-last-stone-weight": {
+      "status": "analyzed",
+      "date": "2023-04-24",
+      "display_date": "24.04.2023",
+      "slug": "2023-04-24-1046-last-stone-weight",
+      "display_title": "1046. Last Stone Weight",
+      "source_hash": "9fd9ebcda3d629f026a767291439fdd802b906e349b8ea118c0c4d5d39ef6d22",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:28:42Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "priority-queue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a max-heap to simulate the process of smashing stones until only zero or one stone remains.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-04-23-1416-restore-the-array": {
+      "status": "analyzed",
+      "date": "2023-04-23",
+      "display_date": "23.04.2023",
+      "slug": "2023-04-23-1416-restore-the-array",
+      "display_title": "1416. Restore The Array",
+      "source_hash": "fce5dffba80d4fa58f227e23ccb30370ab4ae14de989cef82b775c6e01682679",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:29:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "string/array of digits",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first search",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "memoization/top-down dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "top-down dynamic programming",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dfs_with_pruning",
+            "label": "depth-first search with pruning",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "combinatorics",
+            "label": "counting permutations/partitions",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming with memoization (DFS) to count the number of ways to partition the string into numbers such that each number is less than k.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T12:18:42Z"
+  "updated_at": "2026-04-26T12:29:02Z"
 }
