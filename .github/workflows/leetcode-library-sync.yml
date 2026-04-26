@@ -39,8 +39,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LEETCODE_AI_MODEL: openai/gpt-4.1-mini
-          LEETCODE_AI_LIMIT: "4"
-        run: python3 scripts/analyze_leetcode_ai.py --provider github --model "$LEETCODE_AI_MODEL" --limit "$LEETCODE_AI_LIMIT" --soft-fail
+          LEETCODE_AI_LIMIT: "1"
+        run: python3 scripts/analyze_leetcode_ai.py --provider github --model "$LEETCODE_AI_MODEL" --limit "$LEETCODE_AI_LIMIT" --latest-only --max-retries 0 --soft-fail
 
       - name: Regenerate library
         run: python3 scripts/generate_leetcode_library.py

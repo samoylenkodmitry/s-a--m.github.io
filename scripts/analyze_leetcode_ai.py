@@ -124,11 +124,14 @@ def select_work_items(
     force: bool,
     date_filter: str | None,
     include_prompt_stale: bool,
+    latest_only: bool,
 ) -> list[WorkItem]:
     source_blocks = parse_source_blocks(source_path.read_text(encoding="utf-8").splitlines())
     blocks = cache["blocks"]
     selected: list[WorkItem] = []
     normalized_date_filter = normalize_date_arg(date_filter) if date_filter else None
+    if latest_only and normalized_date_filter is None:
+        source_blocks = source_blocks[:1]
 
     for date_display, block_lines in source_blocks:
         entry = build_entry(date_display, block_lines)
@@ -372,6 +375,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--cache", type=Path, default=AI_ANALYSIS_PATH)
     parser.add_argument("--limit", type=int, default=int(os.environ.get("LEETCODE_AI_LIMIT", "1")), help="0 means no limit")
     parser.add_argument("--date", help="Analyze one date, either YYYY-MM-DD or D.M.YYYY")
+    parser.add_argument("--latest-only", action="store_true", help="Without --date, consider only the newest source block")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--ignore-prompt-version", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
@@ -394,6 +398,7 @@ def main() -> int:
         force=args.force,
         date_filter=args.date,
         include_prompt_stale=not args.ignore_prompt_version,
+        latest_only=args.latest_only,
     )
     if args.limit > 0:
         items = items[: args.limit]
