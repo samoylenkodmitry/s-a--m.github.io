@@ -44852,7 +44852,1046 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2023-10-08-1458-max-dot-product-of-two-subsequences": {
+      "status": "analyzed",
+      "date": "2023-10-08",
+      "display_date": "8.10.2023",
+      "slug": "2023-10-08-1458-max-dot-product-of-two-subsequences",
+      "display_title": "1458. Max Dot Product of Two Subsequences",
+      "source_hash": "60fcf95eb14688b524f4974b2ba5002eb9961fee8592c61edad135d276e246c6",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:27:03Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "nums1",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bottom-up",
+            "label": "bottom-up_approach",
+            "confidence": 0.9
+          },
+          {
+            "slug": "state-transition",
+            "label": "state_transition_optimization",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming to find the maximum dot product of two subsequences.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-10-07-1420-build-array-where-you-can-find-the-maximum-exactly-k-comparisons": {
+      "status": "analyzed",
+      "date": "2023-10-07",
+      "display_date": "7.10.2023",
+      "slug": "2023-10-07-1420-build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
+      "display_title": "1420. Build Array Where You Can Find The Maximum Exactly K Comparisons",
+      "source_hash": "ab6caae0f58e40bc183eeb8fce0052c6aa31e63522360a65b7f15f2e4e9e28a0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:27:14Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "combinatorics",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming with a depth-first search approach to count the number of arrays satisfying specific comparison constraints.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-06-343-integer-break": {
+      "status": "analyzed",
+      "date": "2023-10-06",
+      "display_date": "6.10.2023",
+      "slug": "2023-10-06-343-integer-break",
+      "display_title": "343. Integer Break",
+      "source_hash": "c1f46b5e36bbf0f5efe1c160e0a7ff3882a4e840fdb0546510c4c0f09c75d046",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:27:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "recursive_approach",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "caching_results",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "mathematics",
+            "label": "number_theory",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The problem is solved using recursion with memoization to find the maximum product achievable by splitting a number.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-05-229-majority-element-ii": {
+      "status": "analyzed",
+      "date": "2023-10-05",
+      "display_date": "5.10.2023",
+      "slug": "2023-10-05-229-majority-element-ii",
+      "display_title": "229. Majority Element II",
+      "source_hash": "fe8336b68c0d4c6538a453848816d48a3d045335d8919b49d116b21190f9eb07",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:27:47Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "moore-algorithm",
+            "label": "Moore's Voting Algorithm",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "Arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a variation of Moore's Voting Algorithm to find elements that appear more than n/3 times in an array.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-04-706-design-hashmap": {
+      "status": "analyzed",
+      "date": "2023-10-04",
+      "display_date": "4.10.2023",
+      "slug": "2023-10-04-706-design-hashmap",
+      "display_title": "706. Design HashMap",
+      "source_hash": "ecc070979bd6b20f5e44dddb284a9724d0aa375acbabbcc3ef00ddb176761a74",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:28:11Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "rehashing",
+            "label": "rehashing",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "hash-table",
+            "label": "hash-table",
+            "confidence": 1.0
+          },
+          {
+            "slug": "data-structures",
+            "label": "data-structures",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The design involves using an array of linked lists (buckets) to store key-value pairs, employing rehashing when the load factor is exceeded to maintain O(1) average time complexity.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-03-1512-number-of-good-pairs": {
+      "status": "analyzed",
+      "date": "2023-10-03",
+      "display_date": "3.10.2023",
+      "slug": "2023-10-03-1512-number-of-good-pairs",
+      "display_title": "1512. Number of Good Pairs",
+      "source_hash": "236970f9978ba720ec3154ac8159ada80e8f4b2ce4d9cc7b35626e39c1ce5724",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:28:20Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "IntArray",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "hash-map",
+            "label": "frequency counting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "counting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using an array to count the frequency of each number and then calculating the number of pairs based on these frequencies.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-02-2038-remove-colored-pieces-if-both-neighbors-are-the-same-color": {
+      "status": "analyzed",
+      "date": "2023-10-02",
+      "display_date": "2.10.2023",
+      "slug": "2023-10-02-2038-remove-colored-pieces-if-both-neighbors-are-the-same-color",
+      "display_title": "2038. Remove Colored Pieces if Both Neighbors are the Same Color",
+      "source_hash": "4fc23d4aa0a3d9fcf7d728f308104bd78cf6c837910d16dd878ae0ddcf391499",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:28:38Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "sliding-window",
+            "label": "windowed(3)",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by comparing the counts of consecutive 'A's and 'B's in a sliding window of size three.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-01-557-reverse-words-in-a-string-iii": {
+      "status": "analyzed",
+      "date": "2023-10-01",
+      "display_date": "1.10.2023",
+      "slug": "2023-10-01-557-reverse-words-in-a-string-iii",
+      "display_title": "557. Reverse Words in a String III",
+      "source_hash": "248895e336ee9e5803639623d47e81d2374a0791a0203472472cd37d167371e0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:28:45Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by reversing the entire string and then manipulating the resulting parts to reverse the order of words.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-30-456-132-pattern": {
+      "status": "analyzed",
+      "date": "2023-09-30",
+      "display_date": "30.09.2023",
+      "slug": "2023-09-30-456-132-pattern",
+      "display_title": "456. 132 Pattern",
+      "source_hash": "cbcde79d81aeb9e273cd2dafd9ea856385555b1de11359c90fac8df6089e9601",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:29:18Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "Stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "Array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "stack",
+            "label": "Monotonic Stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linear_scan",
+            "label": "Linear Scan",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "monotonic_stack",
+            "label": "Monotonic Stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linear_scan",
+            "label": "Linear Scan",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pattern_matching",
+            "label": "Pattern Matching",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating backward and using a monotonic stack to find the 132 pattern in linear time.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-29-896-monotonic-array": {
+      "status": "analyzed",
+      "date": "2023-09-29",
+      "display_date": "29.09.2023",
+      "slug": "2023-09-29-896-monotonic-array",
+      "display_title": "896. Monotonic Array",
+      "source_hash": "77386c099d4d92f43b26d8697a7ed199293262133959557a1e161007c88bedf3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:29:27Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "sliding-window",
+            "label": "windowed scan for differences",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "array processing",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The array is monotonic if all the differences between adjacent elements have the same sign.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-28-905-sort-array-by-parity": {
+      "status": "analyzed",
+      "date": "2023-09-28",
+      "display_date": "28.09.2023",
+      "slug": "2023-09-28-905-sort-array-by-parity",
+      "display_title": "905. Sort Array By Parity",
+      "source_hash": "7904b8aaff8fd6e80b6bc6d7baec6fc1553dac232aa0358b236bc66d8f58f74d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:31:44Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem can be solved efficiently by partitioning the array into even and odd elements and then sorting them separately.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-27-880-decoded-string-at-index": {
+      "status": "analyzed",
+      "date": "2023-09-27",
+      "display_date": "27.09.2023",
+      "slug": "2023-09-27-880-decoded-string-at-index",
+      "display_title": "880. Decoded String at Index",
+      "source_hash": "ddcdce150d958dd713042deca9fb84b2539c4a90e68adcadf143b129fe762ffb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:32:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "long-array",
+            "label": "long-array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic-programming",
+            "confidence": 0.8
+          },
+          {
+            "slug": "modulo-arithmetic",
+            "label": "modulo-arithmetic",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "reverse-operation",
+            "label": "reverse-operation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "modulo-invariant",
+            "label": "modulo-invariant",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iteratively reversing the decoding process using modulo arithmetic to find the index of the k-th character.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-26-316-remove-duplicate-letters": {
+      "status": "analyzed",
+      "date": "2023-09-26",
+      "display_date": "26.09.2023",
+      "slug": "2023-09-26-316-remove-duplicate-letters",
+      "display_title": "316. Remove Duplicate Letters",
+      "source_hash": "915edc890e6e390f3a5c411c987ff8ec79852ca1cb2aa3b41e99e143a6cb2afa",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:32:26Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          },
+          {
+            "slug": "map",
+            "label": "map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "stack_simulation",
+            "label": "stack_simulation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "last_occurrence_check",
+            "label": "last_occurrence_check",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using a greedy approach combined with stack simulation to find the lexicographically smallest subsequence without duplicate letters.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-25-389-find-the-difference": {
+      "status": "analyzed",
+      "date": "2023-09-25",
+      "display_date": "25.09.2023",
+      "slug": "2023-09-25-389-find-the-difference",
+      "display_title": "389. Find the Difference",
+      "source_hash": "6287b465f2e2d2f7df18e337fc29a66d7bcd40539889689d4e231f211958f650",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:32:39Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "frequency map",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "summation",
+            "label": "summation of character values",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sum-difference",
+            "label": "calculating the difference in sums of character integer values",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The difference between two strings is found by calculating the difference in the sum of their character integer values.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-24-799-champagne-tower": {
+      "status": "analyzed",
+      "date": "2023-09-24",
+      "display_date": "24.09.2023",
+      "slug": "2023-09-24-799-champagne-tower",
+      "display_title": "799. Champagne Tower",
+      "source_hash": "0a855d0f023549d6fe20bf34abd96f565b0d881da95cb71fbc950d83b4a5fc62",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:33:06Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "list",
+            "label": "list",
+            "confidence": 0.9
+          },
+          {
+            "slug": "double",
+            "label": "double",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic-programming",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "space-optimization",
+            "label": "space-optimization",
+            "confidence": 0.9
+          },
+          {
+            "slug": "simulation",
+            "label": "simulation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic-programming",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by simulating the flow of champagne through a triangle, using dynamic programming to calculate the amount in each glass.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-23-1048-longest-string-chain": {
+      "status": "analyzed",
+      "date": "2023-09-23",
+      "display_date": "23.09.2023",
+      "slug": "2023-09-23-1048-longest-string-chain",
+      "display_title": "1048. Longest String Chain",
+      "source_hash": "06792c047e4ba01f4cff02991903f664d3fc18d73bc793fee09fae4cc4bcc0fc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:33:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "mutableSetOf",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "graph-construction",
+            "label": "graph construction",
+            "confidence": 0.9
+          },
+          {
+            "slug": "depth-first-search",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "directed graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by modeling word relationships as a directed graph and finding the longest path using Depth First Search.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-22-392-is-subsequence": {
+      "status": "analyzed",
+      "date": "2023-09-22",
+      "display_date": "22.09.2023",
+      "slug": "2023-09-22-392-is-subsequence",
+      "display_title": "392. Is Subsequence",
+      "source_hash": "d39b260faeea141095c825ef4bb5f7a17c966e813e6a629e497577a311283ee6",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:33:37Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string comparison and subsequence check",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved efficiently by using two pointers to check if all characters of the first string appear in the second string in the correct order.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-21-4-median-of-two-sorted-arrays": {
+      "status": "analyzed",
+      "date": "2023-09-21",
+      "display_date": "21.09.2023",
+      "slug": "2023-09-21-4-median-of-two-sorted-arrays",
+      "display_title": "4. Median of Two Sorted Arrays",
+      "source_hash": "3d4a1dfed3b417367e6e4ea939eaf73092c083b44c086029670131b756bdcdbd",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:33:42Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The median of two sorted arrays can be found by merging the arrays in linear time using a two-pointer approach.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-20-1658-minimum-operations-to-reduce-x-to-zero": {
+      "status": "analyzed",
+      "date": "2023-09-20",
+      "display_date": "20.09.2023",
+      "slug": "2023-09-20-1658-minimum-operations-to-reduce-x-to-zero",
+      "display_title": "1658. Minimum Operations to Reduce X to Zero",
+      "source_hash": "3eedabd6a3bc60abd1935041e145ae855eea52aac43f30ed337b590879bc52d1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:34:05Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "nums",
+            "confidence": 1.0
+          },
+          {
+            "slug": "variable",
+            "label": "windowSize",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sliding-window",
+            "label": "sliding_window",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sliding-window",
+            "label": "sliding_window_for_subarray_sum",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "nums",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sum",
+            "label": "subarray_sum",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the minimum length suffix that, when removed from the total sum of the array, equals x, using a sliding window approach.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-19-287-find-the-duplicate-number": {
+      "status": "analyzed",
+      "date": "2023-09-19",
+      "display_date": "19.09.2023",
+      "slug": "2023-09-19-287-find-the-duplicate-number",
+      "display_title": "287. Find the Duplicate Number",
+      "source_hash": "5139f826794a380582de44d14b232a72948059ba8a076161e617a311454e78a5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:36:18Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "marking-with-modification",
+            "label": "marking-with-modification",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by modifying the array in place to mark the duplicate using arithmetic operations.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-09-18-1337-the-k-weakest-rows-in-a-matrix": {
+      "status": "analyzed",
+      "date": "2023-09-18",
+      "display_date": "18.09.2023",
+      "slug": "2023-09-18-1337-the-k-weakest-rows-in-a-matrix",
+      "display_title": "1337. The K Weakest Rows in a Matrix",
+      "source_hash": "99c33a1c861b42d2e3fa29495ff2521d5d7aede96bdafaae0516ebc671953403",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:36:29Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "matrix",
+            "confidence": 1.0
+          },
+          {
+            "slug": "priority-queue",
+            "label": "priority_queue",
+            "confidence": 0.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.0
+          }
+        ],
+        "summary": "Find the indices of the k rows with the smallest sums in a matrix by calculating row sums and sorting them.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-09-16-1631-path-with-minimum-effort": {
+      "status": "analyzed",
+      "date": "2023-09-16",
+      "display_date": "16.09.2023",
+      "slug": "2023-09-16-1631-path-with-minimum-effort",
+      "display_title": "1631. Path With Minimum Effort",
+      "source_hash": "b07a28945f9177499b4696d8cdd9551f25793cf7ddf89e36a25eee380bfb4368",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:36:55Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority_queue",
+            "label": "PriorityQueue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash_set",
+            "label": "HashSet",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "a_star",
+            "label": "A* algorithm",
+            "confidence": 0.9
+          },
+          {
+            "slug": "dijkstra",
+            "label": "Dijkstra's algorithm",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "priority_queue_for_shortest_path",
+            "label": "PriorityQueue for path exploration",
+            "confidence": 1.0
+          },
+          {
+            "slug": "minimum_effort_tracking",
+            "label": "Tracking maximum effort along the path",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "Graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "grid",
+            "label": "Grid",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a modified Dijkstra's or A* search on a grid to find a path that minimizes the maximum absolute difference in heights along the path.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-09-15-1584-min-cost-to-connect-all-points": {
+      "status": "analyzed",
+      "date": "2023-09-15",
+      "display_date": "15.09.2023",
+      "slug": "2023-09-15-1584-min-cost-to-connect-all-points",
+      "display_title": "1584. Min Cost to Connect All Points",
+      "source_hash": "3938682957cba1e6db3aef15f5e201f7791f86e297ff674b81cc507b05b89cfc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:37:14Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "PriorityQueue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "MutableSet",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dijkstra",
+            "label": "Dijkstra",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "priority-queue-for-mst",
+            "label": "PriorityQueue for MST",
+            "confidence": 1.0
+          },
+          {
+            "slug": "greedy-edge-selection",
+            "label": "Greedy Edge Selection",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "geometry",
+            "label": "Geometry",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "Graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the Minimum Spanning Tree (MST) of a complete graph where edge weights are Manhattan distances between points.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T11:26:31Z"
+  "updated_at": "2026-04-26T11:37:14Z"
 }
