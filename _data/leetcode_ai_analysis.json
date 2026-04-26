@@ -43686,7 +43686,1173 @@
         "manual_review": false,
         "confidence": 0.9
       }
+    },
+    "2023-10-31-2433-find-the-original-array-of-prefix-xor": {
+      "status": "analyzed",
+      "date": "2023-10-31",
+      "display_date": "31.10.2023",
+      "slug": "2023-10-31-2433-find-the-original-array-of-prefix-xor",
+      "display_title": "2433. Find The Original Array of Prefix Xor",
+      "source_hash": "35463c38e4ea695adb319d837645202e1c3cdefc645fcfe52861dbf137feee66",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:17:10Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "xor",
+            "label": "bitwise_operation",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix_xor_reversal",
+            "label": "prefix_xor_reversal",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by reversing the prefix XOR operation using the property that xor is its own inverse.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-30-1356-sort-integers-by-the-number-of-1-bits": {
+      "status": "analyzed",
+      "date": "2023-10-30",
+      "display_date": "30.10.2023",
+      "slug": "2023-10-30-1356-sort-integers-by-the-number-of-1-bits",
+      "display_title": "1356. Sort Integers by The Number of 1 Bits",
+      "source_hash": "e707d410b8cdb6b4f250d7eac1b14c43d7da4b2a788725b9b5d674add9b873b3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:17:20Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort_with_comparator",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bit_counting",
+            "label": "population_count_or_builtin_popcount",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "integer_sorting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The integers are sorted based on the count of set bits (1s) in ascending order, using a custom comparator.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-29-458-poor-pigs": {
+      "status": "analyzed",
+      "date": "2023-10-29",
+      "display_date": "29.10.2023",
+      "slug": "2023-10-29-458-poor-pigs",
+      "display_title": "458. Poor Pigs",
+      "source_hash": "ed5706db26c25356ad35ec3d992b135d7a6deff5d5956e7ab72b4ff960678631",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:17:49Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp",
+            "confidence": 0.9
+          },
+          {
+            "slug": "binary-search",
+            "label": "bs",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "bs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary-search",
+            "label": "bs",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "combinatorics",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using binary search on the number of rounds to find the minimum required time.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-28-1220-count-vowels-permutation": {
+      "status": "analyzed",
+      "date": "2023-10-28",
+      "display_date": "28.10.2023",
+      "slug": "2023-10-28-1220-count-vowels-permutation",
+      "display_title": "1220. Count Vowels Permutation",
+      "source_hash": "dcafe19bfc7886060d56b2db5f677809506a41e39874f2561fcd92f5c2117648",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:18:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "vs",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "dp_memo",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "permutations",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "sequence_counting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using depth-first search with memoization to count valid vowel permutations based on character transitions.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-27-5-longest-palindromic-substring": {
+      "status": "analyzed",
+      "date": "2023-10-27",
+      "display_date": "27.10.2023",
+      "slug": "2023-10-27-5-longest-palindromic-substring",
+      "display_title": "5. Longest Palindromic Substring",
+      "source_hash": "dc660d5baf53ff28dae5a6a470c11bc477a5f699071d2a9a66943e910b0f81e1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:18:26Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "dp_table_storage",
+            "confidence": 0.95
+          },
+          {
+            "slug": "boolean_array",
+            "label": "dp_table_values",
+            "confidence": 0.95
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic_programming",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "substring_dp",
+            "label": "longest_palindromic_substring_dp",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming to determine if substrings are palindromes and find the longest one.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-26-823-binary-trees-with-factors": {
+      "status": "analyzed",
+      "date": "2023-10-26",
+      "display_date": "26.10.2023",
+      "slug": "2023-10-26-823-binary-trees-with-factors",
+      "display_title": "823. Binary Trees With Factors",
+      "source_hash": "2e2257a902f1f799b22a4e5717d8c7f6c034170cdc1351b3d900b3c21e0b967d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:20:42Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "memoization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "number-theory",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using dynamic programming with memoization on a sorted array to count the number of ways to form products based on divisibility.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-25-779-k-th-symbol-in-grammar": {
+      "status": "analyzed",
+      "date": "2023-10-25",
+      "display_date": "25.10.2023",
+      "slug": "2023-10-25-779-k-th-symbol-in-grammar",
+      "display_title": "779. K-th Symbol in Grammar",
+      "source_hash": "4659aab68e74f931a04ac22dbea9c652bd644f1dd5faf05a22978d9c300fdfbc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:20:53Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "bit-manipulation",
+            "label": "bitwise operations for pattern generation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "binary string patterns",
+            "confidence": 0.9
+          },
+          {
+            "slug": "arrays",
+            "label": "sequence manipulation",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The problem is solved by recursively determining the k-th symbol based on the pattern generated by the previous row's value using bitwise operations.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-24-515-find-largest-value-in-each-tree-row": {
+      "status": "analyzed",
+      "date": "2023-10-24",
+      "display_date": "24.10.2023",
+      "slug": "2023-10-24-515-find-largest-value-in-each-tree-row",
+      "display_title": "515. Find Largest Value in Each Tree Row",
+      "source_hash": "30a9e4d01ed6107e7d5c90354127ee6418116e0026f35e61ce35efe39293b5b0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:21:19Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "ArrayDeque",
+            "confidence": 1.0
+          },
+          {
+            "slug": "tree",
+            "label": "Binary Tree",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "Breadth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "level_traversal",
+            "label": "Level Traversal",
+            "confidence": 0.9
+          },
+          {
+            "slug": "queue_based_traversal",
+            "label": "Queue-based Traversal",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "Tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "traversal",
+            "label": "Traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a Breadth-First Search to find the maximum value in each level of the binary tree.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-23-342-power-of-four": {
+      "status": "analyzed",
+      "date": "2023-10-23",
+      "display_date": "23.10.2023",
+      "slug": "2023-10-23-342-power-of-four",
+      "display_title": "342. Power of Four",
+      "source_hash": "6c1c74a5e15eb7c9088e7942f5586a944aad06b6a239934686a71497cb481ebc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:21:40Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "bit_mask",
+            "label": "bit mask",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash_map",
+            "label": "hash map",
+            "confidence": 0.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary_search",
+            "label": "binary search",
+            "confidence": 0.0
+          },
+          {
+            "slug": "bit_manipulation",
+            "label": "bit manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bit_shift",
+            "label": "bit shift",
+            "confidence": 1.0
+          },
+          {
+            "slug": "trailing_zeros",
+            "label": "trailing zeros",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bit_mask",
+            "label": "bit mask",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.0
+          }
+        ],
+        "summary": "The problem is solved by analyzing the bit representation of the number to determine if it is a perfect fourth power.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-22-1793-maximum-score-of-a-good-subarray": {
+      "status": "analyzed",
+      "date": "2023-10-22",
+      "display_date": "22.10.2023",
+      "slug": "2023-10-22-1793-maximum-score-of-a-good-subarray",
+      "display_title": "1793. Maximum Score of a Good Subarray",
+      "source_hash": "d0d9fd9dd54026ad37c26acc0ba0eeeefb0bbb7bd15d808590b3b5743729f5b0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:21:58Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "math",
+            "label": "mathematics",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by an $O(n)$ two-pointer approach to find the maximum score of a subarray containing a specific element.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-21-1425-constrained-subsequence-sum": {
+      "status": "analyzed",
+      "date": "2023-10-21",
+      "display_date": "21.10.2023",
+      "slug": "2023-10-21-1425-constrained-subsequence-sum",
+      "display_title": "1425. Constrained Subsequence Sum",
+      "source_hash": "9be3a459faef1cb2a45006bc365724d33507a9cd02b8db825970f535501535ea",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:22:15Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "deque",
+            "label": "ArrayDeque",
+            "confidence": 0.9
+          },
+          {
+            "slug": "priority_queue",
+            "label": "PriorityQueue",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic_programming",
+            "label": "DP",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "decreasing_queue",
+            "label": "Decreasing Queue",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "subsequences",
+            "label": "Subsequences",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming optimized with a sliding window maximum technique implemented via a deque.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-20-341-flatten-nested-list-iterator": {
+      "status": "analyzed",
+      "date": "2023-10-20",
+      "display_date": "20.10.2023",
+      "slug": "2023-10-20-341-flatten-nested-list-iterator",
+      "display_title": "341. Flatten Nested List Iterator",
+      "source_hash": "007c99e5bcf80c076efb7966bb5a72e47167395d49392ea02f848e3fa26ad49c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:22:38Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "Stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "List",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "stack-usage",
+            "label": "Stack usage",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "lists",
+            "label": "Lists",
+            "confidence": 1.0
+          },
+          {
+            "slug": "iteration",
+            "label": "Iteration",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a stack to store nested list elements and managing the iteration order.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-10-19-844-backspace-string-compare": {
+      "status": "analyzed",
+      "date": "2023-10-19",
+      "display_date": "19.10.2023",
+      "slug": "2023-10-19-844-backspace-string-compare",
+      "display_title": "844. Backspace String Compare",
+      "source_hash": "0fbc8ec59c7ab9c5654ddf5cc2b75136523d0ebc4eb88a022d5e461976ca1391",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:22:48Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "stack",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "two-pointers",
+            "label": "two-pointers",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating backwards through both strings and skipping backspaces to compare the resulting strings in linear time with constant extra space.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-18-2050-parallel-courses-iii": {
+      "status": "analyzed",
+      "date": "2023-10-18",
+      "display_date": "18.10.2023",
+      "slug": "2023-10-18-2050-parallel-courses-iii",
+      "display_title": "2050. Parallel Courses III",
+      "source_hash": "40ffa35b82d1a45e0ca1690cc65f02e30ecde2a9dab34ab9b686850e7115a98c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:23:16Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "map",
+            "label": "hash-map",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using depth-first search starting from leaf nodes to find the minimum time to visit all nodes in a graph.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-17-1361-validate-binary-tree-nodes": {
+      "status": "analyzed",
+      "date": "2023-10-17",
+      "display_date": "17.10.2023",
+      "slug": "2023-10-17-1361-validate-binary-tree-nodes",
+      "display_title": "1361. Validate Binary Tree Nodes",
+      "source_hash": "deea4311abeea7b38cbefa442387be10cc8fe3bda21ba7d59e1406e0a42fae1a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:23:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "cycle-handling",
+            "label": "cycle-handling",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using the Union-Find data structure to check for connectivity and ensure no node has more than one incoming connection.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-16-119-pascal-s-triangle-ii": {
+      "status": "analyzed",
+      "date": "2023-10-16",
+      "display_date": "16.10.2023",
+      "slug": "2023-10-16-119-pascal-s-triangle-ii",
+      "display_title": "119. Pascal's Triangle II",
+      "source_hash": "f45cc91d1f757d2cfd6bffd330f4dfcf66db55426093144670fcc0c523d2f350",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:23:59Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "fold_operation",
+            "label": "using fold for sequence generation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "windowed_sum",
+            "label": "using windowed and sum for generating sequence elements",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "sequence generation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "mathematics",
+            "label": "pascal's triangle generation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iteratively generating rows of Pascal's Triangle using a fold operation combined with windowed sums to calculate the binomial coefficients.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-10-15-1269-number-of-ways-to-stay-in-the-same-place-after-some-steps": {
+      "status": "analyzed",
+      "date": "2023-10-15",
+      "display_date": "15.10.2023",
+      "slug": "2023-10-15-1269-number-of-ways-to-stay-in-the-same-place-after-some-steps",
+      "display_title": "1269. Number of Ways to Stay in the Same Place After Some Steps",
+      "source_hash": "ce49e0cb76cb09d48c5ac0fa0ae71a0b09278ffe808fce0cf46d920e8943a6f5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:24:24Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "map",
+            "label": "hash-map",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pair",
+            "label": "pair",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic-programming",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "brute-force-search",
+            "label": "brute-force-search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "combinatorics",
+            "label": "combinatorics",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using depth-first search with memoization to count the number of ways to reach position 0 in a given number of steps by moving left, right, or staying put.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-14-2742-painting-the-walls": {
+      "status": "analyzed",
+      "date": "2023-10-14",
+      "display_date": "14.10.2023",
+      "slug": "2023-10-14-2742-painting-the-walls",
+      "display_title": "2742. Painting the Walls",
+      "source_hash": "534af28efe294a281717092066a6304ba025ca240255797ba8e81a8dcea230c0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:24:54Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp_memo",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dp_memoization",
+            "label": "memoization_with_state_compression",
+            "confidence": 1.0
+          },
+          {
+            "slug": "state_compression",
+            "label": "bit-shifting_for_state_storage",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "optimization",
+            "label": "scheduling_and_cost_minimization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "implicit_state_space",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "The problem is solved using depth-first search with memoization to explore the choices of assigning paid or free workers to walls while managing a time constraint.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-13-746-min-cost-climbing-stairs": {
+      "status": "analyzed",
+      "date": "2023-10-13",
+      "display_date": "13.10.2023",
+      "slug": "2023-10-13-746-min-cost-climbing-stairs",
+      "display_title": "746. Min Cost Climbing Stairs",
+      "source_hash": "06d9f769fcc50a11238ecf588d1313ebfb06cfe24ebc1ef1c5c27202d8a4d941",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:25:15Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "cost array (implicit dp table)",
+            "confidence": 1.0
+          },
+          {
+            "slug": "variable",
+            "label": "two variables for space optimization",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "bottom-up dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "space-optimization",
+            "label": "reducing space complexity by only storing the two previous states",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bottom-up",
+            "label": "iterative dp approach",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "dynamic-programming",
+            "label": "optimization problems",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "sequence processing",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming with space optimization to find the minimum cost to reach the top of the stairs.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-12-1095-find-in-mountain-array": {
+      "status": "analyzed",
+      "date": "2023-10-12",
+      "display_date": "12.10.2023",
+      "slug": "2023-10-12-1095-find-in-mountain-array",
+      "display_title": "1095. Find in Mountain Array",
+      "source_hash": "6498c021392f3489813d035c9089f7b6f8f3abb04fe92a8f908f0fbf96dd3558",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:25:29Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by first finding the peak of the mountain array using binary search, and then performing two separate binary searches on the increasing and decreasing slopes.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-11-2251-number-of-flowers-in-full-bloom": {
+      "status": "analyzed",
+      "date": "2023-10-11",
+      "display_date": "11.10.2023",
+      "slug": "2023-10-11-2251-number-of-flowers-in-full-bloom",
+      "display_title": "2251. Number of Flowers in Full Bloom",
+      "source_hash": "692a574dd782b47d252db24d19bf52652afc3c5fb2aaafeda586e287a82e1f09",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:25:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree-map",
+            "label": "TreeMap",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "Binary Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "line-sweep",
+            "label": "Line Sweep",
+            "confidence": 0.9
+          },
+          {
+            "slug": "coordinate-compression",
+            "label": "Coordinate Compression",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graphs",
+            "label": "Graphs",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The problem is solved using a line sweep approach combined with a TreeMap to track time-based changes and binary search to efficiently update results.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-10-2009-minimum-number-of-operations-to-make-array-continuous": {
+      "status": "analyzed",
+      "date": "2023-10-10",
+      "display_date": "10.10.2023",
+      "slug": "2023-10-10-2009-minimum-number-of-operations-to-make-array-continuous",
+      "display_title": "2009. Minimum Number of Operations to Make Array Continuous",
+      "source_hash": "af9886b85b8f4f85aa4e7f18094050f1479c7e00950153244efb08fe7abfb59f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:26:14Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "nums",
+            "confidence": 1.0
+          },
+          {
+            "slug": "int_array",
+            "label": "uniqPrefix",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix_sum",
+            "label": "uniqPrefix",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary_search",
+            "label": "range_finding",
+            "confidence": 1.0
+          },
+          {
+            "slug": "two_pointers",
+            "label": "implicit_two_pointers",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "nums",
+            "confidence": 1.0
+          },
+          {
+            "slug": "search",
+            "label": "binary_search",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting the array and using binary search combined with a prefix counter to find the minimum number of operations to make the array continuous.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-10-09-34-find-first-and-last-position-of-element-in-sorted-array": {
+      "status": "analyzed",
+      "date": "2023-10-09",
+      "display_date": "9.10.2023",
+      "slug": "2023-10-09-34-find-first-and-last-position-of-element-in-sorted-array",
+      "display_title": "34. Find First and Last Position of Element in Sorted Array",
+      "source_hash": "42cb27b2f97bd10e3d0e47b438ba8941d8fcf9a35f58e177ab97bd1d3fac7fc3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:26:31Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "sorted array array array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary-search range",
+            "label": "binary search range",
+            "confidence": 1.0
+          },
+          {
+            "slug": "two-pass binary-search",
+            "label": "two-pass binary search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing two separate binary searches to find the first and last occurrences of a target element in a sorted array.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T11:16:21Z"
+  "updated_at": "2026-04-26T11:26:31Z"
 }
