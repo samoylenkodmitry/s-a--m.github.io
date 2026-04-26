@@ -59562,7 +59562,1696 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2022-12-09-1026-maximum-difference-between-node-and-ancestor": {
+      "status": "analyzed",
+      "date": "2022-12-09",
+      "display_date": "9.12.2022",
+      "slug": "2022-12-09-1026-maximum-difference-between-node-and-ancestor",
+      "display_title": "1026. Maximum Difference Between Node and Ancestor",
+      "source_hash": "130306a595ff87750d880ffedc2d0ff35f2d23500eef833048ed9e3d3f19d3e9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:10:24Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "TreeNode",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "Depth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recursion",
+            "label": "Recursive traversal",
+            "confidence": 1.0
+          },
+          {
+            "slug": "min_max_tracking",
+            "label": "Tracking minimum and maximum values encountered in the subtree",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "Tree traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by a recursive Depth-First Search that tracks the minimum and maximum values encountered along the path from the root to the current node.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-12-08-872-leaf-similar-trees": {
+      "status": "analyzed",
+      "date": "2022-12-08",
+      "display_date": "8.12.2022",
+      "slug": "2022-12-08-872-leaf-similar-trees",
+      "display_title": "872. Leaf-Similar Trees",
+      "source_hash": "e3ff9815d7c5f012c646d32311d1479dfb37f2e2e4d008afb65c047554552c43",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:10:39Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "list",
+            "label": "list",
+            "confidence": 1.0
+          },
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "list_concatenation",
+            "label": "list_concatenation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "inorder_traverse",
+            "label": "inorder_traverse",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "trees",
+            "label": "trees",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a depth-first search to collect the values of all leaf nodes from both trees and comparing the resulting lists.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-12-07-938-range-sum-of-bst": {
+      "status": "analyzed",
+      "date": "2022-12-07",
+      "display_date": "7.12.2022",
+      "slug": "2022-12-07-938-range-sum-of-bst",
+      "display_title": "938. Range Sum of BST",
+      "source_hash": "62f4f222c0df845d920a8392a9e4c34299fc3fba84328da7b3ce5295c429a031",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:11:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "bst",
+            "label": "binary search tree",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bst_traversal",
+            "label": "bst traversal",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "The range sum of a BST is calculated by recursively traversing the tree and accumulating sums based on whether the current node's value falls within the given range.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-12-06-328-odd-even-linked-list": {
+      "status": "analyzed",
+      "date": "2022-12-06",
+      "display_date": "6.12.2022",
+      "slug": "2022-12-06-328-odd-even-linked-list",
+      "display_title": "328. Odd Even Linked List",
+      "source_hash": "2f1eec8bfc2e3da8b12251eab12ba95297c9349f315a7076b63dec8f0087f4d2",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:11:14Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two-pointers",
+            "label": "two-pointers",
+            "confidence": 0.9
+          },
+          {
+            "slug": "iteration",
+            "label": "iteration",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "pointer-manipulation",
+            "label": "pointer-manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating through the linked list and re-linking nodes to separate odd-indexed and even-indexed lists.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-12-05-876-middle-of-the-linked-list": {
+      "status": "analyzed",
+      "date": "2022-12-05",
+      "display_date": "5.12.2022",
+      "slug": "2022-12-05-876-middle-of-the-linked-list",
+      "display_title": "876. Middle of the Linked List",
+      "source_hash": "6543c8ee411b6fbb93d11d7d06f17fa64aac000748abf11090aa9b09540916d4",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:11:33Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "ListNode",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "tail-recursion",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "list",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using a recursive approach to find the middle node of a linked list.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-12-04-2256-minimum-average-difference": {
+      "status": "analyzed",
+      "date": "2022-12-04",
+      "display_date": "4.12.2022",
+      "slug": "2022-12-04-2256-minimum-average-difference",
+      "display_title": "2256. Minimum Average Difference",
+      "source_hash": "4ffa0116353cecbef06033d4eddd040f471a8633e05f0841c1756d0de2ba1640",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:11:38Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by iterating through all possible split points and calculating the average difference between the left and right parts.",
+        "manual_review": true,
+        "confidence": 0.95
+      }
+    },
+    "2022-12-03-451-sort-characters-by-frequency": {
+      "status": "analyzed",
+      "date": "2022-12-03",
+      "display_date": "3.12.2022",
+      "slug": "2022-12-03-451-sort-characters-by-frequency",
+      "display_title": "451. Sort Characters By Frequency",
+      "source_hash": "979ea20eeaacbd2708df30af3da11e9c971335b51ad232ce94fe5ccef7098c26",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:11:56Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "groupBy",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "values",
+            "confidence": 0.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sortedBy",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "functional-style",
+            "label": "groupBy_map_sort_map_flatten",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "character_frequency",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Sorts characters in a string based on their frequency using grouping and sorting.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-12-02-determine-if-two-strings-are-close": {
+      "status": "analyzed",
+      "date": "2022-12-02",
+      "display_date": "2.12.2022",
+      "slug": "2022-12-02-determine-if-two-strings-are-close",
+      "display_title": "Determine If Two Strings Are Close",
+      "source_hash": "6786c9b5184f7c2bb65e6874e49a7dd65bd03e6c4bc6f7823274df4d7351fac7",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:12:02Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem requires checking if two strings are close based on character frequency and set equality.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-12-01-1704-determine-if-string-halves-are-alike": {
+      "status": "analyzed",
+      "date": "2022-12-01",
+      "display_date": "1.12.2022",
+      "slug": "2022-12-01-1704-determine-if-string-halves-are-alike",
+      "display_title": "1704. Determine if String Halves Are Alike",
+      "source_hash": "323650fa8b1837de59a5a6725deec4c73446a54b5a90e712fae4d0d30edc7024",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:12:23Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "set",
+            "label": "vowels",
+            "confidence": 1.0
+          },
+          {
+            "slug": "int",
+            "label": "c1",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "linear_scan",
+            "confidence": 0.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "counting",
+            "label": "vowel_count_comparison",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string_comparison",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by counting the number of vowels in the first and second halves of the string and checking if these counts are equal.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-30-1207-unique-number-of-occurrences": {
+      "status": "analyzed",
+      "date": "2022-11-30",
+      "display_date": "30.11.2022",
+      "slug": "2022-11-30-1207-unique-number-of-occurrences",
+      "display_title": "1207. Unique Number of Occurrences",
+      "source_hash": "2176a9b0c60b8d86af3da4d781cf949159b0031dc4585e4097c976c0f7a1ca5e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:12:32Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "mutableSetOf",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "IntArray",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by counting the occurrences of each number and then checking if the frequencies of these occurrences are unique.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-29-380-insert-delete-getrandom-o-1": {
+      "status": "analyzed",
+      "date": "2022-11-29",
+      "display_date": "29.11.2022",
+      "slug": "2022-11-29-380-insert-delete-getrandom-o-1",
+      "display_title": "380. Insert Delete GetRandom O(1)",
+      "source_hash": "ef2cb96266fd781e57b206f49553a5330972eb124ced487d36b95958a6ba259e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:12:52Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "mutable_list",
+            "label": "list",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash_map",
+            "label": "map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "list_pop_replace",
+            "label": "list_pop_replace",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash_map",
+            "label": "hash_map",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "achieve O(1) insertion, deletion, and random access by using a dynamic list and a hash map to store index mappings.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-28-2225-find-players-with-zero-or-one-losses": {
+      "status": "analyzed",
+      "date": "2022-11-28",
+      "display_date": "28.11.2022",
+      "slug": "2022-11-28-2225-find-players-with-zero-or-one-losses",
+      "display_title": "2225. Find Players With Zero or One Losses",
+      "source_hash": "6aac9118fb0eebac08294165227fab5e45975f20851ca545b432c192a5b62618",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:13:03Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "winners",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "direct iteration",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "matches",
+            "confidence": 1.0
+          },
+          {
+            "slug": "maps",
+            "label": "tracking counts",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution uses hash maps to track the number of losses for each player and then filters players based on these counts.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-27-446-arithmetic-slices-ii-subsequence": {
+      "status": "analyzed",
+      "date": "2022-11-27",
+      "display_date": "27.11.2022",
+      "slug": "2022-11-27-446-arithmetic-slices-ii-subsequence",
+      "display_title": "446. Arithmetic Slices II - Subsequence",
+      "source_hash": "0ef1b728a3740967f6a2ba30ebcf411755c69ea371edbb5170ea86f5424c055b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:13:33Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "subsequence-counting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "prefix-sum",
+            "label": "implicit",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "sequence-analysis",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "subsequence-counting",
+            "confidence": 0.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming to count arithmetic subsequences of length at least three.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-26-1235-maximum-profit-in-job-scheduling": {
+      "status": "analyzed",
+      "date": "2022-11-26",
+      "display_date": "26.11.2022",
+      "slug": "2022-11-26-1235-maximum-profit-in-job-scheduling",
+      "display_title": "1235. Maximum Profit in Job Scheduling",
+      "source_hash": "dfd4bb1399d1ae3e27f5003926b319fba2962b9bf0921c014bc2cd7d4691bc12",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:13:56Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "startTime",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary-search",
+            "label": "bs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting",
+            "label": "sort_by_start_time",
+            "confidence": 1.0
+          },
+          {
+            "slug": "binary-search",
+            "label": "find_next_non_overlapping",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "optimal_substructure",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "scheduling",
+            "label": "job_scheduling",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming combined with sorting and binary search to find the maximum profit from non-overlapping jobs.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-25-907-sum-of-subarray-minimums": {
+      "status": "analyzed",
+      "date": "2022-11-25",
+      "display_date": "25.11.2022",
+      "slug": "2022-11-25-907-sum-of-subarray-minimums",
+      "display_title": "907. Sum of Subarray Minimums",
+      "source_hash": "6236be53bd177619e788616d9729de8091c025e7e1aea468390d46c234602ed5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:14:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "data_class",
+            "label": "data class",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "stack",
+            "label": "stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linear_scan",
+            "label": "linear scan",
+            "confidence": 0.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "monotonic_stack",
+            "label": "monotonic stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "prefix_sum",
+            "label": "prefix sum",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "mathematics",
+            "label": "mathematics",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved efficiently in O(N) time by using a monotonic stack to track subarray minimums and calculate the sum of their minimums.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-24-79-word-search": {
+      "status": "analyzed",
+      "date": "2022-11-24",
+      "display_date": "24.11.2022",
+      "slug": "2022-11-24-79-word-search",
+      "display_title": "79. Word Search",
+      "source_hash": "f5a53d0f35d00617921e7a5af2f10532d0a0f524a48014abeb067e32098416a3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:14:33Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "cycle-handling",
+            "label": "cycle-handling",
+            "confidence": 0.5
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using backtracking to explore all possible paths in the grid to find a word.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-23-valid-sudoku": {
+      "status": "analyzed",
+      "date": "2022-11-23",
+      "display_date": "23.11.2022",
+      "slug": "2022-11-23-valid-sudoku",
+      "display_title": "Valid Sudoku",
+      "source_hash": "7ba9d85d21a9e093108b105e49bc8004d1c5770e9c085c727de3e2fe61e77ab5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:14:57Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-set",
+            "label": "HashSet",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "Array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "set-checking",
+            "label": "Set checking",
+            "confidence": 0.9
+          },
+          {
+            "slug": "iteration",
+            "label": "Iteration",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution checks for the validity of rows, columns, and 3x3 sub-boxes in a Sudoku board by ensuring no digit repeats within these constraints.",
+        "manual_review": false,
+        "confidence": 0.98
+      }
+    },
+    "2022-11-22-perfect-squares": {
+      "status": "analyzed",
+      "date": "2022-11-22",
+      "display_date": "22.11.2022",
+      "slug": "2022-11-22-perfect-squares",
+      "display_title": "Perfect Squares",
+      "source_hash": "c82e0a0c97f1e9921ab2dcb8f7d5b45fbd39df89fe154b9f47216d6f516af0f0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:15:10Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "implicit array access",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "recursive calls",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "caching results",
+            "confidence": 1.0
+          },
+          {
+            "slug": "backtracking",
+            "label": "search space exploration",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "math",
+            "label": "perfect squares problem",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using recursion with memoization to find the minimum number of perfect squares that sum up to a given integer.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-21-nearest-exit-from-entrance-in-maze": {
+      "status": "analyzed",
+      "date": "2022-11-21",
+      "display_date": "21.11.2022",
+      "slug": "2022-11-21-nearest-exit-from-entrance-in-maze",
+      "display_title": "Nearest Exit From Entrance In Maze",
+      "source_hash": "d9482cbdff7b3b698b043ecf78b5d861244faa7dc0ef08b15ec66946f085263b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:15:33Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "maze",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "queue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "in-place-marking",
+            "label": "modifying the input array to mark visited cells",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "maze traversal",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "grid traversal",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a Breadth-First Search (BFS) starting from the entrance to find the nearest exit.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-20-basic-calculator": {
+      "status": "analyzed",
+      "date": "2022-11-20",
+      "display_date": "20.11.2022",
+      "slug": "2022-11-20-basic-calculator",
+      "display_title": "Basic Calculator",
+      "source_hash": "b42ebfb52e1ddd430ec3c438260025616bb66424870301f783126045a69a2917",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:15:44Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "recursion_with_substring",
+            "label": "Recursive evaluation using substring splitting for parentheses groups",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "String parsing and manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arithmetic",
+            "label": "Basic arithmetic evaluation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution uses recursion and substring manipulation to handle nested parentheses and calculate the result of an expression string.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2022-11-19-erect-the-fence": {
+      "status": "analyzed",
+      "date": "2022-11-19",
+      "display_date": "19.11.2022",
+      "slug": "2022-11-19-erect-the-fence",
+      "display_title": "Erect The Fence",
+      "source_hash": "08cd0db3327da73d68ccd8dd6290a5ded915a175cb63a6a032b6bbb59544c468",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:16:11Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "IntArray",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "MutableList",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          },
+          {
+            "slug": "monotonic_chain",
+            "label": "andrew's monotonic chain",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "cross_product",
+            "label": "vector algebra for ccw check",
+            "confidence": 1.0
+          },
+          {
+            "slug": "monotone_chain",
+            "label": "convex hull monotone chain",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "geometry",
+            "label": "convex hull",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The code implements the Andrew's monotonic chain algorithm to find the convex hull of a set of points.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-18-ugly-number": {
+      "status": "analyzed",
+      "date": "2022-11-18",
+      "display_date": "18.11.2022",
+      "slug": "2022-11-18-ugly-number",
+      "display_title": "Ugly Number",
+      "source_hash": "c79a004171b00e5ed8e550ae73eeda9cec2f7b236a4762cf622e86f2f229c87b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:16:16Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by repeatedly dividing the number by 2, 3, and 5 until it is no longer divisible by these primes, checking if the result is 1.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-17-rectangle-area": {
+      "status": "analyzed",
+      "date": "2022-11-17",
+      "display_date": "17.11.2022",
+      "slug": "2022-11-17-rectangle-area",
+      "display_title": "Rectangle Area",
+      "source_hash": "5122df8dc0aa8a1566a7195daf4fda5dd8d5bd54a1f20d9f369109af49cf8b67",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:16:34Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "rectangle",
+            "label": "class/struct",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "geometric_intersection_corners",
+            "label": "corner_checking_and_sorting",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "geometry",
+            "label": "rectangle_area",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The area of the intersection of two rectangles is calculated by finding the intersection rectangle's corners and subtracting its area from the sum of the individual areas.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2022-11-16-guess-number-higher-or-lower": {
+      "status": "analyzed",
+      "date": "2022-11-16",
+      "display_date": "16.11.2022",
+      "slug": "2022-11-16-guess-number-higher-or-lower",
+      "display_title": "Guess Number Higher Or Lower",
+      "source_hash": "8f35206c4ee87f2b99a0097e5db41b9c9638a38df765311253ccf9f3c37902c2",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:16:43Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "safe-mid-calculation",
+            "label": "safe-mid-calculation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "search",
+            "label": "search",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using binary search to efficiently find a target number.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-15-count-complete-tree-nodes": {
+      "status": "analyzed",
+      "date": "2022-11-15",
+      "display_date": "15.11.2022",
+      "slug": "2022-11-15-count-complete-tree-nodes",
+      "display_title": "Count Complete Tree Nodes",
+      "source_hash": "ca327f6a75fe931d5de7a555d81f520688ba9512c2991f27c963451ea09d36c0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:17:04Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "TreeNode",
+            "confidence": 1.0
+          },
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "logarithmic-depth-check",
+            "label": "logarithmic-depth-check",
+            "confidence": 1.0
+          },
+          {
+            "slug": "tree-height-comparison",
+            "label": "tree-height-comparison",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by recursively counting nodes based on the height of the left and right subtrees.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-14-most-stones-removed-with-same-row-or-column": {
+      "status": "analyzed",
+      "date": "2022-11-14",
+      "display_date": "14.11.2022",
+      "slug": "2022-11-14-most-stones-removed-with-same-row-or-column",
+      "display_title": "Most Stones Removed With Same Row Or Column",
+      "source_hash": "a9ed2249bba2c5a514d5a8edba196c95c483999f4b3e76004f78bd5a6c74a883",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:17:23Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "grouping",
+            "label": "grouping",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "the problem is solved by using the union-find data structure to group stones that share the same row or column.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-13-reverse-words-in-a-string": {
+      "status": "analyzed",
+      "date": "2022-11-13",
+      "display_date": "13.11.2022",
+      "slug": "2022-11-13-reverse-words-in-a-string",
+      "display_title": "Reverse Words In A String",
+      "source_hash": "cf9ca5971f2a1fb806377d0a9a89995e8cc53ba56d6b1dc4815d8adb17548287",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:17:39Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "Stack",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution uses a stack to reverse the order of characters and then process them to reverse individual words.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-12-find-median-from-data-stream": {
+      "status": "analyzed",
+      "date": "2022-11-12",
+      "display_date": "12.11.2022",
+      "slug": "2022-11-12-find-median-from-data-stream",
+      "display_title": "Find Median From Data Stream",
+      "source_hash": "a2525da38112e6f6e8f9dddb9eaf17df61d2225498bcc79bc6eb6cdbfdc2a8aa",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:17:54Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "heap",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "insertion-sort",
+            "label": "sorting",
+            "confidence": 0.0
+          },
+          {
+            "slug": "selection-sort",
+            "label": "sorting",
+            "confidence": 0.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-heap",
+            "label": "balancing",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "data-structures",
+            "label": "sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "streaming",
+            "label": "data-stream",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The median is maintained by splitting the data into two heaps and ensuring they remain balanced.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-11-remove-duplicates-from-sorted-array": {
+      "status": "analyzed",
+      "date": "2022-11-11",
+      "display_date": "11.11.2022",
+      "slug": "2022-11-11-remove-duplicates-from-sorted-array",
+      "display_title": "Remove Duplicates From Sorted Array",
+      "source_hash": "fec82238fb0c2b9fce4ecc7e40dee45e01dae240ed233ec36df5b1ac191b7213",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:18:11Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a two-pointer approach to overwrite duplicate elements in place.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-10-remove-all-adjacent-duplicates-in-string": {
+      "status": "analyzed",
+      "date": "2022-11-10",
+      "display_date": "10.11.2022",
+      "slug": "2022-11-10-remove-all-adjacent-duplicates-in-string",
+      "display_title": "Remove All Adjacent Duplicates In String",
+      "source_hash": "4bc789f6559f7b6a837ecd22c9b75ffe7a12cd806795ce703dc5c92084a9ed01",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:18:26Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "string",
+            "label": "string",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "stack_based",
+            "label": "stack-based",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "stack_for_removal",
+            "label": "stack-for-removal",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a stack to process the string and remove adjacent duplicate characters.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-09-online-stock-span": {
+      "status": "analyzed",
+      "date": "2022-11-09",
+      "display_date": "9.11.2022",
+      "slug": "2022-11-09-online-stock-span",
+      "display_title": "Online Stock Span",
+      "source_hash": "77b76bd8a17b006282a636bdcd00edd07fa6aa8d428ec976178cfefb9e2e4cae",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:18:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "stack",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pair",
+            "label": "pair",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "monotonic-stack",
+            "label": "monotonic-stack",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "stack",
+            "label": "stack",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "A stack is used to maintain a sequence of prices and their corresponding spans, utilizing the property of a decreasing stack to efficiently calculate the span for the current price.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-08-make-the-string-great": {
+      "status": "analyzed",
+      "date": "2022-11-08",
+      "display_date": "8.11.2022",
+      "slug": "2022-11-08-make-the-string-great",
+      "display_title": "Make The String Great",
+      "source_hash": "ce05927694f6527f855807c3dea3d07e6fc26b10ee13b6600e88af4c02fbe133",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:19:04Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "char array (toCharArray)",
+            "confidence": 1.0
+          },
+          {
+            "slug": "string",
+            "label": "string manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "brute-force",
+            "label": "nested loops for pairwise comparison",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "simulation",
+            "label": "iterative process to resolve conflicts",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pairwise-comparison",
+            "label": "checking adjacent/non-adjacent characters for equality and difference",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string processing",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The solution iteratively scans the string and removes conflicting characters until no more changes can be made.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-07-maximum-69-number": {
+      "status": "analyzed",
+      "date": "2022-11-07",
+      "display_date": "7.11.2022",
+      "slug": "2022-11-07-maximum-69-number",
+      "display_title": "Maximum 69 Number",
+      "source_hash": "af704deea2cb5a30b79a16bae402b377714153bd55225844fffea79e182d5961",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:19:19Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "digit manipulation",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The problem is solved by applying a series of conditional adjustments based on the input number's range to maximize the result.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-06-word-search-ii": {
+      "status": "analyzed",
+      "date": "2022-11-06",
+      "display_date": "6.11.2022",
+      "slug": "2022-11-06-word-search-ii",
+      "display_title": "Word Search Ii",
+      "source_hash": "093050860fe35b01ec370425f9d9cecd5ce157e6b657458fd66ce90f524a88eb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:19:58Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "trie",
+            "label": "trie",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "trie_search",
+            "label": "trie_search",
+            "confidence": 1.0
+          },
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by building a trie from the words and then performing a depth-first search starting from every cell to find the words in the grid.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-06-orderly-queue": {
+      "status": "analyzed",
+      "date": "2022-11-06",
+      "display_date": "6.11.2022",
+      "slug": "2022-11-06-orderly-queue",
+      "display_title": "Orderly Queue",
+      "source_hash": "53d118b8c74b982f112838f423cce290cb34e5a7f5d140249ae79b8036760c92",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:19:29Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "If k is greater than or equal to 2, any adjacent swap is possible, allowing the string to be fully sorted.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2022-11-04-reverse-vowels-of-a-string": {
+      "status": "analyzed",
+      "date": "2022-11-04",
+      "display_date": "4.11.2022",
+      "slug": "2022-11-04-reverse-vowels-of-a-string",
+      "display_title": "Reverse Vowels Of A String",
+      "source_hash": "0c5684ad26c1b3e92bf2869ac3eccd119e24c0e4e6de4fdec405f776049cd349",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:20:09Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "char_array",
+            "label": "char_array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two_pointers",
+            "label": "two-pointers",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two_pointer_vowel_swap",
+            "label": "two-pointer vowel swap",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using two pointers to find and swap vowels symmetrically in a string.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T13:09:56Z"
+  "updated_at": "2026-04-26T13:20:09Z"
 }
