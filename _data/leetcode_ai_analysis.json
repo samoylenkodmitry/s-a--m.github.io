@@ -61251,7 +61251,232 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2022-11-03-longest-palindrome-by-concatenating-two-letter-words": {
+      "status": "analyzed",
+      "date": "2022-11-03",
+      "display_date": "3.11.2022",
+      "slug": "2022-11-03-longest-palindrome-by-concatenating-two-letter-words",
+      "display_title": "Longest Palindrome By Concatenating Two Letter Words",
+      "source_hash": "8dce97c1eb00e62dc2085f2aed024fc7a0a830a71cca721aa9794e257efeb13e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:20:35Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "visited",
+            "confidence": 1.0
+          },
+          {
+            "slug": "map",
+            "label": "visited",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "linear-scan",
+            "label": "linear-scan",
+            "confidence": 0.0
+          },
+          {
+            "slug": "counting",
+            "label": "counting",
+            "confidence": 0.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "counting-and-pairing",
+            "label": "counting-and-pairing",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by counting and pairing two-letter words based on their reversed counterparts to form the longest palindrome.",
+        "manual_review": true,
+        "confidence": 0.9
+      }
+    },
+    "2022-11-02-minimum-genetic-mutation": {
+      "status": "analyzed",
+      "date": "2022-11-02",
+      "display_date": "2.11.2022",
+      "slug": "2022-11-02-minimum-genetic-mutation",
+      "display_title": "Minimum Genetic Mutation",
+      "source_hash": "b202fff8486f62790ad0206782ef0870db9ba5717f5a4e786a73c1adb5ff9614",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:20:51Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "wToW",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "bank",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "queue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "graph",
+            "label": "implicit graph construction and traversal",
+            "confidence": 0.9
+          },
+          {
+            "slug": "visited-set",
+            "label": "implicit visited tracking via map keys",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "string similarity graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "string comparison",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by modeling the words as nodes in a graph where edges connect words differing by exactly one character, and then finding the shortest path between the start and end words using Breadth-First Search.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2022-11-01-where-will-the-ball-fall": {
+      "status": "analyzed",
+      "date": "2022-11-01",
+      "display_date": "1.11.2022",
+      "slug": "2022-11-01-where-will-the-ball-fall",
+      "display_title": "Where Will The Ball Fall",
+      "source_hash": "02ee72af0413972ef45611f1746a3340244a35b70cb617fab7f2d81e20bd490b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:21:14Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "indToBall",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "iterative_update",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "state_tracking",
+            "label": "tracking_ball_positions",
+            "confidence": 0.9
+          },
+          {
+            "slug": "pattern_recognition",
+            "label": "identifying_shift_rules",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "grid_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iteratively tracking the positions of balls as they shift based on the grid configuration.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2022-10-31-toeplitz-matrix": {
+      "status": "analyzed",
+      "date": "2022-10-31",
+      "display_date": "31.10.2022",
+      "slug": "2022-10-31-toeplitz-matrix",
+      "display_title": "Toeplitz Matrix",
+      "source_hash": "656ba77a0e668e31f1ac87154ec87826c854219106df4a700a73b3cf1ddac9fe",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T13:21:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "matrix",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sequence",
+            "label": "sequence",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sliding-window",
+            "label": "windowed",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sequence-operations",
+            "label": "drop",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "matrix",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by comparing adjacent rows to ensure that every element in a row matches the element immediately above it.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T13:20:09Z"
+  "updated_at": "2026-04-26T13:21:27Z"
 }
