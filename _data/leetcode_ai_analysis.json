@@ -40905,7 +40905,1511 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2024-01-05-300-longest-increasing-subsequence": {
+      "status": "analyzed",
+      "date": "2024-01-05",
+      "display_date": "5.01.2024",
+      "slug": "2024-01-05-300-longest-increasing-subsequence",
+      "display_title": "300. Longest Increasing Subsequence",
+      "source_hash": "ab0031a133ad0250ce3060bfb8958513687737fcbb325e901f295c51ebb83780",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:56:41Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "list",
+            "label": "mutable list for sequence tracking",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "used to find insertion point in the increasing sequence",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary-search_insertion_point",
+            "label": "using binary search to maintain an increasing subsequence efficiently",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "input array of numbers",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "implicit sequence tracking",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The longest increasing subsequence length is found by maintaining an increasing sequence and using binary search to find the optimal position for each new element.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2024-01-04-2870-minimum-number-of-operations-to-make-array-empty": {
+      "status": "analyzed",
+      "date": "2024-01-04",
+      "display_date": "4.01.2024",
+      "slug": "2024-01-04-2870-minimum-number-of-operations-to-make-array-empty",
+      "display_title": "2870. Minimum Number of Operations to Make Array Empty",
+      "source_hash": "0363c651cde175eb1aef1f74c0f06db020b6537963058a9bb627410e323b9b52",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:57:00Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "Dynamic Programming",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recurrence-relation",
+            "label": "Recurrence Relation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "modulo-arithmetic",
+            "label": "Modulo Arithmetic",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "Dynamic Programming",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the minimum operations based on a dynamic programming recurrence relation derived from the frequencies of numbers.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2024-01-03-2125-number-of-laser-beams-in-a-bank": {
+      "status": "analyzed",
+      "date": "2024-01-03",
+      "display_date": "3.01.2024",
+      "slug": "2024-01-03-2125-number-of-laser-beams-in-a-bank",
+      "display_title": "2125. Number of Laser Beams in a Bank",
+      "source_hash": "f710f678ece632947f578b7701d31853c1fad152fb92841df5af1f14a714d8b8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:57:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "map",
+            "label": "hash-map",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sum",
+            "label": "sum",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "windowed",
+            "label": "sliding-window",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by counting consecutive '1's in the bank and multiplying the counts of adjacent non-empty groups.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2024-01-02-2610-convert-an-array-into-a-2d-array-with-conditions": {
+      "status": "analyzed",
+      "date": "2024-01-02",
+      "display_date": "2.01.2024",
+      "slug": "2024-01-02-2610-convert-an-array-into-a-2d-array-with-conditions",
+      "display_title": "2610. Convert an Array Into a 2D Array With Conditions",
+      "source_hash": "98fb3966c8bcc64d18ae600a38ce8689fd368c6b3e8a867b2a626cfa9ae71a81",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:57:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "freq",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "result",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "grouping",
+            "label": "groupBy",
+            "confidence": 0.9
+          },
+          {
+            "slug": "frequency-counting",
+            "label": "counting frequencies",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "input_array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "lists",
+            "label": "output_list",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by counting the frequency of each number and then constructing a 2D array by distributing these numbers into rows based on their counts.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2024-01-01-455-assign-cookies": {
+      "status": "analyzed",
+      "date": "2024-01-01",
+      "display_date": "1.01.2024",
+      "slug": "2024-01-01-455-assign-cookies",
+      "display_title": "455. Assign Cookies",
+      "source_hash": "6ccc8d79e68d749c29ec62e56f5acce5d9007dec066f36190535ff70d22f525c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:58:06Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "PriorityQueue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "Array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "Sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "two-pointers",
+            "label": "Two Pointers",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "greedy",
+            "label": "Greedy",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sorting-and-two-pointers",
+            "label": "Sorting and Two Pointers",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "Array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sorting",
+            "label": "Sorting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting both the children's cookies and the cookie sizes and then using a two-pointer approach to greedily match them.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-31-1624-largest-substring-between-two-equal-characters": {
+      "status": "analyzed",
+      "date": "2023-12-31",
+      "display_date": "31.12.2023",
+      "slug": "2023-12-31-1624-largest-substring-between-two-equal-characters",
+      "display_title": "1624. Largest Substring Between Two Equal Characters",
+      "source_hash": "57c42236daed35500f7400684e79a4d3db0513d7e8e66b4cca8663a818c12817",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:58:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "char_to_index",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "linear-scan",
+            "label": "single_pass",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "first_occurrence_tracking",
+            "label": "store_first_index_of_each_character",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "substrings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The maximum distance between two equal characters is found by tracking the first occurrence of each character and maximizing the difference in their indices.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-30-1897-redistribute-characters-to-make-all-strings-equal": {
+      "status": "analyzed",
+      "date": "2023-12-30",
+      "display_date": "30.12.2023",
+      "slug": "2023-12-30-1897-redistribute-characters-to-make-all-strings-equal",
+      "display_title": "1897. Redistribute Characters to Make All Strings Equal",
+      "source_hash": "ffa84c1f1096cfcf5f42e83dfa3236704cd6ac4da866250bd081ffcf62fcd8ea",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:58:38Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings_manipulation_and_counting_characters_in_strings_for_distribution",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem requires checking if the total count of each character across all strings is perfectly divisible by the number of strings.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-29-1335-minimum-difficulty-of-a-job-schedule": {
+      "status": "analyzed",
+      "date": "2023-12-29",
+      "display_date": "29.12.2023",
+      "slug": "2023-12-29-1335-minimum-difficulty-of-a-job-schedule",
+      "display_title": "1335. Minimum Difficulty of a Job Schedule",
+      "source_hash": "95634251e2b4f7c57b2218bb949f453e90c71666b76563c4d30aa27c684f46df",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:58:54Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "caching_results",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using depth-first search with memoization to find the minimum sum of maximum job difficulties over a schedule.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-28-1531-string-compression-ii": {
+      "status": "analyzed",
+      "date": "2023-12-28",
+      "display_date": "28.12.2023",
+      "slug": "2023-12-28-1531-string-compression-ii",
+      "display_title": "1531. String Compression II",
+      "source_hash": "f7ddf20420c042ca677e979a32dc64df777f80c30d9fac35ccef02e24c0cb0d4",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:59:20Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "optimal-substructure",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string-compression",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming with a recursive approach to find the minimum length of run-length encoded string after removing at most k characters.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-27-1578-minimum-time-to-make-rope-colorful": {
+      "status": "analyzed",
+      "date": "2023-12-27",
+      "display_date": "27.12.2023",
+      "slug": "2023-12-27-1578-minimum-time-to-make-rope-colorful",
+      "display_title": "1578. Minimum Time to Make Rope Colorful",
+      "source_hash": "0294dcf7bb0599ef0a3a68ba3caf97a687f56f5e15d25e47cca0d497f17d930a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:59:26Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "A greedy scan is used to minimize the total time by removing the maximum needed time from duplicate islands.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-26-1155-number-of-dice-rolls-with-target-sum": {
+      "status": "analyzed",
+      "date": "2023-12-26",
+      "display_date": "26.12.2023",
+      "slug": "2023-12-26-1155-number-of-dice-rolls-with-target-sum",
+      "display_title": "1155. Number of Dice Rolls With Target Sum",
+      "source_hash": "281364d7bec5961b81b4c674b90ce3960bfb4674f803fec20edd5b51c56ac66f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T10:59:48Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "dp_caching",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "dice_rolls",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming with memoization to count the number of ways to achieve a target sum by rolling n dice with k faces.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-25-91-decode-ways": {
+      "status": "analyzed",
+      "date": "2023-12-25",
+      "display_date": "25.12.2023",
+      "slug": "2023-12-25-91-decode-ways",
+      "display_title": "91. Decode Ways",
+      "source_hash": "d0597fd792e1c3f668229b8ed66475fc06720a51e69ea8c8937afc5b6b0369db",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:00:05Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "Dynamic Programming",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dfs",
+            "label": "Depth First Search",
+            "confidence": 0.8
+          },
+          {
+            "slug": "memoization",
+            "label": "Memoization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "Dynamic Programming",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming by considering the number of ways to decode substrings, optimized with a reversed iteration and state caching.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-24-1758-minimum-changes-to-make-alternating-binary-string": {
+      "status": "analyzed",
+      "date": "2023-12-24",
+      "display_date": "24.12.2023",
+      "slug": "2023-12-24-1758-minimum-changes-to-make-alternating-binary-string",
+      "display_title": "1758. Minimum Changes To Make Alternating Binary String",
+      "source_hash": "13a1e29232ca2da99fe3a519127ee8aa7153d1ad95bc61fbb467990163110a20",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:00:19Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by counting the minimum changes required to achieve one of two alternating patterns (0101... or 1010...) using four counters for positions.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-23-1496-path-crossing": {
+      "status": "analyzed",
+      "date": "2023-12-23",
+      "display_date": "23.12.2023",
+      "slug": "2023-12-23-1496-path-crossing",
+      "display_title": "1496. Path Crossing",
+      "source_hash": "f98e8a455b070c6e432f17798db7464974a10d0c14f3742734168e86aa749182",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:00:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "coordinates",
+            "label": "coordinates",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by simulating the path and checking if any coordinate is revisited.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-22-1422-maximum-score-after-splitting-a-string": {
+      "status": "analyzed",
+      "date": "2023-12-22",
+      "display_date": "22.12.2023",
+      "slug": "2023-12-22-1422-maximum-score-after-splitting-a-string",
+      "display_title": "1422. Maximum Score After Splitting a String",
+      "source_hash": "70b7cc8332a9dfbfa6c9cf1b325a89a4405f07ad0373c81cdbc78cc7cc930340",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:00:46Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "single-pass-counting",
+            "label": "single-pass-counting",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The maximum score is found by iterating through the string and calculating the sum of ones and zeros in a single pass.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-21-1637-widest-vertical-area-between-two-points-containing-no-points": {
+      "status": "analyzed",
+      "date": "2023-12-21",
+      "display_date": "21.12.2023",
+      "slug": "2023-12-21-1637-widest-vertical-area-between-two-points-containing-no-points",
+      "display_title": "1637. Widest Vertical Area Between Two Points Containing No Points",
+      "source_hash": "5197efbd90b327948d428e6e78a5e17e303f1b75a6264fd1621001ee7074036d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:01:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "points array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting by x-coordinate",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting_and_sliding_window",
+            "label": "sorting points and using a sliding window approach on adjacent pairs",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "geometry",
+            "label": "area calculation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "point coordinates",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The widest vertical area is found by sorting the points by their x-coordinates and calculating the maximum difference between adjacent x-coordinates.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-20-2706-buy-two-chocolates": {
+      "status": "analyzed",
+      "date": "2023-12-20",
+      "display_date": "20.12.2023",
+      "slug": "2023-12-20-2706-buy-two-chocolates",
+      "display_title": "2706. Buy Two Chocolates",
+      "source_hash": "df56a93d3f427141538566c1fc8228846722f77b59b70edca56ccf57cf244796",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:01:18Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "prices",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arithmetic",
+            "label": "money",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Find the two smallest prices in an array to maximize the remaining money after buying two chocolates.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-19-661-image-smoother": {
+      "status": "analyzed",
+      "date": "2023-12-19",
+      "display_date": "19.12.2023",
+      "slug": "2023-12-19-661-image-smoother",
+      "display_title": "661. Image Smoother",
+      "source_hash": "0953f124df9db2e7c1220f82d9c8e57ec57e69bc5ae73faeb4d74931ebc18db5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:01:27Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "sliding-window",
+            "label": "windowing for local averaging",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "2d matrix manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem requires calculating the average of the 3x3 neighborhood for every cell in a 2D matrix.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-18-1913-maximum-product-difference-between-two-pairs": {
+      "status": "analyzed",
+      "date": "2023-12-18",
+      "display_date": "18.12.2023",
+      "slug": "2023-12-18-1913-maximum-product-difference-between-two-pairs",
+      "display_title": "1913. Maximum Product Difference Between Two Pairs",
+      "source_hash": "63675429a895495c9c24533eeb3a300f2dbb1bb87b84b6ac6849fc0edd77e680",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:01:41Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The maximum product difference between two pairs is found by calculating the product of the two largest elements and the product of the two smallest elements in the array.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-17-2353-design-a-food-rating-system": {
+      "status": "analyzed",
+      "date": "2023-12-17",
+      "display_date": "17.12.2023",
+      "slug": "2023-12-17-2353-design-a-food-rating-system",
+      "display_title": "2353. Design a Food Rating System",
+      "source_hash": "a84bfe37929344286351a32b15ad6a33fac5f8dd813d31a2207db89b47db445b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:01:54Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree-set",
+            "label": "TreeSet",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "sorted-set-maintenance",
+            "label": "Sorted Set Maintenance",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "Strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "A FoodRatingSystem is designed using a HashMap to map foods and cuisines to indices, and TreeSet to maintain sorted ratings for each cuisine efficiently.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-16-242-valid-anagram": {
+      "status": "analyzed",
+      "date": "2023-12-16",
+      "display_date": "16.12.2023",
+      "slug": "2023-12-16-242-valid-anagram",
+      "display_title": "242. Valid Anagram",
+      "source_hash": "57a60ce11e20d2a68f32f5207c10d7a7da2638dbc4ac06ce3e666766207672b3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:02:10Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Checks if two strings are anagrams by comparing the frequency counts of characters in both strings.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-15-1436-destination-city": {
+      "status": "analyzed",
+      "date": "2023-12-15",
+      "display_date": "15.12.2023",
+      "slug": "2023-12-15-1436-destination-city",
+      "display_title": "1436. Destination City",
+      "source_hash": "93e5c4ce58c724d47b274e28d0cef937190b2cd2f86db0f25c120a0e0613d079",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:02:19Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "list processing",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem requires finding the city with the smallest destination city based on a list of paths.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-14-2482-difference-between-ones-and-zeros-in-row-and-column": {
+      "status": "analyzed",
+      "date": "2023-12-14",
+      "display_date": "14.12.2023",
+      "slug": "2023-12-14-2482-difference-between-ones-and-zeros-in-row-and-column",
+      "display_title": "2482. Difference Between Ones and Zeros in Row and Column",
+      "source_hash": "d45a1f27f74d2bcc8bc82cfef90a4a1acaad90b722160269263a8d536cc3c0d8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:02:32Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by pre-calculating row and column sums of ones and zeros, and then using these pre-calculated values to determine the required difference for each cell.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-13-1582-special-positions-in-a-binary-matrix": {
+      "status": "analyzed",
+      "date": "2023-12-13",
+      "display_date": "13.12.2023",
+      "slug": "2023-12-13-1582-special-positions-in-a-binary-matrix",
+      "display_title": "1582. Special Positions in a Binary Matrix",
+      "source_hash": "3d6042a1410c49c26596d4b26d51c45cdc443185e42cb754282962ea874874fd",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:02:42Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "matrix",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "binary_matrix",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem involves iterating through a binary matrix to count special positions where the element is 1 and all its immediate neighbors (up, down, left, right) are 0.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-12-1464-maximum-product-of-two-elements-in-an-array": {
+      "status": "analyzed",
+      "date": "2023-12-12",
+      "display_date": "12.12.2023",
+      "slug": "2023-12-12-1464-maximum-product-of-two-elements-in-an-array",
+      "display_title": "1464. Maximum Product of Two Elements in an Array",
+      "source_hash": "3f86b225646d6a3347b74bc8bdba879e1a1f43015718c2e86180fa598627892e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:02:57Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The maximum product of two elements in an array can be found by identifying the two largest elements and the two smallest elements.",
+        "manual_review": true,
+        "confidence": 0.9
+      }
+    },
+    "2023-12-11-1287-element-appearing-more-than-25-in-sorted-array": {
+      "status": "analyzed",
+      "date": "2023-12-11",
+      "display_date": "11.12.2023",
+      "slug": "2023-12-11-1287-element-appearing-more-than-25-in-sorted-array",
+      "display_title": "1287. Element Appearing More Than 25% In Sorted Array",
+      "source_hash": "3fdc89625a0f8c30a50e22b546d65c04a0d0a28b8716b8b5745dda0313cf8a66",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:03:08Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "groupBy",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "implicit_sort",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "sorted_array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Find the element that appears more than 25% of the time in a sorted array by grouping identical elements and finding the most frequent one.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-10-867-transpose-matrix": {
+      "status": "analyzed",
+      "date": "2023-12-10",
+      "display_date": "10.12.2023",
+      "slug": "2023-12-10-867-transpose-matrix",
+      "display_title": "867. Transpose Matrix",
+      "source_hash": "6b5f07cdb234293f1319fcdee7dda3fac7836c743b3220fa1a89b1dd59ee0df0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:03:28Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "matrix",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "direct_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "direct_indexing",
+            "label": "matrix_transposition",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "matrix",
+            "label": "2d_array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The matrix is transposed by swapping the row and column indices during the creation of the new matrix.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-09-94-binary-tree-inorder-traversal": {
+      "status": "analyzed",
+      "date": "2023-12-09",
+      "display_date": "09.12.2023",
+      "slug": "2023-12-09-94-binary-tree-inorder-traversal",
+      "display_title": "94. Binary Tree Inorder Traversal",
+      "source_hash": "4b5d1b1a2948b057b635dd74d9c50b52ee3c921feb67c252e8e6e7c8fed0fefb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:03:41Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "binary-tree",
+            "label": "TreeNode",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "inorder-traversal",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "morris-traversal",
+            "label": "iterative-approach",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "binary-tree",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Inorder traversal visits the left subtree, then the root, and finally the right subtree.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-08-606-construct-string-from-binary-tree": {
+      "status": "analyzed",
+      "date": "2023-12-08",
+      "display_date": "08.12.2023",
+      "slug": "2023-12-08-606-construct-string-from-binary-tree",
+      "display_title": "606. Construct String from Binary Tree",
+      "source_hash": "98a36e6658be874f37e39ed26f64959895f4277b3bdd50f96a52d48ab49ddae7",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:04:07Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "binary-tree",
+            "label": "binary-tree",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "pre-order-traversal",
+            "label": "pre-order-traversal",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "trees",
+            "label": "trees",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem requires serializing a binary tree into a string using a recursive pre-order traversal.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-07-1903-largest-odd-number-in-string": {
+      "status": "analyzed",
+      "date": "2023-12-07",
+      "display_date": "07.12.2023",
+      "slug": "2023-12-07-1903-largest-odd-number-in-string",
+      "display_title": "1903. Largest Odd Number in String",
+      "source_hash": "77d2424c75d5c70e2f8ba2ffca8d651274aadfc36b94eff131787668fc7fff3d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:04:16Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "string processing",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by finding the longest suffix of the string consisting only of even digits and removing it to find the largest odd number at the start.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-05-1688-count-of-matches-in-tournament": {
+      "status": "analyzed",
+      "date": "2023-12-05",
+      "display_date": "05.12.2023",
+      "slug": "2023-12-05-1688-count-of-matches-in-tournament",
+      "display_title": "1688. Count of Matches in Tournament",
+      "source_hash": "43670b4e3d77230a7ebfe804ab64f96b0ecc296ea3c0669a96aa1934c7783bf9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:04:29Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by iteratively applying a recursive-like reduction based on whether the current number of participants is even or odd.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-04-2264-largest-3-same-digit-number-in-string": {
+      "status": "analyzed",
+      "date": "2023-12-04",
+      "display_date": "04.12.2023",
+      "slug": "2023-12-04-2264-largest-3-same-digit-number-in-string",
+      "display_title": "2264. Largest 3-Same-Digit Number in String",
+      "source_hash": "e5569e72b66e00e0e04e18391c52f6d9aaf57a5d40b2122f93c1324c96ad95f5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:04:43Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "windowing",
+            "label": "sliding-window",
+            "confidence": 1.0
+          },
+          {
+            "slug": "filtering",
+            "label": "filtering",
+            "confidence": 1.0
+          },
+          {
+            "slug": "finding_max",
+            "label": "max_by_or_null",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a sliding window of size three to check for consecutive identical digits and then finding the largest such number.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-03-1266-minimum-time-visiting-all-points": {
+      "status": "analyzed",
+      "date": "2023-12-03",
+      "display_date": "03.12.2023",
+      "slug": "2023-12-03-1266-minimum-time-visiting-all-points",
+      "display_title": "1266. Minimum Time Visiting All Points",
+      "source_hash": "b3589e6b68bb530579a757e1b72a25f2adb12a0989fea8ebe62a808341714ddb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:04:58Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The minimum time to visit all points is determined by the maximum of the absolute differences in coordinates for each pair of points.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-12-02-1160-find-words-that-can-be-formed-by-characters": {
+      "status": "analyzed",
+      "date": "2023-12-02",
+      "display_date": "02.12.2023",
+      "slug": "2023-12-02-1160-find-words-that-can-be-formed-by-characters",
+      "display_title": "1160. Find Words That Can Be Formed by Characters",
+      "source_hash": "cc646d2b6c2fa4dc611f4e7456ad30fe4d12917e4df053bc218d71239a9057dc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:05:12Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "char frequencies map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "frequency counting",
+            "label": "using a hash map to store character frequencies",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "array processing",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "the problem is solved by comparing character frequencies of words against the available characters to determine formability.",
+        "manual_review": true,
+        "confidence": 0.85
+      }
+    },
+    "2023-12-01-1662-check-if-two-string-arrays-are-equivalent": {
+      "status": "analyzed",
+      "date": "2023-12-01",
+      "display_date": "01.12.2023",
+      "slug": "2023-12-01-1662-check-if-two-string-arrays-are-equivalent",
+      "display_title": "1662. Check If Two String Arrays are Equivalent",
+      "source_hash": "05837548e0c2e7b85c62c7d05f698e4d032c130a0472015cb9a47db18d552fae",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:05:32Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "two-pointers",
+            "label": "Two-pointer approach used to compare the concatenated strings efficiently while minimizing memory usage.",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "String manipulation and comparison",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by comparing the concatenated strings of two string arrays using a pointer-based iteration to achieve linear time and constant space complexity.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-30-1611-minimum-one-bit-operations-to-make-integers-zero": {
+      "status": "analyzed",
+      "date": "2023-11-30",
+      "display_date": "30.11.2023",
+      "slug": "2023-11-30-1611-minimum-one-bit-operations-to-make-integers-zero",
+      "display_title": "1611. Minimum One Bit Operations to Make Integers Zero",
+      "source_hash": "b664264d8b56f744e71ca139d201c1fb78366109db8d50fa0e5b44379dc69b9c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:05:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "Dynamic Programming",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "recursive-structure-decomposition",
+            "label": "Recursive Structure Decomposition",
+            "confidence": 0.9
+          },
+          {
+            "slug": "bit-manipulation",
+            "label": "Bit Manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "Integers",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "Bit Arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by recursively decomposing the number based on its bit structure and applying a pattern derived from the relationship between a number and its powers of two.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-29-191-number-of-1-bits": {
+      "status": "analyzed",
+      "date": "2023-11-29",
+      "display_date": "29.11.2023",
+      "slug": "2023-11-29-191-number-of-1-bits",
+      "display_title": "191. Number of 1 Bits",
+      "source_hash": "22e05262e0816ec7feeba76eecbc2250f4149774a9cab6eaa631d6a07d2a7be4",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:06:12Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "intarray",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "dp_table",
+            "confidence": 0.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "tabulation",
+            "label": "tabulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bit-manipulation",
+            "label": "bit_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "intarray",
+            "confidence": 1.0
+          },
+          {
+            "slug": "bitwise",
+            "label": "bit_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming to precalculate the number of set bits for all numbers up to 255, leveraging bit manipulation for larger numbers.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-28-2147-number-of-ways-to-divide-a-long-corridor": {
+      "status": "analyzed",
+      "date": "2023-11-28",
+      "display_date": "28.11.2023",
+      "slug": "2023-11-28-2147-number-of-ways-to-divide-a-long-corridor",
+      "display_title": "2147. Number of Ways to Divide a Long Corridor",
+      "source_hash": "634138d4a302fb536a1e1fff9ade6d37b346b8540f2605d9acb9ec6eb61f0f79",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:06:20Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string_processing",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arithmetic",
+            "label": "modulo_arithmetic",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by a single linear scan using dynamic tracking of previous sums to count valid divisions.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T10:56:11Z"
+  "updated_at": "2026-04-26T11:06:20Z"
 }
