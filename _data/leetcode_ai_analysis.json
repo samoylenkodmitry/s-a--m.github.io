@@ -127,6 +127,66 @@
         "confidence": 0.9
       }
     },
+    "2026-04-26-1559-detect-cycles-in-2d-grid": {
+      "status": "analyzed",
+      "date": "2026-04-26",
+      "display_date": "26.04.2026",
+      "slug": "2026-04-26-1559-detect-cycles-in-2d-grid",
+      "display_title": "1559. Detect Cycles in 2D Grid",
+      "source_hash": "d8681fcaa33e888f5901f6f14d04512e95422c883573e432b3c0ef8c48fec7a8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T09:01:28Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "union-find-path-compression",
+            "label": "union-find-path-compression",
+            "confidence": 1.0
+          },
+          {
+            "slug": "row-by-row-connection",
+            "label": "row-by-row-connection",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Detecting cycles in a 2D grid can be efficiently solved by connecting adjacent cells using the Union-Find data structure.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
     "2026-04-25": {
       "status": "analyzed",
       "date": "2026-04-25",
@@ -32779,5 +32839,5 @@
       }
     }
   },
-  "updated_at": "2026-04-26T05:56:25Z"
+  "updated_at": "2026-04-26T09:01:28Z"
 }
