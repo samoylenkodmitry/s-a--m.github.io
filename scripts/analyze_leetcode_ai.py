@@ -96,7 +96,13 @@ def save_cache(path: Path, cache: dict[str, Any]) -> None:
     cache["updated_at"] = now_utc()
     cache["blocks"] = {key: blocks[key] for key in sorted(blocks, reverse=True)}
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(cache, indent=2, sort_keys=False) + "\n", encoding="utf-8")
+    tmp_path = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    try:
+        tmp_path.write_text(json.dumps(cache, indent=2, sort_keys=False) + "\n", encoding="utf-8")
+        tmp_path.replace(path)
+    finally:
+        if tmp_path.exists():
+            tmp_path.unlink()
 
 
 def normalize_date_arg(value: str) -> str:
