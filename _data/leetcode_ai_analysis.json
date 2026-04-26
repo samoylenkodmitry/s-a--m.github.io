@@ -56270,7 +56270,1686 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2023-02-15-989-add-to-array-form-of-integer": {
+      "status": "analyzed",
+      "date": "2023-02-15",
+      "display_date": "15.02.2023",
+      "slug": "2023-02-15-989-add-to-array-form-of-integer",
+      "display_title": "989. Add to Array-Form of Integer",
+      "source_hash": "d59396946e6096f13d618dcc40e13f4ee419818f2289b50b07a8762559f34d4c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:49:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "LinkedList",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "iterative-carry",
+            "label": "Iterative Carry Calculation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "reverse-iteration",
+            "label": "Reverse Iteration",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arithmetic",
+            "label": "Arithmetic",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating from the end of the input array and iteratively calculating the sum with a carry to construct the result in reverse order.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-14-67-add-binary": {
+      "status": "analyzed",
+      "date": "2023-02-14",
+      "display_date": "14.02.2023",
+      "slug": "2023-02-14-67-add-binary",
+      "display_title": "67. Add Binary",
+      "source_hash": "da03010fbc0a99f2539d1c14bc89970bad246f619da2ecee02884f99cf982e47",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:49:53Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating through the binary strings from right to left while managing a carry-over bit.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-13-1523-count-odd-numbers-in-an-interval-range": {
+      "status": "analyzed",
+      "date": "2023-02-13",
+      "display_date": "13.02.2023",
+      "slug": "2023-02-13-1523-count-odd-numbers-in-an-interval-range",
+      "display_title": "1523. Count Odd Numbers in an Interval Range",
+      "source_hash": "7ff6e5ccd97e710aaad12b7e704802e17f131f2665d43d0edd1fb50e5120b0aa",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:50:10Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "math",
+            "label": "mathematics",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "Calculates the count of odd numbers in an inclusive range using arithmetic operations based on parity.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-12-2477-minimum-fuel-cost-to-report-to-the-capital": {
+      "status": "analyzed",
+      "date": "2023-02-12",
+      "display_date": "12.02.2023",
+      "slug": "2023-02-12-2477-minimum-fuel-cost-to-report-to-the-capital",
+      "display_title": "2477. Minimum Fuel Cost to Report to the Capital",
+      "source_hash": "6bf6f4e18f2b5aed98eba55b5456f5c98e8fe6eedf8478b22127a93619edf71e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:50:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "map",
+            "label": "hash-map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using Depth First Search on the road network to calculate the minimum fuel cost by optimizing car capacity at each node.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-11-1129-shortest-path-with-alternating-colors": {
+      "status": "analyzed",
+      "date": "2023-02-11",
+      "display_date": "11.02.2023",
+      "slug": "2023-02-11-1129-shortest-path-with-alternating-colors",
+      "display_title": "1129. Shortest Path with Alternating Colors",
+      "source_hash": "1c1752cc3929daa9266de1ffb3adc62471700101ace3547313eb81795ebf8e1c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:50:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "edgesRed",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hashSet",
+            "label": "visited",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "ArrayDeque",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "Breadth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "multi-source-bfs",
+            "label": "Multi-source BFS on state space",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "Graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "shortest-path",
+            "label": "Shortest Path",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a simultaneous Breadth-First Search starting from two initial nodes (one for each color) to find the shortest alternating paths.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-10-1162-as-far-from-land-as-possible": {
+      "status": "analyzed",
+      "date": "2023-02-10",
+      "display_date": "10.02.2023",
+      "slug": "2023-02-10-1162-as-far-from-land-as-possible",
+      "display_title": "1162. As Far from Land as Possible",
+      "source_hash": "08c726af4c8942bb804d90e6ea78b052a797d9a81eb36205604b4e822004d562",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:51:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-set",
+            "label": "visited",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "queue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bfs-expansion",
+            "label": "wave-propagation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "visited-set",
+            "label": "cycle-handling",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "grid",
+            "label": "2d-array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a multi-source Breadth-First Search (BFS) starting from all land cells to find the farthest water cell.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-09-2306-naming-a-company": {
+      "status": "analyzed",
+      "date": "2023-02-09",
+      "display_date": "9.02.2023",
+      "slug": "2023-02-09-2306-naming-a-company",
+      "display_title": "2306. Naming a Company",
+      "source_hash": "1b0f71b90ff3364344745241ba9063e9e3f17f5dfa90510d14a812b701572019",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:51:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-set",
+            "label": "hashSet",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "set-intersection",
+            "label": "setIntersection",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by grouping suffixes and calculating the intersection of unique elements between groups to find distinct names.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-02-08-45-jump-game-ii": {
+      "status": "analyzed",
+      "date": "2023-02-08",
+      "display_date": "8.02.2023",
+      "slug": "2023-02-08-45-jump-game-ii",
+      "display_title": "45. Jump Game II",
+      "source_hash": "82bc3aff07015aaa88825ed5e25810a4d372de1a90729765b3625224cae96944",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:51:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "Stack",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "greedy",
+            "label": "Greedy",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "stack_optimization",
+            "label": "Stack Optimization",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "Array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "jump",
+            "label": "Jump Game",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by a greedy approach using a stack to track reachable positions, optimizing the jumps.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-07-904-fruit-into-baskets": {
+      "status": "analyzed",
+      "date": "2023-02-07",
+      "display_date": "7.02.2023",
+      "slug": "2023-02-07-904-fruit-into-baskets",
+      "display_title": "904. Fruit Into Baskets",
+      "source_hash": "4d7c57a9c06d194e07761b02b9ca75f18ee024bcc7e6df2c5e4abd1df00f9fa5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:51:51Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by scanning the array to find the longest subarray containing at most two distinct fruit types.",
+        "manual_review": true,
+        "confidence": 0.95
+      }
+    },
+    "2023-02-06-1470-shuffle-the-array": {
+      "status": "analyzed",
+      "date": "2023-02-06",
+      "display_date": "6.02.2023",
+      "slug": "2023-02-06-1470-shuffle-the-array",
+      "display_title": "1470. Shuffle the Array",
+      "source_hash": "c3b98a209d80fd6b70c8b22e92c74bf5310d58d5ea2fe8af46db85f8717255eb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:52:03Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two-pointers",
+            "label": "two-pointers",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-pointer",
+            "label": "two-pointer",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The array is shuffled by interleaving elements from the start and the end of the original array using two pointers.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-05-438-find-all-anagrams-in-a-string": {
+      "status": "analyzed",
+      "date": "2023-02-05",
+      "display_date": "5.02.2023",
+      "slug": "2023-02-05-438-find-all-anagrams-in-a-string",
+      "display_title": "438. Find All Anagrams in a String",
+      "source_hash": "5d85760eb78cd2b015fb2119d3f764149711f7382e031ecc098799be5330826c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:52:28Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "int_array",
+            "label": "frequency array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "result list",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sliding-window",
+            "label": "sliding window technique",
+            "confidence": 0.9
+          },
+          {
+            "slug": "frequency-counting",
+            "label": "frequency counting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "frequency_difference",
+            "label": "frequency difference tracking",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "array manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a sliding window approach combined with frequency counting to efficiently find all substrings of s that are anagrams of p.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-04-567-permutation-in-string": {
+      "status": "analyzed",
+      "date": "2023-02-04",
+      "display_date": "4.02.2023",
+      "slug": "2023-02-04-567-permutation-in-string",
+      "display_title": "567. Permutation in String",
+      "source_hash": "bbfeb99c5f6b4cf6ed633945f28831708166a7f373dc2c7878517a375e9897ea",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:52:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "int_array",
+            "label": "frequency array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash_map",
+            "label": "implicit frequency counting",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sliding_window",
+            "label": "frequency window comparison",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sliding_window",
+            "label": "sliding window for frequency comparison",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hashing",
+            "label": "frequency array comparison via hashing",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "frequency arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a sliding window approach to efficiently compare the character frequencies of a substring of s2 with that of s1.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-03-6-zigzag-conversion": {
+      "status": "analyzed",
+      "date": "2023-02-03",
+      "display_date": "3.02.2023",
+      "slug": "2023-02-03-6-zigzag-conversion",
+      "display_title": "6. Zigzag Conversion",
+      "source_hash": "e1bb13e92b5ba6de7cb8aba6cbb6f03a43da57002f338609a38de5d197b6c7fa",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:53:08Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "indices",
+            "confidence": 1.0
+          },
+          {
+            "slug": "string",
+            "label": "result",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "simulation",
+            "label": "zigzag_simulation",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "pattern_detection",
+            "label": "modulo_based_direction",
+            "confidence": 0.9
+          },
+          {
+            "slug": "direct_mapping",
+            "label": "row_by_index_tracking",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by simulating the zigzag pattern movement and recording the indices of characters for each row.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-02-02-953-verifying-an-alien-dictionary": {
+      "status": "analyzed",
+      "date": "2023-02-02",
+      "display_date": "2.02.2023",
+      "slug": "2023-02-02-953-verifying-an-alien-dictionary",
+      "display_title": "953. Verifying an Alien Dictionary",
+      "source_hash": "c6f9e53075a74829d1b6f3490444eabf8c7282d213ad8fd584460e7a28f1f34f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:53:20Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "words",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "coordinate-transform",
+            "label": "character mapping",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "words",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The alien dictionary order is enforced by translating the alphabet based on the given order and then checking if the lexicographically sorted words match the translated order.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-02-01-1071-greatest-common-divisor-of-strings": {
+      "status": "analyzed",
+      "date": "2023-02-01",
+      "display_date": "1.02.2023",
+      "slug": "2023-02-01-1071-greatest-common-divisor-of-strings",
+      "display_title": "1071. Greatest Common Divisor of Strings",
+      "source_hash": "a50559429228499ed96e861c3aeab1a17e538929c5ad70d531ea2d3ac94eb9e1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:53:35Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The greatest common divisor of two strings is determined by the greatest common divisor of their lengths, followed by checking if the strings are composed of repeating substrings.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-31-1626-best-team-with-no-conflicts": {
+      "status": "analyzed",
+      "date": "2023-01-31",
+      "display_date": "31.01.2023",
+      "slug": "2023-01-31-1626-best-team-with-no-conflicts",
+      "display_title": "1626. Best Team With No Conflicts",
+      "source_hash": "6201b764ec2b41e4f6e4f49d9e6e54fe5853d06fc4d91d029129d1027ea2bbcd",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:53:50Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "scores",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "memoization",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "team selection",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming with a depth-first search approach on sorted scores and ages to find the maximum score of a team with no age conflicts.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-30-1137-n-th-tribonacci-number": {
+      "status": "analyzed",
+      "date": "2023-01-30",
+      "display_date": "30.01.2023",
+      "slug": "2023-01-30-1137-n-th-tribonacci-number",
+      "display_title": "1137. N-th Tribonacci Number",
+      "source_hash": "b54719eda4e18bf9ad8ca3e172453dac99ed7dadff05e92388f8a11624f54f95",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:54:07Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp cache",
+            "confidence": 0.9
+          },
+          {
+            "slug": "iteration",
+            "label": "iterative calculation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "sequences",
+            "label": "tribonacci sequence",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iteratively calculating the N-th Tribonacci number using a space-optimized dynamic programming approach.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-29-460-lfu-cache": {
+      "status": "analyzed",
+      "date": "2023-01-29",
+      "display_date": "29.01.2023",
+      "slug": "2023-01-29-460-lfu-cache",
+      "display_title": "460. LFU Cache",
+      "source_hash": "c930552a5e074609c2222bc13783e274f6a5e82e576fdcc81260f48478106740",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:54:20Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "treemap",
+            "label": "TreeMap",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linkedset",
+            "label": "LinkedHashSet",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "bucket_frequency",
+            "label": "Frequency Bucketing",
+            "confidence": 0.9
+          },
+          {
+            "slug": "ordered_access",
+            "label": "Ordered Access Lists",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "cache",
+            "label": "Cache",
+            "confidence": 1.0
+          },
+          {
+            "slug": "data_structures",
+            "label": "Data Structures",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The LFU cache is implemented using a TreeMap to group items by frequency and LinkedHashSets to maintain access order within each frequency bucket.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-01-28-352-data-stream-as-disjoint-intervals": {
+      "status": "analyzed",
+      "date": "2023-01-28",
+      "display_date": "28.01.2023",
+      "slug": "2023-01-28-352-data-stream-as-disjoint-intervals",
+      "display_title": "352. Data Stream as Disjoint Intervals",
+      "source_hash": "ad4312a6a7ad4847aed613aa867a31a179fe5263fb113b61272cf1dbf05d6524",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:54:49Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 1.0
+          },
+          {
+            "slug": "node",
+            "label": "node",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "linear-scan",
+            "label": "linear-scan",
+            "confidence": 0.9
+          },
+          {
+            "slug": "merge",
+            "label": "merge",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "linked-list-merging",
+            "label": "linked-list-merging",
+            "confidence": 1.0
+          },
+          {
+            "slug": "linear-scan",
+            "label": "linear-scan",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "intervals",
+            "label": "intervals",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.5
+          }
+        ],
+        "summary": "The problem is solved by maintaining a sorted list of disjoint intervals using a linked list structure and merging overlapping or adjacent intervals in linear time.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-27-472-concatenated-words": {
+      "status": "analyzed",
+      "date": "2023-01-27",
+      "display_date": "27.01.2023",
+      "slug": "2023-01-27-472-concatenated-words",
+      "display_title": "472. Concatenated Words",
+      "source_hash": "f57a68254e2af26e3ff1d9e29469e6aeab4acbe661bf6d9044b05129de3b14fa",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:55:06Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "trie",
+            "label": "trie",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "deque",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 0.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "trie_prefix_matching",
+            "label": "trie_prefix_matching",
+            "confidence": 1.0
+          },
+          {
+            "slug": "suffix_tracking",
+            "label": "suffix_tracking",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "A trie is used to efficiently check for word existence and suffix matching during the search for concatenated words.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-26-787-cheapest-flights-within-k-stops": {
+      "status": "analyzed",
+      "date": "2023-01-26",
+      "display_date": "26.01.2023",
+      "slug": "2023-01-26-787-cheapest-flights-within-k-stops",
+      "display_title": "787. Cheapest Flights Within K Stops",
+      "source_hash": "8b77ebd321167de9d354500ca5d0550e71cd04d5768764c79c681981d0695145",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:55:32Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "dist",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bellman-ford",
+            "label": "implicit_k_stops",
+            "confidence": 0.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "iterative_relaxation",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "iterative_relaxation",
+            "label": "k_step_relaxation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "flight_optimization",
+            "confidence": 1.0
+          },
+          {
+            "slug": "shortest-path",
+            "label": "constrained_path_finding",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using dynamic programming based on iterative relaxation over k steps, similar to Bellman-Ford but constrained by the number of edges.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-25-2359-find-closest-node-to-given-two-nodes": {
+      "status": "analyzed",
+      "date": "2023-01-25",
+      "display_date": "25.01.2023",
+      "slug": "2023-01-25-2359-find-closest-node-to-given-two-nodes",
+      "display_title": "2359. Find Closest Node to Given Two Nodes",
+      "source_hash": "d4b9fa38565fbbe0e6ec8c1e6e5f563c7c54848279509d4c2629c4b802fd38ab",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:55:48Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "distances",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "edges",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "visited-set",
+            "label": "visited set",
+            "confidence": 0.9
+          },
+          {
+            "slug": "distance-comparison",
+            "label": "minimum of maximums",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing two depth-first searches to find the path lengths from the start nodes and then selecting the node that minimizes the maximum distance to the two given nodes.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-24-909-snakes-and-ladders": {
+      "status": "analyzed",
+      "date": "2023-01-24",
+      "display_date": "24.01.2023",
+      "slug": "2023-01-24-909-snakes-and-ladders",
+      "display_title": "909. Snakes and Ladders",
+      "source_hash": "7f8d7b7119218a5bec32574ff4fe5df626ec5aeadcc92836a6c952cc4ff3b4e4",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:56:19Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "Array<IntArray>'}, {",
+            "confidence": 0.95
+          },
+          {
+            "slug": "deque",
+            "label": "ArrayDeque<Int>'}, {",
+            "confidence": 0.95
+          },
+          {
+            "slug": "set",
+            "label": "MutableSet<Int>'}, {",
+            "confidence": 0.95
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "Breadth-First Search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bfs_on_grid",
+            "label": "BFS on a grid with custom movement rules",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "Grid/Graph traversal",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "Array manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using Breadth-First Search to find the minimum number of steps from the start to the end on a grid with snakes and ladders.",
+        "manual_review": false,
+        "confidence": 0.98
+      }
+    },
+    "2023-01-23-997-find-the-town-judge": {
+      "status": "analyzed",
+      "date": "2023-01-23",
+      "display_date": "23.01.2023",
+      "slug": "2023-01-23-997-find-the-town-judge",
+      "display_title": "997. Find the Town Judge",
+      "source_hash": "8a58566354cf9ed4e4fb05089c6c1831101c8b56f158b7b75c09205b96c349c9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:56:41Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "map",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "none",
+            "label": "none",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "counting-trust",
+            "label": "counting trust",
+            "confidence": 0.9
+          },
+          {
+            "slug": "set-exclusion",
+            "label": "set exclusion",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by tracking the total trust received by each person and identifying the unique judge who trusts no one and is trusted by everyone else.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-22-131-palindrome-partitioning": {
+      "status": "analyzed",
+      "date": "2023-01-22",
+      "display_date": "22.01.2023",
+      "slug": "2023-01-22-131-palindrome-partitioning",
+      "display_title": "131. Palindrome Partitioning",
+      "source_hash": "3343e9e7eed1991c905a8112839b62111714134b29b5e321fec41bfde0fdf8c8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:57:09Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "list",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "palindrome-precomputation",
+            "label": "dp_range_palindrome",
+            "confidence": 1.0
+          },
+          {
+            "slug": "backtracking",
+            "label": "backtracking_partitioning",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by precomputing whether all substrings are palindromes using dynamic programming and then finding all valid partitions via backtracking.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-21-93-restore-ip-addresses": {
+      "status": "analyzed",
+      "date": "2023-01-21",
+      "display_date": "21.01.2023",
+      "slug": "2023-01-21-93-restore-ip-addresses",
+      "display_title": "93. Restore IP Addresses",
+      "source_hash": "3f50ecaa8b6695016f9a5af96afa788922fac73527ff5635645e399cfa6ccaa6",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:57:23Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          },
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using depth-first search (DFS) with backtracking to explore all possible ways to partition the string into four valid IP address segments.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-20-491-non-decreasing-subsequences": {
+      "status": "analyzed",
+      "date": "2023-01-20",
+      "display_date": "20.01.2023",
+      "slug": "2023-01-20-491-non-decreasing-subsequences",
+      "display_title": "491. Non-decreasing Subsequences",
+      "source_hash": "bb8dc7ffd075af998bf5ee3e91a1a6c99934c18cf5308f05524bbbaa0e8418bc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:57:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "list",
+            "label": "list",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 0.9
+          },
+          {
+            "slug": "set_storage",
+            "label": "set_storage",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "backtracking",
+            "label": "backtracking",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using depth-first search with backtracking to explore all possible non-decreasing subsequences.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-01-19-974-subarray-sums-divisible-by-k": {
+      "status": "analyzed",
+      "date": "2023-01-19",
+      "display_date": "19.01.2023",
+      "slug": "2023-01-19-974-subarray-sums-divisible-by-k",
+      "display_title": "974. Subarray Sums Divisible by K",
+      "source_hash": "992116f193cf457fdbb1f6ea3d95ec4e6690e71ad05dca8df46d6fedd0fc54cc",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:58:02Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "prefix-sum",
+            "label": "prefix-sum",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix-sum-and-remainders",
+            "label": "prefix-sum and remainders",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using prefix sums and a hash map to count the occurrences of remainders modulo k.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-18-918-maximum-sum-circular-subarray": {
+      "status": "analyzed",
+      "date": "2023-01-18",
+      "display_date": "18.01.2023",
+      "slug": "2023-01-18-918-maximum-sum-circular-subarray",
+      "display_title": "918. Maximum Sum Circular Subarray",
+      "source_hash": "4ed6ce021e95c88fac702d9a6685366a447fa84f0c4d172f5689c1e8e2599288",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:58:19Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The maximum sum circular subarray problem is solved by considering two cases: the standard maximum subarray sum (Kadane's algorithm) and the maximum sum of a circular array, which involves finding the minimum subarray (e",
+        "manual_review": true,
+        "confidence": 0.95
+      }
+    },
+    "2023-01-17-926-flip-string-to-monotone-increasing": {
+      "status": "analyzed",
+      "date": "2023-01-17",
+      "display_date": "17.01.2023",
+      "slug": "2023-01-17-926-flip-string-to-monotone-increasing",
+      "display_title": "926. Flip String to Monotone Increasing",
+      "source_hash": "8c8436956a83daf9047362d899718ed3938dfd9dccdfa6ee648e71d3ae666b81",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:58:24Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved using dynamic programming by tracking the minimum flips required to make prefixes of the string monotone increasing.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-16-57-insert-interval": {
+      "status": "analyzed",
+      "date": "2023-01-16",
+      "display_date": "16.01.2023",
+      "slug": "2023-01-16-57-insert-interval",
+      "display_title": "57. Insert Interval",
+      "source_hash": "7344c1b0f8279ca43ebcb42ef4e3abadf8548eff1837a09f131e1f3103e37474",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:58:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "intervals array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "result list",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "merge",
+            "label": "interval merging",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "one-pass",
+            "label": "single pass iteration and merging",
+            "confidence": 1.0
+          },
+          {
+            "slug": "greedy",
+            "label": "greedy merging strategy",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "intervals",
+            "label": "interval management",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by iterating through the intervals and greedily merging overlapping ones, including a new interval in the process.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-15-2421-number-of-good-paths": {
+      "status": "analyzed",
+      "date": "2023-01-15",
+      "display_date": "15.01.2023",
+      "slug": "2023-01-15-2421-number-of-good-paths",
+      "display_title": "2421. Number of Good Paths",
+      "source_hash": "a9763404b9c00ba04cc9deaed5590e14b996bb3eac863df15bdca0a69e1099f1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:59:05Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          },
+          {
+            "slug": "frequency-counting",
+            "label": "frequency-counting",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting edges and using a modified Union-Find structure combined with frequency maps to count valid path combinations.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-14-1061-lexicographically-smallest-equivalent-string": {
+      "status": "analyzed",
+      "date": "2023-01-14",
+      "display_date": "14.01.2023",
+      "slug": "2023-01-14-1061-lexicographically-smallest-equivalent-string",
+      "display_title": "1061. Lexicographically Smallest Equivalent String",
+      "source_hash": "4c02d3bf8a5f6733881d8754dd55a75c4e13dfe070196d48636a4165f1c4343e",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:59:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using the Union-Find data structure to group characters from s1 and s2 based on their corresponding indices, then mapping these groups back to the lexicographically smallest equivalent string.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-01-13-2246-longest-path-with-different-adjacent-characters": {
+      "status": "analyzed",
+      "date": "2023-01-13",
+      "display_date": "13.01.2023",
+      "slug": "2023-01-13-2246-longest-path-with-different-adjacent-characters",
+      "display_title": "2246. Longest Path With Different Adjacent Characters",
+      "source_hash": "da8bdaab7753187ef42839425bfefefffe7f5298cf13d0b8785d9a3e1dcf878a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T12:59:44Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "mutableMapOf",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "mutableListOf",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "graph-construction",
+            "label": "build-graph-dfs",
+            "confidence": 1.0
+          },
+          {
+            "slug": "two-largest-paths",
+            "label": "find-two-longest-paths",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "directed-acyclic-graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "strings",
+            "label": "string-comparison",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by constructing a graph based on adjacent character differences and then using DFS to find the longest path, which involves summing the two longest paths from its children.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
     }
   },
-  "updated_at": "2026-04-26T12:49:20Z"
+  "updated_at": "2026-04-26T12:59:44Z"
 }
