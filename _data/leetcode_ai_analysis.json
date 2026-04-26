@@ -42409,7 +42409,1284 @@
         "manual_review": false,
         "confidence": 1.0
       }
+    },
+    "2023-11-27-935-knight-dialer": {
+      "status": "analyzed",
+      "date": "2023-11-27",
+      "display_date": "27.11.2023",
+      "slug": "2023-11-27-935-knight-dialer",
+      "display_title": "935. Knight Dialer",
+      "source_hash": "3e3cb9c6a51b330bf3b3cab8740ae06cd771a3379e7aeb62811ac5f9c09ec33d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:06:49Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "dp",
+            "confidence": 1.0
+          },
+          {
+            "slug": "map",
+            "label": "paths",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "depth-first-search",
+            "label": "dfs",
+            "confidence": 1.0
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "dp",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "caching",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "counting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "graphs",
+            "label": "implicit_graph",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using depth-first search with memoization to count the number of valid knight moves for each digit position.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-26-1727-largest-submatrix-with-rearrangements": {
+      "status": "analyzed",
+      "date": "2023-11-26",
+      "display_date": "26.11.2023",
+      "slug": "2023-11-26-1727-largest-submatrix-with-rearrangements",
+      "display_title": "1727. Largest Submatrix With Rearrangements",
+      "source_hash": "6c0d7c36366bb95e6835fff9ca518ba206153541c0ce1a55b79491a1879ea19f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:07:10Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic-programming",
+            "confidence": 0.9
+          },
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix-sum",
+            "label": "prefix-sum",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "geometry",
+            "label": "geometry",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The problem is solved by transforming the matrix into a histogram problem using prefix sums and then finding the largest rectangle area in each row after sorting.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-25-1685-sum-of-absolute-differences-in-a-sorted-array": {
+      "status": "analyzed",
+      "date": "2023-11-25",
+      "display_date": "25.11.2023",
+      "slug": "2023-11-25-1685-sum-of-absolute-differences-in-a-sorted-array",
+      "display_title": "1685. Sum of Absolute Differences in a Sorted Array",
+      "source_hash": "b1eb3fded291d3a7814065cf2245cf3e9bc0d849ee9b39e7e2d1f9f28f565fa3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:07:31Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "arithmetic-series-summation",
+            "label": "prefix-sum-style-optimization",
+            "confidence": 0.9
+          },
+          {
+            "slug": "mathematical-derivation",
+            "label": "formula-derivation",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "array_manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by deriving a mathematical formula based on the sorted property of the array to calculate the sum of absolute differences in linear time.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-24-1561-maximum-number-of-coins-you-can-get": {
+      "status": "analyzed",
+      "date": "2023-11-24",
+      "display_date": "24.11.2023",
+      "slug": "2023-11-24-1561-maximum-number-of-coins-you-can-get",
+      "display_title": "1561. Maximum Number of Coins You Can Get",
+      "source_hash": "4671b707750e269882ead7100dcfa79f9cdf285a69ace4fe41da412aa3c54508",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:07:45Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "piles",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "sorted",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting_and_slicing",
+            "label": "sort, drop, chunked, sumBy",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "piles",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting the array and summing the second largest elements of every third triplet.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-23-1630-arithmetic-subarrays": {
+      "status": "analyzed",
+      "date": "2023-11-23",
+      "display_date": "23.11.2023",
+      "slug": "2023-11-23-1630-arithmetic-subarrays",
+      "display_title": "1630. Arithmetic Subarrays",
+      "source_hash": "2f8f464dd5e6106c22e8d640f67c0aa351ff2aa04728c2ef1a8b52011e4736e2",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:08:13Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priorityqueue",
+            "label": "priorityqueue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "priorityqueue_for_range_check",
+            "label": "priorityqueue_for_range_check",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arithmetic_sequences",
+            "label": "arithmetic_sequences",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem checks if all elements within specified array ranges form an arithmetic sequence using a priority queue to manage the range elements.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
+    "2023-11-22-1424-diagonal-traverse-ii": {
+      "status": "analyzed",
+      "date": "2023-11-22",
+      "display_date": "22.11.2023",
+      "slug": "2023-11-22-1424-diagonal-traverse-ii",
+      "display_title": "1424. Diagonal Traverse II",
+      "source_hash": "6b54cde2e8516106f27ac97ec4e2682bbca2e79d63635f232a4aa110c04d41f4",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:08:24Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priorityqueue",
+            "label": "priorityqueue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The diagonal traversal is achieved by using a priority queue to process elements in order of their sum of indices.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-21-1814-count-nice-pairs-in-an-array": {
+      "status": "analyzed",
+      "date": "2023-11-21",
+      "display_date": "21.11.2023",
+      "slug": "2023-11-21-1814-count-nice-pairs-in-an-array",
+      "display_title": "1814. Count Nice Pairs in an Array",
+      "source_hash": "e795fa66c665650b85d848a3662cfff62e18cd896da86e65c26a6a9b46b5ad28",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:08:49Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "hash-map-based-counting",
+            "label": "Hash Map Counting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "precomputation-and-hashing",
+            "label": "Precomputation and Hashing",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "Arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by precalculating the value $x - \text{rev}(x)$ for each element and using a hash map to count the occurrences of these differences.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-20-2391-minimum-amount-of-time-to-collect-garbage": {
+      "status": "analyzed",
+      "date": "2023-11-20",
+      "display_date": "20.11.2023",
+      "slug": "2023-11-20-2391-minimum-amount-of-time-to-collect-garbage",
+      "display_title": "2391. Minimum Amount of Time to Collect Garbage",
+      "source_hash": "85c5d1d9487c631c6eb953c93f7c98ef66743d7c3b328029aef0741524f0a0e6",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:08:58Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation and indexing",
+            "confidence": 0.9
+          },
+          {
+            "slug": "arrays",
+            "label": "array traversal and summation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by calculating the total garbage length and the time taken for trucks to collect specific garbage types based on their travel times.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-19-1887-reduction-operations-to-make-the-array-elements-equal": {
+      "status": "analyzed",
+      "date": "2023-11-19",
+      "display_date": "19.11.2023",
+      "slug": "2023-11-19-1887-reduction-operations-to-make-the-array-elements-equal",
+      "display_title": "1887. Reduction Operations to Make the Array Elements Equal",
+      "source_hash": "2c9025b02b2f014d5efd465005ac5aaaaaa3a95675207e998b31c05b1ee5222f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:09:22Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "int_array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting_and_summation",
+            "label": "sort_then_sum",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting the array and then calculating the total number of reduction operations required to make all elements equal to the next smallest element.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-18-1838-frequency-of-the-most-frequent-element": {
+      "status": "analyzed",
+      "date": "2023-11-18",
+      "display_date": "18.11.2023",
+      "slug": "2023-11-18-1838-frequency-of-the-most-frequent-element",
+      "display_title": "1838. Frequency of the Most Frequent Element",
+      "source_hash": "8d0ede36cace8a6706c9bfdc943e340a4a1fe2b9a336d8a3b13b373586ec8c20",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:09:42Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "nums",
+            "confidence": 1.0
+          },
+          {
+            "slug": "integer_array",
+            "label": "nums",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sort",
+            "confidence": 1.0
+          },
+          {
+            "slug": "two_pointers",
+            "label": "from",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting",
+            "label": "sort_array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sliding_window",
+            "label": "implicit_window",
+            "confidence": 0.0
+          },
+          {
+            "slug": "prefix_sum",
+            "label": "cumulative_increment",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "nums",
+            "confidence": 1.0
+          },
+          {
+            "slug": "mathematics",
+            "label": "arithmetic",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting the array and using a two-pointer approach to find the longest subarray that can be made equal by incrementing elements up to k times.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-17-1877-minimize-maximum-pair-sum-in-array": {
+      "status": "analyzed",
+      "date": "2023-11-17",
+      "display_date": "17.11.2023",
+      "slug": "2023-11-17-1877-minimize-maximum-pair-sum-in-array",
+      "display_title": "1877. Minimize Maximum Pair Sum in Array",
+      "source_hash": "a6267b8c9a220ff85febc8f4136171ad8e717277c0019874534c5ad03f668db5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:09:55Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The minimum possible maximum pair sum is achieved by sorting the array and pairing the smallest elements with the largest elements.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-16-1980-find-unique-binary-string": {
+      "status": "analyzed",
+      "date": "2023-11-16",
+      "display_date": "16.11.2023",
+      "slug": "2023-11-16-1980-find-unique-binary-string",
+      "display_title": "1980. Find Unique Binary String",
+      "source_hash": "fa20738595eee7ea08268968947385cde5d10d983959954326733feaef2fbc74",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:10:09Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "binary string array",
+            "confidence": 1.0
+          },
+          {
+            "slug": "string",
+            "label": "binary strings",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting_and_linear_scan",
+            "label": "sorting and linear scan",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "binary strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "array manipulation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting the binary strings and then performing a linear scan to find the first missing integer.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-15-1846-maximum-element-after-decreasing-and-rearranging": {
+      "status": "analyzed",
+      "date": "2023-11-15",
+      "display_date": "15.11.2023",
+      "slug": "2023-11-15-1846-maximum-element-after-decreasing-and-rearranging",
+      "display_title": "1846. Maximum Element After Decreasing and Rearranging",
+      "source_hash": "66980ddbf354d9f0e3f3b882aca0b90004c2e481e29c492f14c5e4cac828a3ee",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:10:31Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "priority-queue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "priority-queue-for-max",
+            "label": "priority-queue-for-max",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The maximum element after decreasing and rearranging an array can be found by using a priority queue to efficiently determine the largest possible element.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-14-1930-unique-length-3-palindromic-subsequences": {
+      "status": "analyzed",
+      "date": "2023-11-14",
+      "display_date": "14.11.2023",
+      "slug": "2023-11-14-1930-unique-length-3-palindromic-subsequences",
+      "display_title": "1930. Unique Length-3 Palindromic Subsequences",
+      "source_hash": "500d55430c5f11da20b1a8974a64f3e15643e84e7beb7f64358d9f58578510fe",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:10:40Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "groupBy",
+            "confidence": 0.9
+          },
+          {
+            "slug": "set",
+            "label": "HashSet",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string manipulation",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "The solution counts unique length-3 palindromic subsequences by analyzing character frequencies and positions in the string.",
+        "manual_review": true,
+        "confidence": 0.7
+      }
+    },
+    "2023-11-13-2785-sort-vowels-in-a-string": {
+      "status": "analyzed",
+      "date": "2023-11-13",
+      "display_date": "13.11.2023",
+      "slug": "2023-11-13-2785-sort-vowels-in-a-string",
+      "display_title": "2785. Sort Vowels in a String",
+      "source_hash": "a3faba403c19ab33ce37d26f2711fead95885419a2d465cf4364db21927399e0",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:11:05Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "freq",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "vs",
+            "confidence": 1.0
+          },
+          {
+            "slug": "list",
+            "label": "vl",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "hash-map",
+            "label": "groupBy",
+            "confidence": 1.0
+          },
+          {
+            "slug": "string-building",
+            "label": "buildString",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "frequency-counting",
+            "label": "freq",
+            "confidence": 1.0
+          },
+          {
+            "slug": "two-pointer-like-iteration",
+            "label": "vl",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "string",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "s",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The vowels in a string are sorted by iterating through the string and replacing vowels with the next available sorted vowel based on their frequency counts.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-12-815-bus-routes": {
+      "status": "analyzed",
+      "date": "2023-11-12",
+      "display_date": "12.11.2023",
+      "slug": "2023-11-12-815-bus-routes",
+      "display_title": "815. Bus Routes",
+      "source_hash": "397ae30231701749938d123d4328bc9bb7f3d1612596e0500ff3224e65c766f1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:11:22Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "stopToRoute",
+            "confidence": 1.0
+          },
+          {
+            "slug": "array-deque",
+            "label": "queue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "visited",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "graph-construction",
+            "label": "building a route graph from routes",
+            "confidence": 0.0
+          },
+          {
+            "slug": "breadth-first-search",
+            "label": "bfs for shortest path in terms of buses",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "route network",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "stop and route representation",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by modeling the bus routes as a graph and using Breadth-First Search to find the minimum number of buses required to travel from a source to a target stop.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-11-2642-design-graph-with-shortest-path-calculator": {
+      "status": "analyzed",
+      "date": "2023-11-11",
+      "display_date": "11.11.2023",
+      "slug": "2023-11-11-2642-design-graph-with-shortest-path-calculator",
+      "display_title": "2642. Design Graph With Shortest Path Calculator",
+      "source_hash": "e665ebaf7884c2c814d38b8540127bbc8f5166e63fe2c4bb2c909625af91030a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:11:46Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "HashMap",
+            "confidence": 0.9
+          },
+          {
+            "slug": "priority-queue",
+            "label": "PriorityQueue",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "HashSet",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dijkstra",
+            "label": "Dijkstra",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "shortest-path-search",
+            "label": "Shortest Path Search",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "Graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "shortest-path",
+            "label": "Shortest Path",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by implementing a graph structure and using Dijkstra's algorithm to find the shortest path between two nodes.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-10-1743-restore-the-array-from-adjacent-pairs": {
+      "status": "analyzed",
+      "date": "2023-11-10",
+      "display_date": "10.11.2023",
+      "slug": "2023-11-10-1743-restore-the-array-from-adjacent-pairs",
+      "display_title": "1743. Restore the Array From Adjacent Pairs",
+      "source_hash": "4bd3662dbe5eeebbf26e1bb694a13845a9cd92951c773f01cd72822d855838c3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:12:01Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "fromTo",
+            "confidence": 1.0
+          },
+          {
+            "slug": "set",
+            "label": "visited",
+            "confidence": 1.0
+          },
+          {
+            "slug": "deque",
+            "label": "ArrayDeque",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "Depth-First Search",
+            "confidence": 0.0
+          },
+          {
+            "slug": "graph",
+            "label": "undirected graph",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "graph-traversal",
+            "label": "depth-first search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graph",
+            "label": "graph",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by constructing an undirected graph from adjacent pairs and using a depth-first search to reconstruct the array.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
+    "2023-11-09-1759-count-number-of-homogenous-substrings": {
+      "status": "analyzed",
+      "date": "2023-11-09",
+      "display_date": "09.11.2023",
+      "slug": "2023-11-09-1759-count-number-of-homogenous-substrings",
+      "display_title": "1759. Count Number of Homogenous Substrings",
+      "source_hash": "5a5f80ad3edf29403b68e3ad549af74b62730ee5a14df8df54acb64f628dba85",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:12:17Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "substrings",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved in linear time by iterating through the string and tracking the length of the current homogenous substring.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-08-2849-determine-if-a-cell-is-reachable-at-a-given-time": {
+      "status": "analyzed",
+      "date": "2023-11-08",
+      "display_date": "08.11.2023",
+      "slug": "2023-11-08-2849-determine-if-a-cell-is-reachable-at-a-given-time",
+      "display_title": "2849. Determine if a Cell Is Reachable at a Given Time",
+      "source_hash": "e5338b27da2b7ffcf4dd738bd4ba683612a923791b90ea1224a6346eaebccf7c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:14:28Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The reachability is determined by the Manhattan distance and a specific condition related to time.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-07-1921-eliminate-maximum-number-of-monsters": {
+      "status": "analyzed",
+      "date": "2023-11-07",
+      "display_date": "07.11.2023",
+      "slug": "2023-11-07-1921-eliminate-maximum-number-of-monsters",
+      "display_title": "1921. Eliminate Maximum Number of Monsters",
+      "source_hash": "d2f34029a367f9ec48695b24697859da2aa2f39bfc4897982efaa282652f73fe",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:14:39Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 1.0
+          },
+          {
+            "slug": "comparison",
+            "label": "comparison",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting_by_ratio",
+            "label": "sorting_by_ratio",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by sorting the targets based on their arrival times and then counting those that can be eliminated.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-06-1845-seat-reservation-manager": {
+      "status": "analyzed",
+      "date": "2023-11-06",
+      "display_date": "06.11.2023",
+      "slug": "2023-11-06-1845-seat-reservation-manager",
+      "display_title": "1845. Seat Reservation Manager",
+      "source_hash": "468472864d3199136aeecef8f14a87152eaf18e84a22db2397b0cfcd089efadb",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:15:04Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priorityqueue",
+            "label": "priorityqueue",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [],
+        "techniques": [
+          {
+            "slug": "heap-shrinkage",
+            "label": "heap_shrinkage",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "data_structures",
+            "label": "data_structures",
+            "confidence": 1.0
+          },
+          {
+            "slug": "algorithms",
+            "label": "algorithms",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by using a priority queue to manage seat reservations and optimizing space by shrinking the maximum value when a reservation is made.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-05-1535-find-the-winner-of-an-array-game": {
+      "status": "analyzed",
+      "date": "2023-11-05",
+      "display_date": "05.11.2023",
+      "slug": "2023-11-05-1535-find-the-winner-of-an-array-game",
+      "display_title": "1535. Find the Winner of an Array Game",
+      "source_hash": "c8c26e170f8344d77529679e87b3e71574f2416b5a266378a5be38ddcbe30254",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:15:09Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [],
+        "summary": "The problem is solved by a single linear pass to find the k-th largest element in the array.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-04-1503-last-moment-before-all-ants-fall-out-of-a-plank": {
+      "status": "analyzed",
+      "date": "2023-11-04",
+      "display_date": "04.11.2023",
+      "slug": "2023-11-04-1503-last-moment-before-all-ants-fall-out-of-a-plank",
+      "display_title": "1503. Last Moment Before All Ants Fall Out of a Plank",
+      "source_hash": "95030c3c92abefea1a02c0975cdfb5ac38c4c2222878e2dd93b6bac6afc2f739",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:15:25Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [],
+        "techniques": [],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The maximum time the ants can travel is determined by the maximum distance an ant can travel from its starting position to the edge of the plank.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-03-767-reorganize-string": {
+      "status": "analyzed",
+      "date": "2023-11-03",
+      "display_date": "03.11.2023",
+      "slug": "2023-11-03-767-reorganize-string",
+      "display_title": "767. Reorganize String",
+      "source_hash": "d98626225b0a97f2b289287114a3a6014b0f0ebbdb2be5a596210ed001f761e7",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:15:41Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priorityqueue",
+            "label": "heap",
+            "confidence": 1.0
+          },
+          {
+            "slug": "intarray",
+            "label": "array",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "priorityqueue_for_frequency",
+            "label": "priorityqueue_for_frequency",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved using a greedy approach with a max-heap to arrange characters such that no two adjacent characters are the same.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-02-2265-count-nodes-equal-to-average-of-subtree": {
+      "status": "analyzed",
+      "date": "2023-11-02",
+      "display_date": "02.11.2023",
+      "slug": "2023-11-02-2265-count-nodes-equal-to-average-of-subtree",
+      "display_title": "2265. Count Nodes Equal to Average of Subtree",
+      "source_hash": "372937cb348c66ec332e5668cf1d6f66b8ecc8201330892001368382a8ac93ec",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:16:05Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "pair",
+            "label": "pair",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dfs",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "depth-first-search",
+            "label": "depth-first-search",
+            "confidence": 1.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing a depth-first search to calculate the sum and count of each subtree and checking if the node's value equals the average.",
+        "manual_review": false,
+        "confidence": 1.0
+      }
+    },
+    "2023-11-01-501-find-mode-in-binary-search-tree": {
+      "status": "analyzed",
+      "date": "2023-11-01",
+      "display_date": "01.11.2023",
+      "slug": "2023-11-01-501-find-mode-in-binary-search-tree",
+      "display_title": "501. Find Mode in Binary Search Tree",
+      "source_hash": "515dd760295a7c0574869d1615b1e249b167fd3ec42235b88ae6d9f69cc0edaa",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "lmstudio",
+      "model": "google/gemma-4-e2b",
+      "analyzed_at": "2026-04-26T11:16:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "binary-search-tree",
+            "label": "tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "hash-map",
+            "label": "hash-map",
+            "confidence": 0.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "in-order-traversal",
+            "label": "dfs",
+            "confidence": 1.0
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "in-order-traversal",
+            "label": "in-order-traversal",
+            "confidence": 1.0
+          },
+          {
+            "slug": "sequence-tracking",
+            "label": "sequence-tracking",
+            "confidence": 0.0
+          }
+        ],
+        "domains": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 1.0
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 1.0
+          }
+        ],
+        "summary": "The problem is solved by performing an in-order traversal of the BST to obtain a sorted sequence and then finding the mode of that sequence.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
     }
   },
-  "updated_at": "2026-04-26T11:06:20Z"
+  "updated_at": "2026-04-26T11:16:21Z"
 }
