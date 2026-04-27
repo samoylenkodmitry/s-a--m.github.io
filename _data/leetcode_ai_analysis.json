@@ -127,6 +127,71 @@
         "confidence": 0.9
       }
     },
+    "2026-04-27-1391-check-if-there-is-a-valid-path-in-a-grid": {
+      "status": "analyzed",
+      "date": "2026-04-27",
+      "display_date": "27.04.2026",
+      "slug": "2026-04-27-1391-check-if-there-is-a-valid-path-in-a-grid",
+      "display_title": "1391. Check if There is a Valid Path in a Grid",
+      "source_hash": "89c76a0205e9bd65681244e9f014d0bffdca0a50d00c7a01881a9298504c6edf",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-04-27T08:37:57Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 0.95
+          },
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "union-find",
+            "label": "union-find",
+            "confidence": 0.95
+          },
+          {
+            "slug": "graph-traversal",
+            "label": "graph traversal",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "transition-matrix",
+            "label": "transition matrix",
+            "confidence": 0.9
+          },
+          {
+            "slug": "path-validation-via-direction-transitions",
+            "label": "path validation via direction transitions",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graphs",
+            "label": "graphs",
+            "confidence": 0.9
+          },
+          {
+            "slug": "grids",
+            "label": "grids",
+            "confidence": 0.85
+          }
+        ],
+        "summary": "Use union-find to connect grid cells based on their types and check connectivity from start to end.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-04-26-1559-detect-cycles-in-2d-grid": {
       "status": "analyzed",
       "date": "2026-04-26",
@@ -61478,5 +61543,5 @@
       }
     }
   },
-  "updated_at": "2026-04-26T13:21:27Z"
+  "updated_at": "2026-04-27T08:37:57Z"
 }
