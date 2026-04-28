@@ -127,6 +127,71 @@
         "confidence": 0.9
       }
     },
+    "2026-04-28-2033-minimum-operations-to-make-a-uni-value-grid": {
+      "status": "analyzed",
+      "date": "2026-04-28",
+      "display_date": "28.04.2026",
+      "slug": "2026-04-28-2033-minimum-operations-to-make-a-uni-value-grid",
+      "display_title": "2033. Minimum Operations to Make a Uni-Value Grid",
+      "source_hash": "7d1afe2d69c90bfb732d280f48995a2e86f24d5ee25f5e10ba93fc4e59344b03",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-04-28T09:02:03Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.85
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "median-based-optimization",
+            "label": "median-based optimization",
+            "confidence": 0.95
+          },
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "modulo-invariant-grouping",
+            "label": "modulo-invariant grouping",
+            "confidence": 0.9
+          },
+          {
+            "slug": "flattening-matrix-to-array",
+            "label": "flattening matrix to array",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          },
+          {
+            "slug": "math",
+            "label": "math",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Use sorting and median to find minimal operations to equalize grid values by increments of x.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-04-27-1391-check-if-there-is-a-valid-path-in-a-grid": {
       "status": "analyzed",
       "date": "2026-04-27",
@@ -61543,5 +61608,5 @@
       }
     }
   },
-  "updated_at": "2026-04-27T08:37:57Z"
+  "updated_at": "2026-04-28T09:02:03Z"
 }
