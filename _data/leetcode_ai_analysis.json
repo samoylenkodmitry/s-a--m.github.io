@@ -127,6 +127,71 @@
         "confidence": 0.9
       }
     },
+    "2026-05-04-48-rotate-image": {
+      "status": "analyzed",
+      "date": "2026-05-04",
+      "display_date": "04.05.2026",
+      "slug": "2026-05-04-48-rotate-image",
+      "display_title": "48. Rotate Image",
+      "source_hash": "61bcbecd9276da0d0f7acdc34b77631273b39348e2c03383d11bf8ad15ebd109",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-04T08:15:53Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 1.0
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "in-place-matrix-rotation",
+            "label": "in-place matrix rotation",
+            "confidence": 0.95
+          },
+          {
+            "slug": "matrix-transpose",
+            "label": "matrix transpose",
+            "confidence": 0.9
+          },
+          {
+            "slug": "matrix-reversal",
+            "label": "matrix reversal",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "layer-by-layer-4-way-swap",
+            "label": "layer by layer 4-way swap",
+            "confidence": 0.9
+          },
+          {
+            "slug": "reverse-and-transpose",
+            "label": "reverse and transpose",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          },
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Rotate a square matrix in place by performing layer-wise 4-way swaps or by reversing and transposing the matrix.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-03-796-rotate-string": {
       "status": "analyzed",
       "date": "2026-05-03",
@@ -61886,5 +61951,5 @@
       }
     }
   },
-  "updated_at": "2026-05-03T07:08:02Z"
+  "updated_at": "2026-05-04T08:15:53Z"
 }
