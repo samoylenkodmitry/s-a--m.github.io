@@ -21,6 +21,64 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 05.05.2026
+[61. Rotate List](https://leetcode.com/problems/rotate-list/solutions/8144078/kotlin-rust-by-samoylenkodmitry-7km7/) medium
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/05052026-61-rotate-list?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/ExUk34UdErg)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![05.05.2026.webp](/assets/leetcode_daily_images/05.05.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1350
+
+#### Problem TLDR
+
+Rotate linked list k steps
+
+#### Intuition
+
+1. find the length
+2. find the split point k%L
+3. connect/disconnect
+
+More interesting idea: make a cycle-list by connecting head to tail at the end of the first loop
+
+#### Approach
+
+* Rust doesn't allow to make a cycle in Option<Box<ListNode>>
+* Rust doesn't allow to disconnect the head while holding the reference at the last item in list
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun rotateRight(h: ListNode?, k: Int): ListNode? {
+        h?.next ?: return h; var len = 1; var t = h 
+        while (t?.next != null) { t = t.next; len++ }
+        t.next = h; for (s in 1..len - k%len) t = t?.next
+        return t?.next.also { t?.next = null }
+    }
+```
+```rust
+    pub fn rotate_right(mut h: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNode>> {
+        if h.is_none() || k==0 { return h }; let (mut l, mut x) = (0, &h); 
+        while let Some(n) = x { x = &n.next; l += 1 }
+        if l < 2 || k % l == 0 { return h }; let mut x = &mut h;
+        for _ in 0..l-(k%l) { if let Some(n) = x { x = &mut n.next }}
+        let mut res = x.take(); let mut x = &mut res;
+        while let Some(n) = x { x = &mut n.next }; *x = h; res
+    }
+```
+
 # 04.05.2026
 [48. Rotate Image](https://leetcode.com/problems/rotate-image/solutions/8136524/kotlin-rust-by-samoylenkodmitry-rjw1/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/04052026-48-rotate-image?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
