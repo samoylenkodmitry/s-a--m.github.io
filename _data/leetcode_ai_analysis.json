@@ -127,6 +127,56 @@
         "confidence": 0.9
       }
     },
+    "2026-05-05-61-rotate-list": {
+      "status": "analyzed",
+      "date": "2026-05-05",
+      "display_date": "05.05.2026",
+      "slug": "2026-05-05-61-rotate-list",
+      "display_title": "61. Rotate List",
+      "source_hash": "660162b6437393dcb7de5b02df928579ec347d0e8867cc185103b133950ca9d8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-05T09:29:24Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "linked list",
+            "confidence": 0.95
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "linked-list-manipulation",
+            "label": "linked list manipulation",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "cycle-formation-in-linked-list",
+            "label": "cycle formation in linked list",
+            "confidence": 0.9
+          },
+          {
+            "slug": "modulo-arithmetic-for-rotation-offset",
+            "label": "modulo arithmetic for rotation offset",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "linked-list",
+            "label": "linked list",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Rotate a singly linked list by connecting tail to head to form a cycle and then breaking it at the correct split point.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-04-48-rotate-image": {
       "status": "analyzed",
       "date": "2026-05-04",
@@ -61951,5 +62001,5 @@
       }
     }
   },
-  "updated_at": "2026-05-04T08:15:53Z"
+  "updated_at": "2026-05-05T09:29:24Z"
 }
