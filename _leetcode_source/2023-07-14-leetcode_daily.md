@@ -24,7 +24,7 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 # 07.05.2026
 [3660. Jump Game IX](https://leetcode.com/problems/jump-game-ix/solutions/8159763/kotlin-rust-by-samoylenkodmitry-dttn/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/07052026-3660-jump-game-ix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-[youtube](https://youtu.be/EOrnFo8Typk)
+[youtube](https://youtu.be/lWGvboBKsO0)
 
 https://dmitrysamoylenko.com/leetcode/
 
