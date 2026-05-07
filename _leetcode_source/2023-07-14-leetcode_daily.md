@@ -21,6 +21,134 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 07.05.2026
+[3660. Jump Game IX](https://leetcode.com/problems/jump-game-ix/solutions/8159763/kotlin-rust-by-samoylenkodmitry-dttn/) medium
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/07052026-3660-jump-game-ix?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/EOrnFo8Typk)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![07.05.2026.webp](/assets/leetcode_daily_images/07.05.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1352
+
+#### Problem TLDR
+
+Max on path jumping left-up and right-down
+
+#### Intuition
+
+```j
+    // 2 3 1
+    // *        decreasing sequence 3 1
+    //
+    // 1 2 3 4 3 2 1 2 3 4
+    // *                       4 3 2 1
+    //       j         i   
+    // ok maybe jump only to the left in one pass, then only to the right in second
+    // 2 3 1
+    // 2
+    //   3
+    //     3
+    //   3
+    // 3
+    //
+    // 2 1 3
+    // 2 2 3
+    //     3
+    //   3?
+    // 
+    // 3  1 5 6  4  2
+    //*i  j         j
+    // j* i
+    //*     i    j  j
+    //*       i
+    //      j j* i  j
+    //      j j* j  i
+    //             how many jumps possible? is it possible for valid path have 3 jumps?
+    //              i*
+    //           i  j*  for backwards pass with want to track first lower
+    //        i     j*
+    //      i       j*
+    //    i
+    // i            j*
+    //
+    // 3  1 5 6  2  4
+    // i
+    // j  i
+    //      i
+    //        i
+    //        j  i
+    //        j     i    for forward pass only the max 
+    //              i
+    //           i
+    //        i     j  
+    //      i       j   override with max(n[i],n[j])
+    //    i
+    // i         j      have to find j = set.lower(3)
+    //              can we do monotonic stack/queue? - no, we don't know what useful
+    //                  
+    // 29minute wrong answer: nums = [30,21,5,35,24]
+    // my [35,30,30,35,35] Expected [35,35,35,35,35]
+    //
+    //  0  1 2  3  4
+    // 30 21 5 35 24    max 0
+    //  i                   30
+    //  j  i                30
+    //  j    i              30
+    //          i           35
+    //          j i         35
+    //            i     set 24=4
+    //          i j         35=3    ok my mistake was: i was taking lower, but need max distance
+    //                              and second mistake: it can be more than two jumps
+    // at this point let's go to hints: graph
+    // 61 minute wrong answer:  989 / 1002 testcases passed, 
+    // nums = [11,18,11] Output [18,18,18] Expected [11,18,18]
+
+```
+O(nlogn):
+* first pass left-up jumps make increasing running max array
+* second pass backwards: find the rightmost position with value less than current and use its best left-up jump res[j]
+* we can use monotonic decreasing queue and binary search it 
+O(n):
+The clever iddea is based on proove: instead of finding rightmost-less, we can just use res[i+1], if we can jump right (minSoFar < res[i]). 
+* res[i] - means best jump left-up
+* min < res[i] - means we can jump right-down to this min
+* no reason to jump ahead of res[i+1] because he is also sees this min's position
+
+#### Approach
+
+* or we can watch several examples and see that results are always perfectly sorted
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun maxValue(n: IntArray): IntArray {
+        var m = 0; val res = IntArray(n.size) { m = max(m, n[it]); m }
+        for (i in n.lastIndex downTo 0) {
+            if (res[i] > m) res[i] = res[i+1]; m = min(m, n[i]); 
+        }
+        return res
+    }
+```
+```rust
+    pub fn max_value(n: Vec<i32>) -> Vec<i32> {
+        let mut m = 0; let mut r:Vec<_> = (0..n.len()).map(|i| { m=m.max(n[i]);m}).collect();
+        for i in (0..n.len()).rev() {
+            if r[i] > m { r[i] = r[i+1]}; m = m.min(n[i])
+        }; r
+    }
+```
+
 # 06.05.2026
 [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/solutions/8150814/kotlin-rust-by-samoylenkodmitry-gvjy/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/06052026-1861-rotating-the-box?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
