@@ -127,6 +127,91 @@
         "confidence": 0.9
       }
     },
+    "2026-05-08-3629-minimum-jumps-to-reach-end-via-prime-teleportation": {
+      "status": "analyzed",
+      "date": "2026-05-08",
+      "display_date": "08.05.2026",
+      "slug": "2026-05-08-3629-minimum-jumps-to-reach-end-via-prime-teleportation",
+      "display_title": "3629. Minimum Jumps to Reach End via Prime Teleportation",
+      "source_hash": "ac3d214a7aee88aa7699372ed66bc8f69b2ae3ceb8c21cb0bd993891e7f32f23",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-08T08:34:58Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash map",
+            "confidence": 0.9
+          },
+          {
+            "slug": "queue",
+            "label": "queue",
+            "confidence": 0.9
+          },
+          {
+            "slug": "hash-set",
+            "label": "hash set",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "breadth-first-search",
+            "label": "breadth-first search",
+            "confidence": 0.95
+          },
+          {
+            "slug": "sieve-of-eratosthenes",
+            "label": "sieve of eratosthenes",
+            "confidence": 0.9
+          },
+          {
+            "slug": "prime-factorization",
+            "label": "prime factorization",
+            "confidence": 0.85
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prime-sieve",
+            "label": "prime sieve",
+            "confidence": 0.9
+          },
+          {
+            "slug": "factor-buckets-mapping",
+            "label": "factor buckets mapping",
+            "confidence": 0.9
+          },
+          {
+            "slug": "visited-state-encoding",
+            "label": "visited state encoding",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "number-theory",
+            "label": "number theory",
+            "confidence": 0.9
+          },
+          {
+            "slug": "graphs",
+            "label": "graphs",
+            "confidence": 0.85
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Use BFS on indices with edges defined by adjacency and prime factor teleportation, leveraging sieve for prime checking and hash maps for factor-to-indices mapping.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-07-3660-jump-game-ix": {
       "status": "analyzed",
       "date": "2026-05-07",
@@ -62121,5 +62206,5 @@
       }
     }
   },
-  "updated_at": "2026-05-07T10:36:13Z"
+  "updated_at": "2026-05-08T08:34:58Z"
 }
