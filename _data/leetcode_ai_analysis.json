@@ -133,11 +133,11 @@
       "display_date": "07.05.2026",
       "slug": "2026-05-07-3660-jump-game-ix",
       "display_title": "3660. Jump Game IX",
-      "source_hash": "c72f46f40b5287cad806e09652edde973461bbb991d3e4fc71fb0c757b2274b8",
+      "source_hash": "ff9360dfd634e6ec4461f63838f150006e74ba4a5442667ca0d0a81d8f0460ad",
       "prompt_version": "leetcode-ai-tags-v1",
       "provider": "github",
       "model": "openai/gpt-4.1-mini",
-      "analyzed_at": "2026-05-07T10:23:12Z",
+      "analyzed_at": "2026-05-07T10:36:13Z",
       "analysis": {
         "data_structures": [
           {
@@ -175,13 +175,13 @@
             "confidence": 0.85
           },
           {
-            "slug": "monotonic-queue-optimization",
-            "label": "monotonic queue optimization",
+            "slug": "monotonic-queue-usage",
+            "label": "monotonic queue usage",
             "confidence": 0.8
           },
           {
-            "slug": "running-max-min-tracking",
-            "label": "running max and min tracking",
+            "slug": "binary-search-rightmost-less-element",
+            "label": "binary search for rightmost less element",
             "confidence": 0.75
           }
         ],
@@ -197,7 +197,7 @@
             "confidence": 0.6
           }
         ],
-        "summary": "Use a two-pass dynamic programming approach with a monotonic queue to compute maximum jump values by tracking increasing sequences and rightmost lesser values efficiently.",
+        "summary": "Use a two-pass dynamic programming approach with a monotonic queue and binary search to compute maximum jump values in an array.",
         "manual_review": false,
         "confidence": 0.9
       }
@@ -62121,5 +62121,5 @@
       }
     }
   },
-  "updated_at": "2026-05-07T10:23:12Z"
+  "updated_at": "2026-05-07T10:36:13Z"
 }
