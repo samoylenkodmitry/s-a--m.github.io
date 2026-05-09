@@ -127,6 +127,56 @@
         "confidence": 0.9
       }
     },
+    "2026-05-09-1914-cyclically-rotating-a-grid": {
+      "status": "analyzed",
+      "date": "2026-05-09",
+      "display_date": "09.05.2026",
+      "slug": "2026-05-09-1914-cyclically-rotating-a-grid",
+      "display_title": "1914. Cyclically Rotating a Grid",
+      "source_hash": "9c95e81c3d67d63f67a587773e9072fcade2be8a2c623f379083096be548a0e9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-09T10:08:39Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "array-rotation",
+            "label": "array rotation",
+            "confidence": 0.95
+          },
+          {
+            "slug": "3-reversal-trick",
+            "label": "3-reversal trick",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "3-reversal-trick",
+            "label": "3-reversal trick",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Rotate each matrix layer by k positions using either direct element shifting or the 3-reversal trick for in-place rotation.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-08-3629-minimum-jumps-to-reach-end-via-prime-teleportation": {
       "status": "analyzed",
       "date": "2026-05-08",
@@ -62206,5 +62256,5 @@
       }
     }
   },
-  "updated_at": "2026-05-08T08:34:58Z"
+  "updated_at": "2026-05-09T10:08:39Z"
 }
