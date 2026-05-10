@@ -127,6 +127,81 @@
         "confidence": 0.9
       }
     },
+    "2026-05-10-2770-maximum-number-of-jumps-to-reach-the-last-index": {
+      "status": "analyzed",
+      "date": "2026-05-10",
+      "display_date": "10.05.2026",
+      "slug": "2026-05-10-2770-maximum-number-of-jumps-to-reach-the-last-index",
+      "display_title": "2770. Maximum Number of Jumps to Reach the Last Index",
+      "source_hash": "cd06c4e96ca03212c2a6c0c7b46175f968f8c8a015552b3e1414afe9a828ec7f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-10T07:04:44Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "segment-tree",
+            "label": "segment tree",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.95
+          },
+          {
+            "slug": "segment-tree",
+            "label": "segment tree",
+            "confidence": 0.9
+          },
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 0.85
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "range-query-segment-tree",
+            "label": "range query with segment tree",
+            "confidence": 0.9
+          },
+          {
+            "slug": "top-down-bottom-up-dp",
+            "label": "top-down and bottom-up dp",
+            "confidence": 0.85
+          },
+          {
+            "slug": "coordinate-compression",
+            "label": "coordinate compression",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.9
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.85
+          }
+        ],
+        "summary": "Use dynamic programming with segment tree and binary search to efficiently find maximum jumps within a value range constraint.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-09-1914-cyclically-rotating-a-grid": {
       "status": "analyzed",
       "date": "2026-05-09",
@@ -62256,5 +62331,5 @@
       }
     }
   },
-  "updated_at": "2026-05-09T10:08:39Z"
+  "updated_at": "2026-05-10T07:04:44Z"
 }
