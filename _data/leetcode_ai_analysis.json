@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-05-11-2553-separate-the-digits-in-an-array": {
+      "status": "analyzed",
+      "date": "2026-05-11",
+      "display_date": "11.05.2026",
+      "slug": "2026-05-11-2553-separate-the-digits-in-an-array",
+      "display_title": "2553. Separate the Digits in an Array",
+      "source_hash": "a3443cca9ddbec61ccec0f7de31834eba68cbc6e7e0f2fc05f3ed9e651b49ef3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-11T07:06:21Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "string-conversion",
+            "label": "string conversion",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "string-conversion-and-mapping",
+            "label": "string conversion and mapping",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Convert each integer to string and then map characters to digits to separate digits from an array of numbers.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-10-2770-maximum-number-of-jumps-to-reach-the-last-index": {
       "status": "analyzed",
       "date": "2026-05-10",
@@ -62331,5 +62376,5 @@
       }
     }
   },
-  "updated_at": "2026-05-10T07:04:44Z"
+  "updated_at": "2026-05-11T07:06:21Z"
 }
