@@ -127,6 +127,81 @@
         "confidence": 0.9
       }
     },
+    "2026-05-12-1665-minimum-initial-energy-to-finish-tasks": {
+      "status": "analyzed",
+      "date": "2026-05-12",
+      "display_date": "12.05.2026",
+      "slug": "2026-05-12-1665-minimum-initial-energy-to-finish-tasks",
+      "display_title": "1665. Minimum Initial Energy to Finish Tasks",
+      "source_hash": "2cb1f83348fdfce9540c7c6356b42587d65c162f89699e0de2f9c0d69aeaa548",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-12T08:21:33Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 0.95
+          },
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 0.9
+          },
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.85
+          },
+          {
+            "slug": "folding",
+            "label": "folding (reduce)",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "sorting-by-custom-key",
+            "label": "sorting by custom key",
+            "confidence": 0.9
+          },
+          {
+            "slug": "greedy-consumption-minimization",
+            "label": "greedy consumption minimization",
+            "confidence": 0.85
+          },
+          {
+            "slug": "fold-reduce-to-accumulate-state",
+            "label": "fold (reduce) to accumulate state",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.85
+          },
+          {
+            "slug": "greedy-algorithms",
+            "label": "greedy algorithms",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Sort tasks by (limit - spend) difference and use a greedy fold to find minimum initial energy with binary search intuition.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-11-2553-separate-the-digits-in-an-array": {
       "status": "analyzed",
       "date": "2026-05-11",
@@ -62376,5 +62451,5 @@
       }
     }
   },
-  "updated_at": "2026-05-11T07:06:21Z"
+  "updated_at": "2026-05-12T08:21:33Z"
 }

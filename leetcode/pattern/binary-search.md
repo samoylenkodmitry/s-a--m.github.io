@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Binary Search"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "82 entries tagged as Binary Search."
+library_summary: "83 entries tagged as Binary Search."
 pattern_slug: "binary-search"
 ---
