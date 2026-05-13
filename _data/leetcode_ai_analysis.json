@@ -127,6 +127,56 @@
         "confidence": 0.9
       }
     },
+    "2026-05-13-1674-minimum-moves-to-make-array-complementary": {
+      "status": "analyzed",
+      "date": "2026-05-13",
+      "display_date": "13.05.2026",
+      "slug": "2026-05-13-1674-minimum-moves-to-make-array-complementary",
+      "display_title": "1674. Minimum Moves to Make Array Complementary",
+      "source_hash": "71b43d59a4d686807dfd5ecda612bcefc8506502885893c2ee758e8fa71e3a67",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-13T09:15:59Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "line-sweep",
+            "label": "line sweep",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "difference-array",
+            "label": "difference array",
+            "confidence": 0.85
+          },
+          {
+            "slug": "interval-merging",
+            "label": "interval merging",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Use a difference array and line sweep technique to efficiently find the minimum moves to make array complementary by tracking intervals of possible sums.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-12-1665-minimum-initial-energy-to-finish-tasks": {
       "status": "analyzed",
       "date": "2026-05-12",
@@ -62451,5 +62501,5 @@
       }
     }
   },
-  "updated_at": "2026-05-12T08:21:33Z"
+  "updated_at": "2026-05-13T09:15:59Z"
 }
