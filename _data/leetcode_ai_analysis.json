@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-05-15-153-find-minimum-in-rotated-sorted-array": {
+      "status": "analyzed",
+      "date": "2026-05-15",
+      "display_date": "15.05.2026",
+      "slug": "2026-05-15-153-find-minimum-in-rotated-sorted-array",
+      "display_title": "153. Find Minimum in Rotated Sorted Array",
+      "source_hash": "a44b23f2cedd9b00defd077f663ac22a72732f573547633da90fea32af8690be",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-15T07:08:46Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "partition-point",
+            "label": "partition point",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Use binary search on a rotated sorted array by comparing elements to the last element to find the minimum in O(log n) time.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-14-2784-check-if-array-is-good": {
       "status": "analyzed",
       "date": "2026-05-14",
@@ -62551,5 +62596,5 @@
       }
     }
   },
-  "updated_at": "2026-05-14T08:06:35Z"
+  "updated_at": "2026-05-15T07:08:46Z"
 }
