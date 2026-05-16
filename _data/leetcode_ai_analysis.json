@@ -127,6 +127,56 @@
         "confidence": 0.9
       }
     },
+    "2026-05-16-154-find-minimum-in-rotated-sorted-array-ii": {
+      "status": "analyzed",
+      "date": "2026-05-16",
+      "display_date": "16.05.2026",
+      "slug": "2026-05-16-154-find-minimum-in-rotated-sorted-array-ii",
+      "display_title": "154. Find Minimum in Rotated Sorted Array II",
+      "source_hash": "3cdb3ad4833c1712e52231eccbefd6030a832de82ff6547ce8ce67fd2342a2c5",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-16T08:40:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "duplicate-slicing",
+            "label": "duplicate slicing",
+            "confidence": 0.9
+          },
+          {
+            "slug": "comparison-with-last-element",
+            "label": "comparison with last element",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.85
+          }
+        ],
+        "summary": "Use binary search on a rotated sorted array with duplicates by slicing out duplicates and comparing elements to the last element.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-15-153-find-minimum-in-rotated-sorted-array": {
       "status": "analyzed",
       "date": "2026-05-15",
@@ -62596,5 +62646,5 @@
       }
     }
   },
-  "updated_at": "2026-05-15T07:08:46Z"
+  "updated_at": "2026-05-16T08:40:47Z"
 }
