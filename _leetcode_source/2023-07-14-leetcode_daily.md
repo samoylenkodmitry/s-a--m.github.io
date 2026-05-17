@@ -21,6 +21,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 17.05.2026
+[1306. Jump Game III](https://leetcode.com/problems/jump-game-iii/solutions/8254876/kotlin-rust-by-samoylenkodmitry-2q4i/) medium
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/17052026-1306-jump-game-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/_xtqEVdFXfY)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![17.05.2026.webp](/assets/leetcode_daily_images/17.05.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1362
+
+#### Problem TLDR
+
+Can reach 0 by jumping +a[i] - a[i]
+
+#### Intuition
+
+* Union-Find would not work - we have a strictly directed edges in graph
+* BFS/DFS works
+
+#### Approach
+
+* use array itself as a visited set
+* use 'camicadze' value to make it out of range and make less checks
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun canReach(a: IntArray, s: Int):Boolean = s in a.indices&&
+    a[s].let{x->a[s]=a.size;x==0||canReach(a,s-x)||canReach(a,s+x)}
+```
+```rust
+    pub fn can_reach(mut a: Vec<i32>, s: i32) -> bool {
+        let mut q = vec![s];
+        while let Some(i) = q.pop() {
+            let Some(x) = a.get_mut(i as usize) else {continue};
+            if *x == 0 { return true }
+            q.extend([i-*x,i+*x]); *x += 100000
+        } false
+    }
+```
+
 # 16.05.2026
 [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/8247810/kotlin-rust-by-samoylenkodmitry-dp6l/) hard
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/16052026-154-find-minimum-in-rotated?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
