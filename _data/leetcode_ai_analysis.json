@@ -127,6 +127,71 @@
         "confidence": 0.9
       }
     },
+    "2026-05-18-1345-jump-game-iv": {
+      "status": "analyzed",
+      "date": "2026-05-18",
+      "display_date": "18.05.2026",
+      "slug": "2026-05-18-1345-jump-game-iv",
+      "display_title": "1345. Jump Game IV",
+      "source_hash": "d1239e1f7ee22d935f18650239f3283ea644b93f7fc2ea791cd3aa57250b3987",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-18T06:24:29Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash map",
+            "confidence": 0.9
+          },
+          {
+            "slug": "queue",
+            "label": "queue",
+            "confidence": 0.9
+          },
+          {
+            "slug": "hash-set",
+            "label": "hash set",
+            "confidence": 0.85
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth-first search",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "grouping-by-value",
+            "label": "grouping by value",
+            "confidence": 0.9
+          },
+          {
+            "slug": "early-visited-pruning",
+            "label": "early visited pruning",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          },
+          {
+            "slug": "graphs",
+            "label": "graphs",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Use BFS on an implicit graph formed by indices and groups of equal values, removing visited groups early to optimize.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-17-1306-jump-game-iii": {
       "status": "analyzed",
       "date": "2026-05-17",
@@ -62701,5 +62766,5 @@
       }
     }
   },
-  "updated_at": "2026-05-17T08:30:54Z"
+  "updated_at": "2026-05-18T06:24:29Z"
 }
