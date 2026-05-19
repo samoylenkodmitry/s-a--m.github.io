@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Two Pointers"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "61 entries tagged as Two Pointers."
+library_summary: "62 entries tagged as Two Pointers."
 pattern_slug: "two-pointers"
 ---
