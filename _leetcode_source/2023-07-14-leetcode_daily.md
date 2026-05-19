@@ -21,6 +21,54 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 19.05.2026
+[2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/solutions/8275223/kotlin-rust-by-samoylenkodmitry-b5vo/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19052026-2540-minimum-common-value?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/KTb5zzlSwQ0)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![19.05.2026.webp](/assets/leetcode_daily_images/19.05.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1364
+
+#### Problem TLDR
+
+Min common of two sorted list
+
+#### Intuition
+
+* two pointers: one goes forward, second tries to match
+* or hashset
+* or binary search
+
+#### Approach
+
+* binary search is the shortest
+* rust itertools has nice way to merge sorted lists
+
+#### Complexity
+
+- Time complexity:
+$$O(nlogn|n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun getCommon(a:IntArray, b: IntArray) = 
+    a.find { b.binarySearch(it) >= 0 } ?: -1
+```
+```rust
+    pub fn get_common(a: Vec<i32>, b: Vec<i32>) -> i32 {
+        a.into_iter().merge_join_by(b, i32::cmp).find_map(|e|
+            match e {Both(a,_)=>Some(a), _=>None}).unwrap_or(-1)
+    }
+```
+
 # 18.05.2026
 [1345. Jump Game IV](https://leetcode.com/problems/jump-game-iv/solutions/8260320/kotlin-rust-by-samoylenkodmitry-dw3p/) hard
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18052026-1345-jump-game-iv?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
