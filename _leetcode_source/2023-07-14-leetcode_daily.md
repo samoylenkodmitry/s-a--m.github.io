@@ -21,6 +21,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 23.05.2026
+[1752. Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/solutions/8287926/kotlin-rust-by-samoylenkodmitry-0lwi/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/23052026-1752-check-if-array-is-sorted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/xdsd1Wm-TsM)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![23.05.2026.webp](/assets/leetcode_daily_images/23.05.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1368
+
+#### Problem TLDR
+
+Is array shifted and sorted?
+
+#### Intuition
+
+* brute-force is accepted for 100 elements
+* optimal way: count unordered elements
+
+#### Approach
+
+* the shortest Rust is n^2
+* Rust itetools has circular_tuple_windows
+
+#### Complexity
+
+- Time complexity:
+$$O(n|n^2)$$
+
+- Space complexity:
+$$O(1|n)$$
+
+#### Code
+
+```kotlin
+    fun check(n: IntArray) = 
+    n.indices.count { n[it]>n[(it+1)%n.size]} < 2
+```
+```rust
+    pub fn check(n: Vec<i32>) -> bool {
+        n.repeat(2).windows(n.len()).any(|w|w.is_sorted())
+    }
+```
+
 # 22.05.2026
 [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/8285804/kotlin-rust-by-samoylenkodmitry-bqxx/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/22052026-33-search-in-rotated-sorted?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
