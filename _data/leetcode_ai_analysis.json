@@ -127,6 +127,81 @@
         "confidence": 0.9
       }
     },
+    "2026-05-24-1340-jump-game-v": {
+      "status": "analyzed",
+      "date": "2026-05-24",
+      "display_date": "24.05.2026",
+      "slug": "2026-05-24-1340-jump-game-v",
+      "display_title": "1340. Jump Game V",
+      "source_hash": "e86903f8342da0a6208a064f909a309063edd29279b0d5f34eafff1c67c50a65",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-24T11:51:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "stack",
+            "label": "stack",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.95
+          },
+          {
+            "slug": "dfs",
+            "label": "depth-first search",
+            "confidence": 0.9
+          },
+          {
+            "slug": "monotonic-stack",
+            "label": "monotonic stack",
+            "confidence": 0.85
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "monotonic-stack-for-range-queries",
+            "label": "monotonic stack for range queries",
+            "confidence": 0.9
+          },
+          {
+            "slug": "top-down-and-bottom-up-dp",
+            "label": "top-down and bottom-up dp",
+            "confidence": 0.85
+          },
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Use dynamic programming with a monotonic stack to efficiently compute maximum jumps by processing elements in increasing order and tracking reachable indices within distance d.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-23-1752-check-if-array-is-sorted-and-rotated": {
       "status": "analyzed",
       "date": "2026-05-23",
@@ -63016,5 +63091,5 @@
       }
     }
   },
-  "updated_at": "2026-05-23T08:08:46Z"
+  "updated_at": "2026-05-24T11:51:36Z"
 }
