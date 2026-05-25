@@ -127,6 +127,61 @@
         "confidence": 0.9
       }
     },
+    "2026-05-25-1871-jump-game-vii": {
+      "status": "analyzed",
+      "date": "2026-05-25",
+      "display_date": "25.05.2026",
+      "slug": "2026-05-25-1871-jump-game-vii",
+      "display_title": "1871. Jump Game VII",
+      "source_hash": "6e4230455aef7d9eab39c4ea6bddfc202dfdedb0e0cf2831c829dfe267f040c2",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-25T08:51:20Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "line-sweep",
+            "label": "line sweep",
+            "confidence": 0.95
+          },
+          {
+            "slug": "sliding-window",
+            "label": "sliding window",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "line-sweep-interval-events",
+            "label": "line sweep interval events",
+            "confidence": 0.9
+          },
+          {
+            "slug": "prefix-sum-difference-array",
+            "label": "prefix sum difference array",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Use a line sweep technique with a sliding window to track reachable positions efficiently in O(n) time.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-24-1340-jump-game-v": {
       "status": "analyzed",
       "date": "2026-05-24",
@@ -63091,5 +63146,5 @@
       }
     }
   },
-  "updated_at": "2026-05-24T11:51:36Z"
+  "updated_at": "2026-05-25T08:51:20Z"
 }
