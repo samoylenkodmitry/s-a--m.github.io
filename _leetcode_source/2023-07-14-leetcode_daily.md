@@ -21,6 +21,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 25.05.2026
+[1871. Jump Game VII](https://leetcode.com/problems/jump-game-vii/solutions/8292326/kotlin-rust-by-samoylenkodmitry-59at/) medium
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25052026-1871-jump-game-vii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/7WMg6mBUWTI)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![25.05.2026.webp](/assets/leetcode_daily_images/25.05.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1370
+
+#### Problem TLDR
+
+Can reach end jumping min..max to zeros
+
+#### Intuition
+
+* forward: put line sweep interval start-end events, slide
+* backwards: slide window looking backwards, count reachable items inside window
+
+#### Approach
+
+* the end should not be '1'
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun canReach(s: String, min: Int, max: Int): Boolean {
+        val e = IntArray(s.length+max+2); e[1] = -1
+        return s.last() == '0' && 0 < s.indices.fold(1) { c, i ->
+            if (s[i] == '0' && c+e[i] > 0) { e[i+min]++; e[i+max+1]-- }
+            c + e[i]
+        }
+    }
+```
+```rust
+    pub fn can_reach(s: String, l: i32, h: i32) -> bool {
+        let mut e = vec![0; s.len()+h as usize + 2]; e[1] = -1;
+        s.ends_with('0') && 0 < s.bytes().zip(0..).fold(1, |c, (v, i)| {
+            if v < 49 && c + e[i] > 0 { e[i+l as usize] += 1; e[i+h as usize+1] -= 1 }
+            c + e[i]
+        })
+    }
+```
+
 # 24.05.2026
 [1340. Jump Game V](https://leetcode.com/problems/jump-game-v/solutions/8290534/kotlin-rust-by-samoylenkodmitry-1zr7/) hard
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24052026-1340-jump-game-v?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
