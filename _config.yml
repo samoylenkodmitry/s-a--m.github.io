@@ -29,6 +29,11 @@ defaults:
     values:
       layout: post
       comments: false
+  # LeetCode problem detail pages
+  - scope:
+      path: "leetcode/problem"
+    values:
+      comments: true
 
 disqus: 
   shortname: http-dmitrysamoylenko-com

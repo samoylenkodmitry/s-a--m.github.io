@@ -1671,3 +1671,25 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+/* Comments (giscus) */
+.leetcode-comments {
+  margin: 2.5rem auto 0;
+  width: min(960px, 100%);
+  padding: 1.75rem 1.5rem 2rem;
+  background: var(--leetcode-paper, rgba(255, 252, 247, 0.94));
+  border: 1px solid var(--leetcode-border, rgba(35, 56, 51, 0.15));
+  border-radius: 18px;
+  box-shadow: 0 18px 40px -28px rgba(26, 37, 34, 0.5);
+}
+
+.leetcode-comments__title {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  color: var(--leetcode-ink, #1a2522);
+}
+
+.leetcode-comments .giscus,
+.leetcode-comments .giscus-frame {
+  width: 100%;
+}
