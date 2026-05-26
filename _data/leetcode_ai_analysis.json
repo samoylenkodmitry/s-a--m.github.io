@@ -127,6 +127,56 @@
         "confidence": 0.9
       }
     },
+    "2026-05-26-3120-count-the-number-of-special-characters-i": {
+      "status": "analyzed",
+      "date": "2026-05-26",
+      "display_date": "26.05.2026",
+      "slug": "2026-05-26-3120-count-the-number-of-special-characters-i",
+      "display_title": "3120. Count the Number of Special Characters I",
+      "source_hash": "6993168497ea425c19d57276b8823cdd50f0ffaef3b028fe4747be653dd6d39f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-26T06:52:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-set",
+            "label": "hash set",
+            "confidence": 0.8
+          },
+          {
+            "slug": "bitmask",
+            "label": "bitmask",
+            "confidence": 0.7
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "brute-force",
+            "label": "brute force",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bitmasking",
+            "label": "bitmasking",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Count characters appearing in both uppercase and lowercase by checking presence using sets or bitmasks in linear time.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-25-1871-jump-game-vii": {
       "status": "analyzed",
       "date": "2026-05-25",
@@ -63146,5 +63196,5 @@
       }
     }
   },
-  "updated_at": "2026-05-25T08:51:20Z"
+  "updated_at": "2026-05-26T06:52:47Z"
 }
