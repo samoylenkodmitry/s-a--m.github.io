@@ -127,6 +127,61 @@
         "confidence": 0.9
       }
     },
+    "2026-05-27-3121-count-the-number-of-special-characters-ii": {
+      "status": "analyzed",
+      "date": "2026-05-27",
+      "display_date": "27.05.2026",
+      "slug": "2026-05-27-3121-count-the-number-of-special-characters-ii",
+      "display_title": "3121. Count the Number of Special Characters II",
+      "source_hash": "e04a6464a8373e8b174ba559387d8c62d4d7f0d6ae82d3ad0042a65e74394b34",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-27T07:27:36Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "string",
+            "label": "string",
+            "confidence": 0.7
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bitmasking",
+            "label": "bitmasking",
+            "confidence": 0.9
+          },
+          {
+            "slug": "brute-force",
+            "label": "brute force",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "character-index-comparison",
+            "label": "character index comparison",
+            "confidence": 0.85
+          },
+          {
+            "slug": "bitmask-tracking",
+            "label": "bitmask tracking",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Use bitmasking and character index comparisons to count special characters in a string efficiently.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-05-26-3120-count-the-number-of-special-characters-i": {
       "status": "analyzed",
       "date": "2026-05-26",
@@ -63196,5 +63251,5 @@
       }
     }
   },
-  "updated_at": "2026-05-26T06:52:47Z"
+  "updated_at": "2026-05-27T07:27:36Z"
 }
