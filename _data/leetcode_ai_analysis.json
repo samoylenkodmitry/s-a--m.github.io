@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-05-28-3093-longest-common-suffix-queries": {
+      "status": "analyzed",
+      "date": "2026-05-28",
+      "display_date": "28.05.2026",
+      "slug": "2026-05-28-3093-longest-common-suffix-queries",
+      "display_title": "3093. Longest Common Suffix Queries",
+      "source_hash": "b943ed837eb2b7d59b123a821358aa0232c232705896dca269e5f15254717378",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-05-28T08:17:48Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "trie",
+            "label": "trie",
+            "confidence": 0.95
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "trie",
+            "label": "trie",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "arena-allocation",
+            "label": "arena allocation",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Use a trie built from reversed strings to efficiently answer longest common suffix queries by tracking the shortest index at each node.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-05-27-3121-count-the-number-of-special-characters-ii": {
       "status": "analyzed",
       "date": "2026-05-27",
@@ -63251,5 +63296,5 @@
       }
     }
   },
-  "updated_at": "2026-05-27T07:27:36Z"
+  "updated_at": "2026-05-28T08:17:48Z"
 }
