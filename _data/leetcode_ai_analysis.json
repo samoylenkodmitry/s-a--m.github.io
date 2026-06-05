@@ -127,6 +127,61 @@
         "confidence": 0.9
       }
     },
+    "2026-06-05-3753-total-waviness-of-numbers-in-range-ii": {
+      "status": "analyzed",
+      "date": "2026-06-05",
+      "display_date": "05.06.2026",
+      "slug": "2026-06-05-3753-total-waviness-of-numbers-in-range-ii",
+      "display_title": "3753. Total Waviness of Numbers in Range II",
+      "source_hash": "3ab846886d9b9bf6a39ecc0a163deed0e29098f7a61d1dfa3f962efd4074b0a8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-05T09:17:32Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash map",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "digit-dynamic-programming",
+            "label": "digit dynamic programming",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 0.9
+          },
+          {
+            "slug": "leading-zeros-and-upper-bound-handling",
+            "label": "handling leading zeros and upper bound constraints",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "number-theory",
+            "label": "number theory",
+            "confidence": 0.7
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.6
+          }
+        ],
+        "summary": "Use digit dynamic programming with memoization to count hills and valleys in a large numeric range efficiently.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-06-04-3751-total-waviness-of-numbers-in-range-i": {
       "status": "analyzed",
       "date": "2026-06-04",
@@ -63656,5 +63711,5 @@
       }
     }
   },
-  "updated_at": "2026-06-04T06:16:33Z"
+  "updated_at": "2026-06-05T09:17:32Z"
 }
