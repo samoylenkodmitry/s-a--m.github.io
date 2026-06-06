@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-06-06-2574-left-and-right-sum-differences": {
+      "status": "analyzed",
+      "date": "2026-06-06",
+      "display_date": "06.06.2026",
+      "slug": "2026-06-06-2574-left-and-right-sum-differences",
+      "display_title": "2574. Left and Right Sum Differences",
+      "source_hash": "b8a85bacd2194e49356cdee9aa21f73383b86d024e731876992f934168a6ee10",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-06T08:34:55Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "prefix-sum",
+            "label": "prefix sum",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix-sum-reuse",
+            "label": "prefix sum reuse",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Compute prefix sums and use the total sum to calculate absolute differences between left and right sums in linear time.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-06-05-3753-total-waviness-of-numbers-in-range-ii": {
       "status": "analyzed",
       "date": "2026-06-05",
@@ -63711,5 +63756,5 @@
       }
     }
   },
-  "updated_at": "2026-06-05T09:17:32Z"
+  "updated_at": "2026-06-06T08:34:55Z"
 }
