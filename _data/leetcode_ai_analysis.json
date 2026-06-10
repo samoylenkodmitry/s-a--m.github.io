@@ -127,6 +127,71 @@
         "confidence": 0.9
       }
     },
+    "2026-06-10-3691-maximum-total-subarray-value-ii": {
+      "status": "analyzed",
+      "date": "2026-06-10",
+      "display_date": "10.06.2026",
+      "slug": "2026-06-10-3691-maximum-total-subarray-value-ii",
+      "display_title": "3691. Maximum Total Subarray Value II",
+      "source_hash": "3775bee456bf443e7226bb1ddb4518b323ceed16ffbe5615a81da2e0ae998ad9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-10T07:24:31Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "segment-tree",
+            "label": "segment tree",
+            "confidence": 0.95
+          },
+          {
+            "slug": "priority-queue",
+            "label": "priority queue",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "segment-tree",
+            "label": "segment tree",
+            "confidence": 0.95
+          },
+          {
+            "slug": "priority-queue",
+            "label": "priority queue",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "range-queries",
+            "label": "range queries",
+            "confidence": 0.9
+          },
+          {
+            "slug": "max-min-difference-calculation",
+            "label": "max-min difference calculation",
+            "confidence": 0.85
+          },
+          {
+            "slug": "iterative-segment-tree-query",
+            "label": "iterative segment tree query",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Use segment trees to efficiently query max and min in ranges and a priority queue to select k largest max-min subarray values.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-06-06-2574-left-and-right-sum-differences": {
       "status": "analyzed",
       "date": "2026-06-06",
@@ -63756,5 +63821,5 @@
       }
     }
   },
-  "updated_at": "2026-06-06T08:34:55Z"
+  "updated_at": "2026-06-10T07:24:31Z"
 }
