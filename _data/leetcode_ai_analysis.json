@@ -127,6 +127,81 @@
         "confidence": 0.9
       }
     },
+    "2026-06-12-3559-number-of-ways-to-assign-edge-weights-ii": {
+      "status": "analyzed",
+      "date": "2026-06-12",
+      "display_date": "12.06.2026",
+      "slug": "2026-06-12-3559-number-of-ways-to-assign-edge-weights-ii",
+      "display_title": "3559. Number of Ways to Assign Edge Weights II",
+      "source_hash": "1133a63e862e283971e75dc7886ea78b0f3e62b77c497d429b974ca2dd65aed1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-12T08:38:45Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "tree",
+            "label": "tree",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.85
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "lowest-common-ancestor-binary-lifting",
+            "label": "lowest common ancestor (lca) with binary lifting",
+            "confidence": 0.95
+          },
+          {
+            "slug": "depth-first-search",
+            "label": "depth-first search (dfs)",
+            "confidence": 0.9
+          },
+          {
+            "slug": "breadth-first-search",
+            "label": "breadth-first search (bfs)",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "binary-lifting",
+            "label": "binary lifting",
+            "confidence": 0.9
+          },
+          {
+            "slug": "ancestor-time-interval-comparison",
+            "label": "ancestor time interval comparison",
+            "confidence": 0.85
+          },
+          {
+            "slug": "precompute-powers-of-two-modulo",
+            "label": "precompute powers of two modulo",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graphs",
+            "label": "graphs",
+            "confidence": 0.9
+          },
+          {
+            "slug": "trees",
+            "label": "trees",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Uses binary lifting to efficiently compute lowest common ancestors in a tree for path queries, combined with DFS and BFS for preprocessing.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-06-11-3558-number-of-ways-to-assign-edge-weights-i": {
       "status": "analyzed",
       "date": "2026-06-11",
@@ -63886,5 +63961,5 @@
       }
     }
   },
-  "updated_at": "2026-06-11T08:28:03Z"
+  "updated_at": "2026-06-12T08:38:45Z"
 }
