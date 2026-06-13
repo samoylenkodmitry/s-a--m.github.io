@@ -127,6 +127,45 @@
         "confidence": 0.9
       }
     },
+    "2026-06-13-3838-weighted-word-mapping": {
+      "status": "analyzed",
+      "date": "2026-06-13",
+      "display_date": "13.06.2026",
+      "slug": "2026-06-13-3838-weighted-word-mapping",
+      "display_title": "3838. Weighted Word Mapping",
+      "source_hash": "2b3d424af2f9098a128e8bbe614742addb13b0dfbefb826acd2622704ac584dd",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-13T07:49:48Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "brute-force",
+            "label": "brute-force",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "modulo-invariant",
+            "label": "modulo-invariant",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Map each word to a character by summing weighted letter values modulo 26 and reversing via 'z' minus sum.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-06-12-3559-number-of-ways-to-assign-edge-weights-ii": {
       "status": "analyzed",
       "date": "2026-06-12",
@@ -63961,5 +64000,5 @@
       }
     }
   },
-  "updated_at": "2026-06-12T08:38:45Z"
+  "updated_at": "2026-06-13T07:49:48Z"
 }
