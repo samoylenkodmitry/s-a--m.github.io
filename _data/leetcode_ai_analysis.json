@@ -127,6 +127,61 @@
         "confidence": 0.9
       }
     },
+    "2026-06-14-2130-maximum-twin-sum-of-a-linked-list": {
+      "status": "analyzed",
+      "date": "2026-06-14",
+      "display_date": "14.06.2026",
+      "slug": "2026-06-14-2130-maximum-twin-sum-of-a-linked-list",
+      "display_title": "2130. Maximum Twin Sum of a Linked List",
+      "source_hash": "55b5b1020cde2127accba859244dcdc183828c8b70fde967a55f83f0b0f489c8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-14T07:38:10Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 0.95
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two-pointers",
+            "label": "two-pointers",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "list-conversion",
+            "label": "list conversion",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          },
+          {
+            "slug": "linked-list",
+            "label": "linked-list",
+            "confidence": 0.85
+          }
+        ],
+        "summary": "Convert linked list to array and use two-pointer technique to find maximum twin sum.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-06-13-3838-weighted-word-mapping": {
       "status": "analyzed",
       "date": "2026-06-13",
@@ -64000,5 +64055,5 @@
       }
     }
   },
-  "updated_at": "2026-06-13T07:49:48Z"
+  "updated_at": "2026-06-14T07:38:10Z"
 }
