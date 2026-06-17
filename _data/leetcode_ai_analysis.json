@@ -127,6 +127,50 @@
         "confidence": 0.9
       }
     },
+    "2026-06-17-3614-process-string-with-special-operations-ii": {
+      "status": "analyzed",
+      "date": "2026-06-17",
+      "display_date": "17.06.2026",
+      "slug": "2026-06-17-3614-process-string-with-special-operations-ii",
+      "display_title": "3614. Process String with Special Operations II",
+      "source_hash": "e0f0447a75ced1d74ec370948103ab7e523946459419022deb04ad35b4cb4dbe",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-17T07:27:08Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "simulation",
+            "label": "simulation",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "reverse-simulation",
+            "label": "reverse simulation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "length-tracking",
+            "label": "length tracking",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Simulate string operations in reverse to find the k-th character efficiently without full string construction.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-06-16-3612-process-string-with-special-operations-i": {
       "status": "analyzed",
       "date": "2026-06-16",
@@ -64160,5 +64204,5 @@
       }
     }
   },
-  "updated_at": "2026-06-16T07:26:47Z"
+  "updated_at": "2026-06-17T07:27:08Z"
 }
