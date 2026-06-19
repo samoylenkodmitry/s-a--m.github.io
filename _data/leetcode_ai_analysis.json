@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-06-19-1732-find-the-highest-altitude": {
+      "status": "analyzed",
+      "date": "2026-06-19",
+      "display_date": "19.06.2026",
+      "slug": "2026-06-19-1732-find-the-highest-altitude",
+      "display_title": "1732. Find the Highest Altitude",
+      "source_hash": "582fa5a8eff742ccb23e50ddf0ae068a73cd599d9e372c65fd142d8dd04fadd6",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-19T06:44:22Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "prefix-sum",
+            "label": "prefix-sum",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "scan-fold-operations",
+            "label": "scan/fold operations",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Compute the maximum running sum (prefix sum) of altitude changes to find the highest altitude.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-06-18-1344-angle-between-hands-of-a-clock": {
       "status": "analyzed",
       "date": "2026-06-18",
@@ -64243,5 +64288,5 @@
       }
     }
   },
-  "updated_at": "2026-06-18T08:13:45Z"
+  "updated_at": "2026-06-19T06:44:22Z"
 }
