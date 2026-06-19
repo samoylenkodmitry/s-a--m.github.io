@@ -21,6 +21,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 19.06.2026
+[1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/solutions/8344300/kotlin-rust-by-samoylenkodmitry-88g1/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/19062026-1732-find-the-highest-altitude?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/xqogcMssIaQ)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![19.06.2026.webp](/assets/leetcode_daily_images/19.06.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1395
+
+#### Problem TLDR
+
+Max running sum
+
+#### Intuition
+
+Simulate. Take max.
+
+#### Approach
+
+* Kotlin: scan, Int::plus
+* Rust: fold
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1|n)$$
+
+#### Code
+
+```kotlin
+    fun largestAltitude(g: IntArray) = 
+    g.scan(0, Int::plus).max()
+```
+```rust
+    pub fn largest_altitude(g: Vec<i32>) -> i32 {
+        g.iter().fold((0,0), |(r,h), x| (r.max(h+x), h+x)).0
+    }
+```
+
 # 18.06.2026
 [1344. Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/solutions/8341934/kotlin-rust-by-samoylenkodmitry-2u0f/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/18062026-1344-angle-between-hands?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
