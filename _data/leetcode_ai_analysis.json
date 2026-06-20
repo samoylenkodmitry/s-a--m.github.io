@@ -127,6 +127,66 @@
         "confidence": 0.9
       }
     },
+    "2026-06-20-1840-maximum-building-height": {
+      "status": "analyzed",
+      "date": "2026-06-20",
+      "display_date": "20.06.2026",
+      "slug": "2026-06-20-1840-maximum-building-height",
+      "display_title": "1840. Maximum Building Height",
+      "source_hash": "4d9bc10ccf1877d51d5cca33b142b381ebff5194d95cac38242a6dc5cccd8d03",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-20T08:55:52Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "two-passes",
+            "label": "two passes",
+            "confidence": 0.9
+          },
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 0.85
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-passes-adjustment",
+            "label": "two passes adjustment",
+            "confidence": 0.85
+          },
+          {
+            "slug": "interval-restriction-merging",
+            "label": "interval restriction merging",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "geometry",
+            "label": "geometry",
+            "confidence": 0.7
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Use two passes (forward and backward) to adjust height restrictions and compute maximum building height using a greedy approach with O(n) complexity.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-06-19-1732-find-the-highest-altitude": {
       "status": "analyzed",
       "date": "2026-06-19",
@@ -64288,5 +64348,5 @@
       }
     }
   },
-  "updated_at": "2026-06-19T06:44:22Z"
+  "updated_at": "2026-06-20T08:55:52Z"
 }

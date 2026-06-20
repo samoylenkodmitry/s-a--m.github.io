@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Intervals"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "16 entries tagged as Intervals."
+library_summary: "17 entries tagged as Intervals."
 pattern_slug: "intervals"
 ---
