@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-06-21-1833-maximum-ice-cream-bars": {
+      "status": "analyzed",
+      "date": "2026-06-21",
+      "display_date": "21.06.2026",
+      "slug": "2026-06-21-1833-maximum-ice-cream-bars",
+      "display_title": "1833. Maximum Ice Cream Bars",
+      "source_hash": "14d610872844a329da8ce2aad19d8ff4d0743cd1a0757e01788c7b86339274b9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-21T08:32:52Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "frequency-array",
+            "label": "frequency array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "greedy",
+            "label": "greedy",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "frequency-counting",
+            "label": "frequency counting",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Use a frequency array and a greedy approach to buy the maximum number of ice cream bars within the coin limit by iterating over prices in ascending order.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-06-20-1840-maximum-building-height": {
       "status": "analyzed",
       "date": "2026-06-20",
@@ -64348,5 +64393,5 @@
       }
     }
   },
-  "updated_at": "2026-06-20T08:55:52Z"
+  "updated_at": "2026-06-21T08:32:52Z"
 }
