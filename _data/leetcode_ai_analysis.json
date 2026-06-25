@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-06-25-3737-count-subarrays-with-majority-element-i": {
+      "status": "analyzed",
+      "date": "2026-06-25",
+      "display_date": "25.06.2026",
+      "slug": "2026-06-25-3737-count-subarrays-with-majority-element-i",
+      "display_title": "3737. Count Subarrays With Majority Element I",
+      "source_hash": "06a9af23149116de7e94c91a991cfc8a017a6ffc7a0744de0bb008cfad4c773c",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-25T05:35:16Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "brute-force",
+            "label": "brute force",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "running-count",
+            "label": "running count",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Use a brute force O(n^2) approach to count subarrays where the target element is the majority by maintaining a running count in the inner loop.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-06-24-3700-number-of-zigzag-arrays-ii": {
       "status": "analyzed",
       "date": "2026-06-24",
@@ -64563,5 +64608,5 @@
       }
     }
   },
-  "updated_at": "2026-06-24T08:54:15Z"
+  "updated_at": "2026-06-25T05:35:16Z"
 }
