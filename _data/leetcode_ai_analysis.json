@@ -127,6 +127,61 @@
         "confidence": 0.9
       }
     },
+    "2026-06-26-3739-count-subarrays-with-majority-element-ii": {
+      "status": "analyzed",
+      "date": "2026-06-26",
+      "display_date": "26.06.2026",
+      "slug": "2026-06-26-3739-count-subarrays-with-majority-element-ii",
+      "display_title": "3739. Count Subarrays With Majority Element II",
+      "source_hash": "989a5d33cfa3571cac35657b6cd15d26a50a8e9a9c57eba492c17eb8e21cf19b",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-26T11:27:12Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash map",
+            "confidence": 0.85
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "prefix-sum",
+            "label": "prefix sum",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "balance-transformation",
+            "label": "balance transformation",
+            "confidence": 0.85
+          },
+          {
+            "slug": "frequency-counting",
+            "label": "frequency counting",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Use prefix sums with a balance tracking approach and frequency map to count subarrays where a target element is majority in O(n) time.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-06-25-3737-count-subarrays-with-majority-element-i": {
       "status": "analyzed",
       "date": "2026-06-25",
@@ -64608,5 +64663,5 @@
       }
     }
   },
-  "updated_at": "2026-06-25T05:35:16Z"
+  "updated_at": "2026-06-26T11:27:12Z"
 }
