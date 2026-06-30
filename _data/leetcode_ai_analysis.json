@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-06-30-1358-number-of-substrings-containing-all-three-characters": {
+      "status": "analyzed",
+      "date": "2026-06-30",
+      "display_date": "30.06.2026",
+      "slug": "2026-06-30-1358-number-of-substrings-containing-all-three-characters",
+      "display_title": "1358. Number of Substrings Containing All Three Characters",
+      "source_hash": "6487d75a817aedcbfff88243ecf7b2df9d6abfb9dc5ff918227797bf29d2d82f",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-06-30T06:50:01Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sliding-window",
+            "label": "sliding window",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "tracking-latest-positions",
+            "label": "tracking latest positions",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Use a sliding window approach by tracking the latest positions of each character to count substrings containing all three characters in linear time.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-06-29-1967-number-of-strings-that-appear-as-substrings-in-word": {
       "status": "analyzed",
       "date": "2026-06-29",
@@ -64807,5 +64852,5 @@
       }
     }
   },
-  "updated_at": "2026-06-29T06:28:29Z"
+  "updated_at": "2026-06-30T06:50:01Z"
 }
