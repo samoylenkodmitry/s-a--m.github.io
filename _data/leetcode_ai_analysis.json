@@ -127,6 +127,76 @@
         "confidence": 0.9
       }
     },
+    "2026-07-01-2812-find-the-safest-path-in-a-grid": {
+      "status": "analyzed",
+      "date": "2026-07-01",
+      "display_date": "01.07.2026",
+      "slug": "2026-07-01-2812-find-the-safest-path-in-a-grid",
+      "display_title": "2812. Find the Safest Path in a Grid",
+      "source_hash": "044c5361dbf6b177c7141904765f12404472f5cf69eb0b8fb3990db6c5b1ca51",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-01T09:22:22Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "priority-queue",
+            "label": "priority queue",
+            "confidence": 0.9
+          },
+          {
+            "slug": "queue",
+            "label": "queue",
+            "confidence": 0.9
+          },
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bfs",
+            "label": "breadth-first search",
+            "confidence": 0.95
+          },
+          {
+            "slug": "priority-queue-search",
+            "label": "priority queue search",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "multi-source-bfs",
+            "label": "multi-source BFS",
+            "confidence": 0.9
+          },
+          {
+            "slug": "in-place-grid-marking",
+            "label": "in-place grid marking",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "graphs",
+            "label": "graphs",
+            "confidence": 0.9
+          },
+          {
+            "slug": "grids",
+            "label": "grids",
+            "confidence": 0.85
+          }
+        ],
+        "summary": "Use BFS from all source cells to mark safety distances, then use a priority queue BFS to find the path maximizing minimum safety.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-06-30-1358-number-of-substrings-containing-all-three-characters": {
       "status": "analyzed",
       "date": "2026-06-30",
@@ -64852,5 +64922,5 @@
       }
     }
   },
-  "updated_at": "2026-06-30T06:50:01Z"
+  "updated_at": "2026-07-01T09:22:22Z"
 }
