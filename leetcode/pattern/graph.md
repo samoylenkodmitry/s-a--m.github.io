@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Graph"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "220 entries tagged as Graph."
+library_summary: "221 entries tagged as Graph."
 pattern_slug: "graph"
 ---
