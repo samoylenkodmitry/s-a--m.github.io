@@ -127,6 +127,61 @@
         "confidence": 0.9
       }
     },
+    "2026-07-05-1301-number-of-paths-with-max-score": {
+      "status": "analyzed",
+      "date": "2026-07-05",
+      "display_date": "05.07.2026",
+      "slug": "2026-07-05-1301-number-of-paths-with-max-score",
+      "display_title": "1301. Number of Paths with Max Score",
+      "source_hash": "90622ce2caebe47efd08709dceba2234df00ab9e4fb0a82da66cbb53ee2c301d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-05T06:53:01Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "space-optimization-rolling-arrays",
+            "label": "space optimization with rolling arrays",
+            "confidence": 0.85
+          },
+          {
+            "slug": "modular-arithmetic",
+            "label": "modular arithmetic for counting paths",
+            "confidence": 0.9
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          },
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Use dynamic programming on a matrix to count the number of maximal scoring paths with space optimization.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-07-04-2492-minimum-score-of-a-path-between-two-cities": {
       "status": "analyzed",
       "date": "2026-07-04",
@@ -65102,5 +65157,5 @@
       }
     }
   },
-  "updated_at": "2026-07-04T06:31:39Z"
+  "updated_at": "2026-07-05T06:53:01Z"
 }
