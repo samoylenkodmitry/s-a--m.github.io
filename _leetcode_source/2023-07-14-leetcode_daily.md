@@ -21,6 +21,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 09.07.2026
+[3532. Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/solutions/8385720/kotlin-rust-by-samoylenkodmitry-lrvc/) medium
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/09072026-3532-path-existence-queries?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/SDMKProm1Ew)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![09.07.2026.webp](/assets/leetcode_daily_images/09.07.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1415
+
+#### Problem TLDR
+
+Queries of connected nodes
+
+#### Intuition
+
+* build a Union-Find, iterate once, connect consequent numbers
+
+#### Approach
+
+* we can reuse the nums array
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun pathExistenceQueries(n: Int, ns: IntArray, md: Int, qs: Array<IntArray>) = run {
+        ns.reduceIndexed { i, p, c -> c.also { if (c - p <= md) ns[i] = ns[i-1] } }
+        qs.map { (a,b) -> ns[a]==ns[b] }
+    }
+```
+```rust
+    pub fn path_existence_queries(n: i32, mut ns: Vec<i32>, md: i32, qs: Vec<Vec<i32>>) -> Vec<bool> {
+        let mut p = ns[0]; for i in 1..ns.len() { let n = ns[i]; if n - p <= md { ns[i] = ns[i-1]}; p = n }
+        qs.iter().map(|q|ns[q[0] as usize]==ns[q[1] as usize]).collect()
+    }
+```
+
 # 08.07.2026
 [3756. Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/solutions/8383748/kotlin-rust-by-samoylenkodmitry-ahxx/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/08072026-3756-concatenate-non-zero?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
