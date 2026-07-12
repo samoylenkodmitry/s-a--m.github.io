@@ -45,6 +45,9 @@ $$O(n)$$
     a.toSet().sorted().run { a.map { binarySearch(it) + 1 } }
 ```
 ```rust
-6
+    pub fn array_rank_transform(a: Vec<i32>) -> Vec<i32> {
+        let m: HashMap<_,_> = a.iter().copied().sorted().dedup().zip(1..).collect();
+        a.iter().map(|x| m[x]).collect()
+    }
 ```
 

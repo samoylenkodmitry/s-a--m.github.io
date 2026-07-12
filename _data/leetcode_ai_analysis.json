@@ -133,41 +133,41 @@
       "display_date": "12.07.2026",
       "slug": "2026-07-12-1331-rank-transform-of-an-array",
       "display_title": "1331. Rank Transform of an Array",
-      "source_hash": "8b0b1363b674f1fd8edbcc5658cfaac7120361a429d5b7be7d8ec83133c97d13",
+      "source_hash": "f1c5158a85ac1ded6f9114db1f3f70d5a9e7aeda1f703ba98e678147c9db6a6c",
       "prompt_version": "leetcode-ai-tags-v1",
       "provider": "github",
       "model": "openai/gpt-4.1-mini",
-      "analyzed_at": "2026-07-12T09:03:00Z",
+      "analyzed_at": "2026-07-12T13:52:29Z",
       "analysis": {
         "data_structures": [
           {
-            "slug": "array",
-            "label": "array",
-            "confidence": 0.8
-          },
-          {
             "slug": "hash-map",
             "label": "hash map",
-            "confidence": 0.7
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.85
           }
         ],
         "algorithms": [
           {
             "slug": "binary-search",
             "label": "binary search",
-            "confidence": 0.9
+            "confidence": 0.95
           },
           {
             "slug": "sorting",
             "label": "sorting",
-            "confidence": 0.8
+            "confidence": 0.9
           }
         ],
         "techniques": [
           {
             "slug": "deduplication",
             "label": "deduplication",
-            "confidence": 0.8
+            "confidence": 0.9
           }
         ],
         "domains": [
@@ -177,9 +177,9 @@
             "confidence": 0.9
           }
         ],
-        "summary": "Sort the unique elements and use binary search to find the rank of each element in the original array.",
+        "summary": "Use sorting and binary search or hash map to assign ranks to array elements efficiently.",
         "manual_review": false,
-        "confidence": 0.9
+        "confidence": 0.95
       }
     },
     "2026-07-11-2685-count-the-number-of-complete-components": {
@@ -65516,5 +65516,5 @@
       }
     }
   },
-  "updated_at": "2026-07-12T09:03:00Z"
+  "updated_at": "2026-07-12T13:52:29Z"
 }
