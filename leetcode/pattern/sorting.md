@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Sorting"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "161 entries tagged as Sorting."
+library_summary: "162 entries tagged as Sorting."
 pattern_slug: "sorting"
 ---
