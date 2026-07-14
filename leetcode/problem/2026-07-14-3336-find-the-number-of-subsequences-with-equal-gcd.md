@@ -15,6 +15,8 @@ https://dmitrysamoylenko.com/leetcode/
 ![14.07.2026.webp](/assets/leetcode_daily_images/14.07.2026.webp)
 #### Join me on Telegram
 
+https://t.me/leetcode_daily_unstoppable/1420
+
 #### Problem TLDR
 
 Equal gcd subsequencies

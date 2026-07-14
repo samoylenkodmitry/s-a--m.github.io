@@ -133,11 +133,11 @@
       "display_date": "14.07.2026",
       "slug": "2026-07-14-3336-find-the-number-of-subsequences-with-equal-gcd",
       "display_title": "3336. Find the Number of Subsequences With Equal GCD",
-      "source_hash": "b4b1fae5c3b2b2fd506395566964c8808390bf483e21f8926649b19f1eeb5e90",
+      "source_hash": "6b83e890521681b73e9803edcee06d9bd09d967b4767d76fffca1e41316f2e3d",
       "prompt_version": "leetcode-ai-tags-v1",
       "provider": "github",
       "model": "openai/gpt-4.1-mini",
-      "analyzed_at": "2026-07-14T08:20:26Z",
+      "analyzed_at": "2026-07-14T08:24:06Z",
       "analysis": {
         "data_structures": [
           {
@@ -160,19 +160,19 @@
         ],
         "techniques": [
           {
-            "slug": "memoization",
-            "label": "memoization",
+            "slug": "state-compression",
+            "label": "state compression",
+            "confidence": 0.9
+          },
+          {
+            "slug": "bottom-up-dp",
+            "label": "bottom-up dp",
             "confidence": 0.9
           },
           {
             "slug": "gcd-computation",
             "label": "gcd computation",
             "confidence": 0.9
-          },
-          {
-            "slug": "state-compression",
-            "label": "state compression",
-            "confidence": 0.85
           }
         ],
         "domains": [
@@ -184,10 +184,10 @@
           {
             "slug": "number-theory",
             "label": "number theory",
-            "confidence": 0.85
+            "confidence": 0.9
           }
         ],
-        "summary": "Use dynamic programming with memoization over indices and gcd pairs to count subsequences with equal gcd efficiently.",
+        "summary": "Use dynamic programming with a 3D state tracking gcd pairs to count subsequences with equal gcd efficiently.",
         "manual_review": false,
         "confidence": 0.95
       }
@@ -65620,5 +65620,5 @@
       }
     }
   },
-  "updated_at": "2026-07-14T08:20:26Z"
+  "updated_at": "2026-07-14T08:24:06Z"
 }
