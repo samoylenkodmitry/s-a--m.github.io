@@ -127,6 +127,71 @@
         "confidence": 0.9
       }
     },
+    "2026-07-14-3336-find-the-number-of-subsequences-with-equal-gcd": {
+      "status": "analyzed",
+      "date": "2026-07-14",
+      "display_date": "14.07.2026",
+      "slug": "2026-07-14-3336-find-the-number-of-subsequences-with-equal-gcd",
+      "display_title": "3336. Find the Number of Subsequences With Equal GCD",
+      "source_hash": "b4b1fae5c3b2b2fd506395566964c8808390bf483e21f8926649b19f1eeb5e90",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-14T08:20:26Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "hash-map",
+            "label": "hash map",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "dynamic-programming",
+            "label": "dynamic programming",
+            "confidence": 0.95
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "memoization",
+            "label": "memoization",
+            "confidence": 0.9
+          },
+          {
+            "slug": "gcd-computation",
+            "label": "gcd computation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "state-compression",
+            "label": "state compression",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "combinatorics",
+            "label": "combinatorics",
+            "confidence": 0.9
+          },
+          {
+            "slug": "number-theory",
+            "label": "number theory",
+            "confidence": 0.85
+          }
+        ],
+        "summary": "Use dynamic programming with memoization over indices and gcd pairs to count subsequences with equal gcd efficiently.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-07-13-1291-sequential-digits": {
       "status": "analyzed",
       "date": "2026-07-13",
@@ -65555,5 +65620,5 @@
       }
     }
   },
-  "updated_at": "2026-07-13T07:22:12Z"
+  "updated_at": "2026-07-14T08:20:26Z"
 }
