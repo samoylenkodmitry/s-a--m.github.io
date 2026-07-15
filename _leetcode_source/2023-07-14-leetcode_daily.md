@@ -21,6 +21,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 15.07.2026
+[3658. GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/solutions/8398308/kotlin-rust-by-samoylenkodmitry-88sc/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/15072026-3658-gcd-of-odd-and-even?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/7ksMlk5woyU)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![15.07.2026.webp](/assets/leetcode_daily_images/15.07.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1421
+
+#### Problem TLDR
+
+Gcd of odds and evens
+
+#### Intuition
+
+Calculate sums, calculate gcd.
+Or.. return `n`: sum of odds is n^2, sum of evens is n(n+1).
+
+#### Approach
+
+* remember gcd as `a/b, bab`
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun gcdOfOddEvenSums(n: Int) = run{
+        fun gcd(a: Int, b: Int): Int = if (b==0)a else gcd(b,a%b)
+        gcd((1..2*n step 2).sum(), (2..2*n step 2).sum())
+    }
+```
+```rust
+    pub fn gcd_of_odd_even_sums(n: i32) -> i32 { n }
+```
+
 # 14.07.2026
 [3336. Find the Number of Subsequences With Equal GCD](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/solutions/8396354/kotlin-rust-by-samoylenkodmitry-sagu/) hard
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/14072026-3336-find-the-number-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
