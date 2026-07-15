@@ -127,6 +127,45 @@
         "confidence": 0.9
       }
     },
+    "2026-07-15-3658-gcd-of-odd-and-even-sums": {
+      "status": "analyzed",
+      "date": "2026-07-15",
+      "display_date": "15.07.2026",
+      "slug": "2026-07-15-3658-gcd-of-odd-and-even-sums",
+      "display_title": "3658. GCD of Odd and Even Sums",
+      "source_hash": "da99fad7536440a45d6abf6b657ae4f1480d2e83c6fefe533143021dc0ae6fee",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-15T06:52:17Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "gcd",
+            "label": "greatest common divisor (gcd)",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "euclids-algorithm-for-gcd",
+            "label": "euclid's algorithm for gcd",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "mathematics",
+            "label": "mathematics",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Compute sums of odd and even numbers and find their gcd using Euclid's algorithm.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-07-14-3336-find-the-number-of-subsequences-with-equal-gcd": {
       "status": "analyzed",
       "date": "2026-07-14",
@@ -65620,5 +65659,5 @@
       }
     }
   },
-  "updated_at": "2026-07-14T08:24:06Z"
+  "updated_at": "2026-07-15T06:52:17Z"
 }
