@@ -127,6 +127,66 @@
         "confidence": 0.9
       }
     },
+    "2026-07-16-3867-sum-of-gcd-of-formed-pairs": {
+      "status": "analyzed",
+      "date": "2026-07-16",
+      "display_date": "16.07.2026",
+      "slug": "2026-07-16-3867-sum-of-gcd-of-formed-pairs",
+      "display_title": "3867. Sum of GCD of Formed Pairs",
+      "source_hash": "e159a78be23bfd98153d8b207c1c3165c753d3894f5b71cb9a3321d15bc07917",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-16T05:06:58Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "gcd",
+            "label": "greatest common divisor (gcd)",
+            "confidence": 0.9
+          },
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.7
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "prefix-maximum",
+            "label": "prefix maximum",
+            "confidence": 0.8
+          },
+          {
+            "slug": "pairwise-gcd-summation",
+            "label": "pairwise gcd summation",
+            "confidence": 0.7
+          }
+        ],
+        "domains": [
+          {
+            "slug": "number-theory",
+            "label": "number theory",
+            "confidence": 0.7
+          },
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.6
+          }
+        ],
+        "summary": "Compute gcds with prefix maximums, sort results, then sum gcd pairs from opposite ends.",
+        "manual_review": false,
+        "confidence": 0.85
+      }
+    },
     "2026-07-15-3658-gcd-of-odd-and-even-sums": {
       "status": "analyzed",
       "date": "2026-07-15",
@@ -65659,5 +65719,5 @@
       }
     }
   },
-  "updated_at": "2026-07-15T06:52:17Z"
+  "updated_at": "2026-07-16T05:06:58Z"
 }
