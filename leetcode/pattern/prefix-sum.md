@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Prefix Sum"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "21 entries tagged as Prefix Sum."
+library_summary: "22 entries tagged as Prefix Sum."
 pattern_slug: "prefix-sum"
 ---

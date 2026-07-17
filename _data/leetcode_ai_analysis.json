@@ -127,6 +127,76 @@
         "confidence": 0.9
       }
     },
+    "2026-07-17-3312-sorted-gcd-pair-queries": {
+      "status": "analyzed",
+      "date": "2026-07-17",
+      "display_date": "17.07.2026",
+      "slug": "2026-07-17-3312-sorted-gcd-pair-queries",
+      "display_title": "3312. Sorted GCD Pair Queries",
+      "source_hash": "c24b44d079291a8e09f0680201736fd53677da6e333b9441256747f94e606f24",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-17T08:33:53Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "inclusion-exclusion",
+            "label": "inclusion-exclusion principle",
+            "confidence": 0.9
+          },
+          {
+            "slug": "binary-search",
+            "label": "binary search",
+            "confidence": 0.85
+          },
+          {
+            "slug": "prefix-sum",
+            "label": "prefix sum",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "inclusion-exclusion-counting",
+            "label": "inclusion-exclusion counting",
+            "confidence": 0.9
+          },
+          {
+            "slug": "prefix-sums-cumulative-frequency",
+            "label": "prefix sums for cumulative frequency",
+            "confidence": 0.85
+          },
+          {
+            "slug": "binary-search-prefix-sums",
+            "label": "binary search on prefix sums",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "number-theory",
+            "label": "number theory",
+            "confidence": 0.7
+          },
+          {
+            "slug": "mathematics",
+            "label": "mathematics",
+            "confidence": 0.6
+          }
+        ],
+        "summary": "Use inclusion-exclusion to count pairs by gcd, prefix sums for cumulative counts, and binary search to answer queries efficiently.",
+        "manual_review": false,
+        "confidence": 0.85
+      }
+    },
     "2026-07-16-3867-sum-of-gcd-of-formed-pairs": {
       "status": "analyzed",
       "date": "2026-07-16",
@@ -65719,5 +65789,5 @@
       }
     }
   },
-  "updated_at": "2026-07-16T05:06:58Z"
+  "updated_at": "2026-07-17T08:33:53Z"
 }

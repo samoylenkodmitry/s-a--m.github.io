@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Math"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "81 entries tagged as Math."
+library_summary: "82 entries tagged as Math."
 pattern_slug: "math"
 ---
