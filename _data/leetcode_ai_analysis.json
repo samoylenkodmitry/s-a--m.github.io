@@ -127,6 +127,56 @@
         "confidence": 0.9
       }
     },
+    "2026-07-18-1979-find-greatest-common-divisor-of-array": {
+      "status": "analyzed",
+      "date": "2026-07-18",
+      "display_date": "18.07.2026",
+      "slug": "2026-07-18-1979-find-greatest-common-divisor-of-array",
+      "display_title": "1979. Find Greatest Common Divisor of Array",
+      "source_hash": "fd57c81a46e77b0210cb4410ff3bf0f37b78e1ced230182ab6d12a9fe95279f9",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-18T07:23:55Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "greatest-common-divisor-gcd",
+            "label": "greatest common divisor (gcd)",
+            "confidence": 0.95
+          },
+          {
+            "slug": "recursion",
+            "label": "recursion",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "minmax-extraction",
+            "label": "minmax extraction",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "math",
+            "label": "math",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Find the gcd of the minimum and maximum elements in an array using recursion or iteration.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-07-17-3312-sorted-gcd-pair-queries": {
       "status": "analyzed",
       "date": "2026-07-17",
@@ -65789,5 +65839,5 @@
       }
     }
   },
-  "updated_at": "2026-07-17T08:33:53Z"
+  "updated_at": "2026-07-18T07:23:55Z"
 }
