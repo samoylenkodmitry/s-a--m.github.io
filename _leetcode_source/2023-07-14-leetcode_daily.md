@@ -21,6 +21,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 20.07.2026
+[1260. Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/solutions/8408688/kotlin-rust-by-samoylenkodmitry-zipm/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/20072026-1260-shift-2d-grid?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/R-CR5XVl50I)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![20.07.2026.webp](/assets/leetcode_daily_images/20.07.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1426
+
+#### Problem TLDR
+
+Shift right 2d grid
+
+#### Intuition
+
+Flatten, rotate, chunk.
+
+#### Approach
+
+* don't forget % size
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun shiftGrid(g: Array<IntArray>, k: Int) = g.flatMap{it.asList()}
+    .run{(takeLast(k%size) + dropLast(k%size)).chunked(g[0].size)}
+```
+```rust
+    pub fn shift_grid(g: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {
+        let mut v = g.concat(); let k = k as usize % v.len(); v.rotate_right(k);
+        v.chunks(g[0].len()).map(|c|c.to_vec()).collect()
+    }
+```
+
 # 19.07.2026
 [1081. Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/solutions/8407086/kotlin-rust-by-samoylenkodmitry-n5q1/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/19072026-1081-smallest-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
