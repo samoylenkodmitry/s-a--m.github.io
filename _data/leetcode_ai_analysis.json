@@ -127,6 +127,61 @@
         "confidence": 0.9
       }
     },
+    "2026-07-20-1260-shift-2d-grid": {
+      "status": "analyzed",
+      "date": "2026-07-20",
+      "display_date": "20.07.2026",
+      "slug": "2026-07-20-1260-shift-2d-grid",
+      "display_title": "1260. Shift 2D Grid",
+      "source_hash": "b94935ad1c521120318684bb3cb9e9123b848a332264cdc557e59a7cae1b6b44",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-20T07:23:32Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "matrix",
+            "label": "matrix",
+            "confidence": 0.9
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "array-rotation",
+            "label": "array rotation",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "flatten-and-chunk",
+            "label": "flatten and chunk",
+            "confidence": 0.85
+          },
+          {
+            "slug": "modulo-for-rotation",
+            "label": "modulo for rotation",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          }
+        ],
+        "summary": "Flatten the 2D grid into a 1D array, rotate it by k positions using modulo arithmetic, then chunk back into the original row size.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-07-19-1081-smallest-subsequence-of-distinct-characters": {
       "status": "analyzed",
       "date": "2026-07-19",
@@ -65889,5 +65944,5 @@
       }
     }
   },
-  "updated_at": "2026-07-19T09:30:05Z"
+  "updated_at": "2026-07-20T07:23:32Z"
 }
