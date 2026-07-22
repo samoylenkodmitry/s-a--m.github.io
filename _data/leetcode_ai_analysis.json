@@ -127,6 +127,81 @@
         "confidence": 0.9
       }
     },
+    "2026-07-22-3501-maximize-active-section-with-trade-ii": {
+      "status": "analyzed",
+      "date": "2026-07-22",
+      "display_date": "22.07.2026",
+      "slug": "2026-07-22-3501-maximize-active-section-with-trade-ii",
+      "display_title": "3501. Maximize Active Section with Trade II",
+      "source_hash": "6be962e94cf49f1cab1e2876d6fc851db1eb62d1444a5ed8eed06d2969c34aa1",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-22T09:55:19Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "binary-indexed-tree-fenwick-tree",
+            "label": "binary indexed tree (fenwick tree)",
+            "confidence": 0.95
+          },
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.7
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "binary-indexed-tree-fenwick-tree",
+            "label": "binary indexed tree (fenwick tree)",
+            "confidence": 0.9
+          },
+          {
+            "slug": "sliding-window",
+            "label": "sliding window",
+            "confidence": 0.8
+          },
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.7
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "grouping-consecutive-zeros",
+            "label": "grouping consecutive zeros",
+            "confidence": 0.85
+          },
+          {
+            "slug": "suffix-tracking",
+            "label": "suffix tracking",
+            "confidence": 0.8
+          },
+          {
+            "slug": "coordinate-compression-via-sorting-queries-by-right-endpoint",
+            "label": "coordinate compression via sorting queries by right endpoint",
+            "confidence": 0.75
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.9
+          },
+          {
+            "slug": "range-queries",
+            "label": "range queries",
+            "confidence": 0.6
+          }
+        ],
+        "summary": "Use a binary indexed tree to efficiently answer range queries on maximum combined zero groups while scanning the string with a sliding window approach.",
+        "manual_review": false,
+        "confidence": 0.85
+      }
+    },
     "2026-07-21-3499-maximize-active-section-with-trade-i": {
       "status": "analyzed",
       "date": "2026-07-21",
@@ -65994,5 +66069,5 @@
       }
     }
   },
-  "updated_at": "2026-07-21T07:46:50Z"
+  "updated_at": "2026-07-22T09:55:19Z"
 }
