@@ -127,6 +127,71 @@
         "confidence": 0.9
       }
     },
+    "2026-07-24-3514-number-of-unique-xor-triplets-ii": {
+      "status": "analyzed",
+      "date": "2026-07-24",
+      "display_date": "24.07.2026",
+      "slug": "2026-07-24-3514-number-of-unique-xor-triplets-ii",
+      "display_title": "3514. Number of Unique XOR Triplets II",
+      "source_hash": "7b2a5a0c6275ad98911baa2d92c23723944f7678d01c24e54d5ba971d438ec3d",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-24T08:38:27Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "boolean-array",
+            "label": "boolean array",
+            "confidence": 0.8
+          },
+          {
+            "slug": "set",
+            "label": "set",
+            "confidence": 0.7
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "bit-manipulation",
+            "label": "bit manipulation",
+            "confidence": 0.9
+          },
+          {
+            "slug": "set-operations",
+            "label": "set operations",
+            "confidence": 0.8
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "bitset-optimization",
+            "label": "bitset optimization",
+            "confidence": 0.85
+          },
+          {
+            "slug": "deduplication",
+            "label": "deduplication",
+            "confidence": 0.7
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          },
+          {
+            "slug": "bitwise-operations",
+            "label": "bitwise operations",
+            "confidence": 0.6
+          }
+        ],
+        "summary": "Compute unique XOR triplets by building sets of pairwise XORs and then XORing with array elements, using boolean arrays for efficient membership tracking.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-07-23-3513-number-of-unique-xor-triplets-i": {
       "status": "analyzed",
       "date": "2026-07-23",
@@ -66108,5 +66173,5 @@
       }
     }
   },
-  "updated_at": "2026-07-23T07:21:56Z"
+  "updated_at": "2026-07-24T08:38:27Z"
 }
