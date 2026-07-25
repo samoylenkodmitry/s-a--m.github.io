@@ -21,6 +21,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 25.07.2026
+[3536. Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/solutions/8418932/kotlin-rust-by-samoylenkodmitry-ylz1/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/25072026-3536-maximum-product-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/xvdJKKuH04w)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![25.07.2026.webp](/assets/leetcode_daily_images/25.07.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1431
+
+#### Problem TLDR
+
+Product of two largest digits in n
+
+#### Intuition
+
+Convert to string. Sort.
+
+#### Approach
+
+* Rust itertools has k_largest
+
+#### Complexity
+
+- Time complexity:
+$$O(logn*log log n)$$
+
+- Space complexity:
+$$O(logn)$$
+
+#### Code
+
+```kotlin
+    fun maxProduct(n: Int) = 
+    "$n".map{it-'0'}.sorted().takeLast(2).let{it[0]*it[1]}
+```
+```rust
+    pub fn max_product(n: i32) -> i32 {
+        format!("0{n}").bytes().k_largest(2).map(|b| b as i32 - 48).product()
+    }
+```
+
 # 24.07.2026
 [3514. Number of Unique XOR Triplets II](https://leetcode.com/problems/number-of-unique-xor-triplets-ii/solutions/8416716/kotlin-rust-by-samoylenkodmitry-09gn/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/24072026-3514-number-of-unique-xor?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
