@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-07-25-3536-maximum-product-of-two-digits": {
+      "status": "analyzed",
+      "date": "2026-07-25",
+      "display_date": "25.07.2026",
+      "slug": "2026-07-25-3536-maximum-product-of-two-digits",
+      "display_title": "3536. Maximum Product of Two Digits",
+      "source_hash": "de329ecaec41edbdc4f48506ccafa0afb71f2188a2d5fc532a352f50699fc6d3",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-25T09:19:47Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "string-conversion",
+            "label": "string conversion",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Convert the integer to a string, extract digits, sort them, and multiply the two largest digits.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-07-24-3514-number-of-unique-xor-triplets-ii": {
       "status": "analyzed",
       "date": "2026-07-24",
@@ -66173,5 +66218,5 @@
       }
     }
   },
-  "updated_at": "2026-07-24T08:38:27Z"
+  "updated_at": "2026-07-25T09:19:47Z"
 }
