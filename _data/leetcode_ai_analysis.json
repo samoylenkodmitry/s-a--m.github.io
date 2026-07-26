@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-07-26-628-maximum-product-of-three-numbers": {
+      "status": "analyzed",
+      "date": "2026-07-26",
+      "display_date": "26.07.2026",
+      "slug": "2026-07-26-628-maximum-product-of-three-numbers",
+      "display_title": "628. Maximum Product of Three Numbers",
+      "source_hash": "3880ed30437bbd7433443f04b2c9c2db48ed5896a17fcd520094a4045dddc0c8",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-26T09:38:55Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-pointers-selection-k-largest-smallest",
+            "label": "two pointers / selection of k largest and smallest elements",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Find the maximum product of three numbers by sorting the array and comparing the product of the three largest numbers with the product of the two smallest and the largest number.",
+        "manual_review": false,
+        "confidence": 0.95
+      }
+    },
     "2026-07-25-3536-maximum-product-of-two-digits": {
       "status": "analyzed",
       "date": "2026-07-25",
@@ -66218,5 +66263,5 @@
       }
     }
   },
-  "updated_at": "2026-07-25T09:19:47Z"
+  "updated_at": "2026-07-26T09:38:55Z"
 }

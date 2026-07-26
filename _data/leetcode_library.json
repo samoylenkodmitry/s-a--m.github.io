@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-25T09:19:49Z",
+  "generated_at": "2026-07-26T09:38:57Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1356,
-    "unique_problem_count": 1191,
+    "entry_count": 1357,
+    "unique_problem_count": 1192,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 881,
+    "rust_count": 882,
     "repeat_problem_count": 160,
     "repeated_entry_count": 325,
     "deep_thinking_count": 47,
     "unsolved_count": 93,
-    "one_liner_count": 96,
+    "one_liner_count": 97,
     "almost_gave_up_count": 65,
     "comeback_count": 7,
-    "ai_analyzed_count": 1356
+    "ai_analyzed_count": 1357
   },
   "years": [
     {
       "value": "2026",
       "label": "2026",
-      "count": 200,
+      "count": 201,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1350,
+      "count": 1351,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 881,
+      "count": 882,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,19 +210,19 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 186,
+      "count": 187,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1191,
+    "unique_problem_count": 1192,
     "repeat_problem_count": 160,
     "repeated_entry_count": 325,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 96
+        "count": 97
       },
       {
         "slug": "tiny",
@@ -42004,6 +42004,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-07-26-628-maximum-product-of-three-numbers",
+        "date": "2026-07-26",
+        "display_date": "26.07.2026",
+        "year": "2026",
+        "display_title": "628. Maximum Product of Three Numbers",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-07-26-628-maximum-product-of-three-numbers/",
+        "problem_url": "https://leetcode.com/problems/maximum-product-of-three-numbers/solutions/8421251/kotlin-rust-by-samoylenkodmitry-ym93/",
+        "image_url": "/assets/leetcode_daily_images/26.07.2026.webp",
+        "takeaway": "Max product of 3 numbers",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 107,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2023-05-18-1557-minimum-number-of-vertices-to-reach-all-nodes",
         "date": "2023-05-18",
         "display_date": "18.05.2023",
@@ -45334,13 +45368,147 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 96,
+        "count": 97,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-07-26-628-maximum-product-of-three-numbers",
+      "date": "2026-07-26",
+      "display_date": "26.07.2026",
+      "year": "2026",
+      "problem_id": 628,
+      "title": "Maximum Product of Three Numbers",
+      "display_title": "628. Maximum Product of Three Numbers",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-product-of-three-numbers/solutions/8421251/kotlin-rust-by-samoylenkodmitry-ym93/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-product-of-three-numbers/solutions/8421251/kotlin-rust-by-samoylenkodmitry-ym93/",
+      "rust_url": "https://leetcode.com/problems/maximum-product-of-three-numbers/solutions/8421251/kotlin-rust-by-samoylenkodmitry-ym93/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/26072026-628-maximum-product-of-three?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/DDMgAKSD1V0",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1432",
+      "image_url": "/assets/leetcode_daily_images/26.07.2026.webp",
+      "takeaway": "Max product of 3 numbers",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 107,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 107,
+          "rust": 206
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-07-26-628-maximum-product-of-three-numbers/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html",
+      "ai": {
+        "provider": "github",
+        "model": "openai/gpt-4.1-mini",
+        "prompt_version": "leetcode-ai-tags-v1",
+        "analyzed_at": "2026-07-26T09:38:55Z",
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.9
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-pointers-selection-k-largest-smallest",
+            "label": "two pointers / selection of k largest and smallest elements",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Find the maximum product of three numbers by sorting the array and comparing the product of the three largest numbers with the product of the two smallest and the largest number.",
+        "manual_review": false,
+        "confidence": 0.95
+      },
+      "ai_tags": [
+        {
+          "slug": "array",
+          "label": "array",
+          "group": "data_structures"
+        },
+        {
+          "slug": "sorting",
+          "label": "sorting",
+          "group": "algorithms"
+        },
+        {
+          "slug": "two-pointers-selection-k-largest-smallest",
+          "label": "two pointers / selection of k largest and smallest elements",
+          "group": "techniques"
+        },
+        {
+          "slug": "arrays",
+          "label": "arrays",
+          "group": "domains"
+        }
+      ],
+      "ai_tag_slugs": [
+        "array",
+        "sorting",
+        "two-pointers-selection-k-largest-smallest",
+        "arrays"
+      ],
+      "ai_tag_labels": [
+        "array",
+        "sorting",
+        "two pointers / selection of k largest and smallest elements",
+        "arrays"
+      ]
+    },
     {
       "slug": "2026-07-25-3536-maximum-product-of-two-digits",
       "date": "2026-07-25",
