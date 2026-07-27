@@ -127,6 +127,51 @@
         "confidence": 0.9
       }
     },
+    "2026-07-27-1464-maximum-product-of-two-elements-in-an-array": {
+      "status": "analyzed",
+      "date": "2026-07-27",
+      "display_date": "27.07.2026",
+      "slug": "2026-07-27-1464-maximum-product-of-two-elements-in-an-array",
+      "display_title": "1464. Maximum Product of Two Elements in an Array",
+      "source_hash": "c7a38d1753738b419a32be6a9e5722aeeb808f83a2e84619e866e93efcdada52",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-27T07:22:22Z",
+      "analysis": {
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-max-values-extraction",
+            "label": "two max values extraction",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Find the maximum product of two elements by sorting the array and multiplying the two largest elements minus one.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-07-26-628-maximum-product-of-three-numbers": {
       "status": "analyzed",
       "date": "2026-07-26",
@@ -66263,5 +66308,5 @@
       }
     }
   },
-  "updated_at": "2026-07-26T09:38:55Z"
+  "updated_at": "2026-07-27T07:22:22Z"
 }

@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-26T09:38:57Z",
+  "generated_at": "2026-07-27T07:22:24Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1357,
+    "entry_count": 1358,
     "unique_problem_count": 1192,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 882,
-    "repeat_problem_count": 160,
-    "repeated_entry_count": 325,
+    "rust_count": 883,
+    "repeat_problem_count": 161,
+    "repeated_entry_count": 327,
     "deep_thinking_count": 47,
     "unsolved_count": 93,
-    "one_liner_count": 97,
+    "one_liner_count": 98,
     "almost_gave_up_count": 65,
     "comeback_count": 7,
-    "ai_analyzed_count": 1357
+    "ai_analyzed_count": 1358
   },
   "years": [
     {
       "value": "2026",
       "label": "2026",
-      "count": 201,
+      "count": 202,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1351,
+      "count": 1352,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 882,
+      "count": 883,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 399,
+      "count": 400,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -216,13 +216,13 @@
   ],
   "insights": {
     "unique_problem_count": 1192,
-    "repeat_problem_count": 160,
-    "repeated_entry_count": 325,
+    "repeat_problem_count": 161,
+    "repeated_entry_count": 327,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 97
+        "count": 98
       },
       {
         "slug": "tiny",
@@ -1665,6 +1665,205 @@
             "days_since_previous": 965,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -183,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "1464",
+        "problem_id": 1464,
+        "title": "Maximum Product of Two Elements in an Array",
+        "display_title": "1464. Maximum Product of Two Elements in an Array",
+        "evolution_slug": "1464-maximum-product-of-two-elements-in-an-array",
+        "evolution_url": "/leetcode/evolution/1464-maximum-product-of-two-elements-in-an-array/",
+        "count": 2,
+        "first_date": "12.12.2023",
+        "last_date": "27.07.2026",
+        "first_sort_date": "2023-12-12",
+        "last_sort_date": "2026-07-27",
+        "span_days": 958,
+        "latest_page_url": "/leetcode/problem/2026-07-27-1464-maximum-product-of-two-elements-in-an-array/",
+        "solution_line_delta": -2,
+        "solution_char_delta": -82,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-07-27-1464-maximum-product-of-two-elements-in-an-array",
+          "date": "2026-07-27",
+          "display_date": "27.07.2026",
+          "year": "2026",
+          "display_title": "1464. Maximum Product of Two Elements in an Array",
+          "difficulty": "easy",
+          "page_url": "/leetcode/problem/2026-07-27-1464-maximum-product-of-two-elements-in-an-array/",
+          "problem_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/8423239/kotlin-rust-by-samoylenkodmitry-il0u/",
+          "image_url": "/assets/leetcode_daily_images/27.07.2026.webp",
+          "takeaway": "Max product in array",
+          "pattern_slugs": [
+            "array"
+          ],
+          "pattern_labels": [
+            "Array"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "one-liner",
+            "repeat"
+          ],
+          "solution_lines": 2,
+          "solution_chars": 74,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "one-liner",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 50,
+          "thought_line_percent": 0,
+          "days_since_previous": 958,
+          "solution_line_delta_from_previous": -2,
+          "solution_char_delta_from_previous": -82,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-12-12-1464-maximum-product-of-two-elements-in-an-array",
+          "date": "2023-12-12",
+          "display_date": "12.12.2023",
+          "year": "2023",
+          "display_title": "1464. Maximum Product of Two Elements in an Array",
+          "difficulty": "easy",
+          "page_url": "/leetcode/problem/2023-12-12-1464-maximum-product-of-two-elements-in-an-array/",
+          "problem_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/",
+          "image_url": "/assets/leetcode_daily_images/39792771.webp",
+          "takeaway": "#### Join me on Telegram",
+          "pattern_slugs": [
+            "sorting",
+            "array"
+          ],
+          "pattern_labels": [
+            "Sorting",
+            "Array"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 4,
+          "solution_chars": 156,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 4,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 1,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-12-12-1464-maximum-product-of-two-elements-in-an-array",
+            "date": "2023-12-12",
+            "display_date": "12.12.2023",
+            "year": "2023",
+            "display_title": "1464. Maximum Product of Two Elements in an Array",
+            "difficulty": "easy",
+            "page_url": "/leetcode/problem/2023-12-12-1464-maximum-product-of-two-elements-in-an-array/",
+            "problem_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/",
+            "image_url": "/assets/leetcode_daily_images/39792771.webp",
+            "takeaway": "#### Join me on Telegram",
+            "pattern_slugs": [
+              "sorting",
+              "array"
+            ],
+            "pattern_labels": [
+              "Sorting",
+              "Array"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 4,
+            "solution_chars": 156,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-07-27-1464-maximum-product-of-two-elements-in-an-array",
+            "date": "2026-07-27",
+            "display_date": "27.07.2026",
+            "year": "2026",
+            "display_title": "1464. Maximum Product of Two Elements in an Array",
+            "difficulty": "easy",
+            "page_url": "/leetcode/problem/2026-07-27-1464-maximum-product-of-two-elements-in-an-array/",
+            "problem_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/8423239/kotlin-rust-by-samoylenkodmitry-il0u/",
+            "image_url": "/assets/leetcode_daily_images/27.07.2026.webp",
+            "takeaway": "Max product in array",
+            "pattern_slugs": [
+              "array"
+            ],
+            "pattern_labels": [
+              "Array"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "one-liner",
+              "repeat"
+            ],
+            "solution_lines": 2,
+            "solution_chars": 74,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "one-liner",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 50,
+            "thought_line_percent": 0,
+            "days_since_previous": 958,
+            "solution_line_delta_from_previous": -2,
+            "solution_char_delta_from_previous": -82,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -40400,6 +40599,41 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-07-27-1464-maximum-product-of-two-elements-in-an-array",
+        "date": "2026-07-27",
+        "display_date": "27.07.2026",
+        "year": "2026",
+        "display_title": "1464. Maximum Product of Two Elements in an Array",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-07-27-1464-maximum-product-of-two-elements-in-an-array/",
+        "problem_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/8423239/kotlin-rust-by-samoylenkodmitry-il0u/",
+        "image_url": "/assets/leetcode_daily_images/27.07.2026.webp",
+        "takeaway": "Max product in array",
+        "pattern_slugs": [
+          "array"
+        ],
+        "pattern_labels": [
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner",
+          "repeat"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 74,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2024-08-22-476-number-complement",
         "date": "2024-08-22",
         "display_date": "22.08.2024",
@@ -45318,7 +45552,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 160,
+        "count": 161,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -45368,13 +45602,155 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 97,
+        "count": 98,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-07-27-1464-maximum-product-of-two-elements-in-an-array",
+      "date": "2026-07-27",
+      "display_date": "27.07.2026",
+      "year": "2026",
+      "problem_id": 1464,
+      "title": "Maximum Product of Two Elements in an Array",
+      "display_title": "1464. Maximum Product of Two Elements in an Array",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "array"
+      ],
+      "pattern_labels": [
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/8423239/kotlin-rust-by-samoylenkodmitry-il0u/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/8423239/kotlin-rust-by-samoylenkodmitry-il0u/",
+      "rust_url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/solutions/8423239/kotlin-rust-by-samoylenkodmitry-il0u/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/27072026-1464-maximum-product-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/85Lxmbl2hKY",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1433",
+      "image_url": "/assets/leetcode_daily_images/27.07.2026.webp",
+      "takeaway": "Max product in array",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 74,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 74,
+          "rust": 94
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1464-maximum-product-of-two-elements-in-an-array/"
+        },
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-07-27-1464-maximum-product-of-two-elements-in-an-array/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html",
+      "ai": {
+        "provider": "github",
+        "model": "openai/gpt-4.1-mini",
+        "prompt_version": "leetcode-ai-tags-v1",
+        "analyzed_at": "2026-07-27T07:22:22Z",
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "sorting",
+            "label": "sorting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "two-max-values-extraction",
+            "label": "two max values extraction",
+            "confidence": 0.8
+          }
+        ],
+        "domains": [
+          {
+            "slug": "arrays",
+            "label": "arrays",
+            "confidence": 0.7
+          }
+        ],
+        "summary": "Find the maximum product of two elements by sorting the array and multiplying the two largest elements minus one.",
+        "manual_review": false,
+        "confidence": 0.9
+      },
+      "ai_tags": [
+        {
+          "slug": "array",
+          "label": "array",
+          "group": "data_structures"
+        },
+        {
+          "slug": "sorting",
+          "label": "sorting",
+          "group": "algorithms"
+        },
+        {
+          "slug": "two-max-values-extraction",
+          "label": "two max values extraction",
+          "group": "techniques"
+        },
+        {
+          "slug": "arrays",
+          "label": "arrays",
+          "group": "domains"
+        }
+      ],
+      "ai_tag_slugs": [
+        "array",
+        "sorting",
+        "two-max-values-extraction",
+        "arrays"
+      ],
+      "ai_tag_labels": [
+        "array",
+        "sorting",
+        "two max values extraction",
+        "arrays"
+      ]
+    },
     {
       "slug": "2026-07-26-628-maximum-product-of-three-numbers",
       "date": "2026-07-26",
@@ -179996,9 +180372,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "tiny"
+        "tiny",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1464-maximum-product-of-two-elements-in-an-array/"
+        }
+      ],
       "page_url": "/leetcode/problem/2023-12-12-1464-maximum-product-of-two-elements-in-an-array/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
