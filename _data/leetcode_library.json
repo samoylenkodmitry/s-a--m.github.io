@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-28T07:57:47Z",
+  "generated_at": "2026-07-29T09:18:14Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1359,
-    "unique_problem_count": 1193,
+    "entry_count": 1360,
+    "unique_problem_count": 1194,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 884,
+    "rust_count": 885,
     "repeat_problem_count": 161,
     "repeated_entry_count": 327,
     "deep_thinking_count": 47,
-    "unsolved_count": 93,
+    "unsolved_count": 94,
     "one_liner_count": 98,
-    "almost_gave_up_count": 65,
+    "almost_gave_up_count": 66,
     "comeback_count": 7,
-    "ai_analyzed_count": 1359
+    "ai_analyzed_count": 1360
   },
   "years": [
     {
       "value": "2026",
       "label": "2026",
-      "count": 203,
+      "count": 204,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1353,
+      "count": 1354,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 884,
+      "count": 885,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 212,
+      "count": 213,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1193,
+    "unique_problem_count": 1194,
     "repeat_problem_count": 161,
     "repeated_entry_count": 327,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 464
+        "count": 465
       },
       {
         "slug": "standard",
@@ -36156,6 +36156,42 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-07-29-3518-smallest-palindromic-rearrangement-ii",
+        "date": "2026-07-29",
+        "display_date": "29.07.2026",
+        "year": "2026",
+        "display_title": "3518. Smallest Palindromic Rearrangement II",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-07-29-3518-smallest-palindromic-rearrangement-ii/",
+        "problem_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/8427960/kotlin-rust-by-samoylenkodmitry-rw9d/",
+        "image_url": "/assets/leetcode_daily_images/29.07.2026.webp",
+        "takeaway": "K-th palindrome rearrangement",
+        "pattern_slugs": [
+          "string"
+        ],
+        "pattern_labels": [
+          "String"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 12,
+        "solution_chars": 757,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "thought_lines": 24,
+        "thought_chars": 817,
+        "max_minute_marker": 40,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-07-22-3501-maximize-active-section-with-trade-ii",
         "date": "2026-07-22",
         "display_date": "22.07.2026",
@@ -44811,6 +44847,42 @@
         "almost_gave_up": true
       },
       {
+        "slug": "2026-07-29-3518-smallest-palindromic-rearrangement-ii",
+        "date": "2026-07-29",
+        "display_date": "29.07.2026",
+        "year": "2026",
+        "display_title": "3518. Smallest Palindromic Rearrangement II",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-07-29-3518-smallest-palindromic-rearrangement-ii/",
+        "problem_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/8427960/kotlin-rust-by-samoylenkodmitry-rw9d/",
+        "image_url": "/assets/leetcode_daily_images/29.07.2026.webp",
+        "takeaway": "K-th palindrome rearrangement",
+        "pattern_slugs": [
+          "string"
+        ],
+        "pattern_labels": [
+          "String"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 12,
+        "solution_chars": 757,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "thought_lines": 24,
+        "thought_chars": 817,
+        "max_minute_marker": 40,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-03-28-2573-find-the-string-with-lcp",
         "date": "2026-03-28",
         "display_date": "28.03.2026",
@@ -45582,7 +45654,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 93,
+        "count": 94,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -45592,7 +45664,7 @@
         "label": "Pressure Log",
         "title": "Almost Gave Up",
         "url": "/leetcode/collection/almost-gave-up/",
-        "count": 65,
+        "count": 66,
         "summary": "Entries with minute markers near the stopping point, hints, wrong answers, or explicit timeboxing.",
         "metric_label": "timeboxed struggles"
       },
@@ -45609,6 +45681,198 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-07-29-3518-smallest-palindromic-rearrangement-ii",
+      "date": "2026-07-29",
+      "display_date": "29.07.2026",
+      "year": "2026",
+      "problem_id": 3518,
+      "title": "Smallest Palindromic Rearrangement II",
+      "display_title": "3518. Smallest Palindromic Rearrangement II",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "string"
+      ],
+      "pattern_labels": [
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/8427960/kotlin-rust-by-samoylenkodmitry-rw9d/",
+      "kotlin_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/8427960/kotlin-rust-by-samoylenkodmitry-rw9d/",
+      "rust_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/8427960/kotlin-rust-by-samoylenkodmitry-rw9d/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/29072026-3518-smallest-palindromic?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/Nguogeufyeo",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1435",
+      "image_url": "/assets/leetcode_daily_images/29.07.2026.webp",
+      "takeaway": "K-th palindrome rearrangement",
+      "metrics": {
+        "solution_lines": 12,
+        "solution_chars": 757,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 13,
+          "rust": 12
+        },
+        "language_char_counts": {
+          "kotlin": 649,
+          "rust": 757
+        },
+        "thought_lines": 24,
+        "thought_chars": 817,
+        "minute_markers": [
+          26,
+          40
+        ],
+        "max_minute_marker": 40,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": true,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "unsolved",
+        "almost-gave-up"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        },
+        {
+          "slug": "almost-gave-up",
+          "label": "Almost Gave Up",
+          "url": "/leetcode/collection/almost-gave-up/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-07-29-3518-smallest-palindromic-rearrangement-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html",
+      "ai": {
+        "provider": "github",
+        "model": "openai/gpt-4.1-mini",
+        "prompt_version": "leetcode-ai-tags-v1",
+        "analyzed_at": "2026-07-29T09:18:12Z",
+        "data_structures": [
+          {
+            "slug": "array",
+            "label": "array",
+            "confidence": 0.8
+          }
+        ],
+        "algorithms": [
+          {
+            "slug": "combinatorics",
+            "label": "combinatorics",
+            "confidence": 0.95
+          },
+          {
+            "slug": "permutation-counting",
+            "label": "permutation counting",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "frequency-halving",
+            "label": "frequency halving",
+            "confidence": 0.9
+          },
+          {
+            "slug": "early-stopping-in-combinatorial-counting",
+            "label": "early stopping in combinatorial counting",
+            "confidence": 0.9
+          },
+          {
+            "slug": "lexicographical-construction",
+            "label": "lexicographical construction",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.85
+          },
+          {
+            "slug": "math",
+            "label": "math",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Compute the k-th lexicographical palindromic rearrangement by counting permutations of half frequencies and constructing the palindrome letter by letter.",
+        "manual_review": false,
+        "confidence": 0.9
+      },
+      "ai_tags": [
+        {
+          "slug": "array",
+          "label": "array",
+          "group": "data_structures"
+        },
+        {
+          "slug": "combinatorics",
+          "label": "combinatorics",
+          "group": "algorithms"
+        },
+        {
+          "slug": "permutation-counting",
+          "label": "permutation counting",
+          "group": "algorithms"
+        },
+        {
+          "slug": "frequency-halving",
+          "label": "frequency halving",
+          "group": "techniques"
+        },
+        {
+          "slug": "early-stopping-in-combinatorial-counting",
+          "label": "early stopping in combinatorial counting",
+          "group": "techniques"
+        },
+        {
+          "slug": "lexicographical-construction",
+          "label": "lexicographical construction",
+          "group": "techniques"
+        },
+        {
+          "slug": "strings",
+          "label": "strings",
+          "group": "domains"
+        },
+        {
+          "slug": "math",
+          "label": "math",
+          "group": "domains"
+        }
+      ],
+      "ai_tag_slugs": [
+        "array",
+        "combinatorics",
+        "permutation-counting",
+        "frequency-halving",
+        "early-stopping-in-combinatorial-counting",
+        "lexicographical-construction",
+        "strings",
+        "math"
+      ],
+      "ai_tag_labels": [
+        "array",
+        "combinatorics",
+        "permutation counting",
+        "frequency halving",
+        "early stopping in combinatorial counting",
+        "lexicographical construction",
+        "strings",
+        "math"
+      ]
+    },
     {
       "slug": "2026-07-28-3517-smallest-palindromic-rearrangement-i",
       "date": "2026-07-28",
