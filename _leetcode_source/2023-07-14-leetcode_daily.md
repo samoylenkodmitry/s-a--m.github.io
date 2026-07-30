@@ -21,6 +21,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 30.07.2026
+[3014. Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/solutions/8429987/kotlin-rust-by-samoylenkodmitry-agbj/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/30072026-3014-minimum-number-of-pushes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/lbPpkHZS2UQ)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![30.07.2026.webp](/assets/leetcode_daily_images/30.07.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1436
+
+#### Problem TLDR
+
+Minimum num-phone presses
+
+#### Intuition
+
+first eight take one click, second eight takes 2 clicks and so on
+
+#### Approach
+
+* and from thsi derived the math 8(1+2+..len/8) = 8 * (len/8 * (len/8 + 1)/2); plus the leftovers len%8*(len/8 + 1)
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun minimumPushes(w: String) =
+    w.indices.sumOf { it/8+1 }
+```
+```rust
+    pub fn minimum_pushes(w: String) -> i32 {
+        let k = w.len()/8; ((4*k+w.len()%8)*(k+1)) as _
+    }
+```
+
 # 29.07.2026
 [3518. Smallest Palindromic Rearrangement II](https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/solutions/8427960/kotlin-rust-by-samoylenkodmitry-rw9d/) hard
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/29072026-3518-smallest-palindromic?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
