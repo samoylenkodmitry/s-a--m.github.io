@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-29T09:18:14Z",
+  "generated_at": "2026-07-30T07:53:16Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1360,
-    "unique_problem_count": 1194,
+    "entry_count": 1361,
+    "unique_problem_count": 1195,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 885,
+    "rust_count": 886,
     "repeat_problem_count": 161,
     "repeated_entry_count": 327,
     "deep_thinking_count": 47,
     "unsolved_count": 94,
-    "one_liner_count": 98,
+    "one_liner_count": 99,
     "almost_gave_up_count": 66,
     "comeback_count": 7,
-    "ai_analyzed_count": 1360
+    "ai_analyzed_count": 1361
   },
   "years": [
     {
       "value": "2026",
       "label": "2026",
-      "count": 204,
+      "count": 205,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1354,
+      "count": 1355,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 885,
+      "count": 886,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 213,
+      "count": 214,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1194,
+    "unique_problem_count": 1195,
     "repeat_problem_count": 161,
     "repeated_entry_count": 327,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 98
+        "count": 99
       },
       {
         "slug": "tiny",
@@ -40078,6 +40078,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-07-30-3014-minimum-number-of-pushes-to-type-word-i",
+        "date": "2026-07-30",
+        "display_date": "30.07.2026",
+        "year": "2026",
+        "display_title": "3014. Minimum Number of Pushes to Type Word I",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-07-30-3014-minimum-number-of-pushes-to-type-word-i/",
+        "problem_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/solutions/8429987/kotlin-rust-by-samoylenkodmitry-agbj/",
+        "image_url": "/assets/leetcode_daily_images/30.07.2026.webp",
+        "takeaway": "Minimum num-phone presses",
+        "pattern_slugs": [
+          "string"
+        ],
+        "pattern_labels": [
+          "String"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 57,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-05-29-3300-minimum-element-after-replacement-with-digit-sum",
         "date": "2026-05-29",
         "display_date": "29.05.2026",
@@ -45674,13 +45708,134 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 98,
+        "count": 99,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-07-30-3014-minimum-number-of-pushes-to-type-word-i",
+      "date": "2026-07-30",
+      "display_date": "30.07.2026",
+      "year": "2026",
+      "problem_id": 3014,
+      "title": "Minimum Number of Pushes to Type Word I",
+      "display_title": "3014. Minimum Number of Pushes to Type Word I",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "string"
+      ],
+      "pattern_labels": [
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/solutions/8429987/kotlin-rust-by-samoylenkodmitry-agbj/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/solutions/8429987/kotlin-rust-by-samoylenkodmitry-agbj/",
+      "rust_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/solutions/8429987/kotlin-rust-by-samoylenkodmitry-agbj/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/30072026-3014-minimum-number-of-pushes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/lbPpkHZS2UQ",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1436",
+      "image_url": "/assets/leetcode_daily_images/30.07.2026.webp",
+      "takeaway": "Minimum num-phone presses",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 57,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 57,
+          "rust": 91
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-07-30-3014-minimum-number-of-pushes-to-type-word-i/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html",
+      "ai": {
+        "provider": "github",
+        "model": "openai/gpt-4.1-mini",
+        "prompt_version": "leetcode-ai-tags-v1",
+        "analyzed_at": "2026-07-30T07:53:15Z",
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "math",
+            "label": "math",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "arithmetic-series-summation",
+            "label": "arithmetic series summation",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Calculate minimum number of presses by grouping characters in blocks of 8 and summing arithmetic series.",
+        "manual_review": false,
+        "confidence": 0.9
+      },
+      "ai_tags": [
+        {
+          "slug": "math",
+          "label": "math",
+          "group": "algorithms"
+        },
+        {
+          "slug": "arithmetic-series-summation",
+          "label": "arithmetic series summation",
+          "group": "techniques"
+        },
+        {
+          "slug": "strings",
+          "label": "strings",
+          "group": "domains"
+        }
+      ],
+      "ai_tag_slugs": [
+        "math",
+        "arithmetic-series-summation",
+        "strings"
+      ],
+      "ai_tag_labels": [
+        "math",
+        "arithmetic series summation",
+        "strings"
+      ]
+    },
     {
       "slug": "2026-07-29-3518-smallest-palindromic-rearrangement-ii",
       "date": "2026-07-29",

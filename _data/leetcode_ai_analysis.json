@@ -127,6 +127,45 @@
         "confidence": 0.9
       }
     },
+    "2026-07-30-3014-minimum-number-of-pushes-to-type-word-i": {
+      "status": "analyzed",
+      "date": "2026-07-30",
+      "display_date": "30.07.2026",
+      "slug": "2026-07-30-3014-minimum-number-of-pushes-to-type-word-i",
+      "display_title": "3014. Minimum Number of Pushes to Type Word I",
+      "source_hash": "7eee01861cd076927100bc5ea517ef313196b9b81ea7f9330f8bff83e7415a3a",
+      "prompt_version": "leetcode-ai-tags-v1",
+      "provider": "github",
+      "model": "openai/gpt-4.1-mini",
+      "analyzed_at": "2026-07-30T07:53:15Z",
+      "analysis": {
+        "data_structures": [],
+        "algorithms": [
+          {
+            "slug": "math",
+            "label": "math",
+            "confidence": 0.9
+          }
+        ],
+        "techniques": [
+          {
+            "slug": "arithmetic-series-summation",
+            "label": "arithmetic series summation",
+            "confidence": 0.85
+          }
+        ],
+        "domains": [
+          {
+            "slug": "strings",
+            "label": "strings",
+            "confidence": 0.8
+          }
+        ],
+        "summary": "Calculate minimum number of presses by grouping characters in blocks of 8 and summing arithmetic series.",
+        "manual_review": false,
+        "confidence": 0.9
+      }
+    },
     "2026-07-29-3518-smallest-palindromic-rearrangement-ii": {
       "status": "analyzed",
       "date": "2026-07-29",
@@ -66418,5 +66457,5 @@
       }
     }
   },
-  "updated_at": "2026-07-29T09:18:12Z"
+  "updated_at": "2026-07-30T07:53:15Z"
 }
