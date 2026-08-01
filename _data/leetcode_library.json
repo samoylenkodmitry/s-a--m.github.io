@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-31T09:31:25Z",
+  "generated_at": "2026-08-01T08:58:10Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1362,
+    "entry_count": 1363,
     "unique_problem_count": 1195,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 887,
-    "repeat_problem_count": 162,
-    "repeated_entry_count": 329,
+    "rust_count": 888,
+    "repeat_problem_count": 163,
+    "repeated_entry_count": 331,
     "deep_thinking_count": 47,
     "unsolved_count": 94,
     "one_liner_count": 100,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 206,
+      "count": 207,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1356,
+      "count": 1357,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 887,
+      "count": 888,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 223,
+      "count": 224,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -216,8 +216,8 @@
   ],
   "insights": {
     "unique_problem_count": 1195,
-    "repeat_problem_count": 162,
-    "repeated_entry_count": 329,
+    "repeat_problem_count": 163,
+    "repeated_entry_count": 331,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 418
+        "count": 419
       },
       {
         "slug": "compact",
@@ -1665,6 +1665,201 @@
             "days_since_previous": 965,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -183,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "486",
+        "problem_id": 486,
+        "title": "Predict the Winner",
+        "display_title": "486. Predict the Winner",
+        "evolution_slug": "486-predict-the-winner",
+        "evolution_url": "/leetcode/evolution/486-predict-the-winner/",
+        "count": 2,
+        "first_date": "28.07.2023",
+        "last_date": "01.08.2026",
+        "first_sort_date": "2023-07-28",
+        "last_sort_date": "2026-08-01",
+        "span_days": 1100,
+        "latest_page_url": "/leetcode/problem/2026-08-01-486-predict-the-winner/",
+        "solution_line_delta": -8,
+        "solution_char_delta": -306,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-08-01-486-predict-the-winner",
+          "date": "2026-08-01",
+          "display_date": "01.08.2026",
+          "year": "2026",
+          "display_title": "486. Predict the Winner",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-08-01-486-predict-the-winner/",
+          "problem_url": "https://leetcode.com/problems/predict-the-winner/solutions/8434255/kotlin-rust-by-samoylenkodmitry-f515/",
+          "image_url": "/assets/leetcode_daily_images/01.08.2026.webp",
+          "takeaway": "Optimal choices to win",
+          "pattern_slugs": [
+            "graph"
+          ],
+          "pattern_labels": [
+            "Graph"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 5,
+          "solution_chars": 188,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 38,
+          "thought_line_percent": 0,
+          "days_since_previous": 1100,
+          "solution_line_delta_from_previous": -8,
+          "solution_char_delta_from_previous": -306,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-07-28-486-predict-the-winner",
+          "date": "2023-07-28",
+          "display_date": "28.07.2023",
+          "year": "2023",
+          "display_title": "486. Predict the Winner",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2023-07-28-486-predict-the-winner/",
+          "problem_url": "https://leetcode.com/problems/predict-the-winner/description/",
+          "image_url": "/assets/leetcode_daily_images/5feb00cc.webp",
+          "takeaway": "Optimally taking numbers from an array's ends can one player win another",
+          "pattern_slugs": [
+            "array"
+          ],
+          "pattern_labels": [
+            "Array"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "standard",
+            "repeat"
+          ],
+          "solution_lines": 13,
+          "solution_chars": 494,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "standard",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 13,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-07-28-486-predict-the-winner",
+            "date": "2023-07-28",
+            "display_date": "28.07.2023",
+            "year": "2023",
+            "display_title": "486. Predict the Winner",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2023-07-28-486-predict-the-winner/",
+            "problem_url": "https://leetcode.com/problems/predict-the-winner/description/",
+            "image_url": "/assets/leetcode_daily_images/5feb00cc.webp",
+            "takeaway": "Optimally taking numbers from an array's ends can one player win another",
+            "pattern_slugs": [
+              "array"
+            ],
+            "pattern_labels": [
+              "Array"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "standard",
+              "repeat"
+            ],
+            "solution_lines": 13,
+            "solution_chars": 494,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "standard",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-08-01-486-predict-the-winner",
+            "date": "2026-08-01",
+            "display_date": "01.08.2026",
+            "year": "2026",
+            "display_title": "486. Predict the Winner",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-08-01-486-predict-the-winner/",
+            "problem_url": "https://leetcode.com/problems/predict-the-winner/solutions/8434255/kotlin-rust-by-samoylenkodmitry-f515/",
+            "image_url": "/assets/leetcode_daily_images/01.08.2026.webp",
+            "takeaway": "Optimal choices to win",
+            "pattern_slugs": [
+              "graph"
+            ],
+            "pattern_labels": [
+              "Graph"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 5,
+            "solution_chars": 188,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 38,
+            "thought_line_percent": 0,
+            "days_since_previous": 1100,
+            "solution_line_delta_from_previous": -8,
+            "solution_char_delta_from_previous": -306,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -45896,7 +46091,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 162,
+        "count": 163,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -45953,6 +46148,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-01-486-predict-the-winner",
+      "date": "2026-08-01",
+      "display_date": "01.08.2026",
+      "year": "2026",
+      "problem_id": 486,
+      "title": "Predict the Winner",
+      "display_title": "486. Predict the Winner",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "graph"
+      ],
+      "pattern_labels": [
+        "Graph"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/predict-the-winner/solutions/8434255/kotlin-rust-by-samoylenkodmitry-f515/",
+      "kotlin_url": "https://leetcode.com/problems/predict-the-winner/solutions/8434255/kotlin-rust-by-samoylenkodmitry-f515/",
+      "rust_url": "https://leetcode.com/problems/predict-the-winner/solutions/8434255/kotlin-rust-by-samoylenkodmitry-f515/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/01082026-486-predict-the-winner?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/psovw3BwIt8",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1438",
+      "image_url": "/assets/leetcode_daily_images/01.08.2026.webp",
+      "takeaway": "Optimal choices to win",
+      "metrics": {
+        "solution_lines": 5,
+        "solution_chars": 188,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 5,
+          "rust": 6
+        },
+        "language_char_counts": {
+          "kotlin": 188,
+          "rust": 165
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/486-predict-the-winner/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-01-486-predict-the-winner/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-07-31-3016-minimum-number-of-pushes-to-type-word-ii",
       "date": "2026-07-31",
@@ -199030,9 +199291,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "standard"
+        "standard",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/486-predict-the-winner/"
+        }
+      ],
       "page_url": "/leetcode/problem/2023-07-28-486-predict-the-winner/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
