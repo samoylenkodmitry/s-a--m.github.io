@@ -21,6 +21,47 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 02.08.2026
+[877. Stone Game](https://leetcode.com/problems/stone-game/solutions/8436334/kotlin-rust-by-samoylenkodmitry-j3wr/) medium
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/02082026-877-stone-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/HLAEMI-UrxY)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![02.08.2026.webp](/assets/leetcode_daily_images/02.08.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1439
+
+#### Problem TLDR
+
+Even count pick game
+
+#### Intuition
+
+Alice can enforce all choices of Bob to be all evens or all odds.
+
+#### Approach
+
+* just know the trick
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun stoneGame(p: IntArray) = 1>0
+```
+```rust
+    pub fn stone_game(p: Vec<i32>)->bool{1>0}
+```
+
 # 01.08.2026
 [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/solutions/8434255/kotlin-rust-by-samoylenkodmitry-f515/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/01082026-486-predict-the-winner?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
