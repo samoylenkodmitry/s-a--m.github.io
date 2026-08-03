@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-02T08:05:19Z",
+  "generated_at": "2026-08-03T06:08:58Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1364,
+    "entry_count": 1365,
     "unique_problem_count": 1196,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 889,
-    "repeat_problem_count": 163,
-    "repeated_entry_count": 331,
+    "rust_count": 890,
+    "repeat_problem_count": 164,
+    "repeated_entry_count": 333,
     "deep_thinking_count": 47,
     "unsolved_count": 94,
     "one_liner_count": 101,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 208,
+      "count": 209,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1358,
+      "count": 1359,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 889,
+      "count": 890,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 400,
+      "count": 401,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 105,
+      "count": 106,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -216,8 +216,8 @@
   ],
   "insights": {
     "unique_problem_count": 1196,
-    "repeat_problem_count": 163,
-    "repeated_entry_count": 331,
+    "repeat_problem_count": 164,
+    "repeated_entry_count": 333,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 419
+        "count": 420
       },
       {
         "slug": "compact",
@@ -1665,6 +1665,209 @@
             "days_since_previous": 965,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -183,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "1406",
+        "problem_id": 1406,
+        "title": "Stone Game III",
+        "display_title": "1406. Stone Game III",
+        "evolution_slug": "1406-stone-game-iii",
+        "evolution_url": "/leetcode/evolution/1406-stone-game-iii/",
+        "count": 2,
+        "first_date": "27.05.2023",
+        "last_date": "03.08.2026",
+        "first_sort_date": "2023-05-27",
+        "last_sort_date": "2026-08-03",
+        "span_days": 1164,
+        "latest_page_url": "/leetcode/problem/2026-08-03-1406-stone-game-iii/",
+        "solution_line_delta": -18,
+        "solution_char_delta": -463,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-08-03-1406-stone-game-iii",
+          "date": "2026-08-03",
+          "display_date": "03.08.2026",
+          "year": "2026",
+          "display_title": "1406. Stone Game III",
+          "difficulty": "hard",
+          "page_url": "/leetcode/problem/2026-08-03-1406-stone-game-iii/",
+          "problem_url": "https://leetcode.com/problems/stone-game-iii/solutions/8437996/kotlin-rust-by-samoylenkodmitry-2j6b/",
+          "image_url": "/assets/leetcode_daily_images/03.08.2026.webp",
+          "takeaway": "Pick up to 3 from the left to win game",
+          "pattern_slugs": [
+            "dynamic-programming",
+            "array"
+          ],
+          "pattern_labels": [
+            "Dynamic Programming",
+            "Array"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 5,
+          "solution_chars": 190,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 22,
+          "thought_line_percent": 0,
+          "days_since_previous": 1164,
+          "solution_line_delta_from_previous": -18,
+          "solution_char_delta_from_previous": -463,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-05-27-1406-stone-game-iii",
+          "date": "2023-05-27",
+          "display_date": "27.05.2023",
+          "year": "2023",
+          "display_title": "1406. Stone Game III",
+          "difficulty": "hard",
+          "page_url": "/leetcode/problem/2023-05-27-1406-stone-game-iii/",
+          "problem_url": "https://leetcode.com/problems/stone-game-iii/description/",
+          "image_url": null,
+          "takeaway": "Winner of \u201cAlice\u201d, \u201cBob\u201d or \u201cTie\u201d in game of taking 1, 2 or 3 stones by turn from stoneValue array.",
+          "pattern_slugs": [
+            "dynamic-programming",
+            "array"
+          ],
+          "pattern_labels": [
+            "Dynamic Programming",
+            "Array"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "standard",
+            "repeat"
+          ],
+          "solution_lines": 23,
+          "solution_chars": 653,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "standard",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 23,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-05-27-1406-stone-game-iii",
+            "date": "2023-05-27",
+            "display_date": "27.05.2023",
+            "year": "2023",
+            "display_title": "1406. Stone Game III",
+            "difficulty": "hard",
+            "page_url": "/leetcode/problem/2023-05-27-1406-stone-game-iii/",
+            "problem_url": "https://leetcode.com/problems/stone-game-iii/description/",
+            "image_url": null,
+            "takeaway": "Winner of \u201cAlice\u201d, \u201cBob\u201d or \u201cTie\u201d in game of taking 1, 2 or 3 stones by turn from stoneValue array.",
+            "pattern_slugs": [
+              "dynamic-programming",
+              "array"
+            ],
+            "pattern_labels": [
+              "Dynamic Programming",
+              "Array"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "standard",
+              "repeat"
+            ],
+            "solution_lines": 23,
+            "solution_chars": 653,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "standard",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-08-03-1406-stone-game-iii",
+            "date": "2026-08-03",
+            "display_date": "03.08.2026",
+            "year": "2026",
+            "display_title": "1406. Stone Game III",
+            "difficulty": "hard",
+            "page_url": "/leetcode/problem/2026-08-03-1406-stone-game-iii/",
+            "problem_url": "https://leetcode.com/problems/stone-game-iii/solutions/8437996/kotlin-rust-by-samoylenkodmitry-2j6b/",
+            "image_url": "/assets/leetcode_daily_images/03.08.2026.webp",
+            "takeaway": "Pick up to 3 from the left to win game",
+            "pattern_slugs": [
+              "dynamic-programming",
+              "array"
+            ],
+            "pattern_labels": [
+              "Dynamic Programming",
+              "Array"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 5,
+            "solution_chars": 190,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 22,
+            "thought_line_percent": 0,
+            "days_since_previous": 1164,
+            "solution_line_delta_from_previous": -18,
+            "solution_char_delta_from_previous": -463,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -46125,7 +46328,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 163,
+        "count": 164,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -46182,6 +46385,74 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-03-1406-stone-game-iii",
+      "date": "2026-08-03",
+      "display_date": "03.08.2026",
+      "year": "2026",
+      "problem_id": 1406,
+      "title": "Stone Game III",
+      "display_title": "1406. Stone Game III",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "array"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/stone-game-iii/solutions/8437996/kotlin-rust-by-samoylenkodmitry-2j6b/",
+      "kotlin_url": "https://leetcode.com/problems/stone-game-iii/solutions/8437996/kotlin-rust-by-samoylenkodmitry-2j6b/",
+      "rust_url": "https://leetcode.com/problems/stone-game-iii/solutions/8437996/kotlin-rust-by-samoylenkodmitry-2j6b/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/03082026-1406-stone-game-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/HLAEMI-UrxY",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1440",
+      "image_url": "/assets/leetcode_daily_images/03.08.2026.webp",
+      "takeaway": "Pick up to 3 from the left to win game",
+      "metrics": {
+        "solution_lines": 5,
+        "solution_chars": 190,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 5,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 190,
+          "rust": 217
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1406-stone-game-iii/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-03-1406-stone-game-iii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-02-877-stone-game",
       "date": "2026-08-02",
@@ -207659,9 +207930,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "standard"
+        "standard",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1406-stone-game-iii/"
+        }
+      ],
       "page_url": "/leetcode/problem/2023-05-27-1406-stone-game-iii/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
