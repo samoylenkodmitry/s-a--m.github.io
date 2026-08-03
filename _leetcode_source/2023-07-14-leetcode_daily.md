@@ -21,6 +21,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 03.08.2026
+[1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/solutions/8437996/kotlin-rust-by-samoylenkodmitry-2j6b/) hard
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/03082026-1406-stone-game-iii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/HLAEMI-UrxY)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![03.08.2026.webp](/assets/leetcode_daily_images/03.08.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1440
+
+#### Problem TLDR
+
+Pick up to 3 from the left to win game
+
+#### Intuition
+
+Dp of a choice: pick one, two or three. Cached by the tail of the array.
+
+#### Approach
+
+* rewrite into bottom-up: itertate from the tail, remember last 3
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun stoneGameIII(s: IntArray) = listOf("Bob", "Tie", "Alice")[
+        s.foldRight(IntArray(5)) { x, (a, b, c, u, v) ->
+            intArrayOf(maxOf(x - a, x + u - b, x + u + v - c), a, b, x, u)
+        }[0].sign + 1
+    ]
+```
+```rust
+    pub fn stone_game_iii(s: Vec<i32>) -> String {
+        ["Bob", "Tie", "Alice"][(s.into_iter().rfold([0; 5], |[a, b, c, u, v], x| {
+            [(x - a).max(x + u - b).max(x + u + v - c), a, b, x, u]
+        })[0].signum() + 1) as usize].into()
+    }
+```
+
 # 02.08.2026
 [877. Stone Game](https://leetcode.com/problems/stone-game/solutions/8436334/kotlin-rust-by-samoylenkodmitry-j3wr/) medium
 [substack](https://open.substack.com/pub/dmitriisamoilenko/p/02082026-877-stone-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
