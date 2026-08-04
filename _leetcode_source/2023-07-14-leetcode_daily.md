@@ -9149,56 +9149,48 @@ $$O(1)$$
 ```
 
 # 04.08.2026
-[1582. Special Positions in a Binary Matrix](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) easy
-[blog post](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
-[youtube](https://youtu.be/W8c8wr4GaWw)
+[3731. Find Missing Elements](https://leetcode.com/problems/find-missing-elements/solutions/8440108/kotlin-rust-by-samoylenkodmitry-sf7r/) easy
+[substack](https://open.substack.com/pub/dmitriisamoilenko/p/04082026-3731-find-missing-elements?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/10XdpCEky20)
 
+https://dmitrysamoylenko.com/leetcode/
 
-![7e6d1320-c887-4b63-976e-83ef9189f37b (1).webp](/assets/leetcode_daily_images/6dfe3e7e.webp)
-
-
-https://dmitrysamoylenko.com/2023/07/14/leetcode_daily.html
-
+![04.08.2026.webp](/assets/leetcode_daily_images/04.08.2026.webp)
 #### Join me on Telegram
 
-https://t.me/leetcode_daily_unstoppable/1287
+https://t.me/leetcode_daily_unstoppable/1441
 
 #### Problem TLDR
 
-Count single 1-row-column #easy
+Find missing numbers in range min..max
 
 #### Intuition
 
-Brute-force.
-
+Brute-force. Or convert to set to improve time complexity. But its only 100 elements.
 
 #### Approach
 
-* check each cell
-* or check each row
+* Kotlin: just subtract set from range
+* Rust: use itertools minmax
 
 #### Complexity
 
 - Time complexity:
-$$O(n^2m^2)$$, can be O(nm)
+$$O(n)$$
 
 - Space complexity:
-$$O(1)$$
+$$O(n)$$
 
 #### Code
 
-```kotlin 
-// 14ms
-    fun numSpecial(m: Array<IntArray>) = m.count { r ->
-        r.sum()==1 && m.sumOf { it[r.indexOf(1)] }==1
-    }
+```kotlin
+    fun findMissingElements(n: IntArray)=
+    (n.min()..n.max())-n.toSet()
 ```
 ```rust
-// 0ms
-    pub fn num_special(m: Vec<Vec<i32>>) -> i32 {
-        m.iter().filter(|r|r.iter().sum::<i32>()==1&&
-        m.iter().map(|R|R[r.iter().position(|&x|x>0).unwrap()]).sum::<i32>()==1).count() as _
+    pub fn find_missing_elements(n: Vec<i32>) -> Vec<i32> {
+        let MinMax(a,b) = n.iter().minmax() else { panic!() };
+        (*a..*b).filter(|x|!n.contains(x)).collect()
     }
 ```
 
