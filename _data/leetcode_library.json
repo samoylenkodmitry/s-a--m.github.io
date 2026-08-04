@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-03T06:08:58Z",
+  "generated_at": "2026-08-04T07:35:14Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
     "entry_count": 1365,
-    "unique_problem_count": 1196,
+    "unique_problem_count": 1197,
     "year_count": 5,
     "pattern_count": 25,
     "rust_count": 890,
-    "repeat_problem_count": 164,
-    "repeated_entry_count": 333,
+    "repeat_problem_count": 163,
+    "repeated_entry_count": 331,
     "deep_thinking_count": 47,
     "unsolved_count": 94,
-    "one_liner_count": 101,
+    "one_liner_count": 102,
     "almost_gave_up_count": 66,
     "comeback_count": 7,
-    "ai_analyzed_count": 1361
+    "ai_analyzed_count": 1360
   },
   "years": [
     {
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 401,
+      "count": 400,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -210,24 +210,24 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 188,
+      "count": 189,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1196,
-    "repeat_problem_count": 164,
-    "repeated_entry_count": 333,
+    "unique_problem_count": 1197,
+    "repeat_problem_count": 163,
+    "repeated_entry_count": 331,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 101
+        "count": 102
       },
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 420
+        "count": 419
       },
       {
         "slug": "compact",
@@ -1470,201 +1470,6 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
-            "thought_line_delta_from_previous": 0
-          }
-        ]
-      },
-      {
-        "key": "1582",
-        "problem_id": 1582,
-        "title": "Special Positions in a Binary Matrix",
-        "display_title": "1582. Special Positions in a Binary Matrix",
-        "evolution_slug": "1582-special-positions-in-a-binary-matrix",
-        "evolution_url": "/leetcode/evolution/1582-special-positions-in-a-binary-matrix/",
-        "count": 2,
-        "first_date": "13.12.2023",
-        "last_date": "04.08.2026",
-        "first_sort_date": "2023-12-13",
-        "last_sort_date": "2026-08-04",
-        "span_days": 965,
-        "latest_page_url": "/leetcode/problem/2026-08-04-1582-special-positions-in-a-binary-matrix/",
-        "solution_line_delta": -6,
-        "solution_char_delta": -183,
-        "thought_line_delta": 0,
-        "solution_line_trend": "compressed",
-        "solution_char_trend": "compressed",
-        "thought_line_trend": "steady",
-        "best_solution": {
-          "slug": "2026-08-04-1582-special-positions-in-a-binary-matrix",
-          "date": "2026-08-04",
-          "display_date": "04.08.2026",
-          "year": "2026",
-          "display_title": "1582. Special Positions in a Binary Matrix",
-          "difficulty": "easy",
-          "page_url": "/leetcode/problem/2026-08-04-1582-special-positions-in-a-binary-matrix/",
-          "problem_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-          "image_url": "/assets/leetcode_daily_images/6dfe3e7e.webp",
-          "takeaway": "Count single 1-row-column",
-          "pattern_slugs": [
-            "array"
-          ],
-          "pattern_labels": [
-            "Array"
-          ],
-          "languages": [
-            "kotlin",
-            "rust"
-          ],
-          "catalog_tags": [
-            "tiny",
-            "repeat"
-          ],
-          "solution_lines": 4,
-          "solution_chars": 107,
-          "solution_language": "kotlin",
-          "solution_line_bucket": "tiny",
-          "thought_lines": 0,
-          "thought_chars": 0,
-          "max_minute_marker": null,
-          "unsolved": false,
-          "almost_gave_up": false,
-          "attempt_number": 2,
-          "solution_line_percent": 40,
-          "thought_line_percent": 0,
-          "days_since_previous": 965,
-          "solution_line_delta_from_previous": -6,
-          "solution_char_delta_from_previous": -183,
-          "thought_line_delta_from_previous": 0
-        },
-        "largest_solution": {
-          "slug": "2023-12-13-1582-special-positions-in-a-binary-matrix",
-          "date": "2023-12-13",
-          "display_date": "13.12.2023",
-          "year": "2023",
-          "display_title": "1582. Special Positions in a Binary Matrix",
-          "difficulty": "easy",
-          "page_url": "/leetcode/problem/2023-12-13-1582-special-positions-in-a-binary-matrix/",
-          "problem_url": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/",
-          "image_url": "/assets/leetcode_daily_images/075c9679.webp",
-          "takeaway": "#### Join me on Telegram",
-          "pattern_slugs": [
-            "array"
-          ],
-          "pattern_labels": [
-            "Array"
-          ],
-          "languages": [
-            "kotlin"
-          ],
-          "catalog_tags": [
-            "compact",
-            "repeat"
-          ],
-          "solution_lines": 10,
-          "solution_chars": 290,
-          "solution_language": "kotlin",
-          "solution_line_bucket": "compact",
-          "thought_lines": 0,
-          "thought_chars": 0,
-          "max_minute_marker": null,
-          "unsolved": false,
-          "almost_gave_up": false,
-          "attempt_number": 1,
-          "solution_line_percent": 100,
-          "thought_line_percent": 0,
-          "days_since_previous": null,
-          "solution_line_delta_from_previous": null,
-          "solution_char_delta_from_previous": null,
-          "thought_line_delta_from_previous": null
-        },
-        "max_solution_lines": 10,
-        "max_thought_lines": 0,
-        "total_thought_lines": 0,
-        "stuck_count": 0,
-        "one_liner_count": 0,
-        "solved_after_stuck": false,
-        "entries": [
-          {
-            "slug": "2023-12-13-1582-special-positions-in-a-binary-matrix",
-            "date": "2023-12-13",
-            "display_date": "13.12.2023",
-            "year": "2023",
-            "display_title": "1582. Special Positions in a Binary Matrix",
-            "difficulty": "easy",
-            "page_url": "/leetcode/problem/2023-12-13-1582-special-positions-in-a-binary-matrix/",
-            "problem_url": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/",
-            "image_url": "/assets/leetcode_daily_images/075c9679.webp",
-            "takeaway": "#### Join me on Telegram",
-            "pattern_slugs": [
-              "array"
-            ],
-            "pattern_labels": [
-              "Array"
-            ],
-            "languages": [
-              "kotlin"
-            ],
-            "catalog_tags": [
-              "compact",
-              "repeat"
-            ],
-            "solution_lines": 10,
-            "solution_chars": 290,
-            "solution_language": "kotlin",
-            "solution_line_bucket": "compact",
-            "thought_lines": 0,
-            "thought_chars": 0,
-            "max_minute_marker": null,
-            "unsolved": false,
-            "almost_gave_up": false,
-            "attempt_number": 1,
-            "solution_line_percent": 100,
-            "thought_line_percent": 0,
-            "days_since_previous": null,
-            "solution_line_delta_from_previous": null,
-            "solution_char_delta_from_previous": null,
-            "thought_line_delta_from_previous": null
-          },
-          {
-            "slug": "2026-08-04-1582-special-positions-in-a-binary-matrix",
-            "date": "2026-08-04",
-            "display_date": "04.08.2026",
-            "year": "2026",
-            "display_title": "1582. Special Positions in a Binary Matrix",
-            "difficulty": "easy",
-            "page_url": "/leetcode/problem/2026-08-04-1582-special-positions-in-a-binary-matrix/",
-            "problem_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-            "image_url": "/assets/leetcode_daily_images/6dfe3e7e.webp",
-            "takeaway": "Count single 1-row-column",
-            "pattern_slugs": [
-              "array"
-            ],
-            "pattern_labels": [
-              "Array"
-            ],
-            "languages": [
-              "kotlin",
-              "rust"
-            ],
-            "catalog_tags": [
-              "tiny",
-              "repeat"
-            ],
-            "solution_lines": 4,
-            "solution_chars": 107,
-            "solution_language": "kotlin",
-            "solution_line_bucket": "tiny",
-            "thought_lines": 0,
-            "thought_chars": 0,
-            "max_minute_marker": null,
-            "unsolved": false,
-            "almost_gave_up": false,
-            "attempt_number": 2,
-            "solution_line_percent": 40,
-            "thought_line_percent": 0,
-            "days_since_previous": 965,
-            "solution_line_delta_from_previous": -6,
-            "solution_char_delta_from_previous": -183,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -41056,6 +40861,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-08-04-3731-find-missing-elements",
+        "date": "2026-08-04",
+        "display_date": "04.08.2026",
+        "year": "2026",
+        "display_title": "3731. Find Missing Elements",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-08-04-3731-find-missing-elements/",
+        "problem_url": "https://leetcode.com/problems/find-missing-elements/solutions/8440108/kotlin-rust-by-samoylenkodmitry-sf7r/",
+        "image_url": "/assets/leetcode_daily_images/04.08.2026.webp",
+        "takeaway": "Find missing numbers in range min..max",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 66,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-06-29-1967-number-of-strings-that-appear-as-substrings-in-word",
         "date": "2026-06-29",
         "display_date": "29.06.2026",
@@ -46328,7 +46167,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 164,
+        "count": 163,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -46378,7 +46217,7 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 101,
+        "count": 102,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
@@ -68901,45 +68740,45 @@
       ]
     },
     {
-      "slug": "2026-08-04-1582-special-positions-in-a-binary-matrix",
+      "slug": "2026-08-04-3731-find-missing-elements",
       "date": "2026-08-04",
       "display_date": "04.08.2026",
       "year": "2026",
-      "problem_id": 1582,
-      "title": "Special Positions in a Binary Matrix",
-      "display_title": "1582. Special Positions in a Binary Matrix",
+      "problem_id": 3731,
+      "title": "Find Missing Elements",
+      "display_title": "3731. Find Missing Elements",
       "difficulty": "easy",
       "pattern_slugs": [
-        "array"
+        "implementation"
       ],
       "pattern_labels": [
-        "Array"
+        "Implementation"
       ],
       "languages": [
         "kotlin",
         "rust"
       ],
-      "problem_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-      "kotlin_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-      "rust_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-      "blog_post_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-1582-special-positions-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-      "youtube_url": "https://youtu.be/W8c8wr4GaWw",
-      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1287",
-      "image_url": "/assets/leetcode_daily_images/6dfe3e7e.webp",
-      "takeaway": "Count single 1-row-column",
+      "problem_url": "https://leetcode.com/problems/find-missing-elements/solutions/8440108/kotlin-rust-by-samoylenkodmitry-sf7r/",
+      "kotlin_url": "https://leetcode.com/problems/find-missing-elements/solutions/8440108/kotlin-rust-by-samoylenkodmitry-sf7r/",
+      "rust_url": "https://leetcode.com/problems/find-missing-elements/solutions/8440108/kotlin-rust-by-samoylenkodmitry-sf7r/",
+      "blog_post_url": null,
+      "substack_url": "https://open.substack.com/pub/dmitriisamoilenko/p/04082026-3731-find-missing-elements?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/10XdpCEky20",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1441",
+      "image_url": "/assets/leetcode_daily_images/04.08.2026.webp",
+      "takeaway": "Find missing numbers in range min..max",
       "metrics": {
-        "solution_lines": 4,
-        "solution_chars": 107,
+        "solution_lines": 2,
+        "solution_chars": 66,
         "solution_language": "kotlin",
-        "solution_line_bucket": "tiny",
+        "solution_line_bucket": "one-liner",
         "language_line_counts": {
-          "kotlin": 4,
-          "rust": 5
+          "kotlin": 2,
+          "rust": 4
         },
         "language_char_counts": {
-          "kotlin": 107,
-          "rust": 186
+          "kotlin": 66,
+          "rust": 157
         },
         "thought_lines": 0,
         "thought_chars": 0,
@@ -68948,94 +68787,20 @@
         "deep_thinking": false,
         "unsolved": false,
         "almost_gave_up": false,
-        "one_liner": false
+        "one_liner": true
       },
       "catalog_tags": [
-        "tiny",
-        "repeat"
+        "one-liner"
       ],
       "collection_links": [
         {
-          "slug": "repeat",
-          "label": "Repeat Lab",
-          "url": "/leetcode/collection/repeats/",
-          "detail_label": "Evolution",
-          "detail_url": "/leetcode/evolution/1582-special-positions-in-a-binary-matrix/"
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
         }
       ],
-      "page_url": "/leetcode/problem/2026-08-04-1582-special-positions-in-a-binary-matrix/",
-      "raw_archive_url": "/2023/07/14/leetcode_daily.html",
-      "ai": {
-        "provider": "github",
-        "model": "openai/gpt-4.1-mini",
-        "prompt_version": "leetcode-ai-tags-v1",
-        "analyzed_at": "2026-04-25T15:43:47Z",
-        "data_structures": [
-          {
-            "slug": "matrix",
-            "label": "matrix",
-            "confidence": 0.9
-          }
-        ],
-        "algorithms": [
-          {
-            "slug": "brute-force",
-            "label": "brute force",
-            "confidence": 0.9
-          }
-        ],
-        "techniques": [
-          {
-            "slug": "row-and-column-sum-checks",
-            "label": "row and column sum checks",
-            "confidence": 0.85
-          }
-        ],
-        "domains": [
-          {
-            "slug": "arrays",
-            "label": "arrays",
-            "confidence": 0.8
-          }
-        ],
-        "summary": "Count special positions in a binary matrix by checking rows and columns for exactly one '1' using brute force.",
-        "manual_review": false,
-        "confidence": 0.9
-      },
-      "ai_tags": [
-        {
-          "slug": "matrix",
-          "label": "matrix",
-          "group": "data_structures"
-        },
-        {
-          "slug": "brute-force",
-          "label": "brute force",
-          "group": "algorithms"
-        },
-        {
-          "slug": "row-and-column-sum-checks",
-          "label": "row and column sum checks",
-          "group": "techniques"
-        },
-        {
-          "slug": "arrays",
-          "label": "arrays",
-          "group": "domains"
-        }
-      ],
-      "ai_tag_slugs": [
-        "matrix",
-        "brute-force",
-        "row-and-column-sum-checks",
-        "arrays"
-      ],
-      "ai_tag_labels": [
-        "matrix",
-        "brute force",
-        "row and column sum checks",
-        "arrays"
-      ]
+      "page_url": "/leetcode/problem/2026-08-04-3731-find-missing-elements/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
     },
     {
       "slug": "2026-03-03-1545-find-kth-bit-in-nth-binary-string",
@@ -181761,18 +181526,9 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "compact",
-        "repeat"
+        "compact"
       ],
-      "collection_links": [
-        {
-          "slug": "repeat",
-          "label": "Repeat Lab",
-          "url": "/leetcode/collection/repeats/",
-          "detail_label": "Evolution",
-          "detail_url": "/leetcode/evolution/1582-special-positions-in-a-binary-matrix/"
-        }
-      ],
+      "collection_links": [],
       "page_url": "/leetcode/problem/2023-12-13-1582-special-positions-in-a-binary-matrix/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
