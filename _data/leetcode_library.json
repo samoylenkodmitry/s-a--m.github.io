@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-06T08:58:09Z",
+  "generated_at": "2026-08-07T08:51:30Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1367,
-    "unique_problem_count": 1199,
+    "entry_count": 1368,
+    "unique_problem_count": 1200,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 892,
+    "rust_count": 893,
     "repeat_problem_count": 163,
     "repeated_entry_count": 331,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 211,
+      "count": 212,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1361,
+      "count": 1362,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 892,
+      "count": 893,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -114,7 +114,7 @@
     {
       "slug": "math",
       "label": "Math",
-      "count": 83,
+      "count": 84,
       "url": "/leetcode/pattern/math/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1199,
+    "unique_problem_count": 1200,
     "repeat_problem_count": 163,
     "repeated_entry_count": 331,
     "line_buckets": [
@@ -237,7 +237,7 @@
       {
         "slug": "standard",
         "label": "Standard",
-        "count": 293
+        "count": 294
       },
       {
         "slug": "long",
@@ -46258,6 +46258,61 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-07-3348-smallest-divisible-digit-product-ii",
+      "date": "2026-08-07",
+      "display_date": "07.08.2026",
+      "year": "2026",
+      "problem_id": 3348,
+      "title": "Smallest Divisible Digit Product II",
+      "display_title": "3348. Smallest Divisible Digit Product II",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "math"
+      ],
+      "pattern_labels": [
+        "Math"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/solutions/8446740/kotlin-rust-by-samoylenkodmitry-18fi/",
+      "kotlin_url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/solutions/8446740/kotlin-rust-by-samoylenkodmitry-18fi/",
+      "rust_url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/solutions/8446740/kotlin-rust-by-samoylenkodmitry-18fi/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/07082026-3348-smallest-divisible?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/g6TnbxJgXH0",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1444",
+      "image_url": "/assets/leetcode_daily_images/07.08.2026.webp",
+      "takeaway": "Smallest n.. digits product divisible by t without zeros",
+      "metrics": {
+        "solution_lines": 16,
+        "solution_chars": 631,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "language_line_counts": {
+          "kotlin": 16
+        },
+        "language_char_counts": {
+          "kotlin": 631
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "standard"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-08-07-3348-smallest-divisible-digit-product-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-06-3345-smallest-divisible-digit-product-i",
       "date": "2026-08-06",
