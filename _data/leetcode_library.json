@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-07T08:51:30Z",
+  "generated_at": "2026-08-08T12:00:14Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1368,
-    "unique_problem_count": 1200,
+    "entry_count": 1369,
+    "unique_problem_count": 1201,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 893,
+    "rust_count": 894,
     "repeat_problem_count": 163,
     "repeated_entry_count": 331,
     "deep_thinking_count": 47,
-    "unsolved_count": 94,
+    "unsolved_count": 95,
     "one_liner_count": 103,
-    "almost_gave_up_count": 66,
+    "almost_gave_up_count": 67,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
   },
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 212,
+      "count": 213,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1362,
+      "count": 1363,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 893,
+      "count": 894,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 189,
+      "count": 190,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1200,
+    "unique_problem_count": 1201,
     "repeat_problem_count": 163,
     "repeated_entry_count": 331,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 465
+        "count": 466
       },
       {
         "slug": "standard",
@@ -36560,6 +36560,42 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence",
+        "date": "2026-08-08",
+        "display_date": "08.08.2026",
+        "year": "2026",
+        "display_title": "3302. Find the Lexicographically Smallest Valid Sequence",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence/",
+        "problem_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/solutions/8448787/kotlin-rust-by-samoylenkodmitry-jzkq/",
+        "image_url": "/assets/leetcode_daily_images/08.08.2026.webp",
+        "takeaway": "Match subsequence with at most one difference",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 12,
+        "solution_chars": 514,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "thought_lines": 9,
+        "thought_chars": 209,
+        "max_minute_marker": 25,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-07-29-3518-smallest-palindromic-rearrangement-ii",
         "date": "2026-07-29",
         "display_date": "29.07.2026",
@@ -46158,6 +46194,42 @@
         "almost_gave_up": true
       },
       {
+        "slug": "2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence",
+        "date": "2026-08-08",
+        "display_date": "08.08.2026",
+        "year": "2026",
+        "display_title": "3302. Find the Lexicographically Smallest Valid Sequence",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence/",
+        "problem_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/solutions/8448787/kotlin-rust-by-samoylenkodmitry-jzkq/",
+        "image_url": "/assets/leetcode_daily_images/08.08.2026.webp",
+        "takeaway": "Match subsequence with at most one difference",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 12,
+        "solution_chars": 514,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "thought_lines": 9,
+        "thought_chars": 209,
+        "max_minute_marker": 25,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-01-14-3454-separate-squares-ii",
         "date": "2026-01-14",
         "display_date": "14.01.2026",
@@ -46231,7 +46303,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 94,
+        "count": 95,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -46241,7 +46313,7 @@
         "label": "Pressure Log",
         "title": "Almost Gave Up",
         "url": "/leetcode/collection/almost-gave-up/",
-        "count": 66,
+        "count": 67,
         "summary": "Entries with minute markers near the stopping point, hints, wrong answers, or explicit timeboxing.",
         "metric_label": "timeboxed struggles"
       },
@@ -46258,6 +46330,79 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence",
+      "date": "2026-08-08",
+      "display_date": "08.08.2026",
+      "year": "2026",
+      "problem_id": 3302,
+      "title": "Find the Lexicographically Smallest Valid Sequence",
+      "display_title": "3302. Find the Lexicographically Smallest Valid Sequence",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/solutions/8448787/kotlin-rust-by-samoylenkodmitry-jzkq/",
+      "kotlin_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/solutions/8448787/kotlin-rust-by-samoylenkodmitry-jzkq/",
+      "rust_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/solutions/8448787/kotlin-rust-by-samoylenkodmitry-jzkq/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/08082026-3302-find-the-lexicographically?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/FDcmcobdEC4",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1445",
+      "image_url": "/assets/leetcode_daily_images/08.08.2026.webp",
+      "takeaway": "Match subsequence with at most one difference",
+      "metrics": {
+        "solution_lines": 12,
+        "solution_chars": 514,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 14,
+          "rust": 12
+        },
+        "language_char_counts": {
+          "kotlin": 380,
+          "rust": 514
+        },
+        "thought_lines": 9,
+        "thought_chars": 209,
+        "minute_markers": [
+          8,
+          25
+        ],
+        "max_minute_marker": 25,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": true,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "unsolved",
+        "almost-gave-up"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        },
+        {
+          "slug": "almost-gave-up",
+          "label": "Almost Gave Up",
+          "url": "/leetcode/collection/almost-gave-up/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-07-3348-smallest-divisible-digit-product-ii",
       "date": "2026-08-07",
