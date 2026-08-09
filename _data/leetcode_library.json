@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-08T12:00:14Z",
+  "generated_at": "2026-08-09T09:08:58Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1369,
+    "entry_count": 1370,
     "unique_problem_count": 1201,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 894,
+    "rust_count": 895,
     "repeat_problem_count": 163,
-    "repeated_entry_count": 331,
+    "repeated_entry_count": 332,
     "deep_thinking_count": 47,
     "unsolved_count": 95,
     "one_liner_count": 103,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 213,
+      "count": 214,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1363,
+      "count": 1364,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 894,
+      "count": 895,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 225,
+      "count": 226,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 106,
+      "count": 107,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -217,7 +217,7 @@
   "insights": {
     "unique_problem_count": 1201,
     "repeat_problem_count": 163,
-    "repeated_entry_count": 331,
+    "repeated_entry_count": 332,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 466
+        "count": 467
       },
       {
         "slug": "standard",
@@ -251,6 +251,247 @@
       }
     ],
     "repeats": [
+      {
+        "key": "1140",
+        "problem_id": 1140,
+        "title": "Stone Game II",
+        "display_title": "1140. Stone Game II",
+        "evolution_slug": "1140-stone-game-ii",
+        "evolution_url": "/leetcode/evolution/1140-stone-game-ii/",
+        "count": 3,
+        "first_date": "26.05.2023",
+        "last_date": "09.08.2026",
+        "first_sort_date": "2023-05-26",
+        "last_sort_date": "2026-08-09",
+        "span_days": 1171,
+        "latest_page_url": "/leetcode/problem/2026-08-09-1140-stone-game-ii/",
+        "solution_line_delta": -21,
+        "solution_char_delta": -478,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-08-09-1140-stone-game-ii",
+          "date": "2026-08-09",
+          "display_date": "09.08.2026",
+          "year": "2026",
+          "display_title": "1140. Stone Game II",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-08-09-1140-stone-game-ii/",
+          "problem_url": "https://leetcode.com/problems/stone-game-ii/solutions/8450521/kotlin-rust-by-samoylenkodmitry-r3w0/",
+          "image_url": "/assets/leetcode_daily_images/09.08.2026.webp",
+          "takeaway": "Max Alice sum play optimally with Bob",
+          "pattern_slugs": [
+            "dynamic-programming",
+            "graph"
+          ],
+          "pattern_labels": [
+            "Dynamic Programming",
+            "Graph"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "compact",
+            "repeat"
+          ],
+          "solution_lines": 7,
+          "solution_chars": 254,
+          "solution_language": "rust",
+          "solution_line_bucket": "compact",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 3,
+          "solution_line_percent": 25,
+          "thought_line_percent": 0,
+          "days_since_previous": 719,
+          "solution_line_delta_from_previous": -4,
+          "solution_char_delta_from_previous": -161,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-05-26-1140-stone-game-ii",
+          "date": "2023-05-26",
+          "display_date": "26.05.2023",
+          "year": "2023",
+          "display_title": "1140. Stone Game II",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2023-05-26-1140-stone-game-ii/",
+          "problem_url": "https://leetcode.com/problems/stone-game-ii/description/",
+          "image_url": null,
+          "takeaway": "While Alice and Bob optimally take 1..2 m numbers from piles find maximum for Alice.",
+          "pattern_slugs": [
+            "implementation"
+          ],
+          "pattern_labels": [
+            "Implementation"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "long",
+            "repeat"
+          ],
+          "solution_lines": 28,
+          "solution_chars": 732,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "long",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 28,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-05-26-1140-stone-game-ii",
+            "date": "2023-05-26",
+            "display_date": "26.05.2023",
+            "year": "2023",
+            "display_title": "1140. Stone Game II",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2023-05-26-1140-stone-game-ii/",
+            "problem_url": "https://leetcode.com/problems/stone-game-ii/description/",
+            "image_url": null,
+            "takeaway": "While Alice and Bob optimally take 1..2 m numbers from piles find maximum for Alice.",
+            "pattern_slugs": [
+              "implementation"
+            ],
+            "pattern_labels": [
+              "Implementation"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "long",
+              "repeat"
+            ],
+            "solution_lines": 28,
+            "solution_chars": 732,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "long",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2024-08-20-1140-stone-game-ii",
+            "date": "2024-08-20",
+            "display_date": "20.08.2024",
+            "year": "2024",
+            "display_title": "1140. Stone Game II",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2024-08-20-1140-stone-game-ii/",
+            "problem_url": "https://leetcode.com/problems/stone-game-ii/description/",
+            "image_url": "/assets/leetcode_daily_images/a5f076bb.webp",
+            "takeaway": "Max Alice price taking 1..2m piles optimally with Bob programming",
+            "pattern_slugs": [
+              "math"
+            ],
+            "pattern_labels": [
+              "Math"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "repeat"
+            ],
+            "solution_lines": 11,
+            "solution_chars": 415,
+            "solution_language": "rust",
+            "solution_line_bucket": "compact",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 39,
+            "thought_line_percent": 0,
+            "days_since_previous": 452,
+            "solution_line_delta_from_previous": -17,
+            "solution_char_delta_from_previous": -317,
+            "thought_line_delta_from_previous": 0
+          },
+          {
+            "slug": "2026-08-09-1140-stone-game-ii",
+            "date": "2026-08-09",
+            "display_date": "09.08.2026",
+            "year": "2026",
+            "display_title": "1140. Stone Game II",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-08-09-1140-stone-game-ii/",
+            "problem_url": "https://leetcode.com/problems/stone-game-ii/solutions/8450521/kotlin-rust-by-samoylenkodmitry-r3w0/",
+            "image_url": "/assets/leetcode_daily_images/09.08.2026.webp",
+            "takeaway": "Max Alice sum play optimally with Bob",
+            "pattern_slugs": [
+              "dynamic-programming",
+              "graph"
+            ],
+            "pattern_labels": [
+              "Dynamic Programming",
+              "Graph"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "repeat"
+            ],
+            "solution_lines": 7,
+            "solution_chars": 254,
+            "solution_language": "rust",
+            "solution_line_bucket": "compact",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 3,
+            "solution_line_percent": 25,
+            "thought_line_percent": 0,
+            "days_since_previous": 719,
+            "solution_line_delta_from_previous": -4,
+            "solution_char_delta_from_previous": -161,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
       {
         "key": "1980",
         "problem_id": 1980,
@@ -25318,201 +25559,6 @@
         ]
       },
       {
-        "key": "1140",
-        "problem_id": 1140,
-        "title": "Stone Game II",
-        "display_title": "1140. Stone Game II",
-        "evolution_slug": "1140-stone-game-ii",
-        "evolution_url": "/leetcode/evolution/1140-stone-game-ii/",
-        "count": 2,
-        "first_date": "26.05.2023",
-        "last_date": "20.08.2024",
-        "first_sort_date": "2023-05-26",
-        "last_sort_date": "2024-08-20",
-        "span_days": 452,
-        "latest_page_url": "/leetcode/problem/2024-08-20-1140-stone-game-ii/",
-        "solution_line_delta": -17,
-        "solution_char_delta": -317,
-        "thought_line_delta": 0,
-        "solution_line_trend": "compressed",
-        "solution_char_trend": "compressed",
-        "thought_line_trend": "steady",
-        "best_solution": {
-          "slug": "2024-08-20-1140-stone-game-ii",
-          "date": "2024-08-20",
-          "display_date": "20.08.2024",
-          "year": "2024",
-          "display_title": "1140. Stone Game II",
-          "difficulty": "medium",
-          "page_url": "/leetcode/problem/2024-08-20-1140-stone-game-ii/",
-          "problem_url": "https://leetcode.com/problems/stone-game-ii/description/",
-          "image_url": "/assets/leetcode_daily_images/a5f076bb.webp",
-          "takeaway": "Max Alice price taking 1..2m piles optimally with Bob programming",
-          "pattern_slugs": [
-            "math"
-          ],
-          "pattern_labels": [
-            "Math"
-          ],
-          "languages": [
-            "kotlin",
-            "rust"
-          ],
-          "catalog_tags": [
-            "compact",
-            "repeat"
-          ],
-          "solution_lines": 11,
-          "solution_chars": 415,
-          "solution_language": "rust",
-          "solution_line_bucket": "compact",
-          "thought_lines": 0,
-          "thought_chars": 0,
-          "max_minute_marker": null,
-          "unsolved": false,
-          "almost_gave_up": false,
-          "attempt_number": 2,
-          "solution_line_percent": 39,
-          "thought_line_percent": 0,
-          "days_since_previous": 452,
-          "solution_line_delta_from_previous": -17,
-          "solution_char_delta_from_previous": -317,
-          "thought_line_delta_from_previous": 0
-        },
-        "largest_solution": {
-          "slug": "2023-05-26-1140-stone-game-ii",
-          "date": "2023-05-26",
-          "display_date": "26.05.2023",
-          "year": "2023",
-          "display_title": "1140. Stone Game II",
-          "difficulty": "medium",
-          "page_url": "/leetcode/problem/2023-05-26-1140-stone-game-ii/",
-          "problem_url": "https://leetcode.com/problems/stone-game-ii/description/",
-          "image_url": null,
-          "takeaway": "While Alice and Bob optimally take 1..2 m numbers from piles find maximum for Alice.",
-          "pattern_slugs": [
-            "implementation"
-          ],
-          "pattern_labels": [
-            "Implementation"
-          ],
-          "languages": [
-            "kotlin"
-          ],
-          "catalog_tags": [
-            "long",
-            "repeat"
-          ],
-          "solution_lines": 28,
-          "solution_chars": 732,
-          "solution_language": "kotlin",
-          "solution_line_bucket": "long",
-          "thought_lines": 0,
-          "thought_chars": 0,
-          "max_minute_marker": null,
-          "unsolved": false,
-          "almost_gave_up": false,
-          "attempt_number": 1,
-          "solution_line_percent": 100,
-          "thought_line_percent": 0,
-          "days_since_previous": null,
-          "solution_line_delta_from_previous": null,
-          "solution_char_delta_from_previous": null,
-          "thought_line_delta_from_previous": null
-        },
-        "max_solution_lines": 28,
-        "max_thought_lines": 0,
-        "total_thought_lines": 0,
-        "stuck_count": 0,
-        "one_liner_count": 0,
-        "solved_after_stuck": false,
-        "entries": [
-          {
-            "slug": "2023-05-26-1140-stone-game-ii",
-            "date": "2023-05-26",
-            "display_date": "26.05.2023",
-            "year": "2023",
-            "display_title": "1140. Stone Game II",
-            "difficulty": "medium",
-            "page_url": "/leetcode/problem/2023-05-26-1140-stone-game-ii/",
-            "problem_url": "https://leetcode.com/problems/stone-game-ii/description/",
-            "image_url": null,
-            "takeaway": "While Alice and Bob optimally take 1..2 m numbers from piles find maximum for Alice.",
-            "pattern_slugs": [
-              "implementation"
-            ],
-            "pattern_labels": [
-              "Implementation"
-            ],
-            "languages": [
-              "kotlin"
-            ],
-            "catalog_tags": [
-              "long",
-              "repeat"
-            ],
-            "solution_lines": 28,
-            "solution_chars": 732,
-            "solution_language": "kotlin",
-            "solution_line_bucket": "long",
-            "thought_lines": 0,
-            "thought_chars": 0,
-            "max_minute_marker": null,
-            "unsolved": false,
-            "almost_gave_up": false,
-            "attempt_number": 1,
-            "solution_line_percent": 100,
-            "thought_line_percent": 0,
-            "days_since_previous": null,
-            "solution_line_delta_from_previous": null,
-            "solution_char_delta_from_previous": null,
-            "thought_line_delta_from_previous": null
-          },
-          {
-            "slug": "2024-08-20-1140-stone-game-ii",
-            "date": "2024-08-20",
-            "display_date": "20.08.2024",
-            "year": "2024",
-            "display_title": "1140. Stone Game II",
-            "difficulty": "medium",
-            "page_url": "/leetcode/problem/2024-08-20-1140-stone-game-ii/",
-            "problem_url": "https://leetcode.com/problems/stone-game-ii/description/",
-            "image_url": "/assets/leetcode_daily_images/a5f076bb.webp",
-            "takeaway": "Max Alice price taking 1..2m piles optimally with Bob programming",
-            "pattern_slugs": [
-              "math"
-            ],
-            "pattern_labels": [
-              "Math"
-            ],
-            "languages": [
-              "kotlin",
-              "rust"
-            ],
-            "catalog_tags": [
-              "compact",
-              "repeat"
-            ],
-            "solution_lines": 11,
-            "solution_chars": 415,
-            "solution_language": "rust",
-            "solution_line_bucket": "compact",
-            "thought_lines": 0,
-            "thought_chars": 0,
-            "max_minute_marker": null,
-            "unsolved": false,
-            "almost_gave_up": false,
-            "attempt_number": 2,
-            "solution_line_percent": 39,
-            "thought_line_percent": 0,
-            "days_since_previous": 452,
-            "solution_line_delta_from_previous": -17,
-            "solution_char_delta_from_previous": -317,
-            "thought_line_delta_from_previous": 0
-          }
-        ]
-      },
-      {
         "key": "703",
         "problem_id": 703,
         "title": "Kth Largest Element in a Stream",
@@ -46330,6 +46376,74 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-09-1140-stone-game-ii",
+      "date": "2026-08-09",
+      "display_date": "09.08.2026",
+      "year": "2026",
+      "problem_id": 1140,
+      "title": "Stone Game II",
+      "display_title": "1140. Stone Game II",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "graph"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Graph"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/stone-game-ii/solutions/8450521/kotlin-rust-by-samoylenkodmitry-r3w0/",
+      "kotlin_url": "https://leetcode.com/problems/stone-game-ii/solutions/8450521/kotlin-rust-by-samoylenkodmitry-r3w0/",
+      "rust_url": "https://leetcode.com/problems/stone-game-ii/solutions/8450521/kotlin-rust-by-samoylenkodmitry-r3w0/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/09082026-1140-stone-game-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/hjUmoixXFQs",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1446",
+      "image_url": "/assets/leetcode_daily_images/09.08.2026.webp",
+      "takeaway": "Max Alice sum play optimally with Bob",
+      "metrics": {
+        "solution_lines": 7,
+        "solution_chars": 254,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 7,
+          "rust": 7
+        },
+        "language_char_counts": {
+          "kotlin": 262,
+          "rust": 254
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1140-stone-game-ii/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-09-1140-stone-game-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence",
       "date": "2026-08-08",
