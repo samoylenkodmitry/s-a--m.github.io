@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-09T09:08:58Z",
+  "generated_at": "2026-08-10T06:39:13Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1370,
-    "unique_problem_count": 1201,
+    "entry_count": 1371,
+    "unique_problem_count": 1202,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 895,
+    "rust_count": 896,
     "repeat_problem_count": 163,
     "repeated_entry_count": 332,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 214,
+      "count": 215,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1364,
+      "count": 1365,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 895,
+      "count": 896,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 226,
+      "count": 227,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 107,
+      "count": 108,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1201,
+    "unique_problem_count": 1202,
     "repeat_problem_count": 163,
     "repeated_entry_count": 332,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 420
+        "count": 421
       },
       {
         "slug": "compact",
@@ -46376,6 +46376,65 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-10-1510-stone-game-iv",
+      "date": "2026-08-10",
+      "display_date": "10.08.2026",
+      "year": "2026",
+      "problem_id": 1510,
+      "title": "Stone Game IV",
+      "display_title": "1510. Stone Game IV",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "graph"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Graph"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/stone-game-iv/solutions/8452100/kotlin-rust-by-samoylenkodmitry-ujd2/",
+      "kotlin_url": "https://leetcode.com/problems/stone-game-iv/solutions/8452100/kotlin-rust-by-samoylenkodmitry-ujd2/",
+      "rust_url": "https://leetcode.com/problems/stone-game-iv/solutions/8452100/kotlin-rust-by-samoylenkodmitry-ujd2/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/10082026-1510-stone-game-iv?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/e-xCUZ4NJKs",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1447",
+      "image_url": "/assets/leetcode_daily_images/10.08.2026.webp",
+      "takeaway": "Is Alice win Bob taking squares until zero",
+      "metrics": {
+        "solution_lines": 4,
+        "solution_chars": 150,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 4,
+          "rust": 6
+        },
+        "language_char_counts": {
+          "kotlin": 150,
+          "rust": 185
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-08-10-1510-stone-game-iv/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-09-1140-stone-game-ii",
       "date": "2026-08-09",
