@@ -21,6 +21,55 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 10.08.2026
+[1510. Stone Game IV](https://leetcode.com/problems/stone-game-iv/solutions/8452100/kotlin-rust-by-samoylenkodmitry-ujd2/) hard
+[substack](https://dmitriisamoilenko.substack.com/p/10082026-1510-stone-game-iv?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/e-xCUZ4NJKs)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![10.08.2026.webp](/assets/leetcode_daily_images/10.08.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1447
+
+#### Problem TLDR
+
+Is Alice win Bob taking squares until zero
+
+#### Intuition
+
+DFS + memo, iterate over square inside.
+
+#### Approach
+
+* the zero looses, not the maximum pick
+
+#### Complexity
+
+- Time complexity:
+$$O(nsqrt(n))$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    val dp = HashMap<Int, Boolean>()
+    fun winnerSquareGame(n: Int): Boolean = dp.getOrPut(n) {
+        (1..n).takeWhile{it*it<=n}.any{!winnerSquareGame(n-it*it)}
+    }
+```
+```rust
+    pub fn winner_square_game(n: i32) -> bool {
+        let n = n as usize; let mut d = vec![false; n + 1];
+        for i in 1..=n {
+            d[i] = (1..).take_while(|&k| k * k <= i).any(|k| !d[i - k * k])
+        } d[n]
+    }
+```
+
 # 09.08.2026
 [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/solutions/8450521/kotlin-rust-by-samoylenkodmitry-r3w0/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/09082026-1140-stone-game-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
