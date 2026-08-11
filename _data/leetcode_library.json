@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-10T06:39:13Z",
+  "generated_at": "2026-08-11T08:29:23Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1371,
-    "unique_problem_count": 1202,
+    "entry_count": 1372,
+    "unique_problem_count": 1203,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 896,
+    "rust_count": 897,
     "repeat_problem_count": 163,
     "repeated_entry_count": 332,
     "deep_thinking_count": 47,
     "unsolved_count": 95,
-    "one_liner_count": 103,
+    "one_liner_count": 104,
     "almost_gave_up_count": 67,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 215,
+      "count": 216,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1365,
+      "count": 1366,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 896,
+      "count": 897,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 400,
+      "count": 401,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -96,7 +96,7 @@
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 103,
+      "count": 104,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -186,7 +186,7 @@
     {
       "slug": "prefix-sum",
       "label": "Prefix Sum",
-      "count": 22,
+      "count": 23,
       "url": "/leetcode/pattern/prefix-sum/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1202,
+    "unique_problem_count": 1203,
     "repeat_problem_count": 163,
     "repeated_entry_count": 332,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 103
+        "count": 104
       },
       {
         "slug": "tiny",
@@ -42793,6 +42793,44 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-08-11-2996-smallest-missing-integer-greater-than-sequential-prefix-sum",
+        "date": "2026-08-11",
+        "display_date": "11.08.2026",
+        "year": "2026",
+        "display_title": "2996. Smallest Missing Integer Greater Than Sequential Prefix Sum",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-08-11-2996-smallest-missing-integer-greater-than-sequential-prefix-sum/",
+        "problem_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/8454131/kotlin-rust-by-samoylenkodmitry-d7w3/",
+        "image_url": "/assets/leetcode_daily_images/11.08.2026.webp",
+        "takeaway": "First prefix sum not in the array",
+        "pattern_slugs": [
+          "prefix-sum",
+          "simulation",
+          "array"
+        ],
+        "pattern_labels": [
+          "Prefix Sum",
+          "Simulation",
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 105,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-06-04-3751-total-waviness-of-numbers-in-range-i",
         "date": "2026-06-04",
         "display_date": "04.06.2026",
@@ -46369,13 +46407,80 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 103,
+        "count": 104,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-11-2996-smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "date": "2026-08-11",
+      "display_date": "11.08.2026",
+      "year": "2026",
+      "problem_id": 2996,
+      "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "display_title": "2996. Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "prefix-sum",
+        "simulation",
+        "array"
+      ],
+      "pattern_labels": [
+        "Prefix Sum",
+        "Simulation",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/8454131/kotlin-rust-by-samoylenkodmitry-d7w3/",
+      "kotlin_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/8454131/kotlin-rust-by-samoylenkodmitry-d7w3/",
+      "rust_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/solutions/8454131/kotlin-rust-by-samoylenkodmitry-d7w3/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/11082026-2996-smallest-missing-integer?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/k6CUL8JKEBg",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1448",
+      "image_url": "/assets/leetcode_daily_images/11.08.2026.webp",
+      "takeaway": "First prefix sum not in the array",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 105,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 105,
+          "rust": 154
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-11-2996-smallest-missing-integer-greater-than-sequential-prefix-sum/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-10-1510-stone-game-iv",
       "date": "2026-08-10",
