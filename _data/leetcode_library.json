@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-11T08:29:23Z",
+  "generated_at": "2026-08-12T08:14:02Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1372,
+    "entry_count": 1373,
     "unique_problem_count": 1203,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 897,
-    "repeat_problem_count": 163,
-    "repeated_entry_count": 332,
+    "rust_count": 898,
+    "repeat_problem_count": 164,
+    "repeated_entry_count": 334,
     "deep_thinking_count": 47,
     "unsolved_count": 95,
     "one_liner_count": 104,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 216,
+      "count": 217,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1366,
+      "count": 1367,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 897,
+      "count": 898,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -144,7 +144,7 @@
     {
       "slug": "sliding-window",
       "label": "Sliding Window",
-      "count": 52,
+      "count": 53,
       "url": "/leetcode/pattern/sliding-window/"
     },
     {
@@ -216,8 +216,8 @@
   ],
   "insights": {
     "unique_problem_count": 1203,
-    "repeat_problem_count": 163,
-    "repeated_entry_count": 332,
+    "repeat_problem_count": 164,
+    "repeated_entry_count": 334,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 467
+        "count": 468
       },
       {
         "slug": "standard",
@@ -1711,6 +1711,203 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "2958",
+        "problem_id": 2958,
+        "title": "Length of Longest Subarray With at Most K Frequency",
+        "display_title": "2958. Length of Longest Subarray With at Most K Frequency",
+        "evolution_slug": "2958-length-of-longest-subarray-with-at-most-k-frequency",
+        "evolution_url": "/leetcode/evolution/2958-length-of-longest-subarray-with-at-most-k-frequency/",
+        "count": 2,
+        "first_date": "28.03.2024",
+        "last_date": "12.08.2026",
+        "first_sort_date": "2024-03-28",
+        "last_sort_date": "2026-08-12",
+        "span_days": 867,
+        "latest_page_url": "/leetcode/problem/2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency/",
+        "solution_line_delta": -2,
+        "solution_char_delta": -6,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency",
+          "date": "2026-08-12",
+          "display_date": "12.08.2026",
+          "year": "2026",
+          "display_title": "2958. Length of Longest Subarray With at Most K Frequency",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency/",
+          "problem_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/solutions/8456370/kotlin-rust-by-samoylenkodmitry-d6dj/",
+          "image_url": "/assets/leetcode_daily_images/12.08.2026.webp",
+          "takeaway": "Max subarray freq less than K",
+          "pattern_slugs": [
+            "sliding-window"
+          ],
+          "pattern_labels": [
+            "Sliding Window"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "compact",
+            "repeat"
+          ],
+          "solution_lines": 7,
+          "solution_chars": 247,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "compact",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 78,
+          "thought_line_percent": 0,
+          "days_since_previous": 867,
+          "solution_line_delta_from_previous": -2,
+          "solution_char_delta_from_previous": -6,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2024-03-28-2958-length-of-longest-subarray-with-at-most-k-frequency",
+          "date": "2024-03-28",
+          "display_date": "28.03.2024",
+          "year": "2024",
+          "display_title": "2958. Length of Longest Subarray With at Most K Frequency",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2024-03-28-2958-length-of-longest-subarray-with-at-most-k-frequency/",
+          "problem_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description",
+          "image_url": "/assets/leetcode_daily_images/a516cbd7.webp",
+          "takeaway": "Max subarray length with frequencies <= k",
+          "pattern_slugs": [
+            "sliding-window"
+          ],
+          "pattern_labels": [
+            "Sliding Window"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "compact",
+            "repeat"
+          ],
+          "solution_lines": 9,
+          "solution_chars": 253,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "compact",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 9,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2024-03-28-2958-length-of-longest-subarray-with-at-most-k-frequency",
+            "date": "2024-03-28",
+            "display_date": "28.03.2024",
+            "year": "2024",
+            "display_title": "2958. Length of Longest Subarray With at Most K Frequency",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2024-03-28-2958-length-of-longest-subarray-with-at-most-k-frequency/",
+            "problem_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description",
+            "image_url": "/assets/leetcode_daily_images/a516cbd7.webp",
+            "takeaway": "Max subarray length with frequencies <= k",
+            "pattern_slugs": [
+              "sliding-window"
+            ],
+            "pattern_labels": [
+              "Sliding Window"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "repeat"
+            ],
+            "solution_lines": 9,
+            "solution_chars": 253,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "compact",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency",
+            "date": "2026-08-12",
+            "display_date": "12.08.2026",
+            "year": "2026",
+            "display_title": "2958. Length of Longest Subarray With at Most K Frequency",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency/",
+            "problem_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/solutions/8456370/kotlin-rust-by-samoylenkodmitry-d6dj/",
+            "image_url": "/assets/leetcode_daily_images/12.08.2026.webp",
+            "takeaway": "Max subarray freq less than K",
+            "pattern_slugs": [
+              "sliding-window"
+            ],
+            "pattern_labels": [
+              "Sliding Window"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "repeat"
+            ],
+            "solution_lines": 7,
+            "solution_chars": 247,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "compact",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 78,
+            "thought_line_percent": 0,
+            "days_since_previous": 867,
+            "solution_line_delta_from_previous": -2,
+            "solution_char_delta_from_previous": -6,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -46357,7 +46554,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 163,
+        "count": 164,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -46414,6 +46611,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency",
+      "date": "2026-08-12",
+      "display_date": "12.08.2026",
+      "year": "2026",
+      "problem_id": 2958,
+      "title": "Length of Longest Subarray With at Most K Frequency",
+      "display_title": "2958. Length of Longest Subarray With at Most K Frequency",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "sliding-window"
+      ],
+      "pattern_labels": [
+        "Sliding Window"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/solutions/8456370/kotlin-rust-by-samoylenkodmitry-d6dj/",
+      "kotlin_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/solutions/8456370/kotlin-rust-by-samoylenkodmitry-d6dj/",
+      "rust_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/solutions/8456370/kotlin-rust-by-samoylenkodmitry-d6dj/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/12082026-2958-length-of-longest-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/wc_x515LFFk",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1449",
+      "image_url": "/assets/leetcode_daily_images/12.08.2026.webp",
+      "takeaway": "Max subarray freq less than K",
+      "metrics": {
+        "solution_lines": 7,
+        "solution_chars": 247,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 7,
+          "rust": 10
+        },
+        "language_char_counts": {
+          "kotlin": 247,
+          "rust": 315
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/2958-length-of-longest-subarray-with-at-most-k-frequency/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-11-2996-smallest-missing-integer-greater-than-sequential-prefix-sum",
       "date": "2026-08-11",
@@ -168590,9 +168853,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "compact"
+        "compact",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/2958-length-of-longest-subarray-with-at-most-k-frequency/"
+        }
+      ],
       "page_url": "/leetcode/problem/2024-03-28-2958-length-of-longest-subarray-with-at-most-k-frequency/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
