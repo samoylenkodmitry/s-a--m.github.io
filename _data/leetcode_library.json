@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-12T08:14:02Z",
+  "generated_at": "2026-08-13T07:07:13Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1373,
-    "unique_problem_count": 1203,
+    "entry_count": 1374,
+    "unique_problem_count": 1204,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 898,
+    "rust_count": 899,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
-    "unsolved_count": 95,
+    "unsolved_count": 96,
     "one_liner_count": 104,
-    "almost_gave_up_count": 67,
+    "almost_gave_up_count": 68,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
   },
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 217,
+      "count": 218,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1367,
+      "count": 1368,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 898,
+      "count": 899,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 215,
+      "count": 216,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -102,7 +102,7 @@
     {
       "slug": "tree",
       "label": "Tree",
-      "count": 99,
+      "count": 100,
       "url": "/leetcode/pattern/tree/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1203,
+    "unique_problem_count": 1204,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
@@ -237,7 +237,7 @@
       {
         "slug": "standard",
         "label": "Standard",
-        "count": 294
+        "count": 295
       },
       {
         "slug": "long",
@@ -36803,6 +36803,44 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-08-13-2213-longest-substring-of-one-repeating-character",
+        "date": "2026-08-13",
+        "display_date": "13.08.2026",
+        "year": "2026",
+        "display_title": "2213. Longest Substring of One Repeating Character",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-08-13-2213-longest-substring-of-one-repeating-character/",
+        "problem_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/solutions/8458201/kotlin-by-samoylenkodmitry-9a6q/",
+        "image_url": "/assets/leetcode_daily_images/13.08.2026.webp",
+        "takeaway": "Queries of max repeating subarray after replacing characters",
+        "pattern_slugs": [
+          "tree",
+          "string"
+        ],
+        "pattern_labels": [
+          "Tree",
+          "String"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "standard",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 21,
+        "solution_chars": 852,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": 29,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-08-08-3302-find-the-lexicographically-smallest-valid-sequence",
         "date": "2026-08-08",
         "display_date": "08.08.2026",
@@ -46255,6 +46293,44 @@
         "almost_gave_up": true
       },
       {
+        "slug": "2026-08-13-2213-longest-substring-of-one-repeating-character",
+        "date": "2026-08-13",
+        "display_date": "13.08.2026",
+        "year": "2026",
+        "display_title": "2213. Longest Substring of One Repeating Character",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-08-13-2213-longest-substring-of-one-repeating-character/",
+        "problem_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/solutions/8458201/kotlin-by-samoylenkodmitry-9a6q/",
+        "image_url": "/assets/leetcode_daily_images/13.08.2026.webp",
+        "takeaway": "Queries of max repeating subarray after replacing characters",
+        "pattern_slugs": [
+          "tree",
+          "string"
+        ],
+        "pattern_labels": [
+          "Tree",
+          "String"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "standard",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 21,
+        "solution_chars": 852,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": 29,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2025-10-23-1262-greatest-sum-divisible-by-three",
         "date": "2025-10-23",
         "display_date": "23.10.2025",
@@ -46584,7 +46660,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 95,
+        "count": 96,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -46594,7 +46670,7 @@
         "label": "Pressure Log",
         "title": "Almost Gave Up",
         "url": "/leetcode/collection/almost-gave-up/",
-        "count": 67,
+        "count": 68,
         "summary": "Entries with minute markers near the stopping point, hints, wrong answers, or explicit timeboxing.",
         "metric_label": "timeboxed struggles"
       },
@@ -46611,6 +46687,78 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-13-2213-longest-substring-of-one-repeating-character",
+      "date": "2026-08-13",
+      "display_date": "13.08.2026",
+      "year": "2026",
+      "problem_id": 2213,
+      "title": "Longest Substring of One Repeating Character",
+      "display_title": "2213. Longest Substring of One Repeating Character",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "tree",
+        "string"
+      ],
+      "pattern_labels": [
+        "Tree",
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/solutions/8458201/kotlin-by-samoylenkodmitry-9a6q/",
+      "kotlin_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/solutions/8458201/kotlin-by-samoylenkodmitry-9a6q/",
+      "rust_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/solutions/8458201/kotlin-by-samoylenkodmitry-9a6q/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/13082026-2213-longest-substring-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/rDeEHpkSBVk",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1450",
+      "image_url": "/assets/leetcode_daily_images/13.08.2026.webp",
+      "takeaway": "Queries of max repeating subarray after replacing characters",
+      "metrics": {
+        "solution_lines": 21,
+        "solution_chars": 852,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "language_line_counts": {
+          "kotlin": 21
+        },
+        "language_char_counts": {
+          "kotlin": 852
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [
+          29
+        ],
+        "max_minute_marker": 29,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": true,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "standard",
+        "unsolved",
+        "almost-gave-up"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        },
+        {
+          "slug": "almost-gave-up",
+          "label": "Almost Gave Up",
+          "url": "/leetcode/collection/almost-gave-up/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-13-2213-longest-substring-of-one-repeating-character/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-12-2958-length-of-longest-subarray-with-at-most-k-frequency",
       "date": "2026-08-12",
