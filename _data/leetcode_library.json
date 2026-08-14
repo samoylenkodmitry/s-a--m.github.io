@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-13T07:07:13Z",
+  "generated_at": "2026-08-14T05:48:07Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1374,
-    "unique_problem_count": 1204,
+    "entry_count": 1375,
+    "unique_problem_count": 1205,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 899,
+    "rust_count": 900,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
     "unsolved_count": 96,
-    "one_liner_count": 104,
+    "one_liner_count": 105,
     "almost_gave_up_count": 68,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 218,
+      "count": 219,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1368,
+      "count": 1369,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 899,
+      "count": 900,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 216,
+      "count": 217,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -96,7 +96,7 @@
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 104,
+      "count": 105,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1204,
+    "unique_problem_count": 1205,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 104
+        "count": 105
       },
       {
         "slug": "tiny",
@@ -43486,6 +43486,42 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-08-14-3090-maximum-length-substring-with-two-occurrences",
+        "date": "2026-08-14",
+        "display_date": "14.08.2026",
+        "year": "2026",
+        "display_title": "3090. Maximum Length Substring With Two Occurrences",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-08-14-3090-maximum-length-substring-with-two-occurrences/",
+        "problem_url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/solutions/8459944/kotlin-rust-by-samoylenkodmitry-0e0i/",
+        "image_url": "/assets/leetcode_daily_images/14.08.2026.webp",
+        "takeaway": "Max substring repeats less than 3",
+        "pattern_slugs": [
+          "simulation",
+          "string"
+        ],
+        "pattern_labels": [
+          "Simulation",
+          "String"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 117,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2023-06-07-1318-minimum-flips-to-make-a-or-b-equal-to-c",
         "date": "2023-06-07",
         "display_date": "07.06.2023",
@@ -46680,13 +46716,78 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 104,
+        "count": 105,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-14-3090-maximum-length-substring-with-two-occurrences",
+      "date": "2026-08-14",
+      "display_date": "14.08.2026",
+      "year": "2026",
+      "problem_id": 3090,
+      "title": "Maximum Length Substring With Two Occurrences",
+      "display_title": "3090. Maximum Length Substring With Two Occurrences",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "simulation",
+        "string"
+      ],
+      "pattern_labels": [
+        "Simulation",
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/solutions/8459944/kotlin-rust-by-samoylenkodmitry-0e0i/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/solutions/8459944/kotlin-rust-by-samoylenkodmitry-0e0i/",
+      "rust_url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/solutions/8459944/kotlin-rust-by-samoylenkodmitry-0e0i/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/14082026-3090-maximum-length-substring?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/cD53oVbtqi8",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1451",
+      "image_url": "/assets/leetcode_daily_images/14.08.2026.webp",
+      "takeaway": "Max substring repeats less than 3",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 117,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 117,
+          "rust": 165
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-14-3090-maximum-length-substring-with-two-occurrences/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-13-2213-longest-substring-of-one-repeating-character",
       "date": "2026-08-13",
