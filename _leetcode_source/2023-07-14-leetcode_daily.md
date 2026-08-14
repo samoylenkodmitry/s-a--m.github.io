@@ -21,6 +21,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 14.08.2026
+[3090. Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/solutions/8459944/kotlin-rust-by-samoylenkodmitry-0e0i/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/14082026-3090-maximum-length-substring?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/cD53oVbtqi8)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![14.08.2026.webp](/assets/leetcode_daily_images/14.08.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1451
+
+#### Problem TLDR
+
+Max substring repeats less than 3
+
+#### Intuition
+
+Brute force. Try every length from largest to smalest.
+
+#### Approach
+
+* Rust: rfind
+* Kotlin: find
+
+#### Complexity
+
+- Time complexity:
+$$O(n^3)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun maximumLengthSubstring(s: String) = (s.length downTo 2)
+    .find {s.windowed(it).any{w->w.all{w.count{c->c==it}<3}}}
+```
+```rust
+    pub fn maximum_length_substring(s: String) -> i32 {
+        (1..=s.len()).rfind(|&n|s.as_bytes().windows(n)
+        .any(|w|w.iter().counts().values().all(|&v|v<3))).unwrap() as _
+    }
+```
+
 # 13.08.2026
 [2213. Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/solutions/8458201/kotlin-by-samoylenkodmitry-9a6q/) hard
 [substack](https://dmitriisamoilenko.substack.com/p/13082026-2213-longest-substring-of?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
