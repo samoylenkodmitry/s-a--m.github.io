@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-14T05:48:07Z",
+  "generated_at": "2026-08-15T08:57:51Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1375,
-    "unique_problem_count": 1205,
+    "entry_count": 1376,
+    "unique_problem_count": 1206,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 900,
+    "rust_count": 901,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
     "unsolved_count": 96,
-    "one_liner_count": 105,
+    "one_liner_count": 106,
     "almost_gave_up_count": 68,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 219,
+      "count": 220,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1369,
+      "count": 1370,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 900,
+      "count": 901,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -120,7 +120,7 @@
     {
       "slug": "bit-manipulation",
       "label": "Bit Manipulation",
-      "count": 81,
+      "count": 82,
       "url": "/leetcode/pattern/bit-manipulation/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1205,
+    "unique_problem_count": 1206,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 105
+        "count": 106
       },
       {
         "slug": "tiny",
@@ -42927,6 +42927,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-08-15-3702-longest-subsequence-with-non-zero-bitwise-xor",
+        "date": "2026-08-15",
+        "display_date": "15.08.2026",
+        "year": "2026",
+        "display_title": "3702. Longest Subsequence With Non-Zero Bitwise XOR",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-08-15-3702-longest-subsequence-with-non-zero-bitwise-xor/",
+        "problem_url": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/solutions/8462176/kotlin-rust-by-samoylenkodmitry-9lk3/",
+        "image_url": "/assets/leetcode_daily_images/15.08.2026.webp",
+        "takeaway": "Max subsequence to max non-zero xor",
+        "pattern_slugs": [
+          "bit-manipulation"
+        ],
+        "pattern_labels": [
+          "Bit Manipulation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 102,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2023-09-25-389-find-the-difference",
         "date": "2023-09-25",
         "display_date": "25.09.2023",
@@ -46716,13 +46750,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 105,
+        "count": 106,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-15-3702-longest-subsequence-with-non-zero-bitwise-xor",
+      "date": "2026-08-15",
+      "display_date": "15.08.2026",
+      "year": "2026",
+      "problem_id": 3702,
+      "title": "Longest Subsequence With Non-Zero Bitwise XOR",
+      "display_title": "3702. Longest Subsequence With Non-Zero Bitwise XOR",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "bit-manipulation"
+      ],
+      "pattern_labels": [
+        "Bit Manipulation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/solutions/8462176/kotlin-rust-by-samoylenkodmitry-9lk3/",
+      "kotlin_url": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/solutions/8462176/kotlin-rust-by-samoylenkodmitry-9lk3/",
+      "rust_url": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/solutions/8462176/kotlin-rust-by-samoylenkodmitry-9lk3/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/15082026-3702-longest-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/5kbwIxvft1I",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1452",
+      "image_url": "/assets/leetcode_daily_images/15.08.2026.webp",
+      "takeaway": "Max subsequence to max non-zero xor",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 102,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 102,
+          "rust": 132
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-15-3702-longest-subsequence-with-non-zero-bitwise-xor/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-14-3090-maximum-length-substring-with-two-occurrences",
       "date": "2026-08-14",
