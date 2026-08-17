@@ -21,6 +21,65 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 17.08.2026
+[1563. Stone Game V](https://leetcode.com/problems/stone-game-v/solutions/8465806/kotlin-rust-by-samoylenkodmitry-x28t/) hard
+[substack](https://dmitriisamoilenko.substack.com/p/17082026-1563-stone-game-v?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/9AjICp_BKHA)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![17.08.2026.webp](/assets/leetcode_daily_images/17.08.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1454
+
+#### Problem TLDR
+
+Max Alice take when Bob takes the bigger half
+
+#### Intuition
+
+Classic DP: dfs + memo for subrange, inside iterate to choose the optimal split
+
+#### Approach
+
+* Kotlin: scan(0, Int::Plus) creates the prefix sum
+
+#### Complexity
+
+- Time complexity:
+$$O(n^3)$$
+
+- Space complexity:
+$$O(n^2)$$
+
+#### Code
+
+```kotlin
+    fun stoneGameV(s: IntArray): Int {
+        val dp = HashMap<Int,Int>(); val s = s.scan(0,Int::plus) 
+        fun d(l: Int, r: Int): Int = if (l>=r) 0 else
+        dp.getOrPut(l*500+r) { (l..<r).maxOf { j ->
+            val a = s[j+1]-s[l]; val b = s[r+1]-s[j+1]
+            max(if (a<=b) a+d(l,j) else 0, if (a>=b) b+d(j+1,r) else 0)
+        }}
+        return d(0, s.size-2)
+    }
+```
+```rust
+    pub fn stone_game_v(mut s: Vec<i32>) -> i32 {
+        let (n, mut d) = (s.len(), [[0; 500]; 500]);
+        s.insert(0, 0); for i in 1..=n { s[i] += s[i - 1]; }
+        for l in (0..n).rev() { for r in l + 1..n {
+            d[l][r] = (l..r).fold(0, |m, k| {
+                let (a, b) = (s[k + 1] - s[l], s[r + 1] - s[k + 1]);
+                m.max((a <= b) as i32 * (a + d[l][k]))
+                 .max((a >= b) as i32 * (b + d[k + 1][r]))
+            })
+        }} d[0][n - 1]
+    }
+```
+
 # 15.08.2026
 [3702. Longest Subsequence With Non-Zero Bitwise XOR](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/solutions/8462176/kotlin-rust-by-samoylenkodmitry-9lk3/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/15082026-3702-longest-subsequence?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
