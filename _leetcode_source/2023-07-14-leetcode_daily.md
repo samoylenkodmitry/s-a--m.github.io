@@ -21,6 +21,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 18.08.2026
+[3471. Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/8467738/kotlin-rust-by-samoylenkodmitry-3e1d/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/18082026-3471-find-the-largest-almost?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/IrnoTDSzGdY)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![18.08.2026.webp](/assets/leetcode_daily_images/18.08.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1455
+
+#### Problem TLDR
+
+Max number in exactly 1 k-window
+
+#### Intuition
+
+Brute-force lookup all numbers and all windows
+
+#### Approach
+
+* brainteaser O(n) solution possible
+
+#### Complexity
+
+- Time complexity:
+$$O(n^3)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun largestInteger(n: IntArray, k: Int) = 
+    n.filter { n.toList().windowed(k).count { w -> it in w } < 2 }.maxOrNull() ?: -1
+```
+```rust
+    pub fn largest_integer(n: Vec<i32>, k: i32) -> i32 {
+        *n.iter().filter(|x|n.windows(k as _).filter(|w|w.contains(x)).count()<2).max().unwrap_or(&-1)
+    }
+```
+
 # 17.08.2026
 [1563. Stone Game V](https://leetcode.com/problems/stone-game-v/solutions/8465806/kotlin-rust-by-samoylenkodmitry-x28t/) hard
 [substack](https://dmitriisamoilenko.substack.com/p/17082026-1563-stone-game-v?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
