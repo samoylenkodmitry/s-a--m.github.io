@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-17T07:08:27Z",
+  "generated_at": "2026-08-18T08:35:56Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1377,
-    "unique_problem_count": 1207,
+    "entry_count": 1378,
+    "unique_problem_count": 1208,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 902,
+    "rust_count": 903,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
     "unsolved_count": 96,
-    "one_liner_count": 106,
+    "one_liner_count": 107,
     "almost_gave_up_count": 68,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 221,
+      "count": 222,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1371,
+      "count": 1372,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 902,
+      "count": 903,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,19 +210,19 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 190,
+      "count": 191,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1207,
+    "unique_problem_count": 1208,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 106
+        "count": 107
       },
       {
         "slug": "tiny",
@@ -43794,6 +43794,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-08-18-3471-find-the-largest-almost-missing-integer",
+        "date": "2026-08-18",
+        "display_date": "18.08.2026",
+        "year": "2026",
+        "display_title": "3471. Find the Largest Almost Missing Integer",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-08-18-3471-find-the-largest-almost-missing-integer/",
+        "problem_url": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/8467738/kotlin-rust-by-samoylenkodmitry-3e1d/",
+        "image_url": "/assets/leetcode_daily_images/18.08.2026.webp",
+        "takeaway": "Max number in exactly 1 k-window",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 122,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2023-06-06-1502-can-make-arithmetic-progression-from-sequence",
         "date": "2023-06-06",
         "display_date": "06.06.2023",
@@ -46750,13 +46784,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 106,
+        "count": 107,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-18-3471-find-the-largest-almost-missing-integer",
+      "date": "2026-08-18",
+      "display_date": "18.08.2026",
+      "year": "2026",
+      "problem_id": 3471,
+      "title": "Find the Largest Almost Missing Integer",
+      "display_title": "3471. Find the Largest Almost Missing Integer",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/8467738/kotlin-rust-by-samoylenkodmitry-3e1d/",
+      "kotlin_url": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/8467738/kotlin-rust-by-samoylenkodmitry-3e1d/",
+      "rust_url": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/solutions/8467738/kotlin-rust-by-samoylenkodmitry-3e1d/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/18082026-3471-find-the-largest-almost?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/IrnoTDSzGdY",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1455",
+      "image_url": "/assets/leetcode_daily_images/18.08.2026.webp",
+      "takeaway": "Max number in exactly 1 k-window",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 122,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 122,
+          "rust": 149
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-18-3471-find-the-largest-almost-missing-integer/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-17-1563-stone-game-v",
       "date": "2026-08-17",
