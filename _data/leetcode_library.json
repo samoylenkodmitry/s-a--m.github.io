@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-18T08:35:56Z",
+  "generated_at": "2026-08-19T07:25:55Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1378,
-    "unique_problem_count": 1208,
+    "entry_count": 1379,
+    "unique_problem_count": 1209,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 903,
+    "rust_count": 904,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 222,
+      "count": 223,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1372,
+      "count": 1373,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 903,
+      "count": 904,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 191,
+      "count": 192,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1208,
+    "unique_problem_count": 1209,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 421
+        "count": 422
       },
       {
         "slug": "compact",
@@ -46791,6 +46791,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-19-1386-cinema-seat-allocation",
+      "date": "2026-08-19",
+      "display_date": "19.08.2026",
+      "year": "2026",
+      "problem_id": 1386,
+      "title": "Cinema Seat Allocation",
+      "display_title": "1386. Cinema Seat Allocation",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/cinema-seat-allocation/solutions/8469690/kotlin-rust-by-samoylenkodmitry-5vgt/",
+      "kotlin_url": "https://leetcode.com/problems/cinema-seat-allocation/solutions/8469690/kotlin-rust-by-samoylenkodmitry-5vgt/",
+      "rust_url": "https://leetcode.com/problems/cinema-seat-allocation/solutions/8469690/kotlin-rust-by-samoylenkodmitry-5vgt/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/19082026-1386-cinema-seat-allocation?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/OQO27pDuFoc",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1456",
+      "image_url": "/assets/leetcode_daily_images/19.08.2026.webp",
+      "takeaway": "Max non-excluded 4-groups in n rows",
+      "metrics": {
+        "solution_lines": 4,
+        "solution_chars": 186,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 4,
+          "rust": 6
+        },
+        "language_char_counts": {
+          "kotlin": 186,
+          "rust": 276
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-08-19-1386-cinema-seat-allocation/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-18-3471-find-the-largest-almost-missing-integer",
       "date": "2026-08-18",
