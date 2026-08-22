@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-21T09:35:18Z",
+  "generated_at": "2026-08-22T10:31:52Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1381,
-    "unique_problem_count": 1211,
+    "entry_count": 1382,
+    "unique_problem_count": 1212,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 906,
+    "rust_count": 907,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
     "unsolved_count": 97,
-    "one_liner_count": 107,
+    "one_liner_count": 108,
     "almost_gave_up_count": 68,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 225,
+      "count": 226,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1375,
+      "count": 1376,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 906,
+      "count": 907,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -96,7 +96,7 @@
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 105,
+      "count": 106,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1211,
+    "unique_problem_count": 1212,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 107
+        "count": 108
       },
       {
         "slug": "tiny",
@@ -41845,6 +41845,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-08-22-3622-check-divisibility-by-digit-sum-and-product",
+        "date": "2026-08-22",
+        "display_date": "22.08.2026",
+        "year": "2026",
+        "display_title": "3622. Check Divisibility by Digit Sum and Product",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-08-22-3622-check-divisibility-by-digit-sum-and-product/",
+        "problem_url": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/8475896/kotlin-rust-by-samoylenkodmitry-gd8s/",
+        "image_url": "/assets/leetcode_daily_images/22.08.2026.webp",
+        "takeaway": "Is divisible by sum + product of digits",
+        "pattern_slugs": [
+          "simulation"
+        ],
+        "pattern_labels": [
+          "Simulation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 82,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2023-12-16-242-valid-anagram",
         "date": "2023-12-16",
         "display_date": "16.12.2023",
@@ -46819,13 +46853,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 107,
+        "count": 108,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-22-3622-check-divisibility-by-digit-sum-and-product",
+      "date": "2026-08-22",
+      "display_date": "22.08.2026",
+      "year": "2026",
+      "problem_id": 3622,
+      "title": "Check Divisibility by Digit Sum and Product",
+      "display_title": "3622. Check Divisibility by Digit Sum and Product",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "simulation"
+      ],
+      "pattern_labels": [
+        "Simulation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/8475896/kotlin-rust-by-samoylenkodmitry-gd8s/",
+      "kotlin_url": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/8475896/kotlin-rust-by-samoylenkodmitry-gd8s/",
+      "rust_url": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/8475896/kotlin-rust-by-samoylenkodmitry-gd8s/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/22082026-3622-check-divisibility?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/RQlXd3TXWpA",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1459",
+      "image_url": "/assets/leetcode_daily_images/22.08.2026.webp",
+      "takeaway": "Is divisible by sum + product of digits",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 82,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 82,
+          "rust": 151
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-22-3622-check-divisibility-by-digit-sum-and-product/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-21-3116-kth-smallest-amount-with-single-denomination-combination",
       "date": "2026-08-21",
