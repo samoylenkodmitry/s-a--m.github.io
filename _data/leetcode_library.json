@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-22T10:31:52Z",
+  "generated_at": "2026-08-23T11:05:57Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1382,
-    "unique_problem_count": 1212,
+    "entry_count": 1383,
+    "unique_problem_count": 1213,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 907,
+    "rust_count": 908,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
-    "unsolved_count": 97,
+    "unsolved_count": 98,
     "one_liner_count": 108,
-    "almost_gave_up_count": 68,
+    "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
   },
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 226,
+      "count": 227,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1376,
+      "count": 1377,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 907,
+      "count": 908,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 193,
+      "count": 194,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1212,
+    "unique_problem_count": 1213,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 470
+        "count": 471
       },
       {
         "slug": "standard",
@@ -36803,6 +36803,42 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-08-23-1927-sum-game",
+        "date": "2026-08-23",
+        "display_date": "23.08.2026",
+        "year": "2026",
+        "display_title": "1927. Sum Game",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-08-23-1927-sum-game/",
+        "problem_url": "https://leetcode.com/problems/sum-game/solutions/8478066/kotlin-by-samoylenkodmitry-bq3h/",
+        "image_url": "/assets/leetcode_daily_images/23.08.2026.webp",
+        "takeaway": "Alice fights Bob who tryies to equalize halfs",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 8,
+        "solution_chars": 221,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "thought_lines": 2,
+        "thought_chars": 55,
+        "max_minute_marker": 30,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-08-21-3116-kth-smallest-amount-with-single-denomination-combination",
         "date": "2026-08-21",
         "display_date": "21.08.2026",
@@ -46389,6 +46425,42 @@
         "almost_gave_up": true
       },
       {
+        "slug": "2026-08-23-1927-sum-game",
+        "date": "2026-08-23",
+        "display_date": "23.08.2026",
+        "year": "2026",
+        "display_title": "1927. Sum Game",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-08-23-1927-sum-game/",
+        "problem_url": "https://leetcode.com/problems/sum-game/solutions/8478066/kotlin-by-samoylenkodmitry-bq3h/",
+        "image_url": "/assets/leetcode_daily_images/23.08.2026.webp",
+        "takeaway": "Alice fights Bob who tryies to equalize halfs",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 8,
+        "solution_chars": 221,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "thought_lines": 2,
+        "thought_chars": 55,
+        "max_minute_marker": 30,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2024-10-31-2463-minimum-total-distance-traveled",
         "date": "2024-10-31",
         "display_date": "31.10.2024",
@@ -46833,7 +46905,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 97,
+        "count": 98,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -46843,7 +46915,7 @@
         "label": "Pressure Log",
         "title": "Almost Gave Up",
         "url": "/leetcode/collection/almost-gave-up/",
-        "count": 68,
+        "count": 69,
         "summary": "Entries with minute markers near the stopping point, hints, wrong answers, or explicit timeboxing.",
         "metric_label": "timeboxed struggles"
       },
@@ -46860,6 +46932,77 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-23-1927-sum-game",
+      "date": "2026-08-23",
+      "display_date": "23.08.2026",
+      "year": "2026",
+      "problem_id": 1927,
+      "title": "Sum Game",
+      "display_title": "1927. Sum Game",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/sum-game/solutions/8478066/kotlin-by-samoylenkodmitry-bq3h/",
+      "kotlin_url": "https://leetcode.com/problems/sum-game/solutions/8478066/kotlin-by-samoylenkodmitry-bq3h/",
+      "rust_url": "https://leetcode.com/problems/sum-game/solutions/8478066/kotlin-by-samoylenkodmitry-bq3h/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/23082026-1927-sum-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/X9wUWLPmv9M",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1460",
+      "image_url": "/assets/leetcode_daily_images/23.08.2026.webp",
+      "takeaway": "Alice fights Bob who tryies to equalize halfs",
+      "metrics": {
+        "solution_lines": 8,
+        "solution_chars": 221,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 8
+        },
+        "language_char_counts": {
+          "kotlin": 221
+        },
+        "thought_lines": 2,
+        "thought_chars": 55,
+        "minute_markers": [
+          20,
+          30
+        ],
+        "max_minute_marker": 30,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": true,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "unsolved",
+        "almost-gave-up"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        },
+        {
+          "slug": "almost-gave-up",
+          "label": "Almost Gave Up",
+          "url": "/leetcode/collection/almost-gave-up/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-23-1927-sum-game/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-22-3622-check-divisibility-by-digit-sum-and-product",
       "date": "2026-08-22",
