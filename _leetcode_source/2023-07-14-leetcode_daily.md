@@ -21,6 +21,57 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 23.08.2026
+[1927. Sum Game](https://leetcode.com/problems/sum-game/solutions/8478066/kotlin-by-samoylenkodmitry-bq3h/) medium
+[substack](https://dmitriisamoilenko.substack.com/p/23082026-1927-sum-game?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/X9wUWLPmv9M)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![23.08.2026.webp](/assets/leetcode_daily_images/23.08.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1460
+
+#### Problem TLDR
+
+Alice fights Bob who tryies to equalize halfs
+
+#### Intuition
+
+```j
+    // 20 minute use hint: mod 9
+    // 30 minute: didn't solve
+```
+Alice always wins except when Bob decides to always act the opposite way of Alice x vs 9-x. In that case the predefined difference of sums decides the outcome. The difference of ? is the playground and each Alice turn x makes Bob give 9-x, and together the sum increases by x+9-x=9. That means each 2 turns gives another 9. Or in other words 2*d + q*9 == 0 is where the Bob wins. Q is even, otherwise Alice has the last turn and breaks what Bob has been trying to build for all his life.
+
+#### Approach
+
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun sumGame(n: String) = run {
+        var d = 0; var q = 0; val h = n.length / 2
+        for (i in 0..<h) {
+            if (n[i] == '?') q++ else d += n[i] - '0'
+            if (n[i + h] == '?') q-- else d -= n[i + h] - '0'
+        }
+        q % 2 != 0 || d + q * 9 / 2 != 0
+    }
+```
+```rust
+
+```
+
 # 22.08.2026
 [3622. Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/solutions/8475896/kotlin-rust-by-samoylenkodmitry-gd8s/) easy
 [substack](https://dmitriisamoilenko.substack.com/p/22082026-3622-check-divisibility?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
