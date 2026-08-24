@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-23T11:05:57Z",
+  "generated_at": "2026-08-24T08:10:51Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1383,
-    "unique_problem_count": 1213,
+    "entry_count": 1384,
+    "unique_problem_count": 1214,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 908,
+    "rust_count": 909,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
-    "unsolved_count": 98,
+    "unsolved_count": 99,
     "one_liner_count": 108,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 227,
+      "count": 228,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1377,
+      "count": 1378,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 908,
+      "count": 909,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 109,
+      "count": 110,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1213,
+    "unique_problem_count": 1214,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 423
+        "count": 424
       },
       {
         "slug": "compact",
@@ -36803,6 +36803,41 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-08-24-1872-stone-game-viii",
+        "date": "2026-08-24",
+        "display_date": "24.08.2026",
+        "year": "2026",
+        "display_title": "1872. Stone Game VIII",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-08-24-1872-stone-game-viii/",
+        "problem_url": "https://leetcode.com/problems/stone-game-viii/solutions/8479603/kotlin-rust-by-samoylenkodmitry-0i0m/",
+        "image_url": "/assets/leetcode_daily_images/24.08.2026.webp",
+        "takeaway": "Alice maximize and Bob minimize the (A-B)",
+        "pattern_slugs": [
+          "dynamic-programming"
+        ],
+        "pattern_labels": [
+          "Dynamic Programming"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "tiny",
+          "unsolved"
+        ],
+        "solution_lines": 3,
+        "solution_chars": 127,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": true,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-08-23-1927-sum-game",
         "date": "2026-08-23",
         "display_date": "23.08.2026",
@@ -46905,7 +46940,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 98,
+        "count": 99,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -46932,6 +46967,70 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-24-1872-stone-game-viii",
+      "date": "2026-08-24",
+      "display_date": "24.08.2026",
+      "year": "2026",
+      "problem_id": 1872,
+      "title": "Stone Game VIII",
+      "display_title": "1872. Stone Game VIII",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "dynamic-programming"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/stone-game-viii/solutions/8479603/kotlin-rust-by-samoylenkodmitry-0i0m/",
+      "kotlin_url": "https://leetcode.com/problems/stone-game-viii/solutions/8479603/kotlin-rust-by-samoylenkodmitry-0i0m/",
+      "rust_url": "https://leetcode.com/problems/stone-game-viii/solutions/8479603/kotlin-rust-by-samoylenkodmitry-0i0m/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/24082026-1872-stone-game-viii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/cyIXUg-BSt4",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1461",
+      "image_url": "/assets/leetcode_daily_images/24.08.2026.webp",
+      "takeaway": "Alice maximize and Bob minimize the (A-B)",
+      "metrics": {
+        "solution_lines": 3,
+        "solution_chars": 127,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 3,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 127,
+          "rust": 174
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "unsolved"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-08-24-1872-stone-game-viii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-23-1927-sum-game",
       "date": "2026-08-23",
