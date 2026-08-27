@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-26T07:34:40Z",
+  "generated_at": "2026-08-27T08:28:52Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1386,
-    "unique_problem_count": 1216,
+    "entry_count": 1387,
+    "unique_problem_count": 1217,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 911,
+    "rust_count": 912,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 230,
+      "count": 231,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1380,
+      "count": 1381,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 911,
+      "count": 912,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 194,
+      "count": 195,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1216,
+    "unique_problem_count": 1217,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 471
+        "count": 472
       },
       {
         "slug": "standard",
@@ -47001,6 +47001,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-27-3720-lexicographically-smallest-permutation-greater-than-target",
+      "date": "2026-08-27",
+      "display_date": "27.08.2026",
+      "year": "2026",
+      "problem_id": 3720,
+      "title": "Lexicographically Smallest Permutation Greater Than Target",
+      "display_title": "3720. Lexicographically Smallest Permutation Greater Than Target",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/solutions/8485663/kotlin-rust-by-samoylenkodmitry-tyq1/",
+      "kotlin_url": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/solutions/8485663/kotlin-rust-by-samoylenkodmitry-tyq1/",
+      "rust_url": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/solutions/8485663/kotlin-rust-by-samoylenkodmitry-tyq1/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/27082026-3720-lexicographically-smallest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/0kfL56tMvjc",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1464",
+      "image_url": "/assets/leetcode_daily_images/27.08.2026.webp",
+      "takeaway": "Smallest permutation bigger than target",
+      "metrics": {
+        "solution_lines": 9,
+        "solution_chars": 440,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 11,
+          "rust": 9
+        },
+        "language_char_counts": {
+          "kotlin": 336,
+          "rust": 440
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-08-27-3720-lexicographically-smallest-permutation-greater-than-target/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-26-2904-shortest-and-lexicographically-smallest-beautiful-string",
       "date": "2026-08-26",
