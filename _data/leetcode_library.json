@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-27T08:28:52Z",
+  "generated_at": "2026-08-28T09:40:59Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1387,
-    "unique_problem_count": 1217,
+    "entry_count": 1388,
+    "unique_problem_count": 1218,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 912,
+    "rust_count": 913,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 231,
+      "count": 232,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1381,
+      "count": 1382,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 912,
+      "count": 913,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 218,
+      "count": 219,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1217,
+    "unique_problem_count": 1218,
     "repeat_problem_count": 164,
     "repeated_entry_count": 334,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 472
+        "count": 473
       },
       {
         "slug": "standard",
@@ -47001,6 +47001,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-28-3734-lexicographically-smallest-palindromic-permutation-greater-than-target",
+      "date": "2026-08-28",
+      "display_date": "28.08.2026",
+      "year": "2026",
+      "problem_id": 3734,
+      "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+      "display_title": "3734. Lexicographically Smallest Palindromic Permutation Greater Than Target",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "string"
+      ],
+      "pattern_labels": [
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/solutions/8487352/kotlin-rust-by-samoylenkodmitry-5ksc/",
+      "kotlin_url": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/solutions/8487352/kotlin-rust-by-samoylenkodmitry-5ksc/",
+      "rust_url": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/solutions/8487352/kotlin-rust-by-samoylenkodmitry-5ksc/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/28082026-3734-lexicographically-smallest?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/Tx6xmCM36PI",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1465",
+      "image_url": "/assets/leetcode_daily_images/28.08.2026.webp",
+      "takeaway": "Smallest permutation palindrome bigger than target",
+      "metrics": {
+        "solution_lines": 12,
+        "solution_chars": 581,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 12,
+          "rust": 17
+        },
+        "language_char_counts": {
+          "kotlin": 581,
+          "rust": 861
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-08-28-3734-lexicographically-smallest-palindromic-permutation-greater-than-target/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-27-3720-lexicographically-smallest-permutation-greater-than-target",
       "date": "2026-08-27",
