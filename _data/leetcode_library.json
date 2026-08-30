@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-29T09:23:39Z",
+  "generated_at": "2026-08-30T05:13:16Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1389,
-    "unique_problem_count": 1218,
+    "entry_count": 1390,
+    "unique_problem_count": 1219,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 914,
+    "rust_count": 915,
     "repeat_problem_count": 165,
     "repeated_entry_count": 336,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 233,
+      "count": 234,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1383,
+      "count": 1384,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 914,
+      "count": 915,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 403,
+      "count": 404,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1218,
+    "unique_problem_count": 1219,
     "repeat_problem_count": 165,
     "repeated_entry_count": 336,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 425
+        "count": 426
       },
       {
         "slug": "compact",
@@ -47206,6 +47206,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-08-30-2091-removing-minimum-and-maximum-from-array",
+      "date": "2026-08-30",
+      "display_date": "30.08.2026",
+      "year": "2026",
+      "problem_id": 2091,
+      "title": "Removing Minimum and Maximum From Array",
+      "display_title": "2091. Removing Minimum and Maximum From Array",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "array"
+      ],
+      "pattern_labels": [
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/solutions/8490414/kotlin-rust-by-samoylenkodmitry-guj3/",
+      "kotlin_url": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/solutions/8490414/kotlin-rust-by-samoylenkodmitry-guj3/",
+      "rust_url": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/solutions/8490414/kotlin-rust-by-samoylenkodmitry-guj3/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/30082026-2091-removing-minimum-and?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/TGWDMzAp9K4",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1467",
+      "image_url": "/assets/leetcode_daily_images/30.08.2026.webp",
+      "takeaway": "Remove min and max by cutting the tails",
+      "metrics": {
+        "solution_lines": 4,
+        "solution_chars": 147,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 4,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 147,
+          "rust": 208
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-08-30-2091-removing-minimum-and-maximum-from-array/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-08-29-2948-make-lexicographically-smallest-array-by-swapping-elements",
       "date": "2026-08-29",
