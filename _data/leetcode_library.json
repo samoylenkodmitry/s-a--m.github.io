@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-03T06:56:23Z",
+  "generated_at": "2026-09-04T06:29:05Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1394,
-    "unique_problem_count": 1222,
+    "entry_count": 1395,
+    "unique_problem_count": 1223,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 919,
+    "rust_count": 920,
     "repeat_problem_count": 166,
     "repeated_entry_count": 338,
     "deep_thinking_count": 47,
     "unsolved_count": 99,
-    "one_liner_count": 111,
+    "one_liner_count": 112,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 238,
+      "count": 239,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1388,
+      "count": 1389,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 919,
+      "count": 920,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -96,7 +96,7 @@
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 107,
+      "count": 108,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1222,
+    "unique_problem_count": 1223,
     "repeat_problem_count": 166,
     "repeated_entry_count": 338,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 111
+        "count": 112
       },
       {
         "slug": "tiny",
@@ -43605,6 +43605,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-09-04-3903-smallest-stable-index-i",
+        "date": "2026-09-04",
+        "display_date": "04.09.2026",
+        "year": "2026",
+        "display_title": "3903. Smallest Stable Index I",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-09-04-3903-smallest-stable-index-i/",
+        "problem_url": "https://leetcode.com/problems/smallest-stable-index-i/solutions/8500950/kotlin-rust-by-samoylenkodmitry-84vk/",
+        "image_url": "/assets/leetcode_daily_images/04.09.2026.webp",
+        "takeaway": "Index of max suffix - min prefix not less than k",
+        "pattern_slugs": [
+          "simulation"
+        ],
+        "pattern_labels": [
+          "Simulation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 102,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2023-09-25-389-find-the-difference",
         "date": "2023-09-25",
         "display_date": "25.09.2023",
@@ -47464,13 +47498,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 111,
+        "count": 112,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-04-3903-smallest-stable-index-i",
+      "date": "2026-09-04",
+      "display_date": "04.09.2026",
+      "year": "2026",
+      "problem_id": 3903,
+      "title": "Smallest Stable Index I",
+      "display_title": "3903. Smallest Stable Index I",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "simulation"
+      ],
+      "pattern_labels": [
+        "Simulation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/smallest-stable-index-i/solutions/8500950/kotlin-rust-by-samoylenkodmitry-84vk/",
+      "kotlin_url": "https://leetcode.com/problems/smallest-stable-index-i/solutions/8500950/kotlin-rust-by-samoylenkodmitry-84vk/",
+      "rust_url": "https://leetcode.com/problems/smallest-stable-index-i/solutions/8500950/kotlin-rust-by-samoylenkodmitry-84vk/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/04092026-3903-smallest-stable-index?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/vebJdU38ntM",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1472",
+      "image_url": "/assets/leetcode_daily_images/04.09.2026.webp",
+      "takeaway": "Index of max suffix - min prefix not less than k",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 102,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 102,
+          "rust": 172
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-09-04-3903-smallest-stable-index-i/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-03-3876-construct-uniform-parity-array-ii",
       "date": "2026-09-03",
