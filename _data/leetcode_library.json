@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-04T06:29:05Z",
+  "generated_at": "2026-09-05T08:46:21Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1395,
-    "unique_problem_count": 1223,
+    "entry_count": 1396,
+    "unique_problem_count": 1224,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 920,
+    "rust_count": 921,
     "repeat_problem_count": 166,
     "repeated_entry_count": 338,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 239,
+      "count": 240,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1389,
+      "count": 1390,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 920,
+      "count": 921,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 196,
+      "count": 197,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1223,
+    "unique_problem_count": 1224,
     "repeat_problem_count": 166,
     "repeated_entry_count": 338,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 426
+        "count": 427
       },
       {
         "slug": "compact",
@@ -47505,6 +47505,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-05-3904-smallest-stable-index-ii",
+      "date": "2026-09-05",
+      "display_date": "05.09.2026",
+      "year": "2026",
+      "problem_id": 3904,
+      "title": "Smallest Stable Index II",
+      "display_title": "3904. Smallest Stable Index II",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/smallest-stable-index-ii/solutions/8503249/kotlin-rust-by-samoylenkodmitry-obas/",
+      "kotlin_url": "https://leetcode.com/problems/smallest-stable-index-ii/solutions/8503249/kotlin-rust-by-samoylenkodmitry-obas/",
+      "rust_url": "https://leetcode.com/problems/smallest-stable-index-ii/solutions/8503249/kotlin-rust-by-samoylenkodmitry-obas/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/05092026-3904-smallest-stable-index?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/LUnxr_d12FI",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1473",
+      "image_url": "/assets/leetcode_daily_images/05.09.2026.webp",
+      "takeaway": "Index of max suffix - min prefix not less than k",
+      "metrics": {
+        "solution_lines": 3,
+        "solution_chars": 159,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 3,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 159,
+          "rust": 251
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-05-3904-smallest-stable-index-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-04-3903-smallest-stable-index-i",
       "date": "2026-09-04",
