@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-06T09:09:42Z",
+  "generated_at": "2026-09-07T07:05:18Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1397,
-    "unique_problem_count": 1225,
+    "entry_count": 1398,
+    "unique_problem_count": 1226,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 922,
+    "rust_count": 923,
     "repeat_problem_count": 166,
     "repeated_entry_count": 338,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 241,
+      "count": 242,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1391,
+      "count": 1392,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 922,
+      "count": 923,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 230,
+      "count": 231,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 111,
+      "count": 112,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1225,
+    "unique_problem_count": 1226,
     "repeat_problem_count": 166,
     "repeated_entry_count": 338,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 428
+        "count": 429
       },
       {
         "slug": "compact",
@@ -47505,6 +47505,65 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-07-940-distinct-subsequences-ii",
+      "date": "2026-09-07",
+      "display_date": "07.09.2026",
+      "year": "2026",
+      "problem_id": 940,
+      "title": "Distinct Subsequences II",
+      "display_title": "940. Distinct Subsequences II",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "graph"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Graph"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/distinct-subsequences-ii/solutions/8506923/kotlin-rust-by-samoylenkodmitry-048z/",
+      "kotlin_url": "https://leetcode.com/problems/distinct-subsequences-ii/solutions/8506923/kotlin-rust-by-samoylenkodmitry-048z/",
+      "rust_url": "https://leetcode.com/problems/distinct-subsequences-ii/solutions/8506923/kotlin-rust-by-samoylenkodmitry-048z/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/07092026-940-distinct-subsequences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/3EZRs_0zUVM",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1475",
+      "image_url": "/assets/leetcode_daily_images/07.09.2026.webp",
+      "takeaway": "Count uniq substrings",
+      "metrics": {
+        "solution_lines": 3,
+        "solution_chars": 136,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 3,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 136,
+          "rust": 191
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-07-940-distinct-subsequences-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-06-115-distinct-subsequences",
       "date": "2026-09-06",
