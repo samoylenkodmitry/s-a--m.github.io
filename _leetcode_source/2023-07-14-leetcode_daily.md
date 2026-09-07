@@ -21,6 +21,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 07.09.2026
+[940. Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/solutions/8506923/kotlin-rust-by-samoylenkodmitry-048z/) hard
+[substack](https://dmitriisamoilenko.substack.com/p/07092026-940-distinct-subsequences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/3EZRs_0zUVM)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![07.09.2026.webp](/assets/leetcode_daily_images/07.09.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1475
+
+#### Problem TLDR
+
+Count uniq substrings
+
+#### Intuition
+
+DFS+memo. Take or skip. Do not take repeating consequent letters.
+
+#### Approach
+
+* top-down then rewrite to bottom-up
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun distinctSubseqII(s: String) = LongArray(26).apply {
+        for (c in s) this[c - 'a'] = (sum() + 1) % 1_000_000_007
+    }.sum() % 1_000_000_007
+```
+```rust
+    pub fn distinct_subseq_ii(s: String) -> i32 {
+        let mut d = [0; 128];
+        for b in s.bytes() { d[b as usize] = (d.iter().sum::<u64>() + 1) % 1000000007 }
+        (d.iter().sum::<u64>() % 1000000007) as _
+    }
+```
+
 # 06.09.2026
 [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/solutions/8505393/kotlin-rust-by-samoylenkodmitry-s8hk/) hard
 [substack](https://dmitriisamoilenko.substack.com/p/06092026-115-distinct-subsequences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
