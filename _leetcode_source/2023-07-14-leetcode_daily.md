@@ -21,6 +21,48 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 08.09.2026
+[3870. Count Commas in Range](https://leetcode.com/problems/count-commas-in-range/solutions/8508942/kotlin-rust-by-samoylenkodmitry-jgsq/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/08092026-3870-count-commas-in-range?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/10T9nQTJ4oY)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![08.09.2026.webp](/assets/leetcode_daily_images/08.09.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1476
+
+#### Problem TLDR
+
+Count commas in numbers range
+
+#### Intuition
+
+Brute-force is accepted, each number to string and length/3. 
+Clever way is to spot at most one comma under 10^5 range.
+
+#### Approach
+
+* only the first 999 doesnt have it
+
+#### Complexity
+
+- Time complexity:
+$$O(1)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun countCommas(n: Int)=max(0,n-999)
+```
+```rust
+    pub fn count_commas(n: i32) -> i32 { 0.max(n-999) }
+```
+
 # 07.09.2026
 [940. Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/solutions/8506923/kotlin-rust-by-samoylenkodmitry-048z/) hard
 [substack](https://dmitriisamoilenko.substack.com/p/07092026-940-distinct-subsequences?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
