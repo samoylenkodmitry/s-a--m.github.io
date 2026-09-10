@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-09T07:16:08Z",
+  "generated_at": "2026-09-10T07:41:18Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1400,
+    "entry_count": 1401,
     "unique_problem_count": 1228,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 925,
-    "repeat_problem_count": 166,
-    "repeated_entry_count": 338,
+    "rust_count": 926,
+    "repeat_problem_count": 167,
+    "repeated_entry_count": 340,
     "deep_thinking_count": 47,
     "unsolved_count": 99,
     "one_liner_count": 114,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 244,
+      "count": 245,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1394,
+      "count": 1395,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 925,
+      "count": 926,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,14 +210,14 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 198,
+      "count": 199,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
     "unique_problem_count": 1228,
-    "repeat_problem_count": 166,
-    "repeated_entry_count": 338,
+    "repeat_problem_count": 167,
+    "repeated_entry_count": 340,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 429
+        "count": 430
       },
       {
         "slug": "compact",
@@ -1711,6 +1711,201 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "2265",
+        "problem_id": 2265,
+        "title": "Count Nodes Equal to Average of Subtree",
+        "display_title": "2265. Count Nodes Equal to Average of Subtree",
+        "evolution_slug": "2265-count-nodes-equal-to-average-of-subtree",
+        "evolution_url": "/leetcode/evolution/2265-count-nodes-equal-to-average-of-subtree/",
+        "count": 2,
+        "first_date": "02.11.2023",
+        "last_date": "10.09.2026",
+        "first_sort_date": "2023-11-02",
+        "last_sort_date": "2026-09-10",
+        "span_days": 1043,
+        "latest_page_url": "/leetcode/problem/2026-09-10-2265-count-nodes-equal-to-average-of-subtree/",
+        "solution_line_delta": -7,
+        "solution_char_delta": -88,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-09-10-2265-count-nodes-equal-to-average-of-subtree",
+          "date": "2026-09-10",
+          "display_date": "10.09.2026",
+          "year": "2026",
+          "display_title": "2265. Count Nodes Equal to Average of Subtree",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-09-10-2265-count-nodes-equal-to-average-of-subtree/",
+          "problem_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/solutions/8513376/kotlin-rust-by-samoylenkodmitry-qqsu/",
+          "image_url": "/assets/leetcode_daily_images/10.09.2026.webp",
+          "takeaway": "Values equal subtree average",
+          "pattern_slugs": [
+            "implementation"
+          ],
+          "pattern_labels": [
+            "Implementation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 6,
+          "solution_chars": 249,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 46,
+          "thought_line_percent": 0,
+          "days_since_previous": 1043,
+          "solution_line_delta_from_previous": -7,
+          "solution_char_delta_from_previous": -88,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-11-02-2265-count-nodes-equal-to-average-of-subtree",
+          "date": "2023-11-02",
+          "display_date": "02.11.2023",
+          "year": "2023",
+          "display_title": "2265. Count Nodes Equal to Average of Subtree",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2023-11-02-2265-count-nodes-equal-to-average-of-subtree/",
+          "problem_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/",
+          "image_url": "/assets/leetcode_daily_images/34cf7f49.webp",
+          "takeaway": "Number of nodes in a tree where val == sum / count of a subtree",
+          "pattern_slugs": [
+            "tree"
+          ],
+          "pattern_labels": [
+            "Tree"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "standard",
+            "repeat"
+          ],
+          "solution_lines": 13,
+          "solution_chars": 337,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "standard",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 13,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-11-02-2265-count-nodes-equal-to-average-of-subtree",
+            "date": "2023-11-02",
+            "display_date": "02.11.2023",
+            "year": "2023",
+            "display_title": "2265. Count Nodes Equal to Average of Subtree",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2023-11-02-2265-count-nodes-equal-to-average-of-subtree/",
+            "problem_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/",
+            "image_url": "/assets/leetcode_daily_images/34cf7f49.webp",
+            "takeaway": "Number of nodes in a tree where val == sum / count of a subtree",
+            "pattern_slugs": [
+              "tree"
+            ],
+            "pattern_labels": [
+              "Tree"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "standard",
+              "repeat"
+            ],
+            "solution_lines": 13,
+            "solution_chars": 337,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "standard",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-09-10-2265-count-nodes-equal-to-average-of-subtree",
+            "date": "2026-09-10",
+            "display_date": "10.09.2026",
+            "year": "2026",
+            "display_title": "2265. Count Nodes Equal to Average of Subtree",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-09-10-2265-count-nodes-equal-to-average-of-subtree/",
+            "problem_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/solutions/8513376/kotlin-rust-by-samoylenkodmitry-qqsu/",
+            "image_url": "/assets/leetcode_daily_images/10.09.2026.webp",
+            "takeaway": "Values equal subtree average",
+            "pattern_slugs": [
+              "implementation"
+            ],
+            "pattern_labels": [
+              "Implementation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 6,
+            "solution_chars": 249,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 46,
+            "thought_line_percent": 0,
+            "days_since_previous": 1043,
+            "solution_line_delta_from_previous": -7,
+            "solution_char_delta_from_previous": -88,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -47516,7 +47711,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 166,
+        "count": 167,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -47573,6 +47768,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-10-2265-count-nodes-equal-to-average-of-subtree",
+      "date": "2026-09-10",
+      "display_date": "10.09.2026",
+      "year": "2026",
+      "problem_id": 2265,
+      "title": "Count Nodes Equal to Average of Subtree",
+      "display_title": "2265. Count Nodes Equal to Average of Subtree",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/solutions/8513376/kotlin-rust-by-samoylenkodmitry-qqsu/",
+      "kotlin_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/solutions/8513376/kotlin-rust-by-samoylenkodmitry-qqsu/",
+      "rust_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/solutions/8513376/kotlin-rust-by-samoylenkodmitry-qqsu/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/10092026-2265-count-nodes-equal-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/NRnDG0VWBEo",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1478",
+      "image_url": "/assets/leetcode_daily_images/10.09.2026.webp",
+      "takeaway": "Values equal subtree average",
+      "metrics": {
+        "solution_lines": 6,
+        "solution_chars": 249,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 6,
+          "rust": 7
+        },
+        "language_char_counts": {
+          "kotlin": 249,
+          "rust": 396
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/2265-count-nodes-equal-to-average-of-subtree/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-09-10-2265-count-nodes-equal-to-average-of-subtree/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-09-3871-count-commas-in-range-ii",
       "date": "2026-09-09",
@@ -190117,9 +190378,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "standard"
+        "standard",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/2265-count-nodes-equal-to-average-of-subtree/"
+        }
+      ],
       "page_url": "/leetcode/problem/2023-11-02-2265-count-nodes-equal-to-average-of-subtree/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
