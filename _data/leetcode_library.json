@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-11T09:22:22Z",
+  "generated_at": "2026-09-12T09:38:39Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1402,
-    "unique_problem_count": 1229,
+    "entry_count": 1403,
+    "unique_problem_count": 1230,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 927,
+    "rust_count": 928,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 246,
+      "count": 247,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1396,
+      "count": 1397,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 927,
+      "count": 928,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 231,
+      "count": 232,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -198,7 +198,7 @@
     {
       "slug": "intervals",
       "label": "Intervals",
-      "count": 17,
+      "count": 18,
       "url": "/leetcode/pattern/intervals/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1229,
+    "unique_problem_count": 1230,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 475
+        "count": 476
       },
       {
         "slug": "standard",
@@ -47802,6 +47802,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-12-3414-maximum-score-of-non-overlapping-intervals",
+      "date": "2026-09-12",
+      "display_date": "12.09.2026",
+      "year": "2026",
+      "problem_id": 3414,
+      "title": "Maximum Score of Non-overlapping Intervals",
+      "display_title": "3414. Maximum Score of Non-overlapping Intervals",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "graph",
+        "intervals"
+      ],
+      "pattern_labels": [
+        "Graph",
+        "Intervals"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/solutions/8517154/kotlin-by-samoylenkodmitry-1oeg/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/solutions/8517154/kotlin-by-samoylenkodmitry-1oeg/",
+      "rust_url": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/solutions/8517154/kotlin-by-samoylenkodmitry-1oeg/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/12092026-3414-maximum-score-of-non?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/ULmIxJF3JE0",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1480",
+      "image_url": "/assets/leetcode_daily_images/12.09.2026.webp",
+      "takeaway": "Max lexi-small pick of at most 4 intervals",
+      "metrics": {
+        "solution_lines": 11,
+        "solution_chars": 637,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 11
+        },
+        "language_char_counts": {
+          "kotlin": 637
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-12-3414-maximum-score-of-non-overlapping-intervals/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-11-3483-unique-3-digit-even-numbers",
       "date": "2026-09-11",
