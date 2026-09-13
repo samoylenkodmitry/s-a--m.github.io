@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-12T09:38:39Z",
+  "generated_at": "2026-09-13T11:32:51Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1403,
-    "unique_problem_count": 1230,
+    "entry_count": 1404,
+    "unique_problem_count": 1231,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 928,
+    "rust_count": 929,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 247,
+      "count": 248,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1397,
+      "count": 1398,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 928,
+      "count": 929,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 407,
+      "count": 408,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1230,
+    "unique_problem_count": 1231,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 430
+        "count": 431
       },
       {
         "slug": "compact",
@@ -47802,6 +47802,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-13-835-image-overlap",
+      "date": "2026-09-13",
+      "display_date": "13.09.2026",
+      "year": "2026",
+      "problem_id": 835,
+      "title": "Image Overlap",
+      "display_title": "835. Image Overlap",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "array"
+      ],
+      "pattern_labels": [
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/image-overlap/solutions/8519260/kotlin-rust-by-samoylenkodmitry-4lkj/",
+      "kotlin_url": "https://leetcode.com/problems/image-overlap/solutions/8519260/kotlin-rust-by-samoylenkodmitry-4lkj/",
+      "rust_url": "https://leetcode.com/problems/image-overlap/solutions/8519260/kotlin-rust-by-samoylenkodmitry-4lkj/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/13092026-835-image-overlap?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/ypaM6wU5pqs",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1481",
+      "image_url": "/assets/leetcode_daily_images/13.09.2026.webp",
+      "takeaway": "Best intersection after shift 2D matrix",
+      "metrics": {
+        "solution_lines": 3,
+        "solution_chars": 159,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 3,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 159,
+          "rust": 225
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-13-835-image-overlap/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-12-3414-maximum-score-of-non-overlapping-intervals",
       "date": "2026-09-12",
