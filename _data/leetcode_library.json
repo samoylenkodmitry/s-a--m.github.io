@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-15T10:03:37Z",
+  "generated_at": "2026-09-16T09:20:19Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1406,
-    "unique_problem_count": 1233,
+    "entry_count": 1407,
+    "unique_problem_count": 1234,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 931,
+    "rust_count": 932,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 250,
+      "count": 251,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1400,
+      "count": 1401,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 931,
+      "count": 932,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 232,
+      "count": 233,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 112,
+      "count": 113,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -114,7 +114,7 @@
     {
       "slug": "math",
       "label": "Math",
-      "count": 85,
+      "count": 86,
       "url": "/leetcode/pattern/math/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1233,
+    "unique_problem_count": 1234,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 432
+        "count": 433
       },
       {
         "slug": "compact",
@@ -47836,6 +47836,67 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-16-1621-number-of-sets-of-k-non-overlapping-line-segments",
+      "date": "2026-09-16",
+      "display_date": "16.09.2026",
+      "year": "2026",
+      "problem_id": 1621,
+      "title": "Number of Sets of K Non-Overlapping Line Segments",
+      "display_title": "1621. Number of Sets of K Non-Overlapping Line Segments",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "graph",
+        "math"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Graph",
+        "Math"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/solutions/8524253/kotlin-rust-by-samoylenkodmitry-ypzn/",
+      "kotlin_url": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/solutions/8524253/kotlin-rust-by-samoylenkodmitry-ypzn/",
+      "rust_url": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/solutions/8524253/kotlin-rust-by-samoylenkodmitry-ypzn/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/16092026-1621-number-of-sets-of-k?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/qb9qlT-kyec",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1484",
+      "image_url": "/assets/leetcode_daily_images/16.09.2026.webp",
+      "takeaway": "Ways to peek K intervals from N points",
+      "metrics": {
+        "solution_lines": 5,
+        "solution_chars": 247,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 5,
+          "rust": 6
+        },
+        "language_char_counts": {
+          "kotlin": 247,
+          "rust": 219
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-16-1621-number-of-sets-of-k-non-overlapping-line-segments/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-15-2472-maximum-number-of-non-overlapping-palindrome-substrings",
       "date": "2026-09-15",
