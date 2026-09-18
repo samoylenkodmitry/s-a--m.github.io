@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-17T10:54:21Z",
+  "generated_at": "2026-09-18T10:48:01Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1408,
-    "unique_problem_count": 1235,
+    "entry_count": 1409,
+    "unique_problem_count": 1236,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 933,
+    "rust_count": 934,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 252,
+      "count": 253,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1402,
+      "count": 1403,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 933,
+      "count": 934,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,19 +78,19 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 222,
+      "count": 223,
       "url": "/leetcode/pattern/string/"
     },
     {
       "slug": "sorting",
       "label": "Sorting",
-      "count": 167,
+      "count": 168,
       "url": "/leetcode/pattern/sorting/"
     },
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 113,
+      "count": 114,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1235,
+    "unique_problem_count": 1236,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 477
+        "count": 478
       },
       {
         "slug": "standard",
@@ -47836,6 +47836,67 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-18-1520-maximum-number-of-non-overlapping-substrings",
+      "date": "2026-09-18",
+      "display_date": "18.09.2026",
+      "year": "2026",
+      "problem_id": 1520,
+      "title": "Maximum Number of Non-Overlapping Substrings",
+      "display_title": "1520. Maximum Number of Non-Overlapping Substrings",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "sorting",
+        "string"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Sorting",
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/solutions/8527783/kotlin-rust-by-samoylenkodmitry-m70d/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/solutions/8527783/kotlin-rust-by-samoylenkodmitry-m70d/",
+      "rust_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/solutions/8527783/kotlin-rust-by-samoylenkodmitry-m70d/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/18092026-1520-maximum-number-of-non?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/k_7uq89gTTk",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1486",
+      "image_url": "/assets/leetcode_daily_images/18.09.2026.webp",
+      "takeaway": "Max substrings containing all it's chars",
+      "metrics": {
+        "solution_lines": 12,
+        "solution_chars": 479,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 12,
+          "rust": 13
+        },
+        "language_char_counts": {
+          "kotlin": 479,
+          "rust": 559
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-18-1520-maximum-number-of-non-overlapping-substrings/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-17-1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
       "date": "2026-09-17",
