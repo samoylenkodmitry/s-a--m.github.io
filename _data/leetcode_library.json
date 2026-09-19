@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-18T10:48:01Z",
+  "generated_at": "2026-09-19T08:57:41Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1409,
-    "unique_problem_count": 1236,
+    "entry_count": 1410,
+    "unique_problem_count": 1237,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 934,
+    "rust_count": 935,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "deep_thinking_count": 47,
     "unsolved_count": 99,
-    "one_liner_count": 116,
+    "one_liner_count": 117,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 253,
+      "count": 254,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1403,
+      "count": 1404,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 934,
+      "count": 935,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,19 +210,19 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 201,
+      "count": 202,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1236,
+    "unique_problem_count": 1237,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 116
+        "count": 117
       },
       {
         "slug": "tiny",
@@ -44976,6 +44976,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-09-19-1401-circle-and-rectangle-overlapping",
+        "date": "2026-09-19",
+        "display_date": "19.09.2026",
+        "year": "2026",
+        "display_title": "1401. Circle and Rectangle Overlapping",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-09-19-1401-circle-and-rectangle-overlapping/",
+        "problem_url": "https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/8529142/kotlin-rust-by-samoylenkodmitry-u4mv/",
+        "image_url": "/assets/leetcode_daily_images/19.09.2026.webp",
+        "takeaway": "Do circle intersect the resct",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 129,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-04-28-2033-minimum-operations-to-make-a-uni-value-grid",
         "date": "2026-04-28",
         "display_date": "28.04.2026",
@@ -47829,13 +47863,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 116,
+        "count": 117,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-19-1401-circle-and-rectangle-overlapping",
+      "date": "2026-09-19",
+      "display_date": "19.09.2026",
+      "year": "2026",
+      "problem_id": 1401,
+      "title": "Circle and Rectangle Overlapping",
+      "display_title": "1401. Circle and Rectangle Overlapping",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/8529142/kotlin-rust-by-samoylenkodmitry-u4mv/",
+      "kotlin_url": "https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/8529142/kotlin-rust-by-samoylenkodmitry-u4mv/",
+      "rust_url": "https://leetcode.com/problems/circle-and-rectangle-overlapping/solutions/8529142/kotlin-rust-by-samoylenkodmitry-u4mv/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/19092026-1401-circle-and-rectangle?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/v2bpKVLACUE",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1487",
+      "image_url": "/assets/leetcode_daily_images/19.09.2026.webp",
+      "takeaway": "Do circle intersect the resct",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 129,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 129,
+          "rust": 141
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-09-19-1401-circle-and-rectangle-overlapping/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-18-1520-maximum-number-of-non-overlapping-substrings",
       "date": "2026-09-18",
