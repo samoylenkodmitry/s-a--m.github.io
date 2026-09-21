@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-20T09:50:52Z",
+  "generated_at": "2026-09-21T09:15:32Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1411,
-    "unique_problem_count": 1238,
+    "entry_count": 1412,
+    "unique_problem_count": 1239,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 936,
+    "rust_count": 937,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 255,
+      "count": 256,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1405,
+      "count": 1406,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 936,
+      "count": 937,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 408,
+      "count": 409,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1238,
+    "unique_problem_count": 1239,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 478
+        "count": 479
       },
       {
         "slug": "standard",
@@ -47904,6 +47904,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-21-3524-find-x-value-of-array-i",
+      "date": "2026-09-21",
+      "display_date": "21.09.2026",
+      "year": "2026",
+      "problem_id": 3524,
+      "title": "Find X Value of Array I",
+      "display_title": "3524. Find X Value of Array I",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "array"
+      ],
+      "pattern_labels": [
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/find-x-value-of-array-i/solutions/8532727/kotlin-rust-by-samoylenkodmitry-3wia/",
+      "kotlin_url": "https://leetcode.com/problems/find-x-value-of-array-i/solutions/8532727/kotlin-rust-by-samoylenkodmitry-3wia/",
+      "rust_url": "https://leetcode.com/problems/find-x-value-of-array-i/solutions/8532727/kotlin-rust-by-samoylenkodmitry-3wia/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/21092026-3524-find-x-value-of-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/d1IseeJYev8",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1489",
+      "image_url": "/assets/leetcode_daily_images/21.09.2026.webp",
+      "takeaway": "Count subarrays product%k = x for x in 0..<k",
+      "metrics": {
+        "solution_lines": 10,
+        "solution_chars": 235,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 10,
+          "rust": 10
+        },
+        "language_char_counts": {
+          "kotlin": 235,
+          "rust": 319
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-21-3524-find-x-value-of-array-i/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-20-3498-reverse-degree-of-a-string",
       "date": "2026-09-20",
