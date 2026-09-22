@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-21T09:15:32Z",
+  "generated_at": "2026-09-22T11:39:26Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1412,
-    "unique_problem_count": 1239,
+    "entry_count": 1413,
+    "unique_problem_count": 1240,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 937,
+    "rust_count": 938,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "deep_thinking_count": 47,
-    "unsolved_count": 99,
+    "unsolved_count": 100,
     "one_liner_count": 118,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 256,
+      "count": 257,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1406,
+      "count": 1407,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 937,
+      "count": 938,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 409,
+      "count": 410,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -102,7 +102,7 @@
     {
       "slug": "tree",
       "label": "Tree",
-      "count": 100,
+      "count": 101,
       "url": "/leetcode/pattern/tree/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1239,
+    "unique_problem_count": 1240,
     "repeat_problem_count": 167,
     "repeated_entry_count": 340,
     "line_buckets": [
@@ -237,7 +237,7 @@
       {
         "slug": "standard",
         "label": "Standard",
-        "count": 295
+        "count": 296
       },
       {
         "slug": "long",
@@ -37400,6 +37400,43 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-09-22-3525-find-x-value-of-array-ii",
+        "date": "2026-09-22",
+        "display_date": "22.09.2026",
+        "year": "2026",
+        "display_title": "3525. Find X Value of Array II",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-09-22-3525-find-x-value-of-array-ii/",
+        "problem_url": "https://leetcode.com/problems/find-x-value-of-array-ii/solutions/8534430/kotlin-by-samoylenkodmitry-xgqf/",
+        "image_url": "/assets/leetcode_daily_images/22.09.2026.webp",
+        "takeaway": "Queries of count subarrays product%k = x for x in 0..<k in suffixes s..end",
+        "pattern_slugs": [
+          "tree",
+          "array"
+        ],
+        "pattern_labels": [
+          "Tree",
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "standard",
+          "unsolved"
+        ],
+        "solution_lines": 16,
+        "solution_chars": 709,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "thought_lines": 2,
+        "thought_chars": 59,
+        "max_minute_marker": null,
+        "unsolved": true,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-08-24-1872-stone-game-viii",
         "date": "2026-08-24",
         "display_date": "24.08.2026",
@@ -47877,7 +47914,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 99,
+        "count": 100,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -47904,6 +47941,70 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-22-3525-find-x-value-of-array-ii",
+      "date": "2026-09-22",
+      "display_date": "22.09.2026",
+      "year": "2026",
+      "problem_id": 3525,
+      "title": "Find X Value of Array II",
+      "display_title": "3525. Find X Value of Array II",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "tree",
+        "array"
+      ],
+      "pattern_labels": [
+        "Tree",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/find-x-value-of-array-ii/solutions/8534430/kotlin-by-samoylenkodmitry-xgqf/",
+      "kotlin_url": "https://leetcode.com/problems/find-x-value-of-array-ii/solutions/8534430/kotlin-by-samoylenkodmitry-xgqf/",
+      "rust_url": "https://leetcode.com/problems/find-x-value-of-array-ii/solutions/8534430/kotlin-by-samoylenkodmitry-xgqf/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/22092026-3525-find-x-value-of-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/UWfFrekrWsk",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1490",
+      "image_url": "/assets/leetcode_daily_images/22.09.2026.webp",
+      "takeaway": "Queries of count subarrays product%k = x for x in 0..<k in suffixes s..end",
+      "metrics": {
+        "solution_lines": 16,
+        "solution_chars": 709,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "language_line_counts": {
+          "kotlin": 16
+        },
+        "language_char_counts": {
+          "kotlin": 709
+        },
+        "thought_lines": 2,
+        "thought_chars": 59,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "standard",
+        "unsolved"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-09-22-3525-find-x-value-of-array-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-21-3524-find-x-value-of-array-i",
       "date": "2026-09-21",
