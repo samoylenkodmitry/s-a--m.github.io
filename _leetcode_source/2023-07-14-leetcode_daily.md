@@ -21,6 +21,59 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 23.09.2026
+[1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/8536078/kotlin-rust-by-samoylenkodmitry-wqdt/) medium
+[substack](https://dmitriisamoilenko.substack.com/p/23092026-1658-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/7u1twJHot1Q)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![23.09.2026.webp](/assets/leetcode_daily_images/23.09.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1491
+
+#### Problem TLDR
+
+Min operations to remove first or last elements sum of x
+
+#### Intuition
+
+Invert the problem: longest subarray with sum equal to sum()-x
+
+#### Approach
+
+* use the target itself as a sum variable, compare with 0
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun minOperations(n: IntArray, x: Int) = n.run {
+        var t = sum() - x; var j = 0
+        indices.maxOf { i ->
+            t -= n[i]; while (t < 0 && j <= i) t += n[j++]
+            if (t == 0) i - j + 1 else -1
+        }.let { if (it < 0) -1 else size - it }
+    }
+```
+```rust
+    pub fn min_operations(n: Vec<i32>, x: i32) -> i32 {
+        let (mut t, mut j, l) = (n.iter().sum::<i32>() - x, 0, n.len());
+        (0..l).filter_map(|i| {
+            t -= n[i]; while t < 0 && j <= i { t += n[j]; j += 1 }
+            (t == 0).then_some((l + j - i - 1) as i32)
+        }).min().unwrap_or(-1)
+    }
+```
+
 # 22.09.2026
 [3525. Find X Value of Array II](https://leetcode.com/problems/find-x-value-of-array-ii/solutions/8534430/kotlin-by-samoylenkodmitry-xgqf/) hard
 [substack](https://dmitriisamoilenko.substack.com/p/22092026-3525-find-x-value-of-array?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
