@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-22T11:39:26Z",
+  "generated_at": "2026-09-23T10:39:53Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1413,
+    "entry_count": 1414,
     "unique_problem_count": 1240,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 938,
-    "repeat_problem_count": 167,
-    "repeated_entry_count": 340,
+    "rust_count": 939,
+    "repeat_problem_count": 168,
+    "repeated_entry_count": 342,
     "deep_thinking_count": 47,
     "unsolved_count": 100,
     "one_liner_count": 118,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 257,
+      "count": 258,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1407,
+      "count": 1408,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 938,
+      "count": 939,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,14 +210,14 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 202,
+      "count": 203,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
     "unique_problem_count": 1240,
-    "repeat_problem_count": 167,
-    "repeated_entry_count": 340,
+    "repeat_problem_count": 168,
+    "repeated_entry_count": 342,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 479
+        "count": 480
       },
       {
         "slug": "standard",
@@ -1711,6 +1711,205 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "1658",
+        "problem_id": 1658,
+        "title": "Minimum Operations to Reduce X to Zero",
+        "display_title": "1658. Minimum Operations to Reduce X to Zero",
+        "evolution_slug": "1658-minimum-operations-to-reduce-x-to-zero",
+        "evolution_url": "/leetcode/evolution/1658-minimum-operations-to-reduce-x-to-zero/",
+        "count": 2,
+        "first_date": "20.09.2023",
+        "last_date": "23.09.2026",
+        "first_sort_date": "2023-09-20",
+        "last_sort_date": "2026-09-23",
+        "span_days": 1099,
+        "latest_page_url": "/leetcode/problem/2026-09-23-1658-minimum-operations-to-reduce-x-to-zero/",
+        "solution_line_delta": -8,
+        "solution_char_delta": -180,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-09-23-1658-minimum-operations-to-reduce-x-to-zero",
+          "date": "2026-09-23",
+          "display_date": "23.09.2026",
+          "year": "2026",
+          "display_title": "1658. Minimum Operations to Reduce X to Zero",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-09-23-1658-minimum-operations-to-reduce-x-to-zero/",
+          "problem_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/8536078/kotlin-rust-by-samoylenkodmitry-wqdt/",
+          "image_url": "/assets/leetcode_daily_images/23.09.2026.webp",
+          "takeaway": "Min operations to remove first or last elements sum of x",
+          "pattern_slugs": [
+            "implementation"
+          ],
+          "pattern_labels": [
+            "Implementation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "compact",
+            "repeat"
+          ],
+          "solution_lines": 7,
+          "solution_chars": 217,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "compact",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 47,
+          "thought_line_percent": 0,
+          "days_since_previous": 1099,
+          "solution_line_delta_from_previous": -8,
+          "solution_char_delta_from_previous": -180,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-09-20-1658-minimum-operations-to-reduce-x-to-zero",
+          "date": "2023-09-20",
+          "display_date": "20.09.2023",
+          "year": "2023",
+          "display_title": "1658. Minimum Operations to Reduce X to Zero",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2023-09-20-1658-minimum-operations-to-reduce-x-to-zero/",
+          "problem_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description/",
+          "image_url": "/assets/leetcode_daily_images/00045a69.webp",
+          "takeaway": "Min suffix-prefix to make an x",
+          "pattern_slugs": [
+            "sliding-window",
+            "array"
+          ],
+          "pattern_labels": [
+            "Sliding Window",
+            "Array"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "standard",
+            "repeat"
+          ],
+          "solution_lines": 15,
+          "solution_chars": 397,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "standard",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 15,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-09-20-1658-minimum-operations-to-reduce-x-to-zero",
+            "date": "2023-09-20",
+            "display_date": "20.09.2023",
+            "year": "2023",
+            "display_title": "1658. Minimum Operations to Reduce X to Zero",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2023-09-20-1658-minimum-operations-to-reduce-x-to-zero/",
+            "problem_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description/",
+            "image_url": "/assets/leetcode_daily_images/00045a69.webp",
+            "takeaway": "Min suffix-prefix to make an x",
+            "pattern_slugs": [
+              "sliding-window",
+              "array"
+            ],
+            "pattern_labels": [
+              "Sliding Window",
+              "Array"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "standard",
+              "repeat"
+            ],
+            "solution_lines": 15,
+            "solution_chars": 397,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "standard",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-09-23-1658-minimum-operations-to-reduce-x-to-zero",
+            "date": "2026-09-23",
+            "display_date": "23.09.2026",
+            "year": "2026",
+            "display_title": "1658. Minimum Operations to Reduce X to Zero",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-09-23-1658-minimum-operations-to-reduce-x-to-zero/",
+            "problem_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/8536078/kotlin-rust-by-samoylenkodmitry-wqdt/",
+            "image_url": "/assets/leetcode_daily_images/23.09.2026.webp",
+            "takeaway": "Min operations to remove first or last elements sum of x",
+            "pattern_slugs": [
+              "implementation"
+            ],
+            "pattern_labels": [
+              "Implementation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "repeat"
+            ],
+            "solution_lines": 7,
+            "solution_chars": 217,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "compact",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 47,
+            "thought_line_percent": 0,
+            "days_since_previous": 1099,
+            "solution_line_delta_from_previous": -8,
+            "solution_char_delta_from_previous": -180,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -47884,7 +48083,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 167,
+        "count": 168,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -47941,6 +48140,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-23-1658-minimum-operations-to-reduce-x-to-zero",
+      "date": "2026-09-23",
+      "display_date": "23.09.2026",
+      "year": "2026",
+      "problem_id": 1658,
+      "title": "Minimum Operations to Reduce X to Zero",
+      "display_title": "1658. Minimum Operations to Reduce X to Zero",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/8536078/kotlin-rust-by-samoylenkodmitry-wqdt/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/8536078/kotlin-rust-by-samoylenkodmitry-wqdt/",
+      "rust_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/solutions/8536078/kotlin-rust-by-samoylenkodmitry-wqdt/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/23092026-1658-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/7u1twJHot1Q",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1491",
+      "image_url": "/assets/leetcode_daily_images/23.09.2026.webp",
+      "takeaway": "Min operations to remove first or last elements sum of x",
+      "metrics": {
+        "solution_lines": 7,
+        "solution_chars": 217,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 7,
+          "rust": 7
+        },
+        "language_char_counts": {
+          "kotlin": 217,
+          "rust": 263
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1658-minimum-operations-to-reduce-x-to-zero/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-09-23-1658-minimum-operations-to-reduce-x-to-zero/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-22-3525-find-x-value-of-array-ii",
       "date": "2026-09-22",
@@ -197035,9 +197300,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "standard"
+        "standard",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1658-minimum-operations-to-reduce-x-to-zero/"
+        }
+      ],
       "page_url": "/leetcode/problem/2023-09-20-1658-minimum-operations-to-reduce-x-to-zero/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
