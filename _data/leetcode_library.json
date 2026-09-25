@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-24T07:36:56Z",
+  "generated_at": "2026-09-25T09:38:55Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1415,
-    "unique_problem_count": 1241,
+    "entry_count": 1416,
+    "unique_problem_count": 1242,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 940,
+    "rust_count": 941,
     "repeat_problem_count": 168,
     "repeated_entry_count": 342,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 259,
+      "count": 260,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1409,
+      "count": 1410,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 940,
+      "count": 941,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -114,7 +114,7 @@
     {
       "slug": "math",
       "label": "Math",
-      "count": 86,
+      "count": 87,
       "url": "/leetcode/pattern/math/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1241,
+    "unique_problem_count": 1242,
     "repeat_problem_count": 168,
     "repeated_entry_count": 342,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 433
+        "count": 434
       },
       {
         "slug": "compact",
@@ -48174,6 +48174,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-25-1096-brace-expansion-ii",
+      "date": "2026-09-25",
+      "display_date": "25.09.2026",
+      "year": "2026",
+      "problem_id": 1096,
+      "title": "Brace Expansion II",
+      "display_title": "1096. Brace Expansion II",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "math"
+      ],
+      "pattern_labels": [
+        "Math"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/brace-expansion-ii/solutions/8539359/kotlin-rust-by-samoylenkodmitry-wfd6/",
+      "kotlin_url": "https://leetcode.com/problems/brace-expansion-ii/solutions/8539359/kotlin-rust-by-samoylenkodmitry-wfd6/",
+      "rust_url": "https://leetcode.com/problems/brace-expansion-ii/solutions/8539359/kotlin-rust-by-samoylenkodmitry-wfd6/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/25092026-1096-brace-expansion-ii?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/Je8lpqA9Kxw",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1493",
+      "image_url": "/assets/leetcode_daily_images/25.09.2026.webp",
+      "takeaway": "Expand sets-expression {x,y}z",
+      "metrics": {
+        "solution_lines": 5,
+        "solution_chars": 202,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 5,
+          "rust": 7
+        },
+        "language_char_counts": {
+          "kotlin": 202,
+          "rust": 265
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-25-1096-brace-expansion-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-24-3550-smallest-index-with-digit-sum-equal-to-index",
       "date": "2026-09-24",
