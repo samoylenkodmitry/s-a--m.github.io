@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-25T09:38:55Z",
+  "generated_at": "2026-09-26T09:14:54Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1416,
-    "unique_problem_count": 1242,
+    "entry_count": 1417,
+    "unique_problem_count": 1243,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 941,
+    "rust_count": 942,
     "repeat_problem_count": 168,
     "repeated_entry_count": 342,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 260,
+      "count": 261,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1410,
+      "count": 1411,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 941,
+      "count": 942,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 224,
+      "count": 225,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1242,
+    "unique_problem_count": 1243,
     "repeat_problem_count": 168,
     "repeated_entry_count": 342,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 434
+        "count": 435
       },
       {
         "slug": "compact",
@@ -48174,6 +48174,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-09-26-1807-evaluate-the-bracket-pairs-of-a-string",
+      "date": "2026-09-26",
+      "display_date": "26.09.2026",
+      "year": "2026",
+      "problem_id": 1807,
+      "title": "Evaluate the Bracket Pairs of a String",
+      "display_title": "1807. Evaluate the Bracket Pairs of a String",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "string"
+      ],
+      "pattern_labels": [
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/8540874/kotlin-rust-by-samoylenkodmitry-20c2/",
+      "kotlin_url": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/8540874/kotlin-rust-by-samoylenkodmitry-20c2/",
+      "rust_url": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/8540874/kotlin-rust-by-samoylenkodmitry-20c2/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/26092026-1807-evaluate-the-bracket?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/AdPcsLrY6RA",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1494",
+      "image_url": "/assets/leetcode_daily_images/26.09.2026.webp",
+      "takeaway": "Replace keys in braces with values",
+      "metrics": {
+        "solution_lines": 3,
+        "solution_chars": 157,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 3,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 157,
+          "rust": 241
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-09-26-1807-evaluate-the-bracket-pairs-of-a-string/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-09-25-1096-brace-expansion-ii",
       "date": "2026-09-25",
