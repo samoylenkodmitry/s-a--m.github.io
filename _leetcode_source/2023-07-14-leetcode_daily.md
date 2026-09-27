@@ -21,6 +21,60 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 27.09.2026
+[1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/solutions/8542651/kotlin-rust-by-samoylenkodmitry-u245/) medium
+[substack](https://dmitriisamoilenko.substack.com/p/27092026-1190-reverse-substrings?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/N011EDAhDv4)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![27.09.2026.webp](/assets/leetcode_daily_images/27.09.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1495
+
+#### Problem TLDR
+
+Reverse the substrings in braces
+
+#### Intuition
+
+Brute-force: 
+a) innermost by regex
+b) innermost by finding first closing brace
+c) recursive dfs subproblem
+
+Optimal:
+build the teleportation table and iterate in a separate step
+![anim.gif](https://assets.leetcode.com/users/images/7a681fdf-784e-4f21-bea7-ec590c41c625_1790496660.0240533.gif)
+
+#### Approach
+
+* regex is group starting with \( brace, ending with \) brace and not having [^]* any () inside it
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun reverseParentheses(s: String): String =  if ('(' !in s) s else 
+    reverseParentheses(s.replace(Regex("""\(([^()]*)\)""")) { it.groupValues[1].reversed() })
+```
+```rust
+    pub fn reverse_parentheses(mut s: String) -> String {
+        while let Some(r) = s.find(')') {
+            let l = s[..r].rfind('(').unwrap();
+            s.replace_range(l..=r, &s[l + 1..r].chars().rev().join(""))
+        } s
+    }
+```
+
 # 26.09.2026
 [1807. Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/solutions/8540874/kotlin-rust-by-samoylenkodmitry-20c2/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/26092026-1807-evaluate-the-bracket?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
