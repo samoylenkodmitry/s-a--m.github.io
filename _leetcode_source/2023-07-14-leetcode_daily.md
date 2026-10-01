@@ -21,6 +21,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 01.10.2026
+[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/solutions/8550322/kotlin-rust-by-samoylenkodmitry-rqaz/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/01102026-20-valid-parentheses?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/Xcdre6LvKG0)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![01.10.2026.webp](/assets/leetcode_daily_images/01.10.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1499
+
+#### Problem TLDR
+
+Are braces valid
+
+#### Intuition
+
+Push open kind to the stack. Pop close kind if match with top of the stack.
+
+#### Approach
+
+* or push matching close brace to the stack
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun isValid(s: String) = ArrayDeque<Char>().run {
+        s.all{if(it in "([{") add(it+1+it.code%2) 
+            else removeLastOrNull()==it } && isEmpty()}
+```
+```rust
+    pub fn is_valid(s: String) -> bool {
+        let mut q = vec![];
+        s.bytes().all(|b|if b"([{".contains(&b){q.push(b+1+b%2);true}else{q.pop()==Some(b)})&&q.is_empty()
+    }
+```
+
 # 30.09.2026
 [1111. Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/solutions/8548242/kotlin-rust-by-samoylenkodmitry-581l/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/30092026-1111-maximum-nesting-depth?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
