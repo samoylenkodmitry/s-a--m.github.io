@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-03T10:16:48Z",
+  "generated_at": "2026-10-04T10:19:19Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1424,
+    "entry_count": 1425,
     "unique_problem_count": 1247,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 949,
-    "repeat_problem_count": 171,
-    "repeated_entry_count": 348,
+    "rust_count": 950,
+    "repeat_problem_count": 172,
+    "repeated_entry_count": 350,
     "deep_thinking_count": 47,
     "unsolved_count": 100,
     "one_liner_count": 122,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 268,
+      "count": 269,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1418,
+      "count": 1419,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 949,
+      "count": 950,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,13 +72,13 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 234,
+      "count": 235,
       "url": "/leetcode/pattern/graph/"
     },
     {
       "slug": "string",
       "label": "String",
-      "count": 227,
+      "count": 228,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 115,
+      "count": 116,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -216,8 +216,8 @@
   ],
   "insights": {
     "unique_problem_count": 1247,
-    "repeat_problem_count": 171,
-    "repeated_entry_count": 348,
+    "repeat_problem_count": 172,
+    "repeated_entry_count": 350,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 480
+        "count": 481
       },
       {
         "slug": "standard",
@@ -1712,6 +1712,215 @@
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
             "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "678",
+        "problem_id": 678,
+        "title": "Valid Parenthesis String",
+        "display_title": "678. Valid Parenthesis String",
+        "evolution_slug": "678-valid-parenthesis-string",
+        "evolution_url": "/leetcode/evolution/678-valid-parenthesis-string/",
+        "count": 2,
+        "first_date": "07.04.2024",
+        "last_date": "04.10.2026",
+        "first_sort_date": "2024-04-07",
+        "last_sort_date": "2026-10-04",
+        "span_days": 910,
+        "latest_page_url": "/leetcode/problem/2026-10-04-678-valid-parenthesis-string/",
+        "solution_line_delta": -4,
+        "solution_char_delta": -86,
+        "thought_line_delta": -8,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "compressed",
+        "best_solution": {
+          "slug": "2026-10-04-678-valid-parenthesis-string",
+          "date": "2026-10-04",
+          "display_date": "04.10.2026",
+          "year": "2026",
+          "display_title": "678. Valid Parenthesis String",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-10-04-678-valid-parenthesis-string/",
+          "problem_url": "https://leetcode.com/problems/valid-parenthesis-string/solutions/8555178/kotlin-rust-by-samoylenkodmitry-pk58/",
+          "image_url": "/assets/leetcode_daily_images/04.10.2026.webp",
+          "takeaway": "Balance braces with wildcard",
+          "pattern_slugs": [
+            "dynamic-programming",
+            "graph",
+            "string"
+          ],
+          "pattern_labels": [
+            "Dynamic Programming",
+            "Graph",
+            "String"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "compact",
+            "repeat"
+          ],
+          "solution_lines": 7,
+          "solution_chars": 203,
+          "solution_language": "rust",
+          "solution_line_bucket": "compact",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 64,
+          "thought_line_percent": 0,
+          "days_since_previous": 910,
+          "solution_line_delta_from_previous": -4,
+          "solution_char_delta_from_previous": -86,
+          "thought_line_delta_from_previous": -8
+        },
+        "largest_solution": {
+          "slug": "2024-04-07-678-valid-parenthesis-string",
+          "date": "2024-04-07",
+          "display_date": "07.04.2024",
+          "year": "2024",
+          "display_title": "678. Valid Parenthesis String",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2024-04-07-678-valid-parenthesis-string/",
+          "problem_url": "https://leetcode.com/problems/valid-parenthesis-string/description/",
+          "image_url": "/assets/leetcode_daily_images/877682af.webp",
+          "takeaway": "Are parenthesis valid with wildcard?",
+          "pattern_slugs": [
+            "hash-map",
+            "string"
+          ],
+          "pattern_labels": [
+            "Hash Map",
+            "String"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "compact",
+            "repeat"
+          ],
+          "solution_lines": 11,
+          "solution_chars": 289,
+          "solution_language": "rust",
+          "solution_line_bucket": "compact",
+          "thought_lines": 8,
+          "thought_chars": 50,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 100,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 11,
+        "max_thought_lines": 8,
+        "total_thought_lines": 8,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2024-04-07-678-valid-parenthesis-string",
+            "date": "2024-04-07",
+            "display_date": "07.04.2024",
+            "year": "2024",
+            "display_title": "678. Valid Parenthesis String",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2024-04-07-678-valid-parenthesis-string/",
+            "problem_url": "https://leetcode.com/problems/valid-parenthesis-string/description/",
+            "image_url": "/assets/leetcode_daily_images/877682af.webp",
+            "takeaway": "Are parenthesis valid with wildcard?",
+            "pattern_slugs": [
+              "hash-map",
+              "string"
+            ],
+            "pattern_labels": [
+              "Hash Map",
+              "String"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "repeat"
+            ],
+            "solution_lines": 11,
+            "solution_chars": 289,
+            "solution_language": "rust",
+            "solution_line_bucket": "compact",
+            "thought_lines": 8,
+            "thought_chars": 50,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 100,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-10-04-678-valid-parenthesis-string",
+            "date": "2026-10-04",
+            "display_date": "04.10.2026",
+            "year": "2026",
+            "display_title": "678. Valid Parenthesis String",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-10-04-678-valid-parenthesis-string/",
+            "problem_url": "https://leetcode.com/problems/valid-parenthesis-string/solutions/8555178/kotlin-rust-by-samoylenkodmitry-pk58/",
+            "image_url": "/assets/leetcode_daily_images/04.10.2026.webp",
+            "takeaway": "Balance braces with wildcard",
+            "pattern_slugs": [
+              "dynamic-programming",
+              "graph",
+              "string"
+            ],
+            "pattern_labels": [
+              "Dynamic Programming",
+              "Graph",
+              "String"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "repeat"
+            ],
+            "solution_lines": 7,
+            "solution_chars": 203,
+            "solution_language": "rust",
+            "solution_line_bucket": "compact",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 64,
+            "thought_line_percent": 0,
+            "days_since_previous": 910,
+            "solution_line_delta_from_previous": -4,
+            "solution_char_delta_from_previous": -86,
+            "thought_line_delta_from_previous": -8
           }
         ]
       },
@@ -48819,7 +49028,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 171,
+        "count": 172,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -48876,6 +49085,76 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-04-678-valid-parenthesis-string",
+      "date": "2026-10-04",
+      "display_date": "04.10.2026",
+      "year": "2026",
+      "problem_id": 678,
+      "title": "Valid Parenthesis String",
+      "display_title": "678. Valid Parenthesis String",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "graph",
+        "string"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Graph",
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/valid-parenthesis-string/solutions/8555178/kotlin-rust-by-samoylenkodmitry-pk58/",
+      "kotlin_url": "https://leetcode.com/problems/valid-parenthesis-string/solutions/8555178/kotlin-rust-by-samoylenkodmitry-pk58/",
+      "rust_url": "https://leetcode.com/problems/valid-parenthesis-string/solutions/8555178/kotlin-rust-by-samoylenkodmitry-pk58/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/04102026-678-valid-parenthesis-string?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/N64Oc3Qcxy4",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1502",
+      "image_url": "/assets/leetcode_daily_images/04.10.2026.webp",
+      "takeaway": "Balance braces with wildcard",
+      "metrics": {
+        "solution_lines": 7,
+        "solution_chars": 203,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 8,
+          "rust": 7
+        },
+        "language_char_counts": {
+          "kotlin": 189,
+          "rust": 203
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/678-valid-parenthesis-string/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-04-678-valid-parenthesis-string/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-03-32-longest-valid-parentheses",
       "date": "2026-10-03",
@@ -173090,9 +173369,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "compact"
+        "compact",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/678-valid-parenthesis-string/"
+        }
+      ],
       "page_url": "/leetcode/problem/2024-04-07-678-valid-parenthesis-string/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
