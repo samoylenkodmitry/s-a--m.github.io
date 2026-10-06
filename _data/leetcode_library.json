@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-05T10:37:14Z",
+  "generated_at": "2026-10-06T08:51:01Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1426,
+    "entry_count": 1427,
     "unique_problem_count": 1248,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 951,
-    "repeat_problem_count": 172,
-    "repeated_entry_count": 350,
+    "rust_count": 952,
+    "repeat_problem_count": 173,
+    "repeated_entry_count": 352,
     "deep_thinking_count": 47,
     "unsolved_count": 100,
-    "one_liner_count": 122,
+    "one_liner_count": 123,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 270,
+      "count": 271,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1420,
+      "count": 1421,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 951,
+      "count": 952,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,19 +210,19 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 207,
+      "count": 208,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
     "unique_problem_count": 1248,
-    "repeat_problem_count": 172,
-    "repeated_entry_count": 350,
+    "repeat_problem_count": 173,
+    "repeated_entry_count": 352,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 122
+        "count": 123
       },
       {
         "slug": "tiny",
@@ -1711,6 +1711,207 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "921",
+        "problem_id": 921,
+        "title": "Minimum Add to Make Parentheses Valid",
+        "display_title": "921. Minimum Add to Make Parentheses Valid",
+        "evolution_slug": "921-minimum-add-to-make-parentheses-valid",
+        "evolution_url": "/leetcode/evolution/921-minimum-add-to-make-parentheses-valid/",
+        "count": 2,
+        "first_date": "09.10.2024",
+        "last_date": "06.10.2026",
+        "first_sort_date": "2024-10-09",
+        "last_sort_date": "2026-10-06",
+        "span_days": 727,
+        "latest_page_url": "/leetcode/problem/2026-10-06-921-minimum-add-to-make-parentheses-valid/",
+        "solution_line_delta": -4,
+        "solution_char_delta": -34,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-10-06-921-minimum-add-to-make-parentheses-valid",
+          "date": "2026-10-06",
+          "display_date": "06.10.2026",
+          "year": "2026",
+          "display_title": "921. Minimum Add to Make Parentheses Valid",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-10-06-921-minimum-add-to-make-parentheses-valid/",
+          "problem_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/8558801/kotlin-rust-by-samoylenkodmitry-rtbe/",
+          "image_url": "/assets/leetcode_daily_images/06.10.2026.webp",
+          "takeaway": "Min insertions to balance braces",
+          "pattern_slugs": [
+            "implementation"
+          ],
+          "pattern_labels": [
+            "Implementation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "one-liner",
+            "repeat"
+          ],
+          "solution_lines": 2,
+          "solution_chars": 107,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "one-liner",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 33,
+          "thought_line_percent": 0,
+          "days_since_previous": 727,
+          "solution_line_delta_from_previous": -4,
+          "solution_char_delta_from_previous": -34,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2024-10-09-921-minimum-add-to-make-parentheses-valid",
+          "date": "2024-10-09",
+          "display_date": "09.10.2024",
+          "year": "2024",
+          "display_title": "921. Minimum Add to Make Parentheses Valid",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2024-10-09-921-minimum-add-to-make-parentheses-valid/",
+          "problem_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/",
+          "image_url": "/assets/leetcode_daily_images/f1b0223d.webp",
+          "takeaway": "Minimum inserts to balance brackets",
+          "pattern_slugs": [
+            "stack",
+            "hash-map"
+          ],
+          "pattern_labels": [
+            "Stack",
+            "Hash Map"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 6,
+          "solution_chars": 141,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 6,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 1,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2024-10-09-921-minimum-add-to-make-parentheses-valid",
+            "date": "2024-10-09",
+            "display_date": "09.10.2024",
+            "year": "2024",
+            "display_title": "921. Minimum Add to Make Parentheses Valid",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2024-10-09-921-minimum-add-to-make-parentheses-valid/",
+            "problem_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/",
+            "image_url": "/assets/leetcode_daily_images/f1b0223d.webp",
+            "takeaway": "Minimum inserts to balance brackets",
+            "pattern_slugs": [
+              "stack",
+              "hash-map"
+            ],
+            "pattern_labels": [
+              "Stack",
+              "Hash Map"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 6,
+            "solution_chars": 141,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-10-06-921-minimum-add-to-make-parentheses-valid",
+            "date": "2026-10-06",
+            "display_date": "06.10.2026",
+            "year": "2026",
+            "display_title": "921. Minimum Add to Make Parentheses Valid",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-10-06-921-minimum-add-to-make-parentheses-valid/",
+            "problem_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/8558801/kotlin-rust-by-samoylenkodmitry-rtbe/",
+            "image_url": "/assets/leetcode_daily_images/06.10.2026.webp",
+            "takeaway": "Min insertions to balance braces",
+            "pattern_slugs": [
+              "implementation"
+            ],
+            "pattern_labels": [
+              "Implementation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "one-liner",
+              "repeat"
+            ],
+            "solution_lines": 2,
+            "solution_chars": 107,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "one-liner",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 33,
+            "thought_line_percent": 0,
+            "days_since_previous": 727,
+            "solution_line_delta_from_previous": -4,
+            "solution_char_delta_from_previous": -34,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -45426,6 +45627,41 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-10-06-921-minimum-add-to-make-parentheses-valid",
+        "date": "2026-10-06",
+        "display_date": "06.10.2026",
+        "year": "2026",
+        "display_title": "921. Minimum Add to Make Parentheses Valid",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-10-06-921-minimum-add-to-make-parentheses-valid/",
+        "problem_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/8558801/kotlin-rust-by-samoylenkodmitry-rtbe/",
+        "image_url": "/assets/leetcode_daily_images/06.10.2026.webp",
+        "takeaway": "Min insertions to balance braces",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner",
+          "repeat"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 107,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2023-05-18-1557-minimum-number-of-vertices-to-reach-all-nodes",
         "date": "2023-05-18",
         "display_date": "18.05.2023",
@@ -49028,7 +49264,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 172,
+        "count": 173,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -49078,13 +49314,84 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 122,
+        "count": 123,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-06-921-minimum-add-to-make-parentheses-valid",
+      "date": "2026-10-06",
+      "display_date": "06.10.2026",
+      "year": "2026",
+      "problem_id": 921,
+      "title": "Minimum Add to Make Parentheses Valid",
+      "display_title": "921. Minimum Add to Make Parentheses Valid",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/8558801/kotlin-rust-by-samoylenkodmitry-rtbe/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/8558801/kotlin-rust-by-samoylenkodmitry-rtbe/",
+      "rust_url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/8558801/kotlin-rust-by-samoylenkodmitry-rtbe/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/06102026-921-minimum-add-to-make?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/1hJO-2TFnrE",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1504",
+      "image_url": "/assets/leetcode_daily_images/06.10.2026.webp",
+      "takeaway": "Min insertions to balance braces",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 107,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 107,
+          "rust": 118
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/921-minimum-add-to-make-parentheses-valid/"
+        },
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-06-921-minimum-add-to-make-parentheses-valid/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-05-856-score-of-parentheses",
       "date": "2026-10-05",
@@ -148117,9 +148424,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "tiny"
+        "tiny",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/921-minimum-add-to-make-parentheses-valid/"
+        }
+      ],
       "page_url": "/leetcode/problem/2024-10-09-921-minimum-add-to-make-parentheses-valid/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
