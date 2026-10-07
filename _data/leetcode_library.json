@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-06T08:51:01Z",
+  "generated_at": "2026-10-07T09:33:52Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1427,
-    "unique_problem_count": 1248,
+    "entry_count": 1428,
+    "unique_problem_count": 1249,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 952,
+    "rust_count": 953,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 271,
+      "count": 272,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1421,
+      "count": 1422,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 952,
+      "count": 953,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,13 +72,13 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 235,
+      "count": 236,
       "url": "/leetcode/pattern/graph/"
     },
     {
       "slug": "string",
       "label": "String",
-      "count": 228,
+      "count": 229,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -162,7 +162,7 @@
     {
       "slug": "backtracking",
       "label": "Backtracking",
-      "count": 37,
+      "count": 38,
       "url": "/leetcode/pattern/backtracking/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1248,
+    "unique_problem_count": 1249,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 481
+        "count": 482
       },
       {
         "slug": "standard",
@@ -49321,6 +49321,67 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-07-301-remove-invalid-parentheses",
+      "date": "2026-10-07",
+      "display_date": "07.10.2026",
+      "year": "2026",
+      "problem_id": 301,
+      "title": "Remove Invalid Parentheses",
+      "display_title": "301. Remove Invalid Parentheses",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "graph",
+        "backtracking",
+        "string"
+      ],
+      "pattern_labels": [
+        "Graph",
+        "Backtracking",
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/remove-invalid-parentheses/solutions/8560645/kotlin-rust-by-samoylenkodmitry-upgn/",
+      "kotlin_url": "https://leetcode.com/problems/remove-invalid-parentheses/solutions/8560645/kotlin-rust-by-samoylenkodmitry-upgn/",
+      "rust_url": "https://leetcode.com/problems/remove-invalid-parentheses/solutions/8560645/kotlin-rust-by-samoylenkodmitry-upgn/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/07102026-301-remove-invalid-parentheses?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/yPf_3x7Hj5U",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1505",
+      "image_url": "/assets/leetcode_daily_images/07.10.2026.webp",
+      "takeaway": "Min removal to make balanced strings",
+      "metrics": {
+        "solution_lines": 7,
+        "solution_chars": 370,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 7,
+          "rust": 9
+        },
+        "language_char_counts": {
+          "kotlin": 370,
+          "rust": 393
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-10-07-301-remove-invalid-parentheses/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-06-921-minimum-add-to-make-parentheses-valid",
       "date": "2026-10-06",
