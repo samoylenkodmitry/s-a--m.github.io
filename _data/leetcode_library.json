@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-07T09:33:52Z",
+  "generated_at": "2026-10-08T08:14:21Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1428,
-    "unique_problem_count": 1249,
+    "entry_count": 1429,
+    "unique_problem_count": 1250,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 953,
+    "rust_count": 954,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 272,
+      "count": 273,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1422,
+      "count": 1423,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 953,
+      "count": 954,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 208,
+      "count": 209,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1249,
+    "unique_problem_count": 1250,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 440
+        "count": 441
       },
       {
         "slug": "compact",
@@ -49321,6 +49321,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-08-1021-remove-outermost-parentheses",
+      "date": "2026-10-08",
+      "display_date": "08.10.2026",
+      "year": "2026",
+      "problem_id": 1021,
+      "title": "Remove Outermost Parentheses",
+      "display_title": "1021. Remove Outermost Parentheses",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/remove-outermost-parentheses/solutions/8562374/kotlin-rust-by-samoylenkodmitry-7cjy/",
+      "kotlin_url": "https://leetcode.com/problems/remove-outermost-parentheses/solutions/8562374/kotlin-rust-by-samoylenkodmitry-7cjy/",
+      "rust_url": "https://leetcode.com/problems/remove-outermost-parentheses/solutions/8562374/kotlin-rust-by-samoylenkodmitry-7cjy/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/08102026-1021-remove-outermost-parentheses?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/o5f0pdEFtgQ",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1506",
+      "image_url": "/assets/leetcode_daily_images/08.10.2026.webp",
+      "takeaway": "Remove outer braces",
+      "metrics": {
+        "solution_lines": 4,
+        "solution_chars": 97,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 4,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 97,
+          "rust": 140
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-10-08-1021-remove-outermost-parentheses/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-07-301-remove-invalid-parentheses",
       "date": "2026-10-07",
