@@ -21,6 +21,53 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 08.10.2026
+[1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/solutions/8562374/kotlin-rust-by-samoylenkodmitry-7cjy/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/08102026-1021-remove-outermost-parentheses?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/o5f0pdEFtgQ)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![08.10.2026.webp](/assets/leetcode_daily_images/08.10.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1506
+
+#### Problem TLDR
+
+Remove outer braces
+
+#### Intuition
+
+Compute running depth; filter out depth zero.
+
+#### Approach
+
+* Rust: .retain
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun removeOuterParentheses(s: String)=run {
+        var d = 0
+        s.filter { 0 < if (it<')') d++ else --d }
+    }
+```
+```rust
+    pub fn remove_outer_parentheses(mut s: String) -> String {
+        let mut d = 0;
+        s.retain(|c| { d += 81 - 2 * c as i32; d + c as i32 % 2 > 1 });s
+    }
+```
+
 # 07.10.2026
 [301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/solutions/8560645/kotlin-rust-by-samoylenkodmitry-upgn/) hard
 [substack](https://dmitriisamoilenko.substack.com/p/07102026-301-remove-invalid-parentheses?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
