@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-08T08:14:21Z",
+  "generated_at": "2026-10-09T07:59:25Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1429,
-    "unique_problem_count": 1250,
+    "entry_count": 1430,
+    "unique_problem_count": 1251,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 954,
+    "rust_count": 955,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 273,
+      "count": 274,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1423,
+      "count": 1424,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 954,
+      "count": 955,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 229,
+      "count": 230,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1250,
+    "unique_problem_count": 1251,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 441
+        "count": 442
       },
       {
         "slug": "compact",
@@ -49321,6 +49321,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-09-1541-minimum-insertions-to-balance-a-parentheses-string",
+      "date": "2026-10-09",
+      "display_date": "09.10.2026",
+      "year": "2026",
+      "problem_id": 1541,
+      "title": "Minimum Insertions to Balance a Parentheses String",
+      "display_title": "1541. Minimum Insertions to Balance a Parentheses String",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "string"
+      ],
+      "pattern_labels": [
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/solutions/8563984/kotlin-rust-by-samoylenkodmitry-uyzg/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/solutions/8563984/kotlin-rust-by-samoylenkodmitry-uyzg/",
+      "rust_url": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/solutions/8563984/kotlin-rust-by-samoylenkodmitry-uyzg/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/09102026-1541-minimum-insertions?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/qNsY630fi3U",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1507",
+      "image_url": "/assets/leetcode_daily_images/09.10.2026.webp",
+      "takeaway": "Add braces to balance ( with ))",
+      "metrics": {
+        "solution_lines": 5,
+        "solution_chars": 146,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 5,
+          "rust": 5
+        },
+        "language_char_counts": {
+          "kotlin": 146,
+          "rust": 183
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-10-09-1541-minimum-insertions-to-balance-a-parentheses-string/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-08-1021-remove-outermost-parentheses",
       "date": "2026-10-08",
