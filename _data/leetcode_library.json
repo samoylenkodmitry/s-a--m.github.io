@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-09T07:59:25Z",
+  "generated_at": "2026-10-10T09:00:59Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1430,
-    "unique_problem_count": 1251,
+    "entry_count": 1431,
+    "unique_problem_count": 1252,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 955,
+    "rust_count": 956,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
-    "unsolved_count": 100,
+    "unsolved_count": 101,
     "one_liner_count": 123,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 274,
+      "count": 275,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1424,
+      "count": 1425,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 955,
+      "count": 956,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 410,
+      "count": 411,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -108,7 +108,7 @@
     {
       "slug": "binary-search",
       "label": "Binary Search",
-      "count": 90,
+      "count": 91,
       "url": "/leetcode/pattern/binary-search/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1251,
+    "unique_problem_count": 1252,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 442
+        "count": 443
       },
       {
         "slug": "compact",
@@ -38607,6 +38607,43 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-10-10-2333-minimum-sum-of-squared-difference",
+        "date": "2026-10-10",
+        "display_date": "10.10.2026",
+        "year": "2026",
+        "display_title": "2333. Minimum Sum of Squared Difference",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-10-10-2333-minimum-sum-of-squared-difference/",
+        "problem_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/solutions/8565472/kotlin-rust-by-samoylenkodmitry-lgwp/",
+        "image_url": "/assets/leetcode_daily_images/10.10.2026.webp",
+        "takeaway": "Min sum of squared difs after adjusting each array by k",
+        "pattern_slugs": [
+          "binary-search",
+          "array"
+        ],
+        "pattern_labels": [
+          "Binary Search",
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "tiny",
+          "unsolved"
+        ],
+        "solution_lines": 6,
+        "solution_chars": 299,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": true,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-09-22-3525-find-x-value-of-array-ii",
         "date": "2026-09-22",
         "display_date": "22.09.2026",
@@ -49294,7 +49331,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 100,
+        "count": 101,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -49321,6 +49358,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-10-2333-minimum-sum-of-squared-difference",
+      "date": "2026-10-10",
+      "display_date": "10.10.2026",
+      "year": "2026",
+      "problem_id": 2333,
+      "title": "Minimum Sum of Squared Difference",
+      "display_title": "2333. Minimum Sum of Squared Difference",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "binary-search",
+        "array"
+      ],
+      "pattern_labels": [
+        "Binary Search",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/solutions/8565472/kotlin-rust-by-samoylenkodmitry-lgwp/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/solutions/8565472/kotlin-rust-by-samoylenkodmitry-lgwp/",
+      "rust_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/solutions/8565472/kotlin-rust-by-samoylenkodmitry-lgwp/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/10102026-2333-minimum-sum-of-squared?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/HzF_Y4lO2mk",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1508",
+      "image_url": "/assets/leetcode_daily_images/10.10.2026.webp",
+      "takeaway": "Min sum of squared difs after adjusting each array by k",
+      "metrics": {
+        "solution_lines": 6,
+        "solution_chars": 299,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 6,
+          "rust": 8
+        },
+        "language_char_counts": {
+          "kotlin": 299,
+          "rust": 405
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "unsolved"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-10-2333-minimum-sum-of-squared-difference/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-09-1541-minimum-insertions-to-balance-a-parentheses-string",
       "date": "2026-10-09",
