@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-10T09:00:59Z",
+  "generated_at": "2026-10-11T10:03:09Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1431,
-    "unique_problem_count": 1252,
+    "entry_count": 1432,
+    "unique_problem_count": 1253,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 956,
+    "rust_count": 957,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
     "unsolved_count": 101,
-    "one_liner_count": 123,
+    "one_liner_count": 124,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 275,
+      "count": 276,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1425,
+      "count": 1426,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 956,
+      "count": 957,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -96,7 +96,7 @@
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 108,
+      "count": 109,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1252,
+    "unique_problem_count": 1253,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 123
+        "count": 124
       },
       {
         "slug": "tiny",
@@ -44406,6 +44406,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-10-11-2778-sum-of-squares-of-special-elements",
+        "date": "2026-10-11",
+        "display_date": "11.10.2026",
+        "year": "2026",
+        "display_title": "2778. Sum of Squares of Special Elements",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-10-11-2778-sum-of-squares-of-special-elements/",
+        "problem_url": "https://leetcode.com/problems/sum-of-squares-of-special-elements/solutions/8566993/kotlin-rust-by-samoylenkodmitry-tbl0/",
+        "image_url": "/assets/leetcode_daily_images/11.10.2026.webp",
+        "takeaway": "Sum of squares at positions divisible by size",
+        "pattern_slugs": [
+          "simulation"
+        ],
+        "pattern_labels": [
+          "Simulation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 85,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-05-15-153-find-minimum-in-rotated-sorted-array",
         "date": "2026-05-15",
         "display_date": "15.05.2026",
@@ -49351,13 +49385,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 123,
+        "count": 124,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-11-2778-sum-of-squares-of-special-elements",
+      "date": "2026-10-11",
+      "display_date": "11.10.2026",
+      "year": "2026",
+      "problem_id": 2778,
+      "title": "Sum of Squares of Special Elements",
+      "display_title": "2778. Sum of Squares of Special Elements",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "simulation"
+      ],
+      "pattern_labels": [
+        "Simulation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/sum-of-squares-of-special-elements/solutions/8566993/kotlin-rust-by-samoylenkodmitry-tbl0/",
+      "kotlin_url": "https://leetcode.com/problems/sum-of-squares-of-special-elements/solutions/8566993/kotlin-rust-by-samoylenkodmitry-tbl0/",
+      "rust_url": "https://leetcode.com/problems/sum-of-squares-of-special-elements/solutions/8566993/kotlin-rust-by-samoylenkodmitry-tbl0/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/11102026-2778-sum-of-squares-of-special?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/X3WV6WoTwcc",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1509",
+      "image_url": "/assets/leetcode_daily_images/11.10.2026.webp",
+      "takeaway": "Sum of squares at positions divisible by size",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 85,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 85,
+          "rust": 108
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-11-2778-sum-of-squares-of-special-elements/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-10-2333-minimum-sum-of-squared-difference",
       "date": "2026-10-10",
