@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-11T10:03:09Z",
+  "generated_at": "2026-10-12T09:53:04Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1432,
-    "unique_problem_count": 1253,
+    "entry_count": 1433,
+    "unique_problem_count": 1254,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 957,
+    "rust_count": 958,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
-    "unsolved_count": 101,
+    "unsolved_count": 102,
     "one_liner_count": 124,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 276,
+      "count": 277,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1426,
+      "count": 1427,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 957,
+      "count": 958,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 411,
+      "count": 412,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -120,7 +120,7 @@
     {
       "slug": "bit-manipulation",
       "label": "Bit Manipulation",
-      "count": 82,
+      "count": 83,
       "url": "/leetcode/pattern/bit-manipulation/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1253,
+    "unique_problem_count": 1254,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 443
+        "count": 444
       },
       {
         "slug": "compact",
@@ -38607,6 +38607,43 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-10-12-2897-apply-operations-on-array-to-maximize-sum-of-squares",
+        "date": "2026-10-12",
+        "display_date": "12.10.2026",
+        "year": "2026",
+        "display_title": "2897. Apply Operations on Array to Maximize Sum of Squares",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-10-12-2897-apply-operations-on-array-to-maximize-sum-of-squares/",
+        "problem_url": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/solutions/8568646/kotlin-rust-by-samoylenkodmitry-dco2/",
+        "image_url": "/assets/leetcode_daily_images/12.10.2026.webp",
+        "takeaway": "Max sum of squares after any pairwise a=a|b, b=a&b",
+        "pattern_slugs": [
+          "bit-manipulation",
+          "array"
+        ],
+        "pattern_labels": [
+          "Bit Manipulation",
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "tiny",
+          "unsolved"
+        ],
+        "solution_lines": 5,
+        "solution_chars": 209,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": true,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-10-10-2333-minimum-sum-of-squared-difference",
         "date": "2026-10-10",
         "display_date": "10.10.2026",
@@ -49365,7 +49402,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 101,
+        "count": 102,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -49392,6 +49429,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-12-2897-apply-operations-on-array-to-maximize-sum-of-squares",
+      "date": "2026-10-12",
+      "display_date": "12.10.2026",
+      "year": "2026",
+      "problem_id": 2897,
+      "title": "Apply Operations on Array to Maximize Sum of Squares",
+      "display_title": "2897. Apply Operations on Array to Maximize Sum of Squares",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "bit-manipulation",
+        "array"
+      ],
+      "pattern_labels": [
+        "Bit Manipulation",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/solutions/8568646/kotlin-rust-by-samoylenkodmitry-dco2/",
+      "kotlin_url": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/solutions/8568646/kotlin-rust-by-samoylenkodmitry-dco2/",
+      "rust_url": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/solutions/8568646/kotlin-rust-by-samoylenkodmitry-dco2/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/12102026-2897-apply-operations-on?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/N_KQo3nXA2Y",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1510",
+      "image_url": "/assets/leetcode_daily_images/12.10.2026.webp",
+      "takeaway": "Max sum of squares after any pairwise a=a|b, b=a&b",
+      "metrics": {
+        "solution_lines": 5,
+        "solution_chars": 209,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 5,
+          "rust": 7
+        },
+        "language_char_counts": {
+          "kotlin": 209,
+          "rust": 259
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "unsolved"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-12-2897-apply-operations-on-array-to-maximize-sum-of-squares/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-11-2778-sum-of-squares-of-special-elements",
       "date": "2026-10-11",
