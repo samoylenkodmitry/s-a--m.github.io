@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-14T07:15:45Z",
+  "generated_at": "2026-10-15T11:35:23Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1434,
-    "unique_problem_count": 1255,
+    "entry_count": 1435,
+    "unique_problem_count": 1256,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 959,
+    "rust_count": 960,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
     "unsolved_count": 102,
-    "one_liner_count": 125,
+    "one_liner_count": 126,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 278,
+      "count": 279,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1428,
+      "count": 1429,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 959,
+      "count": 960,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -96,7 +96,7 @@
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 109,
+      "count": 110,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1255,
+    "unique_problem_count": 1256,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 125
+        "count": 126
       },
       {
         "slug": "tiny",
@@ -45007,6 +45007,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-10-15-2913-subarrays-distinct-element-sum-of-squares-i",
+        "date": "2026-10-15",
+        "display_date": "15.10.2026",
+        "year": "2026",
+        "display_title": "2913. Subarrays Distinct Element Sum of Squares I",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-10-15-2913-subarrays-distinct-element-sum-of-squares-i/",
+        "problem_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/solutions/8573830/kotlin-rust-by-samoylenkodmitry-5omy/",
+        "image_url": "/assets/leetcode_daily_images/15.10.2026.webp",
+        "takeaway": "Sum of squares of uniq numbers counts in all subarrays",
+        "pattern_slugs": [
+          "simulation"
+        ],
+        "pattern_labels": [
+          "Simulation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 95,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2024-09-22-440-k-th-smallest-in-lexicographical-order",
         "date": "2024-09-22",
         "display_date": "22.09.2024",
@@ -49456,13 +49490,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 125,
+        "count": 126,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-15-2913-subarrays-distinct-element-sum-of-squares-i",
+      "date": "2026-10-15",
+      "display_date": "15.10.2026",
+      "year": "2026",
+      "problem_id": 2913,
+      "title": "Subarrays Distinct Element Sum of Squares I",
+      "display_title": "2913. Subarrays Distinct Element Sum of Squares I",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "simulation"
+      ],
+      "pattern_labels": [
+        "Simulation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/solutions/8573830/kotlin-rust-by-samoylenkodmitry-5omy/",
+      "kotlin_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/solutions/8573830/kotlin-rust-by-samoylenkodmitry-5omy/",
+      "rust_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/solutions/8573830/kotlin-rust-by-samoylenkodmitry-5omy/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/15102026-2913-subarrays-distinct?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/nu5lsK8c3ZM",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1512",
+      "image_url": "/assets/leetcode_daily_images/15.10.2026.webp",
+      "takeaway": "Sum of squares of uniq numbers counts in all subarrays",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 95,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 95,
+          "rust": 146
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-15-2913-subarrays-distinct-element-sum-of-squares-i/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-14-3723-maximize-sum-of-squares-of-digits",
       "date": "2026-10-14",
