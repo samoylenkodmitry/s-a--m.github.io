@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-15T11:35:23Z",
+  "generated_at": "2026-10-16T09:27:04Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1435,
-    "unique_problem_count": 1256,
+    "entry_count": 1436,
+    "unique_problem_count": 1257,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 960,
+    "rust_count": 961,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
-    "unsolved_count": 102,
+    "unsolved_count": 103,
     "one_liner_count": 126,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 279,
+      "count": 280,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1429,
+      "count": 1430,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 960,
+      "count": 961,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -102,7 +102,7 @@
     {
       "slug": "tree",
       "label": "Tree",
-      "count": 101,
+      "count": 102,
       "url": "/leetcode/pattern/tree/"
     },
     {
@@ -114,13 +114,13 @@
     {
       "slug": "math",
       "label": "Math",
-      "count": 87,
+      "count": 88,
       "url": "/leetcode/pattern/math/"
     },
     {
       "slug": "bit-manipulation",
       "label": "Bit Manipulation",
-      "count": 83,
+      "count": 84,
       "url": "/leetcode/pattern/bit-manipulation/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1256,
+    "unique_problem_count": 1257,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
@@ -237,7 +237,7 @@
       {
         "slug": "standard",
         "label": "Standard",
-        "count": 296
+        "count": 297
       },
       {
         "slug": "long",
@@ -38607,6 +38607,45 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-10-16-2916-subarrays-distinct-element-sum-of-squares-ii",
+        "date": "2026-10-16",
+        "display_date": "16.10.2026",
+        "year": "2026",
+        "display_title": "2916. Subarrays Distinct Element Sum of Squares II",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-10-16-2916-subarrays-distinct-element-sum-of-squares-ii/",
+        "problem_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/8574939/kotlin-by-samoylenkodmitry-sedy/",
+        "image_url": "/assets/leetcode_daily_images/16.10.2026.webp",
+        "takeaway": "Sum of squares of uniq numbers counts in all subarrays",
+        "pattern_slugs": [
+          "tree",
+          "bit-manipulation",
+          "math"
+        ],
+        "pattern_labels": [
+          "Tree",
+          "Bit Manipulation",
+          "Math"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "standard",
+          "unsolved"
+        ],
+        "solution_lines": 20,
+        "solution_chars": 595,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "thought_lines": 5,
+        "thought_chars": 155,
+        "max_minute_marker": null,
+        "unsolved": true,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-10-12-2897-apply-operations-on-array-to-maximize-sum-of-squares",
         "date": "2026-10-12",
         "display_date": "12.10.2026",
@@ -49470,7 +49509,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 102,
+        "count": 103,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -49497,6 +49536,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-16-2916-subarrays-distinct-element-sum-of-squares-ii",
+      "date": "2026-10-16",
+      "display_date": "16.10.2026",
+      "year": "2026",
+      "problem_id": 2916,
+      "title": "Subarrays Distinct Element Sum of Squares II",
+      "display_title": "2916. Subarrays Distinct Element Sum of Squares II",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "tree",
+        "bit-manipulation",
+        "math"
+      ],
+      "pattern_labels": [
+        "Tree",
+        "Bit Manipulation",
+        "Math"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/8574939/kotlin-by-samoylenkodmitry-sedy/",
+      "kotlin_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/8574939/kotlin-by-samoylenkodmitry-sedy/",
+      "rust_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/solutions/8574939/kotlin-by-samoylenkodmitry-sedy/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/16102026-2916-subarrays-distinct?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/Bozx3GCcXTg",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1513",
+      "image_url": "/assets/leetcode_daily_images/16.10.2026.webp",
+      "takeaway": "Sum of squares of uniq numbers counts in all subarrays",
+      "metrics": {
+        "solution_lines": 20,
+        "solution_chars": 595,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "language_line_counts": {
+          "kotlin": 20
+        },
+        "language_char_counts": {
+          "kotlin": 595
+        },
+        "thought_lines": 5,
+        "thought_chars": 155,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "standard",
+        "unsolved"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-16-2916-subarrays-distinct-element-sum-of-squares-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-15-2913-subarrays-distinct-element-sum-of-squares-i",
       "date": "2026-10-15",
