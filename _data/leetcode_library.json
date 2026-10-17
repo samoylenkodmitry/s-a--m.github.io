@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-16T09:27:04Z",
+  "generated_at": "2026-10-17T09:12:08Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1436,
-    "unique_problem_count": 1257,
+    "entry_count": 1437,
+    "unique_problem_count": 1258,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 961,
+    "rust_count": 962,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 280,
+      "count": 281,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1430,
+      "count": 1431,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 961,
+      "count": 962,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -84,7 +84,7 @@
     {
       "slug": "sorting",
       "label": "Sorting",
-      "count": 168,
+      "count": 169,
       "url": "/leetcode/pattern/sorting/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1257,
+    "unique_problem_count": 1258,
     "repeat_problem_count": 173,
     "repeated_entry_count": 352,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 482
+        "count": 483
       },
       {
         "slug": "standard",
@@ -49536,6 +49536,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-17-3551-minimum-swaps-to-sort-by-digit-sum",
+      "date": "2026-10-17",
+      "display_date": "17.10.2026",
+      "year": "2026",
+      "problem_id": 3551,
+      "title": "Minimum Swaps to Sort by Digit Sum",
+      "display_title": "3551. Minimum Swaps to Sort by Digit Sum",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "sorting"
+      ],
+      "pattern_labels": [
+        "Sorting"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/8576231/kotlin-rust-by-samoylenkodmitry-wo5p/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/8576231/kotlin-rust-by-samoylenkodmitry-wo5p/",
+      "rust_url": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/solutions/8576231/kotlin-rust-by-samoylenkodmitry-wo5p/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/17102026-3551-minimum-swaps-to-sort?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/FQjNg1hn-P8",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1514",
+      "image_url": "/assets/leetcode_daily_images/17.10.2026.webp",
+      "takeaway": "Minimum swaps to sort by digits sum & num",
+      "metrics": {
+        "solution_lines": 8,
+        "solution_chars": 228,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 8,
+          "rust": 8
+        },
+        "language_char_counts": {
+          "kotlin": 228,
+          "rust": 321
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-10-17-3551-minimum-swaps-to-sort-by-digit-sum/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-16-2916-subarrays-distinct-element-sum-of-squares-ii",
       "date": "2026-10-16",
