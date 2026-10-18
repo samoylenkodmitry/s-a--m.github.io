@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-17T09:12:08Z",
+  "generated_at": "2026-10-18T10:57:26Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1437,
+    "entry_count": 1438,
     "unique_problem_count": 1258,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 962,
-    "repeat_problem_count": 173,
-    "repeated_entry_count": 352,
+    "rust_count": 963,
+    "repeat_problem_count": 174,
+    "repeated_entry_count": 354,
     "deep_thinking_count": 47,
-    "unsolved_count": 103,
+    "unsolved_count": 104,
     "one_liner_count": 126,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 281,
+      "count": 282,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1431,
+      "count": 1432,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 962,
+      "count": 963,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 412,
+      "count": 413,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 116,
+      "count": 117,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -102,7 +102,7 @@
     {
       "slug": "tree",
       "label": "Tree",
-      "count": 102,
+      "count": 103,
       "url": "/leetcode/pattern/tree/"
     },
     {
@@ -216,8 +216,8 @@
   ],
   "insights": {
     "unique_problem_count": 1258,
-    "repeat_problem_count": 173,
-    "repeated_entry_count": 352,
+    "repeat_problem_count": 174,
+    "repeated_entry_count": 354,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 483
+        "count": 484
       },
       {
         "slug": "standard",
@@ -1711,6 +1711,219 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "1569",
+        "problem_id": 1569,
+        "title": "Number of Ways to Reorder Array to Get Same BST",
+        "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+        "evolution_slug": "1569-number-of-ways-to-reorder-array-to-get-same-bst",
+        "evolution_url": "/leetcode/evolution/1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+        "count": 2,
+        "first_date": "16.06.2023",
+        "last_date": "18.10.2026",
+        "first_sort_date": "2023-06-16",
+        "last_sort_date": "2026-10-18",
+        "span_days": 1220,
+        "latest_page_url": "/leetcode/problem/2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+        "solution_line_delta": -22,
+        "solution_char_delta": -606,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst",
+          "date": "2026-10-18",
+          "display_date": "18.10.2026",
+          "year": "2026",
+          "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+          "difficulty": "hard",
+          "page_url": "/leetcode/problem/2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+          "problem_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/8577786/kotlin-rust-by-samoylenkodmitry-aqw8/",
+          "image_url": "/assets/leetcode_daily_images/18.10.2026.webp",
+          "takeaway": "Ways to permute keeping the same BST",
+          "pattern_slugs": [
+            "dynamic-programming",
+            "tree",
+            "array"
+          ],
+          "pattern_labels": [
+            "Dynamic Programming",
+            "Tree",
+            "Array"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "compact",
+            "unsolved",
+            "repeat"
+          ],
+          "solution_lines": 9,
+          "solution_chars": 352,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "compact",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": true,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 29,
+          "thought_line_percent": 0,
+          "days_since_previous": 1220,
+          "solution_line_delta_from_previous": -22,
+          "solution_char_delta_from_previous": -606,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-06-16-1569-number-of-ways-to-reorder-array-to-get-same-bst",
+          "date": "2023-06-16",
+          "display_date": "16.06.2023",
+          "year": "2023",
+          "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+          "difficulty": "hard",
+          "page_url": "/leetcode/problem/2023-06-16-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+          "problem_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/description/",
+          "image_url": "/assets/leetcode_daily_images/6d3cd293.webp",
+          "takeaway": "Count permutations of an array with identical Binary Search Tree",
+          "pattern_slugs": [
+            "tree",
+            "binary-search",
+            "array"
+          ],
+          "pattern_labels": [
+            "Tree",
+            "Binary Search",
+            "Array"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "long",
+            "repeat"
+          ],
+          "solution_lines": 31,
+          "solution_chars": 958,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "long",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 31,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 1,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-06-16-1569-number-of-ways-to-reorder-array-to-get-same-bst",
+            "date": "2023-06-16",
+            "display_date": "16.06.2023",
+            "year": "2023",
+            "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+            "difficulty": "hard",
+            "page_url": "/leetcode/problem/2023-06-16-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+            "problem_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/description/",
+            "image_url": "/assets/leetcode_daily_images/6d3cd293.webp",
+            "takeaway": "Count permutations of an array with identical Binary Search Tree",
+            "pattern_slugs": [
+              "tree",
+              "binary-search",
+              "array"
+            ],
+            "pattern_labels": [
+              "Tree",
+              "Binary Search",
+              "Array"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "long",
+              "repeat"
+            ],
+            "solution_lines": 31,
+            "solution_chars": 958,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "long",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst",
+            "date": "2026-10-18",
+            "display_date": "18.10.2026",
+            "year": "2026",
+            "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+            "difficulty": "hard",
+            "page_url": "/leetcode/problem/2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+            "problem_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/8577786/kotlin-rust-by-samoylenkodmitry-aqw8/",
+            "image_url": "/assets/leetcode_daily_images/18.10.2026.webp",
+            "takeaway": "Ways to permute keeping the same BST",
+            "pattern_slugs": [
+              "dynamic-programming",
+              "tree",
+              "array"
+            ],
+            "pattern_labels": [
+              "Dynamic Programming",
+              "Tree",
+              "Array"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "compact",
+              "unsolved",
+              "repeat"
+            ],
+            "solution_lines": 9,
+            "solution_chars": 352,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "compact",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": true,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 29,
+            "thought_line_percent": 0,
+            "days_since_previous": 1220,
+            "solution_line_delta_from_previous": -22,
+            "solution_char_delta_from_previous": -606,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -38607,6 +38820,46 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst",
+        "date": "2026-10-18",
+        "display_date": "18.10.2026",
+        "year": "2026",
+        "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+        "problem_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/8577786/kotlin-rust-by-samoylenkodmitry-aqw8/",
+        "image_url": "/assets/leetcode_daily_images/18.10.2026.webp",
+        "takeaway": "Ways to permute keeping the same BST",
+        "pattern_slugs": [
+          "dynamic-programming",
+          "tree",
+          "array"
+        ],
+        "pattern_labels": [
+          "Dynamic Programming",
+          "Tree",
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "repeat"
+        ],
+        "solution_lines": 9,
+        "solution_chars": 352,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": true,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-10-16-2916-subarrays-distinct-element-sum-of-squares-ii",
         "date": "2026-10-16",
         "display_date": "16.10.2026",
@@ -49479,7 +49732,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 173,
+        "count": 174,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -49509,7 +49762,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 103,
+        "count": 104,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -49536,6 +49789,82 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst",
+      "date": "2026-10-18",
+      "display_date": "18.10.2026",
+      "year": "2026",
+      "problem_id": 1569,
+      "title": "Number of Ways to Reorder Array to Get Same BST",
+      "display_title": "1569. Number of Ways to Reorder Array to Get Same BST",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "tree",
+        "array"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Tree",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/8577786/kotlin-rust-by-samoylenkodmitry-aqw8/",
+      "kotlin_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/8577786/kotlin-rust-by-samoylenkodmitry-aqw8/",
+      "rust_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/8577786/kotlin-rust-by-samoylenkodmitry-aqw8/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/18102026-1569-number-of-ways-to-reorder?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/fm36K2FIETk",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1515",
+      "image_url": "/assets/leetcode_daily_images/18.10.2026.webp",
+      "takeaway": "Ways to permute keeping the same BST",
+      "metrics": {
+        "solution_lines": 9,
+        "solution_chars": 352,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 9,
+          "rust": 10
+        },
+        "language_char_counts": {
+          "kotlin": 352,
+          "rust": 418
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "unsolved",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1569-number-of-ways-to-reorder-array-to-get-same-bst/"
+        },
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-17-3551-minimum-swaps-to-sort-by-digit-sum",
       "date": "2026-10-17",
@@ -212851,9 +213180,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "long"
+        "long",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1569-number-of-ways-to-reorder-array-to-get-same-bst/"
+        }
+      ],
       "page_url": "/leetcode/problem/2023-06-16-1569-number-of-ways-to-reorder-array-to-get-same-bst/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
