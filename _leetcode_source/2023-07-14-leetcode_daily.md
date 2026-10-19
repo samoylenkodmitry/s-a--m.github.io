@@ -21,6 +21,51 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 19.10.2026
+[2089. Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/8578960/kotlin-rust-by-samoylenkodmitry-5chx/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/19102026-2089-find-target-indices?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/NNkNSRNEyXg)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![19.10.2026.webp](/assets/leetcode_daily_images/19.10.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1516
+
+#### Problem TLDR
+
+Positions of target in sorted order
+
+#### Intuition
+
+Sort. Then filter positions.
+Or count elements less and equal to the target.
+
+#### Approach
+
+* Rust has a nice `positions` filter
+
+#### Complexity
+
+- Time complexity:
+$$O(n^2)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun targetIndices(n: IntArray, t: Int)=
+    n.indices.filter{n.sorted()[it]==t}
+```
+```rust
+    pub fn target_indices(n: Vec<i32>, t: i32) -> Vec<i32> {
+        n.into_iter().sorted().positions(|x| x == t).map(|i| i as _).collect()
+    }
+```
+
 # 18.10.2026
 [1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/solutions/8577786/kotlin-rust-by-samoylenkodmitry-aqw8/) hard
 [substack](https://dmitriisamoilenko.substack.com/p/18102026-1569-number-of-ways-to-reorder?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
