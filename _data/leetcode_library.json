@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-18T10:57:26Z",
+  "generated_at": "2026-10-19T06:30:38Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1438,
-    "unique_problem_count": 1258,
+    "entry_count": 1439,
+    "unique_problem_count": 1259,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 963,
+    "rust_count": 964,
     "repeat_problem_count": 174,
     "repeated_entry_count": 354,
     "deep_thinking_count": 47,
     "unsolved_count": 104,
-    "one_liner_count": 126,
+    "one_liner_count": 127,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 282,
+      "count": 283,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1432,
+      "count": 1433,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 963,
+      "count": 964,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 413,
+      "count": 414,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -84,7 +84,7 @@
     {
       "slug": "sorting",
       "label": "Sorting",
-      "count": 169,
+      "count": 170,
       "url": "/leetcode/pattern/sorting/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1258,
+    "unique_problem_count": 1259,
     "repeat_problem_count": 174,
     "repeated_entry_count": 354,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 126
+        "count": 127
       },
       {
         "slug": "tiny",
@@ -43942,6 +43942,42 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-10-19-2089-find-target-indices-after-sorting-array",
+        "date": "2026-10-19",
+        "display_date": "19.10.2026",
+        "year": "2026",
+        "display_title": "2089. Find Target Indices After Sorting Array",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-10-19-2089-find-target-indices-after-sorting-array/",
+        "problem_url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/8578960/kotlin-rust-by-samoylenkodmitry-5chx/",
+        "image_url": "/assets/leetcode_daily_images/19.10.2026.webp",
+        "takeaway": "Positions of target in sorted order",
+        "pattern_slugs": [
+          "sorting",
+          "array"
+        ],
+        "pattern_labels": [
+          "Sorting",
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 75,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2024-08-22-476-number-complement",
         "date": "2024-08-22",
         "display_date": "22.08.2024",
@@ -49782,13 +49818,78 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 126,
+        "count": 127,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-19-2089-find-target-indices-after-sorting-array",
+      "date": "2026-10-19",
+      "display_date": "19.10.2026",
+      "year": "2026",
+      "problem_id": 2089,
+      "title": "Find Target Indices After Sorting Array",
+      "display_title": "2089. Find Target Indices After Sorting Array",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "sorting",
+        "array"
+      ],
+      "pattern_labels": [
+        "Sorting",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/8578960/kotlin-rust-by-samoylenkodmitry-5chx/",
+      "kotlin_url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/8578960/kotlin-rust-by-samoylenkodmitry-5chx/",
+      "rust_url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/solutions/8578960/kotlin-rust-by-samoylenkodmitry-5chx/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/19102026-2089-find-target-indices?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/NNkNSRNEyXg",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1516",
+      "image_url": "/assets/leetcode_daily_images/19.10.2026.webp",
+      "takeaway": "Positions of target in sorted order",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 75,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 75,
+          "rust": 129
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-19-2089-find-target-indices-after-sorting-array/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-18-1569-number-of-ways-to-reorder-array-to-get-same-bst",
       "date": "2026-10-18",
