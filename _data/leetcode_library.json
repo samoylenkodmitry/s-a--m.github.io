@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-22T08:31:34Z",
+  "generated_at": "2026-10-23T07:13:15Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1442,
-    "unique_problem_count": 1262,
+    "entry_count": 1443,
+    "unique_problem_count": 1263,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 967,
+    "rust_count": 968,
     "repeat_problem_count": 174,
     "repeated_entry_count": 354,
     "deep_thinking_count": 47,
     "unsolved_count": 104,
-    "one_liner_count": 127,
+    "one_liner_count": 128,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 286,
+      "count": 287,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1436,
+      "count": 1437,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 967,
+      "count": 968,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -84,7 +84,7 @@
     {
       "slug": "sorting",
       "label": "Sorting",
-      "count": 173,
+      "count": 174,
       "url": "/leetcode/pattern/sorting/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1262,
+    "unique_problem_count": 1263,
     "repeat_problem_count": 174,
     "repeated_entry_count": 354,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 127
+        "count": 128
       },
       {
         "slug": "tiny",
@@ -44805,6 +44805,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-10-23-3644-maximum-k-to-sort-a-permutation",
+        "date": "2026-10-23",
+        "display_date": "23.10.2026",
+        "year": "2026",
+        "display_title": "3644. Maximum K to Sort a Permutation",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-10-23-3644-maximum-k-to-sort-a-permutation/",
+        "problem_url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/8584773/kotlin-rust-by-samoylenkodmitry-g7r7/",
+        "image_url": "/assets/leetcode_daily_images/23.10.2026.webp",
+        "takeaway": "Max K to sort by swapping a&b=k",
+        "pattern_slugs": [
+          "sorting"
+        ],
+        "pattern_labels": [
+          "Sorting"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 87,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-05-15-153-find-minimum-in-rotated-sorted-array",
         "date": "2026-05-15",
         "display_date": "15.05.2026",
@@ -49818,13 +49852,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 127,
+        "count": 128,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-23-3644-maximum-k-to-sort-a-permutation",
+      "date": "2026-10-23",
+      "display_date": "23.10.2026",
+      "year": "2026",
+      "problem_id": 3644,
+      "title": "Maximum K to Sort a Permutation",
+      "display_title": "3644. Maximum K to Sort a Permutation",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "sorting"
+      ],
+      "pattern_labels": [
+        "Sorting"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/8584773/kotlin-rust-by-samoylenkodmitry-g7r7/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/8584773/kotlin-rust-by-samoylenkodmitry-g7r7/",
+      "rust_url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/8584773/kotlin-rust-by-samoylenkodmitry-g7r7/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/23102026-3644-maximum-k-to-sort-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/nv5kyYQd-N8",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1520",
+      "image_url": "/assets/leetcode_daily_images/23.10.2026.webp",
+      "takeaway": "Max K to sort by swapping a&b=k",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 87,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 87,
+          "rust": 106
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-23-3644-maximum-k-to-sort-a-permutation/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-22-3942-minimum-operations-to-sort-a-permutation",
       "date": "2026-10-22",
