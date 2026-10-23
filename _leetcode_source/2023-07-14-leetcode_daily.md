@@ -21,6 +21,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 23.10.2026
+[3644. Maximum K to Sort a Permutation](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/solutions/8584773/kotlin-rust-by-samoylenkodmitry-g7r7/) medium
+[substack](https://dmitriisamoilenko.substack.com/p/23102026-3644-maximum-k-to-sort-a?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/nv5kyYQd-N8)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![23.10.2026.webp](/assets/leetcode_daily_images/23.10.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1520
+
+#### Problem TLDR
+
+Max K to sort by swapping a&b=k
+
+#### Intuition
+
+Each unsorted position forms a cycle island. Walk the cycle and do the 'and' operation. Then join the islands with 'and' operation.
+
+#### Approach
+
+* we don't have to walk islands, it is just all unsorted positions's 'and' operation
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun sortPermutation(n: IntArray) = 
+    n.filterIndexed{i,v->v!=i}.reduceOrNull(Int::and)?:0
+```
+```rust
+    pub fn sort_permutation(n: Vec<i32>) -> i32 {
+        let mut r=-1;for(i,v)in(0..).zip(n){if v!=i{r&=v}}r.max(0)
+    }
+```
+
 # 22.10.2026
 [3942. Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/solutions/8583441/kotlin-rust-by-samoylenkodmitry-8334/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/22102026-3942-minimum-operations?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
