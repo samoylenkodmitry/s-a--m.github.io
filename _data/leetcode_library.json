@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-24T07:54:36Z",
+  "generated_at": "2026-10-25T09:06:40Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1444,
+    "entry_count": 1445,
     "unique_problem_count": 1264,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 969,
-    "repeat_problem_count": 174,
-    "repeated_entry_count": 354,
+    "rust_count": 970,
+    "repeat_problem_count": 175,
+    "repeated_entry_count": 356,
     "deep_thinking_count": 47,
     "unsolved_count": 104,
     "one_liner_count": 128,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 288,
+      "count": 289,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1438,
+      "count": 1439,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 969,
+      "count": 970,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -72,7 +72,7 @@
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 236,
+      "count": 237,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -216,8 +216,8 @@
   ],
   "insights": {
     "unique_problem_count": 1264,
-    "repeat_problem_count": 174,
-    "repeated_entry_count": 354,
+    "repeat_problem_count": 175,
+    "repeated_entry_count": 356,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 446
+        "count": 447
       },
       {
         "slug": "compact",
@@ -1711,6 +1711,209 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "1254",
+        "problem_id": 1254,
+        "title": "Number of Closed Islands",
+        "display_title": "1254. Number of Closed Islands",
+        "evolution_slug": "1254-number-of-closed-islands",
+        "evolution_url": "/leetcode/evolution/1254-number-of-closed-islands/",
+        "count": 2,
+        "first_date": "06.04.2023",
+        "last_date": "25.10.2026",
+        "first_sort_date": "2023-04-06",
+        "last_sort_date": "2026-10-25",
+        "span_days": 1298,
+        "latest_page_url": "/leetcode/problem/2026-10-25-1254-number-of-closed-islands/",
+        "solution_line_delta": -16,
+        "solution_char_delta": -424,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-10-25-1254-number-of-closed-islands",
+          "date": "2026-10-25",
+          "display_date": "25.10.2026",
+          "year": "2026",
+          "display_title": "1254. Number of Closed Islands",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-10-25-1254-number-of-closed-islands/",
+          "problem_url": "https://leetcode.com/problems/number-of-closed-islands/solutions/8588075/kotlin-rust-by-samoylenkodmitry-hkg2/",
+          "image_url": "/assets/leetcode_daily_images/25.10.2026.webp",
+          "takeaway": "Count 0-islands surrounded by 1",
+          "pattern_slugs": [
+            "graph"
+          ],
+          "pattern_labels": [
+            "Graph"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 6,
+          "solution_chars": 270,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 27,
+          "thought_line_percent": 0,
+          "days_since_previous": 1298,
+          "solution_line_delta_from_previous": -16,
+          "solution_char_delta_from_previous": -424,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2023-04-06-1254-number-of-closed-islands",
+          "date": "2023-04-06",
+          "display_date": "06.04.2023",
+          "year": "2023",
+          "display_title": "1254. Number of Closed Islands",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2023-04-06-1254-number-of-closed-islands/",
+          "problem_url": "https://leetcode.com/problems/number-of-closed-islands/description/",
+          "image_url": null,
+          "takeaway": "DFS will solve the problem.",
+          "pattern_slugs": [
+            "union-find",
+            "graph",
+            "array"
+          ],
+          "pattern_labels": [
+            "Union Find",
+            "Graph",
+            "Array"
+          ],
+          "languages": [
+            "kotlin"
+          ],
+          "catalog_tags": [
+            "standard",
+            "repeat"
+          ],
+          "solution_lines": 22,
+          "solution_chars": 694,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "standard",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 22,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2023-04-06-1254-number-of-closed-islands",
+            "date": "2023-04-06",
+            "display_date": "06.04.2023",
+            "year": "2023",
+            "display_title": "1254. Number of Closed Islands",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2023-04-06-1254-number-of-closed-islands/",
+            "problem_url": "https://leetcode.com/problems/number-of-closed-islands/description/",
+            "image_url": null,
+            "takeaway": "DFS will solve the problem.",
+            "pattern_slugs": [
+              "union-find",
+              "graph",
+              "array"
+            ],
+            "pattern_labels": [
+              "Union Find",
+              "Graph",
+              "Array"
+            ],
+            "languages": [
+              "kotlin"
+            ],
+            "catalog_tags": [
+              "standard",
+              "repeat"
+            ],
+            "solution_lines": 22,
+            "solution_chars": 694,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "standard",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-10-25-1254-number-of-closed-islands",
+            "date": "2026-10-25",
+            "display_date": "25.10.2026",
+            "year": "2026",
+            "display_title": "1254. Number of Closed Islands",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-10-25-1254-number-of-closed-islands/",
+            "problem_url": "https://leetcode.com/problems/number-of-closed-islands/solutions/8588075/kotlin-rust-by-samoylenkodmitry-hkg2/",
+            "image_url": "/assets/leetcode_daily_images/25.10.2026.webp",
+            "takeaway": "Count 0-islands surrounded by 1",
+            "pattern_slugs": [
+              "graph"
+            ],
+            "pattern_labels": [
+              "Graph"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 6,
+            "solution_chars": 270,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 27,
+            "thought_line_percent": 0,
+            "days_since_previous": 1298,
+            "solution_line_delta_from_previous": -16,
+            "solution_char_delta_from_previous": -424,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -49802,7 +50005,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 174,
+        "count": 175,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -49859,6 +50062,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-25-1254-number-of-closed-islands",
+      "date": "2026-10-25",
+      "display_date": "25.10.2026",
+      "year": "2026",
+      "problem_id": 1254,
+      "title": "Number of Closed Islands",
+      "display_title": "1254. Number of Closed Islands",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "graph"
+      ],
+      "pattern_labels": [
+        "Graph"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/number-of-closed-islands/solutions/8588075/kotlin-rust-by-samoylenkodmitry-hkg2/",
+      "kotlin_url": "https://leetcode.com/problems/number-of-closed-islands/solutions/8588075/kotlin-rust-by-samoylenkodmitry-hkg2/",
+      "rust_url": "https://leetcode.com/problems/number-of-closed-islands/solutions/8588075/kotlin-rust-by-samoylenkodmitry-hkg2/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/25102026-1254-number-of-closed-islands?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/YAVvQS1uasI",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1522",
+      "image_url": "/assets/leetcode_daily_images/25.10.2026.webp",
+      "takeaway": "Count 0-islands surrounded by 1",
+      "metrics": {
+        "solution_lines": 6,
+        "solution_chars": 270,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 6,
+          "rust": 7
+        },
+        "language_char_counts": {
+          "kotlin": 270,
+          "rust": 370
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1254-number-of-closed-islands/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-10-25-1254-number-of-closed-islands/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-24-2409-count-days-spent-together",
       "date": "2026-10-24",
@@ -223634,9 +223903,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "standard"
+        "standard",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1254-number-of-closed-islands/"
+        }
+      ],
       "page_url": "/leetcode/problem/2023-04-06-1254-number-of-closed-islands/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
