@@ -21,6 +21,50 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 27.10.2026
+[3963. Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/solutions/8590986/kotlin-rust-by-samoylenkodmitry-eyd9/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/27102026-3963-create-grid-with-exactly?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/hkMvKDkHEGc)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![27.10.2026.webp](/assets/leetcode_daily_images/27.10.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1524
+
+#### Problem TLDR
+
+Any maze with single path
+
+#### Intuition
+
+Top row and rigthmost column is free, others are walls
+
+#### Approach
+
+* repeat and string concatenation works the same on Rust and Kotlin
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun createGrid(m: Int, n: Int) = 
+    List(m){if (it<1)".".repeat(n) else "#".repeat(n-1)+"."}
+```
+```rust
+    pub fn create_grid(m: i32, n: i32) -> Vec<String> {
+        (0..m).map(|i| if i<1{ ".".repeat(n as usize)}else{"#".repeat(n as usize-1)+"."}).collect()
+    }
+```
+
 # 26.10.2026
 [3619. Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/solutions/8589540/kotlin-rust-by-samoylenkodmitry-posu/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/26102026-3619-count-islands-with?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
