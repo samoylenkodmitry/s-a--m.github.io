@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Dynamic Programming"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "117 entries tagged as Dynamic Programming."
+library_summary: "118 entries tagged as Dynamic Programming."
 pattern_slug: "dynamic-programming"
 ---

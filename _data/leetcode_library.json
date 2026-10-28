@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27T08:17:11Z",
+  "generated_at": "2026-10-28T09:41:30Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1447,
-    "unique_problem_count": 1266,
+    "entry_count": 1448,
+    "unique_problem_count": 1267,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 972,
+    "rust_count": 973,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 291,
+      "count": 292,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1441,
+      "count": 1442,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 972,
+      "count": 973,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 418,
+      "count": 419,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 117,
+      "count": 118,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -120,7 +120,7 @@
     {
       "slug": "bit-manipulation",
       "label": "Bit Manipulation",
-      "count": 84,
+      "count": 85,
       "url": "/leetcode/pattern/bit-manipulation/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1266,
+    "unique_problem_count": 1267,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 486
+        "count": 487
       },
       {
         "slug": "standard",
@@ -50096,6 +50096,67 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-28-3882-minimum-xor-path-in-a-grid",
+      "date": "2026-10-28",
+      "display_date": "28.10.2026",
+      "year": "2026",
+      "problem_id": 3882,
+      "title": "Minimum XOR Path in a Grid",
+      "display_title": "3882. Minimum XOR Path in a Grid",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "bit-manipulation",
+        "array"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Bit Manipulation",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/solutions/8592387/kotlin-rust-by-samoylenkodmitry-wrtm/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/solutions/8592387/kotlin-rust-by-samoylenkodmitry-wrtm/",
+      "rust_url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/solutions/8592387/kotlin-rust-by-samoylenkodmitry-wrtm/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/28102026-3882-minimum-xor-path-in?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/bRTN6rxtDtQ",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1525",
+      "image_url": "/assets/leetcode_daily_images/28.10.2026.webp",
+      "takeaway": "Smallest xor-path",
+      "metrics": {
+        "solution_lines": 8,
+        "solution_chars": 284,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 8,
+          "rust": 8
+        },
+        "language_char_counts": {
+          "kotlin": 285,
+          "rust": 284
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-10-28-3882-minimum-xor-path-in-a-grid/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-27-3963-create-grid-with-exactly-one-path",
       "date": "2026-10-27",
