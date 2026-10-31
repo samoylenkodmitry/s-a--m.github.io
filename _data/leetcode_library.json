@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-30T10:32:17Z",
+  "generated_at": "2026-10-31T10:19:47Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1450,
-    "unique_problem_count": 1269,
+    "entry_count": 1451,
+    "unique_problem_count": 1270,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 975,
+    "rust_count": 976,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 294,
+      "count": 295,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1444,
+      "count": 1445,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 975,
+      "count": 976,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,13 +66,13 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 419,
+      "count": 420,
       "url": "/leetcode/pattern/array/"
     },
     {
       "slug": "graph",
       "label": "Graph",
-      "count": 240,
+      "count": 241,
       "url": "/leetcode/pattern/graph/"
     },
     {
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 118,
+      "count": 119,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1269,
+    "unique_problem_count": 1270,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 488
+        "count": 489
       },
       {
         "slug": "standard",
@@ -50135,6 +50135,67 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-10-31-3665-twisted-mirror-path-count",
+      "date": "2026-10-31",
+      "display_date": "31.10.2026",
+      "year": "2026",
+      "problem_id": 3665,
+      "title": "Twisted Mirror Path Count",
+      "display_title": "3665. Twisted Mirror Path Count",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "graph",
+        "array"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Graph",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/twisted-mirror-path-count/solutions/8595937/kotlin-rust-by-samoylenkodmitry-y35u/",
+      "kotlin_url": "https://leetcode.com/problems/twisted-mirror-path-count/solutions/8595937/kotlin-rust-by-samoylenkodmitry-y35u/",
+      "rust_url": "https://leetcode.com/problems/twisted-mirror-path-count/solutions/8595937/kotlin-rust-by-samoylenkodmitry-y35u/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/31102026-3665-twisted-mirror-path?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/GT3lSAGvhQY",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1528",
+      "image_url": "/assets/leetcode_daily_images/31.10.2026.webp",
+      "takeaway": "Count ways to move in grid with 1-mirrors",
+      "metrics": {
+        "solution_lines": 10,
+        "solution_chars": 238,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 11,
+          "rust": 10
+        },
+        "language_char_counts": {
+          "kotlin": 241,
+          "rust": 238
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-10-31-3665-twisted-mirror-path-count/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-10-30-3970-shortest-path-with-at-most-k-consecutive-identical-characters",
       "date": "2026-10-30",
