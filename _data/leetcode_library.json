@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-02T10:33:44Z",
+  "generated_at": "2026-11-03T08:45:35Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1453,
-    "unique_problem_count": 1272,
+    "entry_count": 1454,
+    "unique_problem_count": 1273,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 978,
+    "rust_count": 979,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "deep_thinking_count": 47,
     "unsolved_count": 105,
-    "one_liner_count": 131,
+    "one_liner_count": 132,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 297,
+      "count": 298,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1447,
+      "count": 1448,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 978,
+      "count": 979,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 422,
+      "count": 423,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1272,
+    "unique_problem_count": 1273,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 131
+        "count": 132
       },
       {
         "slug": "tiny",
@@ -43351,6 +43351,40 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-11-03-3736-minimum-moves-to-equal-array-elements-iii",
+        "date": "2026-11-03",
+        "display_date": "03.11.2026",
+        "year": "2026",
+        "display_title": "3736. Minimum Moves to Equal Array Elements III",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-11-03-3736-minimum-moves-to-equal-array-elements-iii/",
+        "problem_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/solutions/8600109/kotlin-rust-by-samoylenkodmitry-bqin/",
+        "image_url": "/assets/leetcode_daily_images/03.11.2026.webp",
+        "takeaway": "Min +1 moves to make all equal",
+        "pattern_slugs": [
+          "array"
+        ],
+        "pattern_labels": [
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 47,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2025-09-07-1304-find-n-unique-integers-sum-up-to-zero",
         "date": "2025-09-07",
         "display_date": "07.09.2025",
@@ -50196,13 +50230,76 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 131,
+        "count": 132,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-03-3736-minimum-moves-to-equal-array-elements-iii",
+      "date": "2026-11-03",
+      "display_date": "03.11.2026",
+      "year": "2026",
+      "problem_id": 3736,
+      "title": "Minimum Moves to Equal Array Elements III",
+      "display_title": "3736. Minimum Moves to Equal Array Elements III",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "array"
+      ],
+      "pattern_labels": [
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/solutions/8600109/kotlin-rust-by-samoylenkodmitry-bqin/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/solutions/8600109/kotlin-rust-by-samoylenkodmitry-bqin/",
+      "rust_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/solutions/8600109/kotlin-rust-by-samoylenkodmitry-bqin/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/03112026-3736-minimum-moves-to-equal?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/asf17iwziUc",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1531",
+      "image_url": "/assets/leetcode_daily_images/03.11.2026.webp",
+      "takeaway": "Min +1 moves to make all equal",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 47,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 47,
+          "rust": 77
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-03-3736-minimum-moves-to-equal-array-elements-iii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-02-462-minimum-moves-to-equal-array-elements-ii",
       "date": "2026-11-02",
