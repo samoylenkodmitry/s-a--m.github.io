@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-03T08:45:35Z",
+  "generated_at": "2026-11-05T09:50:24Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1454,
-    "unique_problem_count": 1273,
+    "entry_count": 1455,
+    "unique_problem_count": 1274,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 979,
+    "rust_count": 980,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "deep_thinking_count": 47,
     "unsolved_count": 105,
-    "one_liner_count": 132,
+    "one_liner_count": 133,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 298,
+      "count": 299,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1448,
+      "count": 1449,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 979,
+      "count": 980,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 423,
+      "count": 424,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -84,7 +84,7 @@
     {
       "slug": "sorting",
       "label": "Sorting",
-      "count": 174,
+      "count": 175,
       "url": "/leetcode/pattern/sorting/"
     },
     {
@@ -215,14 +215,14 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1273,
+    "unique_problem_count": 1274,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 132
+        "count": 133
       },
       {
         "slug": "tiny",
@@ -45355,6 +45355,42 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-11-05-1385-find-the-distance-value-between-two-arrays",
+        "date": "2026-11-05",
+        "display_date": "05.11.2026",
+        "year": "2026",
+        "display_title": "1385. Find the Distance Value Between Two Arrays",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-11-05-1385-find-the-distance-value-between-two-arrays/",
+        "problem_url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/solutions/8602532/kotlin-rust-by-samoylenkodmitry-8cck/",
+        "image_url": "/assets/leetcode_daily_images/05.11.2026.webp",
+        "takeaway": "Count arr1 items distanced at least d from all arr2 items",
+        "pattern_slugs": [
+          "sorting",
+          "array"
+        ],
+        "pattern_labels": [
+          "Sorting",
+          "Array"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 90,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2024-04-29-2997-minimum-number-of-operations-to-make-array-xor-equal-to-k",
         "date": "2024-04-29",
         "display_date": "29.04.2024",
@@ -50230,13 +50266,78 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 132,
+        "count": 133,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-05-1385-find-the-distance-value-between-two-arrays",
+      "date": "2026-11-05",
+      "display_date": "05.11.2026",
+      "year": "2026",
+      "problem_id": 1385,
+      "title": "Find the Distance Value Between Two Arrays",
+      "display_title": "1385. Find the Distance Value Between Two Arrays",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "sorting",
+        "array"
+      ],
+      "pattern_labels": [
+        "Sorting",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/solutions/8602532/kotlin-rust-by-samoylenkodmitry-8cck/",
+      "kotlin_url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/solutions/8602532/kotlin-rust-by-samoylenkodmitry-8cck/",
+      "rust_url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/solutions/8602532/kotlin-rust-by-samoylenkodmitry-8cck/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/05112026-1385-find-the-distance-value?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/kXQHUazu1P4",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1533",
+      "image_url": "/assets/leetcode_daily_images/05.11.2026.webp",
+      "takeaway": "Count arr1 items distanced at least d from all arr2 items",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 90,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 90,
+          "rust": 180
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner"
+      ],
+      "collection_links": [
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-05-1385-find-the-distance-value-between-two-arrays/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-03-3736-minimum-moves-to-equal-array-elements-iii",
       "date": "2026-11-03",
