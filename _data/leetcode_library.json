@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-06T11:38:46Z",
+  "generated_at": "2026-11-07T10:24:33Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1456,
-    "unique_problem_count": 1275,
+    "entry_count": 1457,
+    "unique_problem_count": 1276,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 981,
+    "rust_count": 982,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 300,
+      "count": 301,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1450,
+      "count": 1451,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 981,
+      "count": 982,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 210,
+      "count": 211,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1275,
+    "unique_problem_count": 1276,
     "repeat_problem_count": 175,
     "repeated_entry_count": 356,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 490
+        "count": 491
       },
       {
         "slug": "standard",
@@ -50273,6 +50273,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-07-1882-process-tasks-using-servers",
+      "date": "2026-11-07",
+      "display_date": "07.11.2026",
+      "year": "2026",
+      "problem_id": 1882,
+      "title": "Process Tasks Using Servers",
+      "display_title": "1882. Process Tasks Using Servers",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/process-tasks-using-servers/solutions/8604491/kotlin-rust-by-samoylenkodmitry-nner/",
+      "kotlin_url": "https://leetcode.com/problems/process-tasks-using-servers/solutions/8604491/kotlin-rust-by-samoylenkodmitry-nner/",
+      "rust_url": "https://leetcode.com/problems/process-tasks-using-servers/solutions/8604491/kotlin-rust-by-samoylenkodmitry-nner/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/07112026-1882-process-tasks-using?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/vVjtBWxLB-M",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1535",
+      "image_url": "/assets/leetcode_daily_images/07.11.2026.webp",
+      "takeaway": "Queries: servers assigned for each task. Tasks arriving at their index seconds.",
+      "metrics": {
+        "solution_lines": 9,
+        "solution_chars": 421,
+        "solution_language": "rust",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 12,
+          "rust": 9
+        },
+        "language_char_counts": {
+          "kotlin": 445,
+          "rust": 421
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-11-07-1882-process-tasks-using-servers/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-06-2747-count-zero-request-servers",
       "date": "2026-11-06",
