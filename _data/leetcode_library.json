@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-07T10:24:33Z",
+  "generated_at": "2026-11-08T10:11:22Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1457,
+    "entry_count": 1458,
     "unique_problem_count": 1276,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 982,
-    "repeat_problem_count": 175,
-    "repeated_entry_count": 356,
+    "rust_count": 983,
+    "repeat_problem_count": 176,
+    "repeated_entry_count": 358,
     "deep_thinking_count": 47,
     "unsolved_count": 105,
-    "one_liner_count": 133,
+    "one_liner_count": 134,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 301,
+      "count": 302,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1451,
+      "count": 1452,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 982,
+      "count": 983,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,19 +210,19 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 211,
+      "count": 212,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
     "unique_problem_count": 1276,
-    "repeat_problem_count": 175,
-    "repeated_entry_count": 356,
+    "repeat_problem_count": 176,
+    "repeated_entry_count": 358,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 133
+        "count": 134
       },
       {
         "slug": "tiny",
@@ -1711,6 +1711,207 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "1267",
+        "problem_id": 1267,
+        "title": "Count Servers that Communicate",
+        "display_title": "1267. Count Servers that Communicate",
+        "evolution_slug": "1267-count-servers-that-communicate",
+        "evolution_url": "/leetcode/evolution/1267-count-servers-that-communicate/",
+        "count": 2,
+        "first_date": "23.01.2025",
+        "last_date": "08.11.2026",
+        "first_sort_date": "2025-01-23",
+        "last_sort_date": "2026-11-08",
+        "span_days": 654,
+        "latest_page_url": "/leetcode/problem/2026-11-08-1267-count-servers-that-communicate/",
+        "solution_line_delta": -1,
+        "solution_char_delta": -42,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-11-08-1267-count-servers-that-communicate",
+          "date": "2026-11-08",
+          "display_date": "08.11.2026",
+          "year": "2026",
+          "display_title": "1267. Count Servers that Communicate",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-11-08-1267-count-servers-that-communicate/",
+          "problem_url": "https://leetcode.com/problems/count-servers-that-communicate/solutions/8605713/kotlin-rust-by-samoylenkodmitry-5zp0/",
+          "image_url": "/assets/leetcode_daily_images/08.11.2026.webp",
+          "takeaway": "cells connected by row or column",
+          "pattern_slugs": [
+            "implementation"
+          ],
+          "pattern_labels": [
+            "Implementation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "one-liner",
+            "repeat"
+          ],
+          "solution_lines": 2,
+          "solution_chars": 101,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "one-liner",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 67,
+          "thought_line_percent": 0,
+          "days_since_previous": 654,
+          "solution_line_delta_from_previous": -1,
+          "solution_char_delta_from_previous": -42,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2025-01-23-1267-count-servers-that-communicate",
+          "date": "2025-01-23",
+          "display_date": "23.01.2025",
+          "year": "2025",
+          "display_title": "1267. Count Servers that Communicate",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2025-01-23-1267-count-servers-that-communicate/",
+          "problem_url": "https://leetcode.com/problems/count-servers-that-communicate/description/",
+          "image_url": "/assets/leetcode_daily_images/dc1cb6cf.webp",
+          "takeaway": "Connected servers by row or column",
+          "pattern_slugs": [
+            "union-find",
+            "simulation"
+          ],
+          "pattern_labels": [
+            "Union Find",
+            "Simulation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 3,
+          "solution_chars": 143,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 3,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 1,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2025-01-23-1267-count-servers-that-communicate",
+            "date": "2025-01-23",
+            "display_date": "23.01.2025",
+            "year": "2025",
+            "display_title": "1267. Count Servers that Communicate",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2025-01-23-1267-count-servers-that-communicate/",
+            "problem_url": "https://leetcode.com/problems/count-servers-that-communicate/description/",
+            "image_url": "/assets/leetcode_daily_images/dc1cb6cf.webp",
+            "takeaway": "Connected servers by row or column",
+            "pattern_slugs": [
+              "union-find",
+              "simulation"
+            ],
+            "pattern_labels": [
+              "Union Find",
+              "Simulation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 3,
+            "solution_chars": 143,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-11-08-1267-count-servers-that-communicate",
+            "date": "2026-11-08",
+            "display_date": "08.11.2026",
+            "year": "2026",
+            "display_title": "1267. Count Servers that Communicate",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-11-08-1267-count-servers-that-communicate/",
+            "problem_url": "https://leetcode.com/problems/count-servers-that-communicate/solutions/8605713/kotlin-rust-by-samoylenkodmitry-5zp0/",
+            "image_url": "/assets/leetcode_daily_images/08.11.2026.webp",
+            "takeaway": "cells connected by row or column",
+            "pattern_slugs": [
+              "implementation"
+            ],
+            "pattern_labels": [
+              "Implementation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "one-liner",
+              "repeat"
+            ],
+            "solution_lines": 2,
+            "solution_chars": 101,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "one-liner",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 67,
+            "thought_line_percent": 0,
+            "days_since_previous": 654,
+            "solution_line_delta_from_previous": -1,
+            "solution_char_delta_from_previous": -42,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -46165,6 +46366,41 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-11-08-1267-count-servers-that-communicate",
+        "date": "2026-11-08",
+        "display_date": "08.11.2026",
+        "year": "2026",
+        "display_title": "1267. Count Servers that Communicate",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-11-08-1267-count-servers-that-communicate/",
+        "problem_url": "https://leetcode.com/problems/count-servers-that-communicate/solutions/8605713/kotlin-rust-by-samoylenkodmitry-5zp0/",
+        "image_url": "/assets/leetcode_daily_images/08.11.2026.webp",
+        "takeaway": "cells connected by row or column",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner",
+          "repeat"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 101,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2024-12-02-1455-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
         "date": "2024-12-02",
         "display_date": "02.12.2024",
@@ -50216,7 +50452,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 175,
+        "count": 176,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -50266,13 +50502,84 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 133,
+        "count": 134,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-08-1267-count-servers-that-communicate",
+      "date": "2026-11-08",
+      "display_date": "08.11.2026",
+      "year": "2026",
+      "problem_id": 1267,
+      "title": "Count Servers that Communicate",
+      "display_title": "1267. Count Servers that Communicate",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/count-servers-that-communicate/solutions/8605713/kotlin-rust-by-samoylenkodmitry-5zp0/",
+      "kotlin_url": "https://leetcode.com/problems/count-servers-that-communicate/solutions/8605713/kotlin-rust-by-samoylenkodmitry-5zp0/",
+      "rust_url": "https://leetcode.com/problems/count-servers-that-communicate/solutions/8605713/kotlin-rust-by-samoylenkodmitry-5zp0/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/08112026-1267-count-servers-that?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/nlD7EFY60uE",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1536",
+      "image_url": "/assets/leetcode_daily_images/08.11.2026.webp",
+      "takeaway": "cells connected by row or column",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 101,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 101,
+          "rust": 158
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1267-count-servers-that-communicate/"
+        },
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-08-1267-count-servers-that-communicate/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-07-1882-process-tasks-using-servers",
       "date": "2026-11-07",
@@ -136520,9 +136827,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "tiny"
+        "tiny",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1267-count-servers-that-communicate/"
+        }
+      ],
       "page_url": "/leetcode/problem/2025-01-23-1267-count-servers-that-communicate/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
