@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-08T10:11:22Z",
+  "generated_at": "2026-11-09T08:57:04Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1458,
-    "unique_problem_count": 1276,
+    "entry_count": 1459,
+    "unique_problem_count": 1277,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 983,
+    "rust_count": 984,
     "repeat_problem_count": 176,
     "repeated_entry_count": 358,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 302,
+      "count": 303,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1452,
+      "count": 1453,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 983,
+      "count": 984,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -96,7 +96,7 @@
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 110,
+      "count": 111,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1276,
+    "unique_problem_count": 1277,
     "repeat_problem_count": 176,
     "repeated_entry_count": 358,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 491
+        "count": 492
       },
       {
         "slug": "standard",
@@ -50509,6 +50509,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-09-1606-find-servers-that-handled-most-number-of-requests",
+      "date": "2026-11-09",
+      "display_date": "09.11.2026",
+      "year": "2026",
+      "problem_id": 1606,
+      "title": "Find Servers That Handled Most Number of Requests",
+      "display_title": "1606. Find Servers That Handled Most Number of Requests",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "simulation"
+      ],
+      "pattern_labels": [
+        "Simulation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/solutions/8606621/kotlin-rust-by-samoylenkodmitry-f3by/",
+      "kotlin_url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/solutions/8606621/kotlin-rust-by-samoylenkodmitry-f3by/",
+      "rust_url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/solutions/8606621/kotlin-rust-by-samoylenkodmitry-f3by/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/09112026-1606-find-servers-that-handled?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/C1zVL5owbHo",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1537",
+      "image_url": "/assets/leetcode_daily_images/09.11.2026.webp",
+      "takeaway": "Most frequent servers handling requests by picking from i%k.. cycle range",
+      "metrics": {
+        "solution_lines": 9,
+        "solution_chars": 389,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 9,
+          "rust": 10
+        },
+        "language_char_counts": {
+          "kotlin": 389,
+          "rust": 505
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-11-09-1606-find-servers-that-handled-most-number-of-requests/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-08-1267-count-servers-that-communicate",
       "date": "2026-11-08",
