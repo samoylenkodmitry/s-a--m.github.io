@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-10T09:11:37Z",
+  "generated_at": "2026-11-11T10:48:47Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1460,
-    "unique_problem_count": 1278,
+    "entry_count": 1461,
+    "unique_problem_count": 1279,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 985,
+    "rust_count": 986,
     "repeat_problem_count": 176,
     "repeated_entry_count": 358,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 304,
+      "count": 305,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1454,
+      "count": 1455,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 985,
+      "count": 986,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,12 +210,12 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 213,
+      "count": 214,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
-    "unique_problem_count": 1278,
+    "unique_problem_count": 1279,
     "repeat_problem_count": 176,
     "repeated_entry_count": 358,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 448
+        "count": 449
       },
       {
         "slug": "compact",
@@ -50543,6 +50543,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-11-3789-minimum-cost-to-acquire-required-items",
+      "date": "2026-11-11",
+      "display_date": "11.11.2026",
+      "year": "2026",
+      "problem_id": 3789,
+      "title": "Minimum Cost to Acquire Required Items",
+      "display_title": "3789. Minimum Cost to Acquire Required Items",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/solutions/8609101/kotlin-rust-by-samoylenkodmitry-k4ux/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/solutions/8609101/kotlin-rust-by-samoylenkodmitry-k4ux/",
+      "rust_url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/solutions/8609101/kotlin-rust-by-samoylenkodmitry-k4ux/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/11112026-3789-minimum-cost-to-acquire?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/QB0ONX6BPiA",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1539",
+      "image_url": "/assets/leetcode_daily_images/11.11.2026.webp",
+      "takeaway": "Min cost to make n1,n2 using cost1,cost2 and cost both",
+      "metrics": {
+        "solution_lines": 4,
+        "solution_chars": 153,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 4,
+          "rust": 4
+        },
+        "language_char_counts": {
+          "kotlin": 153,
+          "rust": 190
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-11-11-3789-minimum-cost-to-acquire-required-items/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-10-3693-climbing-stairs-ii",
       "date": "2026-11-10",
