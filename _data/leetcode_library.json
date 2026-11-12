@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-11T10:48:47Z",
+  "generated_at": "2026-11-12T09:48:43Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1461,
+    "entry_count": 1462,
     "unique_problem_count": 1279,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 986,
-    "repeat_problem_count": 176,
-    "repeated_entry_count": 358,
+    "rust_count": 987,
+    "repeat_problem_count": 177,
+    "repeated_entry_count": 360,
     "deep_thinking_count": 47,
     "unsolved_count": 105,
-    "one_liner_count": 135,
+    "one_liner_count": 136,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 305,
+      "count": 306,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1455,
+      "count": 1456,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 986,
+      "count": 987,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -210,19 +210,19 @@
     {
       "slug": "implementation",
       "label": "Implementation",
-      "count": 214,
+      "count": 215,
       "url": "/leetcode/pattern/implementation/"
     }
   ],
   "insights": {
     "unique_problem_count": 1279,
-    "repeat_problem_count": 176,
-    "repeated_entry_count": 358,
+    "repeat_problem_count": 177,
+    "repeated_entry_count": 360,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 135
+        "count": 136
       },
       {
         "slug": "tiny",
@@ -1711,6 +1711,203 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "3105",
+        "problem_id": 3105,
+        "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+        "display_title": "3105. Longest Strictly Increasing or Strictly Decreasing Subarray",
+        "evolution_slug": "3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+        "evolution_url": "/leetcode/evolution/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+        "count": 2,
+        "first_date": "03.02.2025",
+        "last_date": "12.11.2026",
+        "first_sort_date": "2025-02-03",
+        "last_sort_date": "2026-11-12",
+        "span_days": 647,
+        "latest_page_url": "/leetcode/problem/2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+        "solution_line_delta": -2,
+        "solution_char_delta": -36,
+        "thought_line_delta": 0,
+        "solution_line_trend": "compressed",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+          "date": "2026-11-12",
+          "display_date": "12.11.2026",
+          "year": "2026",
+          "display_title": "3105. Longest Strictly Increasing or Strictly Decreasing Subarray",
+          "difficulty": "easy",
+          "page_url": "/leetcode/problem/2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+          "problem_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/8610201/kotlin-rust-by-samoylenkodmitry-pyle/",
+          "image_url": "/assets/leetcode_daily_images/12.11.2026.webp",
+          "takeaway": "Max strictly monotonic subarray size",
+          "pattern_slugs": [
+            "implementation"
+          ],
+          "pattern_labels": [
+            "Implementation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "one-liner",
+            "repeat"
+          ],
+          "solution_lines": 2,
+          "solution_chars": 129,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "one-liner",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 50,
+          "thought_line_percent": 0,
+          "days_since_previous": 647,
+          "solution_line_delta_from_previous": -2,
+          "solution_char_delta_from_previous": -36,
+          "thought_line_delta_from_previous": 0
+        },
+        "largest_solution": {
+          "slug": "2025-02-03-3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+          "date": "2025-02-03",
+          "display_date": "03.02.2025",
+          "year": "2025",
+          "display_title": "3105. Longest Strictly Increasing or Strictly Decreasing Subarray",
+          "difficulty": "easy",
+          "page_url": "/leetcode/problem/2025-02-03-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+          "problem_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/description/",
+          "image_url": "/assets/leetcode_daily_images/9d9cca08.webp",
+          "takeaway": "Longest strict monotonic subarray",
+          "pattern_slugs": [
+            "simulation"
+          ],
+          "pattern_labels": [
+            "Simulation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 4,
+          "solution_chars": 165,
+          "solution_language": "rust",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 4,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 1,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2025-02-03-3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+            "date": "2025-02-03",
+            "display_date": "03.02.2025",
+            "year": "2025",
+            "display_title": "3105. Longest Strictly Increasing or Strictly Decreasing Subarray",
+            "difficulty": "easy",
+            "page_url": "/leetcode/problem/2025-02-03-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+            "problem_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/description/",
+            "image_url": "/assets/leetcode_daily_images/9d9cca08.webp",
+            "takeaway": "Longest strict monotonic subarray",
+            "pattern_slugs": [
+              "simulation"
+            ],
+            "pattern_labels": [
+              "Simulation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 4,
+            "solution_chars": 165,
+            "solution_language": "rust",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+            "date": "2026-11-12",
+            "display_date": "12.11.2026",
+            "year": "2026",
+            "display_title": "3105. Longest Strictly Increasing or Strictly Decreasing Subarray",
+            "difficulty": "easy",
+            "page_url": "/leetcode/problem/2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+            "problem_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/8610201/kotlin-rust-by-samoylenkodmitry-pyle/",
+            "image_url": "/assets/leetcode_daily_images/12.11.2026.webp",
+            "takeaway": "Max strictly monotonic subarray size",
+            "pattern_slugs": [
+              "implementation"
+            ],
+            "pattern_labels": [
+              "Implementation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "one-liner",
+              "repeat"
+            ],
+            "solution_lines": 2,
+            "solution_chars": 129,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "one-liner",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 50,
+            "thought_line_percent": 0,
+            "days_since_previous": 647,
+            "solution_line_delta_from_previous": -2,
+            "solution_char_delta_from_previous": -36,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -47648,6 +47845,41 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+        "date": "2026-11-12",
+        "display_date": "12.11.2026",
+        "year": "2026",
+        "display_title": "3105. Longest Strictly Increasing or Strictly Decreasing Subarray",
+        "difficulty": "easy",
+        "page_url": "/leetcode/problem/2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+        "problem_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/8610201/kotlin-rust-by-samoylenkodmitry-pyle/",
+        "image_url": "/assets/leetcode_daily_images/12.11.2026.webp",
+        "takeaway": "Max strictly monotonic subarray size",
+        "pattern_slugs": [
+          "implementation"
+        ],
+        "pattern_labels": [
+          "Implementation"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner",
+          "repeat"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 129,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-04-28-2033-minimum-operations-to-make-a-uni-value-grid",
         "date": "2026-04-28",
         "display_date": "28.04.2026",
@@ -50486,7 +50718,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 176,
+        "count": 177,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -50536,13 +50768,84 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 135,
+        "count": 136,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+      "date": "2026-11-12",
+      "display_date": "12.11.2026",
+      "year": "2026",
+      "problem_id": 3105,
+      "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+      "display_title": "3105. Longest Strictly Increasing or Strictly Decreasing Subarray",
+      "difficulty": "easy",
+      "pattern_slugs": [
+        "implementation"
+      ],
+      "pattern_labels": [
+        "Implementation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/8610201/kotlin-rust-by-samoylenkodmitry-pyle/",
+      "kotlin_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/8610201/kotlin-rust-by-samoylenkodmitry-pyle/",
+      "rust_url": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/solutions/8610201/kotlin-rust-by-samoylenkodmitry-pyle/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/12112026-3105-longest-strictly-increasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/QB0ONX6BPiA",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1540",
+      "image_url": "/assets/leetcode_daily_images/12.11.2026.webp",
+      "takeaway": "Max strictly monotonic subarray size",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 129,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 129,
+          "rust": 138
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/"
+        },
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-11-3789-minimum-cost-to-acquire-required-items",
       "date": "2026-11-11",
@@ -135314,9 +135617,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "tiny"
+        "tiny",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/"
+        }
+      ],
       "page_url": "/leetcode/problem/2025-02-03-3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
