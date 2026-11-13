@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-12T09:48:43Z",
+  "generated_at": "2026-11-13T10:49:21Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1462,
-    "unique_problem_count": 1279,
+    "entry_count": 1463,
+    "unique_problem_count": 1280,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 987,
+    "rust_count": 988,
     "repeat_problem_count": 177,
     "repeated_entry_count": 360,
     "deep_thinking_count": 47,
-    "unsolved_count": 105,
+    "unsolved_count": 106,
     "one_liner_count": 136,
     "almost_gave_up_count": 69,
     "comeback_count": 7,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 306,
+      "count": 307,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1456,
+      "count": 1457,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 987,
+      "count": 988,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -180,7 +180,7 @@
     {
       "slug": "queue",
       "label": "Queue",
-      "count": 29,
+      "count": 30,
       "url": "/leetcode/pattern/queue/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1279,
+    "unique_problem_count": 1280,
     "repeat_problem_count": 177,
     "repeated_entry_count": 360,
     "line_buckets": [
@@ -237,7 +237,7 @@
       {
         "slug": "standard",
         "label": "Standard",
-        "count": 297
+        "count": 298
       },
       {
         "slug": "long",
@@ -39421,6 +39421,41 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-11-13-3420-count-non-decreasing-subarrays-after-k-operations",
+        "date": "2026-11-13",
+        "display_date": "13.11.2026",
+        "year": "2026",
+        "display_title": "3420. Count Non-Decreasing Subarrays After K Operations",
+        "difficulty": "hard",
+        "page_url": "/leetcode/problem/2026-11-13-3420-count-non-decreasing-subarrays-after-k-operations/",
+        "problem_url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/solutions/8611412/kotlin-rust-by-samoylenkodmitry-i3v6/",
+        "image_url": "/assets/leetcode_daily_images/13.11.2026.webp",
+        "takeaway": "Non decreasing subarray made by k increments each",
+        "pattern_slugs": [
+          "queue"
+        ],
+        "pattern_labels": [
+          "Queue"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "standard",
+          "unsolved"
+        ],
+        "solution_lines": 13,
+        "solution_chars": 446,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "thought_lines": 12,
+        "thought_chars": 235,
+        "max_minute_marker": null,
+        "unsolved": true,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2026-10-29-3841-palindromic-path-queries-in-a-tree",
         "date": "2026-10-29",
         "display_date": "29.10.2026",
@@ -50748,7 +50783,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 105,
+        "count": 106,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -50775,6 +50810,68 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-13-3420-count-non-decreasing-subarrays-after-k-operations",
+      "date": "2026-11-13",
+      "display_date": "13.11.2026",
+      "year": "2026",
+      "problem_id": 3420,
+      "title": "Count Non-Decreasing Subarrays After K Operations",
+      "display_title": "3420. Count Non-Decreasing Subarrays After K Operations",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "queue"
+      ],
+      "pattern_labels": [
+        "Queue"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/solutions/8611412/kotlin-rust-by-samoylenkodmitry-i3v6/",
+      "kotlin_url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/solutions/8611412/kotlin-rust-by-samoylenkodmitry-i3v6/",
+      "rust_url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/solutions/8611412/kotlin-rust-by-samoylenkodmitry-i3v6/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/13112026-3420-count-non-decreasing?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/Eu-8q4gvlS0",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1541",
+      "image_url": "/assets/leetcode_daily_images/13.11.2026.webp",
+      "takeaway": "Non decreasing subarray made by k increments each",
+      "metrics": {
+        "solution_lines": 13,
+        "solution_chars": 446,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "language_line_counts": {
+          "kotlin": 13
+        },
+        "language_char_counts": {
+          "kotlin": 446
+        },
+        "thought_lines": 12,
+        "thought_chars": 235,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "standard",
+        "unsolved"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-13-3420-count-non-decreasing-subarrays-after-k-operations/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-12-3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
       "date": "2026-11-12",
