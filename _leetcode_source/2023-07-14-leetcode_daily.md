@@ -21,6 +21,52 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 16.11.2026
+[2243. Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/solutions/8614509/kotlin-rust-by-samoylenkodmitry-wtmm/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/16112026-2243-calculate-digit-sum?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/BZeJUNAOdZg)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![16.11.2026.webp](/assets/leetcode_daily_images/16.11.2026.webp)
+#### Join me on Telegram
+
+https://t.me/leetcode_daily_unstoppable/1544
+
+#### Problem TLDR
+
+Chunk-sum transform the string
+
+#### Intuition
+
+Simulate brute-force.
+
+#### Approach
+
+* can use a recursion
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(n)$$
+
+#### Code
+
+```kotlin
+    fun digitSum(s: String, k: Int):String = if (s.length<=k) s 
+        else digitSum(s.chunked(k){it.sumOf{it-'0'}}.joinToString(""),k)
+```
+```rust
+    pub fn digit_sum(mut s: String, k: i32) -> String {
+        while s.len() > k as _ {
+            s = s.as_bytes().chunks(k as _).map(|c| c.iter().fold(0, |a, b| a + *b as i32 - 48)).join("")
+        } s
+    }
+```
+
 # 15.11.2026
 [1524. Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/solutions/8613441/kotlin-rust-by-samoylenkodmitry-rpk1/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/15112026-1524-number-of-sub-arrays?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
