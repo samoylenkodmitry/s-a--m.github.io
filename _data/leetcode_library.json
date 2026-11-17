@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16T08:39:06Z",
+  "generated_at": "2026-11-17T11:38:24Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1466,
-    "unique_problem_count": 1282,
+    "entry_count": 1467,
+    "unique_problem_count": 1283,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 991,
+    "rust_count": 992,
     "repeat_problem_count": 178,
     "repeated_entry_count": 362,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 310,
+      "count": 311,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1460,
+      "count": 1461,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 991,
+      "count": 992,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 233,
+      "count": 234,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -90,13 +90,13 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 119,
+      "count": 120,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
       "slug": "simulation",
       "label": "Simulation",
-      "count": 112,
+      "count": 113,
       "url": "/leetcode/pattern/simulation/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1282,
+    "unique_problem_count": 1283,
     "repeat_problem_count": 178,
     "repeated_entry_count": 362,
     "line_buckets": [
@@ -237,7 +237,7 @@
       {
         "slug": "standard",
         "label": "Standard",
-        "count": 298
+        "count": 299
       },
       {
         "slug": "long",
@@ -51344,6 +51344,65 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-17-2911-minimum-changes-to-make-k-semi-palindromes",
+      "date": "2026-11-17",
+      "display_date": "17.11.2026",
+      "year": "2026",
+      "problem_id": 2911,
+      "title": "Minimum Changes to Make K Semi-palindromes",
+      "display_title": "2911. Minimum Changes to Make K Semi-palindromes",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "dynamic-programming",
+        "simulation",
+        "string"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming",
+        "Simulation",
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/solutions/8615782/kotlin-rust-by-samoylenkodmitry-b5yg/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/solutions/8615782/kotlin-rust-by-samoylenkodmitry-b5yg/",
+      "rust_url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/solutions/8615782/kotlin-rust-by-samoylenkodmitry-b5yg/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/17112026-2911-minimum-changes-to?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/TLwUXmNifvg",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1545",
+      "image_url": "/assets/leetcode_daily_images/17.11.2026.webp",
+      "takeaway": "Min changes to split into k semi-palindromes (step of divisors of length)",
+      "metrics": {
+        "solution_lines": 18,
+        "solution_chars": 497,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "standard",
+        "language_line_counts": {
+          "kotlin": 18
+        },
+        "language_char_counts": {
+          "kotlin": 497
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "standard"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-11-17-2911-minimum-changes-to-make-k-semi-palindromes/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-16-2243-calculate-digit-sum-of-a-string",
       "date": "2026-11-16",

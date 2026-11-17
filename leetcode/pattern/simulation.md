@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "Simulation"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "112 entries tagged as Simulation."
+library_summary: "113 entries tagged as Simulation."
 pattern_slug: "simulation"
 ---

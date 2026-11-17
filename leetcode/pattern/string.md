@@ -7,6 +7,6 @@ library_kind: pattern
 library_label: Pattern
 library_heading: "String"
 library_intro: "A compact view of archive entries grouped by recurring technique."
-library_summary: "233 entries tagged as String."
+library_summary: "234 entries tagged as String."
 pattern_slug: "string"
 ---
