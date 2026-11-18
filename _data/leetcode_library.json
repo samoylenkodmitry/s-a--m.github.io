@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-17T11:38:24Z",
+  "generated_at": "2026-11-18T09:28:41Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1467,
+    "entry_count": 1468,
     "unique_problem_count": 1283,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 992,
-    "repeat_problem_count": 178,
-    "repeated_entry_count": 362,
+    "rust_count": 993,
+    "repeat_problem_count": 179,
+    "repeated_entry_count": 364,
     "deep_thinking_count": 47,
     "unsolved_count": 106,
-    "one_liner_count": 139,
+    "one_liner_count": 140,
     "almost_gave_up_count": 69,
     "comeback_count": 8,
     "ai_analyzed_count": 1360
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 311,
+      "count": 312,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1461,
+      "count": 1462,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 992,
+      "count": 993,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -78,7 +78,7 @@
     {
       "slug": "string",
       "label": "String",
-      "count": 234,
+      "count": 235,
       "url": "/leetcode/pattern/string/"
     },
     {
@@ -120,7 +120,7 @@
     {
       "slug": "bit-manipulation",
       "label": "Bit Manipulation",
-      "count": 86,
+      "count": 87,
       "url": "/leetcode/pattern/bit-manipulation/"
     },
     {
@@ -174,7 +174,7 @@
     {
       "slug": "greedy",
       "label": "Greedy",
-      "count": 34,
+      "count": 35,
       "url": "/leetcode/pattern/greedy/"
     },
     {
@@ -216,13 +216,13 @@
   ],
   "insights": {
     "unique_problem_count": 1283,
-    "repeat_problem_count": 178,
-    "repeated_entry_count": 362,
+    "repeat_problem_count": 179,
+    "repeated_entry_count": 364,
     "line_buckets": [
       {
         "slug": "one-liner",
         "label": "One-liners",
-        "count": 139
+        "count": 140
       },
       {
         "slug": "tiny",
@@ -1712,6 +1712,215 @@
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
             "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "2914",
+        "problem_id": 2914,
+        "title": "Minimum Number of Changes to Make Binary String Beautiful",
+        "display_title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+        "evolution_slug": "2914-minimum-number-of-changes-to-make-binary-string-beautiful",
+        "evolution_url": "/leetcode/evolution/2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+        "count": 2,
+        "first_date": "05.11.2024",
+        "last_date": "18.11.2026",
+        "first_sort_date": "2024-11-05",
+        "last_sort_date": "2026-11-18",
+        "span_days": 743,
+        "latest_page_url": "/leetcode/problem/2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+        "solution_line_delta": 0,
+        "solution_char_delta": -1,
+        "thought_line_delta": -3,
+        "solution_line_trend": "steady",
+        "solution_char_trend": "compressed",
+        "thought_line_trend": "compressed",
+        "best_solution": {
+          "slug": "2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful",
+          "date": "2026-11-18",
+          "display_date": "18.11.2026",
+          "year": "2026",
+          "display_title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+          "problem_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/solutions/8616790/kotlin-rust-by-samoylenkodmitry-qbd7/",
+          "image_url": "/assets/leetcode_daily_images/18.11.2026.webp",
+          "takeaway": "Min flips to make even islands of zeros and ones",
+          "pattern_slugs": [
+            "greedy",
+            "bit-manipulation",
+            "string"
+          ],
+          "pattern_labels": [
+            "Greedy",
+            "Bit Manipulation",
+            "String"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "one-liner",
+            "repeat"
+          ],
+          "solution_lines": 2,
+          "solution_chars": 64,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "one-liner",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": 743,
+          "solution_line_delta_from_previous": 0,
+          "solution_char_delta_from_previous": -1,
+          "thought_line_delta_from_previous": -3
+        },
+        "largest_solution": {
+          "slug": "2024-11-05-2914-minimum-number-of-changes-to-make-binary-string-beautiful",
+          "date": "2024-11-05",
+          "display_date": "05.11.2024",
+          "year": "2024",
+          "display_title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2024-11-05-2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+          "problem_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/description/",
+          "image_url": "/assets/leetcode_daily_images/e6d5624d.webp",
+          "takeaway": "Min changes to make even-sized 0 and 1",
+          "pattern_slugs": [
+            "bit-manipulation",
+            "string"
+          ],
+          "pattern_labels": [
+            "Bit Manipulation",
+            "String"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "one-liner",
+            "repeat"
+          ],
+          "solution_lines": 2,
+          "solution_chars": 65,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "one-liner",
+          "thought_lines": 3,
+          "thought_chars": 39,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 100,
+          "thought_line_percent": 100,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "max_solution_lines": 2,
+        "max_thought_lines": 3,
+        "total_thought_lines": 3,
+        "stuck_count": 0,
+        "one_liner_count": 2,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2024-11-05-2914-minimum-number-of-changes-to-make-binary-string-beautiful",
+            "date": "2024-11-05",
+            "display_date": "05.11.2024",
+            "year": "2024",
+            "display_title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2024-11-05-2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+            "problem_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/description/",
+            "image_url": "/assets/leetcode_daily_images/e6d5624d.webp",
+            "takeaway": "Min changes to make even-sized 0 and 1",
+            "pattern_slugs": [
+              "bit-manipulation",
+              "string"
+            ],
+            "pattern_labels": [
+              "Bit Manipulation",
+              "String"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "one-liner",
+              "repeat"
+            ],
+            "solution_lines": 2,
+            "solution_chars": 65,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "one-liner",
+            "thought_lines": 3,
+            "thought_chars": 39,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 100,
+            "thought_line_percent": 100,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful",
+            "date": "2026-11-18",
+            "display_date": "18.11.2026",
+            "year": "2026",
+            "display_title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+            "problem_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/solutions/8616790/kotlin-rust-by-samoylenkodmitry-qbd7/",
+            "image_url": "/assets/leetcode_daily_images/18.11.2026.webp",
+            "takeaway": "Min flips to make even islands of zeros and ones",
+            "pattern_slugs": [
+              "greedy",
+              "bit-manipulation",
+              "string"
+            ],
+            "pattern_labels": [
+              "Greedy",
+              "Bit Manipulation",
+              "String"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "one-liner",
+              "repeat"
+            ],
+            "solution_lines": 2,
+            "solution_chars": 64,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "one-liner",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": 743,
+            "solution_line_delta_from_previous": 0,
+            "solution_char_delta_from_previous": -1,
+            "thought_line_delta_from_previous": -3
           }
         ]
       },
@@ -44658,6 +44867,45 @@
         "almost_gave_up": false
       },
       {
+        "slug": "2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful",
+        "date": "2026-11-18",
+        "display_date": "18.11.2026",
+        "year": "2026",
+        "display_title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+        "problem_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/solutions/8616790/kotlin-rust-by-samoylenkodmitry-qbd7/",
+        "image_url": "/assets/leetcode_daily_images/18.11.2026.webp",
+        "takeaway": "Min flips to make even islands of zeros and ones",
+        "pattern_slugs": [
+          "greedy",
+          "bit-manipulation",
+          "string"
+        ],
+        "pattern_labels": [
+          "Greedy",
+          "Bit Manipulation",
+          "String"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "one-liner",
+          "repeat"
+        ],
+        "solution_lines": 2,
+        "solution_chars": 64,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "max_minute_marker": null,
+        "unsolved": false,
+        "almost_gave_up": false
+      },
+      {
         "slug": "2024-11-05-2914-minimum-number-of-changes-to-make-binary-string-beautiful",
         "date": "2024-11-05",
         "display_date": "05.11.2024",
@@ -44681,7 +44929,8 @@
           "rust"
         ],
         "catalog_tags": [
-          "one-liner"
+          "one-liner",
+          "repeat"
         ],
         "solution_lines": 2,
         "solution_chars": 65,
@@ -51287,7 +51536,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 178,
+        "count": 179,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -51337,13 +51586,88 @@
         "label": "Small Code",
         "title": "One-Liner Gallery",
         "url": "/leetcode/collection/one-liners/",
-        "count": 139,
+        "count": 140,
         "summary": "Problems whose shortest Kotlin or Rust solution is two nonblank lines or less.",
         "metric_label": "tiny solutions"
       }
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful",
+      "date": "2026-11-18",
+      "display_date": "18.11.2026",
+      "year": "2026",
+      "problem_id": 2914,
+      "title": "Minimum Number of Changes to Make Binary String Beautiful",
+      "display_title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "greedy",
+        "bit-manipulation",
+        "string"
+      ],
+      "pattern_labels": [
+        "Greedy",
+        "Bit Manipulation",
+        "String"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/solutions/8616790/kotlin-rust-by-samoylenkodmitry-qbd7/",
+      "kotlin_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/solutions/8616790/kotlin-rust-by-samoylenkodmitry-qbd7/",
+      "rust_url": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/solutions/8616790/kotlin-rust-by-samoylenkodmitry-qbd7/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/18112026-2914-minimum-number-of-changes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/pNSguzHuhRM",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1546",
+      "image_url": "/assets/leetcode_daily_images/18.11.2026.webp",
+      "takeaway": "Min flips to make even islands of zeros and ones",
+      "metrics": {
+        "solution_lines": 2,
+        "solution_chars": 64,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "one-liner",
+        "language_line_counts": {
+          "kotlin": 2,
+          "rust": 3
+        },
+        "language_char_counts": {
+          "kotlin": 64,
+          "rust": 100
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": true
+      },
+      "catalog_tags": [
+        "one-liner",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/2914-minimum-number-of-changes-to-make-binary-string-beautiful/"
+        },
+        {
+          "slug": "one-liner",
+          "label": "One-Liners",
+          "url": "/leetcode/collection/one-liners/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-18-2914-minimum-number-of-changes-to-make-binary-string-beautiful/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-17-2911-minimum-changes-to-make-k-semi-palindromes",
       "date": "2026-11-17",
@@ -149230,9 +149554,17 @@
         "one_liner": true
       },
       "catalog_tags": [
-        "one-liner"
+        "one-liner",
+        "repeat"
       ],
       "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/2914-minimum-number-of-changes-to-make-binary-string-beautiful/"
+        },
         {
           "slug": "one-liner",
           "label": "One-Liners",
