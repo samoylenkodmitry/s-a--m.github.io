@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19T10:41:55Z",
+  "generated_at": "2026-11-20T09:06:49Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1469,
-    "unique_problem_count": 1284,
+    "entry_count": 1470,
+    "unique_problem_count": 1285,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 994,
+    "rust_count": 995,
     "repeat_problem_count": 179,
     "repeated_entry_count": 364,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 313,
+      "count": 314,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1463,
+      "count": 1464,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 994,
+      "count": 995,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "slug": "array",
       "label": "Array",
-      "count": 424,
+      "count": 425,
       "url": "/leetcode/pattern/array/"
     },
     {
@@ -126,7 +126,7 @@
     {
       "slug": "hash-map",
       "label": "Hash Map",
-      "count": 66,
+      "count": 67,
       "url": "/leetcode/pattern/hash-map/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1284,
+    "unique_problem_count": 1285,
     "repeat_problem_count": 179,
     "repeated_entry_count": 364,
     "line_buckets": [
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 449
+        "count": 450
       },
       {
         "slug": "compact",
@@ -51627,6 +51627,65 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-20-3041-maximize-consecutive-elements-in-an-array-after-modification",
+      "date": "2026-11-20",
+      "display_date": "20.11.2026",
+      "year": "2026",
+      "problem_id": 3041,
+      "title": "Maximize Consecutive Elements in an Array After Modification",
+      "display_title": "3041. Maximize Consecutive Elements in an Array After Modification",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "hash-map",
+        "array"
+      ],
+      "pattern_labels": [
+        "Hash Map",
+        "Array"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/8618862/kotlin-rust-by-samoylenkodmitry-lyk9/",
+      "kotlin_url": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/8618862/kotlin-rust-by-samoylenkodmitry-lyk9/",
+      "rust_url": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/solutions/8618862/kotlin-rust-by-samoylenkodmitry-lyk9/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/20112026-3041-maximize-consecutive?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/yaDG_6onDiw",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1548",
+      "image_url": "/assets/leetcode_daily_images/20.11.2026.webp",
+      "takeaway": "Max consequent numbers chain after increasing any by 1",
+      "metrics": {
+        "solution_lines": 3,
+        "solution_chars": 135,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 3,
+          "rust": 11
+        },
+        "language_char_counts": {
+          "kotlin": 135,
+          "rust": 265
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-11-20-3041-maximize-consecutive-elements-in-an-array-after-modification/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-19-2567-minimum-score-by-changing-two-elements",
       "date": "2026-11-19",
