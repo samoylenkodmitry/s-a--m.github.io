@@ -21,6 +21,49 @@ You can join me and discuss in the Telegram channel [https://t.me/leetcode_daily
 * eth 0x5be6942374cd8807298ab333c1deae8d4c706791
 * ton UQBIarvcuSJv-vLN0wzaKJy6hq6_4fWO_BiQsWSOmzqlR1HR
 
+# 22.11.2026
+[2124. Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/solutions/8621048/kotlin-rust-by-samoylenkodmitry-2e0t/) easy
+[substack](https://dmitriisamoilenko.substack.com/p/22112026-2124-check-if-all-as-appears?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+[youtube](https://youtu.be/mSETybMXQE0)
+
+https://dmitrysamoylenko.com/leetcode/
+
+![22.11.2026.webp](/assets/leetcode_daily_images/22.11.2026.webp)
+#### Join me on Telegram
+
+
+#### Problem TLDR
+
+All 'a' before all 'b'
+
+#### Intuition
+
+Check the regex ^a*b*$ or check the forbidden pattern ba
+
+#### Approach
+
+* all aaa or all bbb considered true
+
+#### Complexity
+
+- Time complexity:
+$$O(n)$$
+
+- Space complexity:
+$$O(1)$$
+
+#### Code
+
+```kotlin
+    fun checkString(s: String)=
+    "ba" !in s
+```
+```rust
+    pub fn check_string(s: String) -> bool {
+        !s.contains("ba")
+    }
+```
+
 # 21.11.2026
 [3331. Find Subtree Sizes After Changes](https://leetcode.com/problems/find-subtree-sizes-after-changes/solutions/8619874/kotlin-rust-by-samoylenkodmitry-t5xr/) medium
 [substack](https://dmitriisamoilenko.substack.com/p/21112026-3331-find-subtree-sizes?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
