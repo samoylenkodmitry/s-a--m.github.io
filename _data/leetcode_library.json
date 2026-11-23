@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-22T09:13:14Z",
+  "generated_at": "2026-11-23T09:09:07Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1472,
+    "entry_count": 1473,
     "unique_problem_count": 1287,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 997,
-    "repeat_problem_count": 179,
-    "repeated_entry_count": 364,
+    "rust_count": 998,
+    "repeat_problem_count": 180,
+    "repeated_entry_count": 366,
     "deep_thinking_count": 47,
     "unsolved_count": 106,
     "one_liner_count": 142,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 316,
+      "count": 317,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1466,
+      "count": 1467,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 997,
+      "count": 998,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -112,16 +112,16 @@
       "url": "/leetcode/pattern/binary-search/"
     },
     {
+      "slug": "bit-manipulation",
+      "label": "Bit Manipulation",
+      "count": 88,
+      "url": "/leetcode/pattern/bit-manipulation/"
+    },
+    {
       "slug": "math",
       "label": "Math",
       "count": 88,
       "url": "/leetcode/pattern/math/"
-    },
-    {
-      "slug": "bit-manipulation",
-      "label": "Bit Manipulation",
-      "count": 87,
-      "url": "/leetcode/pattern/bit-manipulation/"
     },
     {
       "slug": "hash-map",
@@ -216,8 +216,8 @@
   ],
   "insights": {
     "unique_problem_count": 1287,
-    "repeat_problem_count": 179,
-    "repeated_entry_count": 364,
+    "repeat_problem_count": 180,
+    "repeated_entry_count": 366,
     "line_buckets": [
       {
         "slug": "one-liner",
@@ -227,7 +227,7 @@
       {
         "slug": "tiny",
         "label": "Tiny",
-        "count": 450
+        "count": 451
       },
       {
         "slug": "compact",
@@ -1711,6 +1711,207 @@
             "days_since_previous": 4,
             "solution_line_delta_from_previous": -6,
             "solution_char_delta_from_previous": -224,
+            "thought_line_delta_from_previous": 0
+          }
+        ]
+      },
+      {
+        "key": "1352",
+        "problem_id": 1352,
+        "title": "Product of the Last K Numbers",
+        "display_title": "1352. Product of the Last K Numbers",
+        "evolution_slug": "1352-product-of-the-last-k-numbers",
+        "evolution_url": "/leetcode/evolution/1352-product-of-the-last-k-numbers/",
+        "count": 2,
+        "first_date": "14.02.2025",
+        "last_date": "23.11.2026",
+        "first_sort_date": "2025-02-14",
+        "last_sort_date": "2026-11-23",
+        "span_days": 647,
+        "latest_page_url": "/leetcode/problem/2026-11-23-1352-product-of-the-last-k-numbers/",
+        "solution_line_delta": 2,
+        "solution_char_delta": 85,
+        "thought_line_delta": 0,
+        "solution_line_trend": "expanded",
+        "solution_char_trend": "expanded",
+        "thought_line_trend": "steady",
+        "best_solution": {
+          "slug": "2025-02-14-1352-product-of-the-last-k-numbers",
+          "date": "2025-02-14",
+          "display_date": "14.02.2025",
+          "year": "2025",
+          "display_title": "1352. Product of the Last K Numbers",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2025-02-14-1352-product-of-the-last-k-numbers/",
+          "problem_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/description/",
+          "image_url": "/assets/leetcode_daily_images/ccb54926.webp",
+          "takeaway": "Running suffix product product",
+          "pattern_slugs": [
+            "math",
+            "prefix-sum"
+          ],
+          "pattern_labels": [
+            "Math",
+            "Prefix Sum"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 3,
+          "solution_chars": 102,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 1,
+          "solution_line_percent": 60,
+          "thought_line_percent": 0,
+          "days_since_previous": null,
+          "solution_line_delta_from_previous": null,
+          "solution_char_delta_from_previous": null,
+          "thought_line_delta_from_previous": null
+        },
+        "largest_solution": {
+          "slug": "2026-11-23-1352-product-of-the-last-k-numbers",
+          "date": "2026-11-23",
+          "display_date": "23.11.2026",
+          "year": "2026",
+          "display_title": "1352. Product of the Last K Numbers",
+          "difficulty": "medium",
+          "page_url": "/leetcode/problem/2026-11-23-1352-product-of-the-last-k-numbers/",
+          "problem_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/solutions/8622190/kotlin-rust-by-samoylenkodmitry-e8l5/",
+          "image_url": "/assets/leetcode_daily_images/23.11.2026.webp",
+          "takeaway": "Design k-last product structure",
+          "pattern_slugs": [
+            "bit-manipulation"
+          ],
+          "pattern_labels": [
+            "Bit Manipulation"
+          ],
+          "languages": [
+            "kotlin",
+            "rust"
+          ],
+          "catalog_tags": [
+            "tiny",
+            "repeat"
+          ],
+          "solution_lines": 5,
+          "solution_chars": 187,
+          "solution_language": "kotlin",
+          "solution_line_bucket": "tiny",
+          "thought_lines": 0,
+          "thought_chars": 0,
+          "max_minute_marker": null,
+          "unsolved": false,
+          "almost_gave_up": false,
+          "attempt_number": 2,
+          "solution_line_percent": 100,
+          "thought_line_percent": 0,
+          "days_since_previous": 647,
+          "solution_line_delta_from_previous": 2,
+          "solution_char_delta_from_previous": 85,
+          "thought_line_delta_from_previous": 0
+        },
+        "max_solution_lines": 5,
+        "max_thought_lines": 0,
+        "total_thought_lines": 0,
+        "stuck_count": 0,
+        "one_liner_count": 0,
+        "solved_after_stuck": false,
+        "entries": [
+          {
+            "slug": "2025-02-14-1352-product-of-the-last-k-numbers",
+            "date": "2025-02-14",
+            "display_date": "14.02.2025",
+            "year": "2025",
+            "display_title": "1352. Product of the Last K Numbers",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2025-02-14-1352-product-of-the-last-k-numbers/",
+            "problem_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/description/",
+            "image_url": "/assets/leetcode_daily_images/ccb54926.webp",
+            "takeaway": "Running suffix product product",
+            "pattern_slugs": [
+              "math",
+              "prefix-sum"
+            ],
+            "pattern_labels": [
+              "Math",
+              "Prefix Sum"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 3,
+            "solution_chars": 102,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 1,
+            "solution_line_percent": 60,
+            "thought_line_percent": 0,
+            "days_since_previous": null,
+            "solution_line_delta_from_previous": null,
+            "solution_char_delta_from_previous": null,
+            "thought_line_delta_from_previous": null
+          },
+          {
+            "slug": "2026-11-23-1352-product-of-the-last-k-numbers",
+            "date": "2026-11-23",
+            "display_date": "23.11.2026",
+            "year": "2026",
+            "display_title": "1352. Product of the Last K Numbers",
+            "difficulty": "medium",
+            "page_url": "/leetcode/problem/2026-11-23-1352-product-of-the-last-k-numbers/",
+            "problem_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/solutions/8622190/kotlin-rust-by-samoylenkodmitry-e8l5/",
+            "image_url": "/assets/leetcode_daily_images/23.11.2026.webp",
+            "takeaway": "Design k-last product structure",
+            "pattern_slugs": [
+              "bit-manipulation"
+            ],
+            "pattern_labels": [
+              "Bit Manipulation"
+            ],
+            "languages": [
+              "kotlin",
+              "rust"
+            ],
+            "catalog_tags": [
+              "tiny",
+              "repeat"
+            ],
+            "solution_lines": 5,
+            "solution_chars": 187,
+            "solution_language": "kotlin",
+            "solution_line_bucket": "tiny",
+            "thought_lines": 0,
+            "thought_chars": 0,
+            "max_minute_marker": null,
+            "unsolved": false,
+            "almost_gave_up": false,
+            "attempt_number": 2,
+            "solution_line_percent": 100,
+            "thought_line_percent": 0,
+            "days_since_previous": 647,
+            "solution_line_delta_from_previous": 2,
+            "solution_char_delta_from_previous": 85,
             "thought_line_delta_from_previous": 0
           }
         ]
@@ -51604,7 +51805,7 @@
         "label": "Repeat Lab",
         "title": "Repeat Lab",
         "url": "/leetcode/collection/repeats/",
-        "count": 179,
+        "count": 180,
         "summary": "Problems solved on multiple dates, grouped into evolution timelines.",
         "metric_label": "problem timelines"
       },
@@ -51661,6 +51862,72 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-23-1352-product-of-the-last-k-numbers",
+      "date": "2026-11-23",
+      "display_date": "23.11.2026",
+      "year": "2026",
+      "problem_id": 1352,
+      "title": "Product of the Last K Numbers",
+      "display_title": "1352. Product of the Last K Numbers",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "bit-manipulation"
+      ],
+      "pattern_labels": [
+        "Bit Manipulation"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/solutions/8622190/kotlin-rust-by-samoylenkodmitry-e8l5/",
+      "kotlin_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/solutions/8622190/kotlin-rust-by-samoylenkodmitry-e8l5/",
+      "rust_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/solutions/8622190/kotlin-rust-by-samoylenkodmitry-e8l5/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/23112026-1352-product-of-the-last?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/9OlPyEV0eUY",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1551",
+      "image_url": "/assets/leetcode_daily_images/23.11.2026.webp",
+      "takeaway": "Design k-last product structure",
+      "metrics": {
+        "solution_lines": 5,
+        "solution_chars": 187,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "tiny",
+        "language_line_counts": {
+          "kotlin": 5,
+          "rust": 11
+        },
+        "language_char_counts": {
+          "kotlin": 187,
+          "rust": 347
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "tiny",
+        "repeat"
+      ],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1352-product-of-the-last-k-numbers/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-23-1352-product-of-the-last-k-numbers/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-22-2124-check-if-all-a-s-appears-before-all-b-s",
       "date": "2026-11-22",
@@ -135743,9 +136010,18 @@
         "one_liner": false
       },
       "catalog_tags": [
-        "tiny"
+        "tiny",
+        "repeat"
       ],
-      "collection_links": [],
+      "collection_links": [
+        {
+          "slug": "repeat",
+          "label": "Repeat Lab",
+          "url": "/leetcode/collection/repeats/",
+          "detail_label": "Evolution",
+          "detail_url": "/leetcode/evolution/1352-product-of-the-last-k-numbers/"
+        }
+      ],
       "page_url": "/leetcode/problem/2025-02-14-1352-product-of-the-last-k-numbers/",
       "raw_archive_url": "/2023/07/14/leetcode_daily.html",
       "ai": {
