@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-24T06:41:03Z",
+  "generated_at": "2026-11-25T09:52:45Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1474,
-    "unique_problem_count": 1288,
+    "entry_count": 1475,
+    "unique_problem_count": 1289,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 999,
+    "rust_count": 1000,
     "repeat_problem_count": 180,
     "repeated_entry_count": 366,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 318,
+      "count": 319,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1468,
+      "count": 1469,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 999,
+      "count": 1000,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -108,7 +108,7 @@
     {
       "slug": "binary-search",
       "label": "Binary Search",
-      "count": 91,
+      "count": 92,
       "url": "/leetcode/pattern/binary-search/"
     },
     {
@@ -144,7 +144,7 @@
     {
       "slug": "sliding-window",
       "label": "Sliding Window",
-      "count": 54,
+      "count": 55,
       "url": "/leetcode/pattern/sliding-window/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1288,
+    "unique_problem_count": 1289,
     "repeat_problem_count": 180,
     "repeated_entry_count": 366,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 493
+        "count": 494
       },
       {
         "slug": "standard",
@@ -51862,6 +51862,65 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-25-3934-smallest-unique-subarray",
+      "date": "2026-11-25",
+      "display_date": "25.11.2026",
+      "year": "2026",
+      "problem_id": 3934,
+      "title": "Smallest Unique Subarray",
+      "display_title": "3934. Smallest Unique Subarray",
+      "difficulty": "hard",
+      "pattern_slugs": [
+        "binary-search",
+        "sliding-window"
+      ],
+      "pattern_labels": [
+        "Binary Search",
+        "Sliding Window"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/smallest-unique-subarray/solutions/8624313/kotlin-rust-by-samoylenkodmitry-wzrz/",
+      "kotlin_url": "https://leetcode.com/problems/smallest-unique-subarray/solutions/8624313/kotlin-rust-by-samoylenkodmitry-wzrz/",
+      "rust_url": "https://leetcode.com/problems/smallest-unique-subarray/solutions/8624313/kotlin-rust-by-samoylenkodmitry-wzrz/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/25112026-3934-smallest-unique-subarray?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/YfqFu7wEb3o",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1553",
+      "image_url": "/assets/leetcode_daily_images/25.11.2026.webp",
+      "takeaway": "Smallest uniq subarray",
+      "metrics": {
+        "solution_lines": 12,
+        "solution_chars": 335,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 12,
+          "rust": 13
+        },
+        "language_char_counts": {
+          "kotlin": 335,
+          "rust": 420
+        },
+        "thought_lines": 4,
+        "thought_chars": 111,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-11-25-3934-smallest-unique-subarray/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-24-3411-maximum-subarray-with-equal-products",
       "date": "2026-11-24",
