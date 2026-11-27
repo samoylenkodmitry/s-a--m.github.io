@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-26T09:40:46Z",
+  "generated_at": "2026-11-27T11:33:20Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1476,
-    "unique_problem_count": 1290,
+    "entry_count": 1477,
+    "unique_problem_count": 1291,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 1001,
+    "rust_count": 1002,
     "repeat_problem_count": 180,
     "repeated_entry_count": 366,
     "deep_thinking_count": 47,
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 320,
+      "count": 321,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1470,
+      "count": 1471,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 1001,
+      "count": 1002,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -90,7 +90,7 @@
     {
       "slug": "dynamic-programming",
       "label": "Dynamic Programming",
-      "count": 120,
+      "count": 121,
       "url": "/leetcode/pattern/dynamic-programming/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1290,
+    "unique_problem_count": 1291,
     "repeat_problem_count": 180,
     "repeated_entry_count": 366,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 494
+        "count": 495
       },
       {
         "slug": "standard",
@@ -51896,6 +51896,63 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-27-3946-maximum-number-of-items-from-sale-i",
+      "date": "2026-11-27",
+      "display_date": "27.11.2026",
+      "year": "2026",
+      "problem_id": 3946,
+      "title": "Maximum Number of Items From Sale I",
+      "display_title": "3946. Maximum Number of Items From Sale I",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "dynamic-programming"
+      ],
+      "pattern_labels": [
+        "Dynamic Programming"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-i/solutions/8626638/kotlin-rust-by-samoylenkodmitry-3t91/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-i/solutions/8626638/kotlin-rust-by-samoylenkodmitry-3t91/",
+      "rust_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-i/solutions/8626638/kotlin-rust-by-samoylenkodmitry-3t91/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/27112026-3946-maximum-number-of-items?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/ZAgNi_RZTIc",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1555",
+      "image_url": "/assets/leetcode_daily_images/27.11.2026.webp",
+      "takeaway": "Max items to buy and receive for free if factor is divisible",
+      "metrics": {
+        "solution_lines": 8,
+        "solution_chars": 245,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 8,
+          "rust": 8
+        },
+        "language_char_counts": {
+          "kotlin": 245,
+          "rust": 349
+        },
+        "thought_lines": 0,
+        "thought_chars": 0,
+        "minute_markers": [],
+        "max_minute_marker": null,
+        "deep_thinking": false,
+        "unsolved": false,
+        "almost_gave_up": false,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact"
+      ],
+      "collection_links": [],
+      "page_url": "/leetcode/problem/2026-11-27-3946-maximum-number-of-items-from-sale-i/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-26-3360-stone-removal-game",
       "date": "2026-11-26",
