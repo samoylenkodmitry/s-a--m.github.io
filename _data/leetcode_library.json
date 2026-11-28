@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-27T11:33:20Z",
+  "generated_at": "2026-11-28T10:06:08Z",
   "source_url": "/2023/07/14/leetcode_daily.html",
   "stats": {
-    "entry_count": 1477,
-    "unique_problem_count": 1291,
+    "entry_count": 1478,
+    "unique_problem_count": 1292,
     "year_count": 5,
     "pattern_count": 25,
-    "rust_count": 1002,
+    "rust_count": 1003,
     "repeat_problem_count": 180,
     "repeated_entry_count": 366,
     "deep_thinking_count": 47,
-    "unsolved_count": 106,
+    "unsolved_count": 107,
     "one_liner_count": 143,
-    "almost_gave_up_count": 69,
+    "almost_gave_up_count": 70,
     "comeback_count": 8,
     "ai_analyzed_count": 1360
   },
@@ -20,7 +20,7 @@
     {
       "value": "2026",
       "label": "2026",
-      "count": 321,
+      "count": 322,
       "url": "/leetcode/year/2026/"
     },
     {
@@ -52,13 +52,13 @@
     {
       "value": "kotlin",
       "label": "Kotlin",
-      "count": 1471,
+      "count": 1472,
       "url": "/leetcode/language/kotlin/"
     },
     {
       "value": "rust",
       "label": "Rust",
-      "count": 1002,
+      "count": 1003,
       "url": "/leetcode/language/rust/"
     }
   ],
@@ -174,7 +174,7 @@
     {
       "slug": "greedy",
       "label": "Greedy",
-      "count": 35,
+      "count": 36,
       "url": "/leetcode/pattern/greedy/"
     },
     {
@@ -215,7 +215,7 @@
     }
   ],
   "insights": {
-    "unique_problem_count": 1291,
+    "unique_problem_count": 1292,
     "repeat_problem_count": 180,
     "repeated_entry_count": 366,
     "line_buckets": [
@@ -232,7 +232,7 @@
       {
         "slug": "compact",
         "label": "Compact",
-        "count": 495
+        "count": 496
       },
       {
         "slug": "standard",
@@ -40255,6 +40255,42 @@
     ],
     "unsolved": [
       {
+        "slug": "2026-11-28-3947-maximum-number-of-items-from-sale-ii",
+        "date": "2026-11-28",
+        "display_date": "28.11.2026",
+        "year": "2026",
+        "display_title": "3947. Maximum Number of Items From Sale II",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-11-28-3947-maximum-number-of-items-from-sale-ii/",
+        "problem_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/solutions/8627484/kotlin-rust-by-samoylenkodmitry-bkz7/",
+        "image_url": "/assets/leetcode_daily_images/28.11.2026.webp",
+        "takeaway": "Max items to buy and receive for each for free if factor is divisible",
+        "pattern_slugs": [
+          "greedy"
+        ],
+        "pattern_labels": [
+          "Greedy"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 8,
+        "solution_chars": 369,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "thought_lines": 3,
+        "thought_chars": 152,
+        "max_minute_marker": 28,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-11-13-3420-count-non-decreasing-subarrays-after-k-operations",
         "date": "2026-11-13",
         "display_date": "13.11.2026",
@@ -51648,6 +51684,42 @@
         "almost_gave_up": true
       },
       {
+        "slug": "2026-11-28-3947-maximum-number-of-items-from-sale-ii",
+        "date": "2026-11-28",
+        "display_date": "28.11.2026",
+        "year": "2026",
+        "display_title": "3947. Maximum Number of Items From Sale II",
+        "difficulty": "medium",
+        "page_url": "/leetcode/problem/2026-11-28-3947-maximum-number-of-items-from-sale-ii/",
+        "problem_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/solutions/8627484/kotlin-rust-by-samoylenkodmitry-bkz7/",
+        "image_url": "/assets/leetcode_daily_images/28.11.2026.webp",
+        "takeaway": "Max items to buy and receive for each for free if factor is divisible",
+        "pattern_slugs": [
+          "greedy"
+        ],
+        "pattern_labels": [
+          "Greedy"
+        ],
+        "languages": [
+          "kotlin",
+          "rust"
+        ],
+        "catalog_tags": [
+          "compact",
+          "unsolved",
+          "almost-gave-up"
+        ],
+        "solution_lines": 8,
+        "solution_chars": 369,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "thought_lines": 3,
+        "thought_chars": 152,
+        "max_minute_marker": 28,
+        "unsolved": true,
+        "almost_gave_up": true
+      },
+      {
         "slug": "2026-04-03-3661-maximum-walls-destroyed-by-robots",
         "date": "2026-04-03",
         "display_date": "03.04.2026",
@@ -51869,7 +51941,7 @@
         "label": "Could Not Solve",
         "title": "Could Not Solve Cleanly",
         "url": "/leetcode/collection/unsolved/",
-        "count": 106,
+        "count": 107,
         "summary": "Entries that explicitly say the solution did not come cleanly without hints, giving up, or outside help.",
         "metric_label": "honest misses"
       },
@@ -51879,7 +51951,7 @@
         "label": "Pressure Log",
         "title": "Almost Gave Up",
         "url": "/leetcode/collection/almost-gave-up/",
-        "count": 69,
+        "count": 70,
         "summary": "Entries with minute markers near the stopping point, hints, wrong answers, or explicit timeboxing.",
         "metric_label": "timeboxed struggles"
       },
@@ -51896,6 +51968,79 @@
     ]
   },
   "entries": [
+    {
+      "slug": "2026-11-28-3947-maximum-number-of-items-from-sale-ii",
+      "date": "2026-11-28",
+      "display_date": "28.11.2026",
+      "year": "2026",
+      "problem_id": 3947,
+      "title": "Maximum Number of Items From Sale II",
+      "display_title": "3947. Maximum Number of Items From Sale II",
+      "difficulty": "medium",
+      "pattern_slugs": [
+        "greedy"
+      ],
+      "pattern_labels": [
+        "Greedy"
+      ],
+      "languages": [
+        "kotlin",
+        "rust"
+      ],
+      "problem_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/solutions/8627484/kotlin-rust-by-samoylenkodmitry-bkz7/",
+      "kotlin_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/solutions/8627484/kotlin-rust-by-samoylenkodmitry-bkz7/",
+      "rust_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/solutions/8627484/kotlin-rust-by-samoylenkodmitry-bkz7/",
+      "blog_post_url": null,
+      "substack_url": "https://dmitriisamoilenko.substack.com/p/28112026-3947-maximum-number-of-items?r=2bam17&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+      "youtube_url": "https://youtu.be/Lb-gMkLrRwU",
+      "telegram_url": "https://t.me/leetcode_daily_unstoppable/1556",
+      "image_url": "/assets/leetcode_daily_images/28.11.2026.webp",
+      "takeaway": "Max items to buy and receive for each for free if factor is divisible",
+      "metrics": {
+        "solution_lines": 8,
+        "solution_chars": 369,
+        "solution_language": "kotlin",
+        "solution_line_bucket": "compact",
+        "language_line_counts": {
+          "kotlin": 8,
+          "rust": 12
+        },
+        "language_char_counts": {
+          "kotlin": 369,
+          "rust": 497
+        },
+        "thought_lines": 3,
+        "thought_chars": 152,
+        "minute_markers": [
+          7,
+          28
+        ],
+        "max_minute_marker": 28,
+        "deep_thinking": false,
+        "unsolved": true,
+        "almost_gave_up": true,
+        "one_liner": false
+      },
+      "catalog_tags": [
+        "compact",
+        "unsolved",
+        "almost-gave-up"
+      ],
+      "collection_links": [
+        {
+          "slug": "unsolved",
+          "label": "Could Not Solve",
+          "url": "/leetcode/collection/unsolved/"
+        },
+        {
+          "slug": "almost-gave-up",
+          "label": "Almost Gave Up",
+          "url": "/leetcode/collection/almost-gave-up/"
+        }
+      ],
+      "page_url": "/leetcode/problem/2026-11-28-3947-maximum-number-of-items-from-sale-ii/",
+      "raw_archive_url": "/2023/07/14/leetcode_daily.html"
+    },
     {
       "slug": "2026-11-27-3946-maximum-number-of-items-from-sale-i",
       "date": "2026-11-27",
